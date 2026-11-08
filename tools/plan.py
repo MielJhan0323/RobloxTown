@@ -21,7 +21,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from common import (EDITS, MUSIC, ROOT, SCRIPTS, SFX, AUDIO_EXTS, config, load_json, log,  # noqa: E402
+from common import (EDITS, MUSIC, ROOT, SCRIPTS, SFX, STOCK, AUDIO_EXTS, config, load_json, log,  # noqa: E402
                     norm_token, parse_script, probe_duration, raw_shot, save_json, tokens, voice_path)
 
 TAIL = 1.4  # seconds held after the last word (ending breathes, music swells)
@@ -64,6 +64,12 @@ def classify_grade(mood: str) -> str:
 
 
 def find_audio(folder: Path, keyword: str) -> Path | None:
+    """First file in folder whose name contains keyword; falls back to output/stock/<kind>."""
+    hit = _find(folder, keyword)
+    return hit or _find(STOCK / folder.name, keyword)
+
+
+def _find(folder: Path, keyword: str) -> Path | None:
     if not folder.exists():
         return None
     files = sorted(p for p in folder.iterdir() if p.suffix.lower() in AUDIO_EXTS)
@@ -219,8 +225,10 @@ def plan(slug: str) -> dict:
     music = None
     mkw = meta.get("music", "")
     mf = find_audio(MUSIC, mkw) if mkw else None
-    if not mf and MUSIC.exists():
-        cands = sorted(p for p in MUSIC.iterdir() if p.suffix.lower() in AUDIO_EXTS)
+    for folder in (MUSIC, STOCK / "music"):
+        if mf or not folder.exists():
+            continue
+        cands = sorted(p for p in folder.iterdir() if p.suffix.lower() in AUDIO_EXTS)
         mf = cands[0] if cands else None
         if mf and mkw:
             log(f"no music matching '{mkw}', using {mf.name}")

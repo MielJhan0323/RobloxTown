@@ -38,6 +38,9 @@ vignette, captions, mux).
 - Defaults live in `tools/config.json`. Missing shots render as blurred placeholder cards with the shot description.
 - Set `ITT_ROOT=/some/dir` to run the tools against another project folder (tests).
 - Caption font: first font in `assets/fonts/`, else `tools/fonts/Montserrat-ExtraBold.otf` (OFL).
+- Stand-ins (never committed, live in `output/stock/`, real `audio/` files always win):
+  `python tools/stock_audio.py` synthesizes original piano music + waves/wind/town ambience + shimmer/knock/click;
+  `python tools/tts_local.py <slug>` makes a Piper narration (`pip install piper-tts`) when ElevenLabs isn't available.
 - Setup if missing: `apt-get install -y ffmpeg fonts-montserrat`, `pip install -r tools/requirements.txt`.
 
 ## Workflow per request

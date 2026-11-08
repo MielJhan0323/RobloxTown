@@ -25,6 +25,7 @@ SFX = ROOT / "audio" / "sfx"
 FONTS = ROOT / "assets" / "fonts"
 FX = ROOT / "assets" / "fx"
 OUTPUT = ROOT / "output"
+STOCK = OUTPUT / "stock"  # generated stand-ins (tts_local.py, stock_audio.py); real audio/ files win
 
 FPS = 30
 W, H = 1080, 1920
@@ -53,7 +54,7 @@ def run(cmd: list[str], quiet: bool = True) -> subprocess.CompletedProcess:
         cmd = ["ffmpeg", "-hide_banner", "-y", "-loglevel", "error" if quiet else "info"] + cmd[1:]
     r = subprocess.run(cmd, capture_output=True, text=True)
     if r.returncode != 0:
-        sys.stderr.write(r.stderr[-4000:])
+        sys.stderr.write(r.stderr[-4000:] + f"\n(exit {r.returncode})\n")
         raise SystemExit(f"command failed: {' '.join(cmd[:6])} ...")
     return r
 
@@ -78,7 +79,7 @@ def find_media(folder: Path, stem: str, exts) -> Path | None:
 
 
 def voice_path(slug: str) -> Path | None:
-    return find_media(VOICE, slug, AUDIO_EXTS)
+    return find_media(VOICE, slug, AUDIO_EXTS) or find_media(STOCK / "voice", slug, AUDIO_EXTS)
 
 
 def raw_shot(slug: str, n: int) -> Path | None:

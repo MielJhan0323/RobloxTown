@@ -90,8 +90,8 @@ def zoom_expr(motion: str, total: int, cfg: dict) -> tuple[str, str, str]:
     N = max(total - 1, 1)
     p, pan, punch, pt = cfg.get("push_in", 0.08), cfg.get("pan", 0.10), cfg.get("punch", 0.18), cfg.get("punch_time", 0.22)
     u = f"(n/{N})"
-    if motion == "pull_out":
-        return f"(1+{p}*(1-{u}))", "0.5", "0.5"
+    if motion == "pull_out":  # rendered as a reversed push-in (ffmpeg 6 crashes on shrinking eval=frame scale)
+        return f"(1+{p}*{u})", "0.5", "0.5"
     if motion == "drift":
         return f"(1.02+0.03*{u})", "0.5", "0.5"
     if motion == "punch":
@@ -127,7 +127,9 @@ def render_segment(slug: str, shot: dict, idx: int, nframes: int, w: int, h: int
              f"crop={BW}:{BH}:'(in_w-{BW})*{fx}':'(in_h-{BH})*{fy}',setsar=1")
     z, xf, yf = zoom_expr(shot.get("motion", "push_in"), nframes, mcfg)
     motion = (f"scale=w='2*trunc({w}*{z}/2)':h='2*trunc({h}*{z}/2)':eval=frame:flags=bicubic,"
-              f"crop={w}:{h}:'(in_w-{w})*{xf}':'(in_h-{h})*{yf}'")
+              f"crop={w}:{h}:'(in_w-{w})*{xf}':'(in_h-{h})*{yf}',setsar=1")
+    if shot.get("motion") == "pull_out":
+        motion = f"reverse,{motion},reverse"
     grade = GRADES.get(shot.get("grade", "neutral"), GRADES["neutral"])
     if src_path:
         D = probe_duration(src_path)
@@ -152,10 +154,12 @@ def render_segment(slug: str, shot: dict, idx: int, nframes: int, w: int, h: int
     out = cache_dir(slug) / f"seg_{idx:03d}_{key}{'_p' if preview else ''}.mp4"
     if out.exists():
         return out
-    graph = f"{pre}{cover},{motion},{grade},format=yuv420p[v]"
+    graph = f"{pre}trim=end_frame={nframes},{cover},{motion},{grade},format=yuv420p[v]"
+    tmp = out.with_suffix(".tmp")
     run(["ffmpeg", *inputs, "-filter_complex", graph, "-map", "[v]", "-frames:v", nframes, "-an",
          "-c:v", "libx264", "-preset", "ultrafast" if preview else "veryfast", "-crf", "20" if preview else "12",
-         "-r", FPS, out])
+         "-r", FPS, "-f", "mp4", tmp])
+    tmp.replace(out)  # atomic: a failed render never leaves a half-written cache file
     return out
 
 
@@ -324,12 +328,14 @@ def render(slug: str, preview: bool = False, audio: Path | None = None, out: Pat
     for i in range(1, len(shots)):
         (groups.append([i]) if i in fog_d else groups[-1].append(i))
     parts, chain = [], []
+    for k in range(len(shots)):
+        parts.append(f"[{k}:v]setsar=1,settb=AVTB[s{k}]")
     for gi, g in enumerate(groups):
         lbl = f"g{gi}"
         if len(g) == 1:
-            parts.append(f"[{g[0]}:v]settb=AVTB,setpts=PTS-STARTPTS[{lbl}]")
+            parts.append(f"[s{g[0]}]setpts=PTS-STARTPTS[{lbl}]")
         else:
-            ins = "".join(f"[{k}:v]" for k in g)
+            ins = "".join(f"[s{k}]" for k in g)
             parts.append(f"{ins}concat=n={len(g)}:v=1:a=0,settb=AVTB,setpts=PTS-STARTPTS[{lbl}]")
     acc, acc_len = "g0", sum(bounds[k + 1] - bounds[k] + ext[k][0] + ext[k][1] for k in groups[0])
     for gi in range(1, len(groups)):
