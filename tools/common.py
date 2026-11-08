@@ -83,7 +83,9 @@ def voice_path(slug: str) -> Path | None:
 
 
 def raw_shot(slug: str, n: int) -> Path | None:
-    return find_media(RAW / slug, f"shot_{n:02d}", VIDEO_EXTS)
+    """Your recording in raw/<slug>/ wins; else an animated stand-in from tools/animate.py."""
+    return (find_media(RAW / slug, f"shot_{n:02d}", VIDEO_EXTS)
+            or find_media(OUTPUT / "anim" / slug, f"shot_{n:02d}", VIDEO_EXTS))
 
 
 def load_json(p: Path, default=None):

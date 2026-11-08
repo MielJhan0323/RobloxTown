@@ -38,6 +38,11 @@ vignette, captions, mux).
 - Defaults live in `tools/config.json`. Missing shots render as blurred placeholder cards with the shot description.
 - Set `ITT_ROOT=/some/dir` to run the tools against another project folder (tests).
 - Caption font: first font in `assets/fonts/`, else `tools/fonts/Montserrat-ExtraBold.otf` (OFL).
+- Animated 3D stand-in shots (until real Roblox Studio recordings exist): `python tools/animate.py <slug> [shots] [--stills]`
+  renders Blender clips to `output/anim/<slug>/shot_XX.mp4` from `tools/anim/stories/<slug>.py` (one function per shot,
+  built with `tools/anim/kit.py`: blocky posable characters with blink/talk/expressions, sets, lighting, beams).
+  `raw/<slug>/shot_XX.mp4` always wins over these. Needs `apt-get install -y blender xvfb`. ~1 s/rendered frame
+  (540x960, animated on twos); check `--stills` contact sheets before a full render.
 - Stand-ins (never committed, live in `output/stock/`, real `audio/` files always win):
   `python tools/stock_audio.py` synthesizes original piano music + waves/wind/town ambience + shimmer/knock/click;
   `python tools/tts_local.py <slug>` makes a Piper narration (`pip install piper-tts`) when ElevenLabs isn't available.
