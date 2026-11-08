@@ -1,0 +1,20 @@
+# Media never goes in git
+raw/
+output/
+reference/
+audio/
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.mp3
+*.wav
+*.m4a
+*.aac
+*.flac
+*.ogg
+
+# Python
+__pycache__/
+*.pyc
+.venv/
