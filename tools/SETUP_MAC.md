@@ -13,15 +13,14 @@ Cloud session: downloads the clips, does voice / captions / music / render, send
    `curl -fsSL https://claude.ai/install.sh | bash`
 3. Quit Terminal (Cmd+Q), reopen it, run `claude`, log in with your Claude account, then type `/exit`.
 
-## 3. Roblox Studio MCP (lets Claude build/pose/animate inside Studio) (~10 min)
-1. Open https://github.com/Roblox/studio-rust-mcp-server → **Releases** → download the **macOS** file.
-2. Unzip, open it. If macOS blocks it: System Settings → Privacy & Security → **Open Anyway**.
-   It installs a plugin into Roblox Studio.
-3. Register it with Claude Code using the command in the README's **Claude Code** section
-   (it's a `claude mcp add ...` line pointing at the app you just installed).
-4. Check: `claude mcp list` → Roblox Studio should be listed as connected.
-5. Quit and reopen Roblox Studio → **Plugins** tab → make sure the MCP plugin is on.
-   If it says it can't connect: Home → Game Settings → Security → turn on **Allow HTTP Requests**, then retry.
+## 3. Studio's built-in MCP server (lets Claude build/pose/animate inside Studio) (~5 min)
+The old standalone `Roblox/studio-rust-mcp-server` was archived in April 2026 — Studio now has MCP built in
+(docs: https://create.roblox.com/docs/studio/mcp).
+1. In Studio open **Assistant** → **…** → **Manage MCP Servers** → turn on **Enable Studio as MCP server**.
+2. Under **Quick connect**, turn on **Claude Code** (restart Studio if it isn't listed).
+3. If quick connect doesn't work, add it manually (path from Roblox's docs; exact args not documented):
+   `claude mcp add --transport stdio Roblox_Studio -- /Applications/RobloxStudio.app/Contents/MacOS/StudioMCP`
+4. Check: `claude mcp list` → Roblox_Studio connected; Studio's MCP panel shows a green connected-client dot.
 
 ## 4. Google Drive (cloud storage, keeps the laptop light) (~5 min)
 1. Install **Google Drive for desktop** → sign in → Preferences (gear) → Google Drive → **Stream files**.
