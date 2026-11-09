@@ -70,3 +70,50 @@ The next morning, the lighthouse keeper, old Mr. Pell, knocked on our door with 
 | 46 | And for the first time in three weeks, | Porch | Family | everyone watching June | medium, slow push-in | - | warm | - | - | 2 |
 | 47 | she said one word. | Close on June | June | lips parting, small smile | close, push-in | - | warm | - | - | 1.3 |
 | 48 | "Home." | Blue house and lighthouse at golden sunset | June, family on porch | June smiling | wide, pull-out | lighthouse | warm | fog | - | 2.5 |
+
+## Delivery
+
+How the narrator says each line (used by tools/tts_local.py; captions keep the original text).
+`Say as` may change punctuation only (! ? ... ,) - never the words. Tones: neutral, excited, funny,
+curious, warm, sad, soft, whisper, dramatic. Leave a row out to read it neutral.
+
+| Line | Tone | Say as |
+|---|---|---|
+| In this town, the lighthouse shines for anyone who's lost. | curious | In this town... the lighthouse shines for anyone who's lost. |
+| Not just ships. | dramatic | |
+| People. | excited | People! |
+| When Tommy Briggs got lost at the summer fair, the beam found him at the cotton candy stand. | funny | |
+| When Mrs. Alder lost her glasses, it lit up her own head. | funny | |
+| They were on it. | funny | They were on it! |
+| And when my dad lost his job, it shone on our porch for a whole week. | sad | |
+| He pretended not to notice. | soft | |
+| He noticed. | warm | |
+| Then, we moved. | neutral | Then... we moved. |
+| My sister June was six. | warm | |
+| She stopped talking the day we packed up her room. | sad | |
+| Not sad-quiet. | sad | |
+| Just gone-quiet. | sad | Just... gone-quiet. |
+| Mom tried pancakes. | funny | |
+| Dad tried knock-knock jokes. | funny | |
+| I gave her my bike. | warm | |
+| Nothing. | sad | Nothing. |
+| The first foggy night, I couldn't sleep. | soft | |
+| Then it stopped. | dramatic | Then... it stopped. |
+| Right on our house. | dramatic | Right on our house! |
+| On June's window. | soft | |
+| I tiptoed into her room. | soft | |
+| She was sitting up, staring at the light. | soft | |
+| "Are you lost?" | whisper | Are you lost? |
+| I whispered. | soft | |
+| She nodded. | soft | |
+| "Me too, a little," | warm | Me too... a little. |
+| I said. | neutral | |
+| "New house. New street. New everything." | warm | New house. New street. New everything. |
+| The light stayed all night. | warm | |
+| So did I. | warm | |
+| "The light doesn't fix lost," | warm | The light doesn't fix lost. |
+| he said. | neutral | |
+| "It just shows someone where to sit." | warm | It just shows someone where to sit. |
+| She held a blue piece up to the sun. | warm | |
+| And for the first time in three weeks, she said one word. | dramatic | And for the first time in three weeks... she said one word. |
+| "Home." | soft | Home. |

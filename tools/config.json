@@ -9,7 +9,7 @@
     "prefer": "stock",
     "kokoro_speed": 0.93,
     "kokoro_voice": "am_adam:0.5,am_liam:0.5",
-    "expressive": 1.45
+    "expressive": 1.0
   },
   "captions": {
     "font": "Montserrat ExtraBold",

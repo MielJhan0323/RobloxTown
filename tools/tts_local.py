@@ -60,14 +60,66 @@ def _narration_paragraphs(slug: str) -> list[str]:
 
 
 def _sentences(par: str) -> list[str]:
+    """Split into sentences; quoted speech ("New house. New street.") stays together."""
     import re
     par = re.sub(r"\b(Mr|Mrs|Ms|Dr|St)\.", lambda m: m.group(1) + "\u2024", par)  # protect abbreviations
-    parts, start = [], 0
-    for m in re.finditer(r'[.!?]["\u201d]?(?=\s+["\u201c]?[A-Z])', par):
-        parts.append(par[start:m.end()])
-        start = m.end()
+    parts, start, inq = [], 0, False
+    for i, ch in enumerate(par):
+        if ch in '"\u201c\u201d':
+            inq = not inq if ch == '"' else ch == "\u201c"
+        if ch in ".!?" and not inq:
+            j = i + 1
+            if j < len(par) and par[j] in '"\u201d':
+                j += 1
+            if j >= len(par) or (par[j] == " " and re.match(r' +["\u201c]?[A-Z]', par[j:])):
+                parts.append(par[start:j])
+                start = j
+        elif ch in '"\u201d' and not inq and i + 1 < len(par) and par[i - 1] in ".!?":
+            if re.match(r' +["\u201c]?[A-Z]', par[i + 1:]):
+                parts.append(par[start:i + 1])
+                start = i + 1
     parts.append(par[start:])
     return [p.replace("\u2024", ".").strip() for p in parts if p.strip()]
+
+
+def _chunks(sentence: str) -> list[str]:
+    """Separate quoted speech from its tag: '"Are you lost?" I whispered.' -> 2 chunks."""
+    import re
+    m = re.match(r'^(["\u201c][^"\u201d]+["\u201d])\s+(.+)$', sentence)
+    if m:
+        return [m.group(1), m.group(2)]
+    m = re.match(r'^(.+?)\s+(["\u201c][^"\u201d]+["\u201d])$', sentence)
+    if m:
+        return [m.group(1), m.group(2)]
+    return [sentence]
+
+
+def _delivery(slug: str) -> dict:
+    """'## Delivery' table in the script: line -> (tone, say_as)."""
+    import re
+    from common import SCRIPTS
+    md = (SCRIPTS / f"{slug}.md").read_text()
+    m = re.search(r"^## Delivery\s*\n(.*?)(?=^## |\Z)", md, re.S | re.M)
+    out = {}
+    for line in (m.group(1) if m else "").splitlines():
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        if len(cells) >= 2 and cells[0] and cells[0] not in ("Line",) and not set(cells[0]) <= set("-: "):
+            out[_key(cells[0])] = (cells[1].lower() or "neutral", cells[2] if len(cells) > 2 and cells[2] else "")
+    return out
+
+
+def _key(t: str) -> str:
+    import re
+    return re.sub(r"[^a-z0-9' ]", "", t.lower().replace("\u2019", "'")).strip()
+
+
+# tone -> (speed multiplier, gain dB, extra voice weights mixed into the base blend)
+TONES = {
+    "neutral": (1.00, 0.0, {}), "curious": (0.97, 0.0, {}), "warm": (0.95, 0.0, {}),
+    "excited": (1.06, 1.5, {"am_puck": 0.35}), "funny": (1.03, 0.5, {"am_puck": 0.2}),
+    "sad": (0.90, -1.5, {"am_adam": 0.25}), "soft": (0.92, -2.5, {}),
+    "whisper": (0.86, -6.0, {}), "dramatic": (0.93, 0.0, {}),
+}
 
 
 def widen_intonation(audio, sr: int, k: float):
@@ -90,7 +142,7 @@ def widen_intonation(audio, sr: int, k: float):
 
 
 def synth_kokoro(slug: str, voice: str = "am_adam:0.5,am_liam:0.5", speed: float = 1.0,
-                 pause: float = 0.0, para_pause: float = 0.12, stretch: float = 1.0,
+                 pause: float = 0.0, para_pause: float = 0.15, stretch: float = 1.0,
                  short_beat: float = 0.0, expressive: float = 1.0) -> Path:
     """Kokoro (pip install kokoro-onnx soundfile), sentence by sentence with real pauses.
 
@@ -119,26 +171,60 @@ def synth_kokoro(slug: str, voice: str = "am_adam:0.5,am_liam:0.5", speed: float
     out_parts, sr, sent_times = [], 24000, []
     sil = lambda sec: np.zeros(int(sec * stretch * sr), np.float32)
     out_parts.append(sil(0.2))
-    def trim(a, sr):  # Kokoro pads each sentence with silence; cut it so pauses are exactly ours
-        env = np.convolve(np.abs(a), np.ones(int(0.01 * sr)) / int(0.01 * sr), "same")
-        idx = np.where(env > max(1e-4, env.max() * 0.02))[0]
-        if not len(idx):
-            return a
-        pad = int(0.02 * sr)
-        return a[max(0, idx[0] - pad): idx[-1] + pad]
+    def trim(a, sr):  # cut Kokoro's padding gently, then fade the edges so joins never click
+        win = int(0.01 * sr)
+        env = np.convolve(np.abs(a), np.ones(win) / win, "same")
+        idx = np.where(env > max(5e-5, env.max() * 0.01))[0]
+        if len(idx):
+            pad = int(0.04 * sr)
+            a = a[max(0, idx[0] - pad): idx[-1] + pad]
+        f = min(int(0.008 * sr), len(a) // 4)
+        if f > 1:
+            a = a.copy()
+            a[:f] *= np.linspace(0, 1, f)
+            a[-f:] *= np.linspace(1, 0, f)
+        return a
+
+    def gap_after(text):  # pause length from the punctuation that ends the chunk
+        t = text.rstrip('"\u201d ')
+        if t.endswith("..."):
+            return 0.30
+        return {"?": 0.24, "!": 0.22, ".": 0.20, ",": 0.10}.get(t[-1:], 0.08)
+
+    base_style = style
+    styles = {}
+
+    def style_for(tone):
+        extra = TONES.get(tone, TONES["neutral"])[2]
+        if not extra or isinstance(base_style, str):
+            return base_style
+        if tone not in styles:
+            w = 1.0 + sum(extra.values())
+            mix = base_style.copy()
+            for name, wt in extra.items():
+                mix = mix + k.get_voice_style(name) * wt
+            styles[tone] = mix / w
+        return styles[tone]
+
+    deliv = _delivery(slug)
     for pi, par in enumerate(_narration_paragraphs(slug)):
         if pi:
-            out_parts.append(sil(max(0.0, para_pause - pause)))
+            out_parts.append(sil(para_pause))
         for sent in _sentences(par):
-            if short_beat and len(sent.split()) <= 3:
-                out_parts.append(sil(short_beat))
-            audio, sr = k.create(sent, voice=style, speed=speed, lang="en-us")
-            audio = trim(audio.astype(np.float32), sr)
-            if expressive != 1.0:
-                audio = widen_intonation(audio, sr, expressive)
-            t0 = sum(len(x) for x in out_parts) / sr
-            sent_times.append({"text": sent, "start": round(t0, 4), "end": round(t0 + len(audio) / sr, 4)})
-            out_parts += [audio, sil(pause)]
+            chunks = _chunks(sent)
+            for ci, chunk in enumerate(chunks):
+                tone, say = deliv.get(_key(chunk), deliv.get(_key(sent), ("neutral", "")) if len(chunks) == 1 else ("neutral", ""))
+                spd, gain, _ = TONES.get(tone, TONES["neutral"])
+                text = say or chunk
+                audio, sr = k.create(text.replace("\u201c", '"').replace("\u201d", '"'), voice=style_for(tone),
+                                     speed=speed * spd, lang="en-us")
+                audio = trim(audio.astype(np.float32), sr) * (10 ** (gain / 20))
+                if expressive != 1.0:
+                    audio = widen_intonation(audio, sr, expressive)
+                t0 = sum(len(x) for x in out_parts) / sr
+                sent_times.append({"text": chunk, "start": round(t0, 4), "end": round(t0 + len(audio) / sr, 4), "tone": tone})
+                gap = 0.06 if ci + 1 < len(chunks) else gap_after(text)
+                out_parts += [audio, sil(gap)]
     out = OUTPUT / "stock" / "voice" / f"{slug}.wav"
     out.parent.mkdir(parents=True, exist_ok=True)
     sf.write(str(out), np.concatenate(out_parts), sr)
