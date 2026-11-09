@@ -1,1246 +1,1251 @@
 {
   "voice": "lighthouse.wav",
-  "duration": 68.393,
+  "duration": 52.532,
   "words": [
     {
-      "word": "in",
+      "word": "n",
       "start": 0.0,
-      "end": 0.36
+      "end": 0.1
     },
     {
       "word": "this",
-      "start": 0.36,
-      "end": 0.52
+      "start": 0.1,
+      "end": 0.18
     },
     {
       "word": "town,",
-      "start": 0.52,
-      "end": 0.84
+      "start": 0.18,
+      "end": 0.4
     },
     {
       "word": "the",
-      "start": 1.02,
-      "end": 1.12
+      "start": 0.54,
+      "end": 0.56
     },
     {
       "word": "lighthouse",
-      "start": 1.12,
-      "end": 1.42
+      "start": 0.56,
+      "end": 0.76
     },
     {
       "word": "shines",
-      "start": 1.42,
-      "end": 1.88
+      "start": 0.76,
+      "end": 1.06
     },
     {
       "word": "for",
-      "start": 1.88,
-      "end": 2.08
+      "start": 1.06,
+      "end": 1.24
     },
     {
       "word": "anyone",
-      "start": 2.08,
-      "end": 2.36
+      "start": 1.24,
+      "end": 1.44
     },
     {
       "word": "who's",
-      "start": 2.36,
-      "end": 2.68
+      "start": 1.44,
+      "end": 1.66
     },
     {
       "word": "lost.",
-      "start": 2.68,
-      "end": 3.02
+      "start": 1.66,
+      "end": 1.88
     },
     {
       "word": "Not",
-      "start": 3.3,
-      "end": 3.44
+      "start": 2.24,
+      "end": 2.4
     },
     {
       "word": "just",
-      "start": 3.44,
-      "end": 3.66
+      "start": 2.4,
+      "end": 2.58
     },
     {
       "word": "ships.",
-      "start": 3.66,
-      "end": 3.92
+      "start": 2.58,
+      "end": 2.78
     },
     {
       "word": "People.",
-      "start": 4.16,
-      "end": 4.36
+      "start": 3.02,
+      "end": 3.18
     },
     {
       "word": "When",
-      "start": 4.66,
-      "end": 4.76
+      "start": 3.6,
+      "end": 3.68
     },
     {
       "word": "Tommy",
-      "start": 4.76,
-      "end": 5.08
+      "start": 3.68,
+      "end": 3.92
     },
     {
       "word": "Briggs",
-      "start": 5.08,
-      "end": 5.32
+      "start": 3.92,
+      "end": 4.04
     },
     {
       "word": "got",
-      "start": 5.32,
-      "end": 5.58
+      "start": 4.04,
+      "end": 4.2
     },
     {
       "word": "lost",
-      "start": 5.58,
-      "end": 5.84
+      "start": 4.2,
+      "end": 4.4
     },
     {
       "word": "at",
-      "start": 5.84,
-      "end": 6.04
+      "start": 4.4,
+      "end": 4.52
     },
     {
       "word": "the",
-      "start": 6.04,
-      "end": 6.16
+      "start": 4.52,
+      "end": 4.62
     },
     {
       "word": "summer",
-      "start": 6.16,
-      "end": 6.4
+      "start": 4.62,
+      "end": 4.74
     },
     {
       "word": "fair,",
-      "start": 6.4,
-      "end": 6.68
+      "start": 4.74,
+      "end": 4.96
     },
     {
       "word": "the",
-      "start": 6.96,
-      "end": 7.02
+      "start": 5.18,
+      "end": 5.18
     },
     {
       "word": "beam",
-      "start": 7.02,
-      "end": 7.2
+      "start": 5.18,
+      "end": 5.3
     },
     {
       "word": "found",
-      "start": 7.2,
-      "end": 7.46
+      "start": 5.3,
+      "end": 5.54
     },
     {
       "word": "him",
-      "start": 7.46,
-      "end": 7.66
+      "start": 5.54,
+      "end": 5.7
     },
     {
       "word": "at",
-      "start": 7.66,
-      "end": 7.8
+      "start": 5.7,
+      "end": 5.8
     },
     {
       "word": "the",
-      "start": 7.8,
-      "end": 8.0
+      "start": 5.8,
+      "end": 5.92
     },
     {
       "word": "cotton",
-      "start": 8.0,
-      "end": 8.16
+      "start": 5.92,
+      "end": 6.12
     },
     {
       "word": "candy",
-      "start": 8.16,
-      "end": 8.52
+      "start": 6.12,
+      "end": 6.28
     },
     {
       "word": "stand.",
-      "start": 8.52,
-      "end": 8.88
+      "start": 6.28,
+      "end": 6.6
     },
     {
       "word": "When",
-      "start": 9.1,
-      "end": 9.26
+      "start": 6.96,
+      "end": 7.06
     },
     {
       "word": "Mrs.",
-      "start": 9.26,
-      "end": 9.58
+      "start": 7.06,
+      "end": 7.26
     },
     {
       "word": "Alder",
-      "start": 10.06,
-      "end": 10.14
+      "start": 7.88,
+      "end": 7.96
     },
     {
       "word": "lost",
-      "start": 10.14,
-      "end": 10.42
+      "start": 7.96,
+      "end": 8.16
     },
     {
       "word": "her",
-      "start": 10.42,
-      "end": 10.64
+      "start": 8.16,
+      "end": 8.28
     },
     {
       "word": "glasses,",
-      "start": 10.64,
-      "end": 11.04
+      "start": 8.28,
+      "end": 8.56
     },
     {
       "word": "it",
-      "start": 11.34,
-      "end": 11.42
+      "start": 8.76,
+      "end": 8.8
     },
     {
       "word": "lit",
-      "start": 11.42,
-      "end": 11.58
+      "start": 8.8,
+      "end": 8.92
     },
     {
       "word": "up",
-      "start": 11.58,
-      "end": 11.72
+      "start": 8.92,
+      "end": 9.04
     },
     {
       "word": "her",
-      "start": 11.72,
-      "end": 11.82
+      "start": 9.04,
+      "end": 9.14
     },
     {
       "word": "own",
-      "start": 11.82,
-      "end": 12.0
+      "start": 9.14,
+      "end": 9.28
     },
     {
       "word": "head.",
-      "start": 12.0,
-      "end": 12.24
+      "start": 9.28,
+      "end": 9.46
     },
     {
       "word": "They",
-      "start": 12.46,
-      "end": 12.58
+      "start": 9.62,
+      "end": 9.68
     },
     {
       "word": "were",
-      "start": 12.58,
-      "end": 12.7
+      "start": 9.68,
+      "end": 9.78
     },
     {
       "word": "on",
-      "start": 12.7,
-      "end": 12.9
+      "start": 9.78,
+      "end": 9.92
     },
     {
       "word": "it.",
-      "start": 12.9,
-      "end": 13.1
+      "start": 9.92,
+      "end": 10.1
     },
     {
       "word": "And",
-      "start": 13.24,
-      "end": 13.36
+      "start": 10.36,
+      "end": 10.46
     },
     {
       "word": "when",
-      "start": 13.36,
-      "end": 13.52
+      "start": 10.46,
+      "end": 10.56
     },
     {
       "word": "my",
-      "start": 13.52,
-      "end": 13.7
+      "start": 10.56,
+      "end": 10.68
     },
     {
       "word": "dad",
-      "start": 13.7,
-      "end": 13.88
+      "start": 10.68,
+      "end": 10.8
     },
     {
       "word": "lost",
-      "start": 13.88,
-      "end": 14.14
+      "start": 10.8,
+      "end": 10.98
     },
     {
       "word": "his",
-      "start": 14.14,
-      "end": 14.4
+      "start": 10.98,
+      "end": 11.16
     },
     {
       "word": "job,",
-      "start": 14.4,
-      "end": 14.72
+      "start": 11.16,
+      "end": 11.36
     },
     {
       "word": "it",
-      "start": 14.86,
-      "end": 14.98
+      "start": 11.44,
+      "end": 11.5
     },
     {
       "word": "shone",
-      "start": 14.98,
-      "end": 15.2
+      "start": 11.5,
+      "end": 11.66
     },
     {
       "word": "on",
-      "start": 15.2,
-      "end": 15.4
+      "start": 11.66,
+      "end": 11.82
     },
     {
       "word": "our",
-      "start": 15.4,
-      "end": 15.56
+      "start": 11.82,
+      "end": 11.94
     },
     {
       "word": "porch",
-      "start": 15.56,
-      "end": 15.78
+      "start": 11.94,
+      "end": 12.12
     },
     {
       "word": "for",
-      "start": 15.78,
-      "end": 15.98
+      "start": 12.12,
+      "end": 12.28
     },
     {
       "word": "a",
-      "start": 15.98,
-      "end": 16.12
+      "start": 12.28,
+      "end": 12.32
     },
     {
       "word": "whole",
-      "start": 16.12,
-      "end": 16.3
+      "start": 12.32,
+      "end": 12.42
     },
     {
       "word": "week.",
-      "start": 16.3,
-      "end": 16.6
+      "start": 12.42,
+      "end": 12.64
     },
     {
       "word": "He",
-      "start": 16.8,
-      "end": 16.92
+      "start": 12.94,
+      "end": 13.04
     },
     {
       "word": "pretended",
-      "start": 16.92,
-      "end": 17.24
+      "start": 13.04,
+      "end": 13.26
     },
     {
       "word": "not",
-      "start": 17.24,
-      "end": 17.56
+      "start": 13.26,
+      "end": 13.48
     },
     {
       "word": "to",
-      "start": 17.56,
-      "end": 17.72
+      "start": 13.48,
+      "end": 13.6
     },
     {
       "word": "notice.",
-      "start": 17.72,
-      "end": 18.0
+      "start": 13.6,
+      "end": 13.82
     },
     {
       "word": "He",
-      "start": 18.32,
-      "end": 18.42
+      "start": 14.14,
+      "end": 14.22
     },
     {
       "word": "noticed.",
-      "start": 18.42,
-      "end": 18.72
+      "start": 14.22,
+      "end": 14.44
     },
     {
       "word": "Then,",
-      "start": 19.18,
-      "end": 19.36
+      "start": 14.88,
+      "end": 15.0
     },
     {
       "word": "we",
-      "start": 19.54,
-      "end": 19.72
+      "start": 15.08,
+      "end": 15.18
     },
     {
       "word": "moved.",
-      "start": 19.72,
-      "end": 20.04
+      "start": 15.18,
+      "end": 15.46
     },
     {
       "word": "Across",
-      "start": 20.38,
-      "end": 20.64
+      "start": 15.94,
+      "end": 15.98
     },
     {
       "word": "town,",
-      "start": 20.64,
-      "end": 21.02
+      "start": 15.98,
+      "end": 16.26
     },
     {
       "word": "to",
-      "start": 21.24,
-      "end": 21.36
+      "start": 16.4,
+      "end": 16.48
     },
     {
       "word": "a",
-      "start": 21.36,
-      "end": 21.48
+      "start": 16.48,
+      "end": 16.58
     },
     {
       "word": "little",
-      "start": 21.48,
-      "end": 21.62
+      "start": 16.58,
+      "end": 16.7
     },
     {
       "word": "blue",
-      "start": 21.62,
-      "end": 21.86
+      "start": 16.7,
+      "end": 16.86
     },
     {
       "word": "house",
-      "start": 21.86,
-      "end": 22.08
+      "start": 16.86,
+      "end": 17.02
     },
     {
       "word": "by",
-      "start": 22.08,
-      "end": 22.32
+      "start": 17.02,
+      "end": 17.18
     },
     {
       "word": "the",
-      "start": 22.32,
-      "end": 22.46
+      "start": 17.18,
+      "end": 17.3
     },
     {
       "word": "docks.",
-      "start": 22.46,
-      "end": 22.68
+      "start": 17.3,
+      "end": 17.52
     },
     {
       "word": "My",
-      "start": 23.06,
-      "end": 23.18
+      "start": 18.0,
+      "end": 18.1
     },
     {
       "word": "sister",
-      "start": 23.18,
-      "end": 23.44
+      "start": 18.1,
+      "end": 18.16
     },
     {
       "word": "June",
-      "start": 23.44,
-      "end": 23.68
+      "start": 18.16,
+      "end": 18.42
     },
     {
       "word": "was",
-      "start": 23.68,
-      "end": 23.88
+      "start": 18.42,
+      "end": 18.56
     },
     {
       "word": "six.",
-      "start": 23.88,
-      "end": 24.1
+      "start": 18.56,
+      "end": 18.72
     },
     {
       "word": "She",
-      "start": 24.48,
-      "end": 24.64
+      "start": 19.16,
+      "end": 19.28
     },
     {
       "word": "stopped",
-      "start": 24.64,
-      "end": 24.92
+      "start": 19.28,
+      "end": 19.44
     },
     {
       "word": "talking",
-      "start": 24.92,
-      "end": 25.3
+      "start": 19.44,
+      "end": 19.68
     },
     {
       "word": "the",
-      "start": 25.3,
-      "end": 25.46
+      "start": 19.68,
+      "end": 19.82
     },
     {
       "word": "day",
-      "start": 25.46,
-      "end": 25.64
+      "start": 19.82,
+      "end": 19.92
     },
     {
       "word": "we",
-      "start": 25.64,
-      "end": 25.84
+      "start": 19.92,
+      "end": 20.02
     },
     {
       "word": "packed",
-      "start": 25.84,
-      "end": 26.06
+      "start": 20.02,
+      "end": 20.18
     },
     {
       "word": "up",
-      "start": 26.06,
-      "end": 26.24
+      "start": 20.18,
+      "end": 20.28
     },
     {
       "word": "her",
-      "start": 26.24,
-      "end": 26.42
+      "start": 20.28,
+      "end": 20.4
     },
     {
       "word": "room.",
-      "start": 26.42,
-      "end": 26.7
+      "start": 20.4,
+      "end": 20.58
     },
     {
       "word": "Not",
-      "start": 26.96,
-      "end": 27.1
+      "start": 20.84,
+      "end": 20.96
     },
     {
       "word": "sad",
-      "start": 27.1,
-      "end": 27.38
+      "start": 20.96,
+      "end": 21.16
     },
     {
       "word": "-quiet.",
-      "start": 27.38,
-      "end": 27.68
+      "start": 21.16,
+      "end": 21.34
     },
     {
       "word": "Just",
-      "start": 28.04,
-      "end": 28.22
+      "start": 21.52,
+      "end": 21.62
     },
     {
       "word": "gone",
-      "start": 28.22,
-      "end": 28.48
+      "start": 21.62,
+      "end": 21.82
     },
     {
       "word": "-quiet.",
-      "start": 28.48,
-      "end": 28.78
+      "start": 21.82,
+      "end": 22.02
     },
     {
       "word": "Mom",
-      "start": 29.12,
-      "end": 29.28
+      "start": 22.5,
+      "end": 22.6
     },
     {
       "word": "tried",
-      "start": 29.28,
-      "end": 29.56
+      "start": 22.6,
+      "end": 22.8
     },
     {
       "word": "pancakes.",
-      "start": 29.56,
-      "end": 29.98
+      "start": 22.8,
+      "end": 23.1
     },
     {
       "word": "Dad",
-      "start": 29.98,
-      "end": 30.48
+      "start": 23.58,
+      "end": 23.68
     },
     {
       "word": "tried",
-      "start": 30.48,
-      "end": 30.78
+      "start": 23.68,
+      "end": 23.9
     },
     {
       "word": "knock",
-      "start": 30.78,
-      "end": 31.14
+      "start": 23.9,
+      "end": 24.08
     },
     {
       "word": "-knock",
-      "start": 31.14,
-      "end": 31.38
+      "start": 24.08,
+      "end": 24.26
     },
     {
       "word": "jokes.",
-      "start": 31.38,
-      "end": 31.7
+      "start": 24.26,
+      "end": 24.48
     },
     {
       "word": "I",
-      "start": 32.12,
-      "end": 32.12
+      "start": 24.82,
+      "end": 24.92
     },
     {
       "word": "gave",
-      "start": 32.12,
-      "end": 32.3
+      "start": 24.92,
+      "end": 25.02
     },
     {
       "word": "her",
-      "start": 32.3,
-      "end": 32.5
+      "start": 25.02,
+      "end": 25.14
     },
     {
       "word": "my",
-      "start": 32.5,
-      "end": 32.66
+      "start": 25.14,
+      "end": 25.26
     },
     {
       "word": "bike.",
-      "start": 32.66,
-      "end": 32.9
+      "start": 25.26,
+      "end": 25.42
     },
     {
       "word": "Nothing.",
-      "start": 33.14,
-      "end": 33.3
+      "start": 25.76,
+      "end": 25.92
     },
     {
       "word": "The",
-      "start": 33.7,
-      "end": 33.7
+      "start": 26.2,
+      "end": 26.3
     },
     {
       "word": "first",
-      "start": 33.7,
-      "end": 33.9
+      "start": 26.3,
+      "end": 26.44
     },
     {
       "word": "foggy",
-      "start": 33.9,
-      "end": 34.3
+      "start": 26.44,
+      "end": 26.72
     },
     {
       "word": "night,",
-      "start": 34.3,
-      "end": 34.5
+      "start": 26.72,
+      "end": 26.82
     },
     {
       "word": "I",
-      "start": 34.76,
-      "end": 34.92
+      "start": 26.86,
+      "end": 26.96
     },
     {
       "word": "couldn't",
-      "start": 34.92,
-      "end": 35.2
+      "start": 26.96,
+      "end": 27.14
     },
     {
       "word": "sleep.",
-      "start": 35.2,
-      "end": 35.44
+      "start": 27.14,
+      "end": 27.36
     },
     {
       "word": "I",
-      "start": 35.76,
-      "end": 35.78
+      "start": 27.7,
+      "end": 27.8
     },
     {
       "word": "looked",
-      "start": 35.78,
-      "end": 35.9
+      "start": 27.8,
+      "end": 27.9
     },
     {
       "word": "out",
-      "start": 35.9,
-      "end": 36.1
+      "start": 27.9,
+      "end": 28.04
     },
     {
       "word": "my",
-      "start": 36.1,
-      "end": 36.28
+      "start": 28.04,
+      "end": 28.18
     },
     {
       "word": "window,",
-      "start": 36.28,
-      "end": 36.54
+      "start": 28.18,
+      "end": 28.38
     },
     {
       "word": "and",
-      "start": 36.78,
-      "end": 36.88
+      "start": 28.48,
+      "end": 28.56
     },
     {
       "word": "the",
-      "start": 36.88,
-      "end": 37.0
+      "start": 28.56,
+      "end": 28.66
     },
     {
       "word": "beam",
-      "start": 37.0,
-      "end": 37.2
+      "start": 28.66,
+      "end": 28.8
     },
     {
       "word": "was",
-      "start": 37.2,
-      "end": 37.36
+      "start": 28.8,
+      "end": 28.92
     },
     {
       "word": "sweeping",
-      "start": 37.36,
-      "end": 37.62
+      "start": 28.92,
+      "end": 29.06
     },
     {
       "word": "the",
-      "start": 37.62,
-      "end": 37.86
+      "start": 29.06,
+      "end": 29.22
     },
     {
       "word": "whole",
-      "start": 37.86,
-      "end": 38.06
+      "start": 29.22,
+      "end": 29.38
     },
     {
       "word": "town.",
-      "start": 38.06,
-      "end": 38.38
+      "start": 29.38,
+      "end": 29.58
     },
     {
       "word": "Then",
-      "start": 38.68,
-      "end": 38.74
+      "start": 29.78,
+      "end": 29.86
     },
     {
       "word": "it",
-      "start": 38.74,
-      "end": 38.86
+      "start": 29.86,
+      "end": 29.98
     },
     {
       "word": "stopped.",
-      "start": 38.86,
-      "end": 39.16
+      "start": 29.98,
+      "end": 30.18
     },
     {
       "word": "Right",
-      "start": 39.64,
-      "end": 39.68
+      "start": 30.5,
+      "end": 30.56
     },
     {
       "word": "on",
-      "start": 39.68,
-      "end": 39.86
+      "start": 30.56,
+      "end": 30.7
     },
     {
       "word": "our",
-      "start": 39.86,
-      "end": 40.06
+      "start": 30.7,
+      "end": 30.82
     },
     {
       "word": "house.",
-      "start": 40.06,
-      "end": 40.32
+      "start": 30.82,
+      "end": 31.08
     },
     {
       "word": "On",
-      "start": 40.64,
-      "end": 40.78
+      "start": 31.38,
+      "end": 31.48
     },
     {
       "word": "June's",
-      "start": 40.78,
-      "end": 41.14
+      "start": 31.48,
+      "end": 31.7
     },
     {
       "word": "window.",
-      "start": 41.14,
-      "end": 41.42
+      "start": 31.7,
+      "end": 31.92
     },
     {
       "word": "I",
-      "start": 41.68,
-      "end": 41.8
+      "start": 32.28,
+      "end": 32.36
     },
     {
       "word": "tiptoed",
-      "start": 41.8,
-      "end": 42.16
+      "start": 32.36,
+      "end": 32.6
     },
     {
       "word": "into",
-      "start": 42.16,
-      "end": 42.4
+      "start": 32.6,
+      "end": 32.72
     },
     {
       "word": "her",
-      "start": 42.4,
-      "end": 42.6
+      "start": 32.72,
+      "end": 32.86
     },
     {
       "word": "room.",
-      "start": 42.6,
-      "end": 42.86
+      "start": 32.86,
+      "end": 33.04
     },
     {
       "word": "She",
-      "start": 43.1,
-      "end": 43.24
+      "start": 33.2,
+      "end": 33.28
     },
     {
       "word": "was",
-      "start": 43.24,
-      "end": 43.38
+      "start": 33.28,
+      "end": 33.4
     },
     {
       "word": "sitting",
-      "start": 43.38,
-      "end": 43.54
+      "start": 33.4,
+      "end": 33.54
     },
     {
       "word": "up,",
-      "start": 43.54,
-      "end": 43.84
+      "start": 33.54,
+      "end": 33.76
     },
     {
       "word": "staring",
-      "start": 44.02,
-      "end": 44.18
+      "start": 33.82,
+      "end": 33.98
     },
     {
       "word": "at",
+      "start": 33.98,
+      "end": 34.18
+    },
+    {
+      "word": "the",
+      "start": 34.18,
+      "end": 34.26
+    },
+    {
+      "word": "light.",
+      "start": 34.26,
+      "end": 34.42
+    },
+    {
+      "word": "Are",
+      "start": 34.84,
+      "end": 34.94
+    },
+    {
+      "word": "you",
+      "start": 34.94,
+      "end": 35.04
+    },
+    {
+      "word": "lost?",
+      "start": 35.04,
+      "end": 35.32
+    },
+    {
+      "word": "I",
+      "start": 35.58,
+      "end": 35.66
+    },
+    {
+      "word": "whispered.",
+      "start": 35.66,
+      "end": 35.84
+    },
+    {
+      "word": "She",
+      "start": 36.36,
+      "end": 36.44
+    },
+    {
+      "word": "nodded.",
+      "start": 36.44,
+      "end": 36.62
+    },
+    {
+      "word": "Me",
+      "start": 36.88,
+      "end": 36.96
+    },
+    {
+      "word": "too,",
+      "start": 36.96,
+      "end": 37.14
+    },
+    {
+      "word": "a",
+      "start": 37.2,
+      "end": 37.26
+    },
+    {
+      "word": "little.",
+      "start": 37.26,
+      "end": 37.42
+    },
+    {
+      "word": "I",
+      "start": 37.62,
+      "end": 37.64
+    },
+    {
+      "word": "said.",
+      "start": 37.64,
+      "end": 37.84
+    },
+    {
+      "word": "New",
+      "start": 38.1,
+      "end": 38.16
+    },
+    {
+      "word": "house.",
+      "start": 38.16,
+      "end": 38.36
+    },
+    {
+      "word": "New",
+      "start": 38.52,
+      "end": 38.58
+    },
+    {
+      "word": "street.",
+      "start": 38.58,
+      "end": 38.78
+    },
+    {
+      "word": "New",
+      "start": 38.92,
+      "end": 38.94
+    },
+    {
+      "word": "everything.",
+      "start": 38.94,
+      "end": 39.22
+    },
+    {
+      "word": "The",
+      "start": 39.64,
+      "end": 39.72
+    },
+    {
+      "word": "light",
+      "start": 39.72,
+      "end": 39.84
+    },
+    {
+      "word": "stayed",
+      "start": 39.84,
+      "end": 39.98
+    },
+    {
+      "word": "all",
+      "start": 39.98,
+      "end": 40.14
+    },
+    {
+      "word": "night.",
+      "start": 40.14,
+      "end": 40.28
+    },
+    {
+      "word": "So",
+      "start": 40.46,
+      "end": 40.5
+    },
+    {
+      "word": "did",
+      "start": 40.5,
+      "end": 40.64
+    },
+    {
+      "word": "I.",
+      "start": 40.64,
+      "end": 40.84
+    },
+    {
+      "word": "The",
+      "start": 41.2,
+      "end": 41.3
+    },
+    {
+      "word": "next",
+      "start": 41.3,
+      "end": 41.42
+    },
+    {
+      "word": "morning,",
+      "start": 41.42,
+      "end": 41.62
+    },
+    {
+      "word": "the",
+      "start": 41.82,
+      "end": 41.82
+    },
+    {
+      "word": "lighthouse",
+      "start": 41.82,
+      "end": 41.98
+    },
+    {
+      "word": "keeper,",
+      "start": 41.98,
+      "end": 42.28
+    },
+    {
+      "word": "old",
+      "start": 42.38,
+      "end": 42.46
+    },
+    {
+      "word": "Mr.",
+      "start": 42.46,
+      "end": 42.68
+    },
+    {
+      "word": "Pell,",
+      "start": 42.84,
+      "end": 42.86
+    },
+    {
+      "word": "knocked",
+      "start": 42.96,
+      "end": 43.12
+    },
+    {
+      "word": "on",
+      "start": 43.12,
+      "end": 43.3
+    },
+    {
+      "word": "our",
+      "start": 43.3,
+      "end": 43.42
+    },
+    {
+      "word": "door",
+      "start": 43.42,
+      "end": 43.54
+    },
+    {
+      "word": "with",
+      "start": 43.54,
+      "end": 43.68
+    },
+    {
+      "word": "a",
+      "start": 43.68,
+      "end": 43.78
+    },
+    {
+      "word": "jar",
+      "start": 43.78,
+      "end": 43.94
+    },
+    {
+      "word": "of",
+      "start": 43.94,
+      "end": 44.08
+    },
+    {
+      "word": "sea",
+      "start": 44.08,
+      "end": 44.18
+    },
+    {
+      "word": "glass.",
       "start": 44.18,
       "end": 44.42
     },
     {
-      "word": "the",
-      "start": 44.42,
-      "end": 44.52
-    },
-    {
-      "word": "light.",
-      "start": 44.52,
-      "end": 44.72
-    },
-    {
-      "word": "Are",
-      "start": 44.72,
-      "end": 45.08
-    },
-    {
-      "word": "you",
-      "start": 45.08,
-      "end": 45.24
-    },
-    {
-      "word": "lost?",
-      "start": 45.24,
-      "end": 45.52
-    },
-    {
-      "word": "I",
-      "start": 45.8,
-      "end": 45.88
-    },
-    {
-      "word": "whispered.",
-      "start": 45.88,
-      "end": 46.16
-    },
-    {
-      "word": "She",
-      "start": 46.58,
-      "end": 46.66
-    },
-    {
-      "word": "nodded.",
-      "start": 46.66,
-      "end": 46.96
-    },
-    {
-      "word": "Me",
-      "start": 47.3,
-      "end": 47.38
-    },
-    {
-      "word": "too,",
-      "start": 47.38,
-      "end": 47.64
-    },
-    {
-      "word": "a",
-      "start": 47.74,
-      "end": 47.86
-    },
-    {
-      "word": "little,",
-      "start": 47.86,
-      "end": 48.04
-    },
-    {
-      "word": "I",
-      "start": 48.2,
-      "end": 48.28
-    },
-    {
-      "word": "said.",
-      "start": 48.28,
-      "end": 48.56
-    },
-    {
-      "word": "New",
-      "start": 48.92,
-      "end": 48.96
-    },
-    {
-      "word": "house.",
-      "start": 48.96,
-      "end": 49.2
-    },
-    {
-      "word": "New",
-      "start": 49.58,
-      "end": 49.74
-    },
-    {
-      "word": "street.",
-      "start": 49.74,
-      "end": 50.12
-    },
-    {
-      "word": "New",
-      "start": 50.4,
-      "end": 50.56
-    },
-    {
-      "word": "everything.",
-      "start": 50.56,
-      "end": 50.94
-    },
-    {
       "word": "The",
-      "start": 51.34,
-      "end": 51.46
+      "start": 44.8,
+      "end": 44.92
     },
     {
       "word": "light",
-      "start": 51.46,
-      "end": 51.64
-    },
-    {
-      "word": "stayed",
-      "start": 51.64,
-      "end": 51.88
-    },
-    {
-      "word": "all",
-      "start": 51.88,
-      "end": 52.16
-    },
-    {
-      "word": "night.",
-      "start": 52.16,
-      "end": 52.44
-    },
-    {
-      "word": "So",
-      "start": 52.74,
-      "end": 52.92
-    },
-    {
-      "word": "did",
-      "start": 52.92,
-      "end": 53.1
-    },
-    {
-      "word": "I.",
-      "start": 53.1,
-      "end": 53.36
-    },
-    {
-      "word": "The",
-      "start": 53.6,
-      "end": 53.68
-    },
-    {
-      "word": "next",
-      "start": 53.68,
-      "end": 53.86
-    },
-    {
-      "word": "morning,",
-      "start": 53.86,
-      "end": 54.2
-    },
-    {
-      "word": "the",
-      "start": 54.4,
-      "end": 54.48
-    },
-    {
-      "word": "lighthouse",
-      "start": 54.48,
-      "end": 54.74
-    },
-    {
-      "word": "keeper,",
-      "start": 54.74,
-      "end": 55.12
-    },
-    {
-      "word": "old",
-      "start": 55.28,
-      "end": 55.4
-    },
-    {
-      "word": "Mr.",
-      "start": 55.4,
-      "end": 55.7
-    },
-    {
-      "word": "Pell,",
-      "start": 56.18,
-      "end": 56.18
-    },
-    {
-      "word": "knocked",
-      "start": 56.42,
-      "end": 56.66
-    },
-    {
-      "word": "on",
-      "start": 56.66,
-      "end": 56.84
-    },
-    {
-      "word": "our",
-      "start": 56.84,
-      "end": 56.98
-    },
-    {
-      "word": "door",
-      "start": 56.98,
-      "end": 57.14
-    },
-    {
-      "word": "with",
-      "start": 57.14,
-      "end": 57.32
-    },
-    {
-      "word": "a",
-      "start": 57.32,
-      "end": 57.44
-    },
-    {
-      "word": "jar",
-      "start": 57.44,
-      "end": 57.64
-    },
-    {
-      "word": "of",
-      "start": 57.64,
-      "end": 57.82
-    },
-    {
-      "word": "sea",
-      "start": 57.82,
-      "end": 58.0
-    },
-    {
-      "word": "glass.",
-      "start": 58.0,
-      "end": 58.28
-    },
-    {
-      "word": "The",
-      "start": 58.56,
-      "end": 58.68
-    },
-    {
-      "word": "light",
-      "start": 58.68,
-      "end": 58.88
+      "start": 44.92,
+      "end": 45.04
     },
     {
       "word": "doesn't",
-      "start": 58.88,
-      "end": 59.16
+      "start": 45.04,
+      "end": 45.26
     },
     {
       "word": "fix",
-      "start": 59.16,
-      "end": 59.36
+      "start": 45.26,
+      "end": 45.4
     },
     {
       "word": "lost,",
-      "start": 59.36,
-      "end": 59.66
+      "start": 45.4,
+      "end": 45.64
     },
     {
       "word": "he",
-      "start": 59.82,
-      "end": 59.92
+      "start": 45.84,
+      "end": 45.92
     },
     {
       "word": "said.",
-      "start": 59.92,
-      "end": 60.16
+      "start": 45.92,
+      "end": 46.1
     },
     {
       "word": "It",
-      "start": 60.36,
-      "end": 60.48
+      "start": 46.34,
+      "end": 46.44
     },
     {
       "word": "just",
-      "start": 60.48,
-      "end": 60.64
+      "start": 46.44,
+      "end": 46.58
     },
     {
       "word": "shows",
-      "start": 60.64,
-      "end": 60.94
+      "start": 46.58,
+      "end": 46.76
     },
     {
       "word": "someone",
-      "start": 60.94,
-      "end": 61.32
+      "start": 46.76,
+      "end": 46.98
     },
     {
       "word": "where",
-      "start": 61.32,
-      "end": 61.5
+      "start": 46.98,
+      "end": 47.1
     },
     {
       "word": "to",
-      "start": 61.5,
-      "end": 61.68
+      "start": 47.1,
+      "end": 47.24
     },
     {
       "word": "sit.",
-      "start": 61.68,
-      "end": 61.88
+      "start": 47.24,
+      "end": 47.4
     },
     {
       "word": "June",
-      "start": 62.24,
-      "end": 62.38
+      "start": 47.88,
+      "end": 48.0
     },
     {
       "word": "took",
-      "start": 62.38,
-      "end": 62.62
+      "start": 48.0,
+      "end": 48.12
     },
     {
       "word": "the",
-      "start": 62.62,
-      "end": 62.82
+      "start": 48.12,
+      "end": 48.26
     },
     {
       "word": "jar.",
-      "start": 62.82,
-      "end": 63.14
+      "start": 48.26,
+      "end": 48.42
     },
     {
       "word": "She",
-      "start": 63.46,
-      "end": 63.6
+      "start": 48.74,
+      "end": 48.8
     },
     {
       "word": "held",
-      "start": 63.6,
-      "end": 63.76
+      "start": 48.8,
+      "end": 48.92
     },
     {
       "word": "a",
-      "start": 63.76,
-      "end": 63.88
+      "start": 48.92,
+      "end": 49.04
     },
     {
       "word": "blue",
-      "start": 63.88,
-      "end": 64.04
+      "start": 49.04,
+      "end": 49.16
     },
     {
       "word": "piece",
-      "start": 64.04,
-      "end": 64.3
+      "start": 49.16,
+      "end": 49.34
     },
     {
       "word": "up",
-      "start": 64.3,
-      "end": 64.48
+      "start": 49.34,
+      "end": 49.44
     },
     {
       "word": "to",
-      "start": 64.48,
-      "end": 64.62
+      "start": 49.44,
+      "end": 49.54
     },
     {
       "word": "the",
-      "start": 64.62,
-      "end": 64.74
+      "start": 49.54,
+      "end": 49.64
     },
     {
       "word": "sun.",
-      "start": 64.74,
-      "end": 64.94
+      "start": 49.64,
+      "end": 49.8
     },
     {
       "word": "And",
-      "start": 65.22,
-      "end": 65.32
+      "start": 50.1,
+      "end": 50.16
     },
     {
       "word": "for",
-      "start": 65.32,
-      "end": 65.46
+      "start": 50.16,
+      "end": 50.26
     },
     {
       "word": "the",
-      "start": 65.46,
-      "end": 65.58
+      "start": 50.26,
+      "end": 50.34
     },
     {
       "word": "first",
-      "start": 65.58,
-      "end": 65.76
+      "start": 50.34,
+      "end": 50.48
     },
     {
       "word": "time",
-      "start": 65.76,
-      "end": 66.04
+      "start": 50.48,
+      "end": 50.64
     },
     {
       "word": "in",
-      "start": 66.04,
-      "end": 66.24
+      "start": 50.64,
+      "end": 50.78
     },
     {
       "word": "three",
-      "start": 66.24,
-      "end": 66.46
+      "start": 50.78,
+      "end": 50.9
     },
     {
       "word": "weeks,",
-      "start": 66.46,
-      "end": 66.76
+      "start": 50.9,
+      "end": 51.1
     },
     {
       "word": "she",
-      "start": 67.02,
-      "end": 67.12
+      "start": 51.22,
+      "end": 51.28
     },
     {
       "word": "said",
-      "start": 67.12,
-      "end": 67.32
+      "start": 51.28,
+      "end": 51.4
     },
     {
       "word": "one",
-      "start": 67.32,
-      "end": 67.54
+      "start": 51.4,
+      "end": 51.56
     },
     {
-      "word": "word,",
-      "start": 67.54,
-      "end": 67.8
+      "word": "word.",
+      "start": 51.56,
+      "end": 51.76
     },
     {
-      "word": "home.",
-      "start": 67.88,
-      "end": 68.12
+      "word": "Home.",
+      "start": 52.18,
+      "end": 52.34
+    },
+    {
+      "word": "Home.",
+      "start": 52.34,
+      "end": 52.4
     }
   ]
 }

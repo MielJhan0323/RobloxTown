@@ -3,13 +3,13 @@
   "title": "The Lighthouse for Lost People",
   "timing": "voice",
   "voice": "output/stock/voice/lighthouse.wav",
-  "duration": 69.793,
+  "duration": 53.932,
   "shots": [
     {
       "n": 1,
       "text": "In this town,",
       "start": 0.0,
-      "end": 1.02,
+      "end": 0.54,
       "src": "raw/lighthouse/shot_01.mov",
       "src_dur": 3.783,
       "motion": "push_in",
@@ -17,13 +17,13 @@
       "grade": "warm",
       "placeholder": null,
       "override": {},
-      "dur": 1.02
+      "dur": 0.54
     },
     {
       "n": 2,
       "text": "the lighthouse shines for anyone who's lost.",
-      "start": 1.02,
-      "end": 3.3,
+      "start": 0.54,
+      "end": 2.24,
       "src": "raw/lighthouse/shot_02.mov",
       "src_dur": 4.767,
       "motion": "push_in",
@@ -31,13 +31,13 @@
       "grade": "warm",
       "placeholder": null,
       "override": {},
-      "dur": 2.28
+      "dur": 1.7
     },
     {
       "n": 3,
       "text": "Not just ships.",
-      "start": 3.3,
-      "end": 4.16,
+      "start": 2.24,
+      "end": 3.02,
       "src": "raw/lighthouse/shot_03.mov",
       "src_dur": 3.733,
       "motion": "pan_right",
@@ -45,13 +45,13 @@
       "grade": "warm",
       "placeholder": null,
       "override": {},
-      "dur": 0.86
+      "dur": 0.78
     },
     {
       "n": 4,
       "text": "People.",
-      "start": 4.16,
-      "end": 4.66,
+      "start": 3.02,
+      "end": 3.6,
       "src": "raw/lighthouse/shot_04.mov",
       "src_dur": 5.55,
       "motion": "punch",
@@ -59,13 +59,13 @@
       "grade": "warm",
       "placeholder": null,
       "override": {},
-      "dur": 0.5
+      "dur": 0.58
     },
     {
       "n": 5,
       "text": "When Tommy Briggs got lost at the summer fair,",
-      "start": 4.66,
-      "end": 6.96,
+      "start": 3.6,
+      "end": 5.18,
       "src": "raw/lighthouse/shot_05.mov",
       "src_dur": 4.583,
       "motion": "pan_left",
@@ -73,13 +73,13 @@
       "grade": "warm",
       "placeholder": null,
       "override": {},
-      "dur": 2.3
+      "dur": 1.58
     },
     {
       "n": 6,
       "text": "the beam found him at the cotton candy stand.",
-      "start": 6.96,
-      "end": 9.1,
+      "start": 5.18,
+      "end": 6.96,
       "src": "raw/lighthouse/shot_06.mov",
       "src_dur": 3.483,
       "motion": "push_in",
@@ -87,13 +87,13 @@
       "grade": "warm",
       "placeholder": null,
       "override": {},
-      "dur": 2.14
+      "dur": 1.78
     },
     {
       "n": 7,
       "text": "When Mrs. Alder lost her glasses,",
-      "start": 9.1,
-      "end": 11.34,
+      "start": 6.96,
+      "end": 8.76,
       "src": "raw/lighthouse/shot_07.mov",
       "src_dur": 3.5,
       "motion": "push_in",
@@ -101,13 +101,13 @@
       "grade": "warm",
       "placeholder": null,
       "override": {},
-      "dur": 2.24
+      "dur": 1.8
     },
     {
       "n": 8,
       "text": "it lit up her own head.",
-      "start": 11.34,
-      "end": 12.46,
+      "start": 8.76,
+      "end": 9.62,
       "src": "raw/lighthouse/shot_08.mov",
       "src_dur": 4.6,
       "motion": "punch",
@@ -115,13 +115,13 @@
       "grade": "warm",
       "placeholder": null,
       "override": {},
-      "dur": 1.12
+      "dur": 0.86
     },
     {
       "n": 9,
       "text": "They were on it.",
-      "start": 12.46,
-      "end": 13.24,
+      "start": 9.62,
+      "end": 10.36,
       "src": "raw/lighthouse/shot_09.mov",
       "src_dur": 3.75,
       "motion": "push_in",
@@ -133,13 +133,13 @@
         "src_in": 2.6,
         "motion": "punch"
       },
-      "dur": 0.78
+      "dur": 0.74
     },
     {
       "n": 10,
       "text": "And when my dad lost his job,",
-      "start": 13.24,
-      "end": 14.86,
+      "start": 10.36,
+      "end": 11.44,
       "src": "raw/lighthouse/shot_10.mov",
       "src_dur": 3.767,
       "motion": "push_in",
@@ -147,13 +147,13 @@
       "grade": "cool",
       "placeholder": null,
       "override": {},
-      "dur": 1.62
+      "dur": 1.08
     },
     {
       "n": 11,
       "text": "it shone on our porch for a whole week.",
-      "start": 14.86,
-      "end": 16.8,
+      "start": 11.44,
+      "end": 12.94,
       "src": "raw/lighthouse/shot_11.mov",
       "src_dur": 3.767,
       "motion": "push_in",
@@ -161,15 +161,295 @@
       "grade": "cool",
       "placeholder": null,
       "override": {},
-      "dur": 1.94
+      "dur": 1.5
     },
     {
       "n": 12,
       "text": "He pretended not to notice.",
-      "start": 16.8,
-      "end": 18.32,
+      "start": 12.94,
+      "end": 14.14,
       "src": "raw/lighthouse/shot_12.mov",
       "src_dur": 2.65,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.2
+    },
+    {
+      "n": 13,
+      "text": "He noticed.",
+      "start": 14.14,
+      "end": 14.88,
+      "src": "raw/lighthouse/shot_13.mov",
+      "src_dur": 3.783,
+      "motion": "punch",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 0.74
+    },
+    {
+      "n": 14,
+      "text": "Then, we moved.",
+      "start": 14.88,
+      "end": 15.94,
+      "src": "raw/lighthouse/shot_14.mov",
+      "src_dur": 2.85,
+      "motion": "pan_right",
+      "transition": "fog",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.06
+    },
+    {
+      "n": 15,
+      "text": "Across town, to a little blue house by the docks.",
+      "start": 15.94,
+      "end": 18.0,
+      "src": "raw/lighthouse/shot_15.mov",
+      "src_dur": 3.783,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 2.06
+    },
+    {
+      "n": 16,
+      "text": "My sister June was six.",
+      "start": 18.0,
+      "end": 19.16,
+      "src": "raw/lighthouse/shot_16.mov",
+      "src_dur": 2.8,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.16
+    },
+    {
+      "n": 17,
+      "text": "She stopped talking the day we packed up her room.",
+      "start": 19.16,
+      "end": 20.84,
+      "src": "raw/lighthouse/shot_17.mov",
+      "src_dur": 3.817,
+      "motion": "pan_left",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.68
+    },
+    {
+      "n": 18,
+      "text": "Not sad-quiet.",
+      "start": 20.84,
+      "end": 21.52,
+      "src": "raw/lighthouse/shot_18.mov",
+      "src_dur": 2.817,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 0.68
+    },
+    {
+      "n": 19,
+      "text": "Just gone-quiet.",
+      "start": 21.52,
+      "end": 22.5,
+      "src": "raw/lighthouse/shot_19.mov",
+      "src_dur": 2.717,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 0.98
+    },
+    {
+      "n": 20,
+      "text": "Mom tried pancakes.",
+      "start": 22.5,
+      "end": 23.58,
+      "src": "raw/lighthouse/shot_20.mov",
+      "src_dur": 2.8,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.08
+    },
+    {
+      "n": 21,
+      "text": "Dad tried knock-knock jokes.",
+      "start": 23.58,
+      "end": 24.82,
+      "src": "raw/lighthouse/shot_21.mov",
+      "src_dur": 2.833,
+      "motion": "pan_right",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.24
+    },
+    {
+      "n": 22,
+      "text": "I gave her my bike.",
+      "start": 24.82,
+      "end": 25.76,
+      "src": "raw/lighthouse/shot_22.mov",
+      "src_dur": 2.75,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 0.94
+    },
+    {
+      "n": 23,
+      "text": "Nothing.",
+      "start": 25.76,
+      "end": 26.2,
+      "src": "raw/lighthouse/shot_23.mov",
+      "src_dur": 1.767,
+      "motion": "drift",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 0.44
+    },
+    {
+      "n": 24,
+      "text": "The first foggy night, I couldn't sleep.",
+      "start": 26.2,
+      "end": 27.7,
+      "src": "raw/lighthouse/shot_24.mov",
+      "src_dur": 2.817,
+      "motion": "push_in",
+      "transition": "fog",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.5
+    },
+    {
+      "n": 25,
+      "text": "I looked out my window,",
+      "start": 27.7,
+      "end": 28.48,
+      "src": "raw/lighthouse/shot_25.mov",
+      "src_dur": 2.817,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 0.78
+    },
+    {
+      "n": 26,
+      "text": "and the beam was sweeping the whole town.",
+      "start": 28.48,
+      "end": 29.78,
+      "src": "raw/lighthouse/shot_26.mov",
+      "src_dur": 2.783,
+      "motion": "pan_left",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.3
+    },
+    {
+      "n": 27,
+      "text": "Then it stopped.",
+      "start": 29.78,
+      "end": 30.5,
+      "src": "raw/lighthouse/shot_27.mov",
+      "src_dur": 1.833,
+      "motion": "drift",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 0.72
+    },
+    {
+      "n": 28,
+      "text": "Right on our house.",
+      "start": 30.5,
+      "end": 31.38,
+      "src": "raw/lighthouse/shot_28.mov",
+      "src_dur": 2.75,
+      "motion": "punch",
+      "transition": "sparkle",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 0.88
+    },
+    {
+      "n": 29,
+      "text": "On June's window.",
+      "start": 31.38,
+      "end": 32.28,
+      "src": "raw/lighthouse/shot_29.mov",
+      "src_dur": 2.817,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 0.9
+    },
+    {
+      "n": 30,
+      "text": "I tiptoed into her room.",
+      "start": 32.28,
+      "end": 33.2,
+      "src": "raw/lighthouse/shot_30.mov",
+      "src_dur": 2.833,
+      "motion": "pan_right",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 0.92
+    },
+    {
+      "n": 31,
+      "text": "She was sitting up, staring at the light.",
+      "start": 33.2,
+      "end": 34.84,
+      "src": "raw/lighthouse/shot_31.mov",
+      "src_dur": 2.783,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.64
+    },
+    {
+      "n": 32,
+      "text": "\"Are you lost?\" I whispered.",
+      "start": 34.84,
+      "end": 36.36,
+      "src": "raw/lighthouse/shot_32.mov",
+      "src_dur": 2.817,
       "motion": "push_in",
       "transition": "cut",
       "grade": "cool",
@@ -178,290 +458,10 @@
       "dur": 1.52
     },
     {
-      "n": 13,
-      "text": "He noticed.",
-      "start": 18.32,
-      "end": 19.18,
-      "src": "raw/lighthouse/shot_13.mov",
-      "src_dur": 3.783,
-      "motion": "punch",
-      "transition": "cut",
-      "grade": "cool",
-      "placeholder": null,
-      "override": {},
-      "dur": 0.86
-    },
-    {
-      "n": 14,
-      "text": "Then, we moved.",
-      "start": 19.18,
-      "end": 20.38,
-      "src": "raw/lighthouse/shot_14.mov",
-      "src_dur": 2.85,
-      "motion": "pan_right",
-      "transition": "fog",
-      "grade": "neutral",
-      "placeholder": null,
-      "override": {},
-      "dur": 1.2
-    },
-    {
-      "n": 15,
-      "text": "Across town, to a little blue house by the docks.",
-      "start": 20.38,
-      "end": 23.06,
-      "src": "raw/lighthouse/shot_15.mov",
-      "src_dur": 3.783,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": null,
-      "override": {},
-      "dur": 2.68
-    },
-    {
-      "n": 16,
-      "text": "My sister June was six.",
-      "start": 23.06,
-      "end": 24.48,
-      "src": "raw/lighthouse/shot_16.mov",
-      "src_dur": 2.8,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": null,
-      "override": {},
-      "dur": 1.42
-    },
-    {
-      "n": 17,
-      "text": "She stopped talking the day we packed up her room.",
-      "start": 24.48,
-      "end": 26.96,
-      "src": "raw/lighthouse/shot_17.mov",
-      "src_dur": 3.817,
-      "motion": "pan_left",
-      "transition": "cut",
-      "grade": "cool",
-      "placeholder": null,
-      "override": {},
-      "dur": 2.48
-    },
-    {
-      "n": 18,
-      "text": "Not sad-quiet.",
-      "start": 26.96,
-      "end": 28.04,
-      "src": "raw/lighthouse/shot_18.mov",
-      "src_dur": 2.817,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "cool",
-      "placeholder": null,
-      "override": {},
-      "dur": 1.08
-    },
-    {
-      "n": 19,
-      "text": "Just gone-quiet.",
-      "start": 28.04,
-      "end": 29.12,
-      "src": "raw/lighthouse/shot_19.mov",
-      "src_dur": 2.717,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "cool",
-      "placeholder": null,
-      "override": {},
-      "dur": 1.08
-    },
-    {
-      "n": 20,
-      "text": "Mom tried pancakes.",
-      "start": 29.12,
-      "end": 29.98,
-      "src": "raw/lighthouse/shot_20.mov",
-      "src_dur": 2.8,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": null,
-      "override": {},
-      "dur": 0.86
-    },
-    {
-      "n": 21,
-      "text": "Dad tried knock-knock jokes.",
-      "start": 29.98,
-      "end": 32.12,
-      "src": "raw/lighthouse/shot_21.mov",
-      "src_dur": 2.833,
-      "motion": "pan_right",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": null,
-      "override": {},
-      "dur": 2.14
-    },
-    {
-      "n": 22,
-      "text": "I gave her my bike.",
-      "start": 32.12,
-      "end": 33.14,
-      "src": "raw/lighthouse/shot_22.mov",
-      "src_dur": 2.75,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": null,
-      "override": {},
-      "dur": 1.02
-    },
-    {
-      "n": 23,
-      "text": "Nothing.",
-      "start": 33.14,
-      "end": 33.7,
-      "src": "raw/lighthouse/shot_23.mov",
-      "src_dur": 1.767,
-      "motion": "drift",
-      "transition": "cut",
-      "grade": "cool",
-      "placeholder": null,
-      "override": {},
-      "dur": 0.56
-    },
-    {
-      "n": 24,
-      "text": "The first foggy night, I couldn't sleep.",
-      "start": 33.7,
-      "end": 35.76,
-      "src": "raw/lighthouse/shot_24.mov",
-      "src_dur": 2.817,
-      "motion": "push_in",
-      "transition": "fog",
-      "grade": "cool",
-      "placeholder": null,
-      "override": {},
-      "dur": 2.06
-    },
-    {
-      "n": 25,
-      "text": "I looked out my window,",
-      "start": 35.76,
-      "end": 36.78,
-      "src": "raw/lighthouse/shot_25.mov",
-      "src_dur": 2.817,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "cool",
-      "placeholder": null,
-      "override": {},
-      "dur": 1.02
-    },
-    {
-      "n": 26,
-      "text": "and the beam was sweeping the whole town.",
-      "start": 36.78,
-      "end": 38.68,
-      "src": "raw/lighthouse/shot_26.mov",
-      "src_dur": 2.783,
-      "motion": "pan_left",
-      "transition": "cut",
-      "grade": "cool",
-      "placeholder": null,
-      "override": {},
-      "dur": 1.9
-    },
-    {
-      "n": 27,
-      "text": "Then it stopped.",
-      "start": 38.68,
-      "end": 39.64,
-      "src": "raw/lighthouse/shot_27.mov",
-      "src_dur": 1.833,
-      "motion": "drift",
-      "transition": "cut",
-      "grade": "cool",
-      "placeholder": null,
-      "override": {},
-      "dur": 0.96
-    },
-    {
-      "n": 28,
-      "text": "Right on our house.",
-      "start": 39.64,
-      "end": 40.64,
-      "src": "raw/lighthouse/shot_28.mov",
-      "src_dur": 2.75,
-      "motion": "punch",
-      "transition": "sparkle",
-      "grade": "cool",
-      "placeholder": null,
-      "override": {},
-      "dur": 1.0
-    },
-    {
-      "n": 29,
-      "text": "On June's window.",
-      "start": 40.64,
-      "end": 41.68,
-      "src": "raw/lighthouse/shot_29.mov",
-      "src_dur": 2.817,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "cool",
-      "placeholder": null,
-      "override": {},
-      "dur": 1.04
-    },
-    {
-      "n": 30,
-      "text": "I tiptoed into her room.",
-      "start": 41.68,
-      "end": 43.1,
-      "src": "raw/lighthouse/shot_30.mov",
-      "src_dur": 2.833,
-      "motion": "pan_right",
-      "transition": "cut",
-      "grade": "cool",
-      "placeholder": null,
-      "override": {},
-      "dur": 1.42
-    },
-    {
-      "n": 31,
-      "text": "She was sitting up, staring at the light.",
-      "start": 43.1,
-      "end": 44.72,
-      "src": "raw/lighthouse/shot_31.mov",
-      "src_dur": 2.783,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "cool",
-      "placeholder": null,
-      "override": {},
-      "dur": 1.62
-    },
-    {
-      "n": 32,
-      "text": "\"Are you lost?\" I whispered.",
-      "start": 44.72,
-      "end": 46.58,
-      "src": "raw/lighthouse/shot_32.mov",
-      "src_dur": 2.817,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "cool",
-      "placeholder": null,
-      "override": {},
-      "dur": 1.86
-    },
-    {
       "n": 33,
       "text": "She nodded.",
-      "start": 46.58,
-      "end": 47.3,
+      "start": 36.36,
+      "end": 36.88,
       "src": "raw/lighthouse/shot_33.mov",
       "src_dur": 1.767,
       "motion": "push_in",
@@ -469,13 +469,13 @@
       "grade": "cool",
       "placeholder": null,
       "override": {},
-      "dur": 0.72
+      "dur": 0.52
     },
     {
       "n": 34,
       "text": "\"Me too, a little,\" I said.",
-      "start": 47.3,
-      "end": 48.92,
+      "start": 36.88,
+      "end": 38.1,
       "src": "raw/lighthouse/shot_34.mov",
       "src_dur": 2.8,
       "motion": "push_in",
@@ -483,13 +483,13 @@
       "grade": "cool",
       "placeholder": null,
       "override": {},
-      "dur": 1.62
+      "dur": 1.22
     },
     {
       "n": 35,
       "text": "\"New house.",
-      "start": 48.92,
-      "end": 49.58,
+      "start": 38.1,
+      "end": 38.52,
       "src": "raw/lighthouse/shot_35.mov",
       "src_dur": 2.783,
       "motion": "push_in",
@@ -497,13 +497,13 @@
       "grade": "cool",
       "placeholder": null,
       "override": {},
-      "dur": 0.66
+      "dur": 0.42
     },
     {
       "n": 36,
       "text": "New street. New everything.\"",
-      "start": 49.58,
-      "end": 51.34,
+      "start": 38.52,
+      "end": 39.64,
       "src": "raw/lighthouse/shot_36.mov",
       "src_dur": 2.8,
       "motion": "push_in",
@@ -511,13 +511,13 @@
       "grade": "cool",
       "placeholder": null,
       "override": {},
-      "dur": 1.76
+      "dur": 1.12
     },
     {
       "n": 37,
       "text": "The light stayed all night.",
-      "start": 51.34,
-      "end": 52.74,
+      "start": 39.64,
+      "end": 40.46,
       "src": "raw/lighthouse/shot_37.mov",
       "src_dur": 2.833,
       "motion": "push_in",
@@ -525,13 +525,13 @@
       "grade": "cool",
       "placeholder": null,
       "override": {},
-      "dur": 1.4
+      "dur": 0.82
     },
     {
       "n": 38,
       "text": "So did I.",
-      "start": 52.74,
-      "end": 53.6,
+      "start": 40.46,
+      "end": 41.2,
       "src": "raw/lighthouse/shot_38.mov",
       "src_dur": 1.833,
       "motion": "pull_out",
@@ -539,13 +539,13 @@
       "grade": "warm",
       "placeholder": null,
       "override": {},
-      "dur": 0.86
+      "dur": 0.74
     },
     {
       "n": 39,
       "text": "The next morning, the lighthouse keeper,",
-      "start": 53.6,
-      "end": 55.28,
+      "start": 41.2,
+      "end": 42.38,
       "src": "raw/lighthouse/shot_39.mov",
       "src_dur": 2.817,
       "motion": "push_in",
@@ -553,13 +553,13 @@
       "grade": "warm",
       "placeholder": null,
       "override": {},
-      "dur": 1.68
+      "dur": 1.18
     },
     {
       "n": 40,
       "text": "old Mr. Pell, knocked on our door",
-      "start": 55.28,
-      "end": 57.14,
+      "start": 42.38,
+      "end": 43.54,
       "src": "raw/lighthouse/shot_40.mov",
       "src_dur": 2.8,
       "motion": "push_in",
@@ -567,13 +567,13 @@
       "grade": "warm",
       "placeholder": null,
       "override": {},
-      "dur": 1.86
+      "dur": 1.16
     },
     {
       "n": 41,
       "text": "with a jar of sea glass.",
-      "start": 57.14,
-      "end": 58.56,
+      "start": 43.54,
+      "end": 44.8,
       "src": "raw/lighthouse/shot_41.mov",
       "src_dur": 2.85,
       "motion": "punch",
@@ -581,13 +581,13 @@
       "grade": "warm",
       "placeholder": null,
       "override": {},
-      "dur": 1.42
+      "dur": 1.26
     },
     {
       "n": 42,
       "text": "\"The light doesn't fix lost,\" he said.",
-      "start": 58.56,
-      "end": 60.36,
+      "start": 44.8,
+      "end": 46.34,
       "src": "raw/lighthouse/shot_42.mov",
       "src_dur": 2.833,
       "motion": "push_in",
@@ -595,13 +595,13 @@
       "grade": "warm",
       "placeholder": null,
       "override": {},
-      "dur": 1.8
+      "dur": 1.54
     },
     {
       "n": 43,
       "text": "\"It just shows someone where to sit.\"",
-      "start": 60.36,
-      "end": 62.24,
+      "start": 46.34,
+      "end": 47.88,
       "src": "raw/lighthouse/shot_43.mov",
       "src_dur": 2.8,
       "motion": "push_in",
@@ -609,57 +609,15 @@
       "grade": "warm",
       "placeholder": null,
       "override": {},
-      "dur": 1.88
+      "dur": 1.54
     },
     {
       "n": 44,
       "text": "June took the jar.",
-      "start": 62.24,
-      "end": 63.46,
+      "start": 47.88,
+      "end": 48.74,
       "src": "raw/lighthouse/shot_44.mov",
       "src_dur": 1.8,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "warm",
-      "placeholder": null,
-      "override": {},
-      "dur": 1.22
-    },
-    {
-      "n": 45,
-      "text": "She held a blue piece up to the sun.",
-      "start": 63.46,
-      "end": 65.22,
-      "src": "raw/lighthouse/shot_45.mov",
-      "src_dur": 2.8,
-      "motion": "push_in",
-      "transition": "sparkle",
-      "grade": "warm",
-      "placeholder": null,
-      "override": {},
-      "dur": 1.76
-    },
-    {
-      "n": 46,
-      "text": "And for the first time in three weeks,",
-      "start": 65.22,
-      "end": 67.02,
-      "src": "raw/lighthouse/shot_46.mov",
-      "src_dur": 2.833,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "warm",
-      "placeholder": null,
-      "override": {},
-      "dur": 1.8
-    },
-    {
-      "n": 47,
-      "text": "she said one word.",
-      "start": 67.02,
-      "end": 67.88,
-      "src": "raw/lighthouse/shot_47.mov",
-      "src_dur": 1.733,
       "motion": "push_in",
       "transition": "cut",
       "grade": "warm",
@@ -668,10 +626,52 @@
       "dur": 0.86
     },
     {
+      "n": 45,
+      "text": "She held a blue piece up to the sun.",
+      "start": 48.74,
+      "end": 50.1,
+      "src": "raw/lighthouse/shot_45.mov",
+      "src_dur": 2.8,
+      "motion": "push_in",
+      "transition": "sparkle",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.36
+    },
+    {
+      "n": 46,
+      "text": "And for the first time in three weeks,",
+      "start": 50.1,
+      "end": 51.22,
+      "src": "raw/lighthouse/shot_46.mov",
+      "src_dur": 2.833,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.12
+    },
+    {
+      "n": 47,
+      "text": "she said one word.",
+      "start": 51.22,
+      "end": 52.18,
+      "src": "raw/lighthouse/shot_47.mov",
+      "src_dur": 1.733,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 0.96
+    },
+    {
       "n": 48,
       "text": "\"Home.\"",
-      "start": 67.88,
-      "end": 69.793,
+      "start": 52.18,
+      "end": 53.932,
       "src": "raw/lighthouse/shot_48.mov",
       "src_dur": 2.8,
       "motion": "pull_out",
@@ -679,1478 +679,1478 @@
       "grade": "warm",
       "placeholder": null,
       "override": {},
-      "dur": 1.913
+      "dur": 1.752
     }
   ],
   "words": [
     {
       "w": "In",
       "s": 0.0,
-      "e": 0.36,
+      "e": 0.1,
       "shot": 1
     },
     {
       "w": "this",
-      "s": 0.36,
-      "e": 0.52,
+      "s": 0.1,
+      "e": 0.18,
       "shot": 1
     },
     {
       "w": "town,",
-      "s": 0.52,
-      "e": 0.84,
+      "s": 0.18,
+      "e": 0.4,
       "shot": 1
     },
     {
       "w": "the",
-      "s": 1.02,
-      "e": 1.12,
+      "s": 0.54,
+      "e": 0.56,
       "shot": 2
     },
     {
       "w": "lighthouse",
-      "s": 1.12,
-      "e": 1.42,
+      "s": 0.56,
+      "e": 0.76,
       "shot": 2
     },
     {
       "w": "shines",
-      "s": 1.42,
-      "e": 1.88,
+      "s": 0.76,
+      "e": 1.06,
       "shot": 2
     },
     {
       "w": "for",
-      "s": 1.88,
-      "e": 2.08,
+      "s": 1.06,
+      "e": 1.24,
       "shot": 2
     },
     {
       "w": "anyone",
-      "s": 2.08,
-      "e": 2.36,
+      "s": 1.24,
+      "e": 1.44,
       "shot": 2
     },
     {
       "w": "who's",
-      "s": 2.36,
-      "e": 2.68,
+      "s": 1.44,
+      "e": 1.66,
       "shot": 2
     },
     {
       "w": "lost.",
-      "s": 2.68,
-      "e": 3.02,
+      "s": 1.66,
+      "e": 1.88,
       "shot": 2
     },
     {
       "w": "Not",
-      "s": 3.3,
-      "e": 3.44,
+      "s": 2.24,
+      "e": 2.4,
       "shot": 3
     },
     {
       "w": "just",
-      "s": 3.44,
-      "e": 3.66,
+      "s": 2.4,
+      "e": 2.58,
       "shot": 3
     },
     {
       "w": "ships.",
-      "s": 3.66,
-      "e": 3.92,
+      "s": 2.58,
+      "e": 2.78,
       "shot": 3
     },
     {
       "w": "People.",
-      "s": 4.16,
-      "e": 4.36,
+      "s": 3.02,
+      "e": 3.18,
       "shot": 4
     },
     {
       "w": "When",
-      "s": 4.66,
-      "e": 4.76,
+      "s": 3.6,
+      "e": 3.68,
       "shot": 5
     },
     {
       "w": "Tommy",
-      "s": 4.76,
-      "e": 5.08,
+      "s": 3.68,
+      "e": 3.92,
       "shot": 5
     },
     {
       "w": "Briggs",
-      "s": 5.08,
-      "e": 5.32,
+      "s": 3.92,
+      "e": 4.04,
       "shot": 5
     },
     {
       "w": "got",
-      "s": 5.32,
-      "e": 5.58,
+      "s": 4.04,
+      "e": 4.2,
       "shot": 5
     },
     {
       "w": "lost",
-      "s": 5.58,
-      "e": 5.84,
+      "s": 4.2,
+      "e": 4.4,
       "shot": 5
     },
     {
       "w": "at",
-      "s": 5.84,
-      "e": 6.04,
+      "s": 4.4,
+      "e": 4.52,
       "shot": 5
     },
     {
       "w": "the",
-      "s": 6.04,
-      "e": 6.16,
+      "s": 4.52,
+      "e": 4.62,
       "shot": 5
     },
     {
       "w": "summer",
-      "s": 6.16,
-      "e": 6.4,
+      "s": 4.62,
+      "e": 4.74,
       "shot": 5
     },
     {
       "w": "fair,",
-      "s": 6.4,
-      "e": 6.68,
+      "s": 4.74,
+      "e": 4.96,
       "shot": 5
     },
     {
       "w": "the",
-      "s": 6.96,
-      "e": 7.02,
+      "s": 5.18,
+      "e": 5.18,
       "shot": 6
     },
     {
       "w": "beam",
-      "s": 7.02,
-      "e": 7.2,
+      "s": 5.18,
+      "e": 5.3,
       "shot": 6
     },
     {
       "w": "found",
-      "s": 7.2,
-      "e": 7.46,
+      "s": 5.3,
+      "e": 5.54,
       "shot": 6
     },
     {
       "w": "him",
-      "s": 7.46,
-      "e": 7.66,
+      "s": 5.54,
+      "e": 5.7,
       "shot": 6
     },
     {
       "w": "at",
-      "s": 7.66,
-      "e": 7.8,
+      "s": 5.7,
+      "e": 5.8,
       "shot": 6
     },
     {
       "w": "the",
-      "s": 7.8,
-      "e": 8.0,
+      "s": 5.8,
+      "e": 5.92,
       "shot": 6
     },
     {
       "w": "cotton",
-      "s": 8.0,
-      "e": 8.16,
+      "s": 5.92,
+      "e": 6.12,
       "shot": 6
     },
     {
       "w": "candy",
-      "s": 8.16,
-      "e": 8.52,
+      "s": 6.12,
+      "e": 6.28,
       "shot": 6
     },
     {
       "w": "stand.",
-      "s": 8.52,
-      "e": 8.88,
+      "s": 6.28,
+      "e": 6.6,
       "shot": 6
     },
     {
       "w": "When",
-      "s": 9.1,
-      "e": 9.26,
+      "s": 6.96,
+      "e": 7.06,
       "shot": 7
     },
     {
       "w": "Mrs.",
-      "s": 9.26,
-      "e": 9.58,
+      "s": 7.06,
+      "e": 7.26,
       "shot": 7
     },
     {
       "w": "Alder",
-      "s": 10.06,
-      "e": 10.14,
+      "s": 7.88,
+      "e": 7.96,
       "shot": 7
     },
     {
       "w": "lost",
-      "s": 10.14,
-      "e": 10.42,
+      "s": 7.96,
+      "e": 8.16,
       "shot": 7
     },
     {
       "w": "her",
-      "s": 10.42,
-      "e": 10.64,
+      "s": 8.16,
+      "e": 8.28,
       "shot": 7
     },
     {
       "w": "glasses,",
-      "s": 10.64,
-      "e": 11.04,
+      "s": 8.28,
+      "e": 8.56,
       "shot": 7
     },
     {
       "w": "it",
-      "s": 11.34,
-      "e": 11.42,
+      "s": 8.76,
+      "e": 8.8,
       "shot": 8
     },
     {
       "w": "lit",
-      "s": 11.42,
-      "e": 11.58,
+      "s": 8.8,
+      "e": 8.92,
       "shot": 8
     },
     {
       "w": "up",
-      "s": 11.58,
-      "e": 11.72,
+      "s": 8.92,
+      "e": 9.04,
       "shot": 8
     },
     {
       "w": "her",
-      "s": 11.72,
-      "e": 11.82,
+      "s": 9.04,
+      "e": 9.14,
       "shot": 8
     },
     {
       "w": "own",
-      "s": 11.82,
-      "e": 12.0,
+      "s": 9.14,
+      "e": 9.28,
       "shot": 8
     },
     {
       "w": "head.",
-      "s": 12.0,
-      "e": 12.24,
+      "s": 9.28,
+      "e": 9.46,
       "shot": 8
     },
     {
       "w": "They",
-      "s": 12.46,
-      "e": 12.58,
+      "s": 9.62,
+      "e": 9.68,
       "shot": 9
     },
     {
       "w": "were",
-      "s": 12.58,
-      "e": 12.7,
+      "s": 9.68,
+      "e": 9.78,
       "shot": 9
     },
     {
       "w": "on",
-      "s": 12.7,
-      "e": 12.9,
+      "s": 9.78,
+      "e": 9.92,
       "shot": 9
     },
     {
       "w": "it.",
-      "s": 12.9,
-      "e": 13.1,
+      "s": 9.92,
+      "e": 10.1,
       "shot": 9
     },
     {
       "w": "And",
-      "s": 13.24,
-      "e": 13.36,
+      "s": 10.36,
+      "e": 10.46,
       "shot": 10
     },
     {
       "w": "when",
-      "s": 13.36,
-      "e": 13.52,
+      "s": 10.46,
+      "e": 10.56,
       "shot": 10
     },
     {
       "w": "my",
-      "s": 13.52,
-      "e": 13.7,
+      "s": 10.56,
+      "e": 10.68,
       "shot": 10
     },
     {
       "w": "dad",
-      "s": 13.7,
-      "e": 13.88,
+      "s": 10.68,
+      "e": 10.8,
       "shot": 10
     },
     {
       "w": "lost",
-      "s": 13.88,
-      "e": 14.14,
+      "s": 10.8,
+      "e": 10.98,
       "shot": 10
     },
     {
       "w": "his",
-      "s": 14.14,
-      "e": 14.4,
+      "s": 10.98,
+      "e": 11.16,
       "shot": 10
     },
     {
       "w": "job,",
-      "s": 14.4,
-      "e": 14.72,
+      "s": 11.16,
+      "e": 11.36,
       "shot": 10
     },
     {
       "w": "it",
-      "s": 14.86,
-      "e": 14.98,
+      "s": 11.44,
+      "e": 11.5,
       "shot": 11
     },
     {
       "w": "shone",
-      "s": 14.98,
-      "e": 15.2,
+      "s": 11.5,
+      "e": 11.66,
       "shot": 11
     },
     {
       "w": "on",
-      "s": 15.2,
-      "e": 15.4,
+      "s": 11.66,
+      "e": 11.82,
       "shot": 11
     },
     {
       "w": "our",
-      "s": 15.4,
-      "e": 15.56,
+      "s": 11.82,
+      "e": 11.94,
       "shot": 11
     },
     {
       "w": "porch",
-      "s": 15.56,
-      "e": 15.78,
+      "s": 11.94,
+      "e": 12.12,
       "shot": 11
     },
     {
       "w": "for",
-      "s": 15.78,
-      "e": 15.98,
+      "s": 12.12,
+      "e": 12.28,
       "shot": 11
     },
     {
       "w": "a",
-      "s": 15.98,
-      "e": 16.12,
+      "s": 12.28,
+      "e": 12.32,
       "shot": 11
     },
     {
       "w": "whole",
-      "s": 16.12,
-      "e": 16.3,
+      "s": 12.32,
+      "e": 12.42,
       "shot": 11
     },
     {
       "w": "week.",
-      "s": 16.3,
-      "e": 16.6,
+      "s": 12.42,
+      "e": 12.64,
       "shot": 11
     },
     {
       "w": "He",
-      "s": 16.8,
-      "e": 16.92,
+      "s": 12.94,
+      "e": 13.04,
       "shot": 12
     },
     {
       "w": "pretended",
-      "s": 16.92,
-      "e": 17.24,
+      "s": 13.04,
+      "e": 13.26,
       "shot": 12
     },
     {
       "w": "not",
-      "s": 17.24,
-      "e": 17.56,
+      "s": 13.26,
+      "e": 13.48,
       "shot": 12
     },
     {
       "w": "to",
-      "s": 17.56,
-      "e": 17.72,
+      "s": 13.48,
+      "e": 13.6,
       "shot": 12
     },
     {
       "w": "notice.",
-      "s": 17.72,
-      "e": 18.0,
+      "s": 13.6,
+      "e": 13.82,
       "shot": 12
     },
     {
       "w": "He",
-      "s": 18.32,
-      "e": 18.42,
+      "s": 14.14,
+      "e": 14.22,
       "shot": 13
     },
     {
       "w": "noticed.",
-      "s": 18.42,
-      "e": 18.72,
+      "s": 14.22,
+      "e": 14.44,
       "shot": 13
     },
     {
       "w": "Then,",
-      "s": 19.18,
-      "e": 19.36,
+      "s": 14.88,
+      "e": 15.0,
       "shot": 14
     },
     {
       "w": "we",
-      "s": 19.54,
-      "e": 19.72,
+      "s": 15.08,
+      "e": 15.18,
       "shot": 14
     },
     {
       "w": "moved.",
-      "s": 19.72,
-      "e": 20.04,
+      "s": 15.18,
+      "e": 15.46,
       "shot": 14
     },
     {
       "w": "Across",
-      "s": 20.38,
-      "e": 20.64,
+      "s": 15.94,
+      "e": 15.98,
       "shot": 15
     },
     {
       "w": "town,",
-      "s": 20.64,
-      "e": 21.02,
+      "s": 15.98,
+      "e": 16.26,
       "shot": 15
     },
     {
       "w": "to",
-      "s": 21.24,
-      "e": 21.36,
+      "s": 16.4,
+      "e": 16.48,
       "shot": 15
     },
     {
       "w": "a",
-      "s": 21.36,
-      "e": 21.48,
+      "s": 16.48,
+      "e": 16.58,
       "shot": 15
     },
     {
       "w": "little",
-      "s": 21.48,
-      "e": 21.62,
+      "s": 16.58,
+      "e": 16.7,
       "shot": 15
     },
     {
       "w": "blue",
-      "s": 21.62,
-      "e": 21.86,
+      "s": 16.7,
+      "e": 16.86,
       "shot": 15
     },
     {
       "w": "house",
-      "s": 21.86,
-      "e": 22.08,
+      "s": 16.86,
+      "e": 17.02,
       "shot": 15
     },
     {
       "w": "by",
-      "s": 22.08,
-      "e": 22.32,
+      "s": 17.02,
+      "e": 17.18,
       "shot": 15
     },
     {
       "w": "the",
-      "s": 22.32,
-      "e": 22.46,
+      "s": 17.18,
+      "e": 17.3,
       "shot": 15
     },
     {
       "w": "docks.",
-      "s": 22.46,
-      "e": 22.68,
+      "s": 17.3,
+      "e": 17.52,
       "shot": 15
     },
     {
       "w": "My",
-      "s": 23.06,
-      "e": 23.18,
+      "s": 18.0,
+      "e": 18.1,
       "shot": 16
     },
     {
       "w": "sister",
-      "s": 23.18,
-      "e": 23.44,
+      "s": 18.1,
+      "e": 18.16,
       "shot": 16
     },
     {
       "w": "June",
-      "s": 23.44,
-      "e": 23.68,
+      "s": 18.16,
+      "e": 18.42,
       "shot": 16
     },
     {
       "w": "was",
-      "s": 23.68,
-      "e": 23.88,
+      "s": 18.42,
+      "e": 18.56,
       "shot": 16
     },
     {
       "w": "six.",
-      "s": 23.88,
-      "e": 24.1,
+      "s": 18.56,
+      "e": 18.72,
       "shot": 16
     },
     {
       "w": "She",
-      "s": 24.48,
-      "e": 24.64,
+      "s": 19.16,
+      "e": 19.28,
       "shot": 17
     },
     {
       "w": "stopped",
-      "s": 24.64,
-      "e": 24.92,
+      "s": 19.28,
+      "e": 19.44,
       "shot": 17
     },
     {
       "w": "talking",
-      "s": 24.92,
-      "e": 25.3,
+      "s": 19.44,
+      "e": 19.68,
       "shot": 17
     },
     {
       "w": "the",
-      "s": 25.3,
-      "e": 25.46,
+      "s": 19.68,
+      "e": 19.82,
       "shot": 17
     },
     {
       "w": "day",
-      "s": 25.46,
-      "e": 25.64,
+      "s": 19.82,
+      "e": 19.92,
       "shot": 17
     },
     {
       "w": "we",
-      "s": 25.64,
-      "e": 25.84,
+      "s": 19.92,
+      "e": 20.02,
       "shot": 17
     },
     {
       "w": "packed",
-      "s": 25.84,
-      "e": 26.06,
+      "s": 20.02,
+      "e": 20.18,
       "shot": 17
     },
     {
       "w": "up",
-      "s": 26.06,
-      "e": 26.24,
+      "s": 20.18,
+      "e": 20.28,
       "shot": 17
     },
     {
       "w": "her",
-      "s": 26.24,
-      "e": 26.42,
+      "s": 20.28,
+      "e": 20.4,
       "shot": 17
     },
     {
       "w": "room.",
-      "s": 26.42,
-      "e": 26.7,
+      "s": 20.4,
+      "e": 20.58,
       "shot": 17
     },
     {
       "w": "Not",
-      "s": 26.96,
-      "e": 27.1,
+      "s": 20.84,
+      "e": 20.96,
       "shot": 18
     },
     {
       "w": "sad-quiet.",
-      "s": 27.1,
-      "e": 28.04,
+      "s": 20.96,
+      "e": 21.52,
       "shot": 18
     },
     {
       "w": "Just",
-      "s": 28.04,
-      "e": 28.22,
+      "s": 21.52,
+      "e": 21.62,
       "shot": 19
     },
     {
       "w": "gone-quiet.",
-      "s": 28.22,
-      "e": 29.12,
+      "s": 21.62,
+      "e": 22.5,
       "shot": 19
     },
     {
       "w": "Mom",
-      "s": 29.12,
-      "e": 29.28,
+      "s": 22.5,
+      "e": 22.6,
       "shot": 20
     },
     {
       "w": "tried",
-      "s": 29.28,
-      "e": 29.56,
+      "s": 22.6,
+      "e": 22.8,
       "shot": 20
     },
     {
       "w": "pancakes.",
-      "s": 29.56,
-      "e": 29.98,
+      "s": 22.8,
+      "e": 23.1,
       "shot": 20
     },
     {
       "w": "Dad",
-      "s": 29.98,
-      "e": 30.48,
+      "s": 23.58,
+      "e": 23.68,
       "shot": 21
     },
     {
       "w": "tried",
-      "s": 30.48,
-      "e": 30.78,
+      "s": 23.68,
+      "e": 23.9,
       "shot": 21
     },
     {
       "w": "knock-knock",
-      "s": 30.78,
-      "e": 31.38,
+      "s": 23.9,
+      "e": 24.26,
       "shot": 21
     },
     {
       "w": "jokes.",
-      "s": 31.38,
-      "e": 31.7,
+      "s": 24.26,
+      "e": 24.48,
       "shot": 21
     },
     {
       "w": "I",
-      "s": 32.12,
-      "e": 32.12,
+      "s": 24.82,
+      "e": 24.92,
       "shot": 22
     },
     {
       "w": "gave",
-      "s": 32.12,
-      "e": 32.3,
+      "s": 24.92,
+      "e": 25.02,
       "shot": 22
     },
     {
       "w": "her",
-      "s": 32.3,
-      "e": 32.5,
+      "s": 25.02,
+      "e": 25.14,
       "shot": 22
     },
     {
       "w": "my",
-      "s": 32.5,
-      "e": 32.66,
+      "s": 25.14,
+      "e": 25.26,
       "shot": 22
     },
     {
       "w": "bike.",
-      "s": 32.66,
-      "e": 32.9,
+      "s": 25.26,
+      "e": 25.42,
       "shot": 22
     },
     {
       "w": "Nothing.",
-      "s": 33.14,
-      "e": 33.3,
+      "s": 25.76,
+      "e": 25.92,
       "shot": 23
     },
     {
       "w": "The",
-      "s": 33.7,
-      "e": 33.7,
+      "s": 26.2,
+      "e": 26.3,
       "shot": 24
     },
     {
       "w": "first",
-      "s": 33.7,
-      "e": 33.9,
+      "s": 26.3,
+      "e": 26.44,
       "shot": 24
     },
     {
       "w": "foggy",
-      "s": 33.9,
-      "e": 34.3,
+      "s": 26.44,
+      "e": 26.72,
       "shot": 24
     },
     {
       "w": "night,",
-      "s": 34.3,
-      "e": 34.5,
+      "s": 26.72,
+      "e": 26.82,
       "shot": 24
     },
     {
       "w": "I",
-      "s": 34.76,
-      "e": 34.92,
+      "s": 26.86,
+      "e": 26.96,
       "shot": 24
     },
     {
       "w": "couldn't",
-      "s": 34.92,
-      "e": 35.2,
+      "s": 26.96,
+      "e": 27.14,
       "shot": 24
     },
     {
       "w": "sleep.",
-      "s": 35.2,
-      "e": 35.44,
+      "s": 27.14,
+      "e": 27.36,
       "shot": 24
     },
     {
       "w": "I",
-      "s": 35.76,
-      "e": 35.78,
+      "s": 27.7,
+      "e": 27.8,
       "shot": 25
     },
     {
       "w": "looked",
-      "s": 35.78,
-      "e": 35.9,
+      "s": 27.8,
+      "e": 27.9,
       "shot": 25
     },
     {
       "w": "out",
-      "s": 35.9,
-      "e": 36.1,
+      "s": 27.9,
+      "e": 28.04,
       "shot": 25
     },
     {
       "w": "my",
-      "s": 36.1,
-      "e": 36.28,
+      "s": 28.04,
+      "e": 28.18,
       "shot": 25
     },
     {
       "w": "window,",
-      "s": 36.28,
-      "e": 36.54,
+      "s": 28.18,
+      "e": 28.38,
       "shot": 25
     },
     {
       "w": "and",
-      "s": 36.78,
-      "e": 36.88,
+      "s": 28.48,
+      "e": 28.56,
       "shot": 26
     },
     {
       "w": "the",
-      "s": 36.88,
-      "e": 37.0,
+      "s": 28.56,
+      "e": 28.66,
       "shot": 26
     },
     {
       "w": "beam",
-      "s": 37.0,
-      "e": 37.2,
+      "s": 28.66,
+      "e": 28.8,
       "shot": 26
     },
     {
       "w": "was",
-      "s": 37.2,
-      "e": 37.36,
+      "s": 28.8,
+      "e": 28.92,
       "shot": 26
     },
     {
       "w": "sweeping",
-      "s": 37.36,
-      "e": 37.62,
+      "s": 28.92,
+      "e": 29.06,
       "shot": 26
     },
     {
       "w": "the",
-      "s": 37.62,
-      "e": 37.86,
+      "s": 29.06,
+      "e": 29.22,
       "shot": 26
     },
     {
       "w": "whole",
-      "s": 37.86,
-      "e": 38.06,
+      "s": 29.22,
+      "e": 29.38,
       "shot": 26
     },
     {
       "w": "town.",
-      "s": 38.06,
-      "e": 38.38,
+      "s": 29.38,
+      "e": 29.58,
       "shot": 26
     },
     {
       "w": "Then",
-      "s": 38.68,
-      "e": 38.74,
+      "s": 29.78,
+      "e": 29.86,
       "shot": 27
     },
     {
       "w": "it",
-      "s": 38.74,
-      "e": 38.86,
+      "s": 29.86,
+      "e": 29.98,
       "shot": 27
     },
     {
       "w": "stopped.",
-      "s": 38.86,
-      "e": 39.16,
+      "s": 29.98,
+      "e": 30.18,
       "shot": 27
     },
     {
       "w": "Right",
-      "s": 39.64,
-      "e": 39.68,
+      "s": 30.5,
+      "e": 30.56,
       "shot": 28
     },
     {
       "w": "on",
-      "s": 39.68,
-      "e": 39.86,
+      "s": 30.56,
+      "e": 30.7,
       "shot": 28
     },
     {
       "w": "our",
-      "s": 39.86,
-      "e": 40.06,
+      "s": 30.7,
+      "e": 30.82,
       "shot": 28
     },
     {
       "w": "house.",
-      "s": 40.06,
-      "e": 40.32,
+      "s": 30.82,
+      "e": 31.08,
       "shot": 28
     },
     {
       "w": "On",
-      "s": 40.64,
-      "e": 40.78,
+      "s": 31.38,
+      "e": 31.48,
       "shot": 29
     },
     {
       "w": "June's",
-      "s": 40.78,
-      "e": 41.14,
+      "s": 31.48,
+      "e": 31.7,
       "shot": 29
     },
     {
       "w": "window.",
-      "s": 41.14,
-      "e": 41.42,
+      "s": 31.7,
+      "e": 31.92,
       "shot": 29
     },
     {
       "w": "I",
-      "s": 41.68,
-      "e": 41.8,
+      "s": 32.28,
+      "e": 32.36,
       "shot": 30
     },
     {
       "w": "tiptoed",
-      "s": 41.8,
-      "e": 42.16,
+      "s": 32.36,
+      "e": 32.6,
       "shot": 30
     },
     {
       "w": "into",
-      "s": 42.16,
-      "e": 42.4,
+      "s": 32.6,
+      "e": 32.72,
       "shot": 30
     },
     {
       "w": "her",
-      "s": 42.4,
-      "e": 42.6,
+      "s": 32.72,
+      "e": 32.86,
       "shot": 30
     },
     {
       "w": "room.",
-      "s": 42.6,
-      "e": 42.86,
+      "s": 32.86,
+      "e": 33.04,
       "shot": 30
     },
     {
       "w": "She",
-      "s": 43.1,
-      "e": 43.24,
+      "s": 33.2,
+      "e": 33.28,
       "shot": 31
     },
     {
       "w": "was",
-      "s": 43.24,
-      "e": 43.38,
+      "s": 33.28,
+      "e": 33.4,
       "shot": 31
     },
     {
       "w": "sitting",
-      "s": 43.38,
-      "e": 43.54,
+      "s": 33.4,
+      "e": 33.54,
       "shot": 31
     },
     {
       "w": "up,",
-      "s": 43.54,
-      "e": 43.84,
+      "s": 33.54,
+      "e": 33.76,
       "shot": 31
     },
     {
       "w": "staring",
-      "s": 44.02,
-      "e": 44.18,
+      "s": 33.82,
+      "e": 33.98,
       "shot": 31
     },
     {
       "w": "at",
-      "s": 44.18,
-      "e": 44.42,
+      "s": 33.98,
+      "e": 34.18,
       "shot": 31
     },
     {
       "w": "the",
-      "s": 44.42,
-      "e": 44.52,
+      "s": 34.18,
+      "e": 34.26,
       "shot": 31
     },
     {
       "w": "light.",
-      "s": 44.52,
-      "e": 44.72,
+      "s": 34.26,
+      "e": 34.42,
       "shot": 31
     },
     {
       "w": "\"Are",
-      "s": 44.72,
-      "e": 45.08,
+      "s": 34.84,
+      "e": 34.94,
       "shot": 32
     },
     {
       "w": "you",
-      "s": 45.08,
-      "e": 45.24,
+      "s": 34.94,
+      "e": 35.04,
       "shot": 32
     },
     {
       "w": "lost?\"",
-      "s": 45.24,
-      "e": 45.52,
+      "s": 35.04,
+      "e": 35.32,
       "shot": 32
     },
     {
       "w": "I",
-      "s": 45.8,
-      "e": 45.88,
+      "s": 35.58,
+      "e": 35.66,
       "shot": 32
     },
     {
       "w": "whispered.",
-      "s": 45.88,
-      "e": 46.16,
+      "s": 35.66,
+      "e": 35.84,
       "shot": 32
     },
     {
       "w": "She",
-      "s": 46.58,
-      "e": 46.66,
+      "s": 36.36,
+      "e": 36.44,
       "shot": 33
     },
     {
       "w": "nodded.",
-      "s": 46.66,
-      "e": 46.96,
+      "s": 36.44,
+      "e": 36.62,
       "shot": 33
     },
     {
       "w": "\"Me",
-      "s": 47.3,
-      "e": 47.38,
+      "s": 36.88,
+      "e": 36.96,
       "shot": 34
     },
     {
       "w": "too,",
-      "s": 47.38,
-      "e": 47.64,
+      "s": 36.96,
+      "e": 37.14,
       "shot": 34
     },
     {
       "w": "a",
-      "s": 47.74,
-      "e": 47.86,
+      "s": 37.2,
+      "e": 37.26,
       "shot": 34
     },
     {
       "w": "little,\"",
-      "s": 47.86,
-      "e": 48.04,
+      "s": 37.26,
+      "e": 37.42,
       "shot": 34
     },
     {
       "w": "I",
-      "s": 48.2,
-      "e": 48.28,
+      "s": 37.62,
+      "e": 37.64,
       "shot": 34
     },
     {
       "w": "said.",
-      "s": 48.28,
-      "e": 48.56,
+      "s": 37.64,
+      "e": 37.84,
       "shot": 34
     },
     {
       "w": "\"New",
-      "s": 48.92,
-      "e": 48.96,
+      "s": 38.1,
+      "e": 38.16,
       "shot": 35
     },
     {
       "w": "house.",
-      "s": 48.96,
-      "e": 49.2,
+      "s": 38.16,
+      "e": 38.36,
       "shot": 35
     },
     {
       "w": "New",
-      "s": 49.58,
-      "e": 49.74,
+      "s": 38.52,
+      "e": 38.58,
       "shot": 36
     },
     {
       "w": "street.",
-      "s": 49.74,
-      "e": 50.12,
+      "s": 38.58,
+      "e": 38.78,
       "shot": 36
     },
     {
       "w": "New",
-      "s": 50.4,
-      "e": 50.56,
+      "s": 38.92,
+      "e": 38.94,
       "shot": 36
     },
     {
       "w": "everything.\"",
-      "s": 50.56,
-      "e": 50.94,
+      "s": 38.94,
+      "e": 39.22,
       "shot": 36
     },
     {
       "w": "The",
-      "s": 51.34,
-      "e": 51.46,
+      "s": 39.64,
+      "e": 39.72,
       "shot": 37
     },
     {
       "w": "light",
-      "s": 51.46,
-      "e": 51.64,
+      "s": 39.72,
+      "e": 39.84,
       "shot": 37
     },
     {
       "w": "stayed",
-      "s": 51.64,
-      "e": 51.88,
+      "s": 39.84,
+      "e": 39.98,
       "shot": 37
     },
     {
       "w": "all",
-      "s": 51.88,
-      "e": 52.16,
+      "s": 39.98,
+      "e": 40.14,
       "shot": 37
     },
     {
       "w": "night.",
-      "s": 52.16,
-      "e": 52.44,
+      "s": 40.14,
+      "e": 40.28,
       "shot": 37
     },
     {
       "w": "So",
-      "s": 52.74,
-      "e": 52.92,
+      "s": 40.46,
+      "e": 40.5,
       "shot": 38
     },
     {
       "w": "did",
-      "s": 52.92,
-      "e": 53.1,
+      "s": 40.5,
+      "e": 40.64,
       "shot": 38
     },
     {
       "w": "I.",
-      "s": 53.1,
-      "e": 53.36,
+      "s": 40.64,
+      "e": 40.84,
       "shot": 38
     },
     {
       "w": "The",
-      "s": 53.6,
-      "e": 53.68,
+      "s": 41.2,
+      "e": 41.3,
       "shot": 39
     },
     {
       "w": "next",
-      "s": 53.68,
-      "e": 53.86,
+      "s": 41.3,
+      "e": 41.42,
       "shot": 39
     },
     {
       "w": "morning,",
-      "s": 53.86,
-      "e": 54.2,
+      "s": 41.42,
+      "e": 41.62,
       "shot": 39
     },
     {
       "w": "the",
-      "s": 54.4,
-      "e": 54.48,
+      "s": 41.82,
+      "e": 41.82,
       "shot": 39
     },
     {
       "w": "lighthouse",
-      "s": 54.48,
-      "e": 54.74,
+      "s": 41.82,
+      "e": 41.98,
       "shot": 39
     },
     {
       "w": "keeper,",
-      "s": 54.74,
-      "e": 55.12,
+      "s": 41.98,
+      "e": 42.28,
       "shot": 39
     },
     {
       "w": "old",
-      "s": 55.28,
-      "e": 55.4,
+      "s": 42.38,
+      "e": 42.46,
       "shot": 40
     },
     {
       "w": "Mr.",
-      "s": 55.4,
-      "e": 55.7,
+      "s": 42.46,
+      "e": 42.68,
       "shot": 40
     },
     {
       "w": "Pell,",
-      "s": 56.18,
-      "e": 56.18,
+      "s": 42.84,
+      "e": 42.86,
       "shot": 40
     },
     {
       "w": "knocked",
-      "s": 56.42,
-      "e": 56.66,
+      "s": 42.96,
+      "e": 43.12,
       "shot": 40
     },
     {
       "w": "on",
-      "s": 56.66,
-      "e": 56.84,
+      "s": 43.12,
+      "e": 43.3,
       "shot": 40
     },
     {
       "w": "our",
-      "s": 56.84,
-      "e": 56.98,
+      "s": 43.3,
+      "e": 43.42,
       "shot": 40
     },
     {
       "w": "door",
-      "s": 56.98,
-      "e": 57.14,
+      "s": 43.42,
+      "e": 43.54,
       "shot": 40
     },
     {
       "w": "with",
-      "s": 57.14,
-      "e": 57.32,
+      "s": 43.54,
+      "e": 43.68,
       "shot": 41
     },
     {
       "w": "a",
-      "s": 57.32,
-      "e": 57.44,
+      "s": 43.68,
+      "e": 43.78,
       "shot": 41
     },
     {
       "w": "jar",
-      "s": 57.44,
-      "e": 57.64,
+      "s": 43.78,
+      "e": 43.94,
       "shot": 41
     },
     {
       "w": "of",
-      "s": 57.64,
-      "e": 57.82,
+      "s": 43.94,
+      "e": 44.08,
       "shot": 41
     },
     {
       "w": "sea",
-      "s": 57.82,
-      "e": 58.0,
+      "s": 44.08,
+      "e": 44.18,
       "shot": 41
     },
     {
       "w": "glass.",
-      "s": 58.0,
-      "e": 58.28,
+      "s": 44.18,
+      "e": 44.42,
       "shot": 41
     },
     {
       "w": "\"The",
-      "s": 58.56,
-      "e": 58.68,
+      "s": 44.8,
+      "e": 44.92,
       "shot": 42
     },
     {
       "w": "light",
-      "s": 58.68,
-      "e": 58.88,
+      "s": 44.92,
+      "e": 45.04,
       "shot": 42
     },
     {
       "w": "doesn't",
-      "s": 58.88,
-      "e": 59.16,
+      "s": 45.04,
+      "e": 45.26,
       "shot": 42
     },
     {
       "w": "fix",
-      "s": 59.16,
-      "e": 59.36,
+      "s": 45.26,
+      "e": 45.4,
       "shot": 42
     },
     {
       "w": "lost,\"",
-      "s": 59.36,
-      "e": 59.66,
+      "s": 45.4,
+      "e": 45.64,
       "shot": 42
     },
     {
       "w": "he",
-      "s": 59.82,
-      "e": 59.92,
+      "s": 45.84,
+      "e": 45.92,
       "shot": 42
     },
     {
       "w": "said.",
-      "s": 59.92,
-      "e": 60.16,
+      "s": 45.92,
+      "e": 46.1,
       "shot": 42
     },
     {
       "w": "\"It",
-      "s": 60.36,
-      "e": 60.48,
+      "s": 46.34,
+      "e": 46.44,
       "shot": 43
     },
     {
       "w": "just",
-      "s": 60.48,
-      "e": 60.64,
+      "s": 46.44,
+      "e": 46.58,
       "shot": 43
     },
     {
       "w": "shows",
-      "s": 60.64,
-      "e": 60.94,
+      "s": 46.58,
+      "e": 46.76,
       "shot": 43
     },
     {
       "w": "someone",
-      "s": 60.94,
-      "e": 61.32,
+      "s": 46.76,
+      "e": 46.98,
       "shot": 43
     },
     {
       "w": "where",
-      "s": 61.32,
-      "e": 61.5,
+      "s": 46.98,
+      "e": 47.1,
       "shot": 43
     },
     {
       "w": "to",
-      "s": 61.5,
-      "e": 61.68,
+      "s": 47.1,
+      "e": 47.24,
       "shot": 43
     },
     {
       "w": "sit.\"",
-      "s": 61.68,
-      "e": 61.88,
+      "s": 47.24,
+      "e": 47.4,
       "shot": 43
     },
     {
       "w": "June",
-      "s": 62.24,
-      "e": 62.38,
+      "s": 47.88,
+      "e": 48.0,
       "shot": 44
     },
     {
       "w": "took",
-      "s": 62.38,
-      "e": 62.62,
+      "s": 48.0,
+      "e": 48.12,
       "shot": 44
     },
     {
       "w": "the",
-      "s": 62.62,
-      "e": 62.82,
+      "s": 48.12,
+      "e": 48.26,
       "shot": 44
     },
     {
       "w": "jar.",
-      "s": 62.82,
-      "e": 63.14,
+      "s": 48.26,
+      "e": 48.42,
       "shot": 44
     },
     {
       "w": "She",
-      "s": 63.46,
-      "e": 63.6,
+      "s": 48.74,
+      "e": 48.8,
       "shot": 45
     },
     {
       "w": "held",
-      "s": 63.6,
-      "e": 63.76,
+      "s": 48.8,
+      "e": 48.92,
       "shot": 45
     },
     {
       "w": "a",
-      "s": 63.76,
-      "e": 63.88,
+      "s": 48.92,
+      "e": 49.04,
       "shot": 45
     },
     {
       "w": "blue",
-      "s": 63.88,
-      "e": 64.04,
+      "s": 49.04,
+      "e": 49.16,
       "shot": 45
     },
     {
       "w": "piece",
-      "s": 64.04,
-      "e": 64.3,
+      "s": 49.16,
+      "e": 49.34,
       "shot": 45
     },
     {
       "w": "up",
-      "s": 64.3,
-      "e": 64.48,
+      "s": 49.34,
+      "e": 49.44,
       "shot": 45
     },
     {
       "w": "to",
-      "s": 64.48,
-      "e": 64.62,
+      "s": 49.44,
+      "e": 49.54,
       "shot": 45
     },
     {
       "w": "the",
-      "s": 64.62,
-      "e": 64.74,
+      "s": 49.54,
+      "e": 49.64,
       "shot": 45
     },
     {
       "w": "sun.",
-      "s": 64.74,
-      "e": 64.94,
+      "s": 49.64,
+      "e": 49.8,
       "shot": 45
     },
     {
       "w": "And",
-      "s": 65.22,
-      "e": 65.32,
+      "s": 50.1,
+      "e": 50.16,
       "shot": 46
     },
     {
       "w": "for",
-      "s": 65.32,
-      "e": 65.46,
+      "s": 50.16,
+      "e": 50.26,
       "shot": 46
     },
     {
       "w": "the",
-      "s": 65.46,
-      "e": 65.58,
+      "s": 50.26,
+      "e": 50.34,
       "shot": 46
     },
     {
       "w": "first",
-      "s": 65.58,
-      "e": 65.76,
+      "s": 50.34,
+      "e": 50.48,
       "shot": 46
     },
     {
       "w": "time",
-      "s": 65.76,
-      "e": 66.04,
+      "s": 50.48,
+      "e": 50.64,
       "shot": 46
     },
     {
       "w": "in",
-      "s": 66.04,
-      "e": 66.24,
+      "s": 50.64,
+      "e": 50.78,
       "shot": 46
     },
     {
       "w": "three",
-      "s": 66.24,
-      "e": 66.46,
+      "s": 50.78,
+      "e": 50.9,
       "shot": 46
     },
     {
       "w": "weeks,",
-      "s": 66.46,
-      "e": 66.76,
+      "s": 50.9,
+      "e": 51.1,
       "shot": 46
     },
     {
       "w": "she",
-      "s": 67.02,
-      "e": 67.12,
+      "s": 51.22,
+      "e": 51.28,
       "shot": 47
     },
     {
       "w": "said",
-      "s": 67.12,
-      "e": 67.32,
+      "s": 51.28,
+      "e": 51.4,
       "shot": 47
     },
     {
       "w": "one",
-      "s": 67.32,
-      "e": 67.54,
+      "s": 51.4,
+      "e": 51.56,
       "shot": 47
     },
     {
       "w": "word.",
-      "s": 67.54,
-      "e": 67.8,
+      "s": 51.56,
+      "e": 51.76,
       "shot": 47
     },
     {
       "w": "\"Home.\"",
-      "s": 67.88,
-      "e": 68.12,
+      "s": 52.18,
+      "e": 52.34,
       "shot": 48
     }
   ],
@@ -2162,48 +2162,48 @@
     {
       "file": "output/stock/sfx/amb_waves_stock.wav",
       "start": 0.0,
-      "end": 4.66
+      "end": 3.6
     },
     {
       "file": "output/stock/sfx/amb_town_stock.wav",
-      "start": 4.66,
-      "end": 20.38
+      "start": 3.6,
+      "end": 15.94
     },
     {
       "file": "output/stock/sfx/amb_waves_stock.wav",
-      "start": 20.38,
-      "end": 33.7
+      "start": 15.94,
+      "end": 26.2
     },
     {
       "file": "output/stock/sfx/amb_wind_stock.wav",
-      "start": 33.7,
-      "end": 53.6
+      "start": 26.2,
+      "end": 41.2
     },
     {
       "file": "output/stock/sfx/amb_waves_stock.wav",
-      "start": 53.6,
-      "end": 69.792608
+      "start": 41.2,
+      "end": 53.931999999999995
     }
   ],
   "sfx": [
     {
       "file": "output/stock/sfx/magic_shimmer_stock.wav",
-      "t": 39.64,
+      "t": 30.5,
       "shot": 28
     },
     {
       "file": "output/stock/sfx/door_knock_stock.wav",
-      "t": 41.68,
+      "t": 32.28,
       "shot": 30
     },
     {
       "file": "output/stock/sfx/door_knock_stock.wav",
-      "t": 55.28,
+      "t": 42.38,
       "shot": 40
     },
     {
       "file": "output/stock/sfx/magic_shimmer_stock.wav",
-      "t": 63.46,
+      "t": 48.74,
       "shot": 45
     }
   ],

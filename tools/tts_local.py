@@ -46,6 +46,25 @@ def tts_text(text: str) -> str:
     return " ".join(out)
 
 
+def synth_kokoro(slug: str, voice: str = "af_heart", speed: float = 1.5) -> Path:
+    """Kokoro (pip install kokoro-onnx soundfile): far more natural than Piper."""
+    import soundfile as sf
+    from huggingface_hub import hf_hub_download
+    from kokoro_onnx import Kokoro
+    d = OUTPUT / "stock" / "kokoro"
+    for f in ("kokoro-v1.0.onnx", "voices-v1.0.bin"):
+        if not (d / f).exists():
+            hf_hub_download("fastrtc/kokoro-onnx", f, local_dir=str(d))
+    k = Kokoro(str(d / "kokoro-v1.0.onnx"), str(d / "voices-v1.0.bin"))
+    text = " ".join(s["text"] for s in parse_script(slug)["shots"])
+    audio, sr = k.create(text, voice=voice, speed=speed, lang="en-us")
+    out = OUTPUT / "stock" / "voice" / f"{slug}.wav"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    sf.write(str(out), audio, sr)
+    log(f"stand-in voice (kokoro {voice} x{speed}) -> {out}")
+    return out
+
+
 def synth(slug: str, voice: str = "ryan", speed: float = 0.92, pause: float = 0.45, pitch: float = 0.0) -> Path:
     from piper import PiperVoice, SynthesisConfig
     sc = parse_script(slug)
@@ -78,9 +97,13 @@ def synth(slug: str, voice: str = "ryan", speed: float = 0.92, pause: float = 0.
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("slug")
-    ap.add_argument("--voice", default="ryan", choices=sorted(VOICES))
+    ap.add_argument("--engine", default="kokoro", choices=["kokoro", "piper"])
+    ap.add_argument("--voice", default=None, help="kokoro: af_heart, af_bella, ...; piper: ryan, lessac, amy")
     ap.add_argument("--speed", type=float, default=0.92)
     ap.add_argument("--pause", type=float, default=0.45, help="silence between sentences (s)")
     ap.add_argument("--pitch", type=float, default=0.0, help="semitones up, e.g. 3 (girl) or 5 (boy) for a kid voice")
     a = ap.parse_args()
-    synth(a.slug, a.voice, a.speed, a.pause, a.pitch)
+    if a.engine == "kokoro":
+        synth_kokoro(a.slug, a.voice or "af_heart", a.speed if a.speed != 0.92 else 1.5)
+    else:
+        synth(a.slug, a.voice or "ryan", a.speed, a.pause, a.pitch)
