@@ -2,9 +2,10 @@
   "channel": "Your Channel",
   "voice": {
     "provider": "elevenlabs",
-    "voice_id": "",
-    "voice_name": "",
-    "note": "Stand-in: Piper ryan +5 semitones, speed 1.25 (matches reference ~4.5 wps, ~185 Hz). Use the same voice for the whole series."
+    "voice_id": "QQdwP5hk1JyyWIo7BGvS",
+    "voice_name": "Genevieve - Warm & Expressive",
+    "note": "Series narrator (ElevenLabs). Use the same voice for every story.",
+    "model": "eleven_v4"
   },
   "captions": {
     "font": "Montserrat ExtraBold",
