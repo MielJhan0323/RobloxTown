@@ -28,10 +28,10 @@
     "sparkle": 0.6
   },
   "audio": {
-    "music_db": -22,
+    "music_db": -7,
     "ambience_db": -30,
     "sfx_db": -14,
-    "duck_ratio": 6,
+    "duck_ratio": 3,
     "ending_swell_db": 4,
     "lufs": -14
   },
