@@ -78,8 +78,38 @@ def find_media(folder: Path, stem: str, exts) -> Path | None:
     return None
 
 
-def voice_path(slug: str) -> Path | None:
+def raw_voice_path(slug: str) -> Path | None:
     return find_media(VOICE, slug, AUDIO_EXTS) or find_media(STOCK / "voice", slug, AUDIO_EXTS)
+
+
+def voice_path(slug: str) -> Path | None:
+    """The narration the edit uses: the voice-fx version when config voice_fx is on (see apply_voice_fx)."""
+    src = raw_voice_path(slug)
+    fx = OUTPUT / "cache" / slug / "voice_fx.wav"
+    if src and config().get("voice_fx", {}).get("enabled") and fx.exists() and fx.stat().st_mtime >= src.stat().st_mtime:
+        return fx
+    return src
+
+
+def apply_voice_fx(slug: str) -> Path | None:
+    """Speed/pitch/EQ/compression from config voice_fx -> output/cache/<slug>/voice_fx.wav."""
+    fxc = config().get("voice_fx", {})
+    src = raw_voice_path(slug)
+    if not src or not fxc.get("enabled"):
+        return src
+    out = cache_dir(slug) / "voice_fx.wav"
+    sig = json.dumps(fxc, sort_keys=True) + str(src) + str(src.stat().st_mtime)
+    stamp = out.with_suffix(".sig")
+    if out.exists() and stamp.exists() and stamp.read_text() == sig:
+        return out
+    pitch = 2 ** (float(fxc.get("pitch_semitones", 0)) / 12)
+    af = f"rubberband=tempo={float(fxc.get('tempo', 1.0)):.4f}:pitch={pitch:.4f}:formant=preserved"
+    if fxc.get("chain"):
+        af += "," + fxc["chain"]
+    run(["ffmpeg", "-i", src, "-af", af, "-ar", "48000", "-ac", "1", out])
+    stamp.write_text(sig)
+    log(f"voice fx -> {out.relative_to(ROOT)} (tempo x{fxc.get('tempo')}, {fxc.get('pitch_semitones')} st)")
+    return out
 
 
 def raw_shot(slug: str, n: int) -> Path | None:

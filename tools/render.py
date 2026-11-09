@@ -63,6 +63,8 @@ def main():
     a = ap.parse_args()
     slug = a.slug
 
+    from common import apply_voice_fx
+    apply_voice_fx(slug)
     vp = voice_path(slug)
     wj = EDITS / f"{slug}.words.json"
     if vp and (a.retranscribe or not wj.exists() or wj.stat().st_mtime < vp.stat().st_mtime):
