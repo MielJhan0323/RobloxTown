@@ -2207,5 +2207,10 @@
       "shot": 45
     }
   ],
-  "override": {}
+  "override": {
+    "music": {
+      "file": "output/music/TEMPOREX_-_Numbers.mp3",
+      "db": -10.5
+    }
+  }
 }
