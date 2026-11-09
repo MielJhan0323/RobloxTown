@@ -3,11 +3,12 @@
   "voice": {
     "provider": "kokoro",
     "voice_id": "",
-    "voice_name": "am_adam",
+    "voice_name": "am_adam+am_liam blend",
     "note": "Reference-matched narrator: male voice pitched up ~5.5 semitones (speaker-similarity 0.86 to the reference). ElevenLabs closest: Titan ContentAI (dtSEyYGNJqjrtBArPCVZ) +6 st.",
     "model": "eleven_v4",
     "prefer": "stock",
-    "kokoro_speed": 1.1
+    "kokoro_speed": 0.72,
+    "kokoro_voice": "am_adam:0.5,am_liam:0.5"
   },
   "captions": {
     "font": "Montserrat ExtraBold",
@@ -43,7 +44,8 @@
     "enabled": true,
     "tempo": 1.0,
     "pitch_semitones": 5.5,
-    "chain": "highpass=f=90,equalizer=f=3500:t=q:w=1.2:g=3,highshelf=f=7000:g=2,acompressor=threshold=-20dB:ratio=3:attack=5:release=80:makeup=2",
-    "note": "Reference-style narration: sped up (pitch kept), slightly deeper, crisp presence, compressed."
+    "chain": "highpass=f=90,equalizer=f=3200:t=q:w=1.4:g=2,highshelf=f=8000:g=1.5,acompressor=threshold=-18dB:ratio=2.5:attack=8:release=120:makeup=1.5",
+    "note": "Reference-style narration: sped up (pitch kept), slightly deeper, crisp presence, compressed.",
+    "method": "resample"
   }
 }

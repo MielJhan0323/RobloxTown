@@ -111,9 +111,18 @@ def apply_voice_fx(slug: str) -> Path | None:
     if out.exists() and stamp.exists() and stamp.read_text() == sig:
         return out
     pitch = 2 ** (float(fxc.get("pitch_semitones", 0)) / 12)
-    af = f"rubberband=tempo={float(fxc.get('tempo', 1.0)):.4f}:pitch={pitch:.4f}"
-    if fxc.get("keep_formants"):
-        af += ":formant=preserved"
+    tempo = float(fxc.get("tempo", 1.0))
+    if fxc.get("method") == "resample":
+        # clean "sped-up tape" pitch-up: no phase-vocoder warble (speed rises with pitch)
+        sr = int(subprocess.run(["ffprobe", "-v", "error", "-select_streams", "a:0", "-show_entries", "stream=sample_rate",
+                                 "-of", "csv=p=0", str(src)], capture_output=True, text=True).stdout.strip() or 48000)
+        af = f"asetrate={sr}*{pitch:.5f},aresample=48000:resampler=soxr"
+        if abs(tempo - 1) > 1e-3:
+            af += f",atempo={tempo:.4f}"
+    else:
+        af = f"rubberband=tempo={tempo:.4f}:pitch={pitch:.4f}:pitchq=quality"
+        if fxc.get("keep_formants"):
+            af += ":formant=preserved"
     if fxc.get("chain"):
         af += "," + fxc["chain"]
     run(["ffmpeg", "-i", src, "-af", af, "-ar", "48000", "-ac", "1", out])

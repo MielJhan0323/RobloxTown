@@ -46,8 +46,40 @@ def tts_text(text: str) -> str:
     return " ".join(out)
 
 
-def synth_kokoro(slug: str, voice: str = "af_heart", speed: float = 1.5) -> Path:
-    """Kokoro (pip install kokoro-onnx soundfile): far more natural than Piper."""
+def _narration_paragraphs(slug: str) -> list[str]:
+    """Paragraphs from the script's '## Narration' section (falls back to the shot text)."""
+    import re
+    from common import SCRIPTS
+    md = (SCRIPTS / f"{slug}.md").read_text()
+    m = re.search(r"^## Narration\s*\n(.*?)(?=^## )", md, re.S | re.M)
+    if m:
+        paras = [" ".join(p.split()) for p in m.group(1).strip().split("\n\n") if p.strip()]
+        if paras:
+            return paras
+    return [" ".join(s["text"] for s in parse_script(slug)["shots"])]
+
+
+def _sentences(par: str) -> list[str]:
+    import re
+    par = re.sub(r"\b(Mr|Mrs|Ms|Dr|St)\.", lambda m: m.group(1) + "\u2024", par)  # protect abbreviations
+    parts, start = [], 0
+    for m in re.finditer(r'[.!?]["\u201d]?(?=\s+["\u201c]?[A-Z])', par):
+        parts.append(par[start:m.end()])
+        start = m.end()
+    parts.append(par[start:])
+    return [p.replace("\u2024", ".").strip() for p in parts if p.strip()]
+
+
+def synth_kokoro(slug: str, voice: str = "am_adam:0.5,am_liam:0.5", speed: float = 0.72,
+                 pause: float = 0.42, para_pause: float = 0.8, stretch: float = 1.0) -> Path:
+    """Kokoro (pip install kokoro-onnx soundfile), sentence by sentence with real pauses.
+
+    voice: a Kokoro voice ("am_adam") or a blend ("am_adam:0.5,am_liam:0.5").
+    stretch: pauses are multiplied by this (set it to the voice_fx resample factor so
+    they end up the intended length after the pitch-up speeds the audio up).
+    Short dramatic sentences (<= 3 words) get a beat before them and are read slower.
+    """
+    import numpy as np
     import soundfile as sf
     from huggingface_hub import hf_hub_download
     from kokoro_onnx import Kokoro
@@ -56,12 +88,30 @@ def synth_kokoro(slug: str, voice: str = "af_heart", speed: float = 1.5) -> Path
         if not (d / f).exists():
             hf_hub_download("fastrtc/kokoro-onnx", f, local_dir=str(d))
     k = Kokoro(str(d / "kokoro-v1.0.onnx"), str(d / "voices-v1.0.bin"))
-    text = " ".join(s["text"] for s in parse_script(slug)["shots"])
-    audio, sr = k.create(text, voice=voice, speed=speed, lang="en-us")
+    if ":" in voice or "," in voice:
+        style = None
+        for part in voice.split(","):
+            name, w = (part.split(":") + ["1"])[:2]
+            v = k.get_voice_style(name.strip()) * float(w)
+            style = v if style is None else style + v
+    else:
+        style = voice
+    out_parts, sr = [], 24000
+    sil = lambda sec: np.zeros(int(sec * stretch * sr), np.float32)
+    out_parts.append(sil(0.2))
+    for pi, par in enumerate(_narration_paragraphs(slug)):
+        if pi:
+            out_parts.append(sil(para_pause - pause))
+        for sent in _sentences(par):
+            short = len(sent.split()) <= 3
+            if short:
+                out_parts.append(sil(0.22))
+            audio, sr = k.create(sent, voice=style, speed=speed * (0.9 if short else 1.0), lang="en-us")
+            out_parts += [audio.astype(np.float32), sil(pause)]
     out = OUTPUT / "stock" / "voice" / f"{slug}.wav"
     out.parent.mkdir(parents=True, exist_ok=True)
-    sf.write(str(out), audio, sr)
-    log(f"stand-in voice (kokoro {voice} x{speed}) -> {out}")
+    sf.write(str(out), np.concatenate(out_parts), sr)
+    log(f"stand-in voice (kokoro {voice} x{speed}, sentence pauses) -> {out}")
     return out
 
 
@@ -104,6 +154,10 @@ if __name__ == "__main__":
     ap.add_argument("--pitch", type=float, default=0.0, help="semitones up, e.g. 3 (girl) or 5 (boy) for a kid voice")
     a = ap.parse_args()
     if a.engine == "kokoro":
-        synth_kokoro(a.slug, a.voice or "af_heart", a.speed if a.speed != 0.92 else 1.5)
+        cfg = __import__("common").config()
+        vc, fx = cfg.get("voice", {}), cfg.get("voice_fx", {})
+        stretch = 2 ** (float(fx.get("pitch_semitones", 0)) / 12) if fx.get("enabled") and fx.get("method") == "resample" else 1.0
+        synth_kokoro(a.slug, a.voice or vc.get("kokoro_voice", "am_adam:0.5,am_liam:0.5"),
+                     a.speed if a.speed != 0.92 else float(vc.get("kokoro_speed", 0.72)), stretch=stretch)
     else:
         synth(a.slug, a.voice or "ryan", a.speed, a.pause, a.pitch)
