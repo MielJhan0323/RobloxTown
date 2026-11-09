@@ -4,3 +4,4 @@ pillow
 piper-tts
 kokoro-onnx
 soundfile
+pyworld

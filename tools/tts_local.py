@@ -70,8 +70,28 @@ def _sentences(par: str) -> list[str]:
     return [p.replace("\u2024", ".").strip() for p in parts if p.strip()]
 
 
-def synth_kokoro(slug: str, voice: str = "am_adam:0.5,am_liam:0.5", speed: float = 0.72,
-                 pause: float = 0.42, para_pause: float = 0.8, stretch: float = 1.0) -> Path:
+def widen_intonation(audio, sr: int, k: float):
+    """Exaggerate the pitch movement of one sentence by k around its own average (WORLD vocoder;
+    timbre and timing untouched). k=1.4 -> 40% livelier intonation. pip install pyworld"""
+    import numpy as np
+    import pyworld as pw
+    x = audio.astype(np.float64)
+    f0, t = pw.dio(x, sr, frame_period=5.0)
+    f0 = pw.stonemask(x, f0, t, sr)
+    sp = pw.cheaptrick(x, f0, t, sr)
+    ap = pw.d4c(x, f0, t, sr)
+    v = f0 > 0
+    if v.sum() > 5:
+        lf = np.log(f0[v])
+        base = np.median(lf)
+        f0[v] = np.exp(base + k * (lf - base))
+    y = pw.synthesize(f0, sp, ap, sr, frame_period=5.0)
+    return y.astype(np.float32)[: len(audio)]
+
+
+def synth_kokoro(slug: str, voice: str = "am_adam:0.5,am_liam:0.5", speed: float = 1.0,
+                 pause: float = 0.0, para_pause: float = 0.12, stretch: float = 1.0,
+                 short_beat: float = 0.0, expressive: float = 1.0) -> Path:
     """Kokoro (pip install kokoro-onnx soundfile), sentence by sentence with real pauses.
 
     voice: a Kokoro voice ("am_adam") or a blend ("am_adam:0.5,am_liam:0.5").
@@ -96,21 +116,35 @@ def synth_kokoro(slug: str, voice: str = "am_adam:0.5,am_liam:0.5", speed: float
             style = v if style is None else style + v
     else:
         style = voice
-    out_parts, sr = [], 24000
+    out_parts, sr, sent_times = [], 24000, []
     sil = lambda sec: np.zeros(int(sec * stretch * sr), np.float32)
     out_parts.append(sil(0.2))
+    def trim(a, sr):  # Kokoro pads each sentence with silence; cut it so pauses are exactly ours
+        env = np.convolve(np.abs(a), np.ones(int(0.01 * sr)) / int(0.01 * sr), "same")
+        idx = np.where(env > max(1e-4, env.max() * 0.02))[0]
+        if not len(idx):
+            return a
+        pad = int(0.02 * sr)
+        return a[max(0, idx[0] - pad): idx[-1] + pad]
     for pi, par in enumerate(_narration_paragraphs(slug)):
         if pi:
-            out_parts.append(sil(para_pause - pause))
+            out_parts.append(sil(max(0.0, para_pause - pause)))
         for sent in _sentences(par):
-            short = len(sent.split()) <= 3
-            if short:
-                out_parts.append(sil(0.22))
-            audio, sr = k.create(sent, voice=style, speed=speed * (0.9 if short else 1.0), lang="en-us")
-            out_parts += [audio.astype(np.float32), sil(pause)]
+            if short_beat and len(sent.split()) <= 3:
+                out_parts.append(sil(short_beat))
+            audio, sr = k.create(sent, voice=style, speed=speed, lang="en-us")
+            audio = trim(audio.astype(np.float32), sr)
+            if expressive != 1.0:
+                audio = widen_intonation(audio, sr, expressive)
+            t0 = sum(len(x) for x in out_parts) / sr
+            sent_times.append({"text": sent, "start": round(t0, 4), "end": round(t0 + len(audio) / sr, 4)})
+            out_parts += [audio, sil(pause)]
     out = OUTPUT / "stock" / "voice" / f"{slug}.wav"
     out.parent.mkdir(parents=True, exist_ok=True)
     sf.write(str(out), np.concatenate(out_parts), sr)
+    import json
+    # exact sentence timings (before any voice_fx speed-up) -> reliable per-sentence transcription
+    out.with_suffix(".sentences.json").write_text(json.dumps({"sr": sr, "sentences": sent_times}, indent=1))
     log(f"stand-in voice (kokoro {voice} x{speed}, sentence pauses) -> {out}")
     return out
 
@@ -158,6 +192,7 @@ if __name__ == "__main__":
         vc, fx = cfg.get("voice", {}), cfg.get("voice_fx", {})
         stretch = 2 ** (float(fx.get("pitch_semitones", 0)) / 12) if fx.get("enabled") and fx.get("method") == "resample" else 1.0
         synth_kokoro(a.slug, a.voice or vc.get("kokoro_voice", "am_adam:0.5,am_liam:0.5"),
-                     a.speed if a.speed != 0.92 else float(vc.get("kokoro_speed", 0.72)), stretch=stretch)
+                     a.speed if a.speed != 0.92 else float(vc.get("kokoro_speed", 1.0)), stretch=stretch,
+                     expressive=float(vc.get("expressive", 1.0)))
     else:
         synth(a.slug, a.voice or "ryan", a.speed, a.pause, a.pitch)

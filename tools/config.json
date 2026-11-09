@@ -4,11 +4,12 @@
     "provider": "kokoro",
     "voice_id": "",
     "voice_name": "am_adam+am_liam blend",
-    "note": "Reference-matched narrator: male voice pitched up ~5.5 semitones (speaker-similarity 0.86 to the reference). ElevenLabs closest: Titan ContentAI (dtSEyYGNJqjrtBArPCVZ) +6 st.",
+    "note": "Timing matched to the reference: ~6.6 syll/s inside phrases, ~0.16 s after periods, ~0.3 s between paragraphs.",
     "model": "eleven_v4",
     "prefer": "stock",
-    "kokoro_speed": 0.72,
-    "kokoro_voice": "am_adam:0.5,am_liam:0.5"
+    "kokoro_speed": 0.93,
+    "kokoro_voice": "am_adam:0.5,am_liam:0.5",
+    "expressive": 1.45
   },
   "captions": {
     "font": "Montserrat ExtraBold",

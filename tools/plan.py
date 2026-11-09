@@ -152,6 +152,9 @@ def plan(slug: str) -> dict:
         voice_dur = probe_duration(vp) or wj.get("duration", 0)
         matched = sum(1 for w in words if not w.get("guess"))
         log(f"aligned {matched}/{len(words)} script words to the voice")
+        if matched < 0.85 * len(words):
+            log("WARNING: poor alignment - captions/cuts may be off. Check edits/<slug>.words.json; "
+                "re-run with --retranscribe or --whisper-model medium.en")
         timing = "voice"
     else:
         estimate(words, cfg.get("speech_wps", 2.7))
