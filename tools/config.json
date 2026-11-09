@@ -1,11 +1,13 @@
 {
   "channel": "Your Channel",
   "voice": {
-    "provider": "elevenlabs",
-    "voice_id": "QQdwP5hk1JyyWIo7BGvS",
-    "voice_name": "Genevieve - Warm & Expressive",
-    "note": "Series narrator (ElevenLabs). Use the same voice for every story.",
-    "model": "eleven_v4"
+    "provider": "kokoro",
+    "voice_id": "",
+    "voice_name": "am_adam",
+    "note": "Reference-matched narrator: male voice pitched up ~5.5 semitones (speaker-similarity 0.86 to the reference). ElevenLabs closest: Titan ContentAI (dtSEyYGNJqjrtBArPCVZ) +6 st.",
+    "model": "eleven_v4",
+    "prefer": "stock",
+    "kokoro_speed": 1.1
   },
   "captions": {
     "font": "Montserrat ExtraBold",
@@ -39,8 +41,8 @@
   "speech_wps": 2.7,
   "voice_fx": {
     "enabled": true,
-    "tempo": 1.25,
-    "pitch_semitones": -1.0,
+    "tempo": 1.0,
+    "pitch_semitones": 5.5,
     "chain": "highpass=f=90,equalizer=f=3500:t=q:w=1.2:g=3,highshelf=f=7000:g=2,acompressor=threshold=-20dB:ratio=3:attack=5:release=80:makeup=2",
     "note": "Reference-style narration: sped up (pitch kept), slightly deeper, crisp presence, compressed."
   }

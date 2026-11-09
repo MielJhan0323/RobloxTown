@@ -79,7 +79,15 @@ def find_media(folder: Path, stem: str, exts) -> Path | None:
 
 
 def raw_voice_path(slug: str) -> Path | None:
-    return find_media(VOICE, slug, AUDIO_EXTS) or find_media(STOCK / "voice", slug, AUDIO_EXTS)
+    """audio/voice wins, unless config voice.prefer == "stock" (generated narration in output/stock/voice)."""
+    order = [VOICE, STOCK / "voice"]
+    if config().get("voice", {}).get("prefer") == "stock":
+        order.reverse()
+    for d in order:
+        p = find_media(d, slug, AUDIO_EXTS)
+        if p:
+            return p
+    return None
 
 
 def voice_path(slug: str) -> Path | None:
@@ -103,7 +111,9 @@ def apply_voice_fx(slug: str) -> Path | None:
     if out.exists() and stamp.exists() and stamp.read_text() == sig:
         return out
     pitch = 2 ** (float(fxc.get("pitch_semitones", 0)) / 12)
-    af = f"rubberband=tempo={float(fxc.get('tempo', 1.0)):.4f}:pitch={pitch:.4f}:formant=preserved"
+    af = f"rubberband=tempo={float(fxc.get('tempo', 1.0)):.4f}:pitch={pitch:.4f}"
+    if fxc.get("keep_formants"):
+        af += ":formant=preserved"
     if fxc.get("chain"):
         af += "," + fxc["chain"]
     run(["ffmpeg", "-i", src, "-af", af, "-ar", "48000", "-ac", "1", out])
