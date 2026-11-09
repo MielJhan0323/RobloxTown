@@ -16,6 +16,10 @@ from mathutils import Vector
 
 FPS = 30
 R = math.radians
+# "block": flat printed faces, glossy plastic, punchier colors (closer to blocky-avatar games);
+# "toy": the softer 3D-face look.  STEP: render every Nth frame and hold it (stop-frame look).
+STYLE = "block"
+STEPPED = True
 
 # ------------------------------------------------------------------ scene
 
@@ -46,6 +50,12 @@ _mats: dict = {}
 
 
 def mat(name, color, rough=0.55, emit=0.0, emit_color=None, metal=0.0, alpha=1.0):
+    if STYLE == "block" and not emit and alpha >= 1:
+        rough = min(rough, 0.38)  # smooth plastic
+        m_ = max(color)
+        if m_ > 0.05:  # a little more saturation
+            avg = sum(color) / 3
+            color = tuple(min(1.0, avg + (c - avg) * 1.25) for c in color)
     key = (name, tuple(color), rough, emit, alpha)
     if key in _mats:
         return _mats[key]
@@ -189,8 +199,9 @@ def smooth_all():
     for a in bpy.data.actions:
         for fc in a.fcurves:
             for kp in fc.keyframe_points:
-                kp.interpolation = "BEZIER"
-                kp.easing = "AUTO"
+                if kp.interpolation != "LINEAR":
+                    kp.interpolation = "BEZIER"
+                    kp.easing = "AUTO"
 
 
 # ------------------------------------------------------------------ world + light
@@ -361,6 +372,8 @@ def camera(target, dist=8, height=None, yaw=0, lens=50, fstop=2.8, dolly=0.06, f
     c.track_axis = "TRACK_NEGATIVE_Z"
     c.up_axis = "UP_Y"
     cam.location = p0
+    if STEPPED:
+        dolly = 0  # the edit adds a smooth push-in; a stepped 3D dolly would judder
     if dolly:
         key(cam, 1, loc=p0)
         p1 = p0.lerp(Vector(tgt.location), dolly)
@@ -441,9 +454,14 @@ class Char:
         self.head = box((1.3, 1.2, 1.25), (0, 0, 0.68), skin, 0.28, hd, name="head")
         # eyes
         self.eyes = []
-        for x in (-0.27, 0.27):
-            e = sphere(0.1, (x, -0.6, 0.78), black, hd, scale=(0.95, 0.4, 1.45))
-            sphere(0.035, (x - 0.035, -0.63, 0.84), white, hd)
+        flat = STYLE == "block"
+        for x in (-0.24, 0.24):
+            if flat:  # printed-on look: thin ovals flush with the face
+                e = sphere(0.1, (x, -0.605, 0.8), black, hd, scale=(0.75, 0.06, 1.25))
+                sphere(0.03, (x - 0.025, -0.612, 0.85), white, hd, scale=(1, 0.3, 1))
+            else:
+                e = sphere(0.1, (x, -0.6, 0.78), black, hd, scale=(0.95, 0.4, 1.45))
+                sphere(0.035, (x - 0.035, -0.63, 0.84), white, hd)
             self.eyes.append(e)
         # brows
         bm = mat(who + "_brow", tuple(c * 0.6 for c in spec["hair"]), 0.6)
@@ -451,10 +469,10 @@ class Char:
         self.browR = box((0.26, 0.06, 0.06), (0.27, -0.6, 1.06), bm, 0.02, hd)
         # mouth: smile curve + open mouth
         self.mouth = self._mouth_curve(hd, black, expr)
-        self.mouth_open = sphere(0.12, (0, -0.6, 0.42), mat("mouthin", (0.25, 0.05, 0.06), 0.4), hd, scale=(1.2, 0.35, 0.05))
+        self.mouth_open = sphere(0.12, (0, -0.6, 0.42), mat("mouthin", (0.1, 0.02, 0.03), 0.4), hd, scale=(1.2, 0.12 if STYLE == "block" else 0.35, 0.05))
         # cheeks (blush, cute)
         blush = mat("blush", (1.0, 0.55, 0.55), 0.6, alpha=0.55)
-        for x in (-0.45, 0.45):
+        for x in (() if flat else (-0.45, 0.45)):
             sphere(0.09, (x, -0.59, 0.55), blush, hd, scale=(1.3, 0.2, 0.8))
         self._hair(hd, hairm, spec)
         if spec.get("glasses"):
@@ -482,7 +500,7 @@ class Char:
     def _mouth_curve(self, parent, material, expr):
         cu = bpy.data.curves.new("mouth", "CURVE")
         cu.dimensions = "3D"
-        cu.bevel_depth = 0.035
+        cu.bevel_depth = 0.028 if STYLE == "block" else 0.035
         cu.bevel_resolution = 3
         sp = cu.splines.new("BEZIER")
         sp.bezier_points.add(2)
@@ -498,7 +516,7 @@ class Char:
         w = 0.2 if expr != "blank" else 0.14
         pts = self.mouth.data.splines[0].bezier_points
         for p, (x, z) in zip(pts, [(-w, 0.42 + curve), (0, 0.42 - curve * 0.6), (w, 0.42 + curve)]):
-            p.co = (x, -0.63, z)
+            p.co = (x, -0.615 if STYLE == "block" else -0.63, z)
             p.handle_left_type = p.handle_right_type = "AUTO"
         self.mouth.hide_render = expr == "surprised"
         self.mouth_open.scale = (1.2, 0.35, 0.9 if expr == "surprised" else 0.05)
@@ -512,7 +530,7 @@ class Char:
         self.browR.location.z = 1.06 + lift
         eye_z = 0.25 if expr == "sleepy" else (1.0 if expr != "happy" else 0.6)
         for e in self.eyes:
-            e.scale = (0.95, 0.4, 1.45 * eye_z)
+            e.scale = (e.scale[0], e.scale[1], (1.25 if STYLE == "block" else 1.45) * eye_z)
         self.expr = expr
 
     def _hair(self, hd, hm, spec):
@@ -1062,13 +1080,16 @@ def sparkle_particles(center, n=40, radius=3.0, frames=60, color=(1, 0.95, 0.7))
 
 # ------------------------------------------------------------------ render
 
-def render(out_path, frames, res=(540, 960), samples=8, step=2):
-    """step=2: animate on twos (15 fps output, same timing) - halves render time."""
+def render(out_path, frames, res=(540, 960), samples=8, step=None):
+    """step: render every Nth frame and hold it. STEPPED -> ~2 poses/s (stop-frame look, ~7x faster)."""
+    if step is None:
+        step = 15 if STEPPED else 2
     sc = bpy.context.scene
     sc.frame_start = 1
     sc.frame_end = frames
     sc.frame_step = step
-    sc.render.fps = FPS // step
+    sc.render.fps = FPS
+    sc.render.fps_base = step  # output fps = 30/step, same timing
     sc.eevee.use_soft_shadows = False
     sc.eevee.shadow_cube_size = "512"
     sc.eevee.shadow_cascade_size = "1024"

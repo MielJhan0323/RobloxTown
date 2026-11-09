@@ -3,7 +3,7 @@
 ElevenLabs isn't available. Writes output/stock/voice/<slug>.wav; a real voice
 in audio/voice/<slug>.mp3 always takes priority.
 
-  python tools/tts_local.py <slug> [--voice ryan|lessac] [--speed 0.92] [--pause 0.45]
+  python tools/tts_local.py <slug> [--voice ryan|lessac] [--speed 0.92] [--pause 0.45] [--pitch 3]
 
 Setup: pip install piper-tts  (voice models download from Hugging Face on first use)
 """
@@ -46,7 +46,7 @@ def tts_text(text: str) -> str:
     return " ".join(out)
 
 
-def synth(slug: str, voice: str = "ryan", speed: float = 0.92, pause: float = 0.45) -> Path:
+def synth(slug: str, voice: str = "ryan", speed: float = 0.92, pause: float = 0.45, pitch: float = 0.0) -> Path:
     from piper import PiperVoice, SynthesisConfig
     sc = parse_script(slug)
     text = tts_text(" ".join(s["text"] for s in sc["shots"]))
@@ -65,7 +65,13 @@ def synth(slug: str, voice: str = "ryan", speed: float = 0.92, pause: float = 0.
                 first = False
             wf.writeframes(chunk.audio_int16_bytes)
             wf.writeframes(b"\0" * int(pause * chunk.sample_rate) * chunk.sample_width)
-    log(f"stand-in voice ({voice}) -> {out}")
+    if pitch:  # semitones up (high-pitched kid narrator), tempo kept
+        import subprocess
+        tmp = out.with_suffix(".tmp.wav")
+        subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(out), "-af",
+                        f"rubberband=pitch={2 ** (pitch / 12):.4f}", str(tmp)], check=True)
+        tmp.replace(out)
+    log(f"stand-in voice ({voice}{f', +{pitch} st' if pitch else ''}) -> {out}")
     return out
 
 
@@ -75,5 +81,6 @@ if __name__ == "__main__":
     ap.add_argument("--voice", default="ryan", choices=sorted(VOICES))
     ap.add_argument("--speed", type=float, default=0.92)
     ap.add_argument("--pause", type=float, default=0.45, help="silence between sentences (s)")
+    ap.add_argument("--pitch", type=float, default=0.0, help="semitones up, e.g. 3 (girl) or 5 (boy) for a kid voice")
     a = ap.parse_args()
-    synth(a.slug, a.voice, a.speed, a.pause)
+    synth(a.slug, a.voice, a.speed, a.pause, a.pitch)
