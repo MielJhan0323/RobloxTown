@@ -4,21 +4,21 @@
     "provider": "elevenlabs",
     "voice_id": "",
     "voice_name": "",
-    "note": "Use the same voice for the whole series. Fill voice_id once chosen."
+    "note": "Stand-in: Piper ryan +5 semitones, speed 1.25 (matches reference ~4.5 wps, ~185 Hz). Use the same voice for the whole series."
   },
   "captions": {
     "font": "Montserrat ExtraBold",
-    "size": 76,
-    "outline": 4,
+    "size": 60,
+    "outline": 3.5,
     "shadow": 3,
-    "y_pct": 0.575,
+    "y_pct": 0.63,
     "pop_ms": 80,
     "max_hold": 0.9,
     "uppercase": false
   },
   "motion": {
     "push_in": 0.08,
-    "pan": 0.10,
+    "pan": 0.1,
     "punch": 0.18,
     "punch_time": 0.22
   },
