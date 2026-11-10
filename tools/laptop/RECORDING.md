@@ -3,11 +3,18 @@
 When the user says **"record <slug>"**:
 
 1. Run `bash ~/RobloxTown/tools/laptop/sync.sh` to get the latest scripts.
-2. Read `scripts/<slug>.md`: the shot list table (location, characters, pose/expression, camera,
-   props, mood, FX, seconds) and any notes above it (e.g. how a recurring prop must look).
+2. Read `scripts/<slug>.md` (shot list: what each shot must show) and, if it exists,
+   `scripts/<slug>.setup.md` - the sets to build once, the cast, and a per-shot plan with
+   **faces, face changes, meter text and camera**. Follow the setup sheet; it's the easy path.
+   First time in a place: create a ModuleScript `ReplicatedStorage.StoryKit` from
+   `tools/laptop/StoryKit.lua`, and fill its `FACES` table with classic face decal ids from the
+   Toolbox / Creator Store (search terms are in the comments). Keep those ids for every story.
 3. Work through the shots **grouped by location** (build each set once, reuse it), in Roblox Studio:
    - real Roblox avatars + Toolbox models; warm sunset lighting for `warm`, darker/bluer for `sad`/`night`;
    - pose characters to match the pose/expression column; keep recurring props identical across shots;
+   - **faces matter most** (like the reference videos): set the shot's face with `K.setFace`, and when
+     the plan says `a -> b @t`, start the recording first, then run `K.faceSequence` so the face
+     changes on camera;
    - vertical 9:16 camera; **faces in the upper 40% of the frame** (captions sit on the chest);
    - shots with movement: start the animation first.
 4. Record each shot with macOS screen capture over **only the 3D view**, mouse moved out of view:
