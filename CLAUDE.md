@@ -13,9 +13,18 @@ Style reference: `reference/` — when unsure, pull frames with ffmpeg and look.
 - Wholesome, kid-safe, original (never copy other creators' stories, characters, channel names).
 - Save to `scripts/<slug>.md` using `scripts/_TEMPLATE.md` (narration + shot table, ~1.5–2 s per row).
 
-## Voice
-- One narrator voice for the whole series (ElevenLabs if connected; voice id in `tools/config.json`), ~2.5–3 words/s.
-- Save to `audio/voice/<slug>.mp3`, otherwise wait for the user's recording.
+## Voice (locked in - the user approved this sound)
+- ElevenLabs **Titan - ConvoAI + ContentAI** (`dtSEyYGNJqjrtBArPCVZ`), model `eleven_v4`, with an inline
+  emotion tag on most lines: [curious] [dramatically] [excited] [playfully] [laughs softly] [sadly]
+  [softly] [warmly] [whispering] [emotional]. Write the tags from the script's `## Delivery` table.
+- Save the chosen take to `audio/voice/<slug>.mp3`; extra takes go to `output/voice_takes/`.
+- `voice_fx` (tools/config.json) pitches it up **5.5 semitones** with the clean resample method
+  (no rubberband / no WORLD - those sounded scuffed/glitchy). Matches the reference narrator's
+  sound and pace (~4.5 words/s, short natural pauses).
+- If ElevenLabs refuses (free tier is often blocked): fallback is Kokoro `am_adam:0.5,am_liam:0.5`
+  via `python tools/tts_local.py <slug>` with `voice.prefer = "stock"`; tell the user it's the fallback.
+- Music: user's `TEMPOREX - Numbers` instrumental loop (`output/music/`), set via the top-level
+  `override.music` in `edits/<slug>.json`, ~-7.5 dB under the voice.
 
 ## Shots (user records in Roblox Studio)
 Shot list gives: #, location, characters, pose/expression, camera (close/medium/wide, push-in/pan), props, seconds.
