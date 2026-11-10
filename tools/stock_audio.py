@@ -158,6 +158,101 @@ def click():
     return smooth_noise(len(t), 4000) * np.exp(-t * 120)
 
 
+def env_exp(n, k):
+    return np.exp(-np.arange(n) / SR * k)
+
+
+def boom():
+    """Deep comedic boom (original 'vine boom'-style hit): pitch-dropping sub + click + saturated tail."""
+    d = 1.6
+    n = int(d * SR)
+    t = np.arange(n) / SR
+    f = 95 * np.exp(-t * 2.2) + 38
+    ph = 2 * np.pi * np.cumsum(f) / SR
+    body = np.sin(ph) * env_exp(n, 2.4)
+    body += 0.5 * np.sin(2 * ph) * env_exp(n, 5)
+    click = smooth_noise(n, 2500) * env_exp(n, 60) * 0.6
+    x = np.tanh(2.6 * (body + click))
+    return reverb(x, 0.25)
+
+
+def whoosh(d=0.7, up=True):
+    n = int(d * SR)
+    t = np.arange(n) / SR
+    noise = rng.standard_normal(n)
+    spec = np.fft.rfft(noise)
+    out = np.zeros(n)
+    # sweep a band through the noise in 8 slices for a moving whoosh
+    for i in range(8):
+        a, b = i * n // 8, (i + 1) * n // 8
+        fc = (300 + 3500 * (i / 7)) if up else (3800 - 3500 * (i / 7))
+        seg = np.fft.rfft(noise[a:b])
+        fr = np.fft.rfftfreq(b - a, 1 / SR)
+        seg *= np.exp(-((fr - fc) / (fc * 0.6)) ** 2)
+        out[a:b] = np.fft.irfft(seg, b - a)
+    shape = np.sin(np.pi * t / d) ** 2
+    out = np.convolve(out * shape, np.ones(64) / 64, "same")
+    return np.stack([out * (1 - t / d * 0.6), out * (0.4 + t / d * 0.6)], -1)
+
+
+def impact():
+    """Cinematic reveal hit: low thud + noise burst + long tail."""
+    n = int(2.5 * SR)
+    t = np.arange(n) / SR
+    thud = np.sin(2 * np.pi * (55 * np.exp(-t * 1.5) + 30) * t) * env_exp(n, 1.8)
+    burst = smooth_noise(n, 1200) * env_exp(n, 9) * 0.8
+    return reverb(np.tanh(1.8 * (thud + burst)), 0.45)
+
+
+def heartbeat(beats=4, bpm=62):
+    n = int((beats * 60 / bpm + 0.6) * SR)
+    out = np.zeros(n)
+    for b in range(beats):
+        for off, amp in ((0.0, 1.0), (0.24, 0.7)):
+            j = int((b * 60 / bpm + off) * SR)
+            m = int(0.18 * SR)
+            t = np.arange(m) / SR
+            hit = np.sin(2 * np.pi * (60 * np.exp(-t * 8) + 35) * t) * np.exp(-t * 22) * amp
+            out[j:j + m] += hit[: max(0, min(m, n - j))]
+    return np.tanh(1.5 * out)
+
+
+def beeps(k=3, gap=0.9):
+    n = int((k * gap + 0.3) * SR)
+    out = np.zeros(n)
+    for i in range(k):
+        j = int(i * gap * SR)
+        m = int(0.14 * SR)
+        t = np.arange(m) / SR
+        out[j:j + m] += np.sin(2 * np.pi * 1046 * t) * np.minimum(1, (m - np.arange(m)) / (0.02 * SR)) * np.minimum(1, np.arange(m) / (0.004 * SR))
+    return reverb(out * 0.6, 0.2)
+
+
+def pop():
+    n = int(0.25 * SR)
+    t = np.arange(n) / SR
+    return np.sin(2 * np.pi * (900 * np.exp(-t * 30) + 300) * t) * env_exp(n, 25)
+
+
+def ticks(k=10, gap=0.11):
+    n = int((k * gap + 0.1) * SR)
+    out = np.zeros(n)
+    for i in range(k):
+        j = int(i * gap * SR)
+        m = int(0.03 * SR)
+        out[j:j + m] += smooth_noise(m, 5000) * env_exp(m, 200) * (0.6 + 0.4 * (i % 2))
+    return out
+
+
+def riser(d=1.4):
+    n = int(d * SR)
+    t = np.arange(n) / SR
+    f = 200 + 1400 * (t / d) ** 2
+    tone = np.sin(2 * np.pi * np.cumsum(f) / SR) * 0.3
+    hiss = smooth_noise(n, 4000) * 0.5
+    return (tone + hiss) * (t / d) ** 2
+
+
 def main():
     write(STOCK / "music" / "soft_piano_stock.wav", music())
     write(STOCK / "sfx" / "amb_waves_stock.wav", waves())
@@ -166,6 +261,15 @@ def main():
     write(STOCK / "sfx" / "magic_shimmer_stock.wav", shimmer())
     write(STOCK / "sfx" / "door_knock_stock.wav", knock())
     write(STOCK / "sfx" / "click_stock.wav", click())
+    write(STOCK / "sfx" / "boom_stock.wav", boom())
+    write(STOCK / "sfx" / "whoosh_stock.wav", whoosh(0.7, True))
+    write(STOCK / "sfx" / "whoosh_down_stock.wav", whoosh(0.8, False))
+    write(STOCK / "sfx" / "impact_stock.wav", impact())
+    write(STOCK / "sfx" / "heartbeat_stock.wav", heartbeat())
+    write(STOCK / "sfx" / "monitor_beep_stock.wav", beeps())
+    write(STOCK / "sfx" / "pop_stock.wav", pop())
+    write(STOCK / "sfx" / "ticks_stock.wav", ticks())
+    write(STOCK / "sfx" / "riser_stock.wav", riser())
     log(f"stock audio -> {STOCK}")
 
 

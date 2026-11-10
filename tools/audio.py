@@ -78,6 +78,33 @@ def mix(slug: str) -> Path:
         parts.append(f"[{si}:a]{AF},volume={s.get('db', acfg.get('sfx_db', -14))}dB,adelay={int(max(0, s['t']) * 1000)}:all=1[sfx{k}]")
         mixins.append(f"[sfx{k}]")
 
+    # extra hand-placed SFX: override.sfx_extra = [{"sfx": "boom", "shot": 6, "at": 0.55, "db": -9}, ...]
+    # "at" is seconds from the shot's start (negative = before it). "sfx" is a keyword matched in
+    # audio/sfx then output/stock/sfx, or a path relative to the repo.
+    from common import SFX as SFX_DIR, STOCK
+    starts = {sh["n"]: sh["start"] for sh in data["shots"]}
+
+    def find_sfx(key):
+        p = ROOT / key
+        if p.exists():
+            return p
+        for d in (SFX_DIR, STOCK / "sfx"):
+            if d.exists():
+                for f in sorted(d.iterdir()):
+                    if key.lower() in f.stem.lower():
+                        return f
+        return None
+
+    for k, e in enumerate((data.get("override") or {}).get("sfx_extra", [])):
+        f = find_sfx(e["sfx"])
+        if not f or e.get("shot") not in starts:
+            log(f"sfx_extra: skipped {e}")
+            continue
+        t = max(0.0, starts[e["shot"]] + float(e.get("at", 0)))
+        xi = add_input(["-i", f])
+        parts.append(f"[{xi}:a]{AF},volume={e.get('db', acfg.get('sfx_db', -14))}dB,adelay={int(t * 1000)}:all=1[sx{k}]")
+        mixins.append(f"[sx{k}]")
+
     parts.append(f"{''.join(mixins)}amix=inputs={len(mixins)}:normalize=0:duration=first,atrim=0:{D:.3f}[pre]")
     cd = cache_dir(slug)
     pre = cd / "premix.wav"
