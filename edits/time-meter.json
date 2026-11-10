@@ -352,12 +352,14 @@
       "start": 37.34,
       "end": 39.42,
       "src": "raw/time-meter/shot_25.mov",
-      "src_dur": 1.767,
+      "src_dur": 1.717,
       "motion": "push_in",
       "transition": "cut",
       "grade": "cool",
       "placeholder": null,
-      "override": {},
+      "override": {
+        "src_in": 0.2
+      },
       "dur": 2.08
     },
     {
@@ -542,9 +544,7 @@
       "transition": "cut",
       "grade": "cool",
       "placeholder": null,
-      "override": {
-        "src_in": 0.55
-      },
+      "override": {},
       "dur": 1.28
     },
     {
@@ -553,14 +553,12 @@
       "start": 58.07,
       "end": 58.77,
       "src": "raw/time-meter/shot_39.mov",
-      "src_dur": 1.767,
+      "src_dur": 1.733,
       "motion": "push_in",
       "transition": "cut",
       "grade": "cool",
       "placeholder": null,
-      "override": {
-        "src_in": 0.35
-      },
+      "override": {},
       "dur": 0.7
     },
     {
