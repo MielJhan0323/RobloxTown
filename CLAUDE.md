@@ -26,6 +26,12 @@ Style reference: `reference/` — when unsure, pull frames with ffmpeg and look.
 - Music: user's `TEMPOREX - Numbers` instrumental loop (`output/music/`), set via the top-level
   `override.music` in `edits/<slug>.json`, ~-7.5 dB under the voice.
 
+## Laptop recording workflow
+- Scripts live in `scripts/<slug>.md`, listed in `scripts/INDEX.md` (update its Status column).
+- The laptop syncs with `bash ~/RobloxTown/tools/laptop/sync.sh`; laptop Claude follows
+  `tools/laptop/RECORDING.md` when the user says "record <slug>". Clips: `raw/<slug>/shot_XX.mov`.
+- User uploads `raw/<slug>/` to Drive and sends the link; download with `gdown --folder <link>`.
+
 ## Shots (user records in Roblox Studio)
 Shot list gives: #, location, characters, pose/expression, camera (close/medium/wide, push-in/pan), props, seconds.
 Each shot shows exactly what its sentence says; props get insert close-ups. Files: `raw/<slug>/shot_XX.mp4`.
