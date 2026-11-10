@@ -15,7 +15,13 @@ When the user says **"record <slug>"**:
    - **faces matter most** (like the reference videos): set the shot's face with `K.setFace`, and when
      the plan says `a -> b @t`, start the recording first, then run `K.faceSequence` so the face
      changes on camera;
-   - vertical 9:16 camera; **faces in the upper 40% of the frame** (captions sit on the chest);
+   - vertical 9:16 camera. **Framing rule: the WHOLE head is always in frame with a little space above
+     the hair**, eyes about 1/3 down from the top, chest in the middle (captions sit there). Never cut off
+     the eyes or the top of the head. "close" = head + shoulders (not just a face filling the frame),
+     "medium" = waist up, "wide" = whole body + the set. Props in inserts must be readable (meter text
+     legible, the whole bracelet/pudding visible), not a blur of color;
+   - before recording, make sure **nothing covers Studio** (no Terminal, browser or video player on top):
+     the capture records whatever is on screen in that rectangle;
    - shots with movement: start the animation first.
 4. Record each shot with macOS screen capture over **only the 3D view**, mouse moved out of view:
    `screencapture -x -v -V <sec+1> -R x,y,w,h ~/RobloxTown/raw/<slug>/shot_XX.mov`
