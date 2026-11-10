@@ -1,4 +1,4 @@
-# The Last Month
+# The Last Day
 
 Rule: In this town, everyone has a meter on their wrist that shows how much time they have left.
 Music: Numbers
@@ -14,7 +14,7 @@ Then, I woke up in a hospital. I didn't remember the accident. I didn't remember
 
 The girl across the hall visited me every day. Her name was Lily. She brought pudding cups and the worst jokes I'd ever heard. She always wore a bracelet over her meter. We played cards until the nurses kicked her out. She always let me win. But every day, Lily looked a little more tired. First, she stopped walking over. Then, she came in a wheelchair. Then, her jokes got quieter. One day, she handed me a grape pudding before I even asked. "How did you know grape is my favorite?" I asked. She smiled. "Lucky guess."
 
-The next morning, the doctor checked my chart. "Your meter hit zero in the ambulance," she said. "Someone gave you their time. They didn't leave a name." I couldn't stop thinking about it. The pudding she always knew. The bracelet she never took off. How she got weaker every day I got stronger. I walked across the hall. I slid her bracelet down. Her meter said one month.
+The next morning, the doctor checked my chart. "Your meter hit zero in the ambulance," she said. "Someone gave you their time. They didn't leave a name." I couldn't stop thinking about it. The pudding she always knew. The bracelet she never took off. How she got weaker every day I got stronger. I walked across the hall. I slid her bracelet down. Her meter said one day.
 
 And suddenly, I remembered. A treehouse. A girl with a gap-toothed grin. Two grape puddings, always split in half. "It was you," I said. She looked down. "You always shared yours with me," she said. "So I shared mine."
 
@@ -76,7 +76,7 @@ Frame faces in the upper 40% of the 9:16 frame (captions sit on the chest). Mous
 | 39 | I got stronger. | Hospital room | Narrator | standing up out of bed on his own | medium, push-in | IV stand | night | - | - | 1.2 |
 | 40 | I walked across the hall. | Hospital hallway at night | Narrator | walking, determined | medium, pan right | - | night | - | - | 1.6 |
 | 41 | I slid her bracelet down. | Lily's bed | Narrator's hand, Lily asleep | hand gently sliding the bracelet down | close insert | beaded bracelet | night | - | - | 1.6 |
-| 42 | Her meter said one month. | Lily's wrist | - | - | close, punch-in on meter "1 MONTH" | wrist meter | night | - | - | 1.8 |
+| 42 | Her meter said one day. | Lily's wrist | - | - | close, punch-in on meter "1 DAY" | wrist meter | night | - | - | 1.8 |
 | 43 | And suddenly, I remembered. | Lily's room | Narrator | eyes wide, hand on head | close, punch-in | - | night | sparkle | shimmer | 1.6 |
 | 44 | A treehouse. | Treehouse at golden sunset (memory) | - | - | wide, slow push-in | treehouse, rope ladder | warm | fog | amb:wind | 1.3 |
 | 45 | A girl with a gap-toothed grin. | Treehouse (memory) | young Lily | big gap-toothed smile | close, push-in | - | warm | - | - | 1.6 |
@@ -138,7 +138,7 @@ How the narrator says each line (tones -> ElevenLabs emotion tags; also used by 
 | How she got weaker every day I got stronger. | emotional | |
 | I walked across the hall. | soft | |
 | I slid her bracelet down. | soft | |
-| Her meter said one month. | sad | Her meter said... one month. |
+| Her meter said one day. | sad | Her meter said... one day. |
 | And suddenly, I remembered. | emotional | |
 | A treehouse. | warm | |
 | A girl with a gap-toothed grin. | warm | |
@@ -176,7 +176,7 @@ Paste-ready narration with emotion tags (Titan, eleven_v4), then voice_fx pitche
 
 [warmly] The girl across the hall visited me every day. Her name was Lily. [playfully] She brought pudding cups and the worst jokes I'd ever heard. [curious] She always wore a bracelet over her meter. [playfully] We played cards until the nurses kicked her out. [warmly] She always let me win. [sadly] But every day, Lily looked a little more tired. First, she stopped walking over. Then, she came in a wheelchair. Then, her jokes got quieter. [curious] One day, she handed me a grape pudding before I even asked. "How did you know grape is my favorite?" I asked. [warmly] She smiled. [playfully] "Lucky guess."
 
-[softly] The next morning, the doctor checked my chart. [dramatically] "Your meter hit zero in the ambulance," she said. [softly] "Someone gave you their time... They didn't leave a name." [curious] I couldn't stop thinking about it. [dramatically] The pudding she always knew. The bracelet she never took off. [emotional] How she got weaker every day I got stronger. [softly] I walked across the hall. I slid her bracelet down. [sadly] Her meter said... one month.
+[softly] The next morning, the doctor checked my chart. [dramatically] "Your meter hit zero in the ambulance," she said. [softly] "Someone gave you their time... They didn't leave a name." [curious] I couldn't stop thinking about it. [dramatically] The pudding she always knew. The bracelet she never took off. [emotional] How she got weaker every day I got stronger. [softly] I walked across the hall. I slid her bracelet down. [sadly] Her meter said... one day.
 
 [emotional] And suddenly, I remembered. [warmly] A treehouse. A girl with a gap-toothed grin. Two grape puddings, always split in half. [emotional] "It was you," I said. [sadly] She looked down. "You always shared yours with me," she said. "So I shared mine."
 
