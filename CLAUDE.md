@@ -31,6 +31,9 @@ Style reference: `reference/` — when unsure, pull frames with ffmpeg and look.
 - The laptop syncs with `bash ~/RobloxTown/tools/laptop/sync.sh`; laptop Claude follows
   `tools/laptop/RECORDING.md` when the user says "record <slug>". Clips: `raw/<slug>/shot_XX.mov`.
 - User uploads `raw/<slug>/` to Drive and sends the link; download with `gdown --folder <link>`.
+- Every new story also gets `scripts/<slug>.setup.md` (copy the structure of `time-meter.setup.md`):
+  sets to build once + their shots, cast, and a per-shot plan with face / face change @time /
+  meter-or-prop state / camera. Classic face decals that change on the key word, like the reference.
 
 ## Shots (user records in Roblox Studio)
 Shot list gives: #, location, characters, pose/expression, camera (close/medium/wide, push-in/pan), props, seconds.
