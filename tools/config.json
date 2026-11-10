@@ -1,12 +1,12 @@
 {
   "channel": "Your Channel",
   "voice": {
-    "provider": "kokoro",
-    "voice_id": "",
-    "voice_name": "am_adam+am_liam blend",
-    "note": "Timing matched to the reference: ~6.6 syll/s inside phrases, ~0.16 s after periods, ~0.3 s between paragraphs.",
+    "provider": "elevenlabs",
+    "voice_id": "dtSEyYGNJqjrtBArPCVZ",
+    "voice_name": "Titan - ConvoAI + ContentAI",
+    "note": "Series narrator: ElevenLabs Titan with inline emotion tags, pitched up 5.5 st by voice_fx (closest match to the reference). Free fallback: Kokoro am_adam+am_liam via tools/tts_local.py (set prefer=stock).",
     "model": "eleven_v4",
-    "prefer": "stock",
+    "prefer": "audio",
     "kokoro_speed": 0.93,
     "kokoro_voice": "am_adam:0.5,am_liam:0.5",
     "expressive": 1.0

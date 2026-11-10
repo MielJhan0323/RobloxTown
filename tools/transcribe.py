@@ -45,8 +45,10 @@ def transcribe(slug: str, model_name: str = "small.en") -> list[dict]:
     speedup = 1.0
     if fxc.get("enabled") and fxc.get("method") == "resample":
         speedup = 2 ** (float(fxc.get("pitch_semitones", 0)) / 12) * float(fxc.get("tempo", 1.0))
-    if side.exists() and (vp.name == "voice_fx.wav" or vp.parent == STOCK / "voice") and \
-            side.stat().st_mtime >= (STOCK / "voice" / f"{slug}.wav").stat().st_mtime - 5:
+    from common import raw_voice_path
+    src_voice = raw_voice_path(slug)
+    if side.exists() and src_voice == STOCK / "voice" / f"{slug}.wav" and \
+            side.stat().st_mtime >= src_voice.stat().st_mtime - 5:
         import json as _json
         sents = _json.loads(side.read_text())["sentences"]
         if vp.name != "voice_fx.wav":
@@ -92,6 +94,40 @@ def transcribe(slug: str, model_name: str = "small.en") -> list[dict]:
                 t = w.word.strip()
                 if t:
                     words.append({"word": t, "start": round(w.start + off, 3), "end": round(w.end + off, 3)})
+
+    # Repair: Whisper sometimes drops a stretch of fast speech (and hallucinates filler like
+    # "thank you for watching"). Find gaps with speech energy but no words; redo them in small pieces.
+    junk = {"thank", "you", "for", "watching", "thanks", "subscribe"}
+    speech = env > max(1e-6, np.percentile(env, 70) * 0.05)
+
+    def voiced(t0, t1):
+        a, b = int(t0 * 100), int(t1 * 100)
+        return speech[a:b].mean() if b > a else 0.0
+
+    for _ in range(2):
+        words.sort(key=lambda w: w["start"])
+        bounds = [0.0] + [x for w in words for x in (w["start"], w["end"])] + [n / sr]
+        gaps = [(bounds[i], bounds[i + 1]) for i in range(0, len(bounds) - 1, 2)
+                if bounds[i + 1] - bounds[i] > 1.2 and voiced(bounds[i], bounds[i + 1]) > 0.35]
+        if not gaps:
+            break
+        for g0, g1 in gaps:
+            # drop hallucinated filler words sitting inside/next to the gap
+            words = [w for w in words if not (g0 - 1.5 <= w["start"] <= g1 + 1.5 and w["word"].lower().strip(".,!") in junk)]
+            t = g0
+            while t < g1 - 0.2:
+                c0, c1 = int(max(0, t - 0.15) * sr), int(min(g1 + 0.15, t + 4.0) * sr)
+                segs, _ = model.transcribe(samples[c0:c1], language="en", word_timestamps=True,
+                                           beam_size=5, condition_on_previous_text=False, temperature=0.0)
+                for seg in segs:
+                    for w in seg.words or []:
+                        tw = w.word.strip()
+                        st_ = w.start + c0 / sr
+                        if tw and g0 - 0.05 <= st_ <= g1 + 0.05:
+                            words.append({"word": tw, "start": round(st_, 3), "end": round(w.end + c0 / sr, 3)})
+                t += 4.0
+        log(f"re-transcribed {len(gaps)} skipped stretch(es)")
+    words.sort(key=lambda w: w["start"])
 
     class _Info:
         duration = n / sr
