@@ -6,12 +6,20 @@ Style reference: `reference/` — when unsure, pull frames with ffmpeg and look.
 
 ## Story format
 - First line always: `In this town, <one magical rule>.`
-- One first-person kid/teen narrator, casual + warm, short sentences. 250–400 words (~1.5–2.5 min).
+- One first-person kid/teen narrator, casual + warm, short sentences.
+- **Length (user rule, from story 3 on): about 1 minute** - ~200-230 words, ~30-35 shots.
+- **Reusable scenes (user rule):** use only 2-3 sets per story, preferably ones that already exist in the
+  laptop's `workspace.Town.Sets` (park bench, street, hospital rooms, treehouse...). Many shots per set,
+  few location changes - faster and cheaper to record. Say in the setup sheet which sets are reused.
+- **Characters have real Roblox hair (user rule):** hair accessories/meshes from the catalog, not
+  block hair. Note it in the setup sheet's cast table.
 - Beats: rule (0–5 s) → 3–5 quick funny worldbuilding examples (5–25 s) → inciting "Then, ..." →
   personal stakes (family / loss / secret; time skips OK) → turn (discovery / trick / reveal, short quoted exchange)
   → quiet emotional or clever payoff (often one final word or image). No "subscribe" inside the story.
 - Wholesome, kid-safe, original (never copy other creators' stories, characters, channel names).
 - Save to `scripts/<slug>.md` using `scripts/_TEMPLATE.md` (narration + shot table, ~1.5–2 s per row).
+- SFX (user feedback): booms on funny beats, impacts on reveals, heartbeat/ticks where they fit -
+  but **whooshes only on the 2-3 biggest time skips**, quiet. Placed via `override.sfx_extra`.
 
 ## Voice (locked in - the user approved this sound)
 - ElevenLabs **Titan - ConvoAI + ContentAI** (`dtSEyYGNJqjrtBArPCVZ`), model `eleven_v4`, with an inline

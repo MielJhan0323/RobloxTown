@@ -453,17 +453,12 @@
       "start": 47.59,
       "end": 49.91,
       "src": "raw/time-meter/shot_32.mov",
-      "src_dur": 2.55,
+      "src_dur": 2.617,
       "motion": "push_in",
       "transition": "flash",
       "grade": "cool",
       "placeholder": null,
-      "override": {
-        "src": "raw/time-meter/shot_14.mov",
-        "src_in": 0.0,
-        "motion": "punch",
-        "grade": "cool"
-      },
+      "override": {},
       "dur": 2.32
     },
     {
@@ -500,7 +495,7 @@
       "start": 52.25,
       "end": 53.75,
       "src": "raw/time-meter/shot_35.mov",
-      "src_dur": 2.75,
+      "src_dur": 2.783,
       "motion": "push_in",
       "transition": "fog",
       "grade": "cool",
@@ -533,11 +528,7 @@
       "transition": "cut",
       "grade": "cool",
       "placeholder": null,
-      "override": {
-        "src": "raw/time-meter/shot_19.mov",
-        "src_in": 0.0,
-        "grade": "cool"
-      },
+      "override": {},
       "dur": 1.6
     },
     {
@@ -560,7 +551,7 @@
       "start": 58.07,
       "end": 58.77,
       "src": "raw/time-meter/shot_39.mov",
-      "src_dur": 1.833,
+      "src_dur": 1.767,
       "motion": "push_in",
       "transition": "cut",
       "grade": "cool",
@@ -616,7 +607,7 @@
       "start": 63.42,
       "end": 65.02,
       "src": "raw/time-meter/shot_43.mov",
-      "src_dur": 2.75,
+      "src_dur": 2.7,
       "motion": "punch",
       "transition": "sparkle",
       "grade": "cool",
@@ -644,7 +635,7 @@
       "start": 65.94,
       "end": 67.46,
       "src": "raw/time-meter/shot_45.mov",
-      "src_dur": 2.8,
+      "src_dur": 2.783,
       "motion": "push_in",
       "transition": "cut",
       "grade": "warm",
@@ -658,7 +649,7 @@
       "start": 67.46,
       "end": 69.49,
       "src": "raw/time-meter/shot_46.mov",
-      "src_dur": 2.767,
+      "src_dur": 2.783,
       "motion": "push_in",
       "transition": "cut",
       "grade": "warm",
@@ -700,7 +691,7 @@
       "start": 71.83,
       "end": 73.67,
       "src": "raw/time-meter/shot_49.mov",
-      "src_dur": 2.717,
+      "src_dur": 2.783,
       "motion": "push_in",
       "transition": "cut",
       "grade": "cool",
@@ -714,7 +705,7 @@
       "start": 73.67,
       "end": 74.69,
       "src": "raw/time-meter/shot_50.mov",
-      "src_dur": 2.75,
+      "src_dur": 2.717,
       "motion": "push_in",
       "transition": "cut",
       "grade": "cool",
@@ -742,7 +733,7 @@
       "start": 77.07,
       "end": 79.23,
       "src": "raw/time-meter/shot_52.mov",
-      "src_dur": 2.767,
+      "src_dur": 2.783,
       "motion": "punch",
       "transition": "cut",
       "grade": "warm",
@@ -756,7 +747,7 @@
       "start": 79.23,
       "end": 80.61,
       "src": "raw/time-meter/shot_53.mov",
-      "src_dur": 2.75,
+      "src_dur": 2.8,
       "motion": "push_in",
       "transition": "cut",
       "grade": "warm",
@@ -770,7 +761,7 @@
       "start": 80.61,
       "end": 81.59,
       "src": "raw/time-meter/shot_54.mov",
-      "src_dur": 1.767,
+      "src_dur": 1.8,
       "motion": "drift",
       "transition": "sparkle",
       "grade": "warm",
@@ -798,7 +789,7 @@
       "start": 83.1,
       "end": 84.36,
       "src": "raw/time-meter/shot_56.mov",
-      "src_dur": 1.783,
+      "src_dur": 1.767,
       "motion": "punch",
       "transition": "cut",
       "grade": "warm",
@@ -812,7 +803,7 @@
       "start": 84.36,
       "end": 86.48,
       "src": "raw/time-meter/shot_57.mov",
-      "src_dur": 2.783,
+      "src_dur": 2.75,
       "motion": "push_in",
       "transition": "sparkle",
       "grade": "warm",
@@ -826,7 +817,7 @@
       "start": 86.48,
       "end": 88.44,
       "src": "raw/time-meter/shot_58.mov",
-      "src_dur": 2.8,
+      "src_dur": 2.767,
       "motion": "push_in",
       "transition": "cut",
       "grade": "warm",
@@ -840,7 +831,7 @@
       "start": 88.44,
       "end": 89.9,
       "src": "raw/time-meter/shot_59.mov",
-      "src_dur": 2.75,
+      "src_dur": 2.8,
       "motion": "push_in",
       "transition": "cut",
       "grade": "warm",
@@ -3052,90 +3043,6 @@
     },
     "sfx_extra": [
       {
-        "sfx": "whoosh",
-        "shot": 11,
-        "at": -0.35,
-        "db": -15
-      },
-      {
-        "sfx": "whoosh",
-        "shot": 22,
-        "at": -0.35,
-        "db": -15
-      },
-      {
-        "sfx": "whoosh",
-        "shot": 31,
-        "at": -0.35,
-        "db": -15
-      },
-      {
-        "sfx": "whoosh",
-        "shot": 35,
-        "at": -0.35,
-        "db": -15
-      },
-      {
-        "sfx": "whoosh",
-        "shot": 44,
-        "at": -0.35,
-        "db": -15
-      },
-      {
-        "sfx": "whoosh",
-        "shot": 47,
-        "at": -0.35,
-        "db": -15
-      },
-      {
-        "sfx": "whoosh",
-        "shot": 61,
-        "at": -0.35,
-        "db": -15
-      },
-      {
-        "sfx": "whoosh",
-        "shot": 4,
-        "at": -0.2,
-        "db": -21
-      },
-      {
-        "sfx": "whoosh",
-        "shot": 5,
-        "at": -0.2,
-        "db": -21
-      },
-      {
-        "sfx": "whoosh",
-        "shot": 7,
-        "at": -0.2,
-        "db": -21
-      },
-      {
-        "sfx": "whoosh",
-        "shot": 8,
-        "at": -0.2,
-        "db": -21
-      },
-      {
-        "sfx": "whoosh",
-        "shot": 15,
-        "at": -0.2,
-        "db": -21
-      },
-      {
-        "sfx": "whoosh",
-        "shot": 40,
-        "at": -0.2,
-        "db": -21
-      },
-      {
-        "sfx": "whoosh_down",
-        "shot": 51,
-        "at": -0.3,
-        "db": -18
-      },
-      {
         "sfx": "boom",
         "shot": 6,
         "at": 0.55,
@@ -3242,6 +3149,24 @@
         "shot": 57,
         "at": 0.0,
         "db": -14
+      },
+      {
+        "sfx": "whoosh",
+        "shot": 11,
+        "at": -0.35,
+        "db": -19
+      },
+      {
+        "sfx": "whoosh",
+        "shot": 35,
+        "at": -0.35,
+        "db": -20
+      },
+      {
+        "sfx": "whoosh",
+        "shot": 44,
+        "at": -0.35,
+        "db": -19
       }
     ]
   }
