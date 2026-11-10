@@ -542,7 +542,9 @@
       "transition": "cut",
       "grade": "cool",
       "placeholder": null,
-      "override": {},
+      "override": {
+        "src_in": 0.55
+      },
       "dur": 1.28
     },
     {
@@ -556,7 +558,9 @@
       "transition": "cut",
       "grade": "cool",
       "placeholder": null,
-      "override": {},
+      "override": {
+        "src_in": 0.35
+      },
       "dur": 0.7
     },
     {
