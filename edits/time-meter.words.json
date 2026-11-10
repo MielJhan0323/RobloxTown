@@ -1,0 +1,1786 @@
+{
+  "voice": "voice_fx.wav",
+  "duration": 92.231,
+  "words": [
+    {
+      "word": "In",
+      "start": 0.0,
+      "end": 0.12
+    },
+    {
+      "word": "this",
+      "start": 0.12,
+      "end": 0.26
+    },
+    {
+      "word": "town,",
+      "start": 0.26,
+      "end": 0.52
+    },
+    {
+      "word": "everyone",
+      "start": 0.76,
+      "end": 0.94
+    },
+    {
+      "word": "has",
+      "start": 0.94,
+      "end": 1.12
+    },
+    {
+      "word": "a",
+      "start": 1.12,
+      "end": 1.26
+    },
+    {
+      "word": "meter",
+      "start": 1.26,
+      "end": 1.4
+    },
+    {
+      "word": "on",
+      "start": 1.4,
+      "end": 1.62
+    },
+    {
+      "word": "their",
+      "start": 1.62,
+      "end": 1.72
+    },
+    {
+      "word": "wrist",
+      "start": 1.72,
+      "end": 1.92
+    },
+    {
+      "word": "that",
+      "start": 1.92,
+      "end": 2.06
+    },
+    {
+      "word": "shows",
+      "start": 2.06,
+      "end": 2.22
+    },
+    {
+      "word": "how",
+      "start": 2.22,
+      "end": 2.36
+    },
+    {
+      "word": "much",
+      "start": 2.36,
+      "end": 2.48
+    },
+    {
+      "word": "time",
+      "start": 2.48,
+      "end": 2.68
+    },
+    {
+      "word": "they",
+      "start": 2.68,
+      "end": 2.82
+    },
+    {
+      "word": "have",
+      "start": 2.82,
+      "end": 2.94
+    },
+    {
+      "word": "left.",
+      "start": 2.94,
+      "end": 3.16
+    },
+    {
+      "word": "Kids",
+      "start": 3.6,
+      "end": 3.64
+    },
+    {
+      "word": "compare",
+      "start": 3.64,
+      "end": 3.94
+    },
+    {
+      "word": "them",
+      "start": 3.94,
+      "end": 4.06
+    },
+    {
+      "word": "at",
+      "start": 4.06,
+      "end": 4.16
+    },
+    {
+      "word": "recess",
+      "start": 4.16,
+      "end": 4.42
+    },
+    {
+      "word": "like",
+      "start": 4.42,
+      "end": 4.62
+    },
+    {
+      "word": "trading",
+      "start": 4.62,
+      "end": 4.9
+    },
+    {
+      "word": "cards.",
+      "start": 4.9,
+      "end": 5.28
+    },
+    {
+      "word": "My",
+      "start": 6.08,
+      "end": 6.22
+    },
+    {
+      "word": "grandpa's",
+      "start": 6.22,
+      "end": 6.6
+    },
+    {
+      "word": "says",
+      "start": 6.6,
+      "end": 6.74
+    },
+    {
+      "word": "twenty",
+      "start": 6.74,
+      "end": 7.02
+    },
+    {
+      "word": "years,",
+      "start": 7.02,
+      "end": 7.38
+    },
+    {
+      "word": "and",
+      "start": 7.6,
+      "end": 7.68
+    },
+    {
+      "word": "he",
+      "start": 7.68,
+      "end": 7.76
+    },
+    {
+      "word": "still",
+      "start": 7.76,
+      "end": 8.0
+    },
+    {
+      "word": "won't",
+      "start": 8.0,
+      "end": 8.24
+    },
+    {
+      "word": "eat",
+      "start": 8.24,
+      "end": 8.26
+    },
+    {
+      "word": "his",
+      "start": 8.26,
+      "end": 8.38
+    },
+    {
+      "word": "vegetables.",
+      "start": 8.38,
+      "end": 8.62
+    },
+    {
+      "word": "little",
+      "start": 8.86,
+      "end": 8.86
+    },
+    {
+      "word": "bit.",
+      "start": 8.86,
+      "end": 8.86
+    },
+    {
+      "word": "My",
+      "start": 9.04,
+      "end": 9.22
+    },
+    {
+      "word": "uncle",
+      "start": 9.22,
+      "end": 9.36
+    },
+    {
+      "word": "checks",
+      "start": 9.36,
+      "end": 9.6
+    },
+    {
+      "word": "his",
+      "start": 9.6,
+      "end": 9.76
+    },
+    {
+      "word": "more",
+      "start": 9.76,
+      "end": 9.92
+    },
+    {
+      "word": "than",
+      "start": 9.92,
+      "end": 10.02
+    },
+    {
+      "word": "his",
+      "start": 10.02,
+      "end": 10.14
+    },
+    {
+      "word": "phone.",
+      "start": 10.14,
+      "end": 10.36
+    },
+    {
+      "word": "And",
+      "start": 10.74,
+      "end": 10.82
+    },
+    {
+      "word": "if",
+      "start": 10.82,
+      "end": 10.88
+    },
+    {
+      "word": "you",
+      "start": 10.88,
+      "end": 11.0
+    },
+    {
+      "word": "really",
+      "start": 11.0,
+      "end": 11.26
+    },
+    {
+      "word": "love",
+      "start": 11.26,
+      "end": 11.48
+    },
+    {
+      "word": "someone,",
+      "start": 11.48,
+      "end": 11.78
+    },
+    {
+      "word": "you",
+      "start": 12.1,
+      "end": 12.18
+    },
+    {
+      "word": "can",
+      "start": 12.18,
+      "end": 12.3
+    },
+    {
+      "word": "give",
+      "start": 12.3,
+      "end": 12.4
+    },
+    {
+      "word": "them",
+      "start": 12.4,
+      "end": 12.52
+    },
+    {
+      "word": "your",
+      "start": 12.52,
+      "end": 12.62
+    },
+    {
+      "word": "time.",
+      "start": 12.62,
+      "end": 12.9
+    },
+    {
+      "word": "But",
+      "start": 13.3,
+      "end": 13.48
+    },
+    {
+      "word": "only",
+      "start": 13.48,
+      "end": 14.06
+    },
+    {
+      "word": "once.",
+      "start": 14.06,
+      "end": 14.42
+    },
+    {
+      "word": "Then,",
+      "start": 15.0,
+      "end": 15.18
+    },
+    {
+      "word": "I",
+      "start": 15.22,
+      "end": 15.58
+    },
+    {
+      "word": "woke",
+      "start": 15.58,
+      "end": 15.68
+    },
+    {
+      "word": "up",
+      "start": 15.68,
+      "end": 15.84
+    },
+    {
+      "word": "in",
+      "start": 15.84,
+      "end": 15.9
+    },
+    {
+      "word": "a",
+      "start": 15.9,
+      "end": 15.98
+    },
+    {
+      "word": "hospital.",
+      "start": 15.98,
+      "end": 16.26
+    },
+    {
+      "word": "I",
+      "start": 16.76,
+      "end": 16.84
+    },
+    {
+      "word": "didn't",
+      "start": 16.84,
+      "end": 16.98
+    },
+    {
+      "word": "remember",
+      "start": 16.98,
+      "end": 17.2
+    },
+    {
+      "word": "the",
+      "start": 17.2,
+      "end": 17.34
+    },
+    {
+      "word": "accident.",
+      "start": 17.34,
+      "end": 17.62
+    },
+    {
+      "word": "little",
+      "start": 18.07,
+      "end": 18.07
+    },
+    {
+      "word": "bit.",
+      "start": 18.07,
+      "end": 18.07
+    },
+    {
+      "word": "I",
+      "start": 18.07,
+      "end": 18.15
+    },
+    {
+      "word": "didn't",
+      "start": 18.15,
+      "end": 18.31
+    },
+    {
+      "word": "remember",
+      "start": 18.31,
+      "end": 18.49
+    },
+    {
+      "word": "much",
+      "start": 18.49,
+      "end": 18.65
+    },
+    {
+      "word": "of",
+      "start": 18.65,
+      "end": 18.73
+    },
+    {
+      "word": "anything.",
+      "start": 18.73,
+      "end": 19.03
+    },
+    {
+      "word": "My",
+      "start": 19.53,
+      "end": 19.63
+    },
+    {
+      "word": "meter",
+      "start": 19.63,
+      "end": 19.81
+    },
+    {
+      "word": "said",
+      "start": 19.81,
+      "end": 20.07
+    },
+    {
+      "word": "sixty",
+      "start": 20.07,
+      "end": 20.37
+    },
+    {
+      "word": "-one",
+      "start": 20.37,
+      "end": 20.65
+    },
+    {
+      "word": "years.",
+      "start": 20.65,
+      "end": 20.95
+    },
+    {
+      "word": "The",
+      "start": 21.47,
+      "end": 21.55
+    },
+    {
+      "word": "girl",
+      "start": 21.55,
+      "end": 21.67
+    },
+    {
+      "word": "across",
+      "start": 21.67,
+      "end": 21.89
+    },
+    {
+      "word": "the",
+      "start": 21.89,
+      "end": 22.03
+    },
+    {
+      "word": "hall",
+      "start": 22.03,
+      "end": 22.19
+    },
+    {
+      "word": "visited",
+      "start": 22.19,
+      "end": 22.43
+    },
+    {
+      "word": "me",
+      "start": 22.43,
+      "end": 22.65
+    },
+    {
+      "word": "every",
+      "start": 22.65,
+      "end": 22.95
+    },
+    {
+      "word": "day.",
+      "start": 22.95,
+      "end": 23.19
+    },
+    {
+      "word": "Her",
+      "start": 23.55,
+      "end": 23.63
+    },
+    {
+      "word": "name",
+      "start": 23.63,
+      "end": 23.71
+    },
+    {
+      "word": "was",
+      "start": 23.71,
+      "end": 23.85
+    },
+    {
+      "word": "Lily.",
+      "start": 23.85,
+      "end": 24.01
+    },
+    {
+      "word": "She",
+      "start": 24.36,
+      "end": 24.52
+    },
+    {
+      "word": "brought",
+      "start": 24.52,
+      "end": 24.66
+    },
+    {
+      "word": "pudding",
+      "start": 24.66,
+      "end": 24.9
+    },
+    {
+      "word": "cups",
+      "start": 24.9,
+      "end": 25.12
+    },
+    {
+      "word": "and",
+      "start": 25.12,
+      "end": 25.3
+    },
+    {
+      "word": "the",
+      "start": 25.3,
+      "end": 25.44
+    },
+    {
+      "word": "worst",
+      "start": 25.44,
+      "end": 25.68
+    },
+    {
+      "word": "jokes",
+      "start": 25.68,
+      "end": 25.94
+    },
+    {
+      "word": "I'd",
+      "start": 25.94,
+      "end": 26.16
+    },
+    {
+      "word": "ever",
+      "start": 26.16,
+      "end": 26.38
+    },
+    {
+      "word": "heard.",
+      "start": 26.38,
+      "end": 26.62
+    },
+    {
+      "word": "She",
+      "start": 26.98,
+      "end": 27.06
+    },
+    {
+      "word": "always",
+      "start": 27.06,
+      "end": 27.28
+    },
+    {
+      "word": "wore",
+      "start": 27.28,
+      "end": 27.46
+    },
+    {
+      "word": "a",
+      "start": 27.46,
+      "end": 27.58
+    },
+    {
+      "word": "bracelet",
+      "start": 27.58,
+      "end": 27.86
+    },
+    {
+      "word": "over",
+      "start": 27.86,
+      "end": 28.1
+    },
+    {
+      "word": "her",
+      "start": 28.1,
+      "end": 28.24
+    },
+    {
+      "word": "meter.",
+      "start": 28.24,
+      "end": 28.44
+    },
+    {
+      "word": "We",
+      "start": 28.78,
+      "end": 28.9
+    },
+    {
+      "word": "played",
+      "start": 28.9,
+      "end": 29.06
+    },
+    {
+      "word": "cards",
+      "start": 29.06,
+      "end": 29.34
+    },
+    {
+      "word": "until",
+      "start": 29.34,
+      "end": 29.5
+    },
+    {
+      "word": "the",
+      "start": 29.5,
+      "end": 29.62
+    },
+    {
+      "word": "nurses",
+      "start": 29.62,
+      "end": 29.82
+    },
+    {
+      "word": "kicked",
+      "start": 29.82,
+      "end": 30.04
+    },
+    {
+      "word": "her",
+      "start": 30.04,
+      "end": 30.16
+    },
+    {
+      "word": "out.",
+      "start": 30.16,
+      "end": 30.32
+    },
+    {
+      "word": "wheelchair.",
+      "start": 30.62,
+      "end": 31.4
+    },
+    {
+      "word": "win.\"",
+      "start": 31.39,
+      "end": 31.97
+    },
+    {
+      "word": "But",
+      "start": 31.97,
+      "end": 32.05
+    },
+    {
+      "word": "every",
+      "start": 32.05,
+      "end": 32.21
+    },
+    {
+      "word": "day,",
+      "start": 32.21,
+      "end": 32.51
+    },
+    {
+      "word": "Lily",
+      "start": 32.85,
+      "end": 32.87
+    },
+    {
+      "word": "looked",
+      "start": 32.87,
+      "end": 33.07
+    },
+    {
+      "word": "a",
+      "start": 33.07,
+      "end": 33.21
+    },
+    {
+      "word": "little",
+      "start": 33.21,
+      "end": 33.37
+    },
+    {
+      "word": "more",
+      "start": 33.37,
+      "end": 33.55
+    },
+    {
+      "word": "tired.",
+      "start": 33.55,
+      "end": 33.85
+    },
+    {
+      "word": "First,",
+      "start": 34.35,
+      "end": 34.59
+    },
+    {
+      "word": "she",
+      "start": 34.81,
+      "end": 34.91
+    },
+    {
+      "word": "stopped",
+      "start": 34.91,
+      "end": 35.09
+    },
+    {
+      "word": "walking",
+      "start": 35.09,
+      "end": 35.29
+    },
+    {
+      "word": "a",
+      "start": 35.29,
+      "end": 35.37
+    },
+    {
+      "word": "-",
+      "start": 35.37,
+      "end": 35.37
+    },
+    {
+      "word": "Then,",
+      "start": 35.79,
+      "end": 36.17
+    },
+    {
+      "word": "she",
+      "start": 36.31,
+      "end": 36.55
+    },
+    {
+      "word": "came",
+      "start": 36.55,
+      "end": 36.69
+    },
+    {
+      "word": "in",
+      "start": 36.69,
+      "end": 36.79
+    },
+    {
+      "word": "a",
+      "start": 36.79,
+      "end": 36.87
+    },
+    {
+      "word": "wheelchair.",
+      "start": 36.87,
+      "end": 37.13
+    },
+    {
+      "word": "Then,",
+      "start": 37.34,
+      "end": 37.88
+    },
+    {
+      "word": "her",
+      "start": 37.98,
+      "end": 38.2
+    },
+    {
+      "word": "jokes",
+      "start": 38.2,
+      "end": 38.4
+    },
+    {
+      "word": "got",
+      "start": 38.4,
+      "end": 38.62
+    },
+    {
+      "word": "quieter.",
+      "start": 38.62,
+      "end": 38.96
+    },
+    {
+      "word": "One",
+      "start": 39.42,
+      "end": 39.52
+    },
+    {
+      "word": "day,",
+      "start": 39.52,
+      "end": 39.68
+    },
+    {
+      "word": "she",
+      "start": 39.9,
+      "end": 39.96
+    },
+    {
+      "word": "handed",
+      "start": 39.96,
+      "end": 40.1
+    },
+    {
+      "word": "me",
+      "start": 40.1,
+      "end": 40.26
+    },
+    {
+      "word": "a",
+      "start": 40.26,
+      "end": 40.38
+    },
+    {
+      "word": "grape",
+      "start": 40.38,
+      "end": 40.52
+    },
+    {
+      "word": "pudding",
+      "start": 40.52,
+      "end": 40.78
+    },
+    {
+      "word": "before",
+      "start": 40.78,
+      "end": 41.04
+    },
+    {
+      "word": "I",
+      "start": 41.04,
+      "end": 41.16
+    },
+    {
+      "word": "even",
+      "start": 41.16,
+      "end": 41.3
+    },
+    {
+      "word": "asked.",
+      "start": 41.3,
+      "end": 41.6
+    },
+    {
+      "word": "How",
+      "start": 42.0,
+      "end": 42.12
+    },
+    {
+      "word": "did",
+      "start": 42.12,
+      "end": 42.24
+    },
+    {
+      "word": "you",
+      "start": 42.24,
+      "end": 42.32
+    },
+    {
+      "word": "know",
+      "start": 42.32,
+      "end": 42.44
+    },
+    {
+      "word": "grape",
+      "start": 42.44,
+      "end": 42.64
+    },
+    {
+      "word": "is",
+      "start": 42.64,
+      "end": 42.74
+    },
+    {
+      "word": "my",
+      "start": 42.74,
+      "end": 42.88
+    },
+    {
+      "word": "favorite?",
+      "start": 42.88,
+      "end": 43.18
+    },
+    {
+      "word": "I",
+      "start": 43.4,
+      "end": 43.48
+    },
+    {
+      "word": "asked.",
+      "start": 43.48,
+      "end": 43.68
+    },
+    {
+      "word": "She",
+      "start": 43.95,
+      "end": 44.11
+    },
+    {
+      "word": "smiled.",
+      "start": 44.11,
+      "end": 44.35
+    },
+    {
+      "word": "Lucky",
+      "start": 44.99,
+      "end": 44.99
+    },
+    {
+      "word": "guess.",
+      "start": 44.99,
+      "end": 45.27
+    },
+    {
+      "word": "The",
+      "start": 45.69,
+      "end": 45.77
+    },
+    {
+      "word": "next",
+      "start": 45.77,
+      "end": 45.89
+    },
+    {
+      "word": "morning,",
+      "start": 45.89,
+      "end": 46.17
+    },
+    {
+      "word": "the",
+      "start": 46.39,
+      "end": 46.45
+    },
+    {
+      "word": "doctor",
+      "start": 46.45,
+      "end": 46.63
+    },
+    {
+      "word": "checked",
+      "start": 46.63,
+      "end": 46.85
+    },
+    {
+      "word": "my",
+      "start": 46.85,
+      "end": 46.99
+    },
+    {
+      "word": "chart.",
+      "start": 46.99,
+      "end": 47.23
+    },
+    {
+      "word": "Your",
+      "start": 47.59,
+      "end": 47.67
+    },
+    {
+      "word": "meter",
+      "start": 47.67,
+      "end": 47.87
+    },
+    {
+      "word": "hit",
+      "start": 47.87,
+      "end": 48.07
+    },
+    {
+      "word": "zero",
+      "start": 48.07,
+      "end": 48.35
+    },
+    {
+      "word": "in",
+      "start": 48.35,
+      "end": 48.53
+    },
+    {
+      "word": "the",
+      "start": 48.53,
+      "end": 48.61
+    },
+    {
+      "word": "ambulance,",
+      "start": 48.61,
+      "end": 48.95
+    },
+    {
+      "word": "she",
+      "start": 49.21,
+      "end": 49.27
+    },
+    {
+      "word": "said.",
+      "start": 49.27,
+      "end": 49.47
+    },
+    {
+      "word": "Someone",
+      "start": 49.91,
+      "end": 50.07
+    },
+    {
+      "word": "gave",
+      "start": 50.07,
+      "end": 50.27
+    },
+    {
+      "word": "you",
+      "start": 50.27,
+      "end": 50.39
+    },
+    {
+      "word": "their",
+      "start": 50.39,
+      "end": 50.51
+    },
+    {
+      "word": "time.",
+      "start": 50.51,
+      "end": 50.77
+    },
+    {
+      "word": "They",
+      "start": 51.25,
+      "end": 51.35
+    },
+    {
+      "word": "didn't",
+      "start": 51.35,
+      "end": 51.53
+    },
+    {
+      "word": "leave",
+      "start": 51.53,
+      "end": 51.63
+    },
+    {
+      "word": "a",
+      "start": 51.63,
+      "end": 51.73
+    },
+    {
+      "word": "name.",
+      "start": 51.73,
+      "end": 51.89
+    },
+    {
+      "word": "I",
+      "start": 52.25,
+      "end": 52.37
+    },
+    {
+      "word": "couldn't",
+      "start": 52.37,
+      "end": 52.69
+    },
+    {
+      "word": "stop",
+      "start": 52.69,
+      "end": 52.79
+    },
+    {
+      "word": "thinking",
+      "start": 52.79,
+      "end": 53.09
+    },
+    {
+      "word": "about",
+      "start": 53.09,
+      "end": 53.31
+    },
+    {
+      "word": "it.",
+      "start": 53.31,
+      "end": 53.51
+    },
+    {
+      "word": "The",
+      "start": 53.75,
+      "end": 53.83
+    },
+    {
+      "word": "pudding",
+      "start": 53.83,
+      "end": 54.07
+    },
+    {
+      "word": "she",
+      "start": 54.07,
+      "end": 54.31
+    },
+    {
+      "word": "always",
+      "start": 54.31,
+      "end": 54.59
+    },
+    {
+      "word": "knew.",
+      "start": 54.59,
+      "end": 54.89
+    },
+    {
+      "word": "The",
+      "start": 55.19,
+      "end": 55.33
+    },
+    {
+      "word": "bracelet",
+      "start": 55.33,
+      "end": 55.57
+    },
+    {
+      "word": "she",
+      "start": 55.57,
+      "end": 55.79
+    },
+    {
+      "word": "never",
+      "start": 55.79,
+      "end": 56.01
+    },
+    {
+      "word": "took",
+      "start": 56.01,
+      "end": 56.21
+    },
+    {
+      "word": "off.",
+      "start": 56.21,
+      "end": 56.53
+    },
+    {
+      "word": "How",
+      "start": 56.79,
+      "end": 56.91
+    },
+    {
+      "word": "she",
+      "start": 56.91,
+      "end": 57.07
+    },
+    {
+      "word": "got",
+      "start": 57.07,
+      "end": 57.23
+    },
+    {
+      "word": "weaker",
+      "start": 57.23,
+      "end": 57.45
+    },
+    {
+      "word": "every",
+      "start": 57.45,
+      "end": 57.89
+    },
+    {
+      "word": "day",
+      "start": 57.89,
+      "end": 58.07
+    },
+    {
+      "word": "I",
+      "start": 58.07,
+      "end": 58.31
+    },
+    {
+      "word": "got",
+      "start": 58.31,
+      "end": 58.45
+    },
+    {
+      "word": "stronger.",
+      "start": 58.45,
+      "end": 58.77
+    },
+    {
+      "word": "walked",
+      "start": 59.26,
+      "end": 59.52
+    },
+    {
+      "word": "across",
+      "start": 59.52,
+      "end": 59.76
+    },
+    {
+      "word": "the",
+      "start": 59.76,
+      "end": 59.92
+    },
+    {
+      "word": "hall.",
+      "start": 59.92,
+      "end": 60.26
+    },
+    {
+      "word": "I",
+      "start": 60.54,
+      "end": 60.56
+    },
+    {
+      "word": "slid",
+      "start": 60.56,
+      "end": 60.76
+    },
+    {
+      "word": "her",
+      "start": 60.76,
+      "end": 60.9
+    },
+    {
+      "word": "bracelet",
+      "start": 60.9,
+      "end": 61.14
+    },
+    {
+      "word": "down.",
+      "start": 61.14,
+      "end": 61.42
+    },
+    {
+      "word": "Her",
+      "start": 61.88,
+      "end": 61.92
+    },
+    {
+      "word": "meter",
+      "start": 61.92,
+      "end": 62.06
+    },
+    {
+      "word": "said",
+      "start": 62.06,
+      "end": 62.36
+    },
+    {
+      "word": "one",
+      "start": 62.36,
+      "end": 62.76
+    },
+    {
+      "word": "day.",
+      "start": 62.76,
+      "end": 63.02
+    },
+    {
+      "word": "And",
+      "start": 63.42,
+      "end": 63.5
+    },
+    {
+      "word": "suddenly,",
+      "start": 63.5,
+      "end": 63.8
+    },
+    {
+      "word": "I",
+      "start": 64.16,
+      "end": 64.24
+    },
+    {
+      "word": "remembered.",
+      "start": 64.24,
+      "end": 64.6
+    },
+    {
+      "word": "A",
+      "start": 65.02,
+      "end": 65.1
+    },
+    {
+      "word": "treehouse.",
+      "start": 65.1,
+      "end": 65.56
+    },
+    {
+      "word": "A",
+      "start": 65.94,
+      "end": 65.98
+    },
+    {
+      "word": "girl",
+      "start": 65.98,
+      "end": 66.14
+    },
+    {
+      "word": "with",
+      "start": 66.14,
+      "end": 66.32
+    },
+    {
+      "word": "a",
+      "start": 66.32,
+      "end": 66.42
+    },
+    {
+      "word": "gap",
+      "start": 66.42,
+      "end": 66.6
+    },
+    {
+      "word": "-toothed",
+      "start": 66.6,
+      "end": 66.88
+    },
+    {
+      "word": "grin.",
+      "start": 66.88,
+      "end": 67.06
+    },
+    {
+      "word": "Two",
+      "start": 67.46,
+      "end": 67.6
+    },
+    {
+      "word": "great",
+      "start": 67.6,
+      "end": 67.8
+    },
+    {
+      "word": "puddings.",
+      "start": 67.8,
+      "end": 68.14
+    },
+    {
+      "word": "always",
+      "start": 68.29,
+      "end": 68.55
+    },
+    {
+      "word": "split",
+      "start": 68.55,
+      "end": 68.77
+    },
+    {
+      "word": "in",
+      "start": 68.77,
+      "end": 68.89
+    },
+    {
+      "word": "half.",
+      "start": 68.89,
+      "end": 69.13
+    },
+    {
+      "word": "It",
+      "start": 69.49,
+      "end": 69.57
+    },
+    {
+      "word": "was",
+      "start": 69.57,
+      "end": 69.69
+    },
+    {
+      "word": "you,",
+      "start": 69.69,
+      "end": 70.11
+    },
+    {
+      "word": "I",
+      "start": 70.29,
+      "end": 70.37
+    },
+    {
+      "word": "said.",
+      "start": 70.37,
+      "end": 70.59
+    },
+    {
+      "word": "She",
+      "start": 70.89,
+      "end": 71.05
+    },
+    {
+      "word": "looked",
+      "start": 71.05,
+      "end": 71.15
+    },
+    {
+      "word": "down.",
+      "start": 71.15,
+      "end": 71.41
+    },
+    {
+      "word": "You",
+      "start": 71.83,
+      "end": 71.91
+    },
+    {
+      "word": "always",
+      "start": 71.91,
+      "end": 72.11
+    },
+    {
+      "word": "shared",
+      "start": 72.11,
+      "end": 72.33
+    },
+    {
+      "word": "yours",
+      "start": 72.33,
+      "end": 72.49
+    },
+    {
+      "word": "with",
+      "start": 72.49,
+      "end": 72.65
+    },
+    {
+      "word": "me,",
+      "start": 72.65,
+      "end": 72.89
+    },
+    {
+      "word": "she",
+      "start": 72.95,
+      "end": 73.13
+    },
+    {
+      "word": "said.",
+      "start": 73.13,
+      "end": 73.31
+    },
+    {
+      "word": "So",
+      "start": 73.67,
+      "end": 73.77
+    },
+    {
+      "word": "I",
+      "start": 73.77,
+      "end": 73.89
+    },
+    {
+      "word": "shared",
+      "start": 73.89,
+      "end": 74.05
+    },
+    {
+      "word": "mine.",
+      "start": 74.05,
+      "end": 74.27
+    },
+    {
+      "word": "In",
+      "start": 74.69,
+      "end": 74.77
+    },
+    {
+      "word": "this",
+      "start": 74.77,
+      "end": 74.89
+    },
+    {
+      "word": "town...",
+      "start": 74.89,
+      "end": 75.37
+    },
+    {
+      "word": "You",
+      "start": 75.39,
+      "end": 75.51
+    },
+    {
+      "word": "can",
+      "start": 75.51,
+      "end": 75.59
+    },
+    {
+      "word": "only",
+      "start": 75.59,
+      "end": 75.77
+    },
+    {
+      "word": "give",
+      "start": 75.77,
+      "end": 75.89
+    },
+    {
+      "word": "your",
+      "start": 75.89,
+      "end": 76.01
+    },
+    {
+      "word": "time",
+      "start": 76.01,
+      "end": 76.19
+    },
+    {
+      "word": "away",
+      "start": 76.19,
+      "end": 76.37
+    },
+    {
+      "word": "once.",
+      "start": 76.37,
+      "end": 76.69
+    },
+    {
+      "word": "But",
+      "start": 77.07,
+      "end": 77.17
+    },
+    {
+      "word": "nobody",
+      "start": 77.17,
+      "end": 77.43
+    },
+    {
+      "word": "ever",
+      "start": 77.43,
+      "end": 77.73
+    },
+    {
+      "word": "said",
+      "start": 77.73,
+      "end": 77.97
+    },
+    {
+      "word": "you",
+      "start": 77.97,
+      "end": 78.15
+    },
+    {
+      "word": "can't",
+      "start": 78.15,
+      "end": 78.43
+    },
+    {
+      "word": "give",
+      "start": 78.43,
+      "end": 78.51
+    },
+    {
+      "word": "it",
+      "start": 78.51,
+      "end": 78.63
+    },
+    {
+      "word": "back.",
+      "start": 78.63,
+      "end": 78.83
+    },
+    {
+      "word": "I",
+      "start": 79.23,
+      "end": 79.31
+    },
+    {
+      "word": "held",
+      "start": 79.31,
+      "end": 79.47
+    },
+    {
+      "word": "my",
+      "start": 79.47,
+      "end": 79.61
+    },
+    {
+      "word": "wrist",
+      "start": 79.61,
+      "end": 79.79
+    },
+    {
+      "word": "against",
+      "start": 79.79,
+      "end": 80.03
+    },
+    {
+      "word": "hers.",
+      "start": 80.03,
+      "end": 80.23
+    },
+    {
+      "word": "The",
+      "start": 80.61,
+      "end": 80.71
+    },
+    {
+      "word": "numbers",
+      "start": 80.71,
+      "end": 80.87
+    },
+    {
+      "word": "flickered.",
+      "start": 80.87,
+      "end": 81.23
+    },
+    {
+      "word": "Hers",
+      "start": 81.59,
+      "end": 81.61
+    },
+    {
+      "word": "went",
+      "start": 81.61,
+      "end": 81.77
+    },
+    {
+      "word": "up.",
+      "start": 81.77,
+      "end": 81.95
+    },
+    {
+      "word": "Mine",
+      "start": 82.25,
+      "end": 82.35
+    },
+    {
+      "word": "went",
+      "start": 82.35,
+      "end": 82.53
+    },
+    {
+      "word": "down.",
+      "start": 82.53,
+      "end": 82.77
+    },
+    {
+      "word": "until",
+      "start": 83.1,
+      "end": 83.36
+    },
+    {
+      "word": "they",
+      "start": 83.36,
+      "end": 83.5
+    },
+    {
+      "word": "stopped.",
+      "start": 83.5,
+      "end": 83.82
+    },
+    {
+      "word": "Thirty",
+      "start": 84.36,
+      "end": 84.48
+    },
+    {
+      "word": "years.",
+      "start": 84.48,
+      "end": 84.86
+    },
+    {
+      "word": "Exactly",
+      "start": 85.5,
+      "end": 85.58
+    },
+    {
+      "word": "the",
+      "start": 85.58,
+      "end": 85.8
+    },
+    {
+      "word": "same.",
+      "start": 85.8,
+      "end": 86.04
+    },
+    {
+      "word": "Lily",
+      "start": 86.48,
+      "end": 86.54
+    },
+    {
+      "word": "laughed",
+      "start": 86.54,
+      "end": 86.9
+    },
+    {
+      "word": "and",
+      "start": 86.9,
+      "end": 87.12
+    },
+    {
+      "word": "cried",
+      "start": 87.12,
+      "end": 87.4
+    },
+    {
+      "word": "at",
+      "start": 87.4,
+      "end": 87.52
+    },
+    {
+      "word": "the",
+      "start": 87.52,
+      "end": 87.64
+    },
+    {
+      "word": "same",
+      "start": 87.64,
+      "end": 87.82
+    },
+    {
+      "word": "time.",
+      "start": 87.82,
+      "end": 88.1
+    },
+    {
+      "word": "Now",
+      "start": 88.44,
+      "end": 88.62
+    },
+    {
+      "word": "what?",
+      "start": 88.62,
+      "end": 88.84
+    },
+    {
+      "word": "She",
+      "start": 89.12,
+      "end": 89.2
+    },
+    {
+      "word": "whispered.",
+      "start": 89.2,
+      "end": 89.42
+    },
+    {
+      "word": "I",
+      "start": 89.9,
+      "end": 89.98
+    },
+    {
+      "word": "split",
+      "start": 89.98,
+      "end": 90.18
+    },
+    {
+      "word": "the",
+      "start": 90.18,
+      "end": 90.3
+    },
+    {
+      "word": "great",
+      "start": 90.3,
+      "end": 90.46
+    },
+    {
+      "word": "pudding",
+      "start": 90.46,
+      "end": 90.64
+    },
+    {
+      "word": "in",
+      "start": 90.64,
+      "end": 90.78
+    },
+    {
+      "word": "half.",
+      "start": 90.78,
+      "end": 91.04
+    },
+    {
+      "word": "Now",
+      "start": 91.56,
+      "end": 91.6
+    },
+    {
+      "word": "we",
+      "start": 91.6,
+      "end": 91.74
+    },
+    {
+      "word": "share.",
+      "start": 91.74,
+      "end": 91.96
+    }
+  ]
+}

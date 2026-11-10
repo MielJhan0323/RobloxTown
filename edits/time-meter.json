@@ -1,0 +1,3037 @@
+{
+  "slug": "time-meter",
+  "title": "The Last Day",
+  "timing": "voice",
+  "voice": "output/cache/time-meter/voice_fx.wav",
+  "duration": 93.631,
+  "shots": [
+    {
+      "n": 1,
+      "text": "In this town,",
+      "start": 0.0,
+      "end": 0.76,
+      "src": "raw/time-meter/shot_01.mov",
+      "src_dur": 1.383,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 0.76
+    },
+    {
+      "n": 2,
+      "text": "everyone has a meter on their wrist",
+      "start": 0.76,
+      "end": 1.92,
+      "src": "raw/time-meter/shot_02.mov",
+      "src_dur": 1.767,
+      "motion": "push_in",
+      "transition": "sparkle",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.16
+    },
+    {
+      "n": 3,
+      "text": "that shows how much time they have left.",
+      "start": 1.92,
+      "end": 3.6,
+      "src": "raw/time-meter/shot_03.mov",
+      "src_dur": 2.0,
+      "motion": "pan_right",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.68
+    },
+    {
+      "n": 4,
+      "text": "Kids compare them at recess like trading cards.",
+      "start": 3.6,
+      "end": 6.08,
+      "src": "raw/time-meter/shot_04.mov",
+      "src_dur": 2.233,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 2.48
+    },
+    {
+      "n": 5,
+      "text": "My grandpa's says twenty years,",
+      "start": 6.08,
+      "end": 7.6,
+      "src": "raw/time-meter/shot_05.mov",
+      "src_dur": 1.583,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.52
+    },
+    {
+      "n": 6,
+      "text": "and he still won't eat his vegetables.",
+      "start": 7.6,
+      "end": 9.04,
+      "src": "raw/time-meter/shot_06.mov",
+      "src_dur": 1.783,
+      "motion": "punch",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.44
+    },
+    {
+      "n": 7,
+      "text": "My uncle checks his more than his phone.",
+      "start": 9.04,
+      "end": 10.74,
+      "src": "raw/time-meter/shot_07.mov",
+      "src_dur": 1.95,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.7
+    },
+    {
+      "n": 8,
+      "text": "And if you really love someone,",
+      "start": 10.74,
+      "end": 12.1,
+      "src": "raw/time-meter/shot_08.mov",
+      "src_dur": 2.05,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.36
+    },
+    {
+      "n": 9,
+      "text": "you can give them your time.",
+      "start": 12.1,
+      "end": 13.3,
+      "src": "raw/time-meter/shot_09.mov",
+      "src_dur": 1.733,
+      "motion": "push_in",
+      "transition": "sparkle",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.2
+    },
+    {
+      "n": 10,
+      "text": "But only once.",
+      "start": 13.3,
+      "end": 15.0,
+      "src": "raw/time-meter/shot_10.mov",
+      "src_dur": 1.133,
+      "motion": "drift",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.7
+    },
+    {
+      "n": 11,
+      "text": "Then, I woke up in a hospital.",
+      "start": 15.0,
+      "end": 16.76,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "fog",
+      "grade": "neutral",
+      "placeholder": "Hospital room | Narrator (bandage on head) | eyes opening slowly, lying in bed | medium, push-in | hospital bed, IV stand",
+      "override": {},
+      "dur": 1.76
+    },
+    {
+      "n": 12,
+      "text": "I didn't remember the accident.",
+      "start": 16.76,
+      "end": 18.07,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": "Hospital room | Narrator | confused, holding head | close, push-in | bandage",
+      "override": {},
+      "dur": 1.31
+    },
+    {
+      "n": 13,
+      "text": "I didn't remember much of anything.",
+      "start": 18.07,
+      "end": 19.53,
+      "src": null,
+      "src_dur": null,
+      "motion": "pan_left",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": "Hospital room window | Narrator | staring out the window, blank | medium, pan left | window",
+      "override": {},
+      "dur": 1.46
+    },
+    {
+      "n": 14,
+      "text": "My meter said sixty-one years.",
+      "start": 19.53,
+      "end": 21.47,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "Hospital bed | Narrator | looking at wrist | close insert on wrist | wrist meter \"61 YEARS\"",
+      "override": {},
+      "dur": 1.94
+    },
+    {
+      "n": 15,
+      "text": "The girl across the hall visited me every day.",
+      "start": 21.47,
+      "end": 23.55,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": "Hospital doorway | Lily (stage 1: cheerful) | leaning in the doorway, big smile | medium, push-in | beaded bracelet",
+      "override": {},
+      "dur": 2.08
+    },
+    {
+      "n": 16,
+      "text": "Her name was Lily.",
+      "start": 23.55,
+      "end": 24.36,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": "Hospital room | Lily (stage 1) | waving, friendly | close, push-in",
+      "override": {},
+      "dur": 0.81
+    },
+    {
+      "n": 17,
+      "text": "She brought pudding cups",
+      "start": 24.36,
+      "end": 25.12,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": "Bedside table | Lily (stage 1) | setting down pudding cups | close insert | pudding cups, spoons",
+      "override": {},
+      "dur": 0.76
+    },
+    {
+      "n": 18,
+      "text": "and the worst jokes I'd ever heard.",
+      "start": 25.12,
+      "end": 26.98,
+      "src": null,
+      "src_dur": null,
+      "motion": "pan_right",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": "Hospital room | Lily (stage 1), Narrator | Lily laughing at her own joke, Narrator groaning | medium, pan right",
+      "override": {},
+      "dur": 1.86
+    },
+    {
+      "n": 19,
+      "text": "She always wore a bracelet over her meter.",
+      "start": 26.98,
+      "end": 28.78,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "Lily's wrist | Lily | tugging bracelet down over wrist | close insert | beaded bracelet",
+      "override": {},
+      "dur": 1.8
+    },
+    {
+      "n": 20,
+      "text": "We played cards until the nurses kicked her out.",
+      "start": 28.78,
+      "end": 30.32,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": "Hospital bed | Narrator, Lily (stage 1), Nurse | cards on bed, nurse pointing at door | medium, push-in | playing cards",
+      "override": {},
+      "dur": 1.54
+    },
+    {
+      "n": 21,
+      "text": "She always let me win.",
+      "start": 30.32,
+      "end": 31.97,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": "Hospital bed | Lily (stage 1) | sneakily swapping a card, smiling | close, push-in | playing cards",
+      "override": {},
+      "dur": 1.65
+    },
+    {
+      "n": 22,
+      "text": "But every day, Lily looked a little more tired.",
+      "start": 31.97,
+      "end": 34.35,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "fog",
+      "grade": "cool",
+      "placeholder": "Hospital doorway, cooler light | Lily (stage 2: tired) | leaning on the door frame, droopy eyes, yawning | medium, slow push-in",
+      "override": {},
+      "dur": 2.38
+    },
+    {
+      "n": 23,
+      "text": "First, she stopped walking over.",
+      "start": 34.35,
+      "end": 35.79,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": "Hallway seen from Narrator's bed | Lily (stage 2) in her bed across the hall | waving weakly from her bed | wide, slow push-in | two open doorways",
+      "override": {},
+      "dur": 1.44
+    },
+    {
+      "n": 24,
+      "text": "Then, she came in a wheelchair.",
+      "start": 35.79,
+      "end": 37.34,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": "Hospital doorway | Lily (stage 3: wheelchair) | in a wheelchair, blanket on lap, small smile | medium, push-in | wheelchair, blanket",
+      "override": {},
+      "dur": 1.55
+    },
+    {
+      "n": 25,
+      "text": "Then, her jokes got quieter.",
+      "start": 37.34,
+      "end": 39.42,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": "Hospital bed | Lily (stage 3), Narrator | Lily whispering a joke, Narrator leaning in, worried | close, push-in | wheelchair",
+      "override": {},
+      "dur": 2.08
+    },
+    {
+      "n": 26,
+      "text": "One day, she handed me a grape pudding",
+      "start": 39.42,
+      "end": 40.78,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": "Hospital bed | Lily (stage 3) | holding out a purple pudding cup from the wheelchair | medium, push-in | grape pudding cup",
+      "override": {},
+      "dur": 1.36
+    },
+    {
+      "n": 27,
+      "text": "before I even asked.",
+      "start": 40.78,
+      "end": 42.0,
+      "src": null,
+      "src_dur": null,
+      "motion": "punch",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": "Hospital bed | Narrator | surprised, hand half raised | close, punch-in | grape pudding cup",
+      "override": {},
+      "dur": 1.22
+    },
+    {
+      "n": 28,
+      "text": "\"How did you know grape is my favorite?\" I asked.",
+      "start": 42.0,
+      "end": 43.95,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": "Hospital bed | Narrator | curious, tilting head | close, push-in | grape pudding",
+      "override": {},
+      "dur": 1.95
+    },
+    {
+      "n": 29,
+      "text": "She smiled.",
+      "start": 43.95,
+      "end": 44.99,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": "Hospital bed | Lily (stage 3) | tired small smile, looking away | close, push-in",
+      "override": {},
+      "dur": 1.04
+    },
+    {
+      "n": 30,
+      "text": "\"Lucky guess.\"",
+      "start": 44.99,
+      "end": 45.69,
+      "src": null,
+      "src_dur": null,
+      "motion": "drift",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": "Hospital bed | Lily (stage 3) | weak shrug, playful | close, static",
+      "override": {},
+      "dur": 0.7
+    },
+    {
+      "n": 31,
+      "text": "The next morning, the doctor checked my chart.",
+      "start": 45.69,
+      "end": 47.59,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "fog",
+      "grade": "neutral",
+      "placeholder": "Hospital room, morning light | Doctor | reading a clipboard | medium, push-in | clipboard",
+      "override": {},
+      "dur": 1.9
+    },
+    {
+      "n": 32,
+      "text": "\"Your meter hit zero in the ambulance,\" she said.",
+      "start": 47.59,
+      "end": 49.91,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "flash",
+      "grade": "cool",
+      "placeholder": "Ambulance (flashback, blurry) | close insert on wrist meter \"0\" | wrist meter, flashing lights",
+      "override": {},
+      "dur": 2.32
+    },
+    {
+      "n": 33,
+      "text": "\"Someone gave you their time.",
+      "start": 49.91,
+      "end": 51.25,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": "Hospital room | Doctor | gentle, lowering clipboard | close, push-in | clipboard",
+      "override": {},
+      "dur": 1.34
+    },
+    {
+      "n": 34,
+      "text": "They didn't leave a name.\"",
+      "start": 51.25,
+      "end": 52.25,
+      "src": null,
+      "src_dur": null,
+      "motion": "drift",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": "Hospital room | Doctor | shaking head slightly | close, static",
+      "override": {},
+      "dur": 1.0
+    },
+    {
+      "n": 35,
+      "text": "I couldn't stop thinking about it.",
+      "start": 52.25,
+      "end": 53.75,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "fog",
+      "grade": "cool",
+      "placeholder": "Hospital bed at night | Narrator | lying awake, staring at the ceiling | medium, slow push-in | moonlight",
+      "override": {},
+      "dur": 1.5
+    },
+    {
+      "n": 36,
+      "text": "The pudding she always knew.",
+      "start": 53.75,
+      "end": 55.19,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": "Bedside table at night | close insert, slow push-in | stack of empty grape pudding cups",
+      "override": {},
+      "dur": 1.44
+    },
+    {
+      "n": 37,
+      "text": "The bracelet she never took off.",
+      "start": 55.19,
+      "end": 56.79,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": "Memory of Lily's wrist | Lily | hand pulling bracelet down | close insert | beaded bracelet",
+      "override": {},
+      "dur": 1.6
+    },
+    {
+      "n": 38,
+      "text": "How she got weaker every day",
+      "start": 56.79,
+      "end": 58.07,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": "Hallway, Lily's room through the doorway | Lily (stage 3) | asleep in wheelchair, pale | medium, push-in | wheelchair",
+      "override": {},
+      "dur": 1.28
+    },
+    {
+      "n": 39,
+      "text": "I got stronger.",
+      "start": 58.07,
+      "end": 58.77,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": "Hospital room | Narrator | standing up out of bed on his own | medium, push-in | IV stand",
+      "override": {},
+      "dur": 0.7
+    },
+    {
+      "n": 40,
+      "text": "I walked across the hall.",
+      "start": 58.77,
+      "end": 60.54,
+      "src": null,
+      "src_dur": null,
+      "motion": "pan_right",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": "Hospital hallway at night | Narrator | walking, determined | medium, pan right",
+      "override": {},
+      "dur": 1.77
+    },
+    {
+      "n": 41,
+      "text": "I slid her bracelet down.",
+      "start": 60.54,
+      "end": 61.88,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": "Lily's bed | Narrator's hand, Lily asleep | hand gently sliding the bracelet down | close insert | beaded bracelet",
+      "override": {},
+      "dur": 1.34
+    },
+    {
+      "n": 42,
+      "text": "Her meter said one day.",
+      "start": 61.88,
+      "end": 63.42,
+      "src": null,
+      "src_dur": null,
+      "motion": "punch",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": "Lily's wrist | close, punch-in on meter \"1 DAY\" | wrist meter",
+      "override": {},
+      "dur": 1.54
+    },
+    {
+      "n": 43,
+      "text": "And suddenly, I remembered.",
+      "start": 63.42,
+      "end": 65.02,
+      "src": null,
+      "src_dur": null,
+      "motion": "punch",
+      "transition": "sparkle",
+      "grade": "cool",
+      "placeholder": "Lily's room | Narrator | eyes wide, hand on head | close, punch-in",
+      "override": {},
+      "dur": 1.6
+    },
+    {
+      "n": 44,
+      "text": "A treehouse.",
+      "start": 65.02,
+      "end": 65.94,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "fog",
+      "grade": "warm",
+      "placeholder": "Treehouse at golden sunset (memory) | wide, slow push-in | treehouse, rope ladder",
+      "override": {},
+      "dur": 0.92
+    },
+    {
+      "n": 45,
+      "text": "A girl with a gap-toothed grin.",
+      "start": 65.94,
+      "end": 67.46,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": "Treehouse (memory) | young Lily | big gap-toothed smile | close, push-in",
+      "override": {},
+      "dur": 1.52
+    },
+    {
+      "n": 46,
+      "text": "Two grape puddings, always split in half.",
+      "start": 67.46,
+      "end": 69.49,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": "Treehouse (memory) | young Narrator, young Lily | sharing pudding with two spoons | medium, push-in | grape pudding, two spoons",
+      "override": {},
+      "dur": 2.03
+    },
+    {
+      "n": 47,
+      "text": "\"It was you,\" I said.",
+      "start": 69.49,
+      "end": 70.89,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "fog",
+      "grade": "cool",
+      "placeholder": "Lily's room, dawn light | Narrator, Lily (stage 3, waking up) | Narrator by the bed, teary | close, push-in",
+      "override": {},
+      "dur": 1.4
+    },
+    {
+      "n": 48,
+      "text": "She looked down.",
+      "start": 70.89,
+      "end": 71.83,
+      "src": null,
+      "src_dur": null,
+      "motion": "drift",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": "Lily's bed | Lily (stage 3) | eyes down | close, static",
+      "override": {},
+      "dur": 0.94
+    },
+    {
+      "n": 49,
+      "text": "\"You always shared yours with me,\" she said.",
+      "start": 71.83,
+      "end": 73.67,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": "Lily's bed | Lily (stage 3) | small sad smile | close, push-in",
+      "override": {},
+      "dur": 1.84
+    },
+    {
+      "n": 50,
+      "text": "\"So I shared mine.\"",
+      "start": 73.67,
+      "end": 74.69,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": "Lily's bed | Lily (stage 3) | looking up at Narrator, teary | close, slow push-in",
+      "override": {},
+      "dur": 1.02
+    },
+    {
+      "n": 51,
+      "text": "In this town, you can only give your time away once.",
+      "start": 74.69,
+      "end": 77.07,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": "Lily's room | Narrator, Lily | Narrator sitting on the bed edge | medium, push-in",
+      "override": {},
+      "dur": 2.38
+    },
+    {
+      "n": 52,
+      "text": "But nobody ever said you can't give it back.",
+      "start": 77.07,
+      "end": 79.23,
+      "src": null,
+      "src_dur": null,
+      "motion": "punch",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": "Lily's room | Narrator | determined, small smile | close, punch-in",
+      "override": {},
+      "dur": 2.16
+    },
+    {
+      "n": 53,
+      "text": "I held my wrist against hers.",
+      "start": 79.23,
+      "end": 80.61,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": "Lily's bed | Narrator, Lily | wrists touching | close insert | two wrist meters",
+      "override": {},
+      "dur": 1.38
+    },
+    {
+      "n": 54,
+      "text": "The numbers flickered.",
+      "start": 80.61,
+      "end": 81.59,
+      "src": null,
+      "src_dur": null,
+      "motion": "drift",
+      "transition": "sparkle",
+      "grade": "warm",
+      "placeholder": "Wrists | close, static | glowing meters flickering",
+      "override": {},
+      "dur": 0.98
+    },
+    {
+      "n": 55,
+      "text": "Hers went up. Mine went down.",
+      "start": 81.59,
+      "end": 83.1,
+      "src": null,
+      "src_dur": null,
+      "motion": "pan_left",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": "Wrists | close, pan left to right | meters changing",
+      "override": {},
+      "dur": 1.51
+    },
+    {
+      "n": 56,
+      "text": "Until they stopped.",
+      "start": 83.1,
+      "end": 84.36,
+      "src": null,
+      "src_dur": null,
+      "motion": "punch",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": "Wrists | close, punch-in | meters frozen",
+      "override": {},
+      "dur": 1.26
+    },
+    {
+      "n": 57,
+      "text": "Thirty years. Exactly the same.",
+      "start": 84.36,
+      "end": 86.48,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "sparkle",
+      "grade": "warm",
+      "placeholder": "Wrists | close insert, both meters \"30 YEARS\" | two matching meters",
+      "override": {},
+      "dur": 2.12
+    },
+    {
+      "n": 58,
+      "text": "Lily laughed and cried at the same time.",
+      "start": 86.48,
+      "end": 88.44,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": "Lily's bed, warm light | Lily (stage 4: color back) | laughing with tears, sitting up | close, push-in",
+      "override": {},
+      "dur": 1.96
+    },
+    {
+      "n": 59,
+      "text": "\"Now what?\" she whispered.",
+      "start": 88.44,
+      "end": 89.9,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": "Lily's bed | Lily (stage 4) | whispering, smiling | close, push-in",
+      "override": {},
+      "dur": 1.46
+    },
+    {
+      "n": 60,
+      "text": "I split the grape pudding in half.",
+      "start": 89.9,
+      "end": 91.56,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": "Lily's bed | Narrator | splitting pudding into two cups | medium, push-in | grape pudding, two spoons",
+      "override": {},
+      "dur": 1.66
+    },
+    {
+      "n": 61,
+      "text": "\"Now we share.\"",
+      "start": 91.56,
+      "end": 93.631,
+      "src": null,
+      "src_dur": null,
+      "motion": "pull_out",
+      "transition": "fog",
+      "grade": "warm",
+      "placeholder": "Hospital window at golden sunset | Narrator, Lily (stage 4) | sitting side by side, eating pudding | wide, pull-out | pudding, sunset",
+      "override": {},
+      "dur": 2.071
+    }
+  ],
+  "words": [
+    {
+      "w": "In",
+      "s": 0.0,
+      "e": 0.12,
+      "shot": 1
+    },
+    {
+      "w": "this",
+      "s": 0.12,
+      "e": 0.26,
+      "shot": 1
+    },
+    {
+      "w": "town,",
+      "s": 0.26,
+      "e": 0.52,
+      "shot": 1
+    },
+    {
+      "w": "everyone",
+      "s": 0.76,
+      "e": 0.94,
+      "shot": 2
+    },
+    {
+      "w": "has",
+      "s": 0.94,
+      "e": 1.12,
+      "shot": 2
+    },
+    {
+      "w": "a",
+      "s": 1.12,
+      "e": 1.26,
+      "shot": 2
+    },
+    {
+      "w": "meter",
+      "s": 1.26,
+      "e": 1.4,
+      "shot": 2
+    },
+    {
+      "w": "on",
+      "s": 1.4,
+      "e": 1.62,
+      "shot": 2
+    },
+    {
+      "w": "their",
+      "s": 1.62,
+      "e": 1.72,
+      "shot": 2
+    },
+    {
+      "w": "wrist",
+      "s": 1.72,
+      "e": 1.92,
+      "shot": 2
+    },
+    {
+      "w": "that",
+      "s": 1.92,
+      "e": 2.06,
+      "shot": 3
+    },
+    {
+      "w": "shows",
+      "s": 2.06,
+      "e": 2.22,
+      "shot": 3
+    },
+    {
+      "w": "how",
+      "s": 2.22,
+      "e": 2.36,
+      "shot": 3
+    },
+    {
+      "w": "much",
+      "s": 2.36,
+      "e": 2.48,
+      "shot": 3
+    },
+    {
+      "w": "time",
+      "s": 2.48,
+      "e": 2.68,
+      "shot": 3
+    },
+    {
+      "w": "they",
+      "s": 2.68,
+      "e": 2.82,
+      "shot": 3
+    },
+    {
+      "w": "have",
+      "s": 2.82,
+      "e": 2.94,
+      "shot": 3
+    },
+    {
+      "w": "left.",
+      "s": 2.94,
+      "e": 3.16,
+      "shot": 3
+    },
+    {
+      "w": "Kids",
+      "s": 3.6,
+      "e": 3.64,
+      "shot": 4
+    },
+    {
+      "w": "compare",
+      "s": 3.64,
+      "e": 3.94,
+      "shot": 4
+    },
+    {
+      "w": "them",
+      "s": 3.94,
+      "e": 4.06,
+      "shot": 4
+    },
+    {
+      "w": "at",
+      "s": 4.06,
+      "e": 4.16,
+      "shot": 4
+    },
+    {
+      "w": "recess",
+      "s": 4.16,
+      "e": 4.42,
+      "shot": 4
+    },
+    {
+      "w": "like",
+      "s": 4.42,
+      "e": 4.62,
+      "shot": 4
+    },
+    {
+      "w": "trading",
+      "s": 4.62,
+      "e": 4.9,
+      "shot": 4
+    },
+    {
+      "w": "cards.",
+      "s": 4.9,
+      "e": 5.28,
+      "shot": 4
+    },
+    {
+      "w": "My",
+      "s": 6.08,
+      "e": 6.22,
+      "shot": 5
+    },
+    {
+      "w": "grandpa's",
+      "s": 6.22,
+      "e": 6.6,
+      "shot": 5
+    },
+    {
+      "w": "says",
+      "s": 6.6,
+      "e": 6.74,
+      "shot": 5
+    },
+    {
+      "w": "twenty",
+      "s": 6.74,
+      "e": 7.02,
+      "shot": 5
+    },
+    {
+      "w": "years,",
+      "s": 7.02,
+      "e": 7.38,
+      "shot": 5
+    },
+    {
+      "w": "and",
+      "s": 7.6,
+      "e": 7.68,
+      "shot": 6
+    },
+    {
+      "w": "he",
+      "s": 7.68,
+      "e": 7.76,
+      "shot": 6
+    },
+    {
+      "w": "still",
+      "s": 7.76,
+      "e": 8.0,
+      "shot": 6
+    },
+    {
+      "w": "won't",
+      "s": 8.0,
+      "e": 8.24,
+      "shot": 6
+    },
+    {
+      "w": "eat",
+      "s": 8.24,
+      "e": 8.26,
+      "shot": 6
+    },
+    {
+      "w": "his",
+      "s": 8.26,
+      "e": 8.38,
+      "shot": 6
+    },
+    {
+      "w": "vegetables.",
+      "s": 8.38,
+      "e": 8.62,
+      "shot": 6
+    },
+    {
+      "w": "My",
+      "s": 9.04,
+      "e": 9.22,
+      "shot": 7
+    },
+    {
+      "w": "uncle",
+      "s": 9.22,
+      "e": 9.36,
+      "shot": 7
+    },
+    {
+      "w": "checks",
+      "s": 9.36,
+      "e": 9.6,
+      "shot": 7
+    },
+    {
+      "w": "his",
+      "s": 9.6,
+      "e": 9.76,
+      "shot": 7
+    },
+    {
+      "w": "more",
+      "s": 9.76,
+      "e": 9.92,
+      "shot": 7
+    },
+    {
+      "w": "than",
+      "s": 9.92,
+      "e": 10.02,
+      "shot": 7
+    },
+    {
+      "w": "his",
+      "s": 10.02,
+      "e": 10.14,
+      "shot": 7
+    },
+    {
+      "w": "phone.",
+      "s": 10.14,
+      "e": 10.36,
+      "shot": 7
+    },
+    {
+      "w": "And",
+      "s": 10.74,
+      "e": 10.82,
+      "shot": 8
+    },
+    {
+      "w": "if",
+      "s": 10.82,
+      "e": 10.88,
+      "shot": 8
+    },
+    {
+      "w": "you",
+      "s": 10.88,
+      "e": 11.0,
+      "shot": 8
+    },
+    {
+      "w": "really",
+      "s": 11.0,
+      "e": 11.26,
+      "shot": 8
+    },
+    {
+      "w": "love",
+      "s": 11.26,
+      "e": 11.48,
+      "shot": 8
+    },
+    {
+      "w": "someone,",
+      "s": 11.48,
+      "e": 11.78,
+      "shot": 8
+    },
+    {
+      "w": "you",
+      "s": 12.1,
+      "e": 12.18,
+      "shot": 9
+    },
+    {
+      "w": "can",
+      "s": 12.18,
+      "e": 12.3,
+      "shot": 9
+    },
+    {
+      "w": "give",
+      "s": 12.3,
+      "e": 12.4,
+      "shot": 9
+    },
+    {
+      "w": "them",
+      "s": 12.4,
+      "e": 12.52,
+      "shot": 9
+    },
+    {
+      "w": "your",
+      "s": 12.52,
+      "e": 12.62,
+      "shot": 9
+    },
+    {
+      "w": "time.",
+      "s": 12.62,
+      "e": 12.9,
+      "shot": 9
+    },
+    {
+      "w": "But",
+      "s": 13.3,
+      "e": 13.48,
+      "shot": 10
+    },
+    {
+      "w": "only",
+      "s": 13.48,
+      "e": 14.06,
+      "shot": 10
+    },
+    {
+      "w": "once.",
+      "s": 14.06,
+      "e": 14.42,
+      "shot": 10
+    },
+    {
+      "w": "Then,",
+      "s": 15.0,
+      "e": 15.18,
+      "shot": 11
+    },
+    {
+      "w": "I",
+      "s": 15.22,
+      "e": 15.58,
+      "shot": 11
+    },
+    {
+      "w": "woke",
+      "s": 15.58,
+      "e": 15.68,
+      "shot": 11
+    },
+    {
+      "w": "up",
+      "s": 15.68,
+      "e": 15.84,
+      "shot": 11
+    },
+    {
+      "w": "in",
+      "s": 15.84,
+      "e": 15.9,
+      "shot": 11
+    },
+    {
+      "w": "a",
+      "s": 15.9,
+      "e": 15.98,
+      "shot": 11
+    },
+    {
+      "w": "hospital.",
+      "s": 15.98,
+      "e": 16.26,
+      "shot": 11
+    },
+    {
+      "w": "I",
+      "s": 16.76,
+      "e": 16.84,
+      "shot": 12
+    },
+    {
+      "w": "didn't",
+      "s": 16.84,
+      "e": 16.98,
+      "shot": 12
+    },
+    {
+      "w": "remember",
+      "s": 16.98,
+      "e": 17.2,
+      "shot": 12
+    },
+    {
+      "w": "the",
+      "s": 17.2,
+      "e": 17.34,
+      "shot": 12
+    },
+    {
+      "w": "accident.",
+      "s": 17.34,
+      "e": 17.62,
+      "shot": 12
+    },
+    {
+      "w": "I",
+      "s": 18.07,
+      "e": 18.15,
+      "shot": 13
+    },
+    {
+      "w": "didn't",
+      "s": 18.15,
+      "e": 18.31,
+      "shot": 13
+    },
+    {
+      "w": "remember",
+      "s": 18.31,
+      "e": 18.49,
+      "shot": 13
+    },
+    {
+      "w": "much",
+      "s": 18.49,
+      "e": 18.65,
+      "shot": 13
+    },
+    {
+      "w": "of",
+      "s": 18.65,
+      "e": 18.73,
+      "shot": 13
+    },
+    {
+      "w": "anything.",
+      "s": 18.73,
+      "e": 19.03,
+      "shot": 13
+    },
+    {
+      "w": "My",
+      "s": 19.53,
+      "e": 19.63,
+      "shot": 14
+    },
+    {
+      "w": "meter",
+      "s": 19.63,
+      "e": 19.81,
+      "shot": 14
+    },
+    {
+      "w": "said",
+      "s": 19.81,
+      "e": 20.07,
+      "shot": 14
+    },
+    {
+      "w": "sixty-one",
+      "s": 20.07,
+      "e": 20.65,
+      "shot": 14
+    },
+    {
+      "w": "years.",
+      "s": 20.65,
+      "e": 20.95,
+      "shot": 14
+    },
+    {
+      "w": "The",
+      "s": 21.47,
+      "e": 21.55,
+      "shot": 15
+    },
+    {
+      "w": "girl",
+      "s": 21.55,
+      "e": 21.67,
+      "shot": 15
+    },
+    {
+      "w": "across",
+      "s": 21.67,
+      "e": 21.89,
+      "shot": 15
+    },
+    {
+      "w": "the",
+      "s": 21.89,
+      "e": 22.03,
+      "shot": 15
+    },
+    {
+      "w": "hall",
+      "s": 22.03,
+      "e": 22.19,
+      "shot": 15
+    },
+    {
+      "w": "visited",
+      "s": 22.19,
+      "e": 22.43,
+      "shot": 15
+    },
+    {
+      "w": "me",
+      "s": 22.43,
+      "e": 22.65,
+      "shot": 15
+    },
+    {
+      "w": "every",
+      "s": 22.65,
+      "e": 22.95,
+      "shot": 15
+    },
+    {
+      "w": "day.",
+      "s": 22.95,
+      "e": 23.19,
+      "shot": 15
+    },
+    {
+      "w": "Her",
+      "s": 23.55,
+      "e": 23.63,
+      "shot": 16
+    },
+    {
+      "w": "name",
+      "s": 23.63,
+      "e": 23.71,
+      "shot": 16
+    },
+    {
+      "w": "was",
+      "s": 23.71,
+      "e": 23.85,
+      "shot": 16
+    },
+    {
+      "w": "Lily.",
+      "s": 23.85,
+      "e": 24.01,
+      "shot": 16
+    },
+    {
+      "w": "She",
+      "s": 24.36,
+      "e": 24.52,
+      "shot": 17
+    },
+    {
+      "w": "brought",
+      "s": 24.52,
+      "e": 24.66,
+      "shot": 17
+    },
+    {
+      "w": "pudding",
+      "s": 24.66,
+      "e": 24.9,
+      "shot": 17
+    },
+    {
+      "w": "cups",
+      "s": 24.9,
+      "e": 25.12,
+      "shot": 17
+    },
+    {
+      "w": "and",
+      "s": 25.12,
+      "e": 25.3,
+      "shot": 18
+    },
+    {
+      "w": "the",
+      "s": 25.3,
+      "e": 25.44,
+      "shot": 18
+    },
+    {
+      "w": "worst",
+      "s": 25.44,
+      "e": 25.68,
+      "shot": 18
+    },
+    {
+      "w": "jokes",
+      "s": 25.68,
+      "e": 25.94,
+      "shot": 18
+    },
+    {
+      "w": "I'd",
+      "s": 25.94,
+      "e": 26.16,
+      "shot": 18
+    },
+    {
+      "w": "ever",
+      "s": 26.16,
+      "e": 26.38,
+      "shot": 18
+    },
+    {
+      "w": "heard.",
+      "s": 26.38,
+      "e": 26.62,
+      "shot": 18
+    },
+    {
+      "w": "She",
+      "s": 26.98,
+      "e": 27.06,
+      "shot": 19
+    },
+    {
+      "w": "always",
+      "s": 27.06,
+      "e": 27.28,
+      "shot": 19
+    },
+    {
+      "w": "wore",
+      "s": 27.28,
+      "e": 27.46,
+      "shot": 19
+    },
+    {
+      "w": "a",
+      "s": 27.46,
+      "e": 27.58,
+      "shot": 19
+    },
+    {
+      "w": "bracelet",
+      "s": 27.58,
+      "e": 27.86,
+      "shot": 19
+    },
+    {
+      "w": "over",
+      "s": 27.86,
+      "e": 28.1,
+      "shot": 19
+    },
+    {
+      "w": "her",
+      "s": 28.1,
+      "e": 28.24,
+      "shot": 19
+    },
+    {
+      "w": "meter.",
+      "s": 28.24,
+      "e": 28.44,
+      "shot": 19
+    },
+    {
+      "w": "We",
+      "s": 28.78,
+      "e": 28.9,
+      "shot": 20
+    },
+    {
+      "w": "played",
+      "s": 28.9,
+      "e": 29.06,
+      "shot": 20
+    },
+    {
+      "w": "cards",
+      "s": 29.06,
+      "e": 29.34,
+      "shot": 20
+    },
+    {
+      "w": "until",
+      "s": 29.34,
+      "e": 29.5,
+      "shot": 20
+    },
+    {
+      "w": "the",
+      "s": 29.5,
+      "e": 29.62,
+      "shot": 20
+    },
+    {
+      "w": "nurses",
+      "s": 29.62,
+      "e": 29.82,
+      "shot": 20
+    },
+    {
+      "w": "kicked",
+      "s": 29.82,
+      "e": 30.04,
+      "shot": 20
+    },
+    {
+      "w": "her",
+      "s": 30.04,
+      "e": 30.16,
+      "shot": 20
+    },
+    {
+      "w": "out.",
+      "s": 30.16,
+      "e": 30.32,
+      "shot": 20
+    },
+    {
+      "w": "She",
+      "s": 30.32,
+      "e": 30.587,
+      "shot": 21
+    },
+    {
+      "w": "always",
+      "s": 30.587,
+      "e": 30.855,
+      "shot": 21
+    },
+    {
+      "w": "let",
+      "s": 30.855,
+      "e": 31.123,
+      "shot": 21
+    },
+    {
+      "w": "me",
+      "s": 31.123,
+      "e": 31.39,
+      "shot": 21
+    },
+    {
+      "w": "win.",
+      "s": 31.39,
+      "e": 31.97,
+      "shot": 21
+    },
+    {
+      "w": "But",
+      "s": 31.97,
+      "e": 32.05,
+      "shot": 22
+    },
+    {
+      "w": "every",
+      "s": 32.05,
+      "e": 32.21,
+      "shot": 22
+    },
+    {
+      "w": "day,",
+      "s": 32.21,
+      "e": 32.51,
+      "shot": 22
+    },
+    {
+      "w": "Lily",
+      "s": 32.85,
+      "e": 32.87,
+      "shot": 22
+    },
+    {
+      "w": "looked",
+      "s": 32.87,
+      "e": 33.07,
+      "shot": 22
+    },
+    {
+      "w": "a",
+      "s": 33.07,
+      "e": 33.21,
+      "shot": 22
+    },
+    {
+      "w": "little",
+      "s": 33.21,
+      "e": 33.37,
+      "shot": 22
+    },
+    {
+      "w": "more",
+      "s": 33.37,
+      "e": 33.55,
+      "shot": 22
+    },
+    {
+      "w": "tired.",
+      "s": 33.55,
+      "e": 33.85,
+      "shot": 22
+    },
+    {
+      "w": "First,",
+      "s": 34.35,
+      "e": 34.59,
+      "shot": 23
+    },
+    {
+      "w": "she",
+      "s": 34.81,
+      "e": 34.91,
+      "shot": 23
+    },
+    {
+      "w": "stopped",
+      "s": 34.91,
+      "e": 35.09,
+      "shot": 23
+    },
+    {
+      "w": "walking",
+      "s": 35.09,
+      "e": 35.29,
+      "shot": 23
+    },
+    {
+      "w": "over.",
+      "s": 35.29,
+      "e": 35.79,
+      "shot": 23
+    },
+    {
+      "w": "Then,",
+      "s": 35.79,
+      "e": 36.17,
+      "shot": 24
+    },
+    {
+      "w": "she",
+      "s": 36.31,
+      "e": 36.55,
+      "shot": 24
+    },
+    {
+      "w": "came",
+      "s": 36.55,
+      "e": 36.69,
+      "shot": 24
+    },
+    {
+      "w": "in",
+      "s": 36.69,
+      "e": 36.79,
+      "shot": 24
+    },
+    {
+      "w": "a",
+      "s": 36.79,
+      "e": 36.87,
+      "shot": 24
+    },
+    {
+      "w": "wheelchair.",
+      "s": 36.87,
+      "e": 37.13,
+      "shot": 24
+    },
+    {
+      "w": "Then,",
+      "s": 37.34,
+      "e": 37.88,
+      "shot": 25
+    },
+    {
+      "w": "her",
+      "s": 37.98,
+      "e": 38.2,
+      "shot": 25
+    },
+    {
+      "w": "jokes",
+      "s": 38.2,
+      "e": 38.4,
+      "shot": 25
+    },
+    {
+      "w": "got",
+      "s": 38.4,
+      "e": 38.62,
+      "shot": 25
+    },
+    {
+      "w": "quieter.",
+      "s": 38.62,
+      "e": 38.96,
+      "shot": 25
+    },
+    {
+      "w": "One",
+      "s": 39.42,
+      "e": 39.52,
+      "shot": 26
+    },
+    {
+      "w": "day,",
+      "s": 39.52,
+      "e": 39.68,
+      "shot": 26
+    },
+    {
+      "w": "she",
+      "s": 39.9,
+      "e": 39.96,
+      "shot": 26
+    },
+    {
+      "w": "handed",
+      "s": 39.96,
+      "e": 40.1,
+      "shot": 26
+    },
+    {
+      "w": "me",
+      "s": 40.1,
+      "e": 40.26,
+      "shot": 26
+    },
+    {
+      "w": "a",
+      "s": 40.26,
+      "e": 40.38,
+      "shot": 26
+    },
+    {
+      "w": "grape",
+      "s": 40.38,
+      "e": 40.52,
+      "shot": 26
+    },
+    {
+      "w": "pudding",
+      "s": 40.52,
+      "e": 40.78,
+      "shot": 26
+    },
+    {
+      "w": "before",
+      "s": 40.78,
+      "e": 41.04,
+      "shot": 27
+    },
+    {
+      "w": "I",
+      "s": 41.04,
+      "e": 41.16,
+      "shot": 27
+    },
+    {
+      "w": "even",
+      "s": 41.16,
+      "e": 41.3,
+      "shot": 27
+    },
+    {
+      "w": "asked.",
+      "s": 41.3,
+      "e": 41.6,
+      "shot": 27
+    },
+    {
+      "w": "\"How",
+      "s": 42.0,
+      "e": 42.12,
+      "shot": 28
+    },
+    {
+      "w": "did",
+      "s": 42.12,
+      "e": 42.24,
+      "shot": 28
+    },
+    {
+      "w": "you",
+      "s": 42.24,
+      "e": 42.32,
+      "shot": 28
+    },
+    {
+      "w": "know",
+      "s": 42.32,
+      "e": 42.44,
+      "shot": 28
+    },
+    {
+      "w": "grape",
+      "s": 42.44,
+      "e": 42.64,
+      "shot": 28
+    },
+    {
+      "w": "is",
+      "s": 42.64,
+      "e": 42.74,
+      "shot": 28
+    },
+    {
+      "w": "my",
+      "s": 42.74,
+      "e": 42.88,
+      "shot": 28
+    },
+    {
+      "w": "favorite?\"",
+      "s": 42.88,
+      "e": 43.18,
+      "shot": 28
+    },
+    {
+      "w": "I",
+      "s": 43.4,
+      "e": 43.48,
+      "shot": 28
+    },
+    {
+      "w": "asked.",
+      "s": 43.48,
+      "e": 43.68,
+      "shot": 28
+    },
+    {
+      "w": "She",
+      "s": 43.95,
+      "e": 44.11,
+      "shot": 29
+    },
+    {
+      "w": "smiled.",
+      "s": 44.11,
+      "e": 44.35,
+      "shot": 29
+    },
+    {
+      "w": "\"Lucky",
+      "s": 44.99,
+      "e": 44.99,
+      "shot": 30
+    },
+    {
+      "w": "guess.\"",
+      "s": 44.99,
+      "e": 45.27,
+      "shot": 30
+    },
+    {
+      "w": "The",
+      "s": 45.69,
+      "e": 45.77,
+      "shot": 31
+    },
+    {
+      "w": "next",
+      "s": 45.77,
+      "e": 45.89,
+      "shot": 31
+    },
+    {
+      "w": "morning,",
+      "s": 45.89,
+      "e": 46.17,
+      "shot": 31
+    },
+    {
+      "w": "the",
+      "s": 46.39,
+      "e": 46.45,
+      "shot": 31
+    },
+    {
+      "w": "doctor",
+      "s": 46.45,
+      "e": 46.63,
+      "shot": 31
+    },
+    {
+      "w": "checked",
+      "s": 46.63,
+      "e": 46.85,
+      "shot": 31
+    },
+    {
+      "w": "my",
+      "s": 46.85,
+      "e": 46.99,
+      "shot": 31
+    },
+    {
+      "w": "chart.",
+      "s": 46.99,
+      "e": 47.23,
+      "shot": 31
+    },
+    {
+      "w": "\"Your",
+      "s": 47.59,
+      "e": 47.67,
+      "shot": 32
+    },
+    {
+      "w": "meter",
+      "s": 47.67,
+      "e": 47.87,
+      "shot": 32
+    },
+    {
+      "w": "hit",
+      "s": 47.87,
+      "e": 48.07,
+      "shot": 32
+    },
+    {
+      "w": "zero",
+      "s": 48.07,
+      "e": 48.35,
+      "shot": 32
+    },
+    {
+      "w": "in",
+      "s": 48.35,
+      "e": 48.53,
+      "shot": 32
+    },
+    {
+      "w": "the",
+      "s": 48.53,
+      "e": 48.61,
+      "shot": 32
+    },
+    {
+      "w": "ambulance,\"",
+      "s": 48.61,
+      "e": 48.95,
+      "shot": 32
+    },
+    {
+      "w": "she",
+      "s": 49.21,
+      "e": 49.27,
+      "shot": 32
+    },
+    {
+      "w": "said.",
+      "s": 49.27,
+      "e": 49.47,
+      "shot": 32
+    },
+    {
+      "w": "\"Someone",
+      "s": 49.91,
+      "e": 50.07,
+      "shot": 33
+    },
+    {
+      "w": "gave",
+      "s": 50.07,
+      "e": 50.27,
+      "shot": 33
+    },
+    {
+      "w": "you",
+      "s": 50.27,
+      "e": 50.39,
+      "shot": 33
+    },
+    {
+      "w": "their",
+      "s": 50.39,
+      "e": 50.51,
+      "shot": 33
+    },
+    {
+      "w": "time.",
+      "s": 50.51,
+      "e": 50.77,
+      "shot": 33
+    },
+    {
+      "w": "They",
+      "s": 51.25,
+      "e": 51.35,
+      "shot": 34
+    },
+    {
+      "w": "didn't",
+      "s": 51.35,
+      "e": 51.53,
+      "shot": 34
+    },
+    {
+      "w": "leave",
+      "s": 51.53,
+      "e": 51.63,
+      "shot": 34
+    },
+    {
+      "w": "a",
+      "s": 51.63,
+      "e": 51.73,
+      "shot": 34
+    },
+    {
+      "w": "name.\"",
+      "s": 51.73,
+      "e": 51.89,
+      "shot": 34
+    },
+    {
+      "w": "I",
+      "s": 52.25,
+      "e": 52.37,
+      "shot": 35
+    },
+    {
+      "w": "couldn't",
+      "s": 52.37,
+      "e": 52.69,
+      "shot": 35
+    },
+    {
+      "w": "stop",
+      "s": 52.69,
+      "e": 52.79,
+      "shot": 35
+    },
+    {
+      "w": "thinking",
+      "s": 52.79,
+      "e": 53.09,
+      "shot": 35
+    },
+    {
+      "w": "about",
+      "s": 53.09,
+      "e": 53.31,
+      "shot": 35
+    },
+    {
+      "w": "it.",
+      "s": 53.31,
+      "e": 53.51,
+      "shot": 35
+    },
+    {
+      "w": "The",
+      "s": 53.75,
+      "e": 53.83,
+      "shot": 36
+    },
+    {
+      "w": "pudding",
+      "s": 53.83,
+      "e": 54.07,
+      "shot": 36
+    },
+    {
+      "w": "she",
+      "s": 54.07,
+      "e": 54.31,
+      "shot": 36
+    },
+    {
+      "w": "always",
+      "s": 54.31,
+      "e": 54.59,
+      "shot": 36
+    },
+    {
+      "w": "knew.",
+      "s": 54.59,
+      "e": 54.89,
+      "shot": 36
+    },
+    {
+      "w": "The",
+      "s": 55.19,
+      "e": 55.33,
+      "shot": 37
+    },
+    {
+      "w": "bracelet",
+      "s": 55.33,
+      "e": 55.57,
+      "shot": 37
+    },
+    {
+      "w": "she",
+      "s": 55.57,
+      "e": 55.79,
+      "shot": 37
+    },
+    {
+      "w": "never",
+      "s": 55.79,
+      "e": 56.01,
+      "shot": 37
+    },
+    {
+      "w": "took",
+      "s": 56.01,
+      "e": 56.21,
+      "shot": 37
+    },
+    {
+      "w": "off.",
+      "s": 56.21,
+      "e": 56.53,
+      "shot": 37
+    },
+    {
+      "w": "How",
+      "s": 56.79,
+      "e": 56.91,
+      "shot": 38
+    },
+    {
+      "w": "she",
+      "s": 56.91,
+      "e": 57.07,
+      "shot": 38
+    },
+    {
+      "w": "got",
+      "s": 57.07,
+      "e": 57.23,
+      "shot": 38
+    },
+    {
+      "w": "weaker",
+      "s": 57.23,
+      "e": 57.45,
+      "shot": 38
+    },
+    {
+      "w": "every",
+      "s": 57.45,
+      "e": 57.89,
+      "shot": 38
+    },
+    {
+      "w": "day",
+      "s": 57.89,
+      "e": 58.07,
+      "shot": 38
+    },
+    {
+      "w": "I",
+      "s": 58.07,
+      "e": 58.31,
+      "shot": 39
+    },
+    {
+      "w": "got",
+      "s": 58.31,
+      "e": 58.45,
+      "shot": 39
+    },
+    {
+      "w": "stronger.",
+      "s": 58.45,
+      "e": 58.77,
+      "shot": 39
+    },
+    {
+      "w": "I",
+      "s": 58.77,
+      "e": 59.26,
+      "shot": 40
+    },
+    {
+      "w": "walked",
+      "s": 59.26,
+      "e": 59.52,
+      "shot": 40
+    },
+    {
+      "w": "across",
+      "s": 59.52,
+      "e": 59.76,
+      "shot": 40
+    },
+    {
+      "w": "the",
+      "s": 59.76,
+      "e": 59.92,
+      "shot": 40
+    },
+    {
+      "w": "hall.",
+      "s": 59.92,
+      "e": 60.26,
+      "shot": 40
+    },
+    {
+      "w": "I",
+      "s": 60.54,
+      "e": 60.56,
+      "shot": 41
+    },
+    {
+      "w": "slid",
+      "s": 60.56,
+      "e": 60.76,
+      "shot": 41
+    },
+    {
+      "w": "her",
+      "s": 60.76,
+      "e": 60.9,
+      "shot": 41
+    },
+    {
+      "w": "bracelet",
+      "s": 60.9,
+      "e": 61.14,
+      "shot": 41
+    },
+    {
+      "w": "down.",
+      "s": 61.14,
+      "e": 61.42,
+      "shot": 41
+    },
+    {
+      "w": "Her",
+      "s": 61.88,
+      "e": 61.92,
+      "shot": 42
+    },
+    {
+      "w": "meter",
+      "s": 61.92,
+      "e": 62.06,
+      "shot": 42
+    },
+    {
+      "w": "said",
+      "s": 62.06,
+      "e": 62.36,
+      "shot": 42
+    },
+    {
+      "w": "one",
+      "s": 62.36,
+      "e": 62.76,
+      "shot": 42
+    },
+    {
+      "w": "day.",
+      "s": 62.76,
+      "e": 63.02,
+      "shot": 42
+    },
+    {
+      "w": "And",
+      "s": 63.42,
+      "e": 63.5,
+      "shot": 43
+    },
+    {
+      "w": "suddenly,",
+      "s": 63.5,
+      "e": 63.8,
+      "shot": 43
+    },
+    {
+      "w": "I",
+      "s": 64.16,
+      "e": 64.24,
+      "shot": 43
+    },
+    {
+      "w": "remembered.",
+      "s": 64.24,
+      "e": 64.6,
+      "shot": 43
+    },
+    {
+      "w": "A",
+      "s": 65.02,
+      "e": 65.1,
+      "shot": 44
+    },
+    {
+      "w": "treehouse.",
+      "s": 65.1,
+      "e": 65.56,
+      "shot": 44
+    },
+    {
+      "w": "A",
+      "s": 65.94,
+      "e": 65.98,
+      "shot": 45
+    },
+    {
+      "w": "girl",
+      "s": 65.98,
+      "e": 66.14,
+      "shot": 45
+    },
+    {
+      "w": "with",
+      "s": 66.14,
+      "e": 66.32,
+      "shot": 45
+    },
+    {
+      "w": "a",
+      "s": 66.32,
+      "e": 66.42,
+      "shot": 45
+    },
+    {
+      "w": "gap-toothed",
+      "s": 66.42,
+      "e": 66.88,
+      "shot": 45
+    },
+    {
+      "w": "grin.",
+      "s": 66.88,
+      "e": 67.06,
+      "shot": 45
+    },
+    {
+      "w": "Two",
+      "s": 67.46,
+      "e": 67.6,
+      "shot": 46
+    },
+    {
+      "w": "grape",
+      "s": 67.6,
+      "e": 67.8,
+      "shot": 46
+    },
+    {
+      "w": "puddings,",
+      "s": 67.8,
+      "e": 68.14,
+      "shot": 46
+    },
+    {
+      "w": "always",
+      "s": 68.29,
+      "e": 68.55,
+      "shot": 46
+    },
+    {
+      "w": "split",
+      "s": 68.55,
+      "e": 68.77,
+      "shot": 46
+    },
+    {
+      "w": "in",
+      "s": 68.77,
+      "e": 68.89,
+      "shot": 46
+    },
+    {
+      "w": "half.",
+      "s": 68.89,
+      "e": 69.13,
+      "shot": 46
+    },
+    {
+      "w": "\"It",
+      "s": 69.49,
+      "e": 69.57,
+      "shot": 47
+    },
+    {
+      "w": "was",
+      "s": 69.57,
+      "e": 69.69,
+      "shot": 47
+    },
+    {
+      "w": "you,\"",
+      "s": 69.69,
+      "e": 70.11,
+      "shot": 47
+    },
+    {
+      "w": "I",
+      "s": 70.29,
+      "e": 70.37,
+      "shot": 47
+    },
+    {
+      "w": "said.",
+      "s": 70.37,
+      "e": 70.59,
+      "shot": 47
+    },
+    {
+      "w": "She",
+      "s": 70.89,
+      "e": 71.05,
+      "shot": 48
+    },
+    {
+      "w": "looked",
+      "s": 71.05,
+      "e": 71.15,
+      "shot": 48
+    },
+    {
+      "w": "down.",
+      "s": 71.15,
+      "e": 71.41,
+      "shot": 48
+    },
+    {
+      "w": "\"You",
+      "s": 71.83,
+      "e": 71.91,
+      "shot": 49
+    },
+    {
+      "w": "always",
+      "s": 71.91,
+      "e": 72.11,
+      "shot": 49
+    },
+    {
+      "w": "shared",
+      "s": 72.11,
+      "e": 72.33,
+      "shot": 49
+    },
+    {
+      "w": "yours",
+      "s": 72.33,
+      "e": 72.49,
+      "shot": 49
+    },
+    {
+      "w": "with",
+      "s": 72.49,
+      "e": 72.65,
+      "shot": 49
+    },
+    {
+      "w": "me,\"",
+      "s": 72.65,
+      "e": 72.89,
+      "shot": 49
+    },
+    {
+      "w": "she",
+      "s": 72.95,
+      "e": 73.13,
+      "shot": 49
+    },
+    {
+      "w": "said.",
+      "s": 73.13,
+      "e": 73.31,
+      "shot": 49
+    },
+    {
+      "w": "\"So",
+      "s": 73.67,
+      "e": 73.77,
+      "shot": 50
+    },
+    {
+      "w": "I",
+      "s": 73.77,
+      "e": 73.89,
+      "shot": 50
+    },
+    {
+      "w": "shared",
+      "s": 73.89,
+      "e": 74.05,
+      "shot": 50
+    },
+    {
+      "w": "mine.\"",
+      "s": 74.05,
+      "e": 74.27,
+      "shot": 50
+    },
+    {
+      "w": "In",
+      "s": 74.69,
+      "e": 74.77,
+      "shot": 51
+    },
+    {
+      "w": "this",
+      "s": 74.77,
+      "e": 74.89,
+      "shot": 51
+    },
+    {
+      "w": "town,",
+      "s": 74.89,
+      "e": 75.37,
+      "shot": 51
+    },
+    {
+      "w": "you",
+      "s": 75.39,
+      "e": 75.51,
+      "shot": 51
+    },
+    {
+      "w": "can",
+      "s": 75.51,
+      "e": 75.59,
+      "shot": 51
+    },
+    {
+      "w": "only",
+      "s": 75.59,
+      "e": 75.77,
+      "shot": 51
+    },
+    {
+      "w": "give",
+      "s": 75.77,
+      "e": 75.89,
+      "shot": 51
+    },
+    {
+      "w": "your",
+      "s": 75.89,
+      "e": 76.01,
+      "shot": 51
+    },
+    {
+      "w": "time",
+      "s": 76.01,
+      "e": 76.19,
+      "shot": 51
+    },
+    {
+      "w": "away",
+      "s": 76.19,
+      "e": 76.37,
+      "shot": 51
+    },
+    {
+      "w": "once.",
+      "s": 76.37,
+      "e": 76.69,
+      "shot": 51
+    },
+    {
+      "w": "But",
+      "s": 77.07,
+      "e": 77.17,
+      "shot": 52
+    },
+    {
+      "w": "nobody",
+      "s": 77.17,
+      "e": 77.43,
+      "shot": 52
+    },
+    {
+      "w": "ever",
+      "s": 77.43,
+      "e": 77.73,
+      "shot": 52
+    },
+    {
+      "w": "said",
+      "s": 77.73,
+      "e": 77.97,
+      "shot": 52
+    },
+    {
+      "w": "you",
+      "s": 77.97,
+      "e": 78.15,
+      "shot": 52
+    },
+    {
+      "w": "can't",
+      "s": 78.15,
+      "e": 78.43,
+      "shot": 52
+    },
+    {
+      "w": "give",
+      "s": 78.43,
+      "e": 78.51,
+      "shot": 52
+    },
+    {
+      "w": "it",
+      "s": 78.51,
+      "e": 78.63,
+      "shot": 52
+    },
+    {
+      "w": "back.",
+      "s": 78.63,
+      "e": 78.83,
+      "shot": 52
+    },
+    {
+      "w": "I",
+      "s": 79.23,
+      "e": 79.31,
+      "shot": 53
+    },
+    {
+      "w": "held",
+      "s": 79.31,
+      "e": 79.47,
+      "shot": 53
+    },
+    {
+      "w": "my",
+      "s": 79.47,
+      "e": 79.61,
+      "shot": 53
+    },
+    {
+      "w": "wrist",
+      "s": 79.61,
+      "e": 79.79,
+      "shot": 53
+    },
+    {
+      "w": "against",
+      "s": 79.79,
+      "e": 80.03,
+      "shot": 53
+    },
+    {
+      "w": "hers.",
+      "s": 80.03,
+      "e": 80.23,
+      "shot": 53
+    },
+    {
+      "w": "The",
+      "s": 80.61,
+      "e": 80.71,
+      "shot": 54
+    },
+    {
+      "w": "numbers",
+      "s": 80.71,
+      "e": 80.87,
+      "shot": 54
+    },
+    {
+      "w": "flickered.",
+      "s": 80.87,
+      "e": 81.23,
+      "shot": 54
+    },
+    {
+      "w": "Hers",
+      "s": 81.59,
+      "e": 81.61,
+      "shot": 55
+    },
+    {
+      "w": "went",
+      "s": 81.61,
+      "e": 81.77,
+      "shot": 55
+    },
+    {
+      "w": "up.",
+      "s": 81.77,
+      "e": 81.95,
+      "shot": 55
+    },
+    {
+      "w": "Mine",
+      "s": 82.25,
+      "e": 82.35,
+      "shot": 55
+    },
+    {
+      "w": "went",
+      "s": 82.35,
+      "e": 82.53,
+      "shot": 55
+    },
+    {
+      "w": "down.",
+      "s": 82.53,
+      "e": 82.77,
+      "shot": 55
+    },
+    {
+      "w": "Until",
+      "s": 83.1,
+      "e": 83.36,
+      "shot": 56
+    },
+    {
+      "w": "they",
+      "s": 83.36,
+      "e": 83.5,
+      "shot": 56
+    },
+    {
+      "w": "stopped.",
+      "s": 83.5,
+      "e": 83.82,
+      "shot": 56
+    },
+    {
+      "w": "Thirty",
+      "s": 84.36,
+      "e": 84.48,
+      "shot": 57
+    },
+    {
+      "w": "years.",
+      "s": 84.48,
+      "e": 84.86,
+      "shot": 57
+    },
+    {
+      "w": "Exactly",
+      "s": 85.5,
+      "e": 85.58,
+      "shot": 57
+    },
+    {
+      "w": "the",
+      "s": 85.58,
+      "e": 85.8,
+      "shot": 57
+    },
+    {
+      "w": "same.",
+      "s": 85.8,
+      "e": 86.04,
+      "shot": 57
+    },
+    {
+      "w": "Lily",
+      "s": 86.48,
+      "e": 86.54,
+      "shot": 58
+    },
+    {
+      "w": "laughed",
+      "s": 86.54,
+      "e": 86.9,
+      "shot": 58
+    },
+    {
+      "w": "and",
+      "s": 86.9,
+      "e": 87.12,
+      "shot": 58
+    },
+    {
+      "w": "cried",
+      "s": 87.12,
+      "e": 87.4,
+      "shot": 58
+    },
+    {
+      "w": "at",
+      "s": 87.4,
+      "e": 87.52,
+      "shot": 58
+    },
+    {
+      "w": "the",
+      "s": 87.52,
+      "e": 87.64,
+      "shot": 58
+    },
+    {
+      "w": "same",
+      "s": 87.64,
+      "e": 87.82,
+      "shot": 58
+    },
+    {
+      "w": "time.",
+      "s": 87.82,
+      "e": 88.1,
+      "shot": 58
+    },
+    {
+      "w": "\"Now",
+      "s": 88.44,
+      "e": 88.62,
+      "shot": 59
+    },
+    {
+      "w": "what?\"",
+      "s": 88.62,
+      "e": 88.84,
+      "shot": 59
+    },
+    {
+      "w": "she",
+      "s": 89.12,
+      "e": 89.2,
+      "shot": 59
+    },
+    {
+      "w": "whispered.",
+      "s": 89.2,
+      "e": 89.42,
+      "shot": 59
+    },
+    {
+      "w": "I",
+      "s": 89.9,
+      "e": 89.98,
+      "shot": 60
+    },
+    {
+      "w": "split",
+      "s": 89.98,
+      "e": 90.18,
+      "shot": 60
+    },
+    {
+      "w": "the",
+      "s": 90.18,
+      "e": 90.3,
+      "shot": 60
+    },
+    {
+      "w": "grape",
+      "s": 90.3,
+      "e": 90.46,
+      "shot": 60
+    },
+    {
+      "w": "pudding",
+      "s": 90.46,
+      "e": 90.64,
+      "shot": 60
+    },
+    {
+      "w": "in",
+      "s": 90.64,
+      "e": 90.78,
+      "shot": 60
+    },
+    {
+      "w": "half.",
+      "s": 90.78,
+      "e": 91.04,
+      "shot": 60
+    },
+    {
+      "w": "\"Now",
+      "s": 91.56,
+      "e": 91.6,
+      "shot": 61
+    },
+    {
+      "w": "we",
+      "s": 91.6,
+      "e": 91.74,
+      "shot": 61
+    },
+    {
+      "w": "share.\"",
+      "s": 91.74,
+      "e": 91.96,
+      "shot": 61
+    }
+  ],
+  "music": {
+    "file": "output/stock/music/soft_piano_stock.wav",
+    "db": -7
+  },
+  "ambience": [
+    {
+      "file": "output/stock/sfx/amb_town_stock.wav",
+      "start": 0.0,
+      "end": 15.0
+    },
+    {
+      "file": "output/stock/sfx/amb_town_stock.wav",
+      "start": 15.0,
+      "end": 65.02
+    },
+    {
+      "file": "output/stock/sfx/amb_wind_stock.wav",
+      "start": 65.02,
+      "end": 93.630729
+    }
+  ],
+  "sfx": [
+    {
+      "file": "output/stock/sfx/magic_shimmer_stock.wav",
+      "t": 0.76,
+      "shot": 2
+    },
+    {
+      "file": "output/stock/sfx/magic_shimmer_stock.wav",
+      "t": 12.1,
+      "shot": 9
+    },
+    {
+      "file": "output/stock/sfx/door_knock_stock.wav",
+      "t": 21.47,
+      "shot": 15
+    },
+    {
+      "file": "output/stock/sfx/magic_shimmer_stock.wav",
+      "t": 63.42,
+      "shot": 43
+    },
+    {
+      "file": "output/stock/sfx/magic_shimmer_stock.wav",
+      "t": 80.61,
+      "shot": 54
+    }
+  ],
+  "override": {
+    "music": {
+      "file": "output/music/TEMPOREX_-_Numbers_Instrumental_loop.mp3",
+      "db": -7.5
+    }
+  }
+}
