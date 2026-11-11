@@ -2,14 +2,15 @@
 
 Read with `scripts/alpha-mark.md` and `tools/laptop/RECORDING.md`. Helpers: `tools/laptop/StoryKit.lua`.
 
-## Sets - only 2, both REUSED from workspace.Town.Sets (add small props only)
+## Sets - 3 total: 2 REUSED from workspace.Town.Sets + 1 new (mountain trail, reusable for future trips)
 
 | Set | Reuse | Add | Shots |
 |---|---|---|---|
 | **A. Town street** | existing street | morning light, kids with backpacks | 1-4 |
-| **B. School playground** | existing playground | a school wall with a faded **crown mural**, 2 long lunch tables + trays, 2 trash cans, a bench, a drinking fountain, a **rain** effect you can switch on/off (ParticleEmitter or Toolbox rain) | 5-37 |
+| **B. School playground** | existing playground | a school wall with a faded **crown mural**, 2 long lunch tables + trays, 2 trash cans, a bench, a drinking fountain, a **rain** effect you can switch on/off (ParticleEmitter or Toolbox rain) | 5-32 |
+| **C. Mountain trail (NEW)** | build once, save to Town.Sets | dirt trail along a slope, a cliff edge with a hanging root, a parked school bus, loose boulders that can tumble (unanchor or tween them down for shot 35), dust particles | 33-45 |
 
-Lighting presets: `warm` (1-13, 28-37 brightening as the crown appears), `night`/dusk (14-15), `sad` grey + rain (16-27). Shot 37: rain off, sun out.
+Lighting presets: `warm` (1-13, 28-33), `night`/dusk (14-15), `sad` grey + rain (16-27), mountain `sad`/dusty (34-41), `warm` sunset (42-45).
 
 ## Cast - every character has real Roblox hair (catalog hair accessories, not block hair)
 
@@ -60,9 +61,17 @@ Fake claw: black "///" drawn over the green leaf plate (two layers: leaf underne
 | 29 | B | Kai lets go, steps back | shocked | claw | medium |
 | 30 | B | crowd steps back | shocked | - | wide |
 | 31 | B | small kid whispers | shocked -> talk @0.4 | - | close |
-| 32 | B | Kai bows head | embarrassed | - | close |
-| 33 | B | Kai looks up | worried -> talk @0.5 | - | close |
-| 34 | B | prey kids by trash cans look up | sad -> smile @1.0 | leaves | medium |
-| 35 | B | Narrator soft smile | smile | crown | close |
-| 36 | B | Narrator determined | determined | crown | close, punch |
-| 37 | B (sun out) | everyone eating together at one table | laugh | mixed | wide, pull-out |
+| 32 | B (sunny) | kids bow/cheer around Narrator | kids laugh, Narrator embarrassed | crown | medium |
+| 33 | C | class hikes up the trail, bus parked | smile | - | wide |
+| 34 | C | class stops, ground shakes (camera shake) | smile -> shocked @0.4 | - | medium |
+| 35 | C | boulders tumble down the slope, dust | - | - | wide |
+| 36 | C | kids run past, Kai frozen | crowd shocked, Kai worried | - | medium, pan |
+| 37 | C | Kai slips off the edge | shocked | claw | medium, punch |
+| 38 | C | Kai's hand grips a root | - | claw | close insert |
+| 39 | C | Narrator raises blazing crown wrist | determined | crown (brightest) | close insert |
+| 40 | C | Narrator flat on the ground, grabs Kai's wrist | Narrator determined, Kai crying | crown + claw both visible | close |
+| 41 | C | Narrator pulls | determined | - | close, punch |
+| 42 | C | Kai sits safe on the trail, shaking | crying | - | close |
+| 43 | C | Kai looks up | sad -> talk @0.4 | - | close |
+| 44 | C | Narrator offers a hand | smile | crown | close |
+| 45 | C (sunset) | Narrator helps Kai up, class gathers | smile / laugh | - | wide, pull-out |

@@ -16,7 +16,9 @@ Then, it rained at recess. Kai, the biggest predator in school, grabbed my wrist
 
 Everyone circled me. "Show us," they said. "Show us what you really are." My wrist started to burn. The leaf glowed. Then it cracked open like an egg. And underneath, there was a crown.
 
-Kai let go. Everyone stepped back. "Alpha," someone whispered. Kai bowed his head. "What do we do now?" I looked at the kids by the trash cans. Prey kids. Like me. "Now," I said, "nobody eats by the trash cans."
+Kai let go. Everyone stepped back. "Alpha," someone whispered. By the next week, the whole school called me king.
+
+Then, on our class trip to the mountains, the ground started to shake. Rocks came sliding down the hill. Everyone ran. Except Kai. He slipped over the edge and grabbed a root. My crown burned brighter than ever. I grabbed his wrist, the same way he grabbed mine. And I pulled. Kai stared at me, shaking. "Why'd you save me?" "Because," I said, "a king doesn't leave anyone behind."
 
 ## Shot list
 
@@ -59,12 +61,20 @@ Framing: whole head in frame with space above the hair; nothing covering Studio 
 | 29 | Kai let go. | Playground, rain | Kai | letting go, stepping back, shocked | medium, push-in | - | warm | - | - | 1 |
 | 30 | Everyone stepped back. | Playground, rain | crowd | stepping back, shocked faces | wide, pull-out | - | warm | - | - | 1.2 |
 | 31 | "Alpha," someone whispered. | Playground, rain | a small kid | whispering, shocked | close, push-in | - | warm | - | - | 1.6 |
-| 32 | Kai bowed his head. | Playground, rain | Kai | head down, embarrassed | close, static | - | warm | - | - | 1.2 |
-| 33 | "What do we do now?" | Playground, rain | Kai | looking up, worried | close, push-in | - | warm | - | - | 1.3 |
-| 34 | I looked at the kids by the trash cans. | Schoolyard, by the trash cans | 3 prey kids | looking up, hopeful | medium, push-in | trash cans | warm | - | - | 2 |
-| 35 | Prey kids. Like me. | Playground | Narrator | soft smile | close, push-in | gold crown mark | warm | - | - | 1.6 |
-| 36 | "Now," I said, | Playground | Narrator | determined | close, punch-in | - | warm | - | - | 0.8 |
-| 37 | "nobody eats by the trash cans." | Schoolyard lunch tables, sun comes out | everyone | all kids eating together at one long table, laughing | wide, pull-out | lunch trays, sunshine | warm | fog | - | 2.5 |
+| 32 | By the next week, the whole school called me king. | Schoolyard, sunny | Narrator + kids | kids bowing/cheering around Narrator, Narrator embarrassed smile | medium, push-in | gold crown mark | warm | fog | - | 2.6 |
+| 33 | Then, on our class trip to the mountains, | Mountain trail, school bus parked, kids hiking | class | walking up the trail | wide, slow push-in | backpacks, school bus | warm | fog | amb:wind | 2.2 |
+| 34 | the ground started to shake. | Mountain trail | class | stopping, shocked, looking around | medium, shake | - | sad | - | - | 1.4 |
+| 35 | Rocks came sliding down the hill. | Mountain slope | - | - | wide, rocks tumbling down, dust | rocks, dust | sad | - | - | 1.8 |
+| 36 | Everyone ran. Except Kai. | Mountain trail | class running, Kai frozen | kids running past, Kai scared, not moving | medium, pan right | - | sad | - | - | 2 |
+| 37 | He slipped over the edge | Trail edge | Kai | slipping off the edge | medium, punch-in | cliff edge | sad | - | - | 1.4 |
+| 38 | and grabbed a root. | Cliff edge | Kai | hand gripping a root, terrified | close insert | root, cliff | sad | - | - | 1.2 |
+| 39 | My crown burned brighter than ever. | Trail edge | Narrator | wrist raised, crown blazing, determined | close insert | gold crown mark | warm | sparkle | shimmer | 2 |
+| 40 | I grabbed his wrist, the same way he grabbed mine. | Cliff edge | Narrator, Kai | Narrator lying flat, grabbing Kai's wrist (claw + crown visible) | close, push-in | both wrist marks | warm | - | - | 2.6 |
+| 41 | And I pulled. | Cliff edge | Narrator | pulling with all his strength, determined | close, punch-in | - | warm | - | - | 1 |
+| 42 | Kai stared at me, shaking. | Trail, safe | Kai | sitting on the trail, scared, teary | close, push-in | - | warm | - | - | 1.6 |
+| 43 | "Why'd you save me?" | Trail, safe | Kai | looking up at Narrator | close, push-in | - | warm | - | - | 1.4 |
+| 44 | "Because," I said, | Trail | Narrator | soft smile, offering a hand | close, push-in | - | warm | - | - | 1 |
+| 45 | "a king doesn't leave anyone behind." | Mountain trail at sunset | Narrator, Kai, class | Narrator helping Kai up, class gathering around | wide, pull-out | sunset | warm | fog | - | 2.6 |
 
 ## Delivery
 
@@ -100,13 +110,21 @@ Framing: whole head in frame with space above the hair; nothing covering Studio 
 | Everyone stepped back. | soft | |
 | "Alpha," | whisper | Alpha. |
 | someone whispered. | soft | |
-| Kai bowed his head. | soft | |
-| "What do we do now?" | curious | What do we do now? |
-| I looked at the kids by the trash cans. | warm | |
-| Prey kids. Like me. | warm | Prey kids... Like me. |
-| "Now," | warm | Now, |
+| By the next week, the whole school called me king. | playful | |
+| Then, on our class trip to the mountains, the ground started to shake. | dramatic | |
+| Rocks came sliding down the hill. | excited | |
+| Everyone ran. | excited | |
+| Except Kai. | dramatic | Except... Kai. |
+| He slipped over the edge and grabbed a root. | dramatic | |
+| My crown burned brighter than ever. | emotional | |
+| I grabbed his wrist, the same way he grabbed mine. | dramatic | |
+| And I pulled. | dramatic | |
+| Kai stared at me, shaking. | soft | |
+| "Why'd you save me?" | soft | Why'd you save me? |
+| "Because," | warm | Because, |
 | I said, | neutral | |
-| "nobody eats by the trash cans." | warm | nobody eats by the trash cans. |
+| "a king doesn't leave anyone behind." | warm | a king doesn't leave anyone behind. |
+| I said, "a king doesn't leave anyone behind." | warm | I said, a king doesn't leave anyone behind. |
 
 ## ElevenLabs prompt
 
@@ -121,5 +139,7 @@ Framing: whole head in frame with space above the hair; nothing covering Studio 
 
 [dramatically] Everyone circled me. [excited] "Show us!" they said. "Show us what you really are!" [dramatically] My wrist started to burn. [curious] The leaf glowed. [excited] Then it cracked open like an egg. [emotional] And underneath... there was a crown.
 
-[softly] Kai let go. Everyone stepped back. [whispering] "Alpha," someone whispered. [softly] Kai bowed his head. [curious] "What do we do now?" [warmly] I looked at the kids by the trash cans. Prey kids... Like me. "Now," I said, "nobody eats by the trash cans."
+[softly] Kai let go. Everyone stepped back. [whispering] "Alpha," someone whispered. [playfully] By the next week, the whole school called me king.
+
+[dramatically] Then, on our class trip to the mountains, the ground started to shake. [excited] Rocks came sliding down the hill. Everyone ran. [dramatically] Except... Kai. He slipped over the edge and grabbed a root. [emotional] My crown burned brighter than ever. [dramatically] I grabbed his wrist, the same way he grabbed mine. And I pulled. [softly] Kai stared at me, shaking. "Why'd you save me?" [warmly] "Because," I said, "a king doesn't leave anyone behind."
 ```
