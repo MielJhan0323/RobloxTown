@@ -233,7 +233,7 @@ class Char:
         self.face(f1 + 1, base)
 
     # -------------------------------------------------------------- props
-    def mark(self, kind, side="L", glow=0.0, lift=0.03, size=0.85, dz=0.55, hidden=False):
+    def mark(self, kind, side="L", glow=0.0, lift=0.006, size=0.7, dz=0.4, hidden=False):
         """Wrist mark on the front of the forearm. kind: leaf|claw|crown|marker|streaks."""
         p = self.S.decal(kind, self.arms[side], self, side, glow, size=size, lift=lift, dz=dz)
         if hidden:
@@ -445,7 +445,7 @@ class Stage:
             self._decal_imgs[kind] = bpy.data.images.load(str(self.dir / "decals" / f"{kind}.png"), check_existing=True)
         return self._decal_imgs[kind]
 
-    def decal(self, kind, parent, char, side, glow=0.0, size=0.85, lift=0.03, dz=0.55):
+    def decal(self, kind, parent, char, side, glow=0.0, size=0.7, lift=0.006, dz=0.4):
         """A square image plate glued on the outer front of the forearm."""
         bpy.ops.mesh.primitive_plane_add(size=size)
         p = bpy.context.active_object

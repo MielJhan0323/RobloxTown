@@ -139,37 +139,167 @@ def s04(k, F):  # tough kid shows claw
 LINE_X = -250.0
 
 
-def s05(k, F):  # predators cut the lunch line
+CANTEEN = (-400.0, -3505.0)
+
+
+def canteen(S):
+    """School canteen (built here, Roblox-style blocks): checker floor, serving counter with food,
+    menu board, long tables + benches, trash corner. Open toward -Y. Floor at z=0."""
+    import kit
+    cx, cy = CANTEEN
+    # checker floor
+    fm = bpy.data.materials.new("canteen_floor")
+    fm.use_nodes = True
+    nt = fm.node_tree
+    ch = nt.nodes.new("ShaderNodeTexChecker")
+    ch.inputs["Scale"].default_value = 20
+    ch.inputs["Color1"].default_value = (0.92, 0.92, 0.9, 1)
+    ch.inputs["Color2"].default_value = (0.35, 0.55, 0.8, 1)
+    nt.links.new(ch.outputs["Color"], nt.nodes["Principled BSDF"].inputs["Base Color"])
+    nt.nodes["Principled BSDF"].inputs["Roughness"].default_value = 0.35
+    fl = kit.box((44, 34, 0.4), (cx, cy, -0.2), None, bevel=0)
+    fl.data.materials.append(fm)
+    wall = kit.mat("cwall", (0.96, 0.9, 0.68), rough=0.9)
+    stripe = kit.mat("cstripe", (0.25, 0.5, 0.85), rough=0.8)
+    kit.box((44, 0.6, 14), (cx, cy + 16, 7), wall, 0)
+    kit.box((44, 0.7, 3), (cx, cy + 15.9, 1.5), stripe, 0)
+    for sx in (-1, 1):
+        kit.box((0.6, 34, 14), (cx + sx * 22, cy, 7), wall, 0)
+        kit.box((0.7, 34, 3), (cx + sx * 21.9, cy, 1.5), stripe, 0)
+    # windows on the right wall
+    glass = kit.mat("cglass", (0.75, 0.88, 1.0), emit=1.5, emit_color=(0.9, 0.95, 1.0))
+    for wy in (-8, 0, 8):
+        kit.box((0.8, 5, 4), (cx + 21.8, cy + wy, 8), glass, 0)
+    # serving counter + sneeze guard + food
+    steel = kit.mat("steel", (0.75, 0.77, 0.8), rough=0.3, metal=0.6)
+    kit.box((26, 2.6, 3.2), (cx - 4, cy + 12, 1.6), kit.mat("counter", (0.85, 0.3, 0.25), rough=0.6), 0.05)
+    kit.box((26.4, 3.0, 0.3), (cx - 4, cy + 12, 3.3), steel, 0.03)
+    kit.box((26, 0.15, 1.6), (cx - 4, cy + 11.2, 4.4), kit.mat("guard", (0.8, 0.9, 1.0), alpha=0.25), 0)
+    foods = [(0.95, 0.6, 0.15), (0.35, 0.75, 0.3), (0.6, 0.35, 0.2), (0.95, 0.9, 0.5), (0.9, 0.25, 0.2), (0.95, 0.95, 0.95)]
+    for k2 in range(10):
+        x = cx - 15.5 + k2 * 2.5
+        kit.box((2.0, 1.4, 0.3), (x, cy + 12.2, 3.6), steel, 0.03)
+        kit.box((1.7, 1.1, 0.25), (x, cy + 12.2, 3.75), kit.mat("food%d" % (k2 % 6), foods[k2 % 6], rough=0.7), 0.08)
+    # tray stack + menu board
+    tray = kit.mat("ctray", (0.95, 0.65, 0.2))
+    for t in range(6):
+        kit.box((1.6, 1.2, 0.12), (cx - 18, cy + 12, 3.5 + t * 0.14), tray, 0.02)
+    kit.box((12, 0.3, 4.5), (cx - 4, cy + 15.6, 9.2), kit.mat("board", (0.12, 0.2, 0.16), rough=0.9), 0.05)
+    bpy.ops.object.text_add(location=(cx - 7.4, cy + 15.4, 9.6), rotation=(math.radians(90), 0, 0))
+    tx = bpy.context.object
+    tx.data.body = "LUNCH"
+    tx.data.size = 2.2
+    tx.data.extrude = 0.05
+    tx.data.materials.append(kit.mat("chalk", (1, 1, 0.9), emit=0.6, emit_color=(1, 1, 0.9)))
+    # long tables with benches
+    wood = kit.mat("ctable", (0.95, 0.95, 0.95), rough=0.5)
+    bench = kit.mat("cbench", (0.25, 0.5, 0.85), rough=0.6)
+    for ty in (0.0, -7.0):
+        for tx_ in (-8.0, 8.0):
+            kit.box((10, 3, 0.3), (cx + tx_, cy + ty, 2.6), wood, 0.04)
+            for lx in (-4, 4):
+                kit.box((0.4, 2.4, 2.5), (cx + tx_ + lx, cy + ty, 1.25), steel, 0)
+            for by in (-2.4, 2.4):
+                kit.box((10, 1.0, 0.3), (cx + tx_, cy + ty + by, 1.6), bench, 0.03)
+                kit.box((0.3, 0.8, 1.5), (cx + tx_, cy + ty + by, 0.75), steel, 0)
+            for t in range(3):
+                kit.box((1.3, 1.0, 0.12), (cx + tx_ - 3 + t * 3, cy + ty + 0.6, 2.8), tray, 0.02)
+    # trash corner (front-left) with a tiny sad table
+    can = kit.mat("trash", (0.25, 0.45, 0.3), rough=0.7)
+    for k2, (x, y) in enumerate(((-19.5, -11), (-19.5, -8))):
+        kit.cyl(1.1, 2.8, (cx + x, cy + y, 1.4), can, verts=16)
+        kit.cyl(1.2, 0.25, (cx + x, cy + y, 2.9), kit.mat("lid", (0.15, 0.3, 0.2)), verts=16)
+    kit.box((3.2, 2.0, 0.25), (cx - 16, cy - 9.5, 2.0), wood, 0.03)
+    for lx in (-1.2, 1.2):
+        kit.box((0.3, 1.6, 1.9), (cx - 16 + lx, cy - 9.5, 0.95), steel, 0)
+    kit.box((44, 34, 0.4), (cx, cy, 14.2), kit.mat("ceil", (0.95, 0.95, 0.92), rough=0.9), 0)
+    # ceiling lights
+    for lx in (-10, 0, 10):
+        for ly in (-6, 6):
+            L = kit.point((cx + lx, cy + ly, 12.5), (1, 0.95, 0.85), 700, 1.5)
+    return cx, cy
+
+
+def push_line(S, F):
+    cx, cy = CANTEEN
+    ly = cy + 8.4
+    prey = {}
+    for k2, nm in enumerate(["Prey1", "Prey2", "Prey3", "Smallkid"]):
+        c = S.char(nm, (cx - 12 + k2 * 2.6, ly), -90, "neutral")  # facing -X, toward the start of the counter
+        mark_for(c)
+        outcast(c, 1, "sad")
+        prey[nm] = c
+    kai = S.char("Kai", (cx + 2, ly - 2.2), -90, "smirk")
+    cou = S.char("Cousin", (cx + 4.6, ly - 1.4), -90, "smirk")
+    kai.mark("claw")
+    cou.mark("claw")
+    return prey, kai, cou, ly
+
+
+def s05(k, F):  # predators cut the lunch line - shove the leaf kids out of it
     S = rblx.Stage("alpha-mark", "day")
-    prey = place(S, [("Prey1", (LINE_X, -3519), 0, "sad"), ("Prey2", (LINE_X, -3516.5), 0, "worried"),
-                     ("Prey3", (LINE_X, -3514), 0, "sad"), ("Smallkid", (LINE_X, -3511.5), 0, "worried")])
-    pred = place(S, [("Kai", (LINE_X + 3, -3514), 0, "smirk"), ("Cousin", (LINE_X + 3.2, -3510), 0, "smirk")])
-    pred["Kai"].walk(1, F, (LINE_X + 0.4, -3521.5))
-    pred["Cousin"].walk(1, F, (LINE_X + 2.6, -3517))
-    for c in prey.values():
-        outcast(c, 1, c.cur)
-        c.look(kf(15), -35, -12)
-    S.cam(V((LINE_X + 1, -3516, 3)), dist=15, yaw=50, height=5.5, lens=32)
+    cx, cy = canteen(S)
+    prey, kai, cou, ly = push_line(S, F)
+    fa, fb = kf(F * 0.3), kf(F * 0.6)
+    kai.walk(1, fa, (cx - 10.5, ly - 1.0), swing=40)
+    cou.walk(1, fa, (cx - 7.5, ly - 0.6), swing=40)
+    for c in (kai, cou):
+        c.arm("L", fa, 85, 10)
+        c.arm("R", fa, 85, 10)
+        c.lean(fa, 15)
+    kai.key_root(fb, (cx - 12, ly), yaw=-90)
+    cou.key_root(fb, (cx - 9.4, ly), yaw=-90)
+    kai.lean(fb, 0); cou.lean(fb, 0)
+    kai.arm("L", fb, 0, 15); kai.arm("R", fb, 0, 15)
+    cou.arm("L", fb, 20, 25); cou.arm("R", fb, 20, 25)
+    rnd = random.Random(9)
+    for k2, c in enumerate(prey.values()):
+        p = c.pos.copy()
+        c.key_root(1, (p.x, p.y), yaw=-90, tilt=0)
+        c.key_root(fa, (p.x, p.y), yaw=-90, tilt=0)
+        # shoved out of the line, stumbling sideways
+        c.key_root(fb, (p.x + rnd.uniform(0.5, 1.5), p.y - 3.0 - rnd.uniform(0, 1.2)), yaw=-90 + rnd.uniform(-40, 40), tilt=-14)
+        c.key_root(F, (p.x + rnd.uniform(0.5, 1.5), p.y - 3.4 - rnd.uniform(0, 1.2)), tilt=0)
+        c.faces([(1, "sad"), (fa, "shocked"), (fb, "scared"), (kf(F * 0.85), "sad")])
+        c.arm("L", fb, 70, 30)
+        c.arm("R", fb, 70, 30)
+    kai.faces([(1, "smirk"), (fb, "laugh")])
+    S.cam(V((cx - 7, ly - 1.8, 3.0)), dist=16, yaw=-58, height=5.6, lens=30, fstop=None)
     return S
 
 
-def s06(k, F):  # prey eat by the trash cans
+def s06(k, F):  # prey get the seats by the trash cans
     S = rblx.Stage("alpha-mark", "day")
-    cs = place(S, [("Prey1", (-229.5, -3520.5), 160, "sad"), ("Prey2", (-226, -3520), 200, "sad"),
-                   ("Smallkid", (-231.3, -3519), 130, "sad")])
+    cx, cy = canteen(S)
     import kit
-    tray = kit.mat("tray", (0.85, 0.6, 0.2))
-    for c in cs.values():
+    tray = kit.mat("tray", (0.95, 0.65, 0.2))
+    spots = [("Prey1", (-17.4, -11.2), 0), ("Prey2", (-14.6, -11.2), 0), ("Smallkid", (-16, -7.8), 180)]
+    stool = kit.mat("stool", (0.55, 0.55, 0.6))
+    for nm, (x, y), yaw in spots:
+        kit.box((1.6, 1.2, 1.2), (cx + x, cy + y + (-0.4 if yaw == 0 else 0.4), 0.6), stool, 0.03)
+        c = S.char(nm, (cx + x, cy + y, -0.3), yaw, "sad")
+        mark_for(c)
         c.sit(1)
-        c.key_root(1, (c.pos.x, c.pos.y, S.ground(c.pos.x, c.pos.y) - 1.5))
-        c.arm("L", 1, 55)
-        c.arm("R", 1, 55)
-        c.look(1, 0, -22)
-        c.lean(1, 8)
-        t = c.world((0, 1.5, 2.1))
-        kit.box((1.3, 1.0, 0.12), tuple(t), tray)
-    cs["Prey2"].arm("R", kf(16), 80)
-    S.cam(V((-228.5, -3520.5, 1.8)), dist=11, yaw=180 + 10, height=3.5, lens=38)
+        c.arm("L", 1, 70)
+        c.arm("R", 1, 70)
+        c.look(1, 0, -10)
+        c.lean(1, 5)
+    kit.box((1.3, 1.0, 0.12), (cx - 17.4, cy - 9.9, 2.2), tray, 0.02)
+    kit.box((1.3, 1.0, 0.12), (cx - 14.6, cy - 9.9, 2.2), tray, 0.02)
+    # predators laughing at the good table behind
+    for nm, x, y, yaw in (("Kai", -8, 2.4, 180), ("Cousin", -5, 2.4, 180), ("Crowd3", -11, 2.4, 180), ("Crowd1", -6.5, -2.4, 0)):
+        c = S.char(nm, (cx + x, cy + y, 0.25), yaw, "laugh")
+        mark_for(c)
+        c.sit(1)
+        c.arm("L", 1, 70)
+        f = 1
+        i2 = 0
+        while f <= F:
+            c.lean(f, -8 if i2 % 2 else 4)
+            f += 15
+            i2 += 1
+    S.chars["Kai"].point(kf(16), "R")
+    S.cam(V((cx - 17, cy - 9, 2.6)), dist=14, yaw=18, height=5.0, lens=30, fstop=None)
     return S
 
 
@@ -221,7 +351,7 @@ def s10(k, F):  # crown mural close
 def narrator_marker(S, xy, yaw, expr, drawn=True):
     n = S.char("Narrator", xy, yaw, expr)
     leaf = n.mark("leaf")
-    marker = n.mark("marker", lift=0.05, hidden=not drawn)
+    marker = n.mark("marker", lift=0.012, hidden=not drawn)
     return n, leaf, marker
 
 
@@ -331,7 +461,7 @@ def grab_pair(S, F, n_expr="neutral", k_expr="angry"):
     n = S.char("Narrator", (-249.5, -3505.5), 69, n_expr)
     kai = S.char("Kai", (-246.6, -3506.6), -111, k_expr)
     leaf = n.mark("leaf")
-    mk = n.mark("marker", lift=0.05)
+    mk = n.mark("marker", lift=0.012)
     kai.mark("claw")
     n.arm("L", 1, 38)
     kai.arm("R", 1, 72, -6)
@@ -352,7 +482,7 @@ def s18(k, F):  # Kai grabs Narrator's wrist
 def s19(k, F):  # the claw runs in black streaks
     S = rain_stage()
     n, kai, leaf, mk = grab_pair(S, F, "shocked")
-    st = n.mark("streaks", lift=0.06, size=1.0, dz=0.45, hidden=True)
+    st = n.mark("streaks", lift=0.018, size=0.8, dz=0.35, hidden=True)
     bpy.data.collections["CH_Kai"].hide_render = True
     S.show(mk, kf(F * 0.45), False)
     S.show(st, kf(F * 0.45), True)
@@ -452,7 +582,7 @@ def s25(k, F):  # Narrator holds wrist, it burns
     S = rain_stage()
     n = S.char("Narrator", (-250, -3505), 180, "worried")
     leaf = n.mark("leaf", glow=0.5)
-    st = n.mark("streaks", lift=0.06, size=1.0, dz=0.45)
+    st = n.mark("streaks", lift=0.018, size=0.8, dz=0.35)
     S.glow(leaf, 1, 0.5)
     S.glow(leaf, F, 3.0)
     n.arm("L", 1, 42)
@@ -467,7 +597,7 @@ def s25(k, F):  # Narrator holds wrist, it burns
 def leaf_insert(S, F, light_power=0, crown=False):
     n = S.char("Narrator", (-250, -3505), 180, "shocked")
     leaf = n.mark("leaf", glow=2)
-    cr = n.mark("crown", glow=4, hidden=not crown, lift=0.05)
+    cr = n.mark("crown", glow=4, hidden=not crown, lift=0.012)
     n.arm("L", 1, 42)
     return n, leaf, cr
 
@@ -513,7 +643,7 @@ def s29(k, F):  # Kai lets go and steps back
     n, kai, leaf, mk = grab_pair(S, F, "shocked", "shocked")
     S.show(leaf, 1, False)
     S.show(mk, 1, False)
-    n.mark("crown", glow=4, lift=0.05)
+    n.mark("crown", glow=4, lift=0.012)
     kai.arm("R", kf(10), 20, 10)
     p = kai.pos
     kai.key_root(kf(10), (p.x, p.y))
