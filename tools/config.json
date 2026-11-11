@@ -22,9 +22,9 @@
     "uppercase": false
   },
   "motion": {
-    "push_in": 0.08,
+    "push_in": 0.05,
     "pan": 0.1,
-    "punch": 0.18,
+    "punch": 0.1,
     "punch_time": 0.22
   },
   "transitions": {

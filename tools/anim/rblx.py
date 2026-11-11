@@ -27,7 +27,8 @@ import kit
 
 R = math.radians
 ROOT = Path(__file__).resolve().parents[2]
-STEP = 15  # frames per held pose (2 poses per second: stop-frame look)
+STEP = 15  # spacing of key poses (the render fills the in-betweens when ITT_STEP=2)
+WIDEN = 0.7  # every camera lens is multiplied by this: wider, reference-style medium framing
 
 
 def attach(obj, parent):
@@ -385,7 +386,7 @@ class Stage:
 
     # -------------------------------------------------------------- camera
     def cam(self, target, dist=8, yaw=0, height=None, lens=50, fstop=4.0, focus=None, roll=0):
-        c = kit.camera(tuple(target), dist=dist, yaw=yaw, height=height, lens=lens, fstop=fstop, focus=focus)
+        c = kit.camera(tuple(target), dist=dist, yaw=yaw, height=height, lens=lens * WIDEN, fstop=fstop, focus=focus)
         c.data.clip_start = 0.05
         c.data.clip_end = 2000
         self.camera = c
@@ -394,7 +395,7 @@ class Stage:
     def cam_at(self, loc, target, lens=50, fstop=4.0, focus=None):
         tgt = kit.empty(tuple(target), name="cam_target")
         d = bpy.data.cameras.new("cam")
-        d.lens = lens
+        d.lens = lens * WIDEN
         d.sensor_fit = "VERTICAL"
         d.sensor_height = 24
         d.clip_start = 0.05
@@ -501,13 +502,15 @@ class Stage:
         for i in range(n):
             o = kit.box((0.03, 0.03, 0.9), (0, 0, 0), m, bevel=0)
             drops.append(o)
+        import os
+        rstep = int(os.environ.get("ITT_STEP", "0")) or STEP
         f = 1
         while f <= frames + STEP:
             for o in drops:
                 o.location = (center[0] + rnd.uniform(-radius, radius), center[1] + rnd.uniform(-radius, radius),
                               center[2] + rnd.uniform(0, height))
                 o.keyframe_insert("location", frame=f)
-            f += STEP
+            f += rstep
         for o in drops:
             for fc in o.animation_data.action.fcurves:
                 for kp in fc.keyframe_points:

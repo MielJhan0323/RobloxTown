@@ -44,6 +44,15 @@ def place(S, specs, marks=True):
     return out
 
 
+def outcast(c, f=1, expr="sad"):
+    """Prey kids read as outcasts: head down, shoulders in, sad face."""
+    c.face(f, expr)
+    c.look(f, 0, -18)
+    c.arm("L", f, 8, -6)
+    c.arm("R", f, 8, -6)
+    c.lean(f, 6)
+
+
 def hold_end(frames):
     return frames + 15
 
@@ -82,13 +91,15 @@ def trail_pt(S, y, x=252.0):
 # ---------------------------------------------------------------- shots
 def s01(k, F):  # kids walking to school (street, morning, wide)
     S = rblx.Stage("alpha-mark", "morning")
-    cs = place(S, [("Narrator", (11, -3478), 0, "smile"), ("Prey1", (9.3, -3474), 0, "smile"),
-                   ("Crowd2", (12.6, -3471), 0, "smile"), ("Crowd1", (9.6, -3468), 0, "smile"),
-                   ("Prey3", (12.2, -3483), 0, "neutral")])
+    cs = place(S, [("Narrator", (11, -3478), 0, "smile"), ("Crowd2", (12.4, -3480.5), 0, "laugh"),
+                   ("Crowd1", (9.6, -3481), 0, "smile"), ("Prey1", (13.0, -3472), 0, "sad"),
+                   ("Prey3", (9.4, -3469.5), 0, "sad")])
     for i, c in enumerate(cs.values()):
         p = c.pos
-        c.walk(1, F, (p.x, p.y - 5))
-    S.cam(V((10.8, -3478, 3.0)), dist=24, yaw=-8, height=5.5, lens=32, fstop=None)
+        c.walk(1, F, (p.x, p.y - 5), swing=30 if c.name not in PREY else 18)
+    for nm in ("Prey1", "Prey3"):
+        outcast(cs[nm])
+    S.cam(V((11.0, -3478, 3.0)), dist=15, yaw=-28, height=5.0, lens=38, fstop=None)
     return S
 
 
@@ -136,8 +147,9 @@ def s05(k, F):  # predators cut the lunch line
     pred["Kai"].walk(1, F, (LINE_X + 0.4, -3521.5))
     pred["Cousin"].walk(1, F, (LINE_X + 2.6, -3517))
     for c in prey.values():
-        c.look(kf(15), -35, 0)
-    S.cam(V((LINE_X + 1, -3516, 3)), dist=15, yaw=-55, height=5.5, lens=32)
+        outcast(c, 1, c.cur)
+        c.look(kf(15), -35, -12)
+    S.cam(V((LINE_X + 1, -3516, 3)), dist=15, yaw=50, height=5.5, lens=32)
     return S
 
 
@@ -152,7 +164,8 @@ def s06(k, F):  # prey eat by the trash cans
         c.key_root(1, (c.pos.x, c.pos.y, S.ground(c.pos.x, c.pos.y) - 1.5))
         c.arm("L", 1, 55)
         c.arm("R", 1, 55)
-        c.look(1, 0, -15)
+        c.look(1, 0, -22)
+        c.lean(1, 8)
         t = c.world((0, 1.5, 2.1))
         kit.box((1.3, 1.0, 0.12), tuple(t), tray)
     cs["Prey2"].arm("R", kf(16), 80)
@@ -186,6 +199,7 @@ def s08(k, F):  # prey kid carries two backpacks behind cousin
     co.walk(1, F, (-241, -3500))
     pk.walk(1, F, (-245, -3500), swing=15, arms=False)
     pk.lean(1, 12)
+    pk.look(1, 0, -15)
     co.arm("L", 1, 0, 10)
     S.cam(V((-246, -3500, 2.8)), dist=17, yaw=180, height=4, lens=35)
     return S
@@ -569,12 +583,13 @@ def mountain_stage(light="day"):
 
 def s33(k, F):  # class hikes up, bus parked
     S = mountain_stage("day")
-    names = ["Narrator", "Kai", "Cousin", "Prey1", "Crowd2", "Smallkid"]
-    for i, nm in enumerate(names):
-        y = -3488 + i * 2.6
-        x = 251 + (i % 2) * 2.2
-        c = S.char(nm, (x, y), 45, "smile")
-        c.walk(1, F, (x, y - 4))
+    group = [("Kai", 251, -3490), ("Cousin", 253.2, -3489), ("Crowd2", 252, -3487), ("Narrator", 251.2, -3484.5),
+             ("Prey1", 253.6, -3479.5), ("Smallkid", 251.4, -3477.5)]
+    for nm, x, y in group:
+        c = S.char(nm, (x, y), 45, "smile" if nm not in PREY else "sad")
+        c.walk(1, F, (x, y - 4), swing=30 if nm not in PREY else 18)
+        if nm in PREY:
+            c.look(1, 0, -18)
     S.cam(V((248, -3480, 10)), dist=34, yaw=120, height=22, lens=30, fstop=None)
     return S
 

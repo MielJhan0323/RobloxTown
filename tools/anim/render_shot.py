@@ -27,4 +27,6 @@ if still:
     sc.render.filepath = out
     bpy.ops.render.render(write_still=True)
 else:
-    kit.render(out, int(frames), (int(w), int(h)), int(samples))
+    import os
+    step = int(os.environ.get("ITT_STEP", "0")) or None  # frames per rendered image (2 = smooth 15 fps)
+    kit.render(out, int(frames), (int(w), int(h)), int(samples), step=step)
