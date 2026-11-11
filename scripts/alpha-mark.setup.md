@@ -12,15 +12,24 @@ Read with `scripts/alpha-mark.md` and `tools/laptop/RECORDING.md`. Helpers: `too
 
 Lighting presets: `warm` (1-13, 28-33), `night`/dusk (14-15), `sad` grey + rain (16-27), mountain `sad`/dusty (34-41), `warm` sunset (42-45).
 
-## Cast - every character has real Roblox hair (catalog hair accessories, not block hair)
+## Cast - every character UNIQUE, with REAL hair (catalog hair accessories/meshes, never block hair)
 
-| Character | Look | Mark (left wrist, `K.setMeter`) |
-|---|---|---|
-| **Narrator** | kid, messy brown hair, hoodie | leaf under a black-marker claw (1-18); smeared streaks + leaf (19-26); crown (28+) |
-| **Kai** | tallest kid, spiky hair, varsity jacket | red claw |
-| **Cousin** | kid, cap or slick hair | red claw |
-| 3 prey kids | small kids, different hair | green leaf |
-| crowd kids (4-6) | mixed | mixed claws/leaves |
+No two characters may share the same hair style, hair color, skin tone AND outfit. Before exporting, line
+them up side by side, take ONE screenshot and check they're all easy to tell apart.
+
+| Character | Hair (real catalog hair) | Skin | Outfit | Build |
+|---|---|---|---|---|
+| **Narrator** | messy brown hair, swoopy fringe | light | grey hoodie, blue jeans | average kid |
+| **Kai** (bully) | spiky black hair | medium-brown | red varsity jacket, black pants | tallest kid |
+| **Cousin** | blond slicked-back hair | light-tan | green polo, khaki shorts, sunglasses on head | average |
+| Prey kid 1 | curly red hair | light, freckles | yellow t-shirt, overalls | small |
+| Prey kid 2 | long black braids | dark | purple dress / hoodie | small |
+| Prey kid 3 | short white/silver bowl cut | medium | striped shirt, glasses | small |
+| Crowd kid 1 | pink ponytail | light | white jacket | average |
+| Crowd kid 2 | brown afro / curls | dark | orange hoodie | average |
+| Crowd kid 3 | blue spiky hair | medium | sports jersey | average |
+| Crowd kid 4 | ginger buzz cut + cap | light | camo jacket | average |
+| Small kid | two blonde pigtails | tan | pink raincoat | smallest |
 
 Marks: make one wrist plate per character with `K.setMeter(char, text)`: leaf = "🍃" (green text), claw = a red
 claw/scratch symbol (e.g. "///" in red), crown = "👑" (gold). If emoji don't render, use a small decal on the plate.
