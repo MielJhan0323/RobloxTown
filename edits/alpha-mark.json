@@ -1,2300 +1,2300 @@
 {
- "slug": "alpha-mark",
- "title": "The Third Mark",
- "timing": "voice",
- "voice": "output/cache/alpha-mark/voice_fx.wav",
- "duration": 67.953,
- "shots": [
-  {
-   "n": 1,
-   "text": "In this town,",
-   "start": 0.0,
-   "end": 0.94,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "warm",
-   "placeholder": "Town street, morning, kids walking to school | crowd of kids | walking | wide, slow push-in | backpacks",
-   "override": {},
-   "dur": 0.94
-  },
-  {
-   "n": 2,
-   "text": "everyone is born with a mark on their wrist.",
-   "start": 0.94,
-   "end": 2.82,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "sparkle",
-   "grade": "warm",
-   "placeholder": "Town street | a kid | raising wrist | close insert on wrist | glowing wrist mark",
-   "override": {},
-   "dur": 1.88
-  },
-  {
-   "n": 3,
-   "text": "A leaf means you're prey.",
-   "start": 2.82,
-   "end": 4.14,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "warm",
-   "placeholder": "Town street | a shy kid | holding up wrist, shy smile | close insert | green leaf mark",
-   "override": {},
-   "dur": 1.32
-  },
-  {
-   "n": 4,
-   "text": "A claw means you're a predator.",
-   "start": 4.14,
-   "end": 6.22,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "warm",
-   "placeholder": "Town street | a tough kid | holding up wrist, smirk | close insert | red claw mark",
-   "override": {},
-   "dur": 2.08
-  },
-  {
-   "n": 5,
-   "text": "Predators get the front of the lunch line.",
-   "start": 6.22,
-   "end": 7.59,
-   "src": null,
-   "src_dur": null,
-   "motion": "pan_right",
-   "transition": "cut",
-   "grade": "warm",
-   "placeholder": "Schoolyard lunch tables | predator kids | cutting to the front of the line, smug | medium, pan right | lunch trays",
-   "override": {},
-   "dur": 1.37
-  },
-  {
-   "n": 6,
-   "text": "Prey get the seats by the trash cans.",
-   "start": 7.59,
-   "end": 9.69,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "cool",
-   "placeholder": "Schoolyard, by the trash cans | 3 prey kids | sitting on the ground eating, sad | medium, push-in | trash cans, trays",
-   "override": {},
-   "dur": 2.1
-  },
-  {
-   "n": 7,
-   "text": "My cousin got a claw",
-   "start": 9.69,
-   "end": 10.47,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "warm",
-   "placeholder": "Schoolyard | Cousin | flexing his claw wrist, smug | medium, push-in | red claw mark",
-   "override": {},
-   "dur": 0.78
-  },
-  {
-   "n": 8,
-   "text": "and hasn't carried his own backpack since.",
-   "start": 10.47,
-   "end": 12.63,
-   "src": null,
-   "src_dur": null,
-   "motion": "pan_left",
-   "transition": "cut",
-   "grade": "warm",
-   "placeholder": "Schoolyard | Cousin + a prey kid | prey kid carrying two backpacks behind him | medium, pan left | two backpacks",
-   "override": {},
-   "dur": 2.16
-  },
-  {
-   "n": 9,
-   "text": "And there's a third mark nobody's seen in a hundred years.",
-   "start": 12.63,
-   "end": 15.67,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "warm",
-   "placeholder": "School wall | slow push-in on an old faded mural of a crown | crown mural",
-   "override": {},
-   "dur": 3.04
-  },
-  {
-   "n": 10,
-   "text": "Alpha.",
-   "start": 15.67,
-   "end": 16.37,
-   "src": null,
-   "src_dur": null,
-   "motion": "punch",
-   "transition": "sparkle",
-   "grade": "warm",
-   "placeholder": "School wall | close, punch-in on the crown | crown mural",
-   "override": {},
-   "dur": 0.7
-  },
-  {
-   "n": 11,
-   "text": "I had a claw.",
-   "start": 16.37,
-   "end": 16.9,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "warm",
-   "placeholder": "Schoolyard | Narrator | showing his claw wrist, confident | medium, push-in | black claw mark",
-   "override": {},
-   "dur": 0.53
-  },
-  {
-   "n": 12,
-   "text": "At least, that's what the marker said.",
-   "start": 16.9,
-   "end": 18.66,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "warm",
-   "placeholder": "Schoolyard bench | Narrator | hiding a black marker behind his back | close insert | black marker",
-   "override": {},
-   "dur": 1.76
-  },
-  {
-   "n": 13,
-   "text": "Every morning, I drew it on.",
-   "start": 18.66,
-   "end": 20.08,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "warm",
-   "placeholder": "Schoolyard bench, morning | Narrator | drawing a claw on his wrist | close insert | marker, wrist",
-   "override": {},
-   "dur": 1.42
-  },
-  {
-   "n": 14,
-   "text": "Every night, I washed it off",
-   "start": 20.08,
-   "end": 21.26,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "cool",
-   "placeholder": "Schoolyard water fountain, dusk | Narrator | scrubbing his wrist at the fountain | medium, push-in | water fountain",
-   "override": {},
-   "dur": 1.18
-  },
-  {
-   "n": 15,
-   "text": "and stared at my leaf.",
-   "start": 21.26,
-   "end": 22.58,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "cool",
-   "placeholder": "Schoolyard, dusk | Narrator | looking at his wrist, sad | close, push-in | green leaf mark",
-   "override": {},
-   "dur": 1.32
-  },
-  {
-   "n": 16,
-   "text": "Then, it rained at recess.",
-   "start": 22.58,
-   "end": 24.65,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "fog",
-   "grade": "cool",
-   "placeholder": "Playground in the rain | kids playing | running for cover | wide, slow push-in | rain",
-   "override": {},
-   "dur": 2.07
-  },
-  {
-   "n": 17,
-   "text": "Kai, the biggest predator in school,",
-   "start": 24.65,
-   "end": 26.05,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "cool",
-   "placeholder": "Playground, rain | Kai (tall kid) | arms crossed, smirk | medium, push-in | red claw mark",
-   "override": {},
-   "dur": 1.4
-  },
-  {
-   "n": 18,
-   "text": "grabbed my wrist.",
-   "start": 26.05,
-   "end": 27.13,
-   "src": null,
-   "src_dur": null,
-   "motion": "punch",
-   "transition": "cut",
-   "grade": "cool",
-   "placeholder": "Playground, rain | Kai, Narrator | Kai grabbing Narrator's wrist, Narrator shocked | close, punch-in",
-   "override": {},
-   "dur": 1.08
-  },
-  {
-   "n": 19,
-   "text": "The claw ran down my arm in black streaks.",
-   "start": 27.13,
-   "end": 28.99,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "cool",
-   "placeholder": "Playground, rain | Narrator | wrist close-up, marker running | close insert | smeared black streaks, green leaf showing",
-   "override": {},
-   "dur": 1.86
-  },
-  {
-   "n": 20,
-   "text": "\"He's prey,\" Kai said.",
-   "start": 28.99,
-   "end": 30.79,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "cool",
-   "placeholder": "Playground, rain | Kai | shocked, then smirk, pointing | close, push-in",
-   "override": {},
-   "dur": 1.8
-  },
-  {
-   "n": 21,
-   "text": "\"He's been faking it.\"",
-   "start": 30.79,
-   "end": 31.83,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "cool",
-   "placeholder": "Playground, rain | Kai | talking to the crowd | medium, push-in",
-   "override": {},
-   "dur": 1.04
-  },
-  {
-   "n": 22,
-   "text": "Everyone circled me.",
-   "start": 31.83,
-   "end": 32.9,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "cool",
-   "placeholder": "Playground, rain | crowd + Narrator | kids surrounding Narrator | wide, slow push-in",
-   "override": {},
-   "dur": 1.07
-  },
-  {
-   "n": 23,
-   "text": "\"Show us,\" they said.",
-   "start": 32.9,
-   "end": 34.12,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "cool",
-   "placeholder": "Playground, rain | 2-3 crowd kids | angry, pointing | medium, push-in",
-   "override": {},
-   "dur": 1.22
-  },
-  {
-   "n": 24,
-   "text": "\"Show us what you really are.\"",
-   "start": 34.12,
-   "end": 35.42,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "cool",
-   "placeholder": "Playground, rain | a crowd kid | angry, talking | close, push-in",
-   "override": {},
-   "dur": 1.3
-  },
-  {
-   "n": 25,
-   "text": "My wrist started to burn.",
-   "start": 35.42,
-   "end": 36.84,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "cool",
-   "placeholder": "Playground, rain | Narrator | worried, holding his wrist | close, push-in",
-   "override": {},
-   "dur": 1.42
-  },
-  {
-   "n": 26,
-   "text": "The leaf glowed.",
-   "start": 36.84,
-   "end": 37.92,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "sparkle",
-   "grade": "cool",
-   "placeholder": "Playground, rain | close insert, slow push-in | leaf mark glowing brighter",
-   "override": {},
-   "dur": 1.08
-  },
-  {
-   "n": 27,
-   "text": "Then it cracked open like an egg.",
-   "start": 37.92,
-   "end": 39.3,
-   "src": null,
-   "src_dur": null,
-   "motion": "punch",
-   "transition": "flash",
-   "grade": "warm",
-   "placeholder": "Playground, rain | close insert, punch-in | leaf splitting with light",
-   "override": {},
-   "dur": 1.38
-  },
-  {
-   "n": 28,
-   "text": "And underneath, there was a crown.",
-   "start": 39.3,
-   "end": 41.27,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "sparkle",
-   "grade": "warm",
-   "placeholder": "Playground, rain | close insert, slow push-in | gold crown mark",
-   "override": {},
-   "dur": 1.97
-  },
-  {
-   "n": 29,
-   "text": "Kai let go.",
-   "start": 41.27,
-   "end": 42.23,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "warm",
-   "placeholder": "Playground, rain | Kai | letting go, stepping back, shocked | medium, push-in",
-   "override": {},
-   "dur": 0.96
-  },
-  {
-   "n": 30,
-   "text": "Everyone stepped back.",
-   "start": 42.23,
-   "end": 43.45,
-   "src": null,
-   "src_dur": null,
-   "motion": "pull_out",
-   "transition": "cut",
-   "grade": "warm",
-   "placeholder": "Playground, rain | crowd | stepping back, shocked faces | wide, pull-out",
-   "override": {},
-   "dur": 1.22
-  },
-  {
-   "n": 31,
-   "text": "\"Alpha,\" someone whispered.",
-   "start": 43.45,
-   "end": 44.99,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "warm",
-   "placeholder": "Playground, rain | a small kid | whispering, shocked | close, push-in",
-   "override": {},
-   "dur": 1.54
-  },
-  {
-   "n": 32,
-   "text": "By the next week, the whole school called me king.",
-   "start": 44.99,
-   "end": 47.35,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "fog",
-   "grade": "warm",
-   "placeholder": "Schoolyard, sunny | Narrator + kids | kids bowing/cheering around Narrator, Narrator embarrassed smile | medium, push-in | gold crown mark",
-   "override": {},
-   "dur": 2.36
-  },
-  {
-   "n": 33,
-   "text": "Then, on our class trip to the mountains,",
-   "start": 47.35,
-   "end": 48.93,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "fog",
-   "grade": "warm",
-   "placeholder": "Mountain trail, school bus parked, kids hiking | class | walking up the trail | wide, slow push-in | backpacks, school bus",
-   "override": {},
-   "dur": 1.58
-  },
-  {
-   "n": 34,
-   "text": "the ground started to shake.",
-   "start": 48.93,
-   "end": 50.47,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "cool",
-   "placeholder": "Mountain trail | class | stopping, shocked, looking around | medium, shake",
-   "override": {},
-   "dur": 1.54
-  },
-  {
-   "n": 35,
-   "text": "Rocks came sliding down the hill.",
-   "start": 50.47,
-   "end": 51.85,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "cool",
-   "placeholder": "Mountain slope | wide, rocks tumbling down, dust | rocks, dust",
-   "override": {},
-   "dur": 1.38
-  },
-  {
-   "n": 36,
-   "text": "Everyone ran. Except Kai.",
-   "start": 51.85,
-   "end": 54.03,
-   "src": null,
-   "src_dur": null,
-   "motion": "pan_right",
-   "transition": "cut",
-   "grade": "cool",
-   "placeholder": "Mountain trail | class running, Kai frozen | kids running past, Kai scared, not moving | medium, pan right",
-   "override": {},
-   "dur": 2.18
-  },
-  {
-   "n": 37,
-   "text": "He slipped over the edge",
-   "start": 54.03,
-   "end": 54.77,
-   "src": null,
-   "src_dur": null,
-   "motion": "punch",
-   "transition": "cut",
-   "grade": "cool",
-   "placeholder": "Trail edge | Kai | slipping off the edge | medium, punch-in | cliff edge",
-   "override": {},
-   "dur": 0.74
-  },
-  {
-   "n": 38,
-   "text": "and grabbed a root.",
-   "start": 54.77,
-   "end": 55.83,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "cool",
-   "placeholder": "Cliff edge | Kai | hand gripping a root, terrified | close insert | root, cliff",
-   "override": {},
-   "dur": 1.06
-  },
-  {
-   "n": 39,
-   "text": "My crown burned brighter than ever.",
-   "start": 55.83,
-   "end": 56.99,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "sparkle",
-   "grade": "warm",
-   "placeholder": "Trail edge | Narrator | wrist raised, crown blazing, determined | close insert | gold crown mark",
-   "override": {},
-   "dur": 1.16
-  },
-  {
-   "n": 40,
-   "text": "I grabbed his wrist, the same way he grabbed mine.",
-   "start": 56.99,
-   "end": 59.83,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "warm",
-   "placeholder": "Cliff edge | Narrator, Kai | Narrator lying flat, grabbing Kai's wrist (claw + crown visible) | close, push-in | both wrist marks",
-   "override": {},
-   "dur": 2.84
-  },
-  {
-   "n": 41,
-   "text": "And I pulled.",
-   "start": 59.83,
-   "end": 60.81,
-   "src": null,
-   "src_dur": null,
-   "motion": "punch",
-   "transition": "cut",
-   "grade": "warm",
-   "placeholder": "Cliff edge | Narrator | pulling with all his strength, determined | close, punch-in",
-   "override": {},
-   "dur": 0.98
-  },
-  {
-   "n": 42,
-   "text": "Kai stared at me, shaking.",
-   "start": 60.81,
-   "end": 62.35,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "warm",
-   "placeholder": "Trail, safe | Kai | sitting on the trail, scared, teary | close, push-in",
-   "override": {},
-   "dur": 1.54
-  },
-  {
-   "n": 43,
-   "text": "\"Why'd you save me?\"",
-   "start": 62.35,
-   "end": 63.45,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "warm",
-   "placeholder": "Trail, safe | Kai | looking up at Narrator | close, push-in",
-   "override": {},
-   "dur": 1.1
-  },
-  {
-   "n": 44,
-   "text": "\"Because,\" I said,",
-   "start": 63.45,
-   "end": 64.63,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "warm",
-   "placeholder": "Trail | Narrator | soft smile, offering a hand | close, push-in",
-   "override": {},
-   "dur": 1.18
-  },
-  {
-   "n": 45,
-   "text": "\"a king doesn't leave anyone behind.\"",
-   "start": 64.63,
-   "end": 67.953,
-   "src": null,
-   "src_dur": null,
-   "motion": "pull_out",
-   "transition": "fog",
-   "grade": "warm",
-   "placeholder": "Mountain trail at sunset | Narrator, Kai, class | Narrator helping Kai up, class gathering around | wide, pull-out | sunset",
-   "override": {},
-   "dur": 3.323
-  }
- ],
- "words": [
-  {
-   "w": "In",
-   "s": 0.0,
-   "e": 0.18,
-   "shot": 1
-  },
-  {
-   "w": "this",
-   "s": 0.18,
-   "e": 0.3,
-   "shot": 1
-  },
-  {
-   "w": "town,",
-   "s": 0.3,
-   "e": 0.56,
-   "shot": 1
-  },
-  {
-   "w": "everyone",
-   "s": 0.94,
-   "e": 1.08,
-   "shot": 2
-  },
-  {
-   "w": "is",
-   "s": 1.08,
-   "e": 1.28,
-   "shot": 2
-  },
-  {
-   "w": "born",
-   "s": 1.28,
-   "e": 1.44,
-   "shot": 2
-  },
-  {
-   "w": "with",
-   "s": 1.44,
-   "e": 1.56,
-   "shot": 2
-  },
-  {
-   "w": "a",
-   "s": 1.56,
-   "e": 1.68,
-   "shot": 2
-  },
-  {
-   "w": "mark",
-   "s": 1.68,
-   "e": 1.82,
-   "shot": 2
-  },
-  {
-   "w": "on",
-   "s": 1.82,
-   "e": 2.0,
-   "shot": 2
-  },
-  {
-   "w": "their",
-   "s": 2.0,
-   "e": 2.1,
-   "shot": 2
-  },
-  {
-   "w": "wrist.",
-   "s": 2.1,
-   "e": 2.36,
-   "shot": 2
-  },
-  {
-   "w": "A",
-   "s": 2.82,
-   "e": 2.84,
-   "shot": 3
-  },
-  {
-   "w": "leaf",
-   "s": 2.84,
-   "e": 3.08,
-   "shot": 3
-  },
-  {
-   "w": "means",
-   "s": 3.08,
-   "e": 3.32,
-   "shot": 3
-  },
-  {
-   "w": "you're",
-   "s": 3.32,
-   "e": 3.52,
-   "shot": 3
-  },
-  {
-   "w": "prey.",
-   "s": 3.52,
-   "e": 3.74,
-   "shot": 3
-  },
-  {
-   "w": "A",
-   "s": 4.14,
-   "e": 4.26,
-   "shot": 4
-  },
-  {
-   "w": "claw",
-   "s": 4.26,
-   "e": 4.58,
-   "shot": 4
-  },
-  {
-   "w": "means",
-   "s": 4.58,
-   "e": 4.88,
-   "shot": 4
-  },
-  {
-   "w": "you're",
-   "s": 4.88,
-   "e": 5.1,
-   "shot": 4
-  },
-  {
-   "w": "a",
-   "s": 5.1,
-   "e": 5.14,
-   "shot": 4
-  },
-  {
-   "w": "predator.",
-   "s": 5.14,
-   "e": 5.5,
-   "shot": 4
-  },
-  {
-   "w": "Predators",
-   "s": 6.22,
-   "e": 6.22,
-   "shot": 5
-  },
-  {
-   "w": "get",
-   "s": 6.22,
-   "e": 6.42,
-   "shot": 5
-  },
-  {
-   "w": "the",
-   "s": 6.42,
-   "e": 6.54,
-   "shot": 5
-  },
-  {
-   "w": "front",
-   "s": 6.54,
-   "e": 6.72,
-   "shot": 5
-  },
-  {
-   "w": "of",
-   "s": 6.72,
-   "e": 6.82,
-   "shot": 5
-  },
-  {
-   "w": "the",
-   "s": 6.82,
-   "e": 6.9,
-   "shot": 5
-  },
-  {
-   "w": "lunch",
-   "s": 6.9,
-   "e": 7.04,
-   "shot": 5
-  },
-  {
-   "w": "line.",
-   "s": 7.04,
-   "e": 7.24,
-   "shot": 5
-  },
-  {
-   "w": "Prey",
-   "s": 7.59,
-   "e": 7.95,
-   "shot": 6
-  },
-  {
-   "w": "get",
-   "s": 7.95,
-   "e": 8.03,
-   "shot": 6
-  },
-  {
-   "w": "the",
-   "s": 8.03,
-   "e": 8.15,
-   "shot": 6
-  },
-  {
-   "w": "seats",
-   "s": 8.15,
-   "e": 8.29,
-   "shot": 6
-  },
-  {
-   "w": "by",
-   "s": 8.29,
-   "e": 8.45,
-   "shot": 6
-  },
-  {
-   "w": "the",
-   "s": 8.45,
-   "e": 8.53,
-   "shot": 6
-  },
-  {
-   "w": "trash",
-   "s": 8.53,
-   "e": 8.77,
-   "shot": 6
-  },
-  {
-   "w": "cans.",
-   "s": 8.77,
-   "e": 9.09,
-   "shot": 6
-  },
-  {
-   "w": "My",
-   "s": 9.69,
-   "e": 9.77,
-   "shot": 7
-  },
-  {
-   "w": "cousin",
-   "s": 9.77,
-   "e": 9.95,
-   "shot": 7
-  },
-  {
-   "w": "got",
-   "s": 9.95,
-   "e": 10.15,
-   "shot": 7
-  },
-  {
-   "w": "a",
-   "s": 10.15,
-   "e": 10.27,
-   "shot": 7
-  },
-  {
-   "w": "claw",
-   "s": 10.27,
-   "e": 10.47,
-   "shot": 7
-  },
-  {
-   "w": "and",
-   "s": 10.47,
-   "e": 10.81,
-   "shot": 8
-  },
-  {
-   "w": "hasn't",
-   "s": 10.81,
-   "e": 11.07,
-   "shot": 8
-  },
-  {
-   "w": "carried",
-   "s": 11.07,
-   "e": 11.23,
-   "shot": 8
-  },
-  {
-   "w": "his",
-   "s": 11.23,
-   "e": 11.37,
-   "shot": 8
-  },
-  {
-   "w": "own",
-   "s": 11.37,
-   "e": 11.47,
-   "shot": 8
-  },
-  {
-   "w": "backpack",
-   "s": 11.47,
-   "e": 11.73,
-   "shot": 8
-  },
-  {
-   "w": "since.",
-   "s": 11.73,
-   "e": 12.11,
-   "shot": 8
-  },
-  {
-   "w": "And",
-   "s": 12.63,
-   "e": 12.71,
-   "shot": 9
-  },
-  {
-   "w": "there's",
-   "s": 12.71,
-   "e": 12.85,
-   "shot": 9
-  },
-  {
-   "w": "a",
-   "s": 12.85,
-   "e": 12.95,
-   "shot": 9
-  },
-  {
-   "w": "third",
-   "s": 12.95,
-   "e": 13.13,
-   "shot": 9
-  },
-  {
-   "w": "mark",
-   "s": 13.13,
-   "e": 13.33,
-   "shot": 9
-  },
-  {
-   "w": "nobody's",
-   "s": 13.33,
-   "e": 13.91,
-   "shot": 9
-  },
-  {
-   "w": "seen",
-   "s": 13.91,
-   "e": 14.07,
-   "shot": 9
-  },
-  {
-   "w": "in",
-   "s": 14.07,
-   "e": 14.23,
-   "shot": 9
-  },
-  {
-   "w": "a",
-   "s": 14.23,
-   "e": 14.33,
-   "shot": 9
-  },
-  {
-   "w": "hundred",
-   "s": 14.33,
-   "e": 14.59,
-   "shot": 9
-  },
-  {
-   "w": "years.",
-   "s": 14.59,
-   "e": 15.03,
-   "shot": 9
-  },
-  {
-   "w": "Alpha.",
-   "s": 15.67,
-   "e": 15.77,
-   "shot": 10
-  },
-  {
-   "w": "I",
-   "s": 16.37,
-   "e": 16.39,
-   "shot": 11
-  },
-  {
-   "w": "had",
-   "s": 16.39,
-   "e": 16.49,
-   "shot": 11
-  },
-  {
-   "w": "a",
-   "s": 16.49,
-   "e": 16.59,
-   "shot": 11
-  },
-  {
-   "w": "claw.",
-   "s": 16.59,
-   "e": 16.73,
-   "shot": 11
-  },
-  {
-   "w": "At",
-   "s": 16.9,
-   "e": 17.2,
-   "shot": 12
-  },
-  {
-   "w": "least,",
-   "s": 17.2,
-   "e": 17.34,
-   "shot": 12
-  },
-  {
-   "w": "that's",
-   "s": 17.58,
-   "e": 17.68,
-   "shot": 12
-  },
-  {
-   "w": "what",
-   "s": 17.68,
-   "e": 17.74,
-   "shot": 12
-  },
-  {
-   "w": "the",
-   "s": 17.74,
-   "e": 17.82,
-   "shot": 12
-  },
-  {
-   "w": "marker",
-   "s": 17.82,
-   "e": 17.98,
-   "shot": 12
-  },
-  {
-   "w": "said.",
-   "s": 17.98,
-   "e": 18.3,
-   "shot": 12
-  },
-  {
-   "w": "Every",
-   "s": 18.66,
-   "e": 18.78,
-   "shot": 13
-  },
-  {
-   "w": "morning,",
-   "s": 18.78,
-   "e": 19.0,
-   "shot": 13
-  },
-  {
-   "w": "I",
-   "s": 19.2,
-   "e": 19.28,
-   "shot": 13
-  },
-  {
-   "w": "drew",
-   "s": 19.28,
-   "e": 19.4,
-   "shot": 13
-  },
-  {
-   "w": "it",
-   "s": 19.4,
-   "e": 19.5,
-   "shot": 13
-  },
-  {
-   "w": "on.",
-   "s": 19.5,
-   "e": 19.68,
-   "shot": 13
-  },
-  {
-   "w": "Every",
-   "s": 20.08,
-   "e": 20.22,
-   "shot": 14
-  },
-  {
-   "w": "night,",
-   "s": 20.22,
-   "e": 20.42,
-   "shot": 14
-  },
-  {
-   "w": "I",
-   "s": 20.7,
-   "e": 20.78,
-   "shot": 14
-  },
-  {
-   "w": "washed",
-   "s": 20.78,
-   "e": 20.96,
-   "shot": 14
-  },
-  {
-   "w": "it",
-   "s": 20.96,
-   "e": 21.1,
-   "shot": 14
-  },
-  {
-   "w": "off",
-   "s": 21.1,
-   "e": 21.26,
-   "shot": 14
-  },
-  {
-   "w": "and",
-   "s": 21.26,
-   "e": 21.44,
-   "shot": 15
-  },
-  {
-   "w": "stared",
-   "s": 21.44,
-   "e": 21.68,
-   "shot": 15
-  },
-  {
-   "w": "at",
-   "s": 21.68,
-   "e": 21.8,
-   "shot": 15
-  },
-  {
-   "w": "my",
-   "s": 21.8,
-   "e": 21.9,
-   "shot": 15
-  },
-  {
-   "w": "leaf.",
-   "s": 21.9,
-   "e": 22.1,
-   "shot": 15
-  },
-  {
-   "w": "Then,",
-   "s": 22.58,
-   "e": 22.7,
-   "shot": 16
-  },
-  {
-   "w": "it",
-   "s": 23.05,
-   "e": 23.17,
-   "shot": 16
-  },
-  {
-   "w": "rained",
-   "s": 23.17,
-   "e": 23.51,
-   "shot": 16
-  },
-  {
-   "w": "at",
-   "s": 23.51,
-   "e": 23.63,
-   "shot": 16
-  },
-  {
-   "w": "recess.",
-   "s": 23.63,
-   "e": 23.95,
-   "shot": 16
-  },
-  {
-   "w": "Kai,",
-   "s": 24.65,
-   "e": 24.65,
-   "shot": 17
-  },
-  {
-   "w": "the",
-   "s": 24.93,
-   "e": 24.97,
-   "shot": 17
-  },
-  {
-   "w": "biggest",
-   "s": 24.97,
-   "e": 25.21,
-   "shot": 17
-  },
-  {
-   "w": "predator",
-   "s": 25.21,
-   "e": 25.49,
-   "shot": 17
-  },
-  {
-   "w": "in",
-   "s": 25.49,
-   "e": 25.69,
-   "shot": 17
-  },
-  {
-   "w": "school,",
-   "s": 25.69,
-   "e": 25.91,
-   "shot": 17
-  },
-  {
-   "w": "grabbed",
-   "s": 26.05,
-   "e": 26.29,
-   "shot": 18
-  },
-  {
-   "w": "my",
-   "s": 26.29,
-   "e": 26.51,
-   "shot": 18
-  },
-  {
-   "w": "wrist.",
-   "s": 26.51,
-   "e": 26.77,
-   "shot": 18
-  },
-  {
-   "w": "The",
-   "s": 27.13,
-   "e": 27.21,
-   "shot": 19
-  },
-  {
-   "w": "claw",
-   "s": 27.21,
-   "e": 27.45,
-   "shot": 19
-  },
-  {
-   "w": "ran",
-   "s": 27.45,
-   "e": 27.71,
-   "shot": 19
-  },
-  {
-   "w": "down",
-   "s": 27.71,
-   "e": 27.89,
-   "shot": 19
-  },
-  {
-   "w": "my",
-   "s": 27.89,
-   "e": 28.03,
-   "shot": 19
-  },
-  {
-   "w": "arm",
-   "s": 28.03,
-   "e": 28.25,
-   "shot": 19
-  },
-  {
-   "w": "in",
-   "s": 28.25,
-   "e": 28.41,
-   "shot": 19
-  },
-  {
-   "w": "black",
-   "s": 28.41,
-   "e": 28.65,
-   "shot": 19
-  },
-  {
-   "w": "streaks.",
-   "s": 28.65,
-   "e": 28.99,
-   "shot": 19
-  },
-  {
-   "w": "\"He's",
-   "s": 28.99,
-   "e": 29.63,
-   "shot": 20
-  },
-  {
-   "w": "prey,\"",
-   "s": 29.63,
-   "e": 29.91,
-   "shot": 20
-  },
-  {
-   "w": "Kai",
-   "s": 30.27,
-   "e": 30.33,
-   "shot": 20
-  },
-  {
-   "w": "said.",
-   "s": 30.33,
-   "e": 30.53,
-   "shot": 20
-  },
-  {
-   "w": "\"He's",
-   "s": 30.79,
-   "e": 30.91,
-   "shot": 21
-  },
-  {
-   "w": "been",
-   "s": 30.91,
-   "e": 31.01,
-   "shot": 21
-  },
-  {
-   "w": "faking",
-   "s": 31.01,
-   "e": 31.29,
-   "shot": 21
-  },
-  {
-   "w": "it.\"",
-   "s": 31.29,
-   "e": 31.53,
-   "shot": 21
-  },
-  {
-   "w": "Everyone",
-   "s": 31.83,
-   "e": 32.07,
-   "shot": 22
-  },
-  {
-   "w": "circled",
-   "s": 32.07,
-   "e": 32.39,
-   "shot": 22
-  },
-  {
-   "w": "me.",
-   "s": 32.39,
-   "e": 32.63,
-   "shot": 22
-  },
-  {
-   "w": "\"Show",
-   "s": 32.9,
-   "e": 33.14,
-   "shot": 23
-  },
-  {
-   "w": "us,\"",
-   "s": 33.14,
-   "e": 33.46,
-   "shot": 23
-  },
-  {
-   "w": "they",
-   "s": 33.46,
-   "e": 33.6,
-   "shot": 23
-  },
-  {
-   "w": "said.",
-   "s": 33.6,
-   "e": 34.12,
-   "shot": 23
-  },
-  {
-   "w": "\"Show",
-   "s": 34.12,
-   "e": 34.22,
-   "shot": 24
-  },
-  {
-   "w": "us",
-   "s": 34.22,
-   "e": 34.34,
-   "shot": 24
-  },
-  {
-   "w": "what",
-   "s": 34.34,
-   "e": 34.44,
-   "shot": 24
-  },
-  {
-   "w": "you",
-   "s": 34.44,
-   "e": 34.54,
-   "shot": 24
-  },
-  {
-   "w": "really",
-   "s": 34.54,
-   "e": 34.78,
-   "shot": 24
-  },
-  {
-   "w": "are.\"",
-   "s": 34.78,
-   "e": 35.38,
-   "shot": 24
-  },
-  {
-   "w": "My",
-   "s": 35.42,
-   "e": 35.52,
-   "shot": 25
-  },
-  {
-   "w": "wrist",
-   "s": 35.52,
-   "e": 35.78,
-   "shot": 25
-  },
-  {
-   "w": "started",
-   "s": 35.78,
-   "e": 36.06,
-   "shot": 25
-  },
-  {
-   "w": "to",
-   "s": 36.06,
-   "e": 36.22,
-   "shot": 25
-  },
-  {
-   "w": "burn.",
-   "s": 36.22,
-   "e": 36.82,
-   "shot": 25
-  },
-  {
-   "w": "The",
-   "s": 36.84,
-   "e": 36.92,
-   "shot": 26
-  },
-  {
-   "w": "leaf",
-   "s": 36.92,
-   "e": 37.14,
-   "shot": 26
-  },
-  {
-   "w": "glowed.",
-   "s": 37.14,
-   "e": 37.74,
-   "shot": 26
-  },
-  {
-   "w": "Then",
-   "s": 37.92,
-   "e": 38.04,
-   "shot": 27
-  },
-  {
-   "w": "it",
-   "s": 38.04,
-   "e": 38.12,
-   "shot": 27
-  },
-  {
-   "w": "cracked",
-   "s": 38.12,
-   "e": 38.36,
-   "shot": 27
-  },
-  {
-   "w": "open",
-   "s": 38.36,
-   "e": 38.64,
-   "shot": 27
-  },
-  {
-   "w": "like",
-   "s": 38.64,
-   "e": 38.78,
-   "shot": 27
-  },
-  {
-   "w": "an",
-   "s": 38.78,
-   "e": 38.88,
-   "shot": 27
-  },
-  {
-   "w": "egg.",
-   "s": 38.88,
-   "e": 39.3,
-   "shot": 27
-  },
-  {
-   "w": "And",
-   "s": 39.3,
-   "e": 39.46,
-   "shot": 28
-  },
-  {
-   "w": "underneath,",
-   "s": 39.46,
-   "e": 40.06,
-   "shot": 28
-  },
-  {
-   "w": "there",
-   "s": 40.18,
-   "e": 40.28,
-   "shot": 28
-  },
-  {
-   "w": "was",
-   "s": 40.28,
-   "e": 40.4,
-   "shot": 28
-  },
-  {
-   "w": "a",
-   "s": 40.4,
-   "e": 40.46,
-   "shot": 28
-  },
-  {
-   "w": "crown.",
-   "s": 40.46,
-   "e": 40.79,
-   "shot": 28
-  },
-  {
-   "w": "Kai",
-   "s": 41.27,
-   "e": 41.47,
-   "shot": 29
-  },
-  {
-   "w": "let",
-   "s": 41.47,
-   "e": 41.59,
-   "shot": 29
-  },
-  {
-   "w": "go.",
-   "s": 41.59,
-   "e": 41.83,
-   "shot": 29
-  },
-  {
-   "w": "Everyone",
-   "s": 42.23,
-   "e": 42.43,
-   "shot": 30
-  },
-  {
-   "w": "stepped",
-   "s": 42.43,
-   "e": 42.69,
-   "shot": 30
-  },
-  {
-   "w": "back.",
-   "s": 42.69,
-   "e": 43.03,
-   "shot": 30
-  },
-  {
-   "w": "\"Alpha,\"",
-   "s": 43.45,
-   "e": 43.71,
-   "shot": 31
-  },
-  {
-   "w": "someone",
-   "s": 44.17,
-   "e": 44.27,
-   "shot": 31
-  },
-  {
-   "w": "whispered.",
-   "s": 44.27,
-   "e": 44.57,
-   "shot": 31
-  },
-  {
-   "w": "By",
-   "s": 44.99,
-   "e": 45.09,
-   "shot": 32
-  },
-  {
-   "w": "the",
-   "s": 45.09,
-   "e": 45.19,
-   "shot": 32
-  },
-  {
-   "w": "next",
-   "s": 45.19,
-   "e": 45.33,
-   "shot": 32
-  },
-  {
-   "w": "week,",
-   "s": 45.33,
-   "e": 45.57,
-   "shot": 32
-  },
-  {
-   "w": "the",
-   "s": 45.73,
-   "e": 45.81,
-   "shot": 32
-  },
-  {
-   "w": "whole",
-   "s": 45.81,
-   "e": 46.03,
-   "shot": 32
-  },
-  {
-   "w": "school",
-   "s": 46.03,
-   "e": 46.27,
-   "shot": 32
-  },
-  {
-   "w": "called",
-   "s": 46.27,
-   "e": 46.53,
-   "shot": 32
-  },
-  {
-   "w": "me",
-   "s": 46.53,
-   "e": 46.67,
-   "shot": 32
-  },
-  {
-   "w": "king.",
-   "s": 46.67,
-   "e": 46.89,
-   "shot": 32
-  },
-  {
-   "w": "Then,",
-   "s": 47.35,
-   "e": 47.51,
-   "shot": 33
-  },
-  {
-   "w": "on",
-   "s": 47.65,
-   "e": 47.81,
-   "shot": 33
-  },
-  {
-   "w": "our",
-   "s": 47.81,
-   "e": 47.91,
-   "shot": 33
-  },
-  {
-   "w": "class",
-   "s": 47.91,
-   "e": 48.09,
-   "shot": 33
-  },
-  {
-   "w": "trip",
-   "s": 48.09,
-   "e": 48.25,
-   "shot": 33
-  },
-  {
-   "w": "to",
-   "s": 48.25,
-   "e": 48.37,
-   "shot": 33
-  },
-  {
-   "w": "the",
-   "s": 48.37,
-   "e": 48.43,
-   "shot": 33
-  },
-  {
-   "w": "mountains,",
-   "s": 48.43,
-   "e": 48.65,
-   "shot": 33
-  },
-  {
-   "w": "the",
-   "s": 48.93,
-   "e": 49.03,
-   "shot": 34
-  },
-  {
-   "w": "ground",
-   "s": 49.03,
-   "e": 49.31,
-   "shot": 34
-  },
-  {
-   "w": "started",
-   "s": 49.31,
-   "e": 49.55,
-   "shot": 34
-  },
-  {
-   "w": "to",
-   "s": 49.55,
-   "e": 49.73,
-   "shot": 34
-  },
-  {
-   "w": "shake.",
-   "s": 49.73,
-   "e": 50.03,
-   "shot": 34
-  },
-  {
-   "w": "Rocks",
-   "s": 50.47,
-   "e": 50.53,
-   "shot": 35
-  },
-  {
-   "w": "came",
-   "s": 50.53,
-   "e": 50.71,
-   "shot": 35
-  },
-  {
-   "w": "sliding",
-   "s": 50.71,
-   "e": 51.03,
-   "shot": 35
-  },
-  {
-   "w": "down",
-   "s": 51.03,
-   "e": 51.25,
-   "shot": 35
-  },
-  {
-   "w": "the",
-   "s": 51.25,
-   "e": 51.33,
-   "shot": 35
-  },
-  {
-   "w": "hill.",
-   "s": 51.33,
-   "e": 51.53,
-   "shot": 35
-  },
-  {
-   "w": "Everyone",
-   "s": 51.85,
-   "e": 52.01,
-   "shot": 36
-  },
-  {
-   "w": "ran.",
-   "s": 52.01,
-   "e": 52.39,
-   "shot": 36
-  },
-  {
-   "w": "Except",
-   "s": 53.03,
-   "e": 53.07,
-   "shot": 36
-  },
-  {
-   "w": "Kai.",
-   "s": 53.07,
-   "e": 53.63,
-   "shot": 36
-  },
-  {
-   "w": "He",
-   "s": 54.03,
-   "e": 54.11,
-   "shot": 37
-  },
-  {
-   "w": "slipped",
-   "s": 54.11,
-   "e": 54.31,
-   "shot": 37
-  },
-  {
-   "w": "over",
-   "s": 54.31,
-   "e": 54.49,
-   "shot": 37
-  },
-  {
-   "w": "the",
-   "s": 54.49,
-   "e": 54.61,
-   "shot": 37
-  },
-  {
-   "w": "edge",
-   "s": 54.61,
-   "e": 54.77,
-   "shot": 37
-  },
-  {
-   "w": "and",
-   "s": 54.77,
-   "e": 54.93,
-   "shot": 38
-  },
-  {
-   "w": "grabbed",
-   "s": 54.93,
-   "e": 55.15,
-   "shot": 38
-  },
-  {
-   "w": "a",
-   "s": 55.15,
-   "e": 55.29,
-   "shot": 38
-  },
-  {
-   "w": "root.",
-   "s": 55.29,
-   "e": 55.47,
-   "shot": 38
-  },
-  {
-   "w": "My",
-   "s": 55.83,
-   "e": 55.93,
-   "shot": 39
-  },
-  {
-   "w": "crown",
-   "s": 55.93,
-   "e": 56.21,
-   "shot": 39
-  },
-  {
-   "w": "burned",
-   "s": 56.21,
-   "e": 56.41,
-   "shot": 39
-  },
-  {
-   "w": "brighter",
-   "s": 56.41,
-   "e": 56.77,
-   "shot": 39
-  },
-  {
-   "w": "than",
-   "s": 56.77,
-   "e": 56.97,
-   "shot": 39
-  },
-  {
-   "w": "ever.",
-   "s": 56.97,
-   "e": 57.02,
-   "shot": 39
-  },
-  {
-   "w": "I",
-   "s": 56.99,
-   "e": 57.63,
-   "shot": 40
-  },
-  {
-   "w": "grabbed",
-   "s": 57.63,
-   "e": 57.85,
-   "shot": 40
-  },
-  {
-   "w": "his",
-   "s": 57.85,
-   "e": 58.01,
-   "shot": 40
-  },
-  {
-   "w": "wrist,",
-   "s": 58.01,
-   "e": 58.27,
-   "shot": 40
-  },
-  {
-   "w": "the",
-   "s": 58.43,
-   "e": 58.53,
-   "shot": 40
-  },
-  {
-   "w": "same",
-   "s": 58.53,
-   "e": 58.73,
-   "shot": 40
-  },
-  {
-   "w": "way",
-   "s": 58.73,
-   "e": 58.89,
-   "shot": 40
-  },
-  {
-   "w": "he",
-   "s": 58.89,
-   "e": 59.05,
-   "shot": 40
-  },
-  {
-   "w": "grabbed",
-   "s": 59.05,
-   "e": 59.25,
-   "shot": 40
-  },
-  {
-   "w": "mine.",
-   "s": 59.25,
-   "e": 59.49,
-   "shot": 40
-  },
-  {
-   "w": "And",
-   "s": 59.83,
-   "e": 59.93,
-   "shot": 41
-  },
-  {
-   "w": "I",
-   "s": 59.93,
-   "e": 60.05,
-   "shot": 41
-  },
-  {
-   "w": "pulled.",
-   "s": 60.05,
-   "e": 60.33,
-   "shot": 41
-  },
-  {
-   "w": "Kai",
-   "s": 60.81,
-   "e": 60.91,
-   "shot": 42
-  },
-  {
-   "w": "stared",
-   "s": 60.91,
-   "e": 61.19,
-   "shot": 42
-  },
-  {
-   "w": "at",
-   "s": 61.19,
-   "e": 61.31,
-   "shot": 42
-  },
-  {
-   "w": "me,",
-   "s": 61.31,
-   "e": 61.43,
-   "shot": 42
-  },
-  {
-   "w": "shaking.",
-   "s": 61.59,
-   "e": 61.81,
-   "shot": 42
-  },
-  {
-   "w": "\"Why'd",
-   "s": 62.35,
-   "e": 62.55,
-   "shot": 43
-  },
-  {
-   "w": "you",
-   "s": 62.55,
-   "e": 62.65,
-   "shot": 43
-  },
-  {
-   "w": "save",
-   "s": 62.65,
-   "e": 62.85,
-   "shot": 43
-  },
-  {
-   "w": "me?\"",
-   "s": 62.85,
-   "e": 63.11,
-   "shot": 43
-  },
-  {
-   "w": "\"Because,\"",
-   "s": 63.45,
-   "e": 63.75,
-   "shot": 44
-  },
-  {
-   "w": "I",
-   "s": 63.97,
-   "e": 64.11,
-   "shot": 44
-  },
-  {
-   "w": "said,",
-   "s": 64.11,
-   "e": 64.31,
-   "shot": 44
-  },
-  {
-   "w": "\"a",
-   "s": 64.63,
-   "e": 64.75,
-   "shot": 45
-  },
-  {
-   "w": "king",
-   "s": 64.75,
-   "e": 64.97,
-   "shot": 45
-  },
-  {
-   "w": "doesn't",
-   "s": 64.97,
-   "e": 65.41,
-   "shot": 45
-  },
-  {
-   "w": "leave",
-   "s": 65.41,
-   "e": 65.53,
-   "shot": 45
-  },
-  {
-   "w": "anyone",
-   "s": 65.53,
-   "e": 65.89,
-   "shot": 45
-  },
-  {
-   "w": "behind.\"",
-   "s": 65.89,
-   "e": 66.21,
-   "shot": 45
-  }
- ],
- "music": {
-  "file": "output/stock/music/soft_piano_stock.wav",
-  "db": -7
- },
- "ambience": [
-  {
-   "file": "output/stock/sfx/amb_town_stock.wav",
-   "start": 0.0,
-   "end": 47.35
-  },
-  {
-   "file": "output/stock/sfx/amb_wind_stock.wav",
-   "start": 47.35,
-   "end": 67.952854
-  }
- ],
- "sfx": [
-  {
-   "file": "output/stock/sfx/magic_shimmer_stock.wav",
-   "t": 0.94,
-   "shot": 2
-  },
-  {
-   "file": "output/stock/sfx/magic_shimmer_stock.wav",
-   "t": 15.67,
-   "shot": 10
-  },
-  {
-   "file": "output/stock/sfx/magic_shimmer_stock.wav",
-   "t": 36.84,
-   "shot": 26
-  },
-  {
-   "file": "output/stock/sfx/magic_shimmer_stock.wav",
-   "t": 39.3,
-   "shot": 28
-  },
-  {
-   "file": "output/stock/sfx/magic_shimmer_stock.wav",
-   "t": 55.83,
-   "shot": 39
-  }
- ],
- "override": {
+  "slug": "alpha-mark",
+  "title": "The Third Mark",
+  "timing": "voice",
+  "voice": "output/cache/alpha-mark/voice_fx.wav",
+  "duration": 67.953,
+  "shots": [
+    {
+      "n": 1,
+      "text": "In this town,",
+      "start": 0.0,
+      "end": 0.94,
+      "src": "output/anim/alpha-mark/shot_01.mp4",
+      "src_dur": 2.0,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 0.94
+    },
+    {
+      "n": 2,
+      "text": "everyone is born with a mark on their wrist.",
+      "start": 0.94,
+      "end": 2.82,
+      "src": "output/anim/alpha-mark/shot_02.mp4",
+      "src_dur": 2.5,
+      "motion": "push_in",
+      "transition": "sparkle",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.88
+    },
+    {
+      "n": 3,
+      "text": "A leaf means you're prey.",
+      "start": 2.82,
+      "end": 4.14,
+      "src": "output/anim/alpha-mark/shot_03.mp4",
+      "src_dur": 2.0,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.32
+    },
+    {
+      "n": 4,
+      "text": "A claw means you're a predator.",
+      "start": 4.14,
+      "end": 6.22,
+      "src": "output/anim/alpha-mark/shot_04.mp4",
+      "src_dur": 3.0,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 2.08
+    },
+    {
+      "n": 5,
+      "text": "Predators get the front of the lunch line.",
+      "start": 6.22,
+      "end": 7.59,
+      "src": "output/anim/alpha-mark/shot_05.mp4",
+      "src_dur": 2.0,
+      "motion": "pan_right",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.37
+    },
+    {
+      "n": 6,
+      "text": "Prey get the seats by the trash cans.",
+      "start": 7.59,
+      "end": 9.69,
+      "src": "output/anim/alpha-mark/shot_06.mp4",
+      "src_dur": 3.0,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 2.1
+    },
+    {
+      "n": 7,
+      "text": "My cousin got a claw",
+      "start": 9.69,
+      "end": 10.47,
+      "src": "output/anim/alpha-mark/shot_07.mp4",
+      "src_dur": 1.5,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 0.78
+    },
+    {
+      "n": 8,
+      "text": "and hasn't carried his own backpack since.",
+      "start": 10.47,
+      "end": 12.63,
+      "src": "output/anim/alpha-mark/shot_08.mp4",
+      "src_dur": 3.0,
+      "motion": "pan_left",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 2.16
+    },
+    {
+      "n": 9,
+      "text": "And there's a third mark nobody's seen in a hundred years.",
+      "start": 12.63,
+      "end": 15.67,
+      "src": "output/anim/alpha-mark/shot_09.mp4",
+      "src_dur": 4.0,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 3.04
+    },
+    {
+      "n": 10,
+      "text": "Alpha.",
+      "start": 15.67,
+      "end": 16.37,
+      "src": "output/anim/alpha-mark/shot_10.mp4",
+      "src_dur": 1.5,
+      "motion": "punch",
+      "transition": "sparkle",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 0.7
+    },
+    {
+      "n": 11,
+      "text": "I had a claw.",
+      "start": 16.37,
+      "end": 16.9,
+      "src": "output/anim/alpha-mark/shot_11.mp4",
+      "src_dur": 1.5,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 0.53
+    },
+    {
+      "n": 12,
+      "text": "At least, that's what the marker said.",
+      "start": 16.9,
+      "end": 18.66,
+      "src": "output/anim/alpha-mark/shot_12.mp4",
+      "src_dur": 2.5,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.76
+    },
+    {
+      "n": 13,
+      "text": "Every morning, I drew it on.",
+      "start": 18.66,
+      "end": 20.08,
+      "src": "output/anim/alpha-mark/shot_13.mp4",
+      "src_dur": 2.5,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.42
+    },
+    {
+      "n": 14,
+      "text": "Every night, I washed it off",
+      "start": 20.08,
+      "end": 21.26,
+      "src": "output/anim/alpha-mark/shot_14.mp4",
+      "src_dur": 2.0,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.18
+    },
+    {
+      "n": 15,
+      "text": "and stared at my leaf.",
+      "start": 21.26,
+      "end": 22.58,
+      "src": "output/anim/alpha-mark/shot_15.mp4",
+      "src_dur": 2.0,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.32
+    },
+    {
+      "n": 16,
+      "text": "Then, it rained at recess.",
+      "start": 22.58,
+      "end": 24.65,
+      "src": "output/anim/alpha-mark/shot_16.mp4",
+      "src_dur": 3.0,
+      "motion": "push_in",
+      "transition": "fog",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 2.07
+    },
+    {
+      "n": 17,
+      "text": "Kai, the biggest predator in school,",
+      "start": 24.65,
+      "end": 26.05,
+      "src": "output/anim/alpha-mark/shot_17.mp4",
+      "src_dur": 2.0,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.4
+    },
+    {
+      "n": 18,
+      "text": "grabbed my wrist.",
+      "start": 26.05,
+      "end": 27.13,
+      "src": "output/anim/alpha-mark/shot_18.mp4",
+      "src_dur": 2.0,
+      "motion": "punch",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.08
+    },
+    {
+      "n": 19,
+      "text": "The claw ran down my arm in black streaks.",
+      "start": 27.13,
+      "end": 28.99,
+      "src": "output/anim/alpha-mark/shot_19.mp4",
+      "src_dur": 2.5,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.86
+    },
+    {
+      "n": 20,
+      "text": "\"He's prey,\" Kai said.",
+      "start": 28.99,
+      "end": 30.79,
+      "src": "output/anim/alpha-mark/shot_20.mp4",
+      "src_dur": 2.5,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.8
+    },
+    {
+      "n": 21,
+      "text": "\"He's been faking it.\"",
+      "start": 30.79,
+      "end": 31.83,
+      "src": "output/anim/alpha-mark/shot_21.mp4",
+      "src_dur": 2.0,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.04
+    },
+    {
+      "n": 22,
+      "text": "Everyone circled me.",
+      "start": 31.83,
+      "end": 32.9,
+      "src": "output/anim/alpha-mark/shot_22.mp4",
+      "src_dur": 2.0,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.07
+    },
+    {
+      "n": 23,
+      "text": "\"Show us,\" they said.",
+      "start": 32.9,
+      "end": 34.12,
+      "src": "output/anim/alpha-mark/shot_23.mp4",
+      "src_dur": 2.0,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.22
+    },
+    {
+      "n": 24,
+      "text": "\"Show us what you really are.\"",
+      "start": 34.12,
+      "end": 35.42,
+      "src": "output/anim/alpha-mark/shot_24.mp4",
+      "src_dur": 2.0,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.3
+    },
+    {
+      "n": 25,
+      "text": "My wrist started to burn.",
+      "start": 35.42,
+      "end": 36.84,
+      "src": "output/anim/alpha-mark/shot_25.mp4",
+      "src_dur": 2.5,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.42
+    },
+    {
+      "n": 26,
+      "text": "The leaf glowed.",
+      "start": 36.84,
+      "end": 37.92,
+      "src": "output/anim/alpha-mark/shot_26.mp4",
+      "src_dur": 2.0,
+      "motion": "push_in",
+      "transition": "sparkle",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.08
+    },
+    {
+      "n": 27,
+      "text": "Then it cracked open like an egg.",
+      "start": 37.92,
+      "end": 39.3,
+      "src": "output/anim/alpha-mark/shot_27.mp4",
+      "src_dur": 2.0,
+      "motion": "punch",
+      "transition": "flash",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.38
+    },
+    {
+      "n": 28,
+      "text": "And underneath, there was a crown.",
+      "start": 39.3,
+      "end": 41.27,
+      "src": "output/anim/alpha-mark/shot_28.mp4",
+      "src_dur": 3.0,
+      "motion": "push_in",
+      "transition": "sparkle",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.97
+    },
+    {
+      "n": 29,
+      "text": "Kai let go.",
+      "start": 41.27,
+      "end": 42.23,
+      "src": "output/anim/alpha-mark/shot_29.mp4",
+      "src_dur": 2.0,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 0.96
+    },
+    {
+      "n": 30,
+      "text": "Everyone stepped back.",
+      "start": 42.23,
+      "end": 43.45,
+      "src": "output/anim/alpha-mark/shot_30.mp4",
+      "src_dur": 2.0,
+      "motion": "pull_out",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.22
+    },
+    {
+      "n": 31,
+      "text": "\"Alpha,\" someone whispered.",
+      "start": 43.45,
+      "end": 44.99,
+      "src": "output/anim/alpha-mark/shot_31.mp4",
+      "src_dur": 2.5,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.54
+    },
+    {
+      "n": 32,
+      "text": "By the next week, the whole school called me king.",
+      "start": 44.99,
+      "end": 47.35,
+      "src": "output/anim/alpha-mark/shot_32.mp4",
+      "src_dur": 3.0,
+      "motion": "push_in",
+      "transition": "fog",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 2.36
+    },
+    {
+      "n": 33,
+      "text": "Then, on our class trip to the mountains,",
+      "start": 47.35,
+      "end": 48.93,
+      "src": "output/anim/alpha-mark/shot_33.mp4",
+      "src_dur": 2.5,
+      "motion": "push_in",
+      "transition": "fog",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.58
+    },
+    {
+      "n": 34,
+      "text": "the ground started to shake.",
+      "start": 48.93,
+      "end": 50.47,
+      "src": "output/anim/alpha-mark/shot_34.mp4",
+      "src_dur": 2.5,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.54
+    },
+    {
+      "n": 35,
+      "text": "Rocks came sliding down the hill.",
+      "start": 50.47,
+      "end": 51.85,
+      "src": "output/anim/alpha-mark/shot_35.mp4",
+      "src_dur": 2.0,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.38
+    },
+    {
+      "n": 36,
+      "text": "Everyone ran. Except Kai.",
+      "start": 51.85,
+      "end": 54.03,
+      "src": "output/anim/alpha-mark/shot_36.mp4",
+      "src_dur": 3.0,
+      "motion": "pan_right",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 2.18
+    },
+    {
+      "n": 37,
+      "text": "He slipped over the edge",
+      "start": 54.03,
+      "end": 54.77,
+      "src": "output/anim/alpha-mark/shot_37.mp4",
+      "src_dur": 1.5,
+      "motion": "punch",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 0.74
+    },
+    {
+      "n": 38,
+      "text": "and grabbed a root.",
+      "start": 54.77,
+      "end": 55.83,
+      "src": "output/anim/alpha-mark/shot_38.mp4",
+      "src_dur": 2.0,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.06
+    },
+    {
+      "n": 39,
+      "text": "My crown burned brighter than ever.",
+      "start": 55.83,
+      "end": 56.99,
+      "src": "output/anim/alpha-mark/shot_39.mp4",
+      "src_dur": 2.0,
+      "motion": "push_in",
+      "transition": "sparkle",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.16
+    },
+    {
+      "n": 40,
+      "text": "I grabbed his wrist, the same way he grabbed mine.",
+      "start": 56.99,
+      "end": 59.83,
+      "src": "output/anim/alpha-mark/shot_40.mp4",
+      "src_dur": 3.5,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 2.84
+    },
+    {
+      "n": 41,
+      "text": "And I pulled.",
+      "start": 59.83,
+      "end": 60.81,
+      "src": "output/anim/alpha-mark/shot_41.mp4",
+      "src_dur": 2.0,
+      "motion": "punch",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 0.98
+    },
+    {
+      "n": 42,
+      "text": "Kai stared at me, shaking.",
+      "start": 60.81,
+      "end": 62.35,
+      "src": "output/anim/alpha-mark/shot_42.mp4",
+      "src_dur": 2.5,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.54
+    },
+    {
+      "n": 43,
+      "text": "\"Why'd you save me?\"",
+      "start": 62.35,
+      "end": 63.45,
+      "src": "output/anim/alpha-mark/shot_43.mp4",
+      "src_dur": 2.0,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.1
+    },
+    {
+      "n": 44,
+      "text": "\"Because,\" I said,",
+      "start": 63.45,
+      "end": 64.63,
+      "src": "output/anim/alpha-mark/shot_44.mp4",
+      "src_dur": 2.0,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.18
+    },
+    {
+      "n": 45,
+      "text": "\"a king doesn't leave anyone behind.\"",
+      "start": 64.63,
+      "end": 67.953,
+      "src": "output/anim/alpha-mark/shot_45.mp4",
+      "src_dur": 4.0,
+      "motion": "pull_out",
+      "transition": "fog",
+      "grade": "warm",
+      "placeholder": null,
+      "override": {},
+      "dur": 3.323
+    }
+  ],
+  "words": [
+    {
+      "w": "In",
+      "s": 0.0,
+      "e": 0.18,
+      "shot": 1
+    },
+    {
+      "w": "this",
+      "s": 0.18,
+      "e": 0.3,
+      "shot": 1
+    },
+    {
+      "w": "town,",
+      "s": 0.3,
+      "e": 0.56,
+      "shot": 1
+    },
+    {
+      "w": "everyone",
+      "s": 0.94,
+      "e": 1.08,
+      "shot": 2
+    },
+    {
+      "w": "is",
+      "s": 1.08,
+      "e": 1.28,
+      "shot": 2
+    },
+    {
+      "w": "born",
+      "s": 1.28,
+      "e": 1.44,
+      "shot": 2
+    },
+    {
+      "w": "with",
+      "s": 1.44,
+      "e": 1.56,
+      "shot": 2
+    },
+    {
+      "w": "a",
+      "s": 1.56,
+      "e": 1.68,
+      "shot": 2
+    },
+    {
+      "w": "mark",
+      "s": 1.68,
+      "e": 1.82,
+      "shot": 2
+    },
+    {
+      "w": "on",
+      "s": 1.82,
+      "e": 2.0,
+      "shot": 2
+    },
+    {
+      "w": "their",
+      "s": 2.0,
+      "e": 2.1,
+      "shot": 2
+    },
+    {
+      "w": "wrist.",
+      "s": 2.1,
+      "e": 2.36,
+      "shot": 2
+    },
+    {
+      "w": "A",
+      "s": 2.82,
+      "e": 2.84,
+      "shot": 3
+    },
+    {
+      "w": "leaf",
+      "s": 2.84,
+      "e": 3.08,
+      "shot": 3
+    },
+    {
+      "w": "means",
+      "s": 3.08,
+      "e": 3.32,
+      "shot": 3
+    },
+    {
+      "w": "you're",
+      "s": 3.32,
+      "e": 3.52,
+      "shot": 3
+    },
+    {
+      "w": "prey.",
+      "s": 3.52,
+      "e": 3.74,
+      "shot": 3
+    },
+    {
+      "w": "A",
+      "s": 4.14,
+      "e": 4.26,
+      "shot": 4
+    },
+    {
+      "w": "claw",
+      "s": 4.26,
+      "e": 4.58,
+      "shot": 4
+    },
+    {
+      "w": "means",
+      "s": 4.58,
+      "e": 4.88,
+      "shot": 4
+    },
+    {
+      "w": "you're",
+      "s": 4.88,
+      "e": 5.1,
+      "shot": 4
+    },
+    {
+      "w": "a",
+      "s": 5.1,
+      "e": 5.14,
+      "shot": 4
+    },
+    {
+      "w": "predator.",
+      "s": 5.14,
+      "e": 5.5,
+      "shot": 4
+    },
+    {
+      "w": "Predators",
+      "s": 6.22,
+      "e": 6.22,
+      "shot": 5
+    },
+    {
+      "w": "get",
+      "s": 6.22,
+      "e": 6.42,
+      "shot": 5
+    },
+    {
+      "w": "the",
+      "s": 6.42,
+      "e": 6.54,
+      "shot": 5
+    },
+    {
+      "w": "front",
+      "s": 6.54,
+      "e": 6.72,
+      "shot": 5
+    },
+    {
+      "w": "of",
+      "s": 6.72,
+      "e": 6.82,
+      "shot": 5
+    },
+    {
+      "w": "the",
+      "s": 6.82,
+      "e": 6.9,
+      "shot": 5
+    },
+    {
+      "w": "lunch",
+      "s": 6.9,
+      "e": 7.04,
+      "shot": 5
+    },
+    {
+      "w": "line.",
+      "s": 7.04,
+      "e": 7.24,
+      "shot": 5
+    },
+    {
+      "w": "Prey",
+      "s": 7.59,
+      "e": 7.95,
+      "shot": 6
+    },
+    {
+      "w": "get",
+      "s": 7.95,
+      "e": 8.03,
+      "shot": 6
+    },
+    {
+      "w": "the",
+      "s": 8.03,
+      "e": 8.15,
+      "shot": 6
+    },
+    {
+      "w": "seats",
+      "s": 8.15,
+      "e": 8.29,
+      "shot": 6
+    },
+    {
+      "w": "by",
+      "s": 8.29,
+      "e": 8.45,
+      "shot": 6
+    },
+    {
+      "w": "the",
+      "s": 8.45,
+      "e": 8.53,
+      "shot": 6
+    },
+    {
+      "w": "trash",
+      "s": 8.53,
+      "e": 8.77,
+      "shot": 6
+    },
+    {
+      "w": "cans.",
+      "s": 8.77,
+      "e": 9.09,
+      "shot": 6
+    },
+    {
+      "w": "My",
+      "s": 9.69,
+      "e": 9.77,
+      "shot": 7
+    },
+    {
+      "w": "cousin",
+      "s": 9.77,
+      "e": 9.95,
+      "shot": 7
+    },
+    {
+      "w": "got",
+      "s": 9.95,
+      "e": 10.15,
+      "shot": 7
+    },
+    {
+      "w": "a",
+      "s": 10.15,
+      "e": 10.27,
+      "shot": 7
+    },
+    {
+      "w": "claw",
+      "s": 10.27,
+      "e": 10.47,
+      "shot": 7
+    },
+    {
+      "w": "and",
+      "s": 10.47,
+      "e": 10.81,
+      "shot": 8
+    },
+    {
+      "w": "hasn't",
+      "s": 10.81,
+      "e": 11.07,
+      "shot": 8
+    },
+    {
+      "w": "carried",
+      "s": 11.07,
+      "e": 11.23,
+      "shot": 8
+    },
+    {
+      "w": "his",
+      "s": 11.23,
+      "e": 11.37,
+      "shot": 8
+    },
+    {
+      "w": "own",
+      "s": 11.37,
+      "e": 11.47,
+      "shot": 8
+    },
+    {
+      "w": "backpack",
+      "s": 11.47,
+      "e": 11.73,
+      "shot": 8
+    },
+    {
+      "w": "since.",
+      "s": 11.73,
+      "e": 12.11,
+      "shot": 8
+    },
+    {
+      "w": "And",
+      "s": 12.63,
+      "e": 12.71,
+      "shot": 9
+    },
+    {
+      "w": "there's",
+      "s": 12.71,
+      "e": 12.85,
+      "shot": 9
+    },
+    {
+      "w": "a",
+      "s": 12.85,
+      "e": 12.95,
+      "shot": 9
+    },
+    {
+      "w": "third",
+      "s": 12.95,
+      "e": 13.13,
+      "shot": 9
+    },
+    {
+      "w": "mark",
+      "s": 13.13,
+      "e": 13.33,
+      "shot": 9
+    },
+    {
+      "w": "nobody's",
+      "s": 13.33,
+      "e": 13.91,
+      "shot": 9
+    },
+    {
+      "w": "seen",
+      "s": 13.91,
+      "e": 14.07,
+      "shot": 9
+    },
+    {
+      "w": "in",
+      "s": 14.07,
+      "e": 14.23,
+      "shot": 9
+    },
+    {
+      "w": "a",
+      "s": 14.23,
+      "e": 14.33,
+      "shot": 9
+    },
+    {
+      "w": "hundred",
+      "s": 14.33,
+      "e": 14.59,
+      "shot": 9
+    },
+    {
+      "w": "years.",
+      "s": 14.59,
+      "e": 15.03,
+      "shot": 9
+    },
+    {
+      "w": "Alpha.",
+      "s": 15.67,
+      "e": 15.77,
+      "shot": 10
+    },
+    {
+      "w": "I",
+      "s": 16.37,
+      "e": 16.39,
+      "shot": 11
+    },
+    {
+      "w": "had",
+      "s": 16.39,
+      "e": 16.49,
+      "shot": 11
+    },
+    {
+      "w": "a",
+      "s": 16.49,
+      "e": 16.59,
+      "shot": 11
+    },
+    {
+      "w": "claw.",
+      "s": 16.59,
+      "e": 16.73,
+      "shot": 11
+    },
+    {
+      "w": "At",
+      "s": 16.9,
+      "e": 17.2,
+      "shot": 12
+    },
+    {
+      "w": "least,",
+      "s": 17.2,
+      "e": 17.34,
+      "shot": 12
+    },
+    {
+      "w": "that's",
+      "s": 17.58,
+      "e": 17.68,
+      "shot": 12
+    },
+    {
+      "w": "what",
+      "s": 17.68,
+      "e": 17.74,
+      "shot": 12
+    },
+    {
+      "w": "the",
+      "s": 17.74,
+      "e": 17.82,
+      "shot": 12
+    },
+    {
+      "w": "marker",
+      "s": 17.82,
+      "e": 17.98,
+      "shot": 12
+    },
+    {
+      "w": "said.",
+      "s": 17.98,
+      "e": 18.3,
+      "shot": 12
+    },
+    {
+      "w": "Every",
+      "s": 18.66,
+      "e": 18.78,
+      "shot": 13
+    },
+    {
+      "w": "morning,",
+      "s": 18.78,
+      "e": 19.0,
+      "shot": 13
+    },
+    {
+      "w": "I",
+      "s": 19.2,
+      "e": 19.28,
+      "shot": 13
+    },
+    {
+      "w": "drew",
+      "s": 19.28,
+      "e": 19.4,
+      "shot": 13
+    },
+    {
+      "w": "it",
+      "s": 19.4,
+      "e": 19.5,
+      "shot": 13
+    },
+    {
+      "w": "on.",
+      "s": 19.5,
+      "e": 19.68,
+      "shot": 13
+    },
+    {
+      "w": "Every",
+      "s": 20.08,
+      "e": 20.22,
+      "shot": 14
+    },
+    {
+      "w": "night,",
+      "s": 20.22,
+      "e": 20.42,
+      "shot": 14
+    },
+    {
+      "w": "I",
+      "s": 20.7,
+      "e": 20.78,
+      "shot": 14
+    },
+    {
+      "w": "washed",
+      "s": 20.78,
+      "e": 20.96,
+      "shot": 14
+    },
+    {
+      "w": "it",
+      "s": 20.96,
+      "e": 21.1,
+      "shot": 14
+    },
+    {
+      "w": "off",
+      "s": 21.1,
+      "e": 21.26,
+      "shot": 14
+    },
+    {
+      "w": "and",
+      "s": 21.26,
+      "e": 21.44,
+      "shot": 15
+    },
+    {
+      "w": "stared",
+      "s": 21.44,
+      "e": 21.68,
+      "shot": 15
+    },
+    {
+      "w": "at",
+      "s": 21.68,
+      "e": 21.8,
+      "shot": 15
+    },
+    {
+      "w": "my",
+      "s": 21.8,
+      "e": 21.9,
+      "shot": 15
+    },
+    {
+      "w": "leaf.",
+      "s": 21.9,
+      "e": 22.1,
+      "shot": 15
+    },
+    {
+      "w": "Then,",
+      "s": 22.58,
+      "e": 22.7,
+      "shot": 16
+    },
+    {
+      "w": "it",
+      "s": 23.05,
+      "e": 23.17,
+      "shot": 16
+    },
+    {
+      "w": "rained",
+      "s": 23.17,
+      "e": 23.51,
+      "shot": 16
+    },
+    {
+      "w": "at",
+      "s": 23.51,
+      "e": 23.63,
+      "shot": 16
+    },
+    {
+      "w": "recess.",
+      "s": 23.63,
+      "e": 23.95,
+      "shot": 16
+    },
+    {
+      "w": "Kai,",
+      "s": 24.65,
+      "e": 24.65,
+      "shot": 17
+    },
+    {
+      "w": "the",
+      "s": 24.93,
+      "e": 24.97,
+      "shot": 17
+    },
+    {
+      "w": "biggest",
+      "s": 24.97,
+      "e": 25.21,
+      "shot": 17
+    },
+    {
+      "w": "predator",
+      "s": 25.21,
+      "e": 25.49,
+      "shot": 17
+    },
+    {
+      "w": "in",
+      "s": 25.49,
+      "e": 25.69,
+      "shot": 17
+    },
+    {
+      "w": "school,",
+      "s": 25.69,
+      "e": 25.91,
+      "shot": 17
+    },
+    {
+      "w": "grabbed",
+      "s": 26.05,
+      "e": 26.29,
+      "shot": 18
+    },
+    {
+      "w": "my",
+      "s": 26.29,
+      "e": 26.51,
+      "shot": 18
+    },
+    {
+      "w": "wrist.",
+      "s": 26.51,
+      "e": 26.77,
+      "shot": 18
+    },
+    {
+      "w": "The",
+      "s": 27.13,
+      "e": 27.21,
+      "shot": 19
+    },
+    {
+      "w": "claw",
+      "s": 27.21,
+      "e": 27.45,
+      "shot": 19
+    },
+    {
+      "w": "ran",
+      "s": 27.45,
+      "e": 27.71,
+      "shot": 19
+    },
+    {
+      "w": "down",
+      "s": 27.71,
+      "e": 27.89,
+      "shot": 19
+    },
+    {
+      "w": "my",
+      "s": 27.89,
+      "e": 28.03,
+      "shot": 19
+    },
+    {
+      "w": "arm",
+      "s": 28.03,
+      "e": 28.25,
+      "shot": 19
+    },
+    {
+      "w": "in",
+      "s": 28.25,
+      "e": 28.41,
+      "shot": 19
+    },
+    {
+      "w": "black",
+      "s": 28.41,
+      "e": 28.65,
+      "shot": 19
+    },
+    {
+      "w": "streaks.",
+      "s": 28.65,
+      "e": 28.99,
+      "shot": 19
+    },
+    {
+      "w": "\"He's",
+      "s": 28.99,
+      "e": 29.63,
+      "shot": 20
+    },
+    {
+      "w": "prey,\"",
+      "s": 29.63,
+      "e": 29.91,
+      "shot": 20
+    },
+    {
+      "w": "Kai",
+      "s": 30.27,
+      "e": 30.33,
+      "shot": 20
+    },
+    {
+      "w": "said.",
+      "s": 30.33,
+      "e": 30.53,
+      "shot": 20
+    },
+    {
+      "w": "\"He's",
+      "s": 30.79,
+      "e": 30.91,
+      "shot": 21
+    },
+    {
+      "w": "been",
+      "s": 30.91,
+      "e": 31.01,
+      "shot": 21
+    },
+    {
+      "w": "faking",
+      "s": 31.01,
+      "e": 31.29,
+      "shot": 21
+    },
+    {
+      "w": "it.\"",
+      "s": 31.29,
+      "e": 31.53,
+      "shot": 21
+    },
+    {
+      "w": "Everyone",
+      "s": 31.83,
+      "e": 32.07,
+      "shot": 22
+    },
+    {
+      "w": "circled",
+      "s": 32.07,
+      "e": 32.39,
+      "shot": 22
+    },
+    {
+      "w": "me.",
+      "s": 32.39,
+      "e": 32.63,
+      "shot": 22
+    },
+    {
+      "w": "\"Show",
+      "s": 32.9,
+      "e": 33.14,
+      "shot": 23
+    },
+    {
+      "w": "us,\"",
+      "s": 33.14,
+      "e": 33.46,
+      "shot": 23
+    },
+    {
+      "w": "they",
+      "s": 33.46,
+      "e": 33.6,
+      "shot": 23
+    },
+    {
+      "w": "said.",
+      "s": 33.6,
+      "e": 34.12,
+      "shot": 23
+    },
+    {
+      "w": "\"Show",
+      "s": 34.12,
+      "e": 34.22,
+      "shot": 24
+    },
+    {
+      "w": "us",
+      "s": 34.22,
+      "e": 34.34,
+      "shot": 24
+    },
+    {
+      "w": "what",
+      "s": 34.34,
+      "e": 34.44,
+      "shot": 24
+    },
+    {
+      "w": "you",
+      "s": 34.44,
+      "e": 34.54,
+      "shot": 24
+    },
+    {
+      "w": "really",
+      "s": 34.54,
+      "e": 34.78,
+      "shot": 24
+    },
+    {
+      "w": "are.\"",
+      "s": 34.78,
+      "e": 35.38,
+      "shot": 24
+    },
+    {
+      "w": "My",
+      "s": 35.42,
+      "e": 35.52,
+      "shot": 25
+    },
+    {
+      "w": "wrist",
+      "s": 35.52,
+      "e": 35.78,
+      "shot": 25
+    },
+    {
+      "w": "started",
+      "s": 35.78,
+      "e": 36.06,
+      "shot": 25
+    },
+    {
+      "w": "to",
+      "s": 36.06,
+      "e": 36.22,
+      "shot": 25
+    },
+    {
+      "w": "burn.",
+      "s": 36.22,
+      "e": 36.82,
+      "shot": 25
+    },
+    {
+      "w": "The",
+      "s": 36.84,
+      "e": 36.92,
+      "shot": 26
+    },
+    {
+      "w": "leaf",
+      "s": 36.92,
+      "e": 37.14,
+      "shot": 26
+    },
+    {
+      "w": "glowed.",
+      "s": 37.14,
+      "e": 37.74,
+      "shot": 26
+    },
+    {
+      "w": "Then",
+      "s": 37.92,
+      "e": 38.04,
+      "shot": 27
+    },
+    {
+      "w": "it",
+      "s": 38.04,
+      "e": 38.12,
+      "shot": 27
+    },
+    {
+      "w": "cracked",
+      "s": 38.12,
+      "e": 38.36,
+      "shot": 27
+    },
+    {
+      "w": "open",
+      "s": 38.36,
+      "e": 38.64,
+      "shot": 27
+    },
+    {
+      "w": "like",
+      "s": 38.64,
+      "e": 38.78,
+      "shot": 27
+    },
+    {
+      "w": "an",
+      "s": 38.78,
+      "e": 38.88,
+      "shot": 27
+    },
+    {
+      "w": "egg.",
+      "s": 38.88,
+      "e": 39.3,
+      "shot": 27
+    },
+    {
+      "w": "And",
+      "s": 39.3,
+      "e": 39.46,
+      "shot": 28
+    },
+    {
+      "w": "underneath,",
+      "s": 39.46,
+      "e": 40.06,
+      "shot": 28
+    },
+    {
+      "w": "there",
+      "s": 40.18,
+      "e": 40.28,
+      "shot": 28
+    },
+    {
+      "w": "was",
+      "s": 40.28,
+      "e": 40.4,
+      "shot": 28
+    },
+    {
+      "w": "a",
+      "s": 40.4,
+      "e": 40.46,
+      "shot": 28
+    },
+    {
+      "w": "crown.",
+      "s": 40.46,
+      "e": 40.79,
+      "shot": 28
+    },
+    {
+      "w": "Kai",
+      "s": 41.27,
+      "e": 41.47,
+      "shot": 29
+    },
+    {
+      "w": "let",
+      "s": 41.47,
+      "e": 41.59,
+      "shot": 29
+    },
+    {
+      "w": "go.",
+      "s": 41.59,
+      "e": 41.83,
+      "shot": 29
+    },
+    {
+      "w": "Everyone",
+      "s": 42.23,
+      "e": 42.43,
+      "shot": 30
+    },
+    {
+      "w": "stepped",
+      "s": 42.43,
+      "e": 42.69,
+      "shot": 30
+    },
+    {
+      "w": "back.",
+      "s": 42.69,
+      "e": 43.03,
+      "shot": 30
+    },
+    {
+      "w": "\"Alpha,\"",
+      "s": 43.45,
+      "e": 43.71,
+      "shot": 31
+    },
+    {
+      "w": "someone",
+      "s": 44.17,
+      "e": 44.27,
+      "shot": 31
+    },
+    {
+      "w": "whispered.",
+      "s": 44.27,
+      "e": 44.57,
+      "shot": 31
+    },
+    {
+      "w": "By",
+      "s": 44.99,
+      "e": 45.09,
+      "shot": 32
+    },
+    {
+      "w": "the",
+      "s": 45.09,
+      "e": 45.19,
+      "shot": 32
+    },
+    {
+      "w": "next",
+      "s": 45.19,
+      "e": 45.33,
+      "shot": 32
+    },
+    {
+      "w": "week,",
+      "s": 45.33,
+      "e": 45.57,
+      "shot": 32
+    },
+    {
+      "w": "the",
+      "s": 45.73,
+      "e": 45.81,
+      "shot": 32
+    },
+    {
+      "w": "whole",
+      "s": 45.81,
+      "e": 46.03,
+      "shot": 32
+    },
+    {
+      "w": "school",
+      "s": 46.03,
+      "e": 46.27,
+      "shot": 32
+    },
+    {
+      "w": "called",
+      "s": 46.27,
+      "e": 46.53,
+      "shot": 32
+    },
+    {
+      "w": "me",
+      "s": 46.53,
+      "e": 46.67,
+      "shot": 32
+    },
+    {
+      "w": "king.",
+      "s": 46.67,
+      "e": 46.89,
+      "shot": 32
+    },
+    {
+      "w": "Then,",
+      "s": 47.35,
+      "e": 47.51,
+      "shot": 33
+    },
+    {
+      "w": "on",
+      "s": 47.65,
+      "e": 47.81,
+      "shot": 33
+    },
+    {
+      "w": "our",
+      "s": 47.81,
+      "e": 47.91,
+      "shot": 33
+    },
+    {
+      "w": "class",
+      "s": 47.91,
+      "e": 48.09,
+      "shot": 33
+    },
+    {
+      "w": "trip",
+      "s": 48.09,
+      "e": 48.25,
+      "shot": 33
+    },
+    {
+      "w": "to",
+      "s": 48.25,
+      "e": 48.37,
+      "shot": 33
+    },
+    {
+      "w": "the",
+      "s": 48.37,
+      "e": 48.43,
+      "shot": 33
+    },
+    {
+      "w": "mountains,",
+      "s": 48.43,
+      "e": 48.65,
+      "shot": 33
+    },
+    {
+      "w": "the",
+      "s": 48.93,
+      "e": 49.03,
+      "shot": 34
+    },
+    {
+      "w": "ground",
+      "s": 49.03,
+      "e": 49.31,
+      "shot": 34
+    },
+    {
+      "w": "started",
+      "s": 49.31,
+      "e": 49.55,
+      "shot": 34
+    },
+    {
+      "w": "to",
+      "s": 49.55,
+      "e": 49.73,
+      "shot": 34
+    },
+    {
+      "w": "shake.",
+      "s": 49.73,
+      "e": 50.03,
+      "shot": 34
+    },
+    {
+      "w": "Rocks",
+      "s": 50.47,
+      "e": 50.53,
+      "shot": 35
+    },
+    {
+      "w": "came",
+      "s": 50.53,
+      "e": 50.71,
+      "shot": 35
+    },
+    {
+      "w": "sliding",
+      "s": 50.71,
+      "e": 51.03,
+      "shot": 35
+    },
+    {
+      "w": "down",
+      "s": 51.03,
+      "e": 51.25,
+      "shot": 35
+    },
+    {
+      "w": "the",
+      "s": 51.25,
+      "e": 51.33,
+      "shot": 35
+    },
+    {
+      "w": "hill.",
+      "s": 51.33,
+      "e": 51.53,
+      "shot": 35
+    },
+    {
+      "w": "Everyone",
+      "s": 51.85,
+      "e": 52.01,
+      "shot": 36
+    },
+    {
+      "w": "ran.",
+      "s": 52.01,
+      "e": 52.39,
+      "shot": 36
+    },
+    {
+      "w": "Except",
+      "s": 53.03,
+      "e": 53.07,
+      "shot": 36
+    },
+    {
+      "w": "Kai.",
+      "s": 53.07,
+      "e": 53.63,
+      "shot": 36
+    },
+    {
+      "w": "He",
+      "s": 54.03,
+      "e": 54.11,
+      "shot": 37
+    },
+    {
+      "w": "slipped",
+      "s": 54.11,
+      "e": 54.31,
+      "shot": 37
+    },
+    {
+      "w": "over",
+      "s": 54.31,
+      "e": 54.49,
+      "shot": 37
+    },
+    {
+      "w": "the",
+      "s": 54.49,
+      "e": 54.61,
+      "shot": 37
+    },
+    {
+      "w": "edge",
+      "s": 54.61,
+      "e": 54.77,
+      "shot": 37
+    },
+    {
+      "w": "and",
+      "s": 54.77,
+      "e": 54.93,
+      "shot": 38
+    },
+    {
+      "w": "grabbed",
+      "s": 54.93,
+      "e": 55.15,
+      "shot": 38
+    },
+    {
+      "w": "a",
+      "s": 55.15,
+      "e": 55.29,
+      "shot": 38
+    },
+    {
+      "w": "root.",
+      "s": 55.29,
+      "e": 55.47,
+      "shot": 38
+    },
+    {
+      "w": "My",
+      "s": 55.83,
+      "e": 55.93,
+      "shot": 39
+    },
+    {
+      "w": "crown",
+      "s": 55.93,
+      "e": 56.21,
+      "shot": 39
+    },
+    {
+      "w": "burned",
+      "s": 56.21,
+      "e": 56.41,
+      "shot": 39
+    },
+    {
+      "w": "brighter",
+      "s": 56.41,
+      "e": 56.77,
+      "shot": 39
+    },
+    {
+      "w": "than",
+      "s": 56.77,
+      "e": 56.97,
+      "shot": 39
+    },
+    {
+      "w": "ever.",
+      "s": 56.97,
+      "e": 57.02,
+      "shot": 39
+    },
+    {
+      "w": "I",
+      "s": 56.99,
+      "e": 57.63,
+      "shot": 40
+    },
+    {
+      "w": "grabbed",
+      "s": 57.63,
+      "e": 57.85,
+      "shot": 40
+    },
+    {
+      "w": "his",
+      "s": 57.85,
+      "e": 58.01,
+      "shot": 40
+    },
+    {
+      "w": "wrist,",
+      "s": 58.01,
+      "e": 58.27,
+      "shot": 40
+    },
+    {
+      "w": "the",
+      "s": 58.43,
+      "e": 58.53,
+      "shot": 40
+    },
+    {
+      "w": "same",
+      "s": 58.53,
+      "e": 58.73,
+      "shot": 40
+    },
+    {
+      "w": "way",
+      "s": 58.73,
+      "e": 58.89,
+      "shot": 40
+    },
+    {
+      "w": "he",
+      "s": 58.89,
+      "e": 59.05,
+      "shot": 40
+    },
+    {
+      "w": "grabbed",
+      "s": 59.05,
+      "e": 59.25,
+      "shot": 40
+    },
+    {
+      "w": "mine.",
+      "s": 59.25,
+      "e": 59.49,
+      "shot": 40
+    },
+    {
+      "w": "And",
+      "s": 59.83,
+      "e": 59.93,
+      "shot": 41
+    },
+    {
+      "w": "I",
+      "s": 59.93,
+      "e": 60.05,
+      "shot": 41
+    },
+    {
+      "w": "pulled.",
+      "s": 60.05,
+      "e": 60.33,
+      "shot": 41
+    },
+    {
+      "w": "Kai",
+      "s": 60.81,
+      "e": 60.91,
+      "shot": 42
+    },
+    {
+      "w": "stared",
+      "s": 60.91,
+      "e": 61.19,
+      "shot": 42
+    },
+    {
+      "w": "at",
+      "s": 61.19,
+      "e": 61.31,
+      "shot": 42
+    },
+    {
+      "w": "me,",
+      "s": 61.31,
+      "e": 61.43,
+      "shot": 42
+    },
+    {
+      "w": "shaking.",
+      "s": 61.59,
+      "e": 61.81,
+      "shot": 42
+    },
+    {
+      "w": "\"Why'd",
+      "s": 62.35,
+      "e": 62.55,
+      "shot": 43
+    },
+    {
+      "w": "you",
+      "s": 62.55,
+      "e": 62.65,
+      "shot": 43
+    },
+    {
+      "w": "save",
+      "s": 62.65,
+      "e": 62.85,
+      "shot": 43
+    },
+    {
+      "w": "me?\"",
+      "s": 62.85,
+      "e": 63.11,
+      "shot": 43
+    },
+    {
+      "w": "\"Because,\"",
+      "s": 63.45,
+      "e": 63.75,
+      "shot": 44
+    },
+    {
+      "w": "I",
+      "s": 63.97,
+      "e": 64.11,
+      "shot": 44
+    },
+    {
+      "w": "said,",
+      "s": 64.11,
+      "e": 64.31,
+      "shot": 44
+    },
+    {
+      "w": "\"a",
+      "s": 64.63,
+      "e": 64.75,
+      "shot": 45
+    },
+    {
+      "w": "king",
+      "s": 64.75,
+      "e": 64.97,
+      "shot": 45
+    },
+    {
+      "w": "doesn't",
+      "s": 64.97,
+      "e": 65.41,
+      "shot": 45
+    },
+    {
+      "w": "leave",
+      "s": 65.41,
+      "e": 65.53,
+      "shot": 45
+    },
+    {
+      "w": "anyone",
+      "s": 65.53,
+      "e": 65.89,
+      "shot": 45
+    },
+    {
+      "w": "behind.\"",
+      "s": 65.89,
+      "e": 66.21,
+      "shot": 45
+    }
+  ],
   "music": {
-   "file": "output/music/TEMPOREX_-_Numbers_Instrumental_loop.mp3",
-   "db": -7.5
+    "file": "output/stock/music/soft_piano_stock.wav",
+    "db": -7
   },
-  "sfx_extra": [
-   {
-    "sfx": "boom",
-    "shot": 4,
-    "at": 0.9,
-    "db": -11
-   },
-   {
-    "sfx": "boom",
-    "shot": 6,
-    "at": 1.2,
-    "db": -10
-   },
-   {
-    "sfx": "boom",
-    "shot": 8,
-    "at": 1.3,
-    "db": -10
-   },
-   {
-    "sfx": "impact",
-    "shot": 10,
-    "at": 0.0,
-    "db": -11
-   },
-   {
-    "sfx": "magic_shimmer",
-    "shot": 10,
-    "at": 0.05,
-    "db": -17
-   },
-   {
-    "sfx": "pop",
-    "shot": 12,
-    "at": 0.6,
-    "db": -15
-   },
-   {
-    "sfx": "whoosh_stock",
-    "shot": 16,
-    "at": -0.25,
-    "db": -21
-   },
-   {
-    "sfx": "rain",
-    "shot": 16,
-    "at": 0.0,
-    "db": -22
-   },
-   {
-    "sfx": "impact",
-    "shot": 18,
-    "at": 0.3,
-    "db": -14
-   },
-   {
-    "sfx": "heartbeat",
-    "shot": 22,
-    "at": 0.0,
-    "db": -12
-   },
-   {
-    "sfx": "riser",
-    "shot": 26,
-    "at": 0.0,
-    "db": -14
-   },
-   {
-    "sfx": "impact",
-    "shot": 27,
-    "at": 0.65,
-    "db": -9
-   },
-   {
-    "sfx": "magic_shimmer",
-    "shot": 28,
-    "at": 0.1,
-    "db": -13
-   },
-   {
-    "sfx": "magic_shimmer",
-    "shot": 31,
-    "at": 0.5,
-    "db": -19
-   },
-   {
-    "sfx": "boom",
-    "shot": 32,
-    "at": 1.7,
-    "db": -10
-   },
-   {
-    "sfx": "whoosh_stock",
-    "shot": 33,
-    "at": -0.25,
-    "db": -21
-   },
-   {
-    "sfx": "rumble",
-    "shot": 34,
-    "at": 0.5,
-    "db": -10
-   },
-   {
-    "sfx": "rumble",
-    "shot": 35,
-    "at": 0.0,
-    "db": -9
-   },
-   {
-    "sfx": "impact",
-    "shot": 35,
-    "at": 0.4,
-    "db": -13
-   },
-   {
-    "sfx": "heartbeat",
-    "shot": 38,
-    "at": 0.0,
-    "db": -12
-   },
-   {
-    "sfx": "riser",
-    "shot": 39,
-    "at": 0.0,
-    "db": -15
-   },
-   {
-    "sfx": "magic_shimmer",
-    "shot": 39,
-    "at": 0.6,
-    "db": -14
-   },
-   {
-    "sfx": "impact",
-    "shot": 41,
-    "at": 0.35,
-    "db": -11
-   },
-   {
-    "sfx": "magic_shimmer",
-    "shot": 45,
-    "at": 2.2,
-    "db": -19
-   }
-  ]
- }
+  "ambience": [
+    {
+      "file": "output/stock/sfx/amb_town_stock.wav",
+      "start": 0.0,
+      "end": 47.35
+    },
+    {
+      "file": "output/stock/sfx/amb_wind_stock.wav",
+      "start": 47.35,
+      "end": 67.952854
+    }
+  ],
+  "sfx": [
+    {
+      "file": "output/stock/sfx/magic_shimmer_stock.wav",
+      "t": 0.94,
+      "shot": 2
+    },
+    {
+      "file": "output/stock/sfx/magic_shimmer_stock.wav",
+      "t": 15.67,
+      "shot": 10
+    },
+    {
+      "file": "output/stock/sfx/magic_shimmer_stock.wav",
+      "t": 36.84,
+      "shot": 26
+    },
+    {
+      "file": "output/stock/sfx/magic_shimmer_stock.wav",
+      "t": 39.3,
+      "shot": 28
+    },
+    {
+      "file": "output/stock/sfx/magic_shimmer_stock.wav",
+      "t": 55.83,
+      "shot": 39
+    }
+  ],
+  "override": {
+    "music": {
+      "file": "output/music/TEMPOREX_-_Numbers_Instrumental_loop.mp3",
+      "db": -7.5
+    },
+    "sfx_extra": [
+      {
+        "sfx": "boom",
+        "shot": 4,
+        "at": 0.9,
+        "db": -11
+      },
+      {
+        "sfx": "boom",
+        "shot": 6,
+        "at": 1.2,
+        "db": -10
+      },
+      {
+        "sfx": "boom",
+        "shot": 8,
+        "at": 1.3,
+        "db": -10
+      },
+      {
+        "sfx": "impact",
+        "shot": 10,
+        "at": 0.0,
+        "db": -11
+      },
+      {
+        "sfx": "magic_shimmer",
+        "shot": 10,
+        "at": 0.05,
+        "db": -17
+      },
+      {
+        "sfx": "pop",
+        "shot": 12,
+        "at": 0.6,
+        "db": -15
+      },
+      {
+        "sfx": "whoosh_stock",
+        "shot": 16,
+        "at": -0.25,
+        "db": -21
+      },
+      {
+        "sfx": "rain",
+        "shot": 16,
+        "at": 0.0,
+        "db": -22
+      },
+      {
+        "sfx": "impact",
+        "shot": 18,
+        "at": 0.3,
+        "db": -14
+      },
+      {
+        "sfx": "heartbeat",
+        "shot": 22,
+        "at": 0.0,
+        "db": -12
+      },
+      {
+        "sfx": "riser",
+        "shot": 26,
+        "at": 0.0,
+        "db": -14
+      },
+      {
+        "sfx": "impact",
+        "shot": 27,
+        "at": 0.65,
+        "db": -9
+      },
+      {
+        "sfx": "magic_shimmer",
+        "shot": 28,
+        "at": 0.1,
+        "db": -13
+      },
+      {
+        "sfx": "magic_shimmer",
+        "shot": 31,
+        "at": 0.5,
+        "db": -19
+      },
+      {
+        "sfx": "boom",
+        "shot": 32,
+        "at": 1.7,
+        "db": -10
+      },
+      {
+        "sfx": "whoosh_stock",
+        "shot": 33,
+        "at": -0.25,
+        "db": -21
+      },
+      {
+        "sfx": "rumble",
+        "shot": 34,
+        "at": 0.5,
+        "db": -10
+      },
+      {
+        "sfx": "rumble",
+        "shot": 35,
+        "at": 0.0,
+        "db": -9
+      },
+      {
+        "sfx": "impact",
+        "shot": 35,
+        "at": 0.4,
+        "db": -13
+      },
+      {
+        "sfx": "heartbeat",
+        "shot": 38,
+        "at": 0.0,
+        "db": -12
+      },
+      {
+        "sfx": "riser",
+        "shot": 39,
+        "at": 0.0,
+        "db": -15
+      },
+      {
+        "sfx": "magic_shimmer",
+        "shot": 39,
+        "at": 0.6,
+        "db": -14
+      },
+      {
+        "sfx": "impact",
+        "shot": 41,
+        "at": 0.35,
+        "db": -11
+      },
+      {
+        "sfx": "magic_shimmer",
+        "shot": 45,
+        "at": 2.2,
+        "db": -19
+      }
+    ]
+  }
 }
