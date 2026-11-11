@@ -13,7 +13,9 @@ slug, n, frames, out, w, h, samples = argv[:7]
 still = int(argv[7]) if len(argv) > 7 else 0
 story = importlib.import_module(f"stories.{slug.replace('-', '_')}")
 kit.reset()
-story.SHOTS[int(n)](kit, int(frames))
+stage = story.SHOTS[int(n)](kit, int(frames))
+if hasattr(stage, "hide_unused"):
+    stage.hide_unused()
 if still:
     import bpy
     sc = bpy.context.scene

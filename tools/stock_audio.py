@@ -253,6 +253,30 @@ def riser(d=1.4):
     return (tone + hiss) * (t / d) ** 2
 
 
+def rain(d=17.5):
+    """Steady rain hiss + scattered drops, fades in/out."""
+    n = int(d * SR)
+    t = np.arange(n) / SR
+    hiss = smooth_noise(n, 5000) - 0.6 * smooth_noise(n, 400)
+    drops = np.zeros(n)
+    for _ in range(int(d * 40)):
+        j = rng.integers(0, n - 2000)
+        m = 600
+        drops[j:j + m] += smooth_noise(m, 7000) * env_exp(m, 300) * rng.uniform(0.2, 0.8)
+    x = hiss * 0.6 + drops
+    env = np.minimum(1, t / 1.5) * np.minimum(1, (d - t) / 2.0)
+    return np.stack([x * env, np.roll(x, 300) * env], -1)
+
+
+def rumble(d=2.6):
+    """Low earth rumble for a landslide / quake."""
+    n = int(d * SR)
+    t = np.arange(n) / SR
+    x = smooth_noise(n, 90) * 3 + smooth_noise(n, 600) * 0.4 * (0.5 + 0.5 * np.sin(2 * np.pi * 7 * t))
+    env = np.minimum(1, t / 0.3) * np.minimum(1, (d - t) / 0.8)
+    return np.tanh(1.5 * x * env)
+
+
 def main():
     write(STOCK / "music" / "soft_piano_stock.wav", music())
     write(STOCK / "sfx" / "amb_waves_stock.wav", waves())
@@ -270,6 +294,8 @@ def main():
     write(STOCK / "sfx" / "pop_stock.wav", pop())
     write(STOCK / "sfx" / "ticks_stock.wav", ticks())
     write(STOCK / "sfx" / "riser_stock.wav", riser())
+    write(STOCK / "sfx" / "rain_stock.wav", rain())
+    write(STOCK / "sfx" / "rumble_stock.wav", rumble())
     log(f"stock audio -> {STOCK}")
 
 
