@@ -366,6 +366,7 @@ class Stage:
             "dusk": dict(sky=(0.55, 0.42, 0.55), sky_e=0.55, sun=(80, 0, -60), sun_c=(1, 0.55, 0.35), sun_e=2.2),
             "rain": dict(sky=(0.46, 0.5, 0.58), sky_e=0.75, sun=(40, 0, 20), sun_c=(0.8, 0.85, 0.95), sun_e=1.1),
             "sunset": dict(sky=(0.95, 0.62, 0.45), sky_e=0.8, sun=(75, 0, -50), sun_c=(1, 0.62, 0.35), sun_e=3.6),
+            "night": dict(sky=(0.06, 0.08, 0.2), sky_e=0.6, sun=(50, 0, 160), sun_c=(0.55, 0.65, 1.0), sun_e=0.7),
             "dusty": dict(sky=(0.72, 0.66, 0.58), sky_e=0.8, sun=(50, 0, 40), sun_c=(1, 0.9, 0.75), sun_e=2.2),
         }[kind]
         w = bpy.data.worlds.new("w")

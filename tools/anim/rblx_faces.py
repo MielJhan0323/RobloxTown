@@ -185,6 +185,34 @@ def decals(out):
         d.ellipse([x - N * 0.05, N * (0.7 + 0.08 * (k % 2)), x + N * 0.05, N * (0.82 + 0.08 * (k % 2))], fill=(20, 20, 24, 220))
     save(im.filter(ImageFilter.GaussianBlur(4)), "streaks")
 
+    # branch shadow (spooky claw-like silhouette seen through a curtain) - nothing-happens
+    import math as _m
+    import random as _r
+    rnd = _r.Random(5)
+    im = canvas(); d = ImageDraw.Draw(im)
+
+    def limb(x, y, ang, length, w, depth):
+        x2, y2 = x + _m.cos(ang) * length, y + _m.sin(ang) * length
+        d.line([(x, y), (x2, y2)], fill=(10, 12, 25, 235), width=int(w))
+        if depth:
+            for k in range(rnd.choice((2, 3))):
+                limb(x2, y2, ang + rnd.uniform(-0.75, 0.75), length * rnd.uniform(0.55, 0.75), w * 0.62, depth - 1)
+    limb(N * 1.02, N * 0.55, _m.pi + 0.15, N * 0.42, 60, 4)
+    save(im.filter(ImageFilter.GaussianBlur(9)), "branch_shadow")
+    # "ghost map": paper with a house plan, red X's and question marks
+    im = Image.new("RGBA", (N, N), (246, 240, 220, 255)); d = ImageDraw.Draw(im)
+    for r in [(0.1, 0.15, 0.55, 0.6), (0.55, 0.15, 0.9, 0.45), (0.55, 0.45, 0.9, 0.85), (0.1, 0.6, 0.55, 0.85)]:
+        d.rectangle([N * r[0], N * r[1], N * r[2], N * r[3]], outline=(40, 50, 110, 255), width=12)
+    for x, y in ((0.3, 0.35), (0.75, 0.3), (0.72, 0.68), (0.32, 0.73)):
+        cx, cy = N * x, N * y
+        d.line([cx - 40, cy - 40, cx + 40, cy + 40], fill=(210, 30, 30, 255), width=16)
+        d.line([cx - 40, cy + 40, cx + 40, cy - 40], fill=(210, 30, 30, 255), width=16)
+    d.line([(N * 0.3, N * 0.35), (N * 0.75, N * 0.3), (N * 0.72, N * 0.68), (N * 0.32, N * 0.73)], fill=(210, 30, 30, 200), width=7)
+    for x, y in ((0.18, 0.22), (0.82, 0.55), (0.45, 0.9)):
+        d.text((N * x, N * y), "?", fill=(210, 30, 30, 255))
+        d.ellipse([N * x - 30, N * y - 30, N * x + 30, N * y + 30], outline=(210, 30, 30, 255), width=8)
+    save(im, "ghostmap")
+
 
 def main():
     meta_p = Path(sys.argv[1])
