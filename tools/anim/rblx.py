@@ -548,7 +548,7 @@ class Stage:
         yaw = char.root.rotation_euler.z - math.pi
         fwd = Vector((math.sin(yaw), -math.cos(yaw), 0))
         ctr = (lo + hi) / 2
-        depth = mesh.dimensions.y / 2  # export is unrotated: local Y = arm depth
+        depth = min(mesh.dimensions) / 2  # arm is 1 x 1 x 2 studs: half its thickness
         p.location = Vector((ctr.x, ctr.y, lo.z + dz)) + fwd * (depth + lift)
         p.rotation_euler = (R(90), 0, yaw)
         bpy.context.view_layer.update()
