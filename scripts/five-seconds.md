@@ -12,19 +12,23 @@ narrator ('I can feel when things end. And this hasn't.'). Feelings are shown, n
 
 In this town, everyone gets one gift. Some kids can talk to dogs. Some can find anything you lose. Mine? My toast always lands butter side up. Nobody claps for that.
 
-Rio's gift was different. He could always tell what was about to happen. Rain, before the first drop. The question, before the teacher asked it. A glass, a second before it tipped.
+You can give your gift away, but only once. Most people only do it at the very end, to their kids.
+
+Rio's gift was different. He could always tell what was about to happen. Rain, before the first drop. A glass, a second before it tipped.
 
 Rio and I were always together. At lunch. On our bench. He always saved me the last pickle.
 
-Kids started laughing at us. "Are you two married?" "Toast Boy and his shadow." Kai said, "With Rio's gift, you'd actually be somebody."
+Then the jokes started. "Are you two married?" "Toast Boy and his shadow." They laughed in the halls. They laughed at lunch. Kai said, "With Rio's gift, you'd actually be somebody."
 
-So I asked Rio for it. He looked at me for a long time. "Why do you think I'm always with you?" he said. "I always know what's coming. I wanted to be here for it." Then he gave it to me anyway. "Just promise you'll spend every minute with me." I said yes before he finished.
+One day, I'd had enough. I asked Rio for his gift. "I'll keep you safe," I said. "Every minute. I promise." Rio looked at me for a long time. "Why do you think I'm always with you?" he said. "I always know what's coming. I wanted to be here for it." Then he gave it to me anyway.
 
-With his gift, I always knew what was coming. Every answer. Every play. Nobody laughed at me anymore. I stopped sitting on our bench. Every day, I said, "Tomorrow."
+Rio's gift mixed with mine. I didn't just see what was coming. I could choose how it landed. Every coin. Every game. Every future. Nobody laughed at me anymore.
 
-Then, one afternoon, I felt something coming. A tug, like the last page of a book. It came from our bench. I ran. But Rio didn't see the car coming. He'd given that away.
+I stopped sitting on our bench. Every day, I said, "Tomorrow."
 
-Now I spend every afternoon on our bench. I leave room on the left. I save him the last pickle. Every minute I promised. Just late.
+Then, one afternoon, I felt something coming. A tug, like the last page of a book. It came from our bench. I could have chosen a different ending. But I was all the way across town. And Rio didn't see the car coming. He'd given that away.
+
+Now I spend every afternoon on our bench. I leave room on the left. I save him the last pickle. I promised I'd keep him safe. Every minute. Just late.
 
 ## Shot list
 
@@ -110,17 +114,21 @@ canteen, playground, house kitchen - all reused.
 ```
 [warmly] In this town, everyone gets one gift. [playfully] Some kids can talk to dogs. Some can find anything you lose. [laughs softly] Mine? My toast always lands butter side up. [sadly] Nobody claps for that.
 
-[curious] Rio's gift was different. [softly] He could always tell what was about to happen. Rain, before the first drop. The question, before the teacher asked it. A glass, a second before it tipped.
+[softly] You can give your gift away, but only once. Most people only do it at the very end, to their kids.
+
+[curious] Rio's gift was different. He could always tell what was about to happen. Rain, before the first drop. A glass, a second before it tipped.
 
 [warmly] Rio and I were always together. At lunch. On our bench. He always saved me the last pickle.
 
-[sadly] Kids started laughing at us. [playfully] "Are you two married?" "Toast Boy and his shadow." [dramatically] Kai said, "With Rio's gift, you'd actually be somebody."
+[sadly] Then the jokes started. [playfully] "Are you two married?" "Toast Boy and his shadow." [sadly] They laughed in the halls. They laughed at lunch. [dramatically] Kai said, "With Rio's gift, you'd actually be somebody."
 
-[softly] So I asked Rio for it. He looked at me for a long time. [sadly] "Why do you think I'm always with you?" he said. [softly] "I always know what's coming. I wanted to be here for it." [warmly] Then he gave it to me anyway. "Just promise you'll spend every minute with me." [laughs softly] I said yes before he finished.
+[frustrated] One day, I'd had enough. I asked Rio for his gift. [warmly] "I'll keep you safe," I said. "Every minute. I promise." [softly] Rio looked at me for a long time. "Why do you think I'm always with you?" he said. [softly] "I always know what's coming. I wanted to be here for it." [warmly] Then he gave it to me anyway.
 
-[excited] With his gift, I always knew what was coming. Every answer. Every play. Nobody laughed at me anymore. [sadly] I stopped sitting on our bench. Every day, I said, "Tomorrow."
+[excited] Rio's gift mixed with mine. I didn't just see what was coming. I could choose how it landed. Every coin. Every game. Every future. Nobody laughed at me anymore.
 
-[softly] Then, one afternoon, I felt something coming. [dramatically] A tug, like the last page of a book. It came from our bench. [emotional] I ran. But Rio didn't see the car coming. [sadly] He'd given that away.
+[sadly] I stopped sitting on our bench. Every day, I said, "Tomorrow."
 
-[emotional] Now I spend every afternoon on our bench. I leave room on the left. I save him the last pickle. [softly] Every minute I promised. [whispering] Just late.
+[softly] Then, one afternoon, I felt something coming. [dramatically] A tug, like the last page of a book. It came from our bench. [emotional] I could have chosen a different ending. But I was all the way across town. And Rio didn't see the car coming. [sadly] He'd given that away.
+
+[emotional] Now I spend every afternoon on our bench. I leave room on the left. I save him the last pickle. [softly] I promised I'd keep him safe. Every minute. [whispering] Just late.
 ```
