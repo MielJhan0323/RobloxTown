@@ -56,6 +56,7 @@ class Char:
         self.meta = stage.meta[name]
         self.head = [o for o in self.neck.children if o.data and len(o.data.vertices) == 517][0]
         self.heads = {}
+        self.tl = []
         self.cur = None
         self.place(loc, yaw)
         self.face(1, expr)
@@ -210,11 +211,44 @@ class Char:
         return h
 
     def face(self, f, expr):
-        h = self._head_for(expr)
-        for e, o in self.heads.items():
-            o.hide_render = o is not h
-            o.keyframe_insert("hide_render", frame=f)
+        """Face at frame f. Keys are (re)built in _bake_faces, so calls may come in any order."""
+        self._head_for(expr)
+        self.tl.append((f, expr))
         self.cur = expr
+
+    def _expr_at(self, f):
+        cur = None
+        for t, e in sorted(self.tl, key=lambda x: x[0]):
+            if t <= f:
+                cur = e
+        return cur
+
+    def _bake_faces(self, frames=600, blink=True):
+        tl = sorted(self.tl, key=lambda x: x[0])
+        if blink and tl:
+            rnd = random.Random(hash(self.name) % 1000 + 17)
+            f = rnd.randint(8, 40)
+            extra = []
+            while f < frames:
+                e = self._expr_at(f)
+                b = f"{e}_blink"
+                if e and (self.S.faces / self.name / f"{b}.png").exists():
+                    nxt = [t for t, _ in tl if f < t <= f + 4]
+                    if not nxt:  # don't blink across a face change
+                        self._head_for(b)
+                        extra += [(f, b), (f + 4, e)]
+                f += rnd.randint(50, 110)
+            tl = sorted(tl + extra, key=lambda x: x[0])
+        for o in self.heads.values():
+            if o.animation_data:
+                o.animation_data_clear()
+        if not tl:
+            return
+        for t, e in [(0, tl[0][1])] + tl:
+            h = self.heads[e]
+            for o in self.heads.values():
+                o.hide_render = o is not h
+                o.keyframe_insert("hide_render", frame=t)
 
     def faces(self, seq):
         """seq = [(frame, expr), ...]"""
@@ -226,9 +260,10 @@ class Char:
         self._head_for("talk")
         self._head_for(base)
         f, k = f0, 0
+        rnd = random.Random(f0 + len(self.name))
         while f <= f1:
             self.face(f, "talk" if k % 2 == 0 else base)
-            f += STEP
+            f += rnd.choice((4, 4, 6, 8))
             k += 1
         self.face(f1 + 1, base)
 
@@ -374,10 +409,49 @@ class Stage:
         return c
 
     def hide_unused(self):
-        """Hide characters that were not placed in this shot."""
+        """Hide characters that were not placed in this shot, then add the life layer."""
         for n in self.meta:
             if n not in self.chars:
                 bpy.data.collections["CH_" + n].hide_render = True
+        if not getattr(self, "_lived", False):
+            self._lived = True
+            self.liven()
+
+    def liven(self, amount=2.0):
+        """Life layer on top of the keyed poses: breathing, head turns, weight shifts, arm sway,
+        blinks, and a slight handheld camera. Uses additive noise F-modifiers, so keyed acting stays."""
+        def noise(obj, path, idx, strength, scale, seed):
+            ad = obj.animation_data or obj.animation_data_create()
+            if not ad.action:
+                obj.keyframe_insert(path, frame=1)
+            fc = ad.action.fcurves.find(path, index=idx)
+            if fc is None:
+                obj.keyframe_insert(path, index=idx, frame=1)
+                fc = ad.action.fcurves.find(path, index=idx)
+            m = fc.modifiers.new("NOISE")
+            m.strength = strength * amount
+            m.scale = scale
+            m.phase = seed
+            m.blend_type = "ADD"
+        for c in self.chars.values():
+            c._bake_faces()
+            seed = (hash(c.name) % 997) * 0.37
+            talking = sum(1 for _, e in c.tl if e == "talk")
+            if talking:  # chatty head bob + hand gestures while speaking
+                noise(c.neck, "rotation_euler", 0, 0.22, 7, seed + 1)
+                noise(c.arms["R"], "rotation_euler", 0, 0.35, 12, seed + 2)
+            noise(c.neck, "rotation_euler", 2, 0.30, 38, seed)        # look around
+            noise(c.neck, "rotation_euler", 0, 0.14, 30, seed + 3)    # nod
+            noise(c.neck, "rotation_euler", 1, 0.08, 45, seed + 5)    # tilt
+            noise(c.body, "rotation_euler", 0, 0.06, 26, seed + 7)    # breathing sway
+            noise(c.body, "rotation_euler", 1, 0.07, 50, seed + 9)    # weight shift
+            for side, k in (("L", 11), ("R", 13)):
+                noise(c.arms[side], "rotation_euler", 0, 0.16, 32, seed + k)
+                noise(c.arms[side], "rotation_euler", 1, 0.08, 40, seed + k + 1)
+        cam = getattr(self, "camera", None)
+        if cam:
+            for i, st in ((0, 0.06), (2, 0.05)):
+                noise(cam, "location", i, st, 60, 3 + i)
 
     def hide(self, *prefixes):
         for o in bpy.data.objects:

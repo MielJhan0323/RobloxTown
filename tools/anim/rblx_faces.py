@@ -94,13 +94,15 @@ def mouth(d, kind):
         d.arc([cx - w * 0.45, cy - w * 0.3, cx + w * 0.45, cy + w * 0.2], 20, 160, fill=K, width=lw)
 
 
-def face(skin, expr):
+def face(skin, expr, blink=False):
     im = Image.new("RGBA", (W * SS, H * SS), skin)
     d = ImageDraw.Draw(im)
     xl, xr = CX - EYE_DX, CX + EYE_DX
     ek = {"shocked": "wide", "scared": "wide", "laugh": "closed_happy", "embarrassed": "closed_happy",
           "tired": "half", "crying": "closed"}.get(expr, "normal")
-    if expr == "smirk":
+    if blink:
+        eye(d, xl, EYE_Y, "closed"); eye(d, xr, EYE_Y, "closed")
+    elif expr == "smirk":
         eye(d, xl, EYE_Y, "half"); eye(d, xr, EYE_Y, "normal")
     else:
         eye(d, xl, EYE_Y, ek); eye(d, xr, EYE_Y, ek)
@@ -198,6 +200,8 @@ def main():
         d.mkdir(parents=True, exist_ok=True)
         for e in EXPR:
             face(skin, e).save(d / f"{e}.png")
+            if e not in ("laugh", "embarrassed", "crying"):
+                face(skin, e, blink=True).save(d / f"{e}_blink.png")
     decals(meta_p.parent / "decals")
     print("faces ->", out)
 
