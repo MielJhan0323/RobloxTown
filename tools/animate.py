@@ -45,7 +45,9 @@ def main():
     for s in plan["shots"]:
         if a.shots and s["n"] not in a.shots:
             continue
-        frames = int(math.ceil((s["dur"] + PAD) * 30))
+        # ITT_DUR_SCALE > 1 renders longer clips (e.g. before the real voice exists; the edit trims them)
+        scale = float(__import__("os").environ.get("ITT_DUR_SCALE", "1"))
+        frames = int(math.ceil((s["dur"] * scale + PAD) * 30))
         out = outdir / (f"still_{s['n']:02d}.png" if a.stills else f"shot_{s['n']:02d}.mp4")
         if out.exists() and not a.force:
             continue
