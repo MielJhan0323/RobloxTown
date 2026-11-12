@@ -640,7 +640,7 @@ class Stage:
         rnd = random.Random(3)
         drops = []
         for i in range(n):
-            o = kit.box((0.03, 0.03, 0.9), (0, 0, 0), m, bevel=0)
+            o = kit.box((0.025, 0.025, 0.4), (0, 0, 0), m, bevel=0)
             drops.append(o)
         import os
         rstep = int(os.environ.get("ITT_STEP", "0")) or STEP

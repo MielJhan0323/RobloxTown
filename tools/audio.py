@@ -70,7 +70,8 @@ def mix(slug: str) -> Path:
                      f"afade=t=in:d=0.6,afade=t=out:st={max(0, L - 0.6):.3f}:d=0.6,adelay={int(a['start'] * 1000)}:all=1[amb{k}]")
         mixins.append(f"[amb{k}]")
 
-    for k, s in enumerate(data.get("sfx", [])):
+    auto_sfx = [] if (data.get("override") or {}).get("sfx_auto") is False else data.get("sfx", [])
+    for k, s in enumerate(auto_sfx):  # override.sfx_auto = false -> only the hand-placed sfx_extra play
         p = ROOT / s["file"]
         if not p.exists():
             continue
@@ -78,7 +79,7 @@ def mix(slug: str) -> Path:
         parts.append(f"[{si}:a]{AF},volume={s.get('db', acfg.get('sfx_db', -14))}dB,adelay={int(max(0, s['t']) * 1000)}:all=1[sfx{k}]")
         mixins.append(f"[sfx{k}]")
 
-    # extra hand-placed SFX: override.sfx_extra = [{"sfx": "boom", "shot": 6, "at": 0.55, "db": -9}, ...]
+    # extra hand-placed SFX: override.sfx_extra = [{"sfx": "boom", "shot": 6, "at": 0.55, "db": -9, "dur": 2.0}, ...]
     # "at" is seconds from the shot's start (negative = before it). "sfx" is a keyword matched in
     # audio/sfx then output/stock/sfx, or a path relative to the repo.
     from common import SFX as SFX_DIR, STOCK
@@ -102,7 +103,12 @@ def mix(slug: str) -> Path:
             continue
         t = max(0.0, starts[e["shot"]] + float(e.get("at", 0)))
         xi = add_input(["-i", f])
-        parts.append(f"[{xi}:a]{AF},volume={e.get('db', acfg.get('sfx_db', -14))}dB,adelay={int(t * 1000)}:all=1[sx{k}]")
+        # optional "dur": cut the sound after this many seconds (with a short fade), e.g. rain/wind beds
+        cut = ""
+        if e.get("dur"):
+            L = float(e["dur"])
+            cut = f"atrim=0:{L:.3f},afade=t=out:st={max(0, L - 0.4):.3f}:d=0.4,"
+        parts.append(f"[{xi}:a]{AF},{cut}volume={e.get('db', acfg.get('sfx_db', -14))}dB,adelay={int(t * 1000)}:all=1[sx{k}]")
         mixins.append(f"[sx{k}]")
 
     parts.append(f"{''.join(mixins)}amix=inputs={len(mixins)}:normalize=0:duration=first,atrim=0:{D:.3f}[pre]")

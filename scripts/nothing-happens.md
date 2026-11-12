@@ -74,7 +74,7 @@ Animated in Blender from the exported Studio cast (no recording). Sets: **A. tow
 
 | Line | Tone | Say as |
 |---|---|---|
-| In this town, everything is completely normal. | playful | |
+| In this town, everything is completely normal. | curious | In this town, everything is completely... normal? |
 | It rains. It gets sunny. Sometimes, it gets cold. | funny | |
 | Until one day, the sky turned dark. | dramatic | |
 | The birds went quiet. The streetlights flickered on, one by one. | whisper | |
@@ -97,13 +97,13 @@ Animated in Blender from the exported Studio cast (no recording). Sets: **A. tow
 | By now, I'd stopped expecting anything. | playful | |
 | So when the sky turned purple, and the ground started glowing, and a voice said my name, | curious | |
 | I just went back to sleep. | playful | |
-| In this town, everything is completely normal. | warm | |
+| In this town, everything is completely normal. | warm | In this town, everything is completely... normal. |
 | Probably. | whisper | |
 
 ## ElevenLabs prompt
 
 ```
-[playfully] In this town, everything is completely normal. It rains. It gets sunny. [laughs softly] Sometimes, it gets cold.
+[playfully] In this town, everything is completely... [confused] [pause] normal. It rains. It gets sunny. [laughs softly] Sometimes, it gets cold.
 
 [dramatically] Until one day... the sky turned dark. [whispering] The birds went quiet. The streetlights flickered on, one by one. [dramatically] Everyone looked up. [laughs softly] It was just night time.
 
@@ -117,5 +117,5 @@ Animated in Blender from the exported Studio cast (no recording). Sets: **A. tow
 
 [playfully] By now, I'd stopped expecting anything. [curious] So when the sky turned purple, and the ground started glowing, and a voice said my name... [playfully] I just went back to sleep.
 
-[warmly] In this town, everything is completely normal. [whispering] Probably.
+[warmly] In this town, everything is completely... [confused] [pause] normal. [whispering] Probably.
 ```
