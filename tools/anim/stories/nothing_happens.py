@@ -78,7 +78,7 @@ def house(S, night=True):
     hx, hy = H
     out = {}
     wood = kit.mat("hwood", (0.55, 0.36, 0.22), rough=0.7)
-    wall = kit.mat("hwall", (0.55, 0.62, 0.85) if night else (0.72, 0.8, 0.98), rough=0.9)
+    wall = kit.mat("hwall", (0.4, 0.45, 0.62) if night else (0.72, 0.8, 0.98), rough=0.9)
     hall_wall = kit.mat("hhall", (0.85, 0.78, 0.6), rough=0.9)
     kit_wall = kit.mat("hkit", (0.95, 0.92, 0.85), rough=0.9)
     white = kit.mat("hwhite", (0.95, 0.95, 0.95), rough=0.6)
@@ -198,9 +198,9 @@ def house(S, night=True):
     # night lighting: moonlight through the window + cool fill
     if night:
         kit.spot((WIN[0] + 3, hy + 30, 16), (WIN[0], hy + 2, 1), (0.55, 0.65, 1.0), 9000, 30, 0.6, 0.6)
-        kit.point((hx, hy - 2, 9), (0.4, 0.5, 1.0), 120, 3.0)
-        kit.point((hx - 11, hy - 2, 9), (0.4, 0.5, 1.0), 60, 3.0)
-        kit.point((hx - 22, hy - 2, 9), (0.4, 0.5, 1.0), 60, 3.0)
+        kit.point((hx, hy - 2, 9), (0.75, 0.8, 1.0), 90, 3.0)
+        kit.point((hx - 11, hy - 2, 9), (0.5, 0.6, 1.0), 25, 3.0)
+        kit.point((hx - 22, hy - 2, 9), (0.5, 0.6, 1.0), 25, 3.0)
     else:
         for x in (hx, hx - 11, hx - 22):
             kit.point((x, hy - 2, 10), (1, 0.92, 0.8), 220, 3.0)
@@ -232,6 +232,7 @@ def flashlight(c, side="R", on_f=1, power=1500):
 
 def night_house():
     S = rblx.Stage(PACK, "night")
+    bpy.context.scene.world.node_tree.nodes["Background"].inputs[1].default_value = 0.75
     return S, house(S, True)
 
 
@@ -325,9 +326,13 @@ def darken_sky(S, f0, f1):
     w = bpy.context.scene.world
     bg = w.node_tree.nodes["Background"]
     sun = [o for o in bpy.data.objects if o.type == "LIGHT" and o.data.type == "SUN"][0]
+    cam_bg = w.node_tree.nodes.get("BACKDROP")
     for f, st, se in ((f0, 1.0, 3.2), (f1, 0.18, 0.35)):
         bg.inputs[1].default_value = st
         bg.inputs[1].keyframe_insert("default_value", frame=f)
+        if cam_bg:
+            cam_bg.inputs[1].default_value = 1.0 if st > 0.5 else 0.15
+            cam_bg.inputs[1].keyframe_insert("default_value", frame=f)
         sun.data.energy = se
         sun.data.keyframe_insert("energy", frame=f)
 

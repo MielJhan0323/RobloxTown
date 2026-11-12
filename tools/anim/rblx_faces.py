@@ -15,8 +15,8 @@ from PIL import Image, ImageDraw, ImageFilter
 SS = 4                      # supersampling
 W, H = 400, 448             # face square (same aspect as the atlas UV island)
 CX = 0.53                   # face centre (fraction of width), measured from the exported default face
-EYE_Y, MOUTH_Y = 0.29, 0.63
-EYE_DX = 0.085
+EYE_Y, MOUTH_Y = 0.30, 0.64
+EYE_DX = 0.11
 EXPR = ["smile", "neutral", "smirk", "worried", "sad", "shocked", "angry", "crying", "talk",
         "determined", "laugh", "embarrassed", "tired", "scared"]
 K = (12, 12, 14, 255)
@@ -28,7 +28,7 @@ def P(x, y):
 
 
 def eye(d, x, y, kind="normal"):
-    rx, ry = 0.028 * W * SS, 0.05 * H * SS
+    rx, ry = 0.042 * W * SS, 0.072 * H * SS
     cx, cy = P(x, y)
     if kind == "closed_happy":   # ^ ^
         d.arc([cx - rx * 1.4, cy - ry * 0.6, cx + rx * 1.4, cy + ry * 1.4], 200, 340, fill=K, width=int(9 * SS))
@@ -52,17 +52,17 @@ def eye(d, x, y, kind="normal"):
 
 def brow(d, x, y, tilt, side, lift=0.0):
     """tilt>0: inner end down (angry); tilt<0: inner end up (sad/worried)."""
-    cx, cy = P(x, y - 0.085 - lift)
-    w = 0.05 * W * SS
+    cx, cy = P(x, y - 0.11 - lift)
+    w = 0.07 * W * SS
     inner = 1 if side == "L" else -1   # inner end is toward the face centre
     dy = tilt * 0.03 * H * SS
-    d.line([cx - w * inner, cy - dy, cx + w * inner, cy + dy], fill=K, width=int(9 * SS))
+    d.line([cx - w * inner, cy - dy, cx + w * inner, cy + dy], fill=K, width=int(14 * SS))
 
 
 def mouth(d, kind):
     cx, cy = P(CX, MOUTH_Y)
-    w = 0.2 * W * SS
-    lw = int(8 * SS)
+    w = 0.27 * W * SS
+    lw = int(12 * SS)
     if kind == "smile":
         d.chord([cx - w, cy - w * 0.55, cx + w, cy + w * 0.45], 0, 180, fill=K)
         d.chord([cx - w * 0.82, cy - w * 0.45, cx + w * 0.82, cy + w * 0.1], 0, 180, fill=WHITE)

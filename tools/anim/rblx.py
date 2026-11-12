@@ -28,7 +28,7 @@ import kit
 R = math.radians
 ROOT = Path(__file__).resolve().parents[2]
 STEP = 15  # spacing of key poses (the render fills the in-betweens when ITT_STEP=2)
-WIDEN = 0.7  # every camera lens is multiplied by this: wider, reference-style medium framing
+WIDEN = 0.55  # every camera lens is multiplied by this: wider, reference-style medium framing
 
 
 def attach(obj, parent):
@@ -223,6 +223,38 @@ class Char:
                 cur = e
         return cur
 
+    def _reactions(self):
+        """Whole-body takes on face changes (like the reference): shocked/scared jolt back,
+        laugh bounces, angry leans in."""
+        def key_add(obj, idx, f, delta):
+            ad = obj.animation_data or obj.animation_data_create()
+            if not ad.action:
+                obj.keyframe_insert("rotation_euler", frame=1)
+            fc = ad.action.fcurves.find("rotation_euler", index=idx)
+            if fc is None:
+                obj.keyframe_insert("rotation_euler", index=idx, frame=1)
+                fc = ad.action.fcurves.find("rotation_euler", index=idx)
+            base = fc.evaluate(f)
+            fc.keyframe_points.insert(f, base + delta)
+        seen = set()
+        for t, e in sorted(self.tl, key=lambda x: x[0]):
+            if t <= 1 or (t, e) in seen or e.endswith("_blink"):
+                continue
+            seen.add((t, e))
+            if e in ("shocked", "scared"):
+                for dt, d_body, d_neck in ((0, 0, 0), (3, 0.16, 0.2), (12, 0.05, 0.08)):
+                    key_add(self.body, 0, t + dt, d_body)
+                    key_add(self.neck, 0, t + dt, d_neck)
+            elif e == "laugh":
+                for dt, d in ((0, 0), (4, -0.12), (8, 0.02), (12, -0.1), (16, 0)):
+                    key_add(self.body, 0, t + dt, d)
+            elif e == "angry":
+                for dt, d in ((0, 0), (5, -0.14), (14, -0.08)):
+                    key_add(self.body, 0, t + dt, d)
+            elif e == "sad":
+                key_add(self.neck, 0, t, 0)
+                key_add(self.neck, 0, t + 8, -0.18)
+
     def _bake_faces(self, frames=600, blink=True):
         tl = sorted(self.tl, key=lambda x: x[0])
         if blink and tl:
@@ -284,10 +316,26 @@ class Stage:
         self.faces = self.dir / "faces"
         kit.reset()
         sc = bpy.context.scene
+        # warm, punchy "cinematic Roblox" look like the reference
         sc.view_settings.view_transform = "Standard"
         sc.view_settings.look = "None"
         sc.view_settings.exposure = 0.0
-        sc.eevee.bloom_intensity = 0.04
+        # punchy colour like the reference: compositor saturation + contrast boost
+        sc.use_nodes = True
+        nt = sc.node_tree
+        rl, comp = nt.nodes.get("Render Layers"), nt.nodes.get("Composite")
+        if rl and comp:
+            hs = nt.nodes.new("CompositorNodeHueSat")
+            hs.inputs["Saturation"].default_value = 1.25
+            bc = nt.nodes.new("CompositorNodeBrightContrast")
+            bc.inputs["Contrast"].default_value = 8
+            nt.links.new(rl.outputs["Image"], hs.inputs["Image"])
+            nt.links.new(hs.outputs["Image"], bc.inputs["Image"])
+            nt.links.new(bc.outputs["Image"], comp.inputs["Image"])
+        sc.eevee.use_bloom = True
+        sc.eevee.bloom_intensity = 0.08
+        sc.eevee.bloom_threshold = 0.85
+        sc.eevee.use_gtao = True
         with bpy.data.libraries.load(str(self.dir / "assets.blend"), link=False) as (src, dst):
             dst.collections = [c for c in src.collections]
         for c in dst.collections:
@@ -361,12 +409,12 @@ class Stage:
     # -------------------------------------------------------------- world
     def light(self, kind):
         L = {
-            "day": dict(sky=(0.48, 0.68, 0.98), sky_e=1.0, sun=(55, 0, 30), sun_c=(1, 0.97, 0.9), sun_e=3.4),
-            "morning": dict(sky=(0.62, 0.75, 0.95), sky_e=0.95, sun=(62, 0, 120), sun_c=(1, 0.88, 0.7), sun_e=3.2),
+            "day": dict(sky=(0.48, 0.68, 0.98), sky_e=1.0, sun=(62, 0, 30), sun_c=(1, 0.88, 0.7), sun_e=3.6),
+            "morning": dict(sky=(0.62, 0.75, 0.95), sky_e=0.95, sun=(66, 0, 120), sun_c=(1, 0.82, 0.6), sun_e=3.4),
             "dusk": dict(sky=(0.55, 0.42, 0.55), sky_e=0.55, sun=(80, 0, -60), sun_c=(1, 0.55, 0.35), sun_e=2.2),
             "rain": dict(sky=(0.46, 0.5, 0.58), sky_e=0.75, sun=(40, 0, 20), sun_c=(0.8, 0.85, 0.95), sun_e=1.1),
             "sunset": dict(sky=(0.95, 0.62, 0.45), sky_e=0.8, sun=(75, 0, -50), sun_c=(1, 0.62, 0.35), sun_e=3.6),
-            "night": dict(sky=(0.06, 0.08, 0.2), sky_e=0.6, sun=(50, 0, 160), sun_c=(0.55, 0.65, 1.0), sun_e=0.7),
+            "night": dict(sky=(0.12, 0.16, 0.36), sky_e=1.3, sun=(50, 0, 160), sun_c=(0.6, 0.7, 1.0), sun_e=1.4),
             "dusty": dict(sky=(0.72, 0.66, 0.58), sky_e=0.8, sun=(50, 0, 40), sun_c=(1, 0.9, 0.75), sun_e=2.2),
         }[kind]
         w = bpy.data.worlds.new("w")
@@ -386,6 +434,22 @@ class Stage:
         ramp.color_ramp.elements[1].position = 0.6
         ramp.color_ramp.elements[1].color = (*[c * 0.75 for c in sky], 1)
         nt.links.new(ramp.outputs[0], bg.inputs[0])
+        # painted 360 backdrop (mountains + forest) seen only by the camera; lighting stays the gradient
+        bd = self.dir / "backdrops" / f"{kind}.png"
+        if bd.exists():
+            env = nt.nodes.new("ShaderNodeTexEnvironment")
+            env.image = bpy.data.images.load(str(bd), check_existing=True)
+            cam_bg = nt.nodes.new("ShaderNodeBackground")
+            cam_bg.name = "BACKDROP"
+            cam_bg.inputs[1].default_value = 1.0
+            nt.links.new(env.outputs["Color"], cam_bg.inputs[0])
+            lp = nt.nodes.new("ShaderNodeLightPath")
+            mix = nt.nodes.new("ShaderNodeMixShader")
+            out = nt.nodes["World Output"]
+            nt.links.new(lp.outputs["Is Camera Ray"], mix.inputs[0])
+            nt.links.new(bg.outputs[0], mix.inputs[1])
+            nt.links.new(cam_bg.outputs[0], mix.inputs[2])
+            nt.links.new(mix.outputs[0], out.inputs["Surface"])
         kit.sun(L["sun"], L["sun_c"], L["sun_e"], angle=4)
         self.kind = kind
 
@@ -436,6 +500,7 @@ class Stage:
             m.blend_type = "ADD"
         for c in self.chars.values():
             c._bake_faces()
+            c._reactions()
             seed = (hash(c.name) % 997) * 0.37
             talking = sum(1 for _, e in c.tl if e == "talk")
             if talking:  # chatty head bob + hand gestures while speaking
@@ -460,14 +525,14 @@ class Stage:
                 o.hide_render = True
 
     # -------------------------------------------------------------- camera
-    def cam(self, target, dist=8, yaw=0, height=None, lens=50, fstop=4.0, focus=None, roll=0):
+    def cam(self, target, dist=8, yaw=0, height=None, lens=50, fstop=2.4, focus=None, roll=0):
         c = kit.camera(tuple(target), dist=dist, yaw=yaw, height=height, lens=lens * WIDEN, fstop=fstop, focus=focus)
         c.data.clip_start = 0.05
         c.data.clip_end = 2000
         self.camera = c
         return c
 
-    def cam_at(self, loc, target, lens=50, fstop=4.0, focus=None):
+    def cam_at(self, loc, target, lens=50, fstop=2.4, focus=None):
         tgt = kit.empty(tuple(target), name="cam_target")
         d = bpy.data.cameras.new("cam")
         d.lens = lens * WIDEN
