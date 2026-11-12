@@ -815,18 +815,65 @@ def s36(k, F):  # In this town, everything is completely normal.
     return S
 
 
-def s37(k, F):  # Probably.
+def ufo(loc, scale=1.0):
+    """Classic flying saucer: silver disc, glowing dome, blinking rim lights, tractor beam (hidden by default)."""
+    root = kit.empty(loc, name="ufo")
+    silver = kit.mat("ufo_silver", (0.75, 0.78, 0.82), rough=0.25, metal=0.8)
+    disc = kit.sphere(4.5 * scale, loc, silver, scale=(1, 1, 0.24), seg=32)
+    rim = kit.torus(4.4 * scale, 0.35 * scale, loc, kit.mat("ufo_rim", (0.35, 0.36, 0.4), metal=0.7, rough=0.3))
+    dome = kit.sphere(1.9 * scale, (loc[0], loc[1], loc[2] + 0.7 * scale),
+                      kit.mat("ufo_dome", (0.45, 1.0, 0.8), emit=2.5, emit_color=(0.45, 1.0, 0.8), alpha=0.75),
+                      scale=(1, 1, 0.8), seg=24)
+    under = kit.cyl(1.6 * scale, 0.3, (loc[0], loc[1], loc[2] - 0.95 * scale),
+                    kit.mat("ufo_under", (0.6, 1.0, 0.7), emit=6, emit_color=(0.6, 1.0, 0.7)), verts=24)
+    parts = [disc, rim, dome, under]
+    lights = []
+    cols = [(1, 0.25, 0.3), (0.3, 1, 0.4), (0.3, 0.6, 1), (1, 0.85, 0.2)]
+    for k2 in range(10):
+        a = k2 / 10 * 2 * math.pi
+        lp = (loc[0] + math.cos(a) * 4.3 * scale, loc[1] + math.sin(a) * 4.3 * scale, loc[2] - 0.1 * scale)
+        m = kit.mat("ufo_led%d" % k2, cols[k2 % 4], emit=0.0001, emit_color=cols[k2 % 4])
+        o = kit.sphere(0.32 * scale, lp, m, seg=10)
+        parts.append(o)
+        lights.append(o)
+    beam = kit.cyl(1.4 * scale, 30 * scale, (loc[0], loc[1], loc[2] - 15.5 * scale),
+                   kit.mat("ufo_beam", (0.6, 1.0, 0.7), emit=1.6, emit_color=(0.6, 1.0, 0.7), alpha=0.22),
+                   verts=32, r2=0.0, caps=False, rot=(180, 0, 0))
+    beam.hide_render = True
+    parts.append(beam)
+    for o in parts:
+        attach(o, root)
+    return root, lights, beam
+
+
+def s37(k, F):  # Probably. - a UFO drifts over town at sunset
     S = rblx.Stage(PACK, "sunset")
-    for k2 in range(3):
-        o = kit.sphere(1.2, (-20 + k2 * 6, -3400, 60 + k2 * 3), kit.mat("ufo%d" % k2, (0.7, 0.4, 1.0), emit=0.0001,
-                                                                         emit_color=(0.7, 0.4, 1.0)))
+    L0 = V((-30, -3490, 26))
+    root, lights, beam = ufo(tuple(L0), scale=2.2)
+    # swoop in from the left, slow down, hover with a wobble (keys are absolute positions)
+    kit.key(root, 1, loc=tuple(L0), rot=(0, 8, 0))
+    kit.key(root, kf(F * 0.45), loc=tuple(L0 + V((28, 0, -6))), rot=(0, -4, 0))
+    f = kf(F * 0.45)
+    j = 0
+    while f <= F + 10:
+        kit.key(root, f, loc=tuple(L0 + V((28 + j * 0.3, 0, -6 + (0.4 if j % 2 else -0.2)))), rot=(3 if j % 2 else -3, 0, 0))
+        f += 10
+        j += 1
+    root.rotation_mode = "XYZ"
+    for i2, o in enumerate(lights):   # chasing rim lights
         sock = o.active_material.node_tree.nodes["Principled BSDF"].inputs["Emission Strength"]
-        for j, f in enumerate(range(1 + k2 * 3, F + 2, 9)):
-            sock.default_value = 25 if j % 2 == 0 else 0.5
-            sock.keyframe_insert("default_value", frame=f)
-        kit.key(o, 1, loc=tuple(o.location))
-        kit.key(o, F, loc=(o.location.x + 8, o.location.y, o.location.z + 2))
-    S.cam_at(V((0, -3560, 3)), V((-10, -3400, 55)), lens=30, fstop=None)
+        for f2 in range(1, F + 12, 3):
+            on = ((f2 // 3) % 10) == i2 or ((f2 // 3 + 5) % 10) == i2
+            sock.default_value = 30 if on else 4
+            sock.keyframe_insert("default_value", frame=f2)
+    S.show(beam, 1, False)
+    S.show(beam, kf(F * 0.6), True)
+    kit.point((-2, -3450, 20), (0.5, 1.0, 0.6), 0, 6.0).data.keyframe_insert("energy", frame=1)
+    glow = kit.point((-2, -3450, 4), (0.5, 1.0, 0.7), 0, 8.0)
+    glow.data.keyframe_insert("energy", frame=kf(F * 0.6) - 1)
+    glow.data.energy = 30000
+    glow.data.keyframe_insert("energy", frame=kf(F * 0.6))
+    S.cam_at(V((4, -3540, 3)), V((-2, -3490, 18)), lens=26, fstop=None)
     return S
 
 
