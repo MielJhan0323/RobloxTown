@@ -1,68 +1,79 @@
-# Five Seconds
+# The Last Pickle
 
 Rule: In this town, everyone gets one gift.
 Music: Numbers
 Voice: ElevenLabs Titan (dtSEyYGNJqjrtBArPCVZ), eleven_v4, emotion tags below, voice_fx +5.5 st
 
-Tone: sweet first-crush story between two boys (kept innocent: blushing, sitting together, a promise) that turns sad.
-The accident is never shown - headlights, then the empty bench. No real brand names or logos on screen.
+Tone: the narrator is flawed but sympathetic: teased for always being with Rio, he wants Rio's gift to fit in (peer
+pressure from the other kids and Kai). Rio's gift - feeling when something is about to end - is WHY he stays with the
+narrator ('I can feel when things end. And this hasn't.'). Feelings are shown, never said. The accident is never shown.
 
 ## Narration
 
-In this town, everyone gets one gift. Some kids can talk to dogs. Some can find anything you lose. My gift? I could whistle really loud.
+In this town, everyone gets one gift. Some kids can talk to dogs. Some can find anything you lose. Mine? My toast always lands butter side up. Nobody claps for that.
 
-Rio's gift was the best one. He could see five seconds into the future. He never dropped a plate. He never lost at tag. He always knew when I was about to laugh. I think I liked him before I knew what that meant.
+Rio's gift was different. He could feel when something was about to end. The last day of summer. The last bite of a burger. The second before a glass tips over.
 
-Every afternoon, we sat on the bench by the burger stand. He always got a double cheeseburger, extra pickles.
+Rio and I were always together. At lunch. On our bench. He always saved me the last pickle.
 
-Then, on my birthday, Rio gave me his gift. "Just promise you'll spend every minute with me," he said. I promised.
+Kids started laughing at us. "Are you two married?" "Toast Boy and his shadow." Kai said, "With Rio's gift, you'd actually be somebody."
 
-With his gift, I won every game. Every race. Everyone wanted to be my friend. The bench got lonely. Rio kept saving me a seat. I kept saying, "Tomorrow."
+So I asked Rio for it. He looked at me for a long time. "Why do you think I'm always with you?" he said. "I can feel when things end. And this hasn't." Then he gave it to me anyway. "Just promise you'll spend every minute with me." I said yes before he finished.
 
-Then, one afternoon, Rio crossed the street to buy our burgers. I saw it five seconds before it happened. But I was all the way across town. And Rio couldn't see it at all.
+With his gift, I knew when every game would end. When to jump. When to leave. Nobody laughed at me anymore. I stopped sitting on our bench. Every day, I said, "Tomorrow."
 
-He gave away the one thing that could have saved him.
+Then, one afternoon, I felt it. A tug, like the last page of a book. It came from our bench. I ran. But Rio didn't feel the car coming. He'd given that away.
 
-Now, every afternoon, I sit on our bench with two burgers. Extra pickles. And I keep my promise. Every minute.
+Now I spend every afternoon on our bench. I leave room on the left. I save him the last pickle. Every minute I promised. Just late.
 
 ## Shot list
 
-Animated in Blender from the exported Studio cast. Rio = Crowd3 (blue spiky hair). Sets: **A. town street** (reused,
-+ bench and burger stand built in Blender), **B. canteen** (reused), **C. school playground** (reused).
+Animated in Blender from the exported Studio cast. Rio = Crowd3 (blue hair). Sets: street (+ bench, burger stand),
+canteen, playground, house kitchen - all reused.
 
 | # | Narration | Location | Characters | Pose / expression | Camera | Props | Mood | FX | SFX | Sec |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | In this town, | A street, golden afternoon | kids walking | smile | wide, push-in | - | warm | - | - | 1.0 |
-| 2 | everyone gets one gift. | A street | kids, sparkles on their hands | smile | medium | sparkles | warm | sparkle | shimmer | 1.4 |
-| 3 | Some kids can talk to dogs. | A street | Prey1 + dog | laugh | medium | dog | warm | - | - | 1.6 |
-| 4 | Some can find anything you lose. | A street | Crowd1 holding up keys | smile | medium | keys | warm | - | pop | 1.6 |
-| 5 | My gift? I could whistle really loud. | A street | Narrator whistling, kids cover ears | smirk | medium | - | warm | - | boom | 2.0 |
-| 6 | Rio's gift was the best one. | A street | Rio (Crowd3) | smile | medium | glow in eyes | warm | sparkle | shimmer | 1.4 |
-| 7 | He could see five seconds into the future. | A street | Rio, golden glow | determined | close | glow | warm | - | riser | 2.0 |
-| 8 | He never dropped a plate. | B canteen | Rio catches a falling tray | smile | medium | tray | warm | - | - | 1.4 |
-| 9 | He never lost at tag. | C playground | Rio dodges, kids miss | laugh | wide | - | warm | - | - | 1.2 |
-| 10 | He always knew when I was about to laugh. | A bench | Rio + Narrator | laugh | medium | - | warm | - | - | 1.8 |
-| 11 | I think I liked him before I knew what that meant. | A bench | Narrator looking at Rio | embarrassed | close | - | warm | - | - | 2.2 |
-| 12 | Every afternoon, we sat on the bench by the burger stand. | A bench + burger stand | both | smile | wide | burger stand | warm | fog | - | 2.4 |
-| 13 | He always got a double cheeseburger, extra pickles. | A bench | Rio eating | laugh | close | burger | warm | - | - | 2.2 |
-| 14 | Then, on my birthday, Rio gave me his gift. | A bench | Rio hands a glowing light | smile | medium | glow orb | warm | fog | whoosh | 2.2 |
-| 15 | "Just promise you'll spend every minute with me," | A bench | Rio | smile, talk | close | - | warm | - | - | 2.0 |
-| 16 | he said. I promised. | A bench | Narrator | smile | close | glow on his hands | warm | - | shimmer | 1.4 |
-| 17 | With his gift, I won every game. | C playground | Narrator wins, kids cheer | laugh | wide | - | warm | - | boom | 1.6 |
-| 18 | Every race. | C playground | Narrator running ahead | laugh | medium | - | warm | - | - | 0.9 |
-| 19 | Everyone wanted to be my friend. | C playground | crowd around Narrator | laugh | medium | - | warm | - | - | 1.6 |
-| 20 | The bench got lonely. | A bench | Rio alone | sad | wide | two burgers | cool | - | - | 1.4 |
-| 21 | Rio kept saving me a seat. | A bench | Rio pats empty seat | sad | medium | - | cool | - | - | 1.6 |
-| 22 | I kept saying, "Tomorrow." | C playground | Narrator waving him off | smile | medium | - | cool | - | - | 1.6 |
-| 23 | Then, one afternoon, Rio crossed the street to buy our burgers. | A street | Rio walking | smile | wide | - | cool | fog | - | 2.8 |
-| 24 | I saw it five seconds before it happened. | C playground | Narrator, eyes glow, freezes | shocked | close, punch | glow | cool | flash | impact | 2.0 |
-| 25 | But I was all the way across town. | C playground | Narrator running | scared | wide | - | cool | - | heartbeat | 1.6 |
-| 26 | And Rio couldn't see it at all. | A street | headlights on Rio (no impact shown) | - | wide | headlights | night | - | - | 1.8 |
-| 27 | He gave away the one thing that could have saved him. | A bench, rain | empty bench | - | wide | rain | rain | fog | - | 2.6 |
-| 28 | Now, every afternoon, I sit on our bench with two burgers. | A bench, sunset | Narrator alone | sad | medium | two burgers | warm | fog | - | 2.6 |
-| 29 | Extra pickles. | A bench | burger close | - | close | burger | warm | - | - | 1.0 |
-| 30 | And I keep my promise. | A bench | Narrator | crying | close | - | warm | - | - | 1.4 |
-| 31 | Every minute. | A bench | Narrator + empty seat | sad | wide, pull-out | - | warm | - | shimmer | 1.8 |
+| 1 | In this town, | street, golden afternoon | kids walking | smile | wide | - | warm | - | - | 1.0 |
+| 2 | everyone gets one gift. | street | kids, sparkles | smile | medium | sparkles | warm | sparkle | shimmer | 1.4 |
+| 3 | Some kids can talk to dogs. | street | Prey1 + dog | laugh | medium | dog | warm | - | - | 1.6 |
+| 4 | Some can find anything you lose. | street | Crowd1 holding keys | smile | medium | keys | warm | - | pop | 1.6 |
+| 5 | Mine? My toast always lands butter side up. | house kitchen | Narrator, toast falls | tired | medium | toast | warm | - | pop | 2.4 |
+| 6 | Nobody claps for that. | house kitchen | Narrator alone | sad | medium | - | warm | - | boom | 1.4 |
+| 7 | Rio's gift was different. | street, sunset | Rio | smile | medium | sparkles | warm | sparkle | shimmer | 1.4 |
+| 8 | He could feel when something was about to end. | street | Rio, soft glow | neutral | close | glow | warm | - | riser | 2.2 |
+| 9 | The last day of summer. | street, sunset | Rio watching the sun | smile | wide | sun | warm | - | - | 1.4 |
+| 10 | The last bite of a burger. | bench | Rio with burger | smile | close | burger | warm | - | - | 1.4 |
+| 11 | The second before a glass tips over. | canteen | Rio catches a tipping cup | smirk | close | cup | warm | - | pop | 1.8 |
+| 12 | Rio and I were always together. | bench | both | laugh | wide | - | warm | - | - | 1.6 |
+| 13 | At lunch. | canteen trash corner | both at the little table | smile | medium | - | warm | - | - | 0.8 |
+| 14 | On our bench. | bench | both | smile | medium | - | warm | - | - | 0.8 |
+| 15 | He always saved me the last pickle. | bench | Rio hands a pickle | smile | close | pickle | warm | - | - | 1.8 |
+| 16 | Kids started laughing at us. | canteen | kids pointing and laughing | laugh | wide | - | warm | - | - | 1.6 |
+| 17 | "Are you two married?" | canteen | Crowd1 teasing | laugh, talk | close | - | warm | - | boom | 1.2 |
+| 18 | "Toast Boy and his shadow." | canteen | Crowd2 teasing | smirk, talk | close | - | warm | - | - | 1.4 |
+| 19 | Kai said, "With Rio's gift, you'd actually be somebody." | playground | Kai leaning in to Narrator | smirk, talk | medium | - | warm | - | - | 2.6 |
+| 20 | So I asked Rio for it. | bench | Narrator talking | worried | medium | - | warm | fog | - | 1.2 |
+| 21 | He looked at me for a long time. | bench | Rio | neutral | close | - | warm | - | - | 1.6 |
+| 22 | "Why do you think I'm always with you?" he said. | bench | Rio | sad, talk | close | - | warm | - | - | 2.2 |
+| 23 | "I can feel when things end. And this hasn't." | bench | Rio | smile, talk | close | - | warm | - | - | 2.4 |
+| 24 | Then he gave it to me anyway. | bench | Rio hands a glowing orb | smile | medium | glow orb | warm | - | shimmer | 1.6 |
+| 25 | "Just promise you'll spend every minute with me." | bench | Rio | smile, talk | close | - | warm | - | - | 2.0 |
+| 26 | I said yes before he finished. | bench | Narrator nodding | laugh | close | orb | warm | - | - | 1.4 |
+| 27 | With his gift, I knew when every game would end. | playground | Narrator, eye glow | smirk | medium | - | warm | - | - | 2.2 |
+| 28 | When to jump. When to leave. | playground | Narrator jumps, walks off | smirk | wide | - | warm | - | - | 1.4 |
+| 29 | Nobody laughed at me anymore. | playground | crowd cheering | laugh | wide | - | warm | - | boom | 1.4 |
+| 30 | I stopped sitting on our bench. | bench, dusk | Rio alone | sad | wide | two burgers | cool | - | - | 1.4 |
+| 31 | Every day, I said, "Tomorrow." | playground | Narrator waving him off | smile | medium | - | cool | - | - | 1.6 |
+| 32 | Then, one afternoon, I felt it. | playground, dusk | Narrator freezes, eye glow | shocked | close, punch | glow | cool | fog | impact | 1.6 |
+| 33 | A tug, like the last page of a book. | playground | hand on chest | scared | close | - | cool | - | heartbeat | 1.8 |
+| 34 | It came from our bench. | bench, dusk | Rio crossing toward the stand | - | wide | - | cool | - | - | 1.2 |
+| 35 | I ran. | playground | Narrator running | scared | wide | - | cool | - | - | 0.6 |
+| 36 | But Rio didn't feel the car coming. | street, night | headlights on Rio (nothing shown) | smile | wide | headlights | night | - | - | 1.6 |
+| 37 | He'd given that away. | bench, rain | empty bench | - | wide | rain | rain | fog | rain | 1.4 |
+| 38 | Now I spend every afternoon on our bench. | bench, sunset | Narrator alone | sad | medium | - | warm | fog | - | 2.0 |
+| 39 | I leave room on the left. | bench | Narrator + empty space | sad | wide | - | warm | - | - | 1.2 |
+| 40 | I save him the last pickle. | bench | pickle on a napkin | - | close | pickle | warm | - | - | 1.2 |
+| 41 | Every minute I promised. Just late. | bench | Narrator | crying | close | - | warm | - | shimmer | 2.4 |
 
 ## Delivery
 
@@ -70,42 +81,46 @@ Animated in Blender from the exported Studio cast. Rio = Crowd3 (blue spiky hair
 |---|---|---|
 | In this town, everyone gets one gift. | warm | |
 | Some kids can talk to dogs. Some can find anything you lose. | funny | |
-| My gift? I could whistle really loud. | funny | |
-| Rio's gift was the best one. He could see five seconds into the future. | curious | |
-| He never dropped a plate. He never lost at tag. | playful | |
-| He always knew when I was about to laugh. | warm | |
-| I think I liked him before I knew what that meant. | soft | |
-| Every afternoon, we sat on the bench by the burger stand. | warm | |
-| He always got a double cheeseburger, extra pickles. | warm | |
-| Then, on my birthday, Rio gave me his gift. | soft | |
-| "Just promise you'll spend every minute with me," he said. | warm | |
-| I promised. | soft | |
-| With his gift, I won every game. Every race. Everyone wanted to be my friend. | excited | |
-| The bench got lonely. Rio kept saving me a seat. I kept saying, "Tomorrow." | sad | |
-| Then, one afternoon, Rio crossed the street to buy our burgers. | soft | |
-| I saw it five seconds before it happened. | dramatic | |
-| But I was all the way across town. And Rio couldn't see it at all. | emotional | |
-| He gave away the one thing that could have saved him. | sad | |
-| Now, every afternoon, I sit on our bench with two burgers. Extra pickles. | emotional | |
-| And I keep my promise. | soft | |
-| Every minute. | whisper | |
+| Mine? My toast always lands butter side up. | funny | |
+| Nobody claps for that. | sad | |
+| Rio's gift was different. | curious | |
+| He could feel when something was about to end. | soft | |
+| The last day of summer. The last bite of a burger. The second before a glass tips over. | soft | |
+| Rio and I were always together. At lunch. On our bench. He always saved me the last pickle. | warm | |
+| Kids started laughing at us. | sad | |
+| "Are you two married?" "Toast Boy and his shadow." | funny | |
+| Kai said, "With Rio's gift, you'd actually be somebody." | dramatic | |
+| So I asked Rio for it. He looked at me for a long time. | soft | |
+| "Why do you think I'm always with you?" he said. | sad | |
+| "I can feel when things end. And this hasn't." | soft | |
+| Then he gave it to me anyway. "Just promise you'll spend every minute with me." | warm | |
+| I said yes before he finished. | funny | |
+| With his gift, I knew when every game would end. When to jump. When to leave. Nobody laughed at me anymore. | excited | |
+| I stopped sitting on our bench. Every day, I said, "Tomorrow." | sad | |
+| Then, one afternoon, I felt it. | soft | |
+| A tug, like the last page of a book. It came from our bench. | dramatic | |
+| I ran. But Rio didn't feel the car coming. | emotional | |
+| He'd given that away. | sad | |
+| Now I spend every afternoon on our bench. I leave room on the left. I save him the last pickle. | emotional | |
+| Every minute I promised. | soft | |
+| Just late. | whisper | |
 
 ## ElevenLabs prompt
 
 ```
-[warmly] In this town, everyone gets one gift. [playfully] Some kids can talk to dogs. Some can find anything you lose. [laughs softly] My gift? I could whistle really loud.
+[warmly] In this town, everyone gets one gift. [playfully] Some kids can talk to dogs. Some can find anything you lose. [laughs softly] Mine? My toast always lands butter side up. [sadly] Nobody claps for that.
 
-[curious] Rio's gift was the best one. He could see five seconds into the future. [playfully] He never dropped a plate. He never lost at tag. [warmly] He always knew when I was about to laugh. [softly] I think I liked him before I knew what that meant.
+[curious] Rio's gift was different. [softly] He could feel when something was about to end. The last day of summer. The last bite of a burger. The second before a glass tips over.
 
-[warmly] Every afternoon, we sat on the bench by the burger stand. He always got a double cheeseburger, extra pickles.
+[warmly] Rio and I were always together. At lunch. On our bench. He always saved me the last pickle.
 
-[softly] Then, on my birthday, Rio gave me his gift. [warmly] "Just promise you'll spend every minute with me," he said. [softly] I promised.
+[sadly] Kids started laughing at us. [playfully] "Are you two married?" "Toast Boy and his shadow." [dramatically] Kai said, "With Rio's gift, you'd actually be somebody."
 
-[excited] With his gift, I won every game. Every race. Everyone wanted to be my friend. [sadly] The bench got lonely. Rio kept saving me a seat. I kept saying, "Tomorrow."
+[softly] So I asked Rio for it. He looked at me for a long time. [sadly] "Why do you think I'm always with you?" he said. [softly] "I can feel when things end. And this hasn't." [warmly] Then he gave it to me anyway. "Just promise you'll spend every minute with me." [laughs softly] I said yes before he finished.
 
-[softly] Then, one afternoon, Rio crossed the street to buy our burgers. [dramatically] I saw it five seconds before it happened. [emotional] But I was all the way across town. And Rio couldn't see it at all.
+[excited] With his gift, I knew when every game would end. When to jump. When to leave. Nobody laughed at me anymore. [sadly] I stopped sitting on our bench. Every day, I said, "Tomorrow."
 
-[sadly] He gave away the one thing that could have saved him.
+[softly] Then, one afternoon, I felt it. [dramatically] A tug, like the last page of a book. It came from our bench. [emotional] I ran. But Rio didn't feel the car coming. [sadly] He'd given that away.
 
-[emotional] Now, every afternoon, I sit on our bench with two burgers. Extra pickles. [softly] And I keep my promise. [whispering] Every minute.
+[emotional] Now I spend every afternoon on our bench. I leave room on the left. I save him the last pickle. [softly] Every minute I promised. [whispering] Just late.
 ```
