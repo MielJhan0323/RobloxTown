@@ -37,49 +37,57 @@ Now I spend every afternoon on our bench. I leave room on the left. I save him t
 Animated in Blender from the exported Studio cast. Rio = Crowd3 (blue hair). Sets: street (+ bench, burger stand),
 canteen, playground, house kitchen - all reused.
 
-| # | Narration | Location | Characters | Pose / expression | Camera | Props | Mood | FX | SFX | Sec |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | In this town, | street, golden afternoon | kids walking | smile | wide | - | warm | - | - | 1.0 |
-| 2 | everyone gets one gift. | street | kids, sparkles | smile | medium | sparkles | warm | sparkle | shimmer | 1.4 |
-| 3 | Some kids can talk to dogs. | street | Prey1 + dog | laugh | medium | dog | warm | - | - | 1.6 |
-| 4 | Some can find anything you lose. | street | Crowd1 holding keys | smile | medium | keys | warm | - | pop | 1.6 |
-| 5 | Mine? My toast always lands butter side up. | house kitchen | Narrator, toast falls | tired | medium | toast | warm | - | pop | 2.4 |
-| 6 | Nobody claps for that. | house kitchen | Narrator alone | sad | medium | - | warm | - | boom | 1.4 |
-| 7 | Rio's gift was different. | street, sunset | Rio | smile | medium | sparkles | warm | sparkle | shimmer | 1.4 |
-| 8 | He could feel when something was about to end. | street | Rio, soft glow | neutral | close | glow | warm | - | riser | 2.2 |
-| 9 | The last day of summer. | street, sunset | Rio watching the sun | smile | wide | sun | warm | - | - | 1.4 |
-| 10 | The last bite of a burger. | bench | Rio with burger | smile | close | burger | warm | - | - | 1.4 |
-| 11 | The second before a glass tips over. | canteen | Rio catches a tipping cup | smirk | close | cup | warm | - | pop | 1.8 |
-| 12 | Rio and I were always together. | bench | both | laugh | wide | - | warm | - | - | 1.6 |
-| 13 | At lunch. | canteen trash corner | both at the little table | smile | medium | - | warm | - | - | 0.8 |
-| 14 | On our bench. | bench | both | smile | medium | - | warm | - | - | 0.8 |
-| 15 | He always saved me the last pickle. | bench | Rio hands a pickle | smile | close | pickle | warm | - | - | 1.8 |
-| 16 | Kids started laughing at us. | canteen | kids pointing and laughing | laugh | wide | - | warm | - | - | 1.6 |
-| 17 | "Are you two married?" | canteen | Crowd1 teasing | laugh, talk | close | - | warm | - | boom | 1.2 |
-| 18 | "Toast Boy and his shadow." | canteen | Crowd2 teasing | smirk, talk | close | - | warm | - | - | 1.4 |
-| 19 | Kai said, "With Rio's gift, you'd actually be somebody." | playground | Kai leaning in to Narrator | smirk, talk | medium | - | warm | - | - | 2.6 |
-| 20 | So I asked Rio for it. | bench | Narrator talking | worried | medium | - | warm | fog | - | 1.2 |
-| 21 | He looked at me for a long time. | bench | Rio | neutral | close | - | warm | - | - | 1.6 |
-| 22 | "Why do you think I'm always with you?" he said. | bench | Rio | sad, talk | close | - | warm | - | - | 2.2 |
-| 23 | "I can feel when things end. And this hasn't." | bench | Rio | smile, talk | close | - | warm | - | - | 2.4 |
-| 24 | Then he gave it to me anyway. | bench | Rio hands a glowing orb | smile | medium | glow orb | warm | - | shimmer | 1.6 |
-| 25 | "Just promise you'll spend every minute with me." | bench | Rio | smile, talk | close | - | warm | - | - | 2.0 |
-| 26 | I said yes before he finished. | bench | Narrator nodding | laugh | close | orb | warm | - | - | 1.4 |
-| 27 | With his gift, I knew when every game would end. | playground | Narrator, eye glow | smirk | medium | - | warm | - | - | 2.2 |
-| 28 | When to jump. When to leave. | playground | Narrator jumps, walks off | smirk | wide | - | warm | - | - | 1.4 |
-| 29 | Nobody laughed at me anymore. | playground | crowd cheering | laugh | wide | - | warm | - | boom | 1.4 |
-| 30 | I stopped sitting on our bench. | bench, dusk | Rio alone | sad | wide | two burgers | cool | - | - | 1.4 |
-| 31 | Every day, I said, "Tomorrow." | playground | Narrator waving him off | smile | medium | - | cool | - | - | 1.6 |
-| 32 | Then, one afternoon, I felt it. | playground, dusk | Narrator freezes, eye glow | shocked | close, punch | glow | cool | fog | impact | 1.6 |
-| 33 | A tug, like the last page of a book. | playground | hand on chest | scared | close | - | cool | - | heartbeat | 1.8 |
-| 34 | It came from our bench. | bench, dusk | Rio crossing toward the stand | - | wide | - | cool | - | - | 1.2 |
-| 35 | I ran. | playground | Narrator running | scared | wide | - | cool | - | - | 0.6 |
-| 36 | But Rio didn't feel the car coming. | street, night | headlights on Rio (nothing shown) | smile | wide | headlights | night | - | - | 1.6 |
-| 37 | He'd given that away. | bench, rain | empty bench | - | wide | rain | rain | fog | rain | 1.4 |
-| 38 | Now I spend every afternoon on our bench. | bench, sunset | Narrator alone | sad | medium | - | warm | fog | - | 2.0 |
-| 39 | I leave room on the left. | bench | Narrator + empty space | sad | wide | - | warm | - | - | 1.2 |
-| 40 | I save him the last pickle. | bench | pickle on a napkin | - | close | pickle | warm | - | - | 1.2 |
-| 41 | Every minute I promised. Just late. | bench | Narrator | crying | close | - | warm | - | shimmer | 2.4 |
+| # | Narration | Location | Characters / action | Sec |
+|---|---|---|---|---|
+| 1 | In this town, | street | kids walking | 1.6 |
+| 2 | everyone gets one gift. | street | sparkles | 1.6 |
+| 3 | Some kids can talk to dogs. | street | dog | 1.6 |
+| 4 | Some can fly a little. | street | Crowd1 hovering | 1.6 |
+| 5 | Mine? I'm super strong, for one second. | playground | Narrator lifts a trash can | 1.6 |
+| 6 | Then it's gone. | playground | the can drops on him | 1.6 |
+| 7 | Nobody claps for that. | playground | kids walk past | 1.6 |
+| 8 | You can give your gift away, but only once. | street | glowing gift passed between hands | 1.6 |
+| 9 | Most people only do it at the very end, to their kids. | house bedroom, night | a soft glow over a bed (nothing else shown) | 1.6 |
+| 10 | Rio's gift wasn't much better. | street | Rio | 1.6 |
+| 11 | He could sense danger. | street | Rio, eyes glow | 1.6 |
+| 12 | That's it. He couldn't stop it. He just felt it coming. | playground | ball hits another kid, Rio flinches | 1.6 |
+| 13 | Kids called him a scaredy cat. | playground | kids laughing at Rio | 1.6 |
+| 14 | Rio and I were always together. | bench | both | 1.6 |
+| 15 | At lunch. | canteen corner | both | 1.6 |
+| 16 | On our bench. | bench | both | 1.6 |
+| 17 | He always saved me the last pickle. | bench | Rio hands a pickle | 1.6 |
+| 18 | Then the jokes started. | canteen | kids pointing | 1.6 |
+| 19 | "Are you two married?" | canteen | Crowd1 teasing | 1.6 |
+| 20 | "Scaredy cat and his bodyguard." | canteen | Crowd2 teasing | 1.6 |
+| 21 | They laughed in the halls. They laughed at lunch. | playground | circle of kids laughing | 1.6 |
+| 22 | Kai said, "Two useless gifts. Perfect match." | playground | Kai leaning in | 1.6 |
+| 23 | One day, I'd had enough. | playground | Narrator angry | 1.6 |
+| 24 | I knew our gifts would fit together. I asked Rio for his. | bench | Narrator asks | 1.6 |
+| 25 | "I'll keep you safe," I said. "Every minute. I promise." | bench | Narrator | 1.6 |
+| 26 | Rio looked at me for a long time. | bench | Rio | 1.6 |
+| 27 | "Why do you think I'm always with you?" he said. | bench | Rio | 1.6 |
+| 28 | "Nothing feels dangerous when you're here." | bench | Rio | 1.6 |
+| 29 | Then he gave it to me anyway. | bench | glowing orb | 1.6 |
+| 30 | Alone, our gifts were nothing. | bench | orb fades into his hands | 1.6 |
+| 31 | Together, I always knew the exact second to be strong. | playground | Narrator lifts the can, eyes glow | 1.6 |
+| 32 | I won every game. Every race. | playground | race | 1.6 |
+| 33 | Even Kai couldn't touch me. | playground | Kai swings, falls | 1.6 |
+| 34 | Everyone wanted to sit with me now. | canteen | Narrator at the popular table | 1.6 |
+| 35 | Without his gift, Rio was just a regular kid. | street | Rio walking | 1.6 |
+| 36 | He got caught in the rain. | street | Rio in rain | 1.6 |
+| 37 | He tripped on the stairs. | playground | Rio trips | 1.6 |
+| 38 | He never saw the ball coming. | playground | ball bonks Rio | 1.6 |
+| 39 | He just laughed it off. | playground | Rio laughing | 1.6 |
+| 40 | I stopped sitting on our bench. Rio didn't. | bench, dusk | Rio alone | 1.6 |
+| 41 | He waited after school. He waited until the streetlights came on. | bench, night | Rio alone, lamps on | 1.6 |
+| 42 | He saved me the last pickle, every day. | bench | pickle close | 1.6 |
+| 43 | And every day, I said, "Tomorrow." | playground | Narrator waving him off | 1.6 |
+| 44 | Then, one afternoon, I felt danger. It came from our bench. | playground, dusk | Narrator freezes | 1.6 |
+| 45 | Rio didn't sense the car coming. He'd given that away. | street, night | headlights - hard cut, nothing shown | 1.6 |
+| 46 | Now I spend every afternoon on our bench. | bench, sunset | Narrator alone | 1.6 |
+| 47 | I leave room on the left. | bench | empty space | 1.6 |
+| 48 | I save him the last pickle. | bench | pickle close | 1.6 |
+| 49 | I promised I'd keep him safe. Every minute. Just late. | bench | Narrator crying | 1.6 |
 
 ## Delivery
 

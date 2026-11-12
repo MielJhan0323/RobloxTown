@@ -3,7 +3,7 @@
   "title": "The Last Pickle",
   "timing": "estimated",
   "voice": null,
-  "duration": 95.49,
+  "duration": 130.251,
   "shots": [
     {
       "n": 1,
@@ -14,8 +14,8 @@
       "src_dur": null,
       "motion": "push_in",
       "transition": "cut",
-      "grade": "warm",
-      "placeholder": "street, golden afternoon | kids walking | smile | wide",
+      "grade": "neutral",
+      "placeholder": "street | kids walking | 1.6",
       "override": {},
       "dur": 1.363
     },
@@ -27,9 +27,9 @@
       "src": null,
       "src_dur": null,
       "motion": "push_in",
-      "transition": "sparkle",
-      "grade": "warm",
-      "placeholder": "street | kids, sparkles | smile | medium | sparkles",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "street | sparkles | 1.6",
       "override": {},
       "dur": 1.702
     },
@@ -42,542 +42,654 @@
       "src_dur": null,
       "motion": "push_in",
       "transition": "cut",
-      "grade": "warm",
-      "placeholder": "street | Prey1 + dog | laugh | medium | dog",
+      "grade": "neutral",
+      "placeholder": "street | dog | 1.6",
       "override": {},
       "dur": 2.205
     },
     {
       "n": 4,
-      "text": "Some can find anything you lose.",
+      "text": "Some can fly a little.",
       "start": 5.27,
-      "end": 7.624,
+      "end": 7.135,
       "src": null,
       "src_dur": null,
       "motion": "push_in",
       "transition": "cut",
-      "grade": "warm",
-      "placeholder": "street | Crowd1 holding keys | smile | medium | keys",
+      "grade": "neutral",
+      "placeholder": "street | Crowd1 hovering | 1.6",
       "override": {},
-      "dur": 2.354
+      "dur": 1.865
     },
     {
       "n": 5,
-      "text": "Mine? My toast always lands butter side up.",
-      "start": 7.624,
-      "end": 10.909,
+      "text": "Mine? I'm super strong, for one second.",
+      "start": 7.135,
+      "end": 10.18,
       "src": null,
       "src_dur": null,
       "motion": "push_in",
       "transition": "cut",
-      "grade": "warm",
-      "placeholder": "house kitchen | Narrator, toast falls | tired | medium | toast",
+      "grade": "neutral",
+      "placeholder": "playground | Narrator lifts a trash can | 1.6",
       "override": {},
-      "dur": 3.285
+      "dur": 3.045
     },
     {
       "n": 6,
-      "text": "Nobody claps for that.",
-      "start": 10.909,
-      "end": 12.581,
+      "text": "Then it's gone.",
+      "start": 10.18,
+      "end": 11.452,
       "src": null,
       "src_dur": null,
       "motion": "push_in",
       "transition": "cut",
-      "grade": "warm",
-      "placeholder": "house kitchen | Narrator alone | sad | medium",
+      "grade": "neutral",
+      "placeholder": "playground | the can drops on him | 1.6",
+      "override": {},
+      "dur": 1.272
+    },
+    {
+      "n": 7,
+      "text": "Nobody claps for that.",
+      "start": 11.452,
+      "end": 13.124,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "playground | kids walk past | 1.6",
       "override": {},
       "dur": 1.672
     },
     {
-      "n": 7,
-      "text": "Rio's gift was different.",
-      "start": 12.581,
-      "end": 14.343,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "sparkle",
-      "grade": "warm",
-      "placeholder": "street, sunset | Rio | smile | medium | sparkles",
-      "override": {},
-      "dur": 1.762
-    },
-    {
       "n": 8,
-      "text": "He could feel when something was about to end.",
-      "start": 14.343,
-      "end": 17.689,
+      "text": "You can give your gift away, but only once.",
+      "start": 13.124,
+      "end": 16.452,
       "src": null,
       "src_dur": null,
       "motion": "push_in",
       "transition": "cut",
-      "grade": "warm",
-      "placeholder": "street | Rio, soft glow | neutral | close | glow",
+      "grade": "neutral",
+      "placeholder": "street | glowing gift passed between hands | 1.6",
       "override": {},
-      "dur": 3.346
+      "dur": 3.328
     },
     {
       "n": 9,
-      "text": "The last day of summer.",
-      "start": 17.689,
-      "end": 19.583,
+      "text": "Most people only do it at the very end, to their kids.",
+      "start": 16.452,
+      "end": 20.683,
       "src": null,
       "src_dur": null,
       "motion": "push_in",
       "transition": "cut",
-      "grade": "warm",
-      "placeholder": "street, sunset | Rio watching the sun | smile | wide | sun",
+      "grade": "neutral",
+      "placeholder": "house bedroom, night | a soft glow over a bed (nothing else shown) | 1.6",
       "override": {},
-      "dur": 1.894
+      "dur": 4.231
     },
     {
       "n": 10,
-      "text": "The last bite of a burger.",
-      "start": 19.583,
-      "end": 21.759,
+      "text": "Rio's gift wasn't much better.",
+      "start": 20.683,
+      "end": 22.785,
       "src": null,
       "src_dur": null,
       "motion": "push_in",
       "transition": "cut",
-      "grade": "warm",
-      "placeholder": "bench | Rio with burger | smile | close | burger",
+      "grade": "neutral",
+      "placeholder": "street | Rio | 1.6",
       "override": {},
-      "dur": 2.176
+      "dur": 2.102
     },
     {
       "n": 11,
-      "text": "The second before a glass tips over.",
-      "start": 21.759,
-      "end": 24.424,
+      "text": "He could sense danger.",
+      "start": 22.785,
+      "end": 24.457,
       "src": null,
       "src_dur": null,
       "motion": "push_in",
       "transition": "cut",
-      "grade": "warm",
-      "placeholder": "canteen | Rio catches a tipping cup | smirk | close | cup",
+      "grade": "neutral",
+      "placeholder": "street | Rio, eyes glow | 1.6",
       "override": {},
-      "dur": 2.665
+      "dur": 1.672
     },
     {
       "n": 12,
-      "text": "Rio and I were always together.",
-      "start": 24.424,
-      "end": 26.748,
+      "text": "That's it. He couldn't stop it. He just felt it coming.",
+      "start": 24.457,
+      "end": 28.896,
       "src": null,
       "src_dur": null,
       "motion": "push_in",
       "transition": "cut",
-      "grade": "warm",
-      "placeholder": "bench | both | laugh | wide",
+      "grade": "neutral",
+      "placeholder": "playground | ball hits another kid, Rio flinches | 1.6",
       "override": {},
-      "dur": 2.324
+      "dur": 4.439
     },
     {
       "n": 13,
-      "text": "At lunch.",
-      "start": 26.748,
-      "end": 27.65,
+      "text": "Kids called him a scaredy cat.",
+      "start": 28.896,
+      "end": 31.191,
       "src": null,
       "src_dur": null,
       "motion": "push_in",
       "transition": "cut",
-      "grade": "warm",
-      "placeholder": "canteen trash corner | both at the little table | smile | medium",
-      "override": {},
-      "dur": 0.902
-    },
-    {
-      "n": 14,
-      "text": "On our bench.",
-      "start": 27.65,
-      "end": 28.863,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "warm",
-      "placeholder": "bench | both | smile | medium",
-      "override": {},
-      "dur": 1.213
-    },
-    {
-      "n": 15,
-      "text": "He always saved me the last pickle.",
-      "start": 28.863,
-      "end": 31.498,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "warm",
-      "placeholder": "bench | Rio hands a pickle | smile | close | pickle",
-      "override": {},
-      "dur": 2.635
-    },
-    {
-      "n": 16,
-      "text": "Kids started laughing at us.",
-      "start": 31.498,
-      "end": 33.541,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "warm",
-      "placeholder": "canteen | kids pointing and laughing | laugh | wide",
-      "override": {},
-      "dur": 2.043
-    },
-    {
-      "n": 17,
-      "text": "\"Are you two married?\"",
-      "start": 33.541,
-      "end": 34.904,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "warm",
-      "placeholder": "canteen | Crowd1 teasing | laugh, talk | close",
-      "override": {},
-      "dur": 1.363
-    },
-    {
-      "n": 18,
-      "text": "\"Toast Boy and his shadow.\"",
-      "start": 34.904,
-      "end": 36.607,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "warm",
-      "placeholder": "canteen | Crowd2 teasing | smirk, talk | close",
-      "override": {},
-      "dur": 1.703
-    },
-    {
-      "n": 19,
-      "text": "Kai said, \"With Rio's gift, you'd actually be somebody.\"",
-      "start": 36.607,
-      "end": 40.081,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "warm",
-      "placeholder": "playground | Kai leaning in to Narrator | smirk, talk | medium",
-      "override": {},
-      "dur": 3.474
-    },
-    {
-      "n": 20,
-      "text": "So I asked Rio for it.",
-      "start": 40.081,
-      "end": 42.139,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "fog",
-      "grade": "warm",
-      "placeholder": "bench | Narrator talking | worried | medium",
-      "override": {},
-      "dur": 2.058
-    },
-    {
-      "n": 21,
-      "text": "He looked at me for a long time.",
-      "start": 42.139,
-      "end": 44.878,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "warm",
-      "placeholder": "bench | Rio | neutral | close",
-      "override": {},
-      "dur": 2.739
-    },
-    {
-      "n": 22,
-      "text": "\"Why do you think I'm always with you?\" he said.",
-      "start": 44.878,
-      "end": 48.387,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "warm",
-      "placeholder": "bench | Rio | sad, talk | close",
-      "override": {},
-      "dur": 3.509
-    },
-    {
-      "n": 23,
-      "text": "\"I can feel when things end. And this hasn't.\"",
-      "start": 48.387,
-      "end": 51.644,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "warm",
-      "placeholder": "bench | Rio | smile, talk | close",
-      "override": {},
-      "dur": 3.257
-    },
-    {
-      "n": 24,
-      "text": "Then he gave it to me anyway.",
-      "start": 51.644,
-      "end": 54.102,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "warm",
-      "placeholder": "bench | Rio hands a glowing orb | smile | medium | glow orb",
-      "override": {},
-      "dur": 2.458
-    },
-    {
-      "n": 25,
-      "text": "\"Just promise you'll spend every minute with me.\"",
-      "start": 54.102,
-      "end": 57.035,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "warm",
-      "placeholder": "bench | Rio | smile, talk | close",
-      "override": {},
-      "dur": 2.933
-    },
-    {
-      "n": 26,
-      "text": "I said yes before he finished.",
-      "start": 57.035,
-      "end": 59.33,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "warm",
-      "placeholder": "bench | Narrator nodding | laugh | close | orb",
+      "grade": "neutral",
+      "placeholder": "playground | kids laughing at Rio | 1.6",
       "override": {},
       "dur": 2.295
     },
     {
-      "n": 27,
-      "text": "With his gift, I knew when every game would end.",
-      "start": 59.33,
-      "end": 62.998,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "warm",
-      "placeholder": "playground | Narrator, eye glow | smirk | medium",
-      "override": {},
-      "dur": 3.668
-    },
-    {
-      "n": 28,
-      "text": "When to jump. When to leave.",
-      "start": 62.998,
-      "end": 65.454,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "warm",
-      "placeholder": "playground | Narrator jumps, walks off | smirk | wide",
-      "override": {},
-      "dur": 2.456
-    },
-    {
-      "n": 29,
-      "text": "Nobody laughed at me anymore.",
-      "start": 65.454,
-      "end": 67.526,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "warm",
-      "placeholder": "playground | crowd cheering | laugh | wide",
-      "override": {},
-      "dur": 2.072
-    },
-    {
-      "n": 30,
-      "text": "I stopped sitting on our bench.",
-      "start": 67.526,
-      "end": 69.85,
+      "n": 14,
+      "text": "Rio and I were always together.",
+      "start": 31.191,
+      "end": 33.515,
       "src": null,
       "src_dur": null,
       "motion": "push_in",
       "transition": "cut",
       "grade": "neutral",
-      "placeholder": "bench, dusk | Rio alone | sad | wide | two burgers",
+      "placeholder": "bench | both | 1.6",
       "override": {},
       "dur": 2.324
     },
     {
-      "n": 31,
-      "text": "Every day, I said, \"Tomorrow.\"",
-      "start": 69.85,
-      "end": 71.783,
+      "n": 15,
+      "text": "At lunch.",
+      "start": 33.515,
+      "end": 34.417,
       "src": null,
       "src_dur": null,
       "motion": "push_in",
       "transition": "cut",
       "grade": "neutral",
-      "placeholder": "playground | Narrator waving him off | smile | medium",
+      "placeholder": "canteen corner | both | 1.6",
       "override": {},
-      "dur": 1.933
+      "dur": 0.902
     },
     {
-      "n": 32,
-      "text": "Then, one afternoon, I felt it.",
-      "start": 71.783,
-      "end": 74.248,
-      "src": null,
-      "src_dur": null,
-      "motion": "punch",
-      "transition": "fog",
-      "grade": "neutral",
-      "placeholder": "playground, dusk | Narrator freezes, eye glow | shocked | close, punch | glow",
-      "override": {},
-      "dur": 2.465
-    },
-    {
-      "n": 33,
-      "text": "A tug, like the last page of a book.",
-      "start": 74.248,
-      "end": 77.369,
+      "n": 16,
+      "text": "On our bench.",
+      "start": 34.417,
+      "end": 35.63,
       "src": null,
       "src_dur": null,
       "motion": "push_in",
       "transition": "cut",
       "grade": "neutral",
-      "placeholder": "playground | hand on chest | scared | close",
+      "placeholder": "bench | both | 1.6",
       "override": {},
-      "dur": 3.121
+      "dur": 1.213
     },
     {
-      "n": 34,
-      "text": "It came from our bench.",
-      "start": 77.369,
-      "end": 79.263,
+      "n": 17,
+      "text": "He always saved me the last pickle.",
+      "start": 35.63,
+      "end": 38.265,
       "src": null,
       "src_dur": null,
       "motion": "push_in",
       "transition": "cut",
       "grade": "neutral",
-      "placeholder": "bench, dusk | Rio crossing toward the stand | wide",
-      "override": {},
-      "dur": 1.894
-    },
-    {
-      "n": 35,
-      "text": "I ran.",
-      "start": 79.263,
-      "end": 80.076,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": "playground | Narrator running | scared | wide",
-      "override": {},
-      "dur": 0.813
-    },
-    {
-      "n": 36,
-      "text": "But Rio didn't feel the car coming.",
-      "start": 80.076,
-      "end": 82.711,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "cool",
-      "placeholder": "street, night | headlights on Rio (nothing shown) | smile | wide | headlights",
+      "placeholder": "bench | Rio hands a pickle | 1.6",
       "override": {},
       "dur": 2.635
     },
     {
-      "n": 37,
-      "text": "He'd given that away.",
-      "start": 82.711,
-      "end": 84.354,
+      "n": 18,
+      "text": "Then the jokes started.",
+      "start": 38.265,
+      "end": 39.967,
       "src": null,
       "src_dur": null,
       "motion": "push_in",
-      "transition": "fog",
-      "grade": "cool",
-      "placeholder": "bench, rain | empty bench | wide | rain",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "canteen | kids pointing | 1.6",
       "override": {},
-      "dur": 1.643
+      "dur": 1.702
+    },
+    {
+      "n": 19,
+      "text": "\"Are you two married?\"",
+      "start": 39.967,
+      "end": 41.33,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "canteen | Crowd1 teasing | 1.6",
+      "override": {},
+      "dur": 1.363
+    },
+    {
+      "n": 20,
+      "text": "\"Scaredy cat and his bodyguard.\"",
+      "start": 41.33,
+      "end": 43.181,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "canteen | Crowd2 teasing | 1.6",
+      "override": {},
+      "dur": 1.851
+    },
+    {
+      "n": 21,
+      "text": "They laughed in the halls. They laughed at lunch.",
+      "start": 43.181,
+      "end": 46.837,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "playground | circle of kids laughing | 1.6",
+      "override": {},
+      "dur": 3.656
+    },
+    {
+      "n": 22,
+      "text": "Kai said, \"Two useless gifts. Perfect match.\"",
+      "start": 46.837,
+      "end": 49.75,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "playground | Kai leaning in | 1.6",
+      "override": {},
+      "dur": 2.913
+    },
+    {
+      "n": 23,
+      "text": "One day, I'd had enough.",
+      "start": 49.75,
+      "end": 51.744,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "playground | Narrator angry | 1.6",
+      "override": {},
+      "dur": 1.994
+    },
+    {
+      "n": 24,
+      "text": "I knew our gifts would fit together. I asked Rio for his.",
+      "start": 51.744,
+      "end": 56.215,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "bench | Narrator asks | 1.6",
+      "override": {},
+      "dur": 4.471
+    },
+    {
+      "n": 25,
+      "text": "\"I'll keep you safe,\" I said. \"Every minute. I promise.\"",
+      "start": 56.215,
+      "end": 60.093,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "bench | Narrator | 1.6",
+      "override": {},
+      "dur": 3.878
+    },
+    {
+      "n": 26,
+      "text": "Rio looked at me for a long time.",
+      "start": 60.093,
+      "end": 62.861,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "bench | Rio | 1.6",
+      "override": {},
+      "dur": 2.768
+    },
+    {
+      "n": 27,
+      "text": "\"Why do you think I'm always with you?\" he said.",
+      "start": 62.861,
+      "end": 66.37,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "bench | Rio | 1.6",
+      "override": {},
+      "dur": 3.509
+    },
+    {
+      "n": 28,
+      "text": "\"Nothing feels dangerous when you're here.\"",
+      "start": 66.37,
+      "end": 68.741,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "bench | Rio | 1.6",
+      "override": {},
+      "dur": 2.371
+    },
+    {
+      "n": 29,
+      "text": "Then he gave it to me anyway.",
+      "start": 68.741,
+      "end": 71.198,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "bench | glowing orb | 1.6",
+      "override": {},
+      "dur": 2.457
+    },
+    {
+      "n": 30,
+      "text": "Alone, our gifts were nothing.",
+      "start": 71.198,
+      "end": 73.37,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "bench | orb fades into his hands | 1.6",
+      "override": {},
+      "dur": 2.172
+    },
+    {
+      "n": 31,
+      "text": "Together, I always knew the exact second to be strong.",
+      "start": 73.37,
+      "end": 77.217,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "playground | Narrator lifts the can, eyes glow | 1.6",
+      "override": {},
+      "dur": 3.847
+    },
+    {
+      "n": 32,
+      "text": "I won every game. Every race.",
+      "start": 77.217,
+      "end": 79.702,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "playground | race | 1.6",
+      "override": {},
+      "dur": 2.485
+    },
+    {
+      "n": 33,
+      "text": "Even Kai couldn't touch me.",
+      "start": 79.702,
+      "end": 81.715,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "playground | Kai swings, falls | 1.6",
+      "override": {},
+      "dur": 2.013
+    },
+    {
+      "n": 34,
+      "text": "Everyone wanted to sit with me now.",
+      "start": 81.715,
+      "end": 84.35,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "canteen | Narrator at the popular table | 1.6",
+      "override": {},
+      "dur": 2.635
+    },
+    {
+      "n": 35,
+      "text": "Without his gift, Rio was just a regular kid.",
+      "start": 84.35,
+      "end": 87.737,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "street | Rio walking | 1.6",
+      "override": {},
+      "dur": 3.387
+    },
+    {
+      "n": 36,
+      "text": "He got caught in the rain.",
+      "start": 87.737,
+      "end": 89.913,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "street | Rio in rain | 1.6",
+      "override": {},
+      "dur": 2.176
+    },
+    {
+      "n": 37,
+      "text": "He tripped on the stairs.",
+      "start": 89.913,
+      "end": 91.867,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "playground | Rio trips | 1.6",
+      "override": {},
+      "dur": 1.954
     },
     {
       "n": 38,
-      "text": "Now I spend every afternoon on our bench.",
-      "start": 84.354,
-      "end": 87.359,
+      "text": "He never saw the ball coming.",
+      "start": 91.867,
+      "end": 94.131,
       "src": null,
       "src_dur": null,
       "motion": "push_in",
-      "transition": "fog",
-      "grade": "warm",
-      "placeholder": "bench, sunset | Narrator alone | sad | medium",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "playground | ball bonks Rio | 1.6",
       "override": {},
-      "dur": 3.005
+      "dur": 2.264
     },
     {
       "n": 39,
-      "text": "I leave room on the left.",
-      "start": 87.359,
-      "end": 89.506,
+      "text": "He just laughed it off.",
+      "start": 94.131,
+      "end": 96.026,
       "src": null,
       "src_dur": null,
       "motion": "push_in",
       "transition": "cut",
-      "grade": "warm",
-      "placeholder": "bench | Narrator + empty space | sad | wide",
+      "grade": "neutral",
+      "placeholder": "playground | Rio laughing | 1.6",
       "override": {},
-      "dur": 2.147
+      "dur": 1.895
     },
     {
       "n": 40,
-      "text": "I save him the last pickle.",
-      "start": 89.506,
-      "end": 91.711,
+      "text": "I stopped sitting on our bench. Rio didn't.",
+      "start": 96.026,
+      "end": 99.311,
       "src": null,
       "src_dur": null,
       "motion": "push_in",
       "transition": "cut",
-      "grade": "warm",
-      "placeholder": "bench | pickle on a napkin | close | pickle",
+      "grade": "neutral",
+      "placeholder": "bench, dusk | Rio alone | 1.6",
       "override": {},
-      "dur": 2.205
+      "dur": 3.285
     },
     {
       "n": 41,
-      "text": "Every minute I promised. Just late.",
-      "start": 91.711,
-      "end": 95.49,
+      "text": "He waited after school. He waited until the streetlights came on.",
+      "start": 99.311,
+      "end": 103.826,
       "src": null,
       "src_dur": null,
       "motion": "push_in",
       "transition": "cut",
-      "grade": "warm",
-      "placeholder": "bench | Narrator | crying | close",
+      "grade": "neutral",
+      "placeholder": "bench, night | Rio alone, lamps on | 1.6",
       "override": {},
-      "dur": 3.779
+      "dur": 4.515
+    },
+    {
+      "n": 42,
+      "text": "He saved me the last pickle, every day.",
+      "start": 103.826,
+      "end": 106.843,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "bench | pickle close | 1.6",
+      "override": {},
+      "dur": 3.017
+    },
+    {
+      "n": 43,
+      "text": "And every day, I said, \"Tomorrow.\"",
+      "start": 106.843,
+      "end": 109.087,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "playground | Narrator waving him off | 1.6",
+      "override": {},
+      "dur": 2.244
+    },
+    {
+      "n": 44,
+      "text": "Then, one afternoon, I felt danger. It came from our bench.",
+      "start": 109.087,
+      "end": 113.565,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "playground, dusk | Narrator freezes | 1.6",
+      "override": {},
+      "dur": 4.478
+    },
+    {
+      "n": 45,
+      "text": "Rio didn't sense the car coming. He'd given that away.",
+      "start": 113.565,
+      "end": 117.561,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "street, night | headlights - hard cut, nothing shown | 1.6",
+      "override": {},
+      "dur": 3.996
+    },
+    {
+      "n": 46,
+      "text": "Now I spend every afternoon on our bench.",
+      "start": 117.561,
+      "end": 120.567,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "bench, sunset | Narrator alone | 1.6",
+      "override": {},
+      "dur": 3.006
+    },
+    {
+      "n": 47,
+      "text": "I leave room on the left.",
+      "start": 120.567,
+      "end": 122.713,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "bench | empty space | 1.6",
+      "override": {},
+      "dur": 2.146
+    },
+    {
+      "n": 48,
+      "text": "I save him the last pickle.",
+      "start": 122.713,
+      "end": 124.919,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "bench | pickle close | 1.6",
+      "override": {},
+      "dur": 2.206
+    },
+    {
+      "n": 49,
+      "text": "I promised I'd keep him safe. Every minute. Just late.",
+      "start": 124.919,
+      "end": 130.251,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "bench | Narrator crying | 1.6",
+      "override": {},
+      "dur": 5.332
     }
   ],
   "words": [
@@ -672,1402 +784,1906 @@
       "shot": 4
     },
     {
-      "w": "find",
+      "w": "fly",
       "s": 5.922,
-      "e": 6.229,
+      "e": 6.202,
       "shot": 4
     },
     {
-      "w": "anything",
-      "s": 6.263,
-      "e": 6.676,
+      "w": "a",
+      "s": 6.233,
+      "e": 6.46,
       "shot": 4
     },
     {
-      "w": "you",
-      "s": 6.722,
-      "e": 7.002,
-      "shot": 4
-    },
-    {
-      "w": "lose.",
-      "s": 7.033,
-      "e": 7.34,
+      "w": "little.",
+      "s": 6.485,
+      "e": 6.845,
       "shot": 4
     },
     {
       "w": "Mine?",
-      "s": 7.624,
-      "e": 7.931,
+      "s": 7.135,
+      "e": 7.442,
       "shot": 5
-    },
-    {
-      "w": "My",
-      "s": 8.215,
-      "e": 8.468,
-      "shot": 5
-    },
-    {
-      "w": "toast",
-      "s": 8.496,
-      "e": 8.83,
-      "shot": 5
-    },
-    {
-      "w": "always",
-      "s": 8.867,
-      "e": 9.227,
-      "shot": 5
-    },
-    {
-      "w": "lands",
-      "s": 9.267,
-      "e": 9.6,
-      "shot": 5
-    },
-    {
-      "w": "butter",
-      "s": 9.637,
-      "e": 9.997,
-      "shot": 5
-    },
-    {
-      "w": "side",
-      "s": 10.037,
-      "e": 10.344,
-      "shot": 5
-    },
-    {
-      "w": "up.",
-      "s": 10.378,
-      "e": 10.631,
-      "shot": 5
-    },
-    {
-      "w": "Nobody",
-      "s": 10.909,
-      "e": 11.269,
-      "shot": 6
-    },
-    {
-      "w": "claps",
-      "s": 11.309,
-      "e": 11.643,
-      "shot": 6
-    },
-    {
-      "w": "for",
-      "s": 11.68,
-      "e": 11.96,
-      "shot": 6
-    },
-    {
-      "w": "that.",
-      "s": 11.991,
-      "e": 12.297,
-      "shot": 6
-    },
-    {
-      "w": "Rio's",
-      "s": 12.581,
-      "e": 12.915,
-      "shot": 7
-    },
-    {
-      "w": "gift",
-      "s": 12.952,
-      "e": 13.259,
-      "shot": 7
-    },
-    {
-      "w": "was",
-      "s": 13.293,
-      "e": 13.573,
-      "shot": 7
-    },
-    {
-      "w": "different.",
-      "s": 13.604,
-      "e": 14.044,
-      "shot": 7
-    },
-    {
-      "w": "He",
-      "s": 14.343,
-      "e": 14.596,
-      "shot": 8
-    },
-    {
-      "w": "could",
-      "s": 14.624,
-      "e": 14.957,
-      "shot": 8
-    },
-    {
-      "w": "feel",
-      "s": 14.994,
-      "e": 15.301,
-      "shot": 8
-    },
-    {
-      "w": "when",
-      "s": 15.335,
-      "e": 15.642,
-      "shot": 8
-    },
-    {
-      "w": "something",
-      "s": 15.676,
-      "e": 16.116,
-      "shot": 8
-    },
-    {
-      "w": "was",
-      "s": 16.165,
-      "e": 16.445,
-      "shot": 8
-    },
-    {
-      "w": "about",
-      "s": 16.476,
-      "e": 16.809,
-      "shot": 8
-    },
-    {
-      "w": "to",
-      "s": 16.846,
-      "e": 17.1,
-      "shot": 8
-    },
-    {
-      "w": "end.",
-      "s": 17.128,
-      "e": 17.408,
-      "shot": 8
-    },
-    {
-      "w": "The",
-      "s": 17.689,
-      "e": 17.969,
-      "shot": 9
-    },
-    {
-      "w": "last",
-      "s": 18.0,
-      "e": 18.307,
-      "shot": 9
-    },
-    {
-      "w": "day",
-      "s": 18.341,
-      "e": 18.621,
-      "shot": 9
-    },
-    {
-      "w": "of",
-      "s": 18.652,
-      "e": 18.905,
-      "shot": 9
-    },
-    {
-      "w": "summer.",
-      "s": 18.933,
-      "e": 19.293,
-      "shot": 9
-    },
-    {
-      "w": "The",
-      "s": 19.583,
-      "e": 19.863,
-      "shot": 10
-    },
-    {
-      "w": "last",
-      "s": 19.894,
-      "e": 20.201,
-      "shot": 10
-    },
-    {
-      "w": "bite",
-      "s": 20.235,
-      "e": 20.542,
-      "shot": 10
-    },
-    {
-      "w": "of",
-      "s": 20.576,
-      "e": 20.829,
-      "shot": 10
-    },
-    {
-      "w": "a",
-      "s": 20.857,
-      "e": 21.084,
-      "shot": 10
-    },
-    {
-      "w": "burger.",
-      "s": 21.109,
-      "e": 21.469,
-      "shot": 10
-    },
-    {
-      "w": "The",
-      "s": 21.759,
-      "e": 22.039,
-      "shot": 11
-    },
-    {
-      "w": "second",
-      "s": 22.07,
-      "e": 22.43,
-      "shot": 11
-    },
-    {
-      "w": "before",
-      "s": 22.47,
-      "e": 22.83,
-      "shot": 11
-    },
-    {
-      "w": "a",
-      "s": 22.87,
-      "e": 23.097,
-      "shot": 11
-    },
-    {
-      "w": "glass",
-      "s": 23.122,
-      "e": 23.456,
-      "shot": 11
-    },
-    {
-      "w": "tips",
-      "s": 23.493,
-      "e": 23.799,
-      "shot": 11
-    },
-    {
-      "w": "over.",
-      "s": 23.833,
-      "e": 24.14,
-      "shot": 11
-    },
-    {
-      "w": "Rio",
-      "s": 24.424,
-      "e": 24.704,
-      "shot": 12
-    },
-    {
-      "w": "and",
-      "s": 24.735,
-      "e": 25.015,
-      "shot": 12
-    },
-    {
-      "w": "I",
-      "s": 25.046,
-      "e": 25.273,
-      "shot": 12
-    },
-    {
-      "w": "were",
-      "s": 25.298,
-      "e": 25.605,
-      "shot": 12
-    },
-    {
-      "w": "always",
-      "s": 25.639,
-      "e": 25.999,
-      "shot": 12
-    },
-    {
-      "w": "together.",
-      "s": 26.039,
-      "e": 26.452,
-      "shot": 12
-    },
-    {
-      "w": "At",
-      "s": 26.748,
-      "e": 27.001,
-      "shot": 13
-    },
-    {
-      "w": "lunch.",
-      "s": 27.03,
-      "e": 27.363,
-      "shot": 13
-    },
-    {
-      "w": "On",
-      "s": 27.65,
-      "e": 27.903,
-      "shot": 14
-    },
-    {
-      "w": "our",
-      "s": 27.931,
-      "e": 28.211,
-      "shot": 14
-    },
-    {
-      "w": "bench.",
-      "s": 28.243,
-      "e": 28.576,
-      "shot": 14
-    },
-    {
-      "w": "He",
-      "s": 28.863,
-      "e": 29.116,
-      "shot": 15
-    },
-    {
-      "w": "always",
-      "s": 29.144,
-      "e": 29.504,
-      "shot": 15
-    },
-    {
-      "w": "saved",
-      "s": 29.544,
-      "e": 29.878,
-      "shot": 15
-    },
-    {
-      "w": "me",
-      "s": 29.915,
-      "e": 30.168,
-      "shot": 15
-    },
-    {
-      "w": "the",
-      "s": 30.196,
-      "e": 30.476,
-      "shot": 15
-    },
-    {
-      "w": "last",
-      "s": 30.507,
-      "e": 30.814,
-      "shot": 15
-    },
-    {
-      "w": "pickle.",
-      "s": 30.848,
-      "e": 31.208,
-      "shot": 15
-    },
-    {
-      "w": "Kids",
-      "s": 31.498,
-      "e": 31.805,
-      "shot": 16
-    },
-    {
-      "w": "started",
-      "s": 31.839,
-      "e": 32.226,
-      "shot": 16
-    },
-    {
-      "w": "laughing",
-      "s": 32.269,
-      "e": 32.682,
-      "shot": 16
-    },
-    {
-      "w": "at",
-      "s": 32.728,
-      "e": 32.981,
-      "shot": 16
-    },
-    {
-      "w": "us.",
-      "s": 33.009,
-      "e": 33.263,
-      "shot": 16
-    },
-    {
-      "w": "\"Are",
-      "s": 33.541,
-      "e": 33.821,
-      "shot": 17
-    },
-    {
-      "w": "you",
-      "s": 33.852,
-      "e": 34.132,
-      "shot": 17
-    },
-    {
-      "w": "two",
-      "s": 34.163,
-      "e": 34.443,
-      "shot": 17
-    },
-    {
-      "w": "married?\"",
-      "s": 34.474,
-      "e": 34.861,
-      "shot": 17
-    },
-    {
-      "w": "\"Toast",
-      "s": 34.904,
-      "e": 35.237,
-      "shot": 18
-    },
-    {
-      "w": "Boy",
-      "s": 35.274,
-      "e": 35.554,
-      "shot": 18
-    },
-    {
-      "w": "and",
-      "s": 35.585,
-      "e": 35.865,
-      "shot": 18
-    },
-    {
-      "w": "his",
-      "s": 35.896,
-      "e": 36.176,
-      "shot": 18
-    },
-    {
-      "w": "shadow.\"",
-      "s": 36.207,
-      "e": 36.567,
-      "shot": 18
-    },
-    {
-      "w": "Kai",
-      "s": 36.607,
-      "e": 36.887,
-      "shot": 19
-    },
-    {
-      "w": "said,",
-      "s": 36.919,
-      "e": 37.225,
-      "shot": 19
-    },
-    {
-      "w": "\"With",
-      "s": 37.359,
-      "e": 37.666,
-      "shot": 19
-    },
-    {
-      "w": "Rio's",
-      "s": 37.7,
-      "e": 38.033,
-      "shot": 19
-    },
-    {
-      "w": "gift,",
-      "s": 38.07,
-      "e": 38.377,
-      "shot": 19
-    },
-    {
-      "w": "you'd",
-      "s": 38.511,
-      "e": 38.844,
-      "shot": 19
-    },
-    {
-      "w": "actually",
-      "s": 38.881,
-      "e": 39.295,
-      "shot": 19
-    },
-    {
-      "w": "be",
-      "s": 39.341,
-      "e": 39.594,
-      "shot": 19
-    },
-    {
-      "w": "somebody.\"",
-      "s": 39.622,
-      "e": 40.036,
-      "shot": 19
-    },
-    {
-      "w": "So",
-      "s": 40.081,
-      "e": 40.335,
-      "shot": 20
-    },
-    {
-      "w": "I",
-      "s": 40.363,
-      "e": 40.59,
-      "shot": 20
-    },
-    {
-      "w": "asked",
-      "s": 40.615,
-      "e": 40.948,
-      "shot": 20
-    },
-    {
-      "w": "Rio",
-      "s": 40.985,
-      "e": 41.265,
-      "shot": 20
-    },
-    {
-      "w": "for",
-      "s": 41.296,
-      "e": 41.576,
-      "shot": 20
-    },
-    {
-      "w": "it.",
-      "s": 41.607,
-      "e": 41.861,
-      "shot": 20
-    },
-    {
-      "w": "He",
-      "s": 42.139,
-      "e": 42.392,
-      "shot": 21
-    },
-    {
-      "w": "looked",
-      "s": 42.42,
-      "e": 42.78,
-      "shot": 21
-    },
-    {
-      "w": "at",
-      "s": 42.82,
-      "e": 43.074,
-      "shot": 21
-    },
-    {
-      "w": "me",
-      "s": 43.102,
-      "e": 43.355,
-      "shot": 21
-    },
-    {
-      "w": "for",
-      "s": 43.383,
-      "e": 43.663,
-      "shot": 21
-    },
-    {
-      "w": "a",
-      "s": 43.694,
-      "e": 43.921,
-      "shot": 21
-    },
-    {
-      "w": "long",
-      "s": 43.946,
-      "e": 44.253,
-      "shot": 21
-    },
-    {
-      "w": "time.",
-      "s": 44.287,
-      "e": 44.594,
-      "shot": 21
-    },
-    {
-      "w": "\"Why",
-      "s": 44.878,
-      "e": 45.158,
-      "shot": 22
-    },
-    {
-      "w": "do",
-      "s": 45.189,
-      "e": 45.442,
-      "shot": 22
-    },
-    {
-      "w": "you",
-      "s": 45.47,
-      "e": 45.75,
-      "shot": 22
-    },
-    {
-      "w": "think",
-      "s": 45.781,
-      "e": 46.115,
-      "shot": 22
     },
     {
       "w": "I'm",
-      "s": 46.152,
-      "e": 46.432,
-      "shot": 22
+      "s": 7.726,
+      "e": 8.006,
+      "shot": 5
     },
     {
-      "w": "always",
-      "s": 46.463,
-      "e": 46.823,
-      "shot": 22
+      "w": "super",
+      "s": 8.037,
+      "e": 8.37,
+      "shot": 5
     },
     {
-      "w": "with",
-      "s": 46.863,
-      "e": 47.17,
-      "shot": 22
+      "w": "strong,",
+      "s": 8.407,
+      "e": 8.767,
+      "shot": 5
     },
     {
-      "w": "you?\"",
-      "s": 47.204,
-      "e": 47.484,
-      "shot": 22
-    },
-    {
-      "w": "he",
-      "s": 47.515,
-      "e": 47.768,
-      "shot": 22
-    },
-    {
-      "w": "said.",
-      "s": 47.796,
-      "e": 48.103,
-      "shot": 22
-    },
-    {
-      "w": "\"I",
-      "s": 48.387,
-      "e": 48.614,
-      "shot": 23
-    },
-    {
-      "w": "can",
-      "s": 48.639,
-      "e": 48.919,
-      "shot": 23
-    },
-    {
-      "w": "feel",
-      "s": 48.95,
-      "e": 49.257,
-      "shot": 23
-    },
-    {
-      "w": "when",
-      "s": 49.291,
-      "e": 49.597,
-      "shot": 23
-    },
-    {
-      "w": "things",
-      "s": 49.631,
-      "e": 49.991,
-      "shot": 23
-    },
-    {
-      "w": "end.",
-      "s": 50.031,
-      "e": 50.311,
-      "shot": 23
-    },
-    {
-      "w": "And",
-      "s": 50.593,
-      "e": 50.873,
-      "shot": 23
-    },
-    {
-      "w": "this",
-      "s": 50.904,
-      "e": 51.21,
-      "shot": 23
-    },
-    {
-      "w": "hasn't.\"",
-      "s": 51.244,
-      "e": 51.604,
-      "shot": 23
-    },
-    {
-      "w": "Then",
-      "s": 51.644,
-      "e": 51.951,
-      "shot": 24
-    },
-    {
-      "w": "he",
-      "s": 51.985,
-      "e": 52.239,
-      "shot": 24
-    },
-    {
-      "w": "gave",
-      "s": 52.267,
-      "e": 52.573,
-      "shot": 24
-    },
-    {
-      "w": "it",
-      "s": 52.607,
-      "e": 52.861,
-      "shot": 24
-    },
-    {
-      "w": "to",
-      "s": 52.889,
-      "e": 53.142,
-      "shot": 24
-    },
-    {
-      "w": "me",
-      "s": 53.17,
-      "e": 53.424,
-      "shot": 24
-    },
-    {
-      "w": "anyway.",
-      "s": 53.452,
-      "e": 53.812,
-      "shot": 24
-    },
-    {
-      "w": "\"Just",
-      "s": 54.102,
-      "e": 54.409,
-      "shot": 25
-    },
-    {
-      "w": "promise",
-      "s": 54.443,
-      "e": 54.829,
-      "shot": 25
-    },
-    {
-      "w": "you'll",
-      "s": 54.872,
-      "e": 55.232,
-      "shot": 25
-    },
-    {
-      "w": "spend",
-      "s": 55.272,
-      "e": 55.606,
-      "shot": 25
-    },
-    {
-      "w": "every",
-      "s": 55.643,
-      "e": 55.976,
-      "shot": 25
-    },
-    {
-      "w": "minute",
-      "s": 56.013,
-      "e": 56.373,
-      "shot": 25
-    },
-    {
-      "w": "with",
-      "s": 56.413,
-      "e": 56.72,
-      "shot": 25
-    },
-    {
-      "w": "me.\"",
-      "s": 56.754,
-      "e": 57.007,
-      "shot": 25
-    },
-    {
-      "w": "I",
-      "s": 57.035,
-      "e": 57.262,
-      "shot": 26
-    },
-    {
-      "w": "said",
-      "s": 57.287,
-      "e": 57.594,
-      "shot": 26
-    },
-    {
-      "w": "yes",
-      "s": 57.628,
-      "e": 57.908,
-      "shot": 26
-    },
-    {
-      "w": "before",
-      "s": 57.939,
-      "e": 58.299,
-      "shot": 26
-    },
-    {
-      "w": "he",
-      "s": 58.339,
-      "e": 58.592,
-      "shot": 26
-    },
-    {
-      "w": "finished.",
-      "s": 58.62,
-      "e": 59.034,
-      "shot": 26
-    },
-    {
-      "w": "With",
-      "s": 59.33,
-      "e": 59.636,
-      "shot": 27
-    },
-    {
-      "w": "his",
-      "s": 59.67,
-      "e": 59.95,
-      "shot": 27
-    },
-    {
-      "w": "gift,",
-      "s": 59.981,
-      "e": 60.288,
-      "shot": 27
-    },
-    {
-      "w": "I",
-      "s": 60.422,
-      "e": 60.649,
-      "shot": 27
-    },
-    {
-      "w": "knew",
-      "s": 60.674,
-      "e": 60.981,
-      "shot": 27
-    },
-    {
-      "w": "when",
-      "s": 61.015,
-      "e": 61.321,
-      "shot": 27
-    },
-    {
-      "w": "every",
-      "s": 61.356,
-      "e": 61.689,
-      "shot": 27
-    },
-    {
-      "w": "game",
-      "s": 61.726,
-      "e": 62.033,
-      "shot": 27
-    },
-    {
-      "w": "would",
-      "s": 62.067,
-      "e": 62.4,
-      "shot": 27
-    },
-    {
-      "w": "end.",
-      "s": 62.437,
-      "e": 62.717,
-      "shot": 27
-    },
-    {
-      "w": "When",
-      "s": 62.998,
-      "e": 63.305,
-      "shot": 28
-    },
-    {
-      "w": "to",
-      "s": 63.339,
-      "e": 63.592,
-      "shot": 28
-    },
-    {
-      "w": "jump.",
-      "s": 63.62,
-      "e": 63.927,
-      "shot": 28
-    },
-    {
-      "w": "When",
-      "s": 64.211,
-      "e": 64.518,
-      "shot": 28
-    },
-    {
-      "w": "to",
-      "s": 64.552,
-      "e": 64.805,
-      "shot": 28
-    },
-    {
-      "w": "leave.",
-      "s": 64.833,
-      "e": 65.167,
-      "shot": 28
-    },
-    {
-      "w": "Nobody",
-      "s": 65.454,
-      "e": 65.814,
-      "shot": 29
-    },
-    {
-      "w": "laughed",
-      "s": 65.854,
-      "e": 66.24,
-      "shot": 29
-    },
-    {
-      "w": "at",
-      "s": 66.283,
-      "e": 66.537,
-      "shot": 29
-    },
-    {
-      "w": "me",
-      "s": 66.565,
-      "e": 66.818,
-      "shot": 29
-    },
-    {
-      "w": "anymore.",
-      "s": 66.846,
-      "e": 67.233,
-      "shot": 29
-    },
-    {
-      "w": "I",
-      "s": 67.526,
-      "e": 67.753,
-      "shot": 30
-    },
-    {
-      "w": "stopped",
-      "s": 67.778,
-      "e": 68.164,
-      "shot": 30
-    },
-    {
-      "w": "sitting",
-      "s": 68.207,
-      "e": 68.594,
-      "shot": 30
-    },
-    {
-      "w": "on",
-      "s": 68.637,
-      "e": 68.89,
-      "shot": 30
-    },
-    {
-      "w": "our",
-      "s": 68.919,
-      "e": 69.199,
-      "shot": 30
-    },
-    {
-      "w": "bench.",
-      "s": 69.23,
-      "e": 69.563,
-      "shot": 30
-    },
-    {
-      "w": "Every",
-      "s": 69.85,
-      "e": 70.183,
-      "shot": 31
-    },
-    {
-      "w": "day,",
-      "s": 70.22,
-      "e": 70.5,
-      "shot": 31
-    },
-    {
-      "w": "I",
-      "s": 70.631,
-      "e": 70.858,
-      "shot": 31
-    },
-    {
-      "w": "said,",
-      "s": 70.883,
-      "e": 71.19,
-      "shot": 31
-    },
-    {
-      "w": "\"Tomorrow.\"",
-      "s": 71.324,
-      "e": 71.737,
-      "shot": 31
-    },
-    {
-      "w": "Then,",
-      "s": 71.783,
-      "e": 72.09,
-      "shot": 32
+      "w": "for",
+      "s": 8.907,
+      "e": 9.187,
+      "shot": 5
     },
     {
       "w": "one",
-      "s": 72.224,
-      "e": 72.504,
-      "shot": 32
+      "s": 9.219,
+      "e": 9.499,
+      "shot": 5
     },
     {
-      "w": "afternoon,",
-      "s": 72.535,
-      "e": 72.975,
-      "shot": 32
+      "w": "second.",
+      "s": 9.53,
+      "e": 9.89,
+      "shot": 5
     },
     {
-      "w": "I",
-      "s": 73.124,
-      "e": 73.351,
-      "shot": 32
+      "w": "Then",
+      "s": 10.18,
+      "e": 10.486,
+      "shot": 6
     },
     {
-      "w": "felt",
-      "s": 73.376,
-      "e": 73.683,
-      "shot": 32
+      "w": "it's",
+      "s": 10.52,
+      "e": 10.827,
+      "shot": 6
+    },
+    {
+      "w": "gone.",
+      "s": 10.861,
+      "e": 11.168,
+      "shot": 6
+    },
+    {
+      "w": "Nobody",
+      "s": 11.452,
+      "e": 11.812,
+      "shot": 7
+    },
+    {
+      "w": "claps",
+      "s": 11.852,
+      "e": 12.185,
+      "shot": 7
+    },
+    {
+      "w": "for",
+      "s": 12.222,
+      "e": 12.502,
+      "shot": 7
+    },
+    {
+      "w": "that.",
+      "s": 12.533,
+      "e": 12.84,
+      "shot": 7
+    },
+    {
+      "w": "You",
+      "s": 13.124,
+      "e": 13.404,
+      "shot": 8
+    },
+    {
+      "w": "can",
+      "s": 13.435,
+      "e": 13.715,
+      "shot": 8
+    },
+    {
+      "w": "give",
+      "s": 13.746,
+      "e": 14.053,
+      "shot": 8
+    },
+    {
+      "w": "your",
+      "s": 14.087,
+      "e": 14.394,
+      "shot": 8
+    },
+    {
+      "w": "gift",
+      "s": 14.428,
+      "e": 14.734,
+      "shot": 8
+    },
+    {
+      "w": "away,",
+      "s": 14.769,
+      "e": 15.075,
+      "shot": 8
+    },
+    {
+      "w": "but",
+      "s": 15.209,
+      "e": 15.489,
+      "shot": 8
+    },
+    {
+      "w": "only",
+      "s": 15.52,
+      "e": 15.827,
+      "shot": 8
+    },
+    {
+      "w": "once.",
+      "s": 15.861,
+      "e": 16.168,
+      "shot": 8
+    },
+    {
+      "w": "Most",
+      "s": 16.452,
+      "e": 16.759,
+      "shot": 9
+    },
+    {
+      "w": "people",
+      "s": 16.793,
+      "e": 17.153,
+      "shot": 9
+    },
+    {
+      "w": "only",
+      "s": 17.193,
+      "e": 17.499,
+      "shot": 9
+    },
+    {
+      "w": "do",
+      "s": 17.533,
+      "e": 17.787,
+      "shot": 9
+    },
+    {
+      "w": "it",
+      "s": 17.815,
+      "e": 18.068,
+      "shot": 9
+    },
+    {
+      "w": "at",
+      "s": 18.096,
+      "e": 18.35,
+      "shot": 9
+    },
+    {
+      "w": "the",
+      "s": 18.378,
+      "e": 18.658,
+      "shot": 9
+    },
+    {
+      "w": "very",
+      "s": 18.689,
+      "e": 18.996,
+      "shot": 9
+    },
+    {
+      "w": "end,",
+      "s": 19.03,
+      "e": 19.31,
+      "shot": 9
+    },
+    {
+      "w": "to",
+      "s": 19.441,
+      "e": 19.694,
+      "shot": 9
+    },
+    {
+      "w": "their",
+      "s": 19.722,
+      "e": 20.056,
+      "shot": 9
+    },
+    {
+      "w": "kids.",
+      "s": 20.093,
+      "e": 20.399,
+      "shot": 9
+    },
+    {
+      "w": "Rio's",
+      "s": 20.683,
+      "e": 21.017,
+      "shot": 10
+    },
+    {
+      "w": "gift",
+      "s": 21.054,
+      "e": 21.36,
+      "shot": 10
+    },
+    {
+      "w": "wasn't",
+      "s": 21.394,
+      "e": 21.754,
+      "shot": 10
+    },
+    {
+      "w": "much",
+      "s": 21.794,
+      "e": 22.101,
+      "shot": 10
+    },
+    {
+      "w": "better.",
+      "s": 22.135,
+      "e": 22.495,
+      "shot": 10
+    },
+    {
+      "w": "He",
+      "s": 22.785,
+      "e": 23.039,
+      "shot": 11
+    },
+    {
+      "w": "could",
+      "s": 23.067,
+      "e": 23.4,
+      "shot": 11
+    },
+    {
+      "w": "sense",
+      "s": 23.437,
+      "e": 23.77,
+      "shot": 11
+    },
+    {
+      "w": "danger.",
+      "s": 23.807,
+      "e": 24.167,
+      "shot": 11
+    },
+    {
+      "w": "That's",
+      "s": 24.457,
+      "e": 24.817,
+      "shot": 12
     },
     {
       "w": "it.",
-      "s": 73.717,
-      "e": 73.97,
-      "shot": 32
+      "s": 24.857,
+      "e": 25.111,
+      "shot": 12
     },
     {
-      "w": "A",
-      "s": 74.248,
-      "e": 74.475,
-      "shot": 33
+      "w": "He",
+      "s": 25.389,
+      "e": 25.642,
+      "shot": 12
     },
     {
-      "w": "tug,",
-      "s": 74.5,
-      "e": 74.78,
-      "shot": 33
+      "w": "couldn't",
+      "s": 25.67,
+      "e": 26.084,
+      "shot": 12
     },
     {
-      "w": "like",
-      "s": 74.911,
-      "e": 75.218,
-      "shot": 33
+      "w": "stop",
+      "s": 26.13,
+      "e": 26.436,
+      "shot": 12
     },
     {
-      "w": "the",
-      "s": 75.252,
-      "e": 75.532,
-      "shot": 33
+      "w": "it.",
+      "s": 26.47,
+      "e": 26.724,
+      "shot": 12
     },
     {
-      "w": "last",
-      "s": 75.563,
-      "e": 75.87,
-      "shot": 33
+      "w": "He",
+      "s": 27.002,
+      "e": 27.255,
+      "shot": 12
     },
     {
-      "w": "page",
-      "s": 75.904,
-      "e": 76.21,
-      "shot": 33
+      "w": "just",
+      "s": 27.283,
+      "e": 27.59,
+      "shot": 12
     },
     {
-      "w": "of",
-      "s": 76.244,
-      "e": 76.498,
-      "shot": 33
+      "w": "felt",
+      "s": 27.624,
+      "e": 27.931,
+      "shot": 12
     },
     {
-      "w": "a",
-      "s": 76.526,
-      "e": 76.753,
-      "shot": 33
-    },
-    {
-      "w": "book.",
-      "s": 76.778,
-      "e": 77.084,
-      "shot": 33
-    },
-    {
-      "w": "It",
-      "s": 77.369,
-      "e": 77.622,
-      "shot": 34
-    },
-    {
-      "w": "came",
-      "s": 77.65,
-      "e": 77.957,
-      "shot": 34
-    },
-    {
-      "w": "from",
-      "s": 77.991,
-      "e": 78.297,
-      "shot": 34
-    },
-    {
-      "w": "our",
-      "s": 78.331,
-      "e": 78.611,
-      "shot": 34
-    },
-    {
-      "w": "bench.",
-      "s": 78.643,
-      "e": 78.976,
-      "shot": 34
-    },
-    {
-      "w": "I",
-      "s": 79.263,
-      "e": 79.49,
-      "shot": 35
-    },
-    {
-      "w": "ran.",
-      "s": 79.515,
-      "e": 79.795,
-      "shot": 35
-    },
-    {
-      "w": "But",
-      "s": 80.076,
-      "e": 80.356,
-      "shot": 36
-    },
-    {
-      "w": "Rio",
-      "s": 80.387,
-      "e": 80.667,
-      "shot": 36
-    },
-    {
-      "w": "didn't",
-      "s": 80.698,
-      "e": 81.058,
-      "shot": 36
-    },
-    {
-      "w": "feel",
-      "s": 81.098,
-      "e": 81.405,
-      "shot": 36
-    },
-    {
-      "w": "the",
-      "s": 81.439,
-      "e": 81.719,
-      "shot": 36
-    },
-    {
-      "w": "car",
-      "s": 81.75,
-      "e": 82.03,
-      "shot": 36
+      "w": "it",
+      "s": 27.965,
+      "e": 28.218,
+      "shot": 12
     },
     {
       "w": "coming.",
-      "s": 82.061,
-      "e": 82.421,
-      "shot": 36
+      "s": 28.246,
+      "e": 28.606,
+      "shot": 12
     },
     {
-      "w": "He'd",
-      "s": 82.711,
-      "e": 83.018,
-      "shot": 37
+      "w": "Kids",
+      "s": 28.896,
+      "e": 29.203,
+      "shot": 13
     },
     {
-      "w": "given",
-      "s": 83.052,
-      "e": 83.385,
-      "shot": 37
-    },
-    {
-      "w": "that",
-      "s": 83.422,
-      "e": 83.729,
-      "shot": 37
-    },
-    {
-      "w": "away.",
-      "s": 83.763,
-      "e": 84.07,
-      "shot": 37
-    },
-    {
-      "w": "Now",
-      "s": 84.354,
-      "e": 84.634,
-      "shot": 38
-    },
-    {
-      "w": "I",
-      "s": 84.665,
-      "e": 84.891,
-      "shot": 38
-    },
-    {
-      "w": "spend",
-      "s": 84.917,
-      "e": 85.25,
-      "shot": 38
-    },
-    {
-      "w": "every",
-      "s": 85.287,
-      "e": 85.62,
-      "shot": 38
-    },
-    {
-      "w": "afternoon",
-      "s": 85.657,
-      "e": 86.097,
-      "shot": 38
-    },
-    {
-      "w": "on",
-      "s": 86.146,
-      "e": 86.4,
-      "shot": 38
-    },
-    {
-      "w": "our",
-      "s": 86.428,
-      "e": 86.708,
-      "shot": 38
-    },
-    {
-      "w": "bench.",
-      "s": 86.739,
-      "e": 87.072,
-      "shot": 38
-    },
-    {
-      "w": "I",
-      "s": 87.359,
-      "e": 87.586,
-      "shot": 39
-    },
-    {
-      "w": "leave",
-      "s": 87.611,
-      "e": 87.944,
-      "shot": 39
-    },
-    {
-      "w": "room",
-      "s": 87.981,
-      "e": 88.288,
-      "shot": 39
-    },
-    {
-      "w": "on",
-      "s": 88.322,
-      "e": 88.576,
-      "shot": 39
-    },
-    {
-      "w": "the",
-      "s": 88.604,
-      "e": 88.884,
-      "shot": 39
-    },
-    {
-      "w": "left.",
-      "s": 88.915,
-      "e": 89.221,
-      "shot": 39
-    },
-    {
-      "w": "I",
-      "s": 89.506,
-      "e": 89.732,
-      "shot": 40
-    },
-    {
-      "w": "save",
-      "s": 89.757,
-      "e": 90.064,
-      "shot": 40
+      "w": "called",
+      "s": 29.237,
+      "e": 29.597,
+      "shot": 13
     },
     {
       "w": "him",
-      "s": 90.098,
-      "e": 90.378,
-      "shot": 40
+      "s": 29.637,
+      "e": 29.917,
+      "shot": 13
     },
     {
-      "w": "the",
-      "s": 90.409,
-      "e": 90.689,
-      "shot": 40
+      "w": "a",
+      "s": 29.948,
+      "e": 30.175,
+      "shot": 13
     },
     {
-      "w": "last",
-      "s": 90.72,
-      "e": 91.027,
-      "shot": 40
+      "w": "scaredy",
+      "s": 30.2,
+      "e": 30.587,
+      "shot": 13
     },
     {
-      "w": "pickle.",
-      "s": 91.061,
-      "e": 91.421,
-      "shot": 40
+      "w": "cat.",
+      "s": 30.63,
+      "e": 30.91,
+      "shot": 13
     },
     {
-      "w": "Every",
-      "s": 91.711,
-      "e": 92.044,
-      "shot": 41
+      "w": "Rio",
+      "s": 31.191,
+      "e": 31.471,
+      "shot": 14
     },
     {
-      "w": "minute",
-      "s": 92.081,
-      "e": 92.441,
-      "shot": 41
+      "w": "and",
+      "s": 31.502,
+      "e": 31.782,
+      "shot": 14
     },
     {
       "w": "I",
-      "s": 92.481,
-      "e": 92.708,
+      "s": 31.813,
+      "e": 32.04,
+      "shot": 14
+    },
+    {
+      "w": "were",
+      "s": 32.065,
+      "e": 32.371,
+      "shot": 14
+    },
+    {
+      "w": "always",
+      "s": 32.406,
+      "e": 32.766,
+      "shot": 14
+    },
+    {
+      "w": "together.",
+      "s": 32.806,
+      "e": 33.219,
+      "shot": 14
+    },
+    {
+      "w": "At",
+      "s": 33.515,
+      "e": 33.768,
+      "shot": 15
+    },
+    {
+      "w": "lunch.",
+      "s": 33.796,
+      "e": 34.13,
+      "shot": 15
+    },
+    {
+      "w": "On",
+      "s": 34.417,
+      "e": 34.67,
+      "shot": 16
+    },
+    {
+      "w": "our",
+      "s": 34.698,
+      "e": 34.978,
+      "shot": 16
+    },
+    {
+      "w": "bench.",
+      "s": 35.009,
+      "e": 35.343,
+      "shot": 16
+    },
+    {
+      "w": "He",
+      "s": 35.63,
+      "e": 35.883,
+      "shot": 17
+    },
+    {
+      "w": "always",
+      "s": 35.911,
+      "e": 36.271,
+      "shot": 17
+    },
+    {
+      "w": "saved",
+      "s": 36.311,
+      "e": 36.644,
+      "shot": 17
+    },
+    {
+      "w": "me",
+      "s": 36.681,
+      "e": 36.935,
+      "shot": 17
+    },
+    {
+      "w": "the",
+      "s": 36.963,
+      "e": 37.243,
+      "shot": 17
+    },
+    {
+      "w": "last",
+      "s": 37.274,
+      "e": 37.581,
+      "shot": 17
+    },
+    {
+      "w": "pickle.",
+      "s": 37.615,
+      "e": 37.975,
+      "shot": 17
+    },
+    {
+      "w": "Then",
+      "s": 38.265,
+      "e": 38.571,
+      "shot": 18
+    },
+    {
+      "w": "the",
+      "s": 38.606,
+      "e": 38.886,
+      "shot": 18
+    },
+    {
+      "w": "jokes",
+      "s": 38.917,
+      "e": 39.25,
+      "shot": 18
+    },
+    {
+      "w": "started.",
+      "s": 39.287,
+      "e": 39.674,
+      "shot": 18
+    },
+    {
+      "w": "\"Are",
+      "s": 39.967,
+      "e": 40.247,
+      "shot": 19
+    },
+    {
+      "w": "you",
+      "s": 40.278,
+      "e": 40.558,
+      "shot": 19
+    },
+    {
+      "w": "two",
+      "s": 40.589,
+      "e": 40.869,
+      "shot": 19
+    },
+    {
+      "w": "married?\"",
+      "s": 40.9,
+      "e": 41.287,
+      "shot": 19
+    },
+    {
+      "w": "\"Scaredy",
+      "s": 41.33,
+      "e": 41.716,
+      "shot": 20
+    },
+    {
+      "w": "cat",
+      "s": 41.759,
+      "e": 42.039,
+      "shot": 20
+    },
+    {
+      "w": "and",
+      "s": 42.07,
+      "e": 42.35,
+      "shot": 20
+    },
+    {
+      "w": "his",
+      "s": 42.381,
+      "e": 42.661,
+      "shot": 20
+    },
+    {
+      "w": "bodyguard.\"",
+      "s": 42.693,
+      "e": 43.133,
+      "shot": 20
+    },
+    {
+      "w": "They",
+      "s": 43.181,
+      "e": 43.488,
+      "shot": 21
+    },
+    {
+      "w": "laughed",
+      "s": 43.522,
+      "e": 43.909,
+      "shot": 21
+    },
+    {
+      "w": "in",
+      "s": 43.952,
+      "e": 44.205,
+      "shot": 21
+    },
+    {
+      "w": "the",
+      "s": 44.233,
+      "e": 44.513,
+      "shot": 21
+    },
+    {
+      "w": "halls.",
+      "s": 44.544,
+      "e": 44.878,
+      "shot": 21
+    },
+    {
+      "w": "They",
+      "s": 45.165,
+      "e": 45.471,
+      "shot": 21
+    },
+    {
+      "w": "laughed",
+      "s": 45.506,
+      "e": 45.892,
+      "shot": 21
+    },
+    {
+      "w": "at",
+      "s": 45.935,
+      "e": 46.189,
+      "shot": 21
+    },
+    {
+      "w": "lunch.",
+      "s": 46.217,
+      "e": 46.55,
+      "shot": 21
+    },
+    {
+      "w": "Kai",
+      "s": 46.837,
+      "e": 47.117,
+      "shot": 22
+    },
+    {
+      "w": "said,",
+      "s": 47.148,
+      "e": 47.455,
+      "shot": 22
+    },
+    {
+      "w": "\"Two",
+      "s": 47.589,
+      "e": 47.869,
+      "shot": 22
+    },
+    {
+      "w": "useless",
+      "s": 47.9,
+      "e": 48.287,
+      "shot": 22
+    },
+    {
+      "w": "gifts.",
+      "s": 48.33,
+      "e": 48.663,
+      "shot": 22
+    },
+    {
+      "w": "Perfect",
+      "s": 48.95,
+      "e": 49.337,
+      "shot": 22
+    },
+    {
+      "w": "match.\"",
+      "s": 49.38,
+      "e": 49.713,
+      "shot": 22
+    },
+    {
+      "w": "One",
+      "s": 49.75,
+      "e": 50.03,
+      "shot": 23
+    },
+    {
+      "w": "day,",
+      "s": 50.061,
+      "e": 50.341,
+      "shot": 23
+    },
+    {
+      "w": "I'd",
+      "s": 50.472,
+      "e": 50.752,
+      "shot": 23
+    },
+    {
+      "w": "had",
+      "s": 50.783,
+      "e": 51.063,
+      "shot": 23
+    },
+    {
+      "w": "enough.",
+      "s": 51.094,
+      "e": 51.454,
+      "shot": 23
+    },
+    {
+      "w": "I",
+      "s": 51.744,
+      "e": 51.971,
+      "shot": 24
+    },
+    {
+      "w": "knew",
+      "s": 51.996,
+      "e": 52.303,
+      "shot": 24
+    },
+    {
+      "w": "our",
+      "s": 52.337,
+      "e": 52.617,
+      "shot": 24
+    },
+    {
+      "w": "gifts",
+      "s": 52.648,
+      "e": 52.981,
+      "shot": 24
+    },
+    {
+      "w": "would",
+      "s": 53.019,
+      "e": 53.352,
+      "shot": 24
+    },
+    {
+      "w": "fit",
+      "s": 53.389,
+      "e": 53.669,
+      "shot": 24
+    },
+    {
+      "w": "together.",
+      "s": 53.7,
+      "e": 54.113,
+      "shot": 24
+    },
+    {
+      "w": "I",
+      "s": 54.409,
+      "e": 54.636,
+      "shot": 24
+    },
+    {
+      "w": "asked",
+      "s": 54.661,
+      "e": 54.994,
+      "shot": 24
+    },
+    {
+      "w": "Rio",
+      "s": 55.031,
+      "e": 55.311,
+      "shot": 24
+    },
+    {
+      "w": "for",
+      "s": 55.343,
+      "e": 55.623,
+      "shot": 24
+    },
+    {
+      "w": "his.",
+      "s": 55.654,
+      "e": 55.934,
+      "shot": 24
+    },
+    {
+      "w": "\"I'll",
+      "s": 56.215,
+      "e": 56.521,
+      "shot": 25
+    },
+    {
+      "w": "keep",
+      "s": 56.556,
+      "e": 56.862,
+      "shot": 25
+    },
+    {
+      "w": "you",
+      "s": 56.896,
+      "e": 57.176,
+      "shot": 25
+    },
+    {
+      "w": "safe,\"",
+      "s": 57.207,
+      "e": 57.514,
+      "shot": 25
+    },
+    {
+      "w": "I",
+      "s": 57.548,
+      "e": 57.775,
+      "shot": 25
+    },
+    {
+      "w": "said.",
+      "s": 57.8,
+      "e": 58.107,
+      "shot": 25
+    },
+    {
+      "w": "\"Every",
+      "s": 58.391,
+      "e": 58.724,
+      "shot": 25
+    },
+    {
+      "w": "minute.",
+      "s": 58.761,
+      "e": 59.121,
+      "shot": 25
+    },
+    {
+      "w": "I",
+      "s": 59.411,
+      "e": 59.638,
+      "shot": 25
+    },
+    {
+      "w": "promise.\"",
+      "s": 59.663,
+      "e": 60.05,
+      "shot": 25
+    },
+    {
+      "w": "Rio",
+      "s": 60.093,
+      "e": 60.373,
+      "shot": 26
+    },
+    {
+      "w": "looked",
+      "s": 60.404,
+      "e": 60.764,
+      "shot": 26
+    },
+    {
+      "w": "at",
+      "s": 60.804,
+      "e": 61.057,
+      "shot": 26
+    },
+    {
+      "w": "me",
+      "s": 61.085,
+      "e": 61.339,
+      "shot": 26
+    },
+    {
+      "w": "for",
+      "s": 61.367,
+      "e": 61.647,
+      "shot": 26
+    },
+    {
+      "w": "a",
+      "s": 61.678,
+      "e": 61.904,
+      "shot": 26
+    },
+    {
+      "w": "long",
+      "s": 61.93,
+      "e": 62.236,
+      "shot": 26
+    },
+    {
+      "w": "time.",
+      "s": 62.27,
+      "e": 62.577,
+      "shot": 26
+    },
+    {
+      "w": "\"Why",
+      "s": 62.861,
+      "e": 63.141,
+      "shot": 27
+    },
+    {
+      "w": "do",
+      "s": 63.172,
+      "e": 63.426,
+      "shot": 27
+    },
+    {
+      "w": "you",
+      "s": 63.454,
+      "e": 63.734,
+      "shot": 27
+    },
+    {
+      "w": "think",
+      "s": 63.765,
+      "e": 64.098,
+      "shot": 27
+    },
+    {
+      "w": "I'm",
+      "s": 64.135,
+      "e": 64.415,
+      "shot": 27
+    },
+    {
+      "w": "always",
+      "s": 64.446,
+      "e": 64.806,
+      "shot": 27
+    },
+    {
+      "w": "with",
+      "s": 64.846,
+      "e": 65.153,
+      "shot": 27
+    },
+    {
+      "w": "you?\"",
+      "s": 65.187,
+      "e": 65.467,
+      "shot": 27
+    },
+    {
+      "w": "he",
+      "s": 65.498,
+      "e": 65.751,
+      "shot": 27
+    },
+    {
+      "w": "said.",
+      "s": 65.78,
+      "e": 66.086,
+      "shot": 27
+    },
+    {
+      "w": "\"Nothing",
+      "s": 66.37,
+      "e": 66.757,
+      "shot": 28
+    },
+    {
+      "w": "feels",
+      "s": 66.8,
+      "e": 67.133,
+      "shot": 28
+    },
+    {
+      "w": "dangerous",
+      "s": 67.17,
+      "e": 67.61,
+      "shot": 28
+    },
+    {
+      "w": "when",
+      "s": 67.659,
+      "e": 67.966,
+      "shot": 28
+    },
+    {
+      "w": "you're",
+      "s": 68.0,
+      "e": 68.36,
+      "shot": 28
+    },
+    {
+      "w": "here.\"",
+      "s": 68.4,
+      "e": 68.707,
+      "shot": 28
+    },
+    {
+      "w": "Then",
+      "s": 68.741,
+      "e": 69.047,
+      "shot": 29
+    },
+    {
+      "w": "he",
+      "s": 69.081,
+      "e": 69.335,
+      "shot": 29
+    },
+    {
+      "w": "gave",
+      "s": 69.363,
+      "e": 69.67,
+      "shot": 29
+    },
+    {
+      "w": "it",
+      "s": 69.704,
+      "e": 69.957,
+      "shot": 29
+    },
+    {
+      "w": "to",
+      "s": 69.985,
+      "e": 70.239,
+      "shot": 29
+    },
+    {
+      "w": "me",
+      "s": 70.267,
+      "e": 70.52,
+      "shot": 29
+    },
+    {
+      "w": "anyway.",
+      "s": 70.548,
+      "e": 70.908,
+      "shot": 29
+    },
+    {
+      "w": "Alone,",
+      "s": 71.198,
+      "e": 71.531,
+      "shot": 30
+    },
+    {
+      "w": "our",
+      "s": 71.669,
+      "e": 71.949,
+      "shot": 30
+    },
+    {
+      "w": "gifts",
+      "s": 71.98,
+      "e": 72.313,
+      "shot": 30
+    },
+    {
+      "w": "were",
+      "s": 72.35,
+      "e": 72.657,
+      "shot": 30
+    },
+    {
+      "w": "nothing.",
+      "s": 72.691,
+      "e": 73.077,
+      "shot": 30
+    },
+    {
+      "w": "Together,",
+      "s": 73.37,
+      "e": 73.784,
+      "shot": 31
+    },
+    {
+      "w": "I",
+      "s": 73.93,
+      "e": 74.156,
+      "shot": 31
+    },
+    {
+      "w": "always",
+      "s": 74.181,
+      "e": 74.541,
+      "shot": 31
+    },
+    {
+      "w": "knew",
+      "s": 74.581,
+      "e": 74.888,
+      "shot": 31
+    },
+    {
+      "w": "the",
+      "s": 74.922,
+      "e": 75.202,
+      "shot": 31
+    },
+    {
+      "w": "exact",
+      "s": 75.233,
+      "e": 75.567,
+      "shot": 31
+    },
+    {
+      "w": "second",
+      "s": 75.604,
+      "e": 75.964,
+      "shot": 31
+    },
+    {
+      "w": "to",
+      "s": 76.004,
+      "e": 76.257,
+      "shot": 31
+    },
+    {
+      "w": "be",
+      "s": 76.285,
+      "e": 76.539,
+      "shot": 31
+    },
+    {
+      "w": "strong.",
+      "s": 76.567,
+      "e": 76.927,
+      "shot": 31
+    },
+    {
+      "w": "I",
+      "s": 77.217,
+      "e": 77.443,
+      "shot": 32
+    },
+    {
+      "w": "won",
+      "s": 77.469,
+      "e": 77.749,
+      "shot": 32
+    },
+    {
+      "w": "every",
+      "s": 77.78,
+      "e": 78.113,
+      "shot": 32
+    },
+    {
+      "w": "game.",
+      "s": 78.15,
+      "e": 78.457,
+      "shot": 32
+    },
+    {
+      "w": "Every",
+      "s": 78.741,
+      "e": 79.074,
+      "shot": 32
+    },
+    {
+      "w": "race.",
+      "s": 79.111,
+      "e": 79.418,
+      "shot": 32
+    },
+    {
+      "w": "Even",
+      "s": 79.702,
+      "e": 80.009,
+      "shot": 33
+    },
+    {
+      "w": "Kai",
+      "s": 80.043,
+      "e": 80.323,
+      "shot": 33
+    },
+    {
+      "w": "couldn't",
+      "s": 80.354,
+      "e": 80.767,
+      "shot": 33
+    },
+    {
+      "w": "touch",
+      "s": 80.813,
+      "e": 81.146,
+      "shot": 33
+    },
+    {
+      "w": "me.",
+      "s": 81.183,
+      "e": 81.437,
+      "shot": 33
+    },
+    {
+      "w": "Everyone",
+      "s": 81.715,
+      "e": 82.128,
+      "shot": 34
+    },
+    {
+      "w": "wanted",
+      "s": 82.174,
+      "e": 82.534,
+      "shot": 34
+    },
+    {
+      "w": "to",
+      "s": 82.574,
+      "e": 82.827,
+      "shot": 34
+    },
+    {
+      "w": "sit",
+      "s": 82.856,
+      "e": 83.136,
+      "shot": 34
+    },
+    {
+      "w": "with",
+      "s": 83.167,
+      "e": 83.473,
+      "shot": 34
+    },
+    {
+      "w": "me",
+      "s": 83.507,
+      "e": 83.761,
+      "shot": 34
+    },
+    {
+      "w": "now.",
+      "s": 83.789,
+      "e": 84.069,
+      "shot": 34
+    },
+    {
+      "w": "Without",
+      "s": 84.35,
+      "e": 84.737,
+      "shot": 35
+    },
+    {
+      "w": "his",
+      "s": 84.78,
+      "e": 85.06,
+      "shot": 35
+    },
+    {
+      "w": "gift,",
+      "s": 85.091,
+      "e": 85.397,
+      "shot": 35
+    },
+    {
+      "w": "Rio",
+      "s": 85.531,
+      "e": 85.811,
+      "shot": 35
+    },
+    {
+      "w": "was",
+      "s": 85.843,
+      "e": 86.123,
+      "shot": 35
+    },
+    {
+      "w": "just",
+      "s": 86.154,
+      "e": 86.46,
+      "shot": 35
+    },
+    {
+      "w": "a",
+      "s": 86.494,
+      "e": 86.721,
+      "shot": 35
+    },
+    {
+      "w": "regular",
+      "s": 86.746,
+      "e": 87.133,
+      "shot": 35
+    },
+    {
+      "w": "kid.",
+      "s": 87.176,
+      "e": 87.456,
+      "shot": 35
+    },
+    {
+      "w": "He",
+      "s": 87.737,
+      "e": 87.99,
+      "shot": 36
+    },
+    {
+      "w": "got",
+      "s": 88.019,
+      "e": 88.299,
+      "shot": 36
+    },
+    {
+      "w": "caught",
+      "s": 88.33,
+      "e": 88.69,
+      "shot": 36
+    },
+    {
+      "w": "in",
+      "s": 88.73,
+      "e": 88.983,
+      "shot": 36
+    },
+    {
+      "w": "the",
+      "s": 89.011,
+      "e": 89.291,
+      "shot": 36
+    },
+    {
+      "w": "rain.",
+      "s": 89.322,
+      "e": 89.629,
+      "shot": 36
+    },
+    {
+      "w": "He",
+      "s": 89.913,
+      "e": 90.166,
+      "shot": 37
+    },
+    {
+      "w": "tripped",
+      "s": 90.194,
+      "e": 90.581,
+      "shot": 37
+    },
+    {
+      "w": "on",
+      "s": 90.624,
+      "e": 90.877,
+      "shot": 37
+    },
+    {
+      "w": "the",
+      "s": 90.906,
+      "e": 91.186,
+      "shot": 37
+    },
+    {
+      "w": "stairs.",
+      "s": 91.217,
+      "e": 91.577,
+      "shot": 37
+    },
+    {
+      "w": "He",
+      "s": 91.867,
+      "e": 92.12,
+      "shot": 38
+    },
+    {
+      "w": "never",
+      "s": 92.148,
+      "e": 92.481,
+      "shot": 38
+    },
+    {
+      "w": "saw",
+      "s": 92.519,
+      "e": 92.799,
+      "shot": 38
+    },
+    {
+      "w": "the",
+      "s": 92.83,
+      "e": 93.11,
+      "shot": 38
+    },
+    {
+      "w": "ball",
+      "s": 93.141,
+      "e": 93.447,
+      "shot": 38
+    },
+    {
+      "w": "coming.",
+      "s": 93.481,
+      "e": 93.841,
+      "shot": 38
+    },
+    {
+      "w": "He",
+      "s": 94.131,
+      "e": 94.385,
+      "shot": 39
+    },
+    {
+      "w": "just",
+      "s": 94.413,
+      "e": 94.72,
+      "shot": 39
+    },
+    {
+      "w": "laughed",
+      "s": 94.754,
+      "e": 95.14,
+      "shot": 39
+    },
+    {
+      "w": "it",
+      "s": 95.183,
+      "e": 95.437,
+      "shot": 39
+    },
+    {
+      "w": "off.",
+      "s": 95.465,
+      "e": 95.745,
+      "shot": 39
+    },
+    {
+      "w": "I",
+      "s": 96.026,
+      "e": 96.253,
+      "shot": 40
+    },
+    {
+      "w": "stopped",
+      "s": 96.278,
+      "e": 96.664,
+      "shot": 40
+    },
+    {
+      "w": "sitting",
+      "s": 96.707,
+      "e": 97.094,
+      "shot": 40
+    },
+    {
+      "w": "on",
+      "s": 97.137,
+      "e": 97.39,
+      "shot": 40
+    },
+    {
+      "w": "our",
+      "s": 97.419,
+      "e": 97.699,
+      "shot": 40
+    },
+    {
+      "w": "bench.",
+      "s": 97.73,
+      "e": 98.063,
+      "shot": 40
+    },
+    {
+      "w": "Rio",
+      "s": 98.35,
+      "e": 98.63,
+      "shot": 40
+    },
+    {
+      "w": "didn't.",
+      "s": 98.661,
+      "e": 99.021,
+      "shot": 40
+    },
+    {
+      "w": "He",
+      "s": 99.311,
+      "e": 99.564,
       "shot": 41
     },
     {
-      "w": "promised.",
-      "s": 92.733,
-      "e": 93.147,
+      "w": "waited",
+      "s": 99.593,
+      "e": 99.953,
       "shot": 41
+    },
+    {
+      "w": "after",
+      "s": 99.993,
+      "e": 100.326,
+      "shot": 41
+    },
+    {
+      "w": "school.",
+      "s": 100.363,
+      "e": 100.723,
+      "shot": 41
+    },
+    {
+      "w": "He",
+      "s": 101.013,
+      "e": 101.266,
+      "shot": 41
+    },
+    {
+      "w": "waited",
+      "s": 101.294,
+      "e": 101.654,
+      "shot": 41
+    },
+    {
+      "w": "until",
+      "s": 101.694,
+      "e": 102.028,
+      "shot": 41
+    },
+    {
+      "w": "the",
+      "s": 102.065,
+      "e": 102.345,
+      "shot": 41
+    },
+    {
+      "w": "streetlights",
+      "s": 102.376,
+      "e": 102.896,
+      "shot": 41
+    },
+    {
+      "w": "came",
+      "s": 102.954,
+      "e": 103.26,
+      "shot": 41
+    },
+    {
+      "w": "on.",
+      "s": 103.294,
+      "e": 103.548,
+      "shot": 41
+    },
+    {
+      "w": "He",
+      "s": 103.826,
+      "e": 104.079,
+      "shot": 42
+    },
+    {
+      "w": "saved",
+      "s": 104.107,
+      "e": 104.441,
+      "shot": 42
+    },
+    {
+      "w": "me",
+      "s": 104.478,
+      "e": 104.731,
+      "shot": 42
+    },
+    {
+      "w": "the",
+      "s": 104.759,
+      "e": 105.039,
+      "shot": 42
+    },
+    {
+      "w": "last",
+      "s": 105.07,
+      "e": 105.377,
+      "shot": 42
+    },
+    {
+      "w": "pickle,",
+      "s": 105.411,
+      "e": 105.771,
+      "shot": 42
+    },
+    {
+      "w": "every",
+      "s": 105.911,
+      "e": 106.244,
+      "shot": 42
+    },
+    {
+      "w": "day.",
+      "s": 106.281,
+      "e": 106.561,
+      "shot": 42
+    },
+    {
+      "w": "And",
+      "s": 106.843,
+      "e": 107.123,
+      "shot": 43
+    },
+    {
+      "w": "every",
+      "s": 107.154,
+      "e": 107.487,
+      "shot": 43
+    },
+    {
+      "w": "day,",
+      "s": 107.524,
+      "e": 107.804,
+      "shot": 43
+    },
+    {
+      "w": "I",
+      "s": 107.935,
+      "e": 108.162,
+      "shot": 43
+    },
+    {
+      "w": "said,",
+      "s": 108.187,
+      "e": 108.494,
+      "shot": 43
+    },
+    {
+      "w": "\"Tomorrow.\"",
+      "s": 108.628,
+      "e": 109.041,
+      "shot": 43
+    },
+    {
+      "w": "Then,",
+      "s": 109.087,
+      "e": 109.394,
+      "shot": 44
+    },
+    {
+      "w": "one",
+      "s": 109.528,
+      "e": 109.808,
+      "shot": 44
+    },
+    {
+      "w": "afternoon,",
+      "s": 109.839,
+      "e": 110.279,
+      "shot": 44
+    },
+    {
+      "w": "I",
+      "s": 110.428,
+      "e": 110.654,
+      "shot": 44
+    },
+    {
+      "w": "felt",
+      "s": 110.68,
+      "e": 110.986,
+      "shot": 44
+    },
+    {
+      "w": "danger.",
+      "s": 111.02,
+      "e": 111.38,
+      "shot": 44
+    },
+    {
+      "w": "It",
+      "s": 111.67,
+      "e": 111.924,
+      "shot": 44
+    },
+    {
+      "w": "came",
+      "s": 111.952,
+      "e": 112.259,
+      "shot": 44
+    },
+    {
+      "w": "from",
+      "s": 112.293,
+      "e": 112.599,
+      "shot": 44
+    },
+    {
+      "w": "our",
+      "s": 112.633,
+      "e": 112.913,
+      "shot": 44
+    },
+    {
+      "w": "bench.",
+      "s": 112.944,
+      "e": 113.278,
+      "shot": 44
+    },
+    {
+      "w": "Rio",
+      "s": 113.565,
+      "e": 113.845,
+      "shot": 45
+    },
+    {
+      "w": "didn't",
+      "s": 113.876,
+      "e": 114.236,
+      "shot": 45
+    },
+    {
+      "w": "sense",
+      "s": 114.276,
+      "e": 114.609,
+      "shot": 45
+    },
+    {
+      "w": "the",
+      "s": 114.646,
+      "e": 114.926,
+      "shot": 45
+    },
+    {
+      "w": "car",
+      "s": 114.957,
+      "e": 115.237,
+      "shot": 45
+    },
+    {
+      "w": "coming.",
+      "s": 115.269,
+      "e": 115.629,
+      "shot": 45
+    },
+    {
+      "w": "He'd",
+      "s": 115.919,
+      "e": 116.225,
+      "shot": 45
+    },
+    {
+      "w": "given",
+      "s": 116.259,
+      "e": 116.593,
+      "shot": 45
+    },
+    {
+      "w": "that",
+      "s": 116.63,
+      "e": 116.936,
+      "shot": 45
+    },
+    {
+      "w": "away.",
+      "s": 116.97,
+      "e": 117.277,
+      "shot": 45
+    },
+    {
+      "w": "Now",
+      "s": 117.561,
+      "e": 117.841,
+      "shot": 46
+    },
+    {
+      "w": "I",
+      "s": 117.872,
+      "e": 118.099,
+      "shot": 46
+    },
+    {
+      "w": "spend",
+      "s": 118.124,
+      "e": 118.457,
+      "shot": 46
+    },
+    {
+      "w": "every",
+      "s": 118.494,
+      "e": 118.828,
+      "shot": 46
+    },
+    {
+      "w": "afternoon",
+      "s": 118.865,
+      "e": 119.305,
+      "shot": 46
+    },
+    {
+      "w": "on",
+      "s": 119.354,
+      "e": 119.607,
+      "shot": 46
+    },
+    {
+      "w": "our",
+      "s": 119.635,
+      "e": 119.915,
+      "shot": 46
+    },
+    {
+      "w": "bench.",
+      "s": 119.946,
+      "e": 120.28,
+      "shot": 46
+    },
+    {
+      "w": "I",
+      "s": 120.567,
+      "e": 120.793,
+      "shot": 47
+    },
+    {
+      "w": "leave",
+      "s": 120.819,
+      "e": 121.152,
+      "shot": 47
+    },
+    {
+      "w": "room",
+      "s": 121.189,
+      "e": 121.496,
+      "shot": 47
+    },
+    {
+      "w": "on",
+      "s": 121.53,
+      "e": 121.783,
+      "shot": 47
+    },
+    {
+      "w": "the",
+      "s": 121.811,
+      "e": 122.091,
+      "shot": 47
+    },
+    {
+      "w": "left.",
+      "s": 122.122,
+      "e": 122.429,
+      "shot": 47
+    },
+    {
+      "w": "I",
+      "s": 122.713,
+      "e": 122.94,
+      "shot": 48
+    },
+    {
+      "w": "save",
+      "s": 122.965,
+      "e": 123.271,
+      "shot": 48
+    },
+    {
+      "w": "him",
+      "s": 123.306,
+      "e": 123.586,
+      "shot": 48
+    },
+    {
+      "w": "the",
+      "s": 123.617,
+      "e": 123.897,
+      "shot": 48
+    },
+    {
+      "w": "last",
+      "s": 123.928,
+      "e": 124.234,
+      "shot": 48
+    },
+    {
+      "w": "pickle.",
+      "s": 124.269,
+      "e": 124.629,
+      "shot": 48
+    },
+    {
+      "w": "I",
+      "s": 124.919,
+      "e": 125.145,
+      "shot": 49
+    },
+    {
+      "w": "promised",
+      "s": 125.17,
+      "e": 125.584,
+      "shot": 49
+    },
+    {
+      "w": "I'd",
+      "s": 125.63,
+      "e": 125.91,
+      "shot": 49
+    },
+    {
+      "w": "keep",
+      "s": 125.941,
+      "e": 126.247,
+      "shot": 49
+    },
+    {
+      "w": "him",
+      "s": 126.281,
+      "e": 126.561,
+      "shot": 49
+    },
+    {
+      "w": "safe.",
+      "s": 126.593,
+      "e": 126.899,
+      "shot": 49
+    },
+    {
+      "w": "Every",
+      "s": 127.183,
+      "e": 127.517,
+      "shot": 49
+    },
+    {
+      "w": "minute.",
+      "s": 127.554,
+      "e": 127.914,
+      "shot": 49
     },
     {
       "w": "Just",
-      "s": 93.443,
-      "e": 93.749,
-      "shot": 41
+      "s": 128.204,
+      "e": 128.51,
+      "shot": 49
     },
     {
       "w": "late.",
-      "s": 93.783,
-      "e": 94.09,
-      "shot": 41
+      "s": 128.544,
+      "e": 128.851,
+      "shot": 49
     }
   ],
   "music": {
@@ -2075,78 +2691,7 @@
     "db": -7
   },
   "ambience": [],
-  "sfx": [
-    {
-      "file": "output/stock/sfx/magic_shimmer_stock.wav",
-      "t": 1.363,
-      "shot": 2
-    },
-    {
-      "file": "output/stock/sfx/pop_stock.wav",
-      "t": 5.27,
-      "shot": 4
-    },
-    {
-      "file": "output/stock/sfx/pop_stock.wav",
-      "t": 7.624,
-      "shot": 5
-    },
-    {
-      "file": "output/stock/sfx/boom_stock.wav",
-      "t": 10.909,
-      "shot": 6
-    },
-    {
-      "file": "output/stock/sfx/magic_shimmer_stock.wav",
-      "t": 12.581,
-      "shot": 7
-    },
-    {
-      "file": "output/stock/sfx/riser_stock.wav",
-      "t": 14.343,
-      "shot": 8
-    },
-    {
-      "file": "output/stock/sfx/pop_stock.wav",
-      "t": 21.759,
-      "shot": 11
-    },
-    {
-      "file": "output/stock/sfx/boom_stock.wav",
-      "t": 33.541,
-      "shot": 17
-    },
-    {
-      "file": "output/stock/sfx/magic_shimmer_stock.wav",
-      "t": 51.644,
-      "shot": 24
-    },
-    {
-      "file": "output/stock/sfx/boom_stock.wav",
-      "t": 65.454,
-      "shot": 29
-    },
-    {
-      "file": "output/stock/sfx/impact_stock.wav",
-      "t": 71.783,
-      "shot": 32
-    },
-    {
-      "file": "output/stock/sfx/heartbeat_stock.wav",
-      "t": 74.248,
-      "shot": 33
-    },
-    {
-      "file": "output/stock/sfx/rain_stock.wav",
-      "t": 82.711,
-      "shot": 37
-    },
-    {
-      "file": "output/stock/sfx/magic_shimmer_stock.wav",
-      "t": 91.711,
-      "shot": 41
-    }
-  ],
+  "sfx": [],
   "override": {
     "music": {
       "file": "output/music/TEMPOREX_-_Numbers_Instrumental_loop.mp3",

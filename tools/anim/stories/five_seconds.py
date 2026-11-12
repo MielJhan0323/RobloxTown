@@ -1,4 +1,4 @@
-"""five-seconds ("The Last Pickle") - everyone gets one gift; Rio's is feeling when something is about to end.
+"""five-seconds ("The Last Pickle") - one-second strength + danger sense; Rio gives his away.
 
 Sets (reused): A street (bench + burger stand built here on the left sidewalk), canteen (from alpha_mark),
 playground (exported). Rio = Crowd3. The accident is never shown: headlights, then the empty bench.
@@ -596,7 +596,7 @@ def b_kai(k, F):  # Kai said, "With Rio's gift, you'd actually be somebody."
     kai.arm("L", 1, 85, 10)
     kai.talk(3, F, base="smirk")
     n.look(1, 0, -10)
-    S.cam(V((PG.x, PG.y, 3.4)), dist=10, yaw=180, height=4.5, lens=32)
+    S.cam_at(V((PG.x - 4.0, PG.y - 5.5, 5.4)), kai.head_pt() - V((0, 0, 1.2)), lens=30)
     return S
 
 
@@ -623,8 +623,305 @@ def b_give(k, F):  # Then he gave it to me anyway.
     return S
 
 
-ORDER = [s01, s02, s03, s04, s05, s06, s07, s08, s09, s10, s12,
-         b_together, b_lunch, b_bench, b_pickle_give, b_laughing, tease("Crowd1", "laugh"), tease("Crowd2", "smirk"),
-         b_kai, s15, s16, rio_says("sad"), rio_says("smile"), b_give, rio_says("smile"), s19,
-         s20, s21, s22, s23, s25, s26, s27, s28, s29, s30, s31, s32, s33, s34, s35]
+# ---------------------------------------------------------------- v7 beats (strength + danger sense)
+def c_fly(k, F):  # Some can fly a little.
+    S = street("morning")
+    c = S.char("Crowd1", (11, -3500, 0.0), 0, "laugh")
+    p = c.pos
+    kit.key(c.root, 1, loc=(p.x, p.y, p.z))
+    for j, f in enumerate(range(kf(6), F + 2, 10)):
+        kit.key(c.root, f, loc=(p.x, p.y, p.z + (1.4 if j % 2 else 1.1)))
+    c.arm("L", 1, 0, 70)
+    c.arm("R", 1, 0, 70)
+    kit.sparkle_particles(tuple(c.world((0, 0, 0.5))), n=14, radius=0.9, frames=F + 10, color=(0.7, 0.85, 1))
+    S.cam(V((11, -3500, 3.2)), dist=10, yaw=-10, height=3.6, lens=32)
+    return S
+
+
+def lift_can(S, n, F, drop=True):
+    can = kit.cyl(1.0, 2.4, tuple(n.world((0, 1.2, 1.2))), kit.mat("tcan", (0.25, 0.45, 0.3)), verts=16)
+    up = kf(F * 0.25)
+    p0 = V(can.location)
+    kit.key(can, 1, loc=tuple(p0))
+    kit.key(can, up, loc=tuple(p0 + V((0, -0.6, 4.6))))
+    if drop:
+        kit.key(can, up + 8, loc=tuple(p0 + V((0, -0.6, 4.6))))
+        kit.key(can, up + 14, loc=tuple(p0 + V((0.6, 0.4, 0))), rot=(0, 20, 0))
+    else:
+        kit.key(can, F, loc=tuple(p0 + V((0, -0.6, 4.6))))
+    n.arm("L", up, 175, 5)
+    n.arm("R", up, 175, 5)
+    if drop:
+        n.arm("L", up + 10, 20, 30)
+        n.arm("R", up + 10, 20, 30)
+    return can
+
+
+def c_strong(k, F):  # Mine? I'm super strong, for one second.
+    S = rblx.Stage(PACK, "day")
+    n = S.char("Narrator", (PG.x, PG.y), 180, "determined")
+    lift_can(S, n, F, drop=False)
+    n.faces([(1, "determined"), (kf(F * 0.3), "laugh")])
+    S.cam(V((PG.x, PG.y, 3.6)), dist=12, yaw=180, height=4.2, lens=30)
+    return S
+
+
+def c_gone(k, F):  # Then it's gone.
+    S = rblx.Stage(PACK, "day")
+    n = S.char("Narrator", (PG.x, PG.y), 180, "laugh")
+    can = kit.cyl(1.0, 2.4, tuple(n.world((0, 0.2, 7.2))), kit.mat("tcan", (0.25, 0.45, 0.3)), verts=16)
+    kit.key(can, 1, loc=tuple(can.location))
+    kit.key(can, kf(8), loc=tuple(can.location))
+    kit.key(can, kf(14), loc=tuple(n.world((0.4, 0.4, 5.6))), rot=(0, 25, 0))
+    n.arm("L", 1, 175)
+    n.arm("R", 1, 175)
+    n.arm("L", kf(12), 120, 50)
+    n.arm("R", kf(12), 120, 50)
+    n.faces([(1, "laugh"), (kf(10), "shocked")])
+    S.cam(V((PG.x, PG.y, 4.0)), dist=11, yaw=180, height=4.8, lens=30)
+    return S
+
+
+def c_noclap(k, F):  # Nobody claps for that.
+    S = rblx.Stage(PACK, "day")
+    n = S.char("Narrator", (PG.x, PG.y), 180, "sad")
+    kit.cyl(1.0, 2.4, tuple(n.world((1.8, 0.8, 1.2))), kit.mat("tcan", (0.25, 0.45, 0.3)), verts=16)
+    for nm, x in (("Prey1", -6), ("Crowd2", -8)):
+        c = S.char(nm, (PG.x + x, PG.y + 2.5), 90, "neutral")
+        c.walk(1, F, (PG.x + x + 9, PG.y + 2.5))
+    S.cam(V((PG.x, PG.y + 1, 3)), dist=13, yaw=180, height=4.5, lens=30)
+    return S
+
+
+def c_orb(k, F):  # You can give your gift away, but only once.
+    S = street("sunset")
+    a = S.char("Prey2", (10.2, -3500), 60, "smile")
+    b = S.char("Prey1", (12.4, -3500.4), -60, "smile")
+    orb = glow_orb((11.3, -3501.2, 2.8), 200)
+    kit.key(orb, 1, loc=(10.9, -3501.2, 2.6))
+    kit.key(orb, F, loc=(11.8, -3501.2, 2.8))
+    a.arm("R", 1, 80, -20)
+    b.arm("L", 1, 80, -20)
+    S.cam(V((11.3, -3500.5, 2.8)), dist=7, yaw=0, height=3.6, lens=36)
+    return S
+
+
+def c_deathbed(k, F):  # Most people only do it at the very end, to their kids.  (gentle: a glow over a bed)
+    from stories.nothing_happens import night_house
+    S, h = night_house()
+    hx, hy = HOUSE
+    orb = glow_orb((hx + 4.6, hy + 2.0, 3.6), 300)
+    kit.key(orb, 1, loc=(hx + 4.6, hy + 2.6, 3.4), scale=(1, 1, 1))
+    kit.key(orb, F, loc=(hx + 4.6, hy - 1.0, 3.8), scale=(0.6, 0.6, 0.6))
+    S.cam_at(V((hx + 0.5, hy - 5.5, 6.5)), V((hx + 4.6, hy + 1.5, 2.8)), lens=28, fstop=None)
+    return S
+
+
+def c_rio_danger(k, F):  # He could sense danger.
+    S = street("sunset")
+    r = S.char(RIO, (11, -3500), -10, "worried")
+    r.faces([(1, "neutral"), (kf(6), "worried")])
+    eye_glow(r, kf(6), 14)
+    S.cam(r.head_pt() - V((0, 0, 0.9)), dist=6.5, yaw=-10, height=r.head_pt().z - 0.3, lens=40)
+    return S
+
+
+def c_cant_stop(k, F):  # That's it. He couldn't stop it. He just felt it coming.
+    S = rblx.Stage(PACK, "day")
+    r = S.char(RIO, (PG.x - 2, PG.y), 150, "scared")
+    o = S.char("Prey1", (PG.x + 2.5, PG.y + 1), 200, "smile")
+    ball = kit.sphere(0.6, (PG.x + 9, PG.y + 3, 5), kit.mat("ball", (0.95, 0.3, 0.2)), seg=16)
+    kit.key(ball, 1, loc=(PG.x + 12, PG.y + 3, 6))
+    kit.key(ball, kf(F * 0.55), loc=tuple(o.head_pt()))
+    kit.key(ball, kf(F * 0.8), loc=(PG.x + 1.5, PG.y - 1, 0.6))
+    r.arm("L", 1, 120, 30)
+    r.arm("R", 1, 120, 30)
+    o.faces([(1, "smile"), (kf(F * 0.55), "shocked")])
+    S.cam(V((PG.x, PG.y + 0.5, 3)), dist=13, yaw=180, height=4.5, lens=30)
+    return S
+
+
+def c_scaredy(k, F):  # Kids called him a scaredy cat.
+    S = rblx.Stage(PACK, "day")
+    r = S.char(RIO, (PG.x, PG.y), 180, "sad")
+    r.look(1, 0, -15)
+    for i, (nm, dx) in enumerate((("Crowd1", -3), ("Crowd2", 3), ("Kai", 0.4))):
+        c = S.char(nm, (PG.x + dx, PG.y + 3.6), dx * 8, "laugh")
+        c.point(1 + i * 2, "R", up=-10)
+        c.talk(2 + i * 3, F, base="laugh")
+    S.cam(V((PG.x, PG.y + 1.8, 3)), dist=14, yaw=60, height=5, lens=30)
+    return S
+
+
+def c_halls(k, F):  # They laughed in the halls. They laughed at lunch.
+    S = rblx.Stage(PACK, "day")
+    n = S.char("Narrator", (PG.x - 0.8, PG.y), 180, "sad")
+    r = S.char(RIO, (PG.x + 0.8, PG.y), 180, "sad")
+    for i, nm in enumerate(("Crowd1", "Crowd2", "Crowd4", "Cousin", "Prey3")):
+        a = 2.2 + i * 0.5
+        x, y = PG.x + math.cos(a) * 5, PG.y + math.sin(a) * 5 + 1
+        yaw = math.degrees(math.atan2(PG.x - x, -(PG.y - y)))
+        c = S.char(nm, (x, y), yaw, "laugh")
+        c.point(1 + i * 3, "R", up=-10)
+    S.cam(V((PG.x, PG.y + 1, 3)), dist=15, yaw=180, height=7, lens=28, fstop=None)
+    return S
+
+
+def c_enough(k, F):  # One day, I'd had enough.
+    S = rblx.Stage(PACK, "day")
+    n = S.char("Narrator", (PG.x, PG.y), 180, "angry")
+    n.arm("L", 1, 30, -10)
+    n.arm("R", 1, 30, -10)
+    S.cam(n.head_pt() - V((0, 0, 0.8)), dist=6, yaw=180, height=n.head_pt().z, lens=40)
+    return S
+
+
+def c_promise(k, F):  # "I'll keep you safe," I said. "Every minute. I promise."
+    S = street("sunset")
+    n = sit_bench(S, "Narrator", -1.2, "determined", yaw=135)
+    n.talk(3, F, base="determined")
+    n.arm("R", 1, 60, -20)
+    S.cam(n.head_pt() - V((0, 0, 0.7)), dist=6, yaw=135, height=n.head_pt().z, lens=40)
+    return S
+
+
+def c_strong_win(k, F):  # Together, I always knew the exact second to be strong.
+    S = rblx.Stage(PACK, "day")
+    n = S.char("Narrator", (PG.x, PG.y), 180, "smirk")
+    eye_glow(n, kf(4), 12)
+    lift_can(S, n, F, drop=False)
+    S.cam(V((PG.x, PG.y, 3.6)), dist=12, yaw=180, height=4.2, lens=30)
+    return S
+
+
+def c_race(k, F):  # I won every game. Every race.
+    S = rblx.Stage(PACK, "day")
+    n = S.char("Narrator", (PG.x - 6, PG.y), 90, "laugh")
+    n.run(1, F, (PG.x + 4, PG.y))
+    for i, nm in enumerate(("Crowd2", "Prey1")):
+        c = S.char(nm, (PG.x - 9.5 - i * 1.5, PG.y + 1.2 + i), 90, "tired")
+        c.run(1, F, (PG.x - 1 - i * 1.5, PG.y + 1.2 + i))
+    S.cam(V((PG.x - 1, PG.y, 2.8)), dist=13, yaw=170, height=4, lens=30)
+    return S
+
+
+def c_kai_lose(k, F):  # Even Kai couldn't touch me.
+    S = rblx.Stage(PACK, "day")
+    n = S.char("Narrator", (PG.x - 1.5, PG.y), 90, "smirk")
+    kai = S.char("Kai", (PG.x + 1.6, PG.y), -90, "angry")
+    eye_glow(n, 1, 10)
+    kai.arm("R", 1, 40)
+    kai.arm("R", kf(8), 100)
+    kai.lean(kf(8), 20)
+    n.key_root(kf(6), (PG.x - 1.5, PG.y))
+    n.key_root(kf(10), (PG.x - 1.6, PG.y - 1.6))
+    kai.key_root(kf(14), (PG.x + 0.4, PG.y), tilt=0)
+    kai.key_root(kf(22), (PG.x - 0.6, PG.y), tilt=-80)
+    kai.faces([(1, "angry"), (kf(14), "shocked")])
+    S.cam(V((PG.x, PG.y, 2.8)), dist=12, yaw=180, height=4.2, lens=30)
+    return S
+
+
+def c_popular(k, F):  # Everyone wanted to sit with me now.
+    S = rblx.Stage(PACK, "day")
+    cx, cy = canteen(S)
+    n = S.char("Narrator", (cx - 8, cy + 2.4, 0.25), 180, "laugh")
+    n.sit(1)
+    for i, (nm, dx, dy, yaw) in enumerate((("Prey1", -11, 2.4, 180), ("Crowd1", -5, 2.4, 180), ("Crowd2", -8, -2.4, 0),
+                                            ("Kai", -6, -2.4, 0), ("Cousin", -10.5, -2.4, 0))):
+        c = S.char(nm, (cx + dx, cy + dy, 0.25), yaw, "laugh")
+        c.sit(1)
+        c.talk(1 + i * 3, F, base="laugh")
+    S.cam(V((cx - 8, cy, 3.0)), dist=14, yaw=-15, height=6, lens=30, fstop=None)
+    return S
+
+
+def c_regular(k, F):  # Without his gift, Rio was just a regular kid.
+    S = street("day")
+    r = S.char(RIO, (11, -3500), -10, "neutral")
+    r.walk(1, F, (11, -3503), swing=22)
+    S.cam(r.chest_pt() + V((0, 0, 0.6)), dist=10, yaw=-10, lens=34)
+    return S
+
+
+def c_rain(k, F):  # He got caught in the rain.
+    S = street("rain")
+    r = S.char(RIO, (11, -3500), -10, "shocked")
+    r.arm("L", 1, 160, 20)
+    r.arm("R", 1, 160, 20)
+    S.rain(F, (11, -3500, 0), radius=7, n=450)
+    S.cam(r.chest_pt() + V((0, 0, 0.6)), dist=9, yaw=-10, lens=34)
+    return S
+
+
+def c_trip(k, F):  # He tripped on the stairs.
+    S = rblx.Stage(PACK, "day")
+    r = S.char(RIO, (PG.x, PG.y), 90, "smile")
+    r.walk(1, kf(F * 0.4), (PG.x + 1.5, PG.y))
+    r.key_root(kf(F * 0.4), tilt=0)
+    r.key_root(kf(F * 0.65), (PG.x + 2.4, PG.y), tilt=-80)
+    r.faces([(1, "smile"), (kf(F * 0.45), "shocked")])
+    r.arm("L", kf(F * 0.55), 150)
+    r.arm("R", kf(F * 0.55), 150)
+    for k2 in range(3):
+        kit.box((3.0, 1.2, 0.5 * (k2 + 1)), (PG.x + 1.6 + k2 * 0.0, PG.y + 3.0 - k2 * 1.2, 0.25 * (k2 + 1)),
+                kit.mat("steps", (0.7, 0.7, 0.72)), 0.02)
+    S.cam(V((PG.x + 1.5, PG.y, 2.5)), dist=11, yaw=180, height=4, lens=30)
+    return S
+
+
+def c_ball(k, F):  # He never saw the ball coming.
+    S = rblx.Stage(PACK, "day")
+    r = S.char(RIO, (PG.x, PG.y), 180, "smile")
+    ball = kit.sphere(0.6, (PG.x + 9, PG.y + 3, 5), kit.mat("ball", (0.95, 0.3, 0.2)), seg=16)
+    hit = kf(F * 0.45)
+    kit.key(ball, 1, loc=(PG.x + 10, PG.y + 4, 6))
+    kit.key(ball, hit, loc=tuple(r.head_pt() + V((0.5, 0.3, 0.4))))
+    kit.key(ball, kf(F * 0.8), loc=(PG.x - 3, PG.y + 2, 0.6))
+    r.faces([(1, "smile"), (hit, "shocked")])
+    r.lean(hit + 2, -15, 10)
+    S.cam(V((PG.x, PG.y, 3.2)), dist=10, yaw=180, height=4.2, lens=32)
+    return S
+
+
+def c_laughoff(k, F):  # He just laughed it off.
+    S = rblx.Stage(PACK, "day")
+    r = S.char(RIO, (PG.x, PG.y), 180, "laugh")
+    r.arm("R", 1, 150, 30)  # rubbing his head
+    S.cam(r.head_pt() - V((0, 0, 0.9)), dist=6, yaw=180, height=r.head_pt().z - 0.2, lens=40)
+    return S
+
+
+def c_wait_night(k, F):  # He waited after school. He waited until the streetlights came on.
+    from stories.nothing_happens import lamps_on
+    S = street("night")
+    lamps_on(S, kf(F * 0.4), gap=2, near=(BENCH.x, BENCH.y, 0))
+    r = sit_bench(S, RIO, 1.2, "sad")
+    r.look(1, 40, 0)
+    r.look(kf(F * 0.5), -30, 0)
+    S.cam(V((BENCH.x + 0.5, BENCH.y + 1, 3.0)), dist=17, yaw=75, height=5, lens=30, fstop=None)
+    return S
+
+
+def c_felt(k, F):  # Then, one afternoon, I felt danger. It came from our bench.
+    S = rblx.Stage(PACK, "dusk")
+    n = S.char("Narrator", (PG.x, PG.y), 180, "smile")
+    n.faces([(1, "smile"), (kf(6), "scared")])
+    eye_glow(n, kf(6), 18)
+    S.flash_light(tuple(n.head_pt() + V((0, 2, 0))), kf(6), kf(6) + 6, (1, 0.5, 0.4), 2500)
+    n.look(kf(12), 60, 0)
+    S.cam(n.head_pt() - V((0, 0, 0.8)), dist=6, yaw=180, height=n.head_pt().z, lens=40)
+    return S
+
+
+ORDER = [s01, s02, s03, c_fly, c_strong, c_gone, c_noclap, c_orb, c_deathbed,
+         s07, c_rio_danger, c_cant_stop, c_scaredy,
+         b_together, b_lunch, b_bench, b_pickle_give,
+         b_laughing, tease("Crowd1", "laugh"), tease("Crowd2", "smirk"), c_halls, b_kai,
+         c_enough, s15, c_promise, s16, rio_says("sad"), rio_says("smile"), b_give,
+         s19, c_strong_win, c_race, c_kai_lose, c_popular,
+         c_regular, c_rain, c_trip, c_ball, c_laughoff,
+         s23, c_wait_night, s24, s25,
+         c_felt, s30,
+         s32, s33, s34, s35]
 SHOTS = {i + 1: f for i, f in enumerate(ORDER)}
