@@ -28,7 +28,7 @@ Without his gift, Rio was just a regular kid. He got caught in the rain. He trip
 
 I stopped sitting on our bench. Rio didn't. He waited after school. He waited until the streetlights came on. He saved me the last pickle, every day. And every day, I said, "Tomorrow."
 
-Then, one afternoon, I felt danger. It came from our bench.
+Then, one afternoon, I felt danger. It came from our bench. Rio didn't sense the car coming. He'd given that away.
 
 Now I spend every afternoon on our bench. I leave room on the left. I save him the last pickle. I promised I'd keep him safe. Every minute. Just late.
 
@@ -132,7 +132,7 @@ canteen, playground, house kitchen - all reused.
 
 [sadly] I stopped sitting on our bench. Rio didn't. He waited after school. He waited until the streetlights came on. He saved me the last pickle, every day. [softly] And every day, I said, "Tomorrow."
 
-[dramatically] Then, one afternoon, I felt danger. It came from our bench.
+[dramatically] Then, one afternoon, I felt danger. It came from our bench. [emotional] Rio didn't sense the car coming. [sadly] He'd given that away.
 
 [emotional] [pause] Now I spend every afternoon on our bench. I leave room on the left. I save him the last pickle. [softly] I promised I'd keep him safe. Every minute. [whispering] Just late.
 ```
