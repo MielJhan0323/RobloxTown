@@ -24,9 +24,11 @@ One day, I'd had enough. I knew our gifts would fit together. I asked Rio for hi
 
 Alone, our gifts were nothing. Together, I always knew the exact second to be strong. I won every game. Every race. Even Kai couldn't touch me. Everyone wanted to sit with me now.
 
-I stopped sitting on our bench. Every day, I said, "Tomorrow."
+Without his gift, Rio was just a regular kid. He got caught in the rain. He tripped on the stairs. He never saw the ball coming. He just laughed it off.
 
-Then, one afternoon, I felt danger coming. It came from our bench. One second of strength. Not enough to get across town. And Rio didn't sense the car coming. He'd given that away.
+I stopped sitting on our bench. Rio didn't. He waited after school. He waited until the streetlights came on. He saved me the last pickle, every day. And every day, I said, "Tomorrow."
+
+Then, one afternoon, I felt danger. It came from our bench.
 
 Now I spend every afternoon on our bench. I leave room on the left. I save him the last pickle. I promised I'd keep him safe. Every minute. Just late.
 
@@ -126,9 +128,11 @@ canteen, playground, house kitchen - all reused.
 
 [excited] Alone, our gifts were nothing. Together, I always knew the exact second to be strong. I won every game. Every race. Even Kai couldn't touch me. Everyone wanted to sit with me now.
 
-[sadly] I stopped sitting on our bench. Every day, I said, "Tomorrow."
+[softly] Without his gift, Rio was just a regular kid. He got caught in the rain. He tripped on the stairs. He never saw the ball coming. [laughs softly] He just laughed it off.
 
-[softly] Then, one afternoon, I felt danger coming. [dramatically] It came from our bench. [emotional] One second of strength. Not enough to get across town. And Rio didn't sense the car coming. [sadly] He'd given that away.
+[sadly] I stopped sitting on our bench. Rio didn't. He waited after school. He waited until the streetlights came on. He saved me the last pickle, every day. [softly] And every day, I said, "Tomorrow."
 
-[emotional] Now I spend every afternoon on our bench. I leave room on the left. I save him the last pickle. [softly] I promised I'd keep him safe. Every minute. [whispering] Just late.
+[dramatically] Then, one afternoon, I felt danger. It came from our bench.
+
+[emotional] [pause] Now I spend every afternoon on our bench. I leave room on the left. I save him the last pickle. [softly] I promised I'd keep him safe. Every minute. [whispering] Just late.
 ```
