@@ -10,23 +10,23 @@ narrator ('I can feel when things end. And this hasn't.'). Feelings are shown, n
 
 ## Narration
 
-In this town, everyone gets one gift. Some kids can talk to dogs. Some can find anything you lose. Mine? Small things always land the way I want. Toast lands butter side up. Coins land heads. Nobody claps for that.
+In this town, everyone gets one gift. Some kids can talk to dogs. Some can fly a little. Mine? I'm super strong, for one second. Then it's gone. Nobody claps for that.
 
 You can give your gift away, but only once. Most people only do it at the very end, to their kids.
 
-Rio's gift wasn't much better. He could tell what was about to happen, but only five seconds early. Just enough to catch a falling glass.
+Rio's gift wasn't much better. He could sense danger. That's it. He couldn't stop it. He just felt it coming. Kids called him a scaredy cat.
 
 Rio and I were always together. At lunch. On our bench. He always saved me the last pickle.
 
-Then the jokes started. "Are you two married?" "Toast Boy and his shadow." They laughed in the halls. They laughed at lunch. Kai said, "Two useless gifts. Perfect match."
+Then the jokes started. "Are you two married?" "Scaredy cat and his bodyguard." They laughed in the halls. They laughed at lunch. Kai said, "Two useless gifts. Perfect match."
 
-One day, I'd had enough. I knew our gifts would fit together. I asked Rio for his. "I'll keep you safe," I said. "Every minute. I promise." Rio looked at me for a long time. "Why do you think I'm always with you?" he said. "I always know what's coming. I wanted to be here for it." Then he gave it to me anyway.
+One day, I'd had enough. I knew our gifts would fit together. I asked Rio for his. "I'll keep you safe," I said. "Every minute. I promise." Rio looked at me for a long time. "Why do you think I'm always with you?" he said. "Nothing feels dangerous when you're here." Then he gave it to me anyway.
 
-Alone, our gifts were nothing. Together, I saw everything coming, and made it land my way. I won every game. Every race. Even Kai couldn't touch me. Everyone wanted to sit with me now.
+Alone, our gifts were nothing. Together, I always knew the exact second to be strong. I won every game. Every race. Even Kai couldn't touch me. Everyone wanted to sit with me now.
 
 I stopped sitting on our bench. Every day, I said, "Tomorrow."
 
-Then, one afternoon, I felt something coming. A tug, like the last page of a book. It came from our bench. Five seconds. Not enough to get there. And Rio didn't see the car coming. He'd given that away.
+Then, one afternoon, I felt danger coming. It came from our bench. One second of strength. Not enough to get across town. And Rio didn't sense the car coming. He'd given that away.
 
 Now I spend every afternoon on our bench. I leave room on the left. I save him the last pickle. I promised I'd keep him safe. Every minute. Just late.
 
@@ -112,23 +112,23 @@ canteen, playground, house kitchen - all reused.
 ## ElevenLabs prompt
 
 ```
-[warmly] In this town, everyone gets one gift. [playfully] Some kids can talk to dogs. Some can find anything you lose. [laughs softly] Mine? Small things always land the way I want. Toast lands butter side up. Coins land heads. [sadly] Nobody claps for that.
+[warmly] In this town, everyone gets one gift. [playfully] Some kids can talk to dogs. Some can fly a little. [laughs softly] Mine? I'm super strong, for one second. Then it's gone. [sadly] Nobody claps for that.
 
 [softly] You can give your gift away, but only once. Most people only do it at the very end, to their kids.
 
-[playfully] Rio's gift wasn't much better. He could tell what was about to happen, but only five seconds early. Just enough to catch a falling glass.
+[playfully] Rio's gift wasn't much better. He could sense danger. That's it. He couldn't stop it. He just felt it coming. [sadly] Kids called him a scaredy cat.
 
 [warmly] Rio and I were always together. At lunch. On our bench. He always saved me the last pickle.
 
-[sadly] Then the jokes started. [playfully] "Are you two married?" "Toast Boy and his shadow." [sadly] They laughed in the halls. They laughed at lunch. [dramatically] Kai said, "Two useless gifts. Perfect match."
+[sadly] Then the jokes started. [playfully] "Are you two married?" "Scaredy cat and his bodyguard." [sadly] They laughed in the halls. They laughed at lunch. [dramatically] Kai said, "Two useless gifts. Perfect match."
 
-[frustrated] One day, I'd had enough. I knew our gifts would fit together. I asked Rio for his. [warmly] "I'll keep you safe," I said. "Every minute. I promise." [softly] Rio looked at me for a long time. "Why do you think I'm always with you?" he said. [softly] "I always know what's coming. I wanted to be here for it." [warmly] Then he gave it to me anyway.
+[frustrated] One day, I'd had enough. I knew our gifts would fit together. I asked Rio for his. [warmly] "I'll keep you safe," I said. "Every minute. I promise." [softly] Rio looked at me for a long time. "Why do you think I'm always with you?" he said. [softly] "Nothing feels dangerous when you're here." [warmly] Then he gave it to me anyway.
 
-[excited] Alone, our gifts were nothing. Together, I saw everything coming, and made it land my way. I won every game. Every race. Even Kai couldn't touch me. Everyone wanted to sit with me now.
+[excited] Alone, our gifts were nothing. Together, I always knew the exact second to be strong. I won every game. Every race. Even Kai couldn't touch me. Everyone wanted to sit with me now.
 
 [sadly] I stopped sitting on our bench. Every day, I said, "Tomorrow."
 
-[softly] Then, one afternoon, I felt something coming. [dramatically] A tug, like the last page of a book. It came from our bench. [emotional] Five seconds. Not enough to get there. And Rio didn't see the car coming. [sadly] He'd given that away.
+[softly] Then, one afternoon, I felt danger coming. [dramatically] It came from our bench. [emotional] One second of strength. Not enough to get across town. And Rio didn't sense the car coming. [sadly] He'd given that away.
 
 [emotional] Now I spend every afternoon on our bench. I leave room on the left. I save him the last pickle. [softly] I promised I'd keep him safe. Every minute. [whispering] Just late.
 ```
