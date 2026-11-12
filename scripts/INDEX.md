@@ -7,4 +7,4 @@ Tell laptop Claude: **"record <slug>"**. Each script is `scripts/<slug>.md`.
 | lighthouse | The Lighthouse for Lost People | done |
 | time-meter | The Last Day | done |
 | alpha-mark | The Third Mark | done (Blender from Studio models, output/alpha-mark.mp4) |
-| nothing-happens | Completely Normal | voice + Blender animation (no recording needed) |
+| nothing-happens | Completely Normal | done (Blender, backup Kokoro voice; swap in Titan when ElevenLabs is free) |
