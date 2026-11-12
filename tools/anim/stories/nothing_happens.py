@@ -1,4 +1,4 @@
-"""nothing-happens ("Nothing Happens Here") - everything is normal; spooky build-up, ordinary payoff.
+"""nothing-happens ("Completely Normal") - build-ups that end in something ordinary.
 
 Sets: A = exported town street (road x -8..8, sidewalks to +-14, shops x +-15..25, y -3580..-3420)
       B = house built here at H (bedroom / hallway / kitchen open toward -Y like a dollhouse, front yard + tree at +Y).
@@ -203,8 +203,8 @@ def house(S, night=True):
         kit.point((hx - 22, hy - 2, 9), (0.4, 0.5, 1.0), 60, 3.0)
     else:
         for x in (hx, hx - 11, hx - 22):
-            kit.point((x, hy - 2, 10), (1, 0.92, 0.8), 600, 3.0)
-        kit.spot((WIN[0] + 3, hy + 30, 16), (WIN[0], hy + 2, 1), (1, 0.85, 0.6), 14000, 30, 0.6, 0.6)
+            kit.point((x, hy - 2, 10), (1, 0.92, 0.8), 220, 3.0)
+        kit.spot((WIN[0] + 3, hy + 30, 16), (WIN[0], hy + 2, 1), (1, 0.85, 0.6), 6000, 30, 0.6, 0.6)
     return out
 
 
@@ -237,7 +237,10 @@ def night_house():
 
 def day_house():
     S = rblx.Stage(PACK, "morning")
-    return S, house(S, False)
+    h = house(S, False)
+    open_curtains(h)
+    bpy.context.scene.view_settings.exposure = -0.6
+    return S, h
 
 
 # ---------------------------------------------------------------- street props (set A)
@@ -277,110 +280,296 @@ def street_props(S, spooky=False):
     return out
 
 
+def in_bed(S, expr="shocked", sit=False):
+    hx, hy = H
+    if sit:
+        n = S.char("Narrator", (hx + 4.6, hy + 3.2, 2.2 - 1.5), 0, expr)
+        n.sit(1)
+    else:
+        n = S.char("Narrator", (hx + 4.6, hy - 1.6, 2.7), 0, expr)
+        n.lie(1, face_down=False)
+    return n
+
+
+def at_curtain(S, expr="scared"):
+    n = S.char("Narrator", (WIN[0] + 0.2, H[1] + 3.8), 180, expr)
+    return n
+
+
+def open_curtains(h):
+    for side, dx in (("curL", -2.6), ("curR", 2.6)):
+        o = h[side]
+        o.location.x += dx
+        o.scale = (0.35, 1, 1)
+    h["shadow"].hide_render = True
+
+
+# ---------------------------------------------------------------- extra props / effects
+def snow(S, frames, center, radius=10, n=350, height=12):
+    m = kit.mat("snow", (1, 1, 1), rough=0.9)
+    rnd = random.Random(8)
+    flakes = [kit.box((0.12, 0.12, 0.12), (0, 0, 0), m, 0) for _ in range(n)]
+    for o in flakes:
+        x, y, z = (center[0] + rnd.uniform(-radius, radius), center[1] + rnd.uniform(-radius, radius),
+                   center[2] + rnd.uniform(0, height))
+        kit.key(o, 1, loc=(x, y, z))
+        kit.key(o, frames + 15, loc=(x + rnd.uniform(-1, 1), y, z - rnd.uniform(3, 5)))
+        for fc in o.animation_data.action.fcurves:
+            for kp in fc.keyframe_points:
+                kp.interpolation = "LINEAR"
+    return flakes
+
+
+def darken_sky(S, f0, f1):
+    """Key the world + sun from day to night between f0 and f1."""
+    w = bpy.context.scene.world
+    bg = w.node_tree.nodes["Background"]
+    sun = [o for o in bpy.data.objects if o.type == "LIGHT" and o.data.type == "SUN"][0]
+    for f, st, se in ((f0, 1.0, 3.2), (f1, 0.18, 0.35)):
+        bg.inputs[1].default_value = st
+        bg.inputs[1].keyframe_insert("default_value", frame=f)
+        sun.data.energy = se
+        sun.data.keyframe_insert("energy", frame=f)
+
+
+def lamps_on(S, f0=1, gap=0, near=None):
+    """Street lamp bulbs light up (one by one when gap > 0)."""
+    bulbs = [o for o in bpy.data.objects if o.name.startswith("Lampbulb")]
+    if near is not None:
+        bulbs.sort(key=lambda o: (o.matrix_world.translation - V(near)).length)
+    for k, o in enumerate(bulbs):
+        m = kit.mat("bulb%d" % k, (1, 0.9, 0.6), emit=0.0001, emit_color=(1, 0.85, 0.5))
+        o.data.materials.clear()
+        o.data.materials.append(m)
+        nodes = m.node_tree.nodes
+        b = next(n for n in nodes if n.type in ("BSDF_PRINCIPLED", "EMISSION"))
+        sock = b.inputs["Emission Strength"] if "Emission Strength" in b.inputs else b.inputs["Strength"]
+        on = f0 + k * gap
+        sock.default_value = 0.0
+        sock.keyframe_insert("default_value", frame=max(0, on - 1))
+        sock.default_value = 12.0
+        sock.keyframe_insert("default_value", frame=on)
+        if gap:  # flicker
+            sock.default_value = 0.5
+            sock.keyframe_insert("default_value", frame=on + 2)
+            sock.default_value = 12.0
+            sock.keyframe_insert("default_value", frame=on + 4)
+        c = o.matrix_world.translation
+        L = kit.point(tuple(c - V((0, 0, 0.6))), (1, 0.85, 0.55), 0, 1.0)
+        L.data.keyframe_insert("energy", frame=max(0, on - 1))
+        L.data.energy = 600
+        L.data.keyframe_insert("energy", frame=on)
+
+
+def mail_cap(c):
+    blue = kit.mat("mailblue", (0.15, 0.25, 0.6))
+    top = c.head_pt() + V((0, 0, 0.75))
+    cap = kit.box((1.5, 1.5, 0.5), tuple(top), blue, 0.12)
+    brim = kit.box((1.3, 0.8, 0.12), tuple(top + c.world((0, 0.9, 0)) - c.pos + V((0, 0, -0.2))), blue, 0.04)
+    attach(cap, c.neck)
+    attach(brim, c.neck)
+    bag = kit.box((1.3, 0.6, 1.4), tuple(c.world((-1.0, 0.2, 2.2))), kit.mat("mailbag", (0.55, 0.35, 0.2)), 0.1)
+    attach(bag, c.body)
+
+
+def kids_street(S, specs, F, walk=True):
+    out = {}
+    for nm, x, y, expr in specs:
+        c = S.char(nm, (x, y), 0, expr)
+        if walk:
+            c.walk(1, F, (x, y - 4))
+        out[nm] = c
+    return out
+
+
+STREET_KIDS = [("Narrator", 11, -3478, "smile"), ("Smallkid", 12.6, -3479, "smile"), ("Crowd2", 9.6, -3472, "smile"),
+               ("Prey1", 12.4, -3468, "smile")]
+
+
 # ---------------------------------------------------------------- shots
-def s01(k, F):  # In this town,  (street, kids walking)
+def s01(k, F):  # In this town,
     S = rblx.Stage(PACK, "morning")
-    street_props(S)
-    for nm, x, y in (("Narrator", 11, -3478), ("Smallkid", 12.6, -3479), ("Crowd2", 9.6, -3472), ("Prey1", 12.4, -3468)):
-        c = S.char(nm, (x, y), 0, "smile")
-        c.walk(1, F, (x, y - 5))
+    kids_street(S, STREET_KIDS, F)
     S.cam(V((11.0, -3478, 3.0)), dist=16, yaw=-28, height=5.0, lens=38, fstop=None)
     return S
 
 
-def s02(k, F):  # everything is normal. (kids wave)
+def s02(k, F):  # everything is completely normal.
     S = rblx.Stage(PACK, "morning")
     for i, (nm, x) in enumerate((("Crowd2", 9.0), ("Narrator", 11.2), ("Smallkid", 13.0))):
         c = S.char(nm, (x, -3500), 0, "laugh" if i == 1 else "smile")
-        f = 1
-        j = 0
-        while f <= F:
+        for j, f in enumerate(range(1, F + 2, 8)):
             c.arm("R", f, 0, 150 if j % 2 else 120)
-            f += 8
-            j += 1
     S.cam(V((11.0, -3500, 3.2)), dist=11, yaw=-5, height=4.0, lens=38)
     return S
 
 
-def s03(k, F):  # The haunted mansion
-    S = rblx.Stage(PACK, "night")
-    kit.point((13, -3520, 6), (0.4, 1.0, 0.5), 400, 1.0)
-    kit.point((12, -3516, 14), (0.7, 0.3, 1.0), 600, 2.0)
-    S.cam_at(V((-2, -3532, 1.5)), V((18, -3520, 9)), lens=26, fstop=None)
-    S.shake(1, F, 0.04)
-    return S
+def umbrella(c, color):
+    um = kit.mat("umb" + str(color), color)
+    canopy = kit.cyl(2.0, 0.7, tuple(c.world((1.3, 0.4, 7.0))), um, verts=10, r2=0.1)
+    stick = kit.cyl(0.07, 3.0, tuple(c.world((1.5, 0.3, 5.4))), kit.mat("stick", (0.2, 0.2, 0.2)), verts=6)
+    attach(canopy, c.arms["R"])
+    attach(stick, c.arms["R"])
+    c.arm("R", 1, 150)
 
 
-def s04(k, F):  # is just a dentist's office.
-    S = rblx.Stage(PACK, "day")
-    street_props(S)
-    c = S.char("Prey3", (13.4, -3520), -90, "laugh")
-    c.arm("R", 1, 0, 140)
-    c.arm("L", 1, 0, 140)
-    S.cam_at(V((2, -3526, 4.0)), V((14.5, -3520, 7.5)), lens=28, fstop=None)
-    return S
-
-
-def s05(k, F):  # The cursed well is full of pennies.
-    S = rblx.Stage(PACK, "day")
-    street_props(S)
-    c = S.char("Crowd2", (-11, -3543.3), 0 + 180, "smile")
-    c.arm("R", 1, 20)
-    c.arm("R", kf(12), 120)
-    c.arm("R", kf(20), 60)
-    coin = kit.cyl(0.18, 0.05, tuple(c.world((1.5, 0.6, 4.6))), kit.mat("penny2", (0.85, 0.5, 0.2), metal=0.8), verts=10)
-    kit.key(coin, kf(12), loc=tuple(coin.location))
-    kit.key(coin, kf(22), loc=(-11.2, -3541.5, 6.0))
-    kit.key(coin, kf(32), loc=(-11.0, -3540, 2.45))
-    S.cam(V((-11, -3541.5, 2.8)), dist=10, yaw=160, height=5.5, lens=34)
-    return S
-
-
-def s06(k, F):  # The fortune teller only predicts rain,
-    S = rblx.Stage(PACK, "dusk")
-    p = street_props(S)
-    c = S.char("Crowd1", (11, -3554.3), 180, "smirk")
-    c.arm("L", 1, 70, -15)
-    c.arm("R", 1, 70, -15)
-    f = 1
-    while f <= F:
-        c.arm("L", f, 70, -15 + (6 if (f // 8) % 2 else -6))
-        c.arm("R", f, 70, -15 + (-6 if (f // 8) % 2 else 6))
-        f += 8
-    kit.point((11, -3556.5, 3.6), (0.6, 0.4, 1.0), 120, 0.5)
-    S.cam(V((11, -3555.5, 3.6)), dist=8, yaw=160, height=4.4, lens=36)
-    return S
-
-
-def s07(k, F):  # and she's usually right. (rain, umbrella)
+def s03(k, F):  # It rains.
     S = rblx.Stage(PACK, "rain")
-    street_props(S)
-    teller = S.char("Crowd1", (11, -3552), 180, "smirk")
-    um = kit.mat("umbrella", (0.7, 0.2, 0.8))
-    canopy = kit.cyl(2.2, 0.8, tuple(teller.world((1.3, 0.4, 7.2))), um, verts=10, r2=0.1)
-    stick = kit.cyl(0.07, 3.0, tuple(teller.world((1.5, 0.3, 5.6))), kit.mat("stick", (0.2, 0.2, 0.2)), verts=6)
-    teller.arm("R", 1, 150)
-    attach(canopy, teller.arms["R"])
-    attach(stick, teller.arms["R"])
-    for nm, x, y in (("Narrator", 8.6, -3550.5), ("Crowd2", 13.4, -3550.2)):
-        c = S.char(nm, (x, y), 180 + (25 if x < 11 else -25), "shocked")
-        c.arm("L", 1, 160)
-        c.arm("R", 1, 160)
-        c.look(1, 0, 25)
-    S.rain(F, (11, -3551, 0), radius=9, n=500, height=12)
-    S.cam(V((11, -3551, 3.4)), dist=13, yaw=180, height=5.0, lens=32)
+    cs = kids_street(S, [("Narrator", 11, -3500, "neutral"), ("Crowd2", 12.8, -3496, "neutral"), ("Prey1", 9.4, -3494, "neutral")], F)
+    for c, col in zip(cs.values(), ((0.2, 0.4, 0.9), (0.9, 0.3, 0.3), (0.95, 0.8, 0.2))):
+        umbrella(c, col)
+    S.rain(F, (11, -3500, 0), radius=10, n=550)
+    S.cam(V((11, -3499, 3.4)), dist=15, yaw=12, height=5.0, lens=32)
     return S
 
 
-def s08(k, F):  # Then, the tapping started. (house at night from the yard)
+def s04(k, F):  # It gets sunny.
+    S = rblx.Stage(PACK, "day")
+    cs = kids_street(S, [("Narrator", 11, -3500, "smile"), ("Smallkid", 12.8, -3500.5, "laugh")], F, walk=False)
+    for c in cs.values():
+        c.arm("L", 1, 150, -30)   # shading eyes
+        c.look(1, 0, 15)
+    kit.sphere(4, (40, -3420, 60), kit.mat("sun", (1, 0.95, 0.6), emit=15, emit_color=(1, 0.9, 0.5)))
+    S.cam(V((11.8, -3500, 4.0)), dist=10, yaw=-10, height=3.5, lens=32)
+    return S
+
+
+def s05(k, F):  # Sometimes, it gets cold.
+    S = rblx.Stage(PACK, "dusk")
+    cs = kids_street(S, [("Narrator", 11, -3500, "sad"), ("Prey1", 12.8, -3500.5, "sad"), ("Crowd2", 9.3, -3501, "sad")], F, walk=False)
+    for c in cs.values():
+        c.arm("L", 1, 70, -45)
+        c.arm("R", 1, 70, -45)
+        for j, f in enumerate(range(1, F + 2, 3)):   # shivering
+            c.lean(f, 0, 3 if j % 2 else -3)
+    snow(S, F, (11, -3500, 0), radius=9)
+    S.cam(V((11, -3500, 3.4)), dist=11, yaw=-5, height=4.2, lens=34)
+    return S
+
+
+def s06(k, F):  # Until one day, the sky turned dark.
+    S = rblx.Stage(PACK, "day")
+    darken_sky(S, 1, F)
+    S.cam_at(V((0, -3560, 2.0)), V((0, -3480, 14)), lens=24, fstop=None)
+    return S
+
+
+def s07(k, F):  # The birds went quiet.
+    S = rblx.Stage(PACK, "dusk")
+    pg = kit.mat("pigeon", (0.55, 0.57, 0.65), rough=0.6)
+    body = kit.box((0.7, 1.1, 0.7), (8.6, -3530, 9.75), pg, 0.15)
+    head = kit.box((0.45, 0.45, 0.45), (8.6, -3530.6, 10.25), kit.mat("pighead", (0.35, 0.45, 0.5)), 0.1)
+    kit.box((0.12, 0.25, 0.12), (8.6, -3530.9, 10.2), kit.mat("beak", (0.95, 0.6, 0.2)), 0)
+    for j, f in enumerate(range(1, F // 2, 6)):
+        head.rotation_euler = (R(20 if j % 2 else -10), 0, 0)
+        head.keyframe_insert("rotation_euler", frame=f)
+    head.rotation_euler = (0, 0, R(60))
+    head.keyframe_insert("rotation_euler", frame=F // 2 + 3)
+    S.cam_at(V((4.0, -3536, 9.0)), V((8.6, -3530.3, 9.9)), lens=40, fstop=2.8)
+    return S
+
+
+def s08(k, F):  # The streetlights flickered on, one by one.
+    S = rblx.Stage(PACK, "night")
+    lamps_on(S, 3, gap=max(2, F // 9), near=(0, -3580, 0))
+    S.cam_at(V((0, -3585, 4.5)), V((0, -3520, 5)), lens=26, fstop=None)
+    return S
+
+
+def s09(k, F):  # Everyone looked up.
+    S = rblx.Stage(PACK, "night")
+    lamps_on(S)
+    cs = kids_street(S, [("Narrator", 11, -3500, "shocked"), ("Smallkid", 12.8, -3500.5, "shocked"),
+                         ("Crowd2", 9.3, -3499, "shocked"), ("Prey1", 12, -3497, "shocked")], F, walk=False)
+    for c in cs.values():
+        c.look(1, 0, 0)
+        c.look(kf(10), 0, 35)
+    S.cam(V((11, -3500, 3.4)), dist=10, yaw=-5, height=2.6, lens=32)
+    return S
+
+
+def s10(k, F):  # It was just night time.
+    S = rblx.Stage(PACK, "night")
+    lamps_on(S)
+    kit.sphere(5, (-60, -3380, 70), kit.mat("moon", (1, 1, 0.9), emit=6, emit_color=(0.9, 0.95, 1)))
+    cs = kids_street(S, [("Narrator", 11, -3500, "neutral"), ("Smallkid", 12.8, -3500.5, "neutral"),
+                         ("Crowd2", 9.3, -3499, "neutral"), ("Prey1", 12, -3497, "neutral")], F, walk=False)
+    for c in cs.values():   # shrug
+        c.arm("L", kf(8), 30, 35)
+        c.arm("R", kf(8), 30, 35)
+        c.look(kf(8), 0, -5)
+    S.cam(V((9, -3500, 4)), dist=17, yaw=-25, height=5.0, lens=28, fstop=None)
+    return S
+
+
+def s11(k, F):  # footsteps behind me
+    S = rblx.Stage(PACK, "night")
+    lamps_on(S)
+    n = S.char("Narrator", (11, -3500), 0, "worried")
+    n.walk(1, F, (11, -3504), swing=22)
+    n.look(kf(F * 0.5), 30, 0)
+    S.cam(V((11, -3502, 3.6)), dist=9, yaw=-10, height=4.4, lens=34)
+    return S
+
+
+def s12(k, F):  # Slow. Heavy. Getting closer. (big shadow on the sidewalk)
+    S = rblx.Stage(PACK, "night")
+    m = S.char("Crowd4", (11, -3488), 0, "neutral")
+    m.walk(1, F, (11, -3492), swing=20)
+    S.char("Narrator", (11, -3497), 0, "worried")
+    kit.spot((11, -3480, 4.0), (11, -3500, 0), (1, 0.85, 0.6), 6000, 40, 0.3, 0.05)
+    S.cam_at(V((9.2, -3500, 0.8)), V((11, -3492, 2.2)), lens=26)
+    S.hide("Lampbulb")
+    return S
+
+
+def s13(k, F):  # I turned around.
+    S = rblx.Stage(PACK, "night")
+    lamps_on(S)
+    n = S.char("Narrator", (11, -3500), 0, "scared")
+    n.key_root(1, yaw=0)
+    n.key_root(kf(10), yaw=180)
+    S.cam(n.head_pt() - V((0, 0, 0.8)), dist=6, yaw=180, height=n.head_pt().z, lens=40)
+    return S
+
+
+def mailman(S, xy=(11, -3496.5)):
+    m = S.char("Crowd4", xy, 0, "smile")
+    mail_cap(m)
+    return m
+
+
+def s14(k, F):  # It was the mailman.
+    S = rblx.Stage(PACK, "night")
+    lamps_on(S)
+    m = mailman(S)
+    m.arm("R", 1, 0, 20)
+    m.arm("R", kf(8), 0, 140)  # wave
+    S.cam(m.head_pt() - V((0, 0, 1.4)), dist=8, yaw=0, height=m.head_pt().z - 0.4, lens=36)
+    return S
+
+
+def s15(k, F):  # He had a package for my mom.
+    S = rblx.Stage(PACK, "night")
+    lamps_on(S)
+    m = mailman(S)
+    n = S.char("Narrator", (11, -3500), 180, "tired")
+    box = kit.box((1.6, 1.2, 1.2), tuple(m.world((0, 1.6, 3.0))), kit.mat("parcel", (0.75, 0.55, 0.3)), 0.05)
+    kit.box((1.62, 0.2, 1.22), tuple(m.world((0, 1.6, 3.0))), kit.mat("tape", (0.9, 0.85, 0.6)), 0)
+    m.arm("L", 1, 75)
+    m.arm("R", 1, 75)
+    S.cam(V((11, -3498.3, 3.8)), dist=10, yaw=-75, height=4.6, lens=32)
+    return S
+
+
+def s16(k, F):  # That night, something tapped on my window.
     S, h = night_house()
-    sway(h["branch"], F, amp=(2, 0, 3), period=20, seed=1)
-    kit.point((WIN[0], H[1] + 3, 6), (0.3, 0.35, 0.6), 80, 1.0)
-    S.cam_at(V((WIN[0] - 12, H[1] + 27, 5.5)), V((WIN[0], H[1] + 7, 7)), lens=30, fstop=None)
+    sway(h["shadow"], F, amp=(0, 4, 0), period=10)
+    S.cam_at(V((H[0] - 3, H[1] - 8, 6.5)), V((WIN[0], H[1] + 6, 6)), lens=28, fstop=None)
     return S
 
 
-def s09(k, F):  # Tap. Tap. Tap. (curtain + branch shadow)
+def s17(k, F):  # Tap. Tap. Tap.
     S, h = night_house()
     f = 1
     while f <= F:
@@ -394,186 +583,34 @@ def s09(k, F):  # Tap. Tap. Tap. (curtain + branch shadow)
     return S
 
 
-def s10(k, F):  # Every night at three a.m.,
-    S, h = night_house()
-    S.cam_at(V((H[0] + 0.9, H[1] + 1.8, 3.6)), V((H[0] + 0.9, H[1] + 4.6, 3.05)), lens=40, fstop=2.0)
-    return S
-
-
-def in_bed(S, expr="shocked", sit=False):
-    hx, hy = H
-    if sit:
-        n = S.char("Narrator", (hx + 4.6, hy + 3.2, 2.2 - 1.5), 0, expr)
-        n.sit(1)
-    else:
-        n = S.char("Narrator", (hx + 4.6, hy - 1.6, 2.7), 0, expr)
-        n.lie(1, face_down=False)
-    return n
-
-
-def s11(k, F):  # on my bedroom window. (eyes open in bed)
-    S, h = night_house()
-    n = in_bed(S, "shocked")
-    n.look(1, 30, 0)
-    n.look(kf(16), 45, 0)
-    S.cam_at(V((H[0] + 1.0, H[1] - 1.5, 7.5)), V((H[0] + 4.6, H[1] + 3.5, 2.8)), lens=30)
-    return S
-
-
-def s12(k, F):  # footsteps in the hall (sits up, looks at door)
-    S, h = night_house()
-    n = in_bed(S, "worried", sit=True)
-    n.look(1, 0, 0)
-    n.look(kf(18), -60, 0)
-    n.faces([(1, "worried"), (kf(18), "scared")])
-    n.arm("L", 1, 40, 10)
-    n.arm("R", 1, 40, 10)
-    S.cam_at(V((H[0] - 3.5, H[1] - 6, 6.0)), V((H[0] + 3.0, H[1], 3.6)), lens=28)
-    return S
-
-
-def s13(k, F):  # On the third night, (dark hallway)
-    S, h = night_house()
-    kit.point((H[0] - 11, H[1] + 5, 1.0), (1, 0.7, 0.3), 25, 0.3)
-    S.cam_at(V((H[0] - 11, H[1] - 6.5, 5.0)), V((H[0] - 11, H[1] + 6, 4.0)), lens=24, fstop=None)
-    return S
-
-
-def s14(k, F):  # the fridge was glowing in the dark.
-    S, h = night_house()
-    hinge = h["fridge_hinge"]
-    kit.key(hinge, 1, rot=(0, 0, -35))
-    h["fridge_light"].data.energy = 1500
-    S.cam_at(V((H[0] - 22, H[1] - 6.5, 5.0)), V((H[0] - 17.5, H[1] + 3.5, 4.0)), lens=30, fstop=None)
-    return S
-
-
-def s15(k, F):  # vent started whispering (ear to the vent)
-    S, h = night_house()
-    n = S.char("Narrator", (H[0] + 6.4, H[1] - 4.0), -90 - 180, "worried")  # facing +X (the wall)
-    n.lean(1, 10, -12)
-    n.look(1, 0, 0, -25)
-    S.cam_at(V((H[0] + 1.5, H[1] - 9, 5.4)), V((H[0] + 6.8, H[1] - 4, 4.0)), lens=32)
-    return S
-
-
-def s16(k, F):  # "Over. Do you copy? Over." (vent close)
-    S, h = night_house()
-    for o in h["walkie"]:
-        o.hide_render = True
-    L = kit.point((H[0] + 8.3, H[1] - 4.0, 4.3), (0.3, 1.0, 0.4), 0, 0.2)
-    for f in range(1, F + 2, 6):
-        L.data.energy = 25 if (f // 6) % 2 else 2
-        L.data.keyframe_insert("energy", frame=f)
-    S.cam_at(V((H[0] + 4.0, H[1] - 5.5, 4.4)), V((H[0] + 7.7, H[1] - 4.0, 4.3)), lens=38, fstop=2.2)
-    return S
-
-
-def s17(k, F):  # I stopped sleeping. (under the blanket, flashlight)
-    S, h = night_house()
-    n = in_bed(S, "tired", sit=True)
-    n.arm("R", 1, 80, -10)
-    flashlight(n, "R", 1, 800)
-    S.cam_at(V((H[0] + 2.5, H[1] - 6.5, 5.0)), V((H[0] + 4.6, H[1] - 1.0, 4.4)), lens=30)
-    return S
-
-
-def s18(k, F):  # I drew maps of every sound. (desk)
-    S, h = night_house()
-    n = S.char("Narrator", (H[0] - 5.4, H[1] + 2.8, 2.0 - 1.5), 180, "tired")
-    n.sit(1)
-    f = 1
-    while f <= F:
-        n.arm("R", f, 80 + (6 if (f // 6) % 2 else 0), -8 + (4 if (f // 6) % 2 else -4))
-        f += 6
-    n.arm("L", 1, 70, -5)
-    n.look(1, 0, -30)
-    kit.point((H[0] - 4.0, H[1] + 5.8, 5.0), (1, 0.8, 0.5), 120, 0.4)
-    S.cam_at(V((H[0] - 7.0, H[1] + 1.8, 8.6)), V((H[0] - 5.5, H[1] + 5.0, 3.2)), lens=30)
-    return S
-
-
-def s19(k, F):  # Cousin: built on an old graveyard (flashlight under chin)
-    S, h = night_house()
-    c = S.char("Cousin", (H[0] - 1.0, H[1] - 2.0), 0, "smirk")
-    c.arm("R", 1, 75, -25)
-    up = kit.spot(tuple(c.world((0.3, 1.2, 2.6))), tuple(c.head_pt() + V((0, 0, 0.6))), (1, 0.85, 0.6), 600, 35, 0.4, 0.1)
-    c.talk(4, F, base="smirk")
-    n = S.char("Narrator", (H[0] + 2.8, H[1] - 0.4), -120, "scared")
-    S.cam_at(V((H[0] - 1.8, H[1] - 9, 4.6)), c.head_pt() - V((0, 0, 0.8)), lens=34)
-    return S
-
-
-def s20(k, F):  # My cousin also thinks pigeons are robots.
-    S = rblx.Stage(PACK, "day")
-    p = street_props(S)
-    c = S.char("Cousin", (11.5, -3503), 160, "shocked")
-    c.point(1, "R", up=-15)
-    c.talk(kf(10), F, base="shocked")
-    body, head = p["pigeon"]
-    f = 1
-    while f <= F:
-        head.rotation_euler = (R(25 if (f // 6) % 2 else -10), 0, 0)
-        head.keyframe_insert("rotation_euler", frame=f)
-        f += 6
-    S.cam_at(V((4.5, -3493.5, 4.6)), V((10.6, -3501.5, 2.4)), lens=28)
-    return S
-
-
-def s21(k, F):  # On the seventh night, (wide bedroom)
+def s18(k, F):  # I hid under my blanket.
     S, h = night_house()
     n = in_bed(S, "scared")
-    n.look(1, 40, 0)
-    sway(h["shadow"], F, amp=(0, 4, 0), period=16)
-    S.cam_at(V((H[0] - 2, H[1] - 10, 7.5)), V((H[0] + 1.5, H[1] + 2.5, 4.0)), lens=24, fstop=None)
+    bl = h["blanket"]
+    kit.key(bl, 1, loc=tuple(bl.location), scale=(1, 1, 1))
+    kit.key(bl, kf(12), loc=(bl.location.x, bl.location.y + 2.6, bl.location.z + 0.3), scale=(1.0, 1.25, 1.6))
+    S.cam_at(V((H[0] + 1.0, H[1] - 1.5, 7.5)), V((H[0] + 4.6, H[1] + 3.0, 2.8)), lens=30)
     return S
 
 
-def s22(k, F):  # the tapping got louder. (shadow claw, punch)
-    S, h = night_house()
-    sh = h["shadow"]
-    sh.scale = (6.5, 6.5, 1)
-    sway(sh, F, amp=(0, 7, 0), period=8)
-    S.cam_at(V((WIN[0] - 0.5, H[1] - 0.5, 6.0)), V((WIN[0], H[1] + 6.5, 6.2)), lens=32)
-    S.shake(1, F, 0.08)
-    return S
-
-
-def s23(k, F):  # I grabbed my flashlight.
-    S, h = night_house()
-    n = in_bed(S, "determined", sit=True)
-    n.arm("R", 1, 20, 10)
-    n.arm("R", kf(12), 85, 0)
-    flashlight(n, "R", kf(14), 2500)
-    S.cam_at(V((H[0] + 1.0, H[1] - 5.0, 5.2)), n.world((1.4, 1.0, 3.6)), lens=32)
-    return S
-
-
-def at_curtain(S, expr="scared"):
-    n = S.char("Narrator", (WIN[0] + 0.2, H[1] + 3.8), 180, expr)
-    return n
-
-
-def s24(k, F):  # I counted to three.
+def s19(k, F):  # I counted to three.
     S, h = night_house()
     n = at_curtain(S)
     n.arm("L", 1, 60, 5)
     n.arm("R", 1, 85)
     flashlight(n, "R", 1, 2000)
     n.lean(1, 6)
-    for i, f in enumerate((1, kf(F * 0.33), kf(F * 0.66))):
-        n.look(f, 0, -5 + i * 3)
     S.cam_at(V((WIN[0] + 3.5, H[1] - 3.0, 5.6)), n.head_pt() + V((0, 1.0, -0.6)), lens=30)
     return S
 
 
-def s25(k, F):  # And I ripped the curtain open.
+def s20(k, F):  # I ripped the curtain open.
     S, h = night_house()
     n = at_curtain(S, "determined")
     flashlight(n, "R", 1, 2000)
     n.arm("R", 1, 85)
     n.arm("L", 1, 60, 5)
-    fo = kf(F * 0.35)
+    fo = kf(F * 0.3)
     n.arm("L", fo, 70, 70)
     for side, dx in (("curL", -2.6), ("curR", 2.6)):
         o = h[side]
@@ -586,140 +623,206 @@ def s25(k, F):  # And I ripped the curtain open.
     return S
 
 
-def open_curtains(h):
-    for side, dx in (("curL", -2.6), ("curR", 2.6)):
-        o = h[side]
-        o.location.x += dx
-        o.scale = (0.35, 1, 1)
-    h["shadow"].hide_render = True
-
-
-def s26(k, F):  # It was a branch.
+def s21(k, F):  # It was a branch.
     S, h = night_house()
     open_curtains(h)
     sway(h["branch"], F, amp=(1.5, 0, 2.2), period=12, seed=2)
-    kit.point((WIN[0], H[1] + 6, 6.5), (1, 0.95, 0.8), 150, 0.5)  # the flashlight beam on it
+    kit.point((WIN[0], H[1] + 6, 6.5), (1, 0.95, 0.8), 150, 0.5)
     S.cam_at(V((WIN[0] - 0.4, H[1] + 2.0, 6.2)), V((WIN[0] - 0.4, H[1] + 7.5, 6.5)), lens=34, fstop=2.4)
     return S
 
 
-def s27(k, F):  # Just a branch, scratching the glass in the wind.
-    S, h = night_house()
-    open_curtains(h)
-    sway(h["branch"], F, amp=(2.5, 0, 4), period=14, seed=3)
-    S.cam_at(V((WIN[0] - 11, H[1] + 23, 8)), V((WIN[0], H[1] + 8, 6.5)), lens=30, fstop=None)
+def cups(S, slide_f=None):
+    out = []
+    for k2 in range(3):
+        c = kit.cyl(0.35, 0.8, (H[0] - 27 + k2 * 1.4, H[1] + 4.6, 3.85), kit.mat("cup%d" % k2,
+                    ((0.9, 0.3, 0.3), (0.3, 0.6, 0.9), (0.95, 0.8, 0.2))[k2]), verts=12)
+        out.append(c)
+        if slide_f:
+            p0 = V(c.location)
+            kit.key(c, 1, loc=tuple(p0), rot=(0, 0, 0))
+            kit.key(c, slide_f, loc=tuple(p0 + V((0, -1.1, 0))), rot=(0, 0, 0))
+            kit.key(c, slide_f + 8, loc=tuple(p0 + V((0, -2.0, -3.4))), rot=(80, 0, 20 * k2))
+    return out
+
+
+def s22(k, F):  # The next morning, the ground started shaking.
+    S, h = day_house()
+    n = S.char("Narrator", (H[0] - 24, H[1] + 1.5), 0, "shocked")
+    cups(S)
+    n.arm("L", 1, 30, 30)
+    n.arm("R", 1, 30, 30)
+    S.cam_at(V((H[0] - 21, H[1] - 7, 5.0)), n.head_pt() - V((0, 0, 1.5)), lens=28)
+    S.shake(1, F, 0.18)
     return S
 
 
-def s28(k, F):  # little sister, sneaking cookies (hallway)
-    S, h = night_house()
-    kit.point((H[0] - 11, H[1] + 4, 1.0), (1, 0.7, 0.3), 40, 0.3)
-    c = S.char("Smallkid", (H[0] - 11, H[1] + 3), 0, "smirk")
-    c.walk(1, F, (H[0] - 11, H[1] - 1.5), swing=18)
-    jar = kit.cyl(0.55, 1.1, tuple(c.world((0, 1.0, 2.2))), kit.mat("jar2", (0.8, 0.9, 1.0), alpha=0.6), verts=14)
-    cookies = kit.cyl(0.5, 0.5, tuple(c.world((0, 1.0, 2.0))), kit.mat("cookie", (0.65, 0.4, 0.2)), verts=14)
-    attach(jar, c.body)
-    attach(cookies, c.body)
-    for f in range(1, F + 2, 15):
-        c.arm("L", f, 70, -15)
-        c.arm("R", f, 70, -15)
-    S.cam_at(V((H[0] - 11, H[1] - 8, 4.0)), c.chest_pt() + V((0, 0, 0.4)), lens=30)
+def s23(k, F):  # The windows rattled.
+    S, h = day_house()
+    S.cam_at(V((WIN[0] - 1.0, H[1] - 1.0, 6.0)), V((WIN[0], H[1] + 6.5, 6.0)), lens=30)
+    S.shake(1, F, 0.25)
     return S
 
 
-def s29(k, F):  # little sister, sneaking milk (fridge)
-    S, h = night_house()
-    kit.key(h["fridge_hinge"], 1, rot=(0, 0, -95))
-    h["fridge_light"].data.energy = 1800
-    c = S.char("Smallkid", (H[0] - 17.6, H[1] + 1.2), 180, "laugh")
-    milk = kit.box((0.7, 0.7, 1.3), tuple(c.world((1.5, 0.6, 2.0))), kit.mat("milk2", (0.97, 0.97, 1.0)), 0.05)
-    c.arm("R", 1, 40)
-    attach(milk, c.arms["R"])
-    c.arm("R", kf(12), 150, -20)   # drinking
-    c.look(kf(12), 0, 20)
-    S.cam_at(V((H[0] - 21.5, H[1] - 6.0, 4.5)), c.head_pt() - V((0, 0, 1.2)), lens=28)
+def s24(k, F):  # The cups slid off the table.
+    S, h = day_house()
+    cups(S, slide_f=kf(F * 0.3))
+    S.cam_at(V((H[0] - 25.5, H[1] - 1.5, 4.8)), V((H[0] - 25.6, H[1] + 4.0, 3.6)), lens=30)
+    S.shake(1, F, 0.12)
     return S
 
 
-def s30(k, F):  # the whispers were the walkie-talkie
-    S, h = night_house()
-    for o in h["grille"]:
-        o.hide_render = True
-    L = kit.point((H[0] + 7.0, H[1] - 4.0, 4.4), (1, 0.95, 0.85), 60, 0.5)
-    S.cam_at(V((H[0] + 4.5, H[1] - 5.5, 4.6)), V((H[0] + 7.8, H[1] - 4.0, 4.2)), lens=40, fstop=2.4)
+def s25(k, F):  # It was the garbage truck.
+    S = rblx.Stage(PACK, "morning")
+    t = kit.empty((0, 0, 0), name="gtruck")
+    green = kit.mat("gtruck", (0.2, 0.55, 0.25), rough=0.5)
+    parts = [kit.box((7, 14, 8), (-4, -3532, 5.0), green, 0.15),
+             kit.box((7, 5, 6), (-4, -3522.5, 4.0), kit.mat("gcab", (0.95, 0.95, 0.95)), 0.2),
+             kit.box((6, 0.3, 2.6), (-4, -3520.0, 5.2), kit.mat("gwin", (0.3, 0.45, 0.6), rough=0.05), 0.05)]
+    for y in (-3536, -3528, -3522.5):
+        for x in (-7.6, -0.4):
+            parts.append(kit.cyl(1.5, 0.9, (x, y, 1.5), kit.mat("tire", (0.04, 0.04, 0.04)), 16, rot=(0, 90, 0)))
+    for o in parts:
+        attach(o, t)
+    kit.key(t, 1, loc=(0, -10, 0))
+    kit.key(t, F, loc=(0, 8, 0))
+    S.cam_at(V((12.0, -3506, 5)), V((-4, -3528, 5)), lens=24, fstop=None)
+    S.shake(1, F, 0.08)
     return S
 
 
-def s31(k, F):  # stuck in the vent since summer. (Cousin embarrassed)
-    S, h = night_house()
-    for o in h["grille"]:
-        o.hide_render = True
-    c = S.char("Cousin", (H[0] + 2.0, H[1] - 3.0), -40, "embarrassed")
-    c.arm("R", 1, 150, 25)
-    w = kit.box((0.4, 0.4, 1.0), tuple(c.world((-1.5, 0.6, 2.4))), kit.mat("walkie2", (0.1, 0.12, 0.1)), 0.05)
-    c.arm("L", 1, 50)
-    attach(w, c.arms["L"])
-    n = S.char("Narrator", (H[0] - 1.5, H[1] - 1.5), 40, "angry")
+def s26(k, F):  # It comes every Tuesday.
+    S, h = day_house()
+    n = S.char("Narrator", (H[0] - 24, H[1] + 1.5), 0, "tired")
     n.arm("L", 1, 75, -40)
     n.arm("R", 1, 70, -45)
-    S.cam_at(V((H[0] + 0.5, H[1] - 11, 4.6)), V((H[0] + 0.3, H[1] - 2.2, 3.6)), lens=30)
+    S.cam_at(V((H[0] - 22.5, H[1] - 6, 4.4)), n.head_pt() - V((0, 0, 1.4)), lens=32)
     return S
 
 
-def s32(k, F):  # The next day, I trimmed the tree.
-    S, h = day_house()
-    tx = WIN[0] + 1.5
-    n = S.char("Narrator", (WIN[0] - 2.5, H[1] + 10.5), 180 + 40, "smile")
-    c = S.char("Cousin", (WIN[0] - 5.0, H[1] + 13), 180 + 70, "laugh")
-    shears = kit.mat("shears", (0.6, 0.6, 0.65), metal=0.7)
-    for side in ("L", "R"):
-        b = kit.box((0.15, 0.15, 2.2), tuple(n.world((1.5 if side == "R" else -1.5, 0.2, 1.2))), shears, 0.02)
-        attach(b, n.arms[side])
-    for f in range(1, F + 2, 6):
-        o = 20 if (f // 6) % 2 else 5
-        n.arm("L", f, 110, o)
-        n.arm("R", f, 110, o)
-    br = h["branch"]
-    kit.key(br, 1, loc=tuple(br.location), rot=(0, 0, 0))
-    kit.key(br, kf(F * 0.55), loc=tuple(br.location), rot=(0, 0, 0))
-    kit.key(br, kf(F * 0.9), loc=(br.location.x, br.location.y, br.location.z - 5.5), rot=(25, 0, 10))
-    S.cam_at(V((WIN[0] - 13, H[1] + 22, 6.0)), V((WIN[0] - 1.5, H[1] + 10.5, 4.5)), lens=30, fstop=None)
+def s27(k, F):  # Then, my little sister disappeared.
+    S, h = night_house()
+    h["blanket"].rotation_euler = (0, R(-8), 0)
+    h["blanket"].location.x += 0.6
+    S.cam_at(V((H[0] - 1.5, H[1] - 6.5, 6.5)), V((H[0] + 4.6, H[1] + 2.0, 2.5)), lens=28)
     return S
 
 
-def s33(k, F):  # slept for eleven hours (morning sun)
+def s28(k, F):  # Her bed was empty. Her shoes were gone.
+    S, h = night_house()
+    S.cam_at(V((H[0] + 2.0, H[1] - 1.0, 5.0)), V((H[0] + 4.6, H[1] + 3.5, 2.6)), lens=34, fstop=2.4)
+    return S
+
+
+def s29(k, F):  # The front door was wide open.
+    S, h = night_house()
+    kit.box((0.4, 3.0, 7.2), (H[0] - 14, H[1] - 4.5, 3.6), kit.mat("doorpanel", (0.55, 0.36, 0.22)), 0.03).rotation_euler = (0, 0, R(70))
+    kit.spot((H[0] - 20, H[1] - 3, 6), (H[0] - 11, H[1] - 1, 0), (1, 0.85, 0.6), 4000, 40, 0.5, 0.2)
+    S.cam_at(V((H[0] - 8.5, H[1] - 7, 5.0)), V((H[0] - 14, H[1] - 2.5, 3.5)), lens=26)
+    return S
+
+
+def s30(k, F):  # She was in the backyard, eating a popsicle.
     S, h = day_house()
+    c = S.char("Smallkid", (WIN[0] - 4.0, H[1] + 12.5), 200, "laugh")
+    stick = kit.cyl(0.06, 0.8, tuple(c.world((1.5, 0.5, 2.6))), kit.mat("pstick", (0.9, 0.8, 0.6)), verts=6)
+    ice = kit.box((0.45, 0.25, 0.9), tuple(c.world((1.5, 0.5, 3.3))), kit.mat("ice", (0.95, 0.3, 0.5), rough=0.3), 0.1)
+    attach(stick, c.arms["R"])
+    attach(ice, c.arms["R"])
+    for j, f in enumerate(range(1, F + 2, 10)):
+        c.arm("R", f, 135 if j % 2 else 120, -15)
+    S.cam(c.chest_pt() + V((0, 0, 0.4)), dist=8, yaw=200, lens=34)
+    return S
+
+
+def s31(k, F):  # By now, I'd stopped expecting anything.
+    S, h = night_house()
+    n = in_bed(S, "tired", sit=True)
+    n.arm("L", 1, 75, -40)
+    n.arm("R", 1, 70, -45)
+    S.cam_at(V((H[0] + 2.4, H[1] - 6.5, 5.5)), n.head_pt() - V((0, 0, 1.2)), lens=32)
+    return S
+
+
+def purple_outside(S, f_on=1):
+    L = kit.point((WIN[0], H[1] + 12, 7), (0.7, 0.3, 1.0), 0, 2.0)
+    L.data.keyframe_insert("energy", frame=max(0, f_on - 1))
+    L.data.energy = 700
+    L.data.keyframe_insert("energy", frame=f_on + 6)
+    return L
+
+
+def s32(k, F):  # So when the sky turned purple,
+    S, h = night_house()
     open_curtains(h)
     h["branch"].hide_render = True
     for o in h["branch"].children:
         o.hide_render = True
-    n = in_bed(S, "smile_blink")
-    n.look(1, 15, 0)
-    S.cam_at(V((H[0] + 1.0, H[1] - 1.5, 7.5)), V((H[0] + 4.6, H[1] + 3.5, 2.8)), lens=30)
+    purple_outside(S, 1)
+    S.cam_at(V((WIN[0] - 0.5, H[1] - 1.0, 6.0)), V((WIN[0], H[1] + 7, 6.5)), lens=30)
     return S
 
 
-def s34(k, F):  # In this town, everything is normal. (street, sunset)
-    S = rblx.Stage(PACK, "sunset")
-    street_props(S)
-    for nm, x, y in (("Prey1", 9.6, -3500), ("Crowd2", 12.6, -3497), ("Crowd3", 10.4, -3492), ("Prey3", 12.4, -3504)):
+def s33(k, F):  # and the ground started glowing,
+    S, h = night_house()
+    g = kit.box((30, 22, 0.1), (WIN[0], H[1] + 20, 0.06), kit.mat("glowground", (0.3, 1.0, 0.5), emit=0.0001,
+                                                                       emit_color=(0.3, 1.0, 0.5)), 0)
+    b = g.active_material.node_tree.nodes["Principled BSDF"]
+    sock = b.inputs["Emission Strength"]
+    sock.default_value = 0
+    sock.keyframe_insert("default_value", frame=1)
+    sock.default_value = 1.5
+    sock.keyframe_insert("default_value", frame=F)
+    purple_outside(S, 1)
+    S.cam_at(V((WIN[0] - 11, H[1] + 23, 8)), V((WIN[0], H[1] + 12, 2)), lens=28, fstop=None)
+    return S
+
+
+def s34(k, F):  # and a voice said my name,
+    S, h = night_house()
+    open_curtains(h)
+    n = in_bed(S, "neutral", sit=True)
+    kit.spot((WIN[0], H[1] + 14, 9), (H[0] + 4.6, H[1] + 2.5, 3), (0.75, 0.4, 1.0), 20000, 18, 0.2, 0.1)
+    n.look(1, 30, 10)
+    S.cam_at(V((H[0] - 1.0, H[1] - 6.0, 6.5)), V((H[0] + 3.5, H[1] + 2.5, 3.8)), lens=28)
+    return S
+
+
+def s35(k, F):  # I just went back to sleep.
+    S, h = night_house()
+    open_curtains(h)
+    purple_outside(S, 1)
+    n = in_bed(S, "tired")
+    n.faces([(1, "tired"), (kf(F * 0.5), "smile_blink")])
+    bl = h["blanket"]
+    kit.key(bl, 1, loc=tuple(bl.location), scale=(1, 1, 1))
+    kit.key(bl, kf(F * 0.4), loc=(bl.location.x, bl.location.y + 2.2, bl.location.z), scale=(1, 1.2, 1))
+    S.cam_at(V((H[0] + 1.0, H[1] - 1.5, 7.5)), V((H[0] + 4.6, H[1] + 3.0, 2.8)), lens=30)
+    return S
+
+
+def s36(k, F):  # In this town, everything is completely normal.
+    S = rblx.Stage(PACK, "day")
+    for nm, x, y in (("Prey1", 9.6, -3500), ("Crowd2", 12.6, -3497), ("Narrator", 10.4, -3492), ("Smallkid", 12.4, -3504)):
         c = S.char(nm, (x, y), 0, "smile")
         c.walk(1, F, (x, y - 4))
     S.cam(V((11, -3502, 3.5)), dist=20, yaw=-22, height=6.0, lens=32, fstop=None)
     return S
 
 
-def s35(k, F):  # And honestly? I like it that way.
+def s37(k, F):  # Probably.
     S = rblx.Stage(PACK, "sunset")
-    n = S.char("Narrator", (10.6, -3505), -10, "laugh")
-    s = S.char("Smallkid", (12.6, -3505.4), 10, "smile")
-    n.look(1, 0, 5)
-    n.talk(kf(F * 0.4), F, base="laugh")
-    for f in range(1, F + 2, 8):
-        s.arm("R", f, 0, 150 if (f // 8) % 2 else 120)
-    n.arm("L", 1, 0, 25)
-    S.cam(V((11.5, -3505, 3.4)), dist=10, yaw=0, height=4.2, lens=36)
+    for k2 in range(3):
+        o = kit.sphere(1.2, (-20 + k2 * 6, -3400, 60 + k2 * 3), kit.mat("ufo%d" % k2, (0.7, 0.4, 1.0), emit=0.0001,
+                                                                         emit_color=(0.7, 0.4, 1.0)))
+        sock = o.active_material.node_tree.nodes["Principled BSDF"].inputs["Emission Strength"]
+        for j, f in enumerate(range(1 + k2 * 3, F + 2, 9)):
+            sock.default_value = 25 if j % 2 == 0 else 0.5
+            sock.keyframe_insert("default_value", frame=f)
+        kit.key(o, 1, loc=tuple(o.location))
+        kit.key(o, F, loc=(o.location.x + 8, o.location.y, o.location.z + 2))
+    S.cam_at(V((0, -3560, 3)), V((-10, -3400, 55)), lens=30, fstop=None)
     return S
 
 
-SHOTS = {i: globals()[f"s{i:02d}"] for i in range(1, 36)}
+SHOTS = {i: globals()[f"s{i:02d}"] for i in range(1, 38)}
