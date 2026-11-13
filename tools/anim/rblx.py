@@ -25,6 +25,8 @@ from mathutils import Vector
 
 import kit
 
+V3 = Vector
+
 R = math.radians
 ROOT = Path(__file__).resolve().parents[2]
 STEP = 15  # spacing of key poses (the render fills the in-betweens when ITT_STEP=2)
@@ -44,6 +46,9 @@ def attach(obj, parent):
 def kf(f):
     """Snap a frame to the start of the held pose that shows it."""
     return 1 + max(0, round((f - 1) / STEP)) * STEP
+
+
+HAIR_OVERRIDE = {}   # story-level hair swaps: {"Kai": dict(style="spiky", color=(...))}
 
 
 class Char:
@@ -299,6 +304,53 @@ class Char:
             k += 1
         self.face(f1 + 1, base)
 
+    # -------------------------------------------------------------- hair
+    def head_box(self):
+        bpy.context.view_layer.update()
+        ws = [self.head.matrix_world @ Vector(c) for c in self.head.bound_box]
+        lo = Vector([min(v[i] for v in ws) for i in range(3)])
+        hi = Vector([max(v[i] for v in ws) for i in range(3)])
+        return lo, hi
+
+    def replace_hair(self, style="spiky", color=(0.03, 0.03, 0.04), shine=(0.25, 0.3, 0.45)):
+        """Hide the exported hair accessory and build a new one on the head (blocky, Roblox-style)."""
+        for o in self.head.children:
+            if o.name.startswith("Handle"):
+                o.hide_render = True
+        lo, hi = self.head_box()
+        c = (lo + hi) / 2
+        w = max(hi.x - lo.x, hi.y - lo.y)
+        top = hi.z
+        m = kit.mat("hair_" + self.name, color, rough=0.35)
+        tip = kit.mat("hairtip_" + self.name, shine, rough=0.3)
+        fwd = self.world((0, 1, 0)) - self.pos
+        right = self.world((1, 0, 0)) - self.pos
+        parts = []
+        cap = kit.sphere(w * 0.55, tuple(Vector((c.x, c.y, top - w * 0.02)) - fwd * (w * 0.06)), m, scale=(1.0, 1.0, 0.45), seg=16)
+        parts.append(cap)
+        back = kit.box((w * 1.02, w * 0.42, w * 0.8), tuple(V3(c) - fwd * (w * 0.36) + Vector((0, 0, w * 0.08))), m, 0.12)
+        back.rotation_euler = (0, 0, math.atan2(fwd.y, fwd.x) + math.pi / 2)
+        parts.append(back)
+        rnd = random.Random(len(self.name))
+        # spikes: a crown of cones leaning back and out, plus a swept fringe over the forehead
+        spikes = [(-0.32, -0.15, 30, -25), (0.0, -0.25, 40, 0), (0.32, -0.15, 30, 25), (-0.2, 0.15, 25, -15),
+                  (0.2, 0.15, 25, 15), (0.0, 0.05, 15, 0), (-0.42, 0.05, 20, -45), (0.42, 0.05, 20, 45)]
+        for dx, dy, lean, side in spikes:
+            base = Vector((c.x, c.y, top - w * 0.05)) + right * (dx * w) + fwd * (dy * w)
+            h = w * rnd.uniform(0.65, 0.9)
+            cone = kit.cyl(w * 0.2, h, tuple(base + Vector((0, 0, h * 0.4))), m, verts=5, r2=0.0)
+            yaw = math.atan2(fwd.y, fwd.x)
+            cone.rotation_euler = (math.radians(-lean), math.radians(side), yaw - math.pi / 2)
+            parts.append(cone)
+        for k2, dx in enumerate((-0.3, 0.0, 0.3)):   # spiky fringe sweeping up off the forehead
+            base = Vector((c.x, c.y, top - w * 0.06)) + right * (dx * w) + fwd * (w * 0.38)
+            f = kit.cyl(w * 0.15, w * 0.55, tuple(base + Vector((0, 0, w * 0.18))), m, verts=5, r2=0.0)
+            f.rotation_euler = (math.radians(35), math.radians(-25 + k2 * 25), math.atan2(fwd.y, fwd.x) - math.pi / 2)
+            parts.append(f)
+        for o in parts:
+            attach(o, self.neck)
+        return parts
+
     # -------------------------------------------------------------- props
     def mark(self, kind, side="L", glow=0.0, lift=0.006, size=0.7, dz=0.4, hidden=False):
         """Wrist mark on the front of the forearm. kind: leaf|claw|crown|marker|streaks."""
@@ -470,6 +522,8 @@ class Stage:
 
     def char(self, name, loc, yaw=0, expr="smile"):
         c = Char(self, name, loc, yaw, expr)
+        if name in HAIR_OVERRIDE:
+            c.replace_hair(**HAIR_OVERRIDE[name])
         self.chars[name] = c
         return c
 

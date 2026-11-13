@@ -19,6 +19,7 @@ R = math.radians
 V = Vector
 PACK = "alpha-mark"
 RIO = "Crowd3"
+rblx.HAIR_OVERRIDE["Kai"] = dict(style="spiky", color=(0.03, 0.03, 0.045), shine=(0.12, 0.12, 0.16))
 BENCH = V((-11.2, -3505.0, 0))   # left sidewalk, facing the road (+X)
 STAND = V((-11.5, -3496.0, 0))
 PG = V((-640.0, -3505.0, 0))      # sports field centre (built here, not the exported playground)
