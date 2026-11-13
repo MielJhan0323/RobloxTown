@@ -75,11 +75,90 @@ def house_set(night=True, past=False):
     for o in h.get("grille", []) + h.get("walkie", []):
         o.hide_render = True
     h["shadow"].hide_render = True
-    if past:   # twelve years ago: different (yellow) wallpaper
-        for m in bpy.data.materials:
-            if m.name.startswith("hwall"):
-                m.node_tree.nodes["Principled BSDF"].inputs["Base Color"].default_value = (0.75, 0.68, 0.35, 1)
+    if past:   # twelve years ago: the room is a nursery
+        nursery(S, h, night)
     return S, h
+
+
+def nursery(S, h, night=True):
+    """Closed-in baby room: pastel walls, front wall (no cut-off edge), crib, mobile, rocking chair, toys."""
+    for o in h.get("bed_furniture", []):
+        o.hide_render = True
+    pastel = (0.93, 0.85, 0.6)
+    for m in bpy.data.materials:
+        if m.name.startswith("hwall"):
+            m.node_tree.nodes["Principled BSDF"].inputs["Base Color"].default_value = (*pastel, 1)
+    wall = kit.mat("nwall", pastel, rough=0.9)
+    wood = kit.mat("nfloor", (0.55, 0.36, 0.22), rough=0.7)
+    white = kit.mat("nwhite", (0.97, 0.97, 0.97), rough=0.6)
+    kit.box((16, 7.6, 0.3), (HX, HY - 10.8, -0.15), wood, 0)                 # floor extension
+    kit.box((0.6, 7.6, 12), (HX - 8, HY - 10.8, 6), wall, 0)                 # side walls
+    kit.box((0.6, 7.6, 12), (HX + 8, HY - 10.8, 6), wall, 0)
+    kit.box((16.6, 0.6, 12), (HX, HY - 14.6, 6), wall, 0)                    # front wall: the room is closed
+    kit.box((16.6, 7.8, 0.4), (HX, HY - 10.8, 12.2), white, 0)                # ceiling
+    kit.box((16.6, 0.35, 1.0), (HX, HY - 14.2, 0.5), white, 0)                # skirting
+    for x in (HX - 8, HX + 8):                                                # skirting on the sides
+        kit.box((0.35, 22, 1.0), (x + (0.35 if x < HX else -0.35), HY - 3.5, 0.5), white, 0)
+    # wallpaper stripe + stars
+    kit.box((16.4, 0.12, 0.6), (HX, HY + 6.65, 7.6), kit.mat("nstripe", (0.6, 0.78, 0.95)), 0)
+    rnd = random.Random(3)
+    star = kit.mat("nstar", (1, 0.9, 0.4), emit=1.5 if night else 0.3, emit_color=(1, 0.9, 0.4))
+    for _ in range(14):
+        kit.box((0.35, 0.08, 0.35), (HX + rnd.uniform(-7.5, 7.5), HY + 6.62, rnd.uniform(8.5, 11.5)), star, 0).rotation_euler = (0, R(45), 0)
+    # rug
+    kit.cyl(3.6, 0.05, (HX + 1, HY - 2.5, 0.03), kit.mat("nrug", (0.95, 0.7, 0.78), rough=0.95), verts=32)
+    crib((HX + 1.0, HY - 1.0))
+    # mobile over the crib (slowly turning)
+    piv = kit.empty((HX + 1.0, HY - 1.0, 8.6), name="mobile")
+    kit.cyl(0.05, 3.4, (HX + 1.0, HY - 1.0, 10.4), white, verts=6)
+    bar = kit.box((3.0, 0.08, 0.08), (HX + 1.0, HY - 1.0, 8.6), white, 0)
+    attach(bar, piv)
+    for k2, (dx, col) in enumerate(((-1.4, (1, 0.85, 0.3)), (1.4, (0.6, 0.8, 1.0)), (0, (1, 0.6, 0.7)))):
+        dy = 0 if k2 < 2 else 1.4
+        st = kit.cyl(0.02, 1.0, (HX + 1.0 + dx, HY - 1.0 + dy, 8.1), white, verts=4)
+        orn = kit.sphere(0.35, (HX + 1.0 + dx, HY - 1.0 + dy, 7.5), kit.mat("norn%d" % k2, col, emit=0.8 if night else 0.1,
+                                                                             emit_color=col), seg=10)
+        attach(st, piv)
+        attach(orn, piv)
+    kit.key(piv, 1, rot=(0, 0, 0))
+    kit.key(piv, 400, rot=(0, 0, 360))
+    for fc in piv.animation_data.action.fcurves:
+        for kp in fc.keyframe_points:
+            kp.interpolation = "LINEAR"
+    # rocking chair
+    cw = kit.mat("nrock", (0.75, 0.55, 0.38), rough=0.6)
+    rx, ry = HX - 5.0, HY - 8.0
+    kit.box((2.4, 2.2, 0.3), (rx, ry, 1.8), cw, 0.05)
+    kit.box((2.4, 0.3, 2.8), (rx, ry + 1.0, 3.3), cw, 0.05)
+    kit.box((2.2, 2.0, 0.35), (rx, ry, 2.05), kit.mat("ncush", (0.6, 0.78, 0.95)), 0.12)
+    for dx in (-1.1, 1.1):
+        kit.box((0.2, 0.2, 1.7), (rx + dx, ry - 0.8, 0.9), cw, 0)
+        kit.box((0.2, 0.2, 1.7), (rx + dx, ry + 0.8, 0.9), cw, 0)
+        rk = kit.box((0.25, 3.4, 0.2), (rx + dx, ry, 0.15), cw, 0.05)
+        rk.rotation_euler = (R(4), 0, 0)
+    # dresser + lamp (warm nightlight)
+    kit.box((2.2, 4.0, 3.2), (HX - 6.6, HY + 3.5, 1.6), kit.mat("ndress", (0.97, 0.94, 0.9)), 0.06)
+    for dz in (0.9, 2.2):
+        kit.box((0.1, 3.6, 0.9), (HX - 5.48, HY + 3.5, dz), kit.mat("ndrawer", (0.9, 0.86, 0.8)), 0.03)
+    kit.cyl(0.25, 0.9, (HX - 6.6, HY + 4.3, 3.65), white, verts=10)
+    kit.cyl(0.7, 0.8, (HX - 6.6, HY + 4.3, 4.5), kit.mat("nshade", (1, 0.85, 0.6), emit=3 if night else 0.5,
+                                                           emit_color=(1, 0.85, 0.6)), verts=16, r2=0.45)
+    kit.point((HX - 6.3, HY + 3.8, 4.8), (1, 0.78, 0.5), 220 if night else 60, 0.8)
+    # toy blocks + teddy bear
+    cols = [(0.9, 0.3, 0.3), (0.3, 0.6, 0.95), (0.95, 0.85, 0.25), (0.35, 0.8, 0.4)]
+    for k2, (bx, by, bz) in enumerate(((-2.5, -4.5, 0.4), (-1.6, -4.3, 0.4), (-2.05, -4.4, 1.2), (-3.3, -5.4, 0.4))):
+        blk = kit.box((0.8, 0.8, 0.8), (HX + bx, HY + by, bz), kit.mat("nblock%d" % k2, cols[k2]), 0.06)
+        blk.rotation_euler = (0, 0, R(rnd.uniform(-20, 20)))
+    fur = kit.mat("nbear", (0.7, 0.48, 0.28), rough=0.9)
+    tx, ty = HX + 4.0, HY - 5.5
+    kit.sphere(0.6, (tx, ty, 0.6), fur, seg=12)
+    kit.sphere(0.45, (tx, ty - 0.05, 1.45), fur, seg=12)
+    for dx in (-0.32, 0.32):
+        kit.sphere(0.17, (tx + dx, ty, 1.85), fur, seg=8)
+    kit.sphere(0.07, (tx - 0.15, ty - 0.42, 1.55), kit.mat("nbeye", (0.05, 0.05, 0.05)), seg=6)
+    kit.sphere(0.07, (tx + 0.15, ty - 0.42, 1.55), kit.mat("nbeye", (0.05, 0.05, 0.05)), seg=6)
+    if night:   # soft fill so the night nursery reads
+        kit.point((HX, HY - 6, 9), (0.75, 0.8, 1.0), 160, 3.0)
 
 
 def crib(loc):
@@ -278,7 +357,6 @@ def s06(k, F):  # Badly.
 
 def s07(k, F):  # You get your monster the day you're born.
     S, h = house_set(night=False, past=True)
-    crib((HX + 1.0, HY - 1.0))
     baby(S, (HX + 1.0, HY - 2.4, 2.4), "laugh")
     wardrobe(S, ajar=45)
     m, arms = monster((CLO.x - 0.8, CLO.y, 0.3), (0.3, 0.75, 0.9), yaw=-90, name="blue", scale=0.75)
@@ -444,7 +522,6 @@ def s19(k, F):  # The cookies were always gone by morning, though.
 
 def s20(k, F):  # And Mom said when I was a baby, I never cried at night.
     S, h = house_set(night=True, past=True)
-    crib((HX + 1.0, HY - 1.0))
     b = baby(S, (HX + 1.0, HY - 2.4, 2.4), "smile_blink")
     wardrobe(S, ajar=4)
     S.orbit((HX + 1, HY - 1, 2.4), 10, 6.5, -40, 20, 1, F, lens=30)
@@ -453,7 +530,6 @@ def s20(k, F):  # And Mom said when I was a baby, I never cried at night.
 
 def s21(k, F):  # Something always hummed me back to sleep.
     S, h = house_set(night=True, past=True)
-    crib((HX + 1.0, HY - 1.0))
     baby(S, (HX + 1.0, HY - 2.4, 2.4), "smile_blink")
     wardrobe(S, ajar=6)
     kit.point((CLO.x, CLO.y, 4.2), (0.5, 0.9, 1.0), 40, 0.5)
@@ -576,7 +652,6 @@ def s31(k, F):  # and landed... in a closet.
 
 def s32(k, F):  # My closet. Twelve years ago.
     S, h = house_set(night=True, past=True)
-    crib((HX + 1.0, HY - 1.0))
     baby(S, (HX + 1.0, HY - 2.4, 2.4), "crying")
     wardrobe(S, ajar=5)
     S.drone([(1, (CLO.x - 3, CLO.y - 8, 6), (CLO.x - 1, CLO.y, 4)), (F, (HX - 6, HY - 12, 10), (HX + 3, HY - 2, 2.5))], lens=28)
@@ -585,9 +660,8 @@ def s32(k, F):  # My closet. Twelve years ago.
 
 def s33(k, F):  # Through the crack in the door, there was a crib.  (POV from inside the closet)
     S, h = house_set(night=True, past=True)
-    crib((HX + 1.0, HY - 1.0))
     baby(S, (HX + 1.0, HY - 2.4, 2.4), "crying")
-    wardrobe(S, ajar=60)
+    wardrobe(S, ajar=85)
     S.drone([(1, (CLO.x - 0.2, CLO.y, 4.4), (CLO.x - 4, CLO.y + 0.5, 3)),
              (F, (FRONT_X + 0.3, CLO.y, 4.2), (HX + 1, HY - 1, 2.5))], lens=34, allow_close=True)
     return S
@@ -595,7 +669,6 @@ def s33(k, F):  # Through the crack in the door, there was a crib.  (POV from in
 
 def s34(k, F):  # And a baby. Crying. Me.
     S, h = house_set(night=True, past=True)
-    crib((HX + 1.0, HY - 1.0))
     b = baby(S, (HX + 1.0, HY - 2.4, 2.4), "crying")
     for j, f in enumerate(range(1, F + 2, 4)):
         b.arm("L", f, 150 if j % 2 else 100)
@@ -606,7 +679,6 @@ def s34(k, F):  # And a baby. Crying. Me.
 
 def s35(k, F):  # My closet was never empty. Its monster was just hiding.  (pull back from crib to the eyes in the crack)
     S, h = house_set(night=True, past=True)
-    crib((HX + 1.0, HY - 1.0))
     baby(S, (HX + 1.0, HY - 2.4, 2.4), "smile_blink")
     wardrobe(S, ajar=7)
     n = S.char("Narrator", (CLO.x - 0.1, CLO.y + 0.3), -90, "sad")
@@ -634,7 +706,6 @@ def s36(k, F):  # I could have knocked.
 
 def s37(k, F):  # Every single night, I could have knocked.  (drone circles the closet from the room)
     S, h = house_set(night=True, past=True)
-    crib((HX + 1.0, HY - 1.0))
     baby(S, (HX + 1.0, HY - 2.4, 2.4), "smile_blink")
     in_closet(S, "sad")
     S.orbit((FRONT_X - 1, CLO.y, 4), 10, 5.5, -120, -40, 1, F, lens=28)
@@ -651,7 +722,6 @@ def s38(k, F):  # But if he'd had a friend, he never would've opened that door a
 
 def s39(k, F):  # And I'd never be here to hum when he cries.
     S, h = house_set(night=True, past=True)
-    crib((HX + 1.0, HY - 1.0))
     baby(S, (HX + 1.0, HY - 2.4, 2.4), "smile_blink")
     n = in_closet(S, "smile")
     notes((FRONT_X - 0.3, CLO.y - 0.3, 4.8), F)

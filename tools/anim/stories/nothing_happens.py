@@ -115,6 +115,7 @@ def house(S, night=True):
     for sgn in (-1, 1):
         r = kit.box((39.5, 9.5, 0.6), (hx - 11, hy + sgn * 3.6, 15.0), roof, 0.03)
         r.rotation_euler = (R(-sgn * 35), 0, 0)
+    _before = set(bpy.data.objects)
     # bedroom furniture
     kit.box((5, 8, 1.4), (hx + 4.6, hy + 1.6, 0.7), wood, 0.05)                        # bed frame
     kit.box((4.8, 7.8, 0.8), (hx + 4.6, hy + 1.6, 1.8), white, 0.1)                     # mattress
@@ -131,6 +132,7 @@ def house(S, night=True):
                            name="ghostmap")
     kit.box((1.6, 1.6, 0.12), (hx - 3.6, hy + 5.4, 3.2), kit.mat("paper", (0.97, 0.95, 0.88)), 0)
     kit.box((1.6, 1.4, 2.0), (hx - 5.2, hy + 3.2, 1.0), wood, 0.03)                     # chair
+    out["bed_furniture"] = [o for o in bpy.data.objects if o not in _before]
     # curtains (closed) - two halves, animatable
     cur = kit.mat("curtain", (0.55, 0.15, 0.2), rough=0.9)
     out["curL"] = kit.box((2.7, 0.25, 5.6), (WIN[0] - 1.3, by - 0.5, 6), cur, 0.05)
