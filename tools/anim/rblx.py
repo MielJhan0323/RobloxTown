@@ -687,6 +687,33 @@ class Stage:
         loc = c + n * dist + Vector((0, 0, up)) + sidev * side
         return self.cam_at(loc, c, lens=lens, fstop=fstop)
 
+    def drone(self, keys, lens=34, fstop=None, allow_close=False):
+        """Camera that flies mid-shot like a drone. keys = [(frame, cam_loc, look_at), ...] (smooth Bezier moves)."""
+        f0, loc0, tgt0 = keys[0]
+        cam = self.cam_at(loc0, tgt0, lens=lens, fstop=fstop, allow_close=allow_close)
+        tgt = cam.constraints[0].target
+        for f, loc, look in keys:
+            loc, look = Vector(loc), Vector(look)
+            view = (loc - look).length * 24.0 / (lens * WIDEN)
+            if view < MIN_VIEW and not allow_close:
+                loc = look + (loc - look) * (MIN_VIEW / view)
+            cam.location = loc
+            cam.keyframe_insert("location", frame=f)
+            tgt.location = look
+            tgt.keyframe_insert("location", frame=f)
+        return cam
+
+    def orbit(self, center, radius, height, a0, a1, f0, f1, lens=34, look_z=None, steps=6):
+        """Drone orbit around a point from angle a0 to a1 (degrees, 0 = from -Y)."""
+        keys = []
+        for i in range(steps + 1):
+            t = i / steps
+            a = math.radians(a0 + (a1 - a0) * t)
+            f = round(f0 + (f1 - f0) * t)
+            loc = (center[0] + radius * math.sin(a), center[1] - radius * math.cos(a), height)
+            keys.append((f, loc, (center[0], center[1], center[2] if look_z is None else look_z)))
+        return self.drone(keys, lens=lens)
+
     def shake(self, f0, f1, amp=0.25):
         c = self.camera
         base = Vector(c.location)
