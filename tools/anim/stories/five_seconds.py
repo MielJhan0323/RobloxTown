@@ -1082,6 +1082,88 @@ def c_trip(k, F):  # He tripped on the stairs.  (real staircase)
     return S
 
 
+
+# ---------------------------------------------------------------- opening on the street: lifting a car
+def car(loc, color=(0.2, 0.45, 0.85), yaw=0):
+    root = kit.empty(loc, name="car")
+    body = kit.mat("carbody" + str(color), color, rough=0.35)
+    glass = kit.mat("carglass", (0.55, 0.7, 0.85), rough=0.05)
+    tire = kit.mat("tire2", (0.05, 0.05, 0.05), rough=0.8)
+    x, y, z = loc
+    parts = [kit.box((4.4, 8.4, 1.7), (x, y, z + 1.35), body, 0.25),
+             kit.box((4.0, 4.2, 1.6), (x, y + 0.4, z + 2.95), body, 0.25),
+             kit.box((3.7, 0.15, 1.2), (x, y - 1.75, z + 2.95), glass, 0.05),
+             kit.box((3.7, 0.15, 1.2), (x, y + 2.55, z + 2.95), glass, 0.05),
+             kit.box((0.15, 3.6, 1.1), (x - 2.02, y + 0.4, z + 2.95), glass, 0.04),
+             kit.box((0.15, 3.6, 1.1), (x + 2.02, y + 0.4, z + 2.95), glass, 0.04)]
+    for dx in (-1.6, 1.6):
+        parts.append(kit.box((0.8, 0.12, 0.4), (x + dx, y - 4.22, z + 1.5), kit.mat("headl", (1, 1, 0.85), emit=2,
+                                                                                     emit_color=(1, 1, 0.85)), 0.05))
+        for dy in (-2.7, 2.7):
+            parts.append(kit.cyl(0.8, 0.6, (x + dx * 1.3, y + dy, z + 0.8), tire, 16, rot=(0, 90, 0)))
+    for o in parts:
+        attach(o, root)
+    root.rotation_euler = (0, 0, math.radians(yaw))
+    return root
+
+
+CAR_SPOT = V((0.0, -3500.0, 0))
+
+
+def c_strong(k, F):  # Mine? I'm super strong, for one second.  (lifts a car over his head)
+    S = street("morning")
+    n = S.char("Narrator", (CAR_SPOT.x, CAR_SPOT.y), 180, "determined")
+    cr = car((CAR_SPOT.x, CAR_SPOT.y + 3.0, 0), yaw=90)
+    up = kf(F * 0.3)
+    kit.key(cr, 1, loc=tuple(cr.location))
+    kit.key(cr, up - 4, loc=tuple(cr.location))
+    kit.key(cr, up, loc=(CAR_SPOT.x, CAR_SPOT.y + 0.3, 6.0))
+    kit.key(cr, F, loc=(CAR_SPOT.x, CAR_SPOT.y + 0.3, 6.3))
+    n.arm("L", up - 4, 80)
+    n.arm("R", up - 4, 80)
+    n.arm("L", up, 178, 8)
+    n.arm("R", up, 178, 8)
+    n.faces([(1, "determined"), (up, "laugh")])
+    for nm, x in (("Prey1", 9.6), ("Crowd1", 11.2)):
+        c = S.char(nm, (x, CAR_SPOT.y - 2), -60, "shocked")
+    S.cam(V((CAR_SPOT.x, CAR_SPOT.y, 4.8)), dist=16, yaw=200, height=4.0, lens=28, fstop=None)
+    return S
+
+
+def c_gone(k, F):  # Then it's gone.  (the car comes down on him)
+    S = street("morning")
+    n = S.char("Narrator", (CAR_SPOT.x, CAR_SPOT.y), 180, "laugh")
+    cr = car((CAR_SPOT.x, CAR_SPOT.y + 0.3, 6.3), yaw=90)
+    drop = kf(F * 0.35)
+    kit.key(cr, 1, loc=tuple(cr.location))
+    kit.key(cr, drop, loc=tuple(cr.location))
+    kit.key(cr, drop + 5, loc=(CAR_SPOT.x, CAR_SPOT.y + 0.3, 0.9), rot=(0, 6, 90))
+    n.arm("L", 1, 178, 8)
+    n.arm("R", 1, 178, 8)
+    n.faces([(1, "laugh"), (drop - 2, "shocked")])
+    n.key_root(drop + 4, (CAR_SPOT.x, CAR_SPOT.y))
+    n.key_root(drop + 6, (CAR_SPOT.x, CAR_SPOT.y - 0.5, -2.6))     # squashed under it, only his legs show
+    S.dust(F, (CAR_SPOT.x, CAR_SPOT.y + 0.3, 0), radius=3, n=10, color=(0.75, 0.72, 0.68))
+    S.cam(V((CAR_SPOT.x + 2, CAR_SPOT.y, 4.0)), dist=16, yaw=-150, height=4.5, lens=28, fstop=None)
+    return S
+
+
+def c_noclap(k, F):  # Nobody claps for that.  (stuck under the car, kids walk past)
+    S = street("morning")
+    cr = car((CAR_SPOT.x, CAR_SPOT.y + 0.3, 0.9), yaw=90)
+    cr.rotation_euler = (0, math.radians(6), math.radians(90))
+    n = S.char("Narrator", (CAR_SPOT.x, CAR_SPOT.y - 2.8, 0.5), 180, "sad")
+    n.lie(1, face_down=True)
+    n.arm("L", 1, 170)
+    n.arm("R", 1, 170)
+    n.look(1, 0, 40)
+    for nm, x in (("Prey1", -6), ("Crowd2", -9)):
+        c = S.char(nm, (x, CAR_SPOT.y + 6), 90, "neutral")
+        c.walk(1, F, (x + 14, CAR_SPOT.y + 6))
+    S.cam(V((CAR_SPOT.x, CAR_SPOT.y - 3, 2.0)), dist=14, yaw=-20, height=3.6, lens=28, fstop=None)
+    return S
+
+
 ORDER = [s01, s02, s03, c_fly, c_strong, c_gone, c_noclap, c_orb, c_deathbed,
          s07, c_rio_danger, c_cant_stop, c_scaredy,
          b_together, b_lunch, b_bench, b_pickle_give,
