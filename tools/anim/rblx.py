@@ -480,7 +480,59 @@ class Stage:
                 bpy.data.collections["CH_" + n].hide_render = True
         if not getattr(self, "_lived", False):
             self._lived = True
+            self.separate()
             self.liven()
+
+    min_gap = 3.7   # studs between two characters' centres (a Roblox kid is ~4 wide with arms)
+    allow_close = ()  # pairs of names allowed to touch (grabs, hugs), e.g. {("Kai", "Narrator")}
+
+    def separate(self, iters=12):
+        """Push apart characters that would clip into each other. Only characters whose position is not
+        animated are moved (walkers/runners are left alone); moves go along the line between the two."""
+        def keyed(c):
+            ad = c.root.animation_data
+            if not ad or not ad.action:
+                return False
+            return any(fc.data_path == "location" and len(fc.keyframe_points) > 1 for fc in ad.action.fcurves)
+        chars = list(self.chars.values())
+        for _ in range(iters):
+            moved = False
+            for i in range(len(chars)):
+                for j in range(i + 1, len(chars)):
+                    a, b = chars[i], chars[j]
+                    if (a.name, b.name) in self.allow_close or (b.name, a.name) in self.allow_close:
+                        continue
+                    if abs(a.root.location.z - b.root.location.z) > 4:
+                        continue
+                    d = Vector((b.root.location.x - a.root.location.x, b.root.location.y - a.root.location.y, 0))
+                    L = d.length
+                    if L >= self.min_gap:
+                        continue
+                    if L < 1e-3:
+                        d, L = Vector((1, 0, 0)), 1.0
+                    push = (self.min_gap - L) / 2 + 0.01
+                    ka, kb = keyed(a), keyed(b)
+                    if ka and kb:
+                        continue
+                    da = d.normalized() * (push * (0 if ka else (2 if kb else 1)))
+                    db = d.normalized() * (push * (0 if kb else (2 if ka else 1)))
+                    for c, delta in ((a, -da), (b, db)):
+                        if delta.length == 0:
+                            continue
+                        c.root.location.x += delta.x
+                        c.root.location.y += delta.y
+                        ad = c.root.animation_data
+                        if ad and ad.action:   # keep a single location key in sync
+                            for fc in ad.action.fcurves:
+                                if fc.data_path == "location" and fc.array_index in (0, 1):
+                                    for kp in fc.keyframe_points:
+                                        kp.co.y += delta.x if fc.array_index == 0 else delta.y
+                                        kp.handle_left.y += delta.x if fc.array_index == 0 else delta.y
+                                        kp.handle_right.y += delta.x if fc.array_index == 0 else delta.y
+                    moved = True
+                    self._separated = True
+            if not moved:
+                break
 
     def liven(self, amount=2.0):
         """Life layer on top of the keyed poses: breathing, head turns, weight shifts, arm sway,
