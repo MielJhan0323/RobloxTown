@@ -22,6 +22,10 @@ Style reference: `reference/` — when unsure, pull frames with ffmpeg and look.
   but **whooshes only on the 2-3 biggest time skips**, quiet. Placed via `override.sfx_extra`.
 
 ## Voice (locked in - the user approved this sound)
+- **User rule: NEVER generate any voice (ElevenLabs, Kokoro, Piper - nothing) unless the user explicitly says so.**
+  The user makes the narration themselves: they upload the mp3 (Titan, eleven_v4, prompt from the script's
+  `## ElevenLabs prompt`) to the RobloxTown Drive folder; download it to `audio/voice/<slug>.mp3`, then
+  apply voice_fx -> transcribe -> plan -> render. Until then, build/animate shots with estimated timing only.
 - ElevenLabs **Titan - ConvoAI + ContentAI** (`dtSEyYGNJqjrtBArPCVZ`), model `eleven_v4`, with an inline
   emotion tag on most lines: [curious] [dramatically] [excited] [playfully] [laughs softly] [sadly]
   [softly] [warmly] [whispering] [emotional]. Write the tags from the script's `## Delivery` table.
