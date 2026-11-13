@@ -75,9 +75,37 @@ def house_set(night=True, past=False):
     for o in h.get("grille", []) + h.get("walkie", []):
         o.hide_render = True
     h["shadow"].hide_render = True
+    enclose(h)
     if past:   # twelve years ago: the room is a nursery
         nursery(S, h, night)
     return S, h
+
+
+def enclose(h):
+    """The house set is a 3-walled dollhouse open toward -Y. Close every room: floor, side/partition walls,
+    a front wall and ceiling 7.6 studs further out, so no camera ever sees the cut edge or the void."""
+    def mat_of(prefix, fallback):
+        for m in bpy.data.materials:
+            if m.name.startswith(prefix):
+                return m
+        return kit.mat(prefix, fallback, rough=0.9)
+    rooms = [(HX - 8, HX + 8, mat_of("hwall", (0.4, 0.45, 0.62)), "hwood"),
+             (HX - 14, HX - 8, mat_of("hhall", (0.85, 0.78, 0.6)), "hrug"),
+             (HX - 30, HX - 14, mat_of("hkit", (0.95, 0.92, 0.85)), "htile")]
+    y0, y1 = HY - 7.0, HY - 14.6
+    cy, dy = (y0 + y1) / 2, y0 - y1
+    white = mat_of("hwhite", (0.95, 0.95, 0.95))
+    for x0, x1, wm, fl in rooms:
+        w = x1 - x0
+        floor = kit.box((w, dy, 0.3), ((x0 + x1) / 2, cy, -0.15), None, 0)
+        floor.data.materials.append(mat_of(fl, (0.55, 0.36, 0.22)))
+        f = kit.box((w + 0.6, 0.6, 12), ((x0 + x1) / 2, y1, 6), None, 0)
+        f.data.materials.append(wm)
+        for x in (x0, x1):
+            sw = kit.box((0.6, dy + 0.6, 12), (x, cy, 6), None, 0)
+            sw.data.materials.append(wm)
+    c = kit.box((38.6, dy + 0.6, 0.4), (HX - 11, cy, 12.2), None, 0)
+    c.data.materials.append(white)
 
 
 def nursery(S, h, night=True):
@@ -91,11 +119,7 @@ def nursery(S, h, night=True):
     wall = kit.mat("nwall", pastel, rough=0.9)
     wood = kit.mat("nfloor", (0.55, 0.36, 0.22), rough=0.7)
     white = kit.mat("nwhite", (0.97, 0.97, 0.97), rough=0.6)
-    kit.box((16, 7.6, 0.3), (HX, HY - 10.8, -0.15), wood, 0)                 # floor extension
-    kit.box((0.6, 7.6, 12), (HX - 8, HY - 10.8, 6), wall, 0)                 # side walls
-    kit.box((0.6, 7.6, 12), (HX + 8, HY - 10.8, 6), wall, 0)
-    kit.box((16.6, 0.6, 12), (HX, HY - 14.6, 6), wall, 0)                    # front wall: the room is closed
-    kit.box((16.6, 7.8, 0.4), (HX, HY - 10.8, 12.2), white, 0)                # ceiling
+    kit.box((0.6, 3.1, 7.6), (HX - 8, HY - 3.0, 3.8), wall, 0)               # close the doorway: one room only
     kit.box((16.6, 0.35, 1.0), (HX, HY - 14.2, 0.5), white, 0)                # skirting
     for x in (HX - 8, HX + 8):                                                # skirting on the sides
         kit.box((0.35, 22, 1.0), (x + (0.35 if x < HX else -0.35), HY - 3.5, 0.5), white, 0)
