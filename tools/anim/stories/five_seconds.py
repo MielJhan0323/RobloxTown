@@ -21,7 +21,7 @@ PACK = "alpha-mark"
 RIO = "Crowd3"
 BENCH = V((-11.2, -3505.0, 0))   # left sidewalk, facing the road (+X)
 STAND = V((-11.5, -3496.0, 0))
-PG = V((-250.0, -3505.0, 0))      # playground centre
+PG = V((-640.0, -3505.0, 0))      # sports field centre (built here, not the exported playground)
 
 
 # ---------------------------------------------------------------- props
@@ -353,7 +353,7 @@ def s19(k, F):  # I said yes before he finished.
 
 
 def s20(k, F):  # With his gift, I knew exactly when every game would end.
-    S = rblx.Stage(PACK, "day")
+    S = field("day")
     n = S.char("Narrator", (PG.x, PG.y), 180, "smirk")
     eye_glow(n, kf(4), 12)
     for i, nm in enumerate(("Prey1", "Crowd2")):
@@ -363,7 +363,7 @@ def s20(k, F):  # With his gift, I knew exactly when every game would end.
 
 
 def s21(k, F):  # When to jump. When to leave.
-    S = rblx.Stage(PACK, "day")
+    S = field("day")
     n = S.char("Narrator", (PG.x, PG.y), 90, "smirk")
     p = n.pos
     n.key_root(1, (p.x, p.y, p.z))
@@ -379,7 +379,7 @@ def s21(k, F):  # When to jump. When to leave.
 
 
 def s22(k, F):  # People finally clapped for me.
-    S = rblx.Stage(PACK, "day")
+    S = field("day")
     n = S.char("Narrator", (PG.x, PG.y), 180, "laugh")
     for i, nm in enumerate(("Prey1", "Crowd2", "Crowd1", "Smallkid", "Prey2")):
         a = 2.3 + i * 0.45
@@ -409,7 +409,7 @@ def s24(k, F):  # He saved me the last pickle.
 
 
 def s25(k, F):  # Every day, I said, "Tomorrow."
-    S = rblx.Stage(PACK, "dusk")
+    S = field("dusk")
     n = S.char("Narrator", (PG.x, PG.y), 180, "smile")
     n.talk(4, F, base="smile")
     for j, f in enumerate(range(1, F + 2, 6)):
@@ -421,7 +421,7 @@ def s25(k, F):  # Every day, I said, "Tomorrow."
 
 
 def s26(k, F):  # Then, one afternoon, I felt it.
-    S = rblx.Stage(PACK, "dusk")
+    S = field("dusk")
     n = S.char("Narrator", (PG.x, PG.y), 180, "smile")
     n.faces([(1, "smile"), (kf(6), "shocked")])
     eye_glow(n, kf(6), 18)
@@ -431,7 +431,7 @@ def s26(k, F):  # Then, one afternoon, I felt it.
 
 
 def s27(k, F):  # A tug, like the last page of a book.
-    S = rblx.Stage(PACK, "dusk")
+    S = field("dusk")
     n = S.char("Narrator", (PG.x, PG.y), 180, "scared")
     n.arm("R", 1, 40, -10)
     n.arm("R", kf(8), 75, -45)   # hand to chest
@@ -450,7 +450,7 @@ def s28(k, F):  # It came from our bench.
 
 
 def s29(k, F):  # I ran.
-    S = rblx.Stage(PACK, "dusk")
+    S = field("dusk")
     n = S.char("Narrator", (PG.x - 8, PG.y + 2), 90, "scared")
     n.run(1, F, (PG.x + 4, PG.y + 2))
     S.cam(V((PG.x - 2, PG.y + 2, 2.8)), dist=20, yaw=165, height=6, lens=28, fstop=None)
@@ -589,7 +589,7 @@ def tease(name, expr):
 
 
 def b_kai(k, F):  # Kai said, "With Rio's gift, you'd actually be somebody."
-    S = rblx.Stage(PACK, "day")
+    S = field("day")
     n = S.char("Narrator", (PG.x - 1.3, PG.y), 90, "worried")
     kai = S.char("Kai", (PG.x + 1.5, PG.y + 0.2), -95, "smirk")
     kai.lean(1, 12)
@@ -658,7 +658,7 @@ def lift_can(S, n, F, drop=True):
 
 
 def c_strong(k, F):  # Mine? I'm super strong, for one second.
-    S = rblx.Stage(PACK, "day")
+    S = field("day")
     n = S.char("Narrator", (PG.x, PG.y), 180, "determined")
     lift_can(S, n, F, drop=False)
     n.faces([(1, "determined"), (kf(F * 0.3), "laugh")])
@@ -667,7 +667,7 @@ def c_strong(k, F):  # Mine? I'm super strong, for one second.
 
 
 def c_gone(k, F):  # Then it's gone.
-    S = rblx.Stage(PACK, "day")
+    S = field("day")
     n = S.char("Narrator", (PG.x, PG.y), 180, "laugh")
     can = kit.cyl(1.0, 2.4, tuple(n.world((0, 0.2, 7.2))), kit.mat("tcan", (0.25, 0.45, 0.3)), verts=16)
     kit.key(can, 1, loc=tuple(can.location))
@@ -683,7 +683,7 @@ def c_gone(k, F):  # Then it's gone.
 
 
 def c_noclap(k, F):  # Nobody claps for that.
-    S = rblx.Stage(PACK, "day")
+    S = field("day")
     n = S.char("Narrator", (PG.x, PG.y), 180, "sad")
     kit.cyl(1.0, 2.4, tuple(n.world((1.8, 0.8, 1.2))), kit.mat("tcan", (0.25, 0.45, 0.3)), verts=16)
     for nm, x in (("Prey1", -6), ("Crowd2", -8)):
@@ -727,7 +727,7 @@ def c_rio_danger(k, F):  # He could sense danger.
 
 
 def c_cant_stop(k, F):  # That's it. He couldn't stop it. He just felt it coming.
-    S = rblx.Stage(PACK, "day")
+    S = field("day")
     r = S.char(RIO, (PG.x - 2, PG.y), 150, "scared")
     o = S.char("Prey1", (PG.x + 2.5, PG.y + 1), 200, "smile")
     ball = kit.sphere(0.6, (PG.x + 9, PG.y + 3, 5), kit.mat("ball", (0.95, 0.3, 0.2)), seg=16)
@@ -742,7 +742,7 @@ def c_cant_stop(k, F):  # That's it. He couldn't stop it. He just felt it coming
 
 
 def c_scaredy(k, F):  # Kids called him a scaredy cat.
-    S = rblx.Stage(PACK, "day")
+    S = field("day")
     r = S.char(RIO, (PG.x, PG.y), 180, "sad")
     r.look(1, 0, -15)
     for i, (nm, dx) in enumerate((("Crowd1", -3), ("Crowd2", 3), ("Kai", 0.4))):
@@ -754,7 +754,7 @@ def c_scaredy(k, F):  # Kids called him a scaredy cat.
 
 
 def c_halls(k, F):  # They laughed in the halls. They laughed at lunch.
-    S = rblx.Stage(PACK, "day")
+    S = field("day")
     n = S.char("Narrator", (PG.x - 0.8, PG.y), 180, "sad")
     r = S.char(RIO, (PG.x + 0.8, PG.y), 180, "sad")
     for i, nm in enumerate(("Crowd1", "Crowd2", "Crowd4", "Cousin", "Prey3")):
@@ -768,7 +768,7 @@ def c_halls(k, F):  # They laughed in the halls. They laughed at lunch.
 
 
 def c_enough(k, F):  # One day, I'd had enough.
-    S = rblx.Stage(PACK, "day")
+    S = field("day")
     n = S.char("Narrator", (PG.x, PG.y), 180, "angry")
     n.arm("L", 1, 30, -10)
     n.arm("R", 1, 30, -10)
@@ -786,7 +786,7 @@ def c_promise(k, F):  # "I'll keep you safe," I said. "Every minute. I promise."
 
 
 def c_strong_win(k, F):  # Together, I always knew the exact second to be strong.
-    S = rblx.Stage(PACK, "day")
+    S = field("day")
     n = S.char("Narrator", (PG.x, PG.y), 180, "smirk")
     eye_glow(n, kf(4), 12)
     lift_can(S, n, F, drop=False)
@@ -795,7 +795,7 @@ def c_strong_win(k, F):  # Together, I always knew the exact second to be strong
 
 
 def c_race(k, F):  # I won every game. Every race.
-    S = rblx.Stage(PACK, "day")
+    S = field("day")
     n = S.char("Narrator", (PG.x - 6, PG.y), 90, "laugh")
     n.run(1, F, (PG.x + 4, PG.y))
     for i, nm in enumerate(("Crowd2", "Prey1")):
@@ -806,7 +806,7 @@ def c_race(k, F):  # I won every game. Every race.
 
 
 def c_kai_lose(k, F):  # Even Kai couldn't touch me.
-    S = rblx.Stage(PACK, "day")
+    S = field("day")
     n = S.char("Narrator", (PG.x - 1.5, PG.y), 90, "smirk")
     kai = S.char("Kai", (PG.x + 1.6, PG.y), -90, "angry")
     eye_glow(n, 1, 10)
@@ -855,7 +855,7 @@ def c_rain(k, F):  # He got caught in the rain.
 
 
 def c_trip(k, F):  # He tripped on the stairs.
-    S = rblx.Stage(PACK, "day")
+    S = field("day")
     r = S.char(RIO, (PG.x, PG.y), 90, "smile")
     r.walk(1, kf(F * 0.4), (PG.x + 1.5, PG.y))
     r.key_root(kf(F * 0.4), tilt=0)
@@ -871,7 +871,7 @@ def c_trip(k, F):  # He tripped on the stairs.
 
 
 def c_ball(k, F):  # He never saw the ball coming.
-    S = rblx.Stage(PACK, "day")
+    S = field("day")
     r = S.char(RIO, (PG.x, PG.y), 180, "smile")
     ball = kit.sphere(0.6, (PG.x + 9, PG.y + 3, 5), kit.mat("ball", (0.95, 0.3, 0.2)), seg=16)
     hit = kf(F * 0.45)
@@ -885,7 +885,7 @@ def c_ball(k, F):  # He never saw the ball coming.
 
 
 def c_laughoff(k, F):  # He just laughed it off.
-    S = rblx.Stage(PACK, "day")
+    S = field("day")
     r = S.char(RIO, (PG.x, PG.y), 180, "laugh")
     r.arm("R", 1, 150, 30)  # rubbing his head
     S.cam(r.head_pt() - V((0, 0, 0.9)), dist=6, yaw=180, height=r.head_pt().z - 0.2, lens=40)
@@ -904,13 +904,180 @@ def c_wait_night(k, F):  # He waited after school. He waited until the streetlig
 
 
 def c_felt(k, F):  # Then, one afternoon, I felt danger. It came from our bench.
-    S = rblx.Stage(PACK, "dusk")
+    S = field("dusk")
     n = S.char("Narrator", (PG.x, PG.y), 180, "smile")
     n.faces([(1, "smile"), (kf(6), "scared")])
     eye_glow(n, kf(6), 18)
     S.flash_light(tuple(n.head_pt() + V((0, 2, 0))), kf(6), kf(6) + 6, (1, 0.5, 0.4), 2500)
     n.look(kf(12), 60, 0)
     S.cam(n.head_pt() - V((0, 0, 0.8)), dist=6, yaw=180, height=n.head_pt().z, lens=40)
+    return S
+
+
+# ---------------------------------------------------------------- set: school sports field (new, built in Blender)
+STAIRS = V((PG.x + 6.0, PG.y + 14.0, 0))   # bottom step centre; stairs climb toward +Y to the school doors
+
+
+def field(light="day"):
+    S = rblx.Stage(PACK, light)
+    fx, fy = PG.x, PG.y
+    grass = kit.mat("fgrass", (0.25, 0.55, 0.22), rough=0.9)
+    kit.box((90, 70, 0.4), (fx, fy + 5, -0.2), grass, 0)
+    track = kit.mat("track", (0.75, 0.3, 0.22), rough=0.8)
+    lane = kit.mat("lane", (0.97, 0.97, 0.97), rough=0.6)
+    kit.box((70, 9, 0.06), (fx, fy, 0.03), track, 0)
+    for k2 in range(5):
+        kit.box((70, 0.12, 0.07), (fx, fy - 4.5 + k2 * 2.25, 0.05), lane, 0)
+    kit.box((0.3, 9, 0.08), (fx + 12, fy, 0.06), lane, 0)      # finish line
+    # bleachers (left) and fence (front-right)
+    seat = kit.mat("bleach", (0.75, 0.78, 0.82), metal=0.4, rough=0.4)
+    for k2 in range(5):
+        kit.box((24, 1.6, 0.5), (fx - 14, fy - 10 - k2 * 1.6, 0.6 + k2 * 0.9), seat, 0.03)
+        kit.box((24, 0.3, 0.6 + k2 * 0.9), (fx - 14, fy - 10.7 - k2 * 1.6, 0.3 + k2 * 0.45), kit.mat("bleachf", (0.4, 0.42, 0.45)), 0)
+    for k2 in range(12):
+        kit.box((0.2, 0.2, 3), (fx - 30 + k2 * 6, fy - 22, 1.5), kit.mat("fencep", (0.5, 0.5, 0.52)), 0)
+    kit.box((66, 0.08, 2.2), (fx + 3, fy - 22, 1.8), kit.mat("fencem", (0.6, 0.62, 0.65), alpha=0.35), 0)
+    # goal posts
+    for gx in (fx - 30, fx + 30):
+        for dy in (-3, 3):
+            kit.box((0.3, 0.3, 6), (gx, fy + dy + 12, 3), lane, 0)
+        kit.box((0.3, 6.3, 0.3), (gx, fy + 12, 6), lane, 0)
+    # school building with doors at the top of a real staircase
+    brick = kit.mat("fbrick", (0.62, 0.22, 0.15), rough=0.8)
+    by = STAIRS.y + 7.5
+    kit.box((46, 8, 16), (fx + 4, by + 4, 8), brick, 0)
+    kit.box((5, 0.4, 6.5), (STAIRS.x, by - 0.1, 3.0 + 3.6), kit.mat("fdoor", (0.2, 0.35, 0.7)), 0.05)
+    for wx in (-14, -8, 14, 20):
+        kit.box((4, 0.4, 3.5), (fx + 4 + wx, by - 0.1, 9), kit.mat("fwin", (0.85, 0.9, 1.0), emit=0.6, emit_color=(0.9, 0.95, 1)), 0)
+    step = kit.mat("step", (0.78, 0.76, 0.72), rough=0.7)
+    for k2 in range(6):   # 6 steps, 0.6 high, 1.25 deep
+        kit.box((8, 1.25 * (6 - k2), 0.6), (STAIRS.x, STAIRS.y + 1.25 * k2 + 1.25 * (6 - k2) / 2, 0.3 + 0.6 * k2), step, 0.02)
+    for dx in (-4.2, 4.2):   # hand rails
+        kit.box((0.2, 7.8, 0.2), (STAIRS.x + dx, STAIRS.y + 3.9, 2.9), kit.mat("rail", (0.3, 0.3, 0.32), metal=0.6), 0)
+        kit.box((0.2, 0.2, 2.3), (STAIRS.x + dx, STAIRS.y + 0.4, 1.15), kit.mat("rail", (0.3, 0.3, 0.32), metal=0.6), 0)
+        kit.box((0.2, 0.2, 2.3), (STAIRS.x + dx, STAIRS.y + 7.4, 4.75), kit.mat("rail", (0.3, 0.3, 0.32), metal=0.6), 0)
+    return S
+
+
+def speed_lines(start, direction, f0, frames, n=14, length=6):
+    m = kit.mat("speed", (1, 1, 1), emit=3, emit_color=(1, 1, 1), alpha=0.6)
+    rnd = random.Random(4)
+    d = direction.normalized()
+    yaw = math.atan2(d.y, d.x)
+    for i in range(n):
+        o = kit.box((length * rnd.uniform(0.6, 1.2), 0.06, 0.06),
+                    tuple(start + d * rnd.uniform(-2, 6) + V((0, rnd.uniform(-1, 1), rnd.uniform(0.8, 4.5)))), m, 0)
+        o.rotation_euler = (0, 0, yaw)
+        o.hide_render = True
+        o.keyframe_insert("hide_render", frame=1)
+        o.hide_render = False
+        o.keyframe_insert("hide_render", frame=f0)
+        o.hide_render = True
+        o.keyframe_insert("hide_render", frame=f0 + frames)
+
+
+def cartoon_takeoff(S, c, f0, to, dur=6):
+    """Wind-up then zoom: crouch back, legs spinning, stretch, dust cloud and speed lines at the start."""
+    p = c.pos.copy()
+    c.key_root(1, (p.x, p.y, p.z))
+    c.key_root(f0, (p.x, p.y, p.z))
+    c.lean(1, 0)
+    c.lean(f0 - 6, -20)               # wind-up: lean back
+    c.lean(f0, 35)                    # launch: lean way forward
+    for f in range(f0 - 6, f0 + dur + 2, 2):   # legs/arms windmill
+        a = 80 if (f // 2) % 2 else -80
+        c.leg("L", f, a)
+        c.leg("R", f, -a)
+        c.arm("L", f, -a * 0.9)
+        c.arm("R", f, a * 0.9)
+    c.key_root(f0 + dur, to)
+    c.root.scale = (1, 1, 1)
+    c.root.keyframe_insert("scale", frame=f0 - 1)
+    c.root.scale = (0.8, 1.6, 0.85)    # stretch along the run
+    c.root.keyframe_insert("scale", frame=f0 + 2)
+    S.dust(25, (p.x, p.y, p.z), radius=1.6, n=10, color=(0.85, 0.8, 0.7))
+    speed_lines(p, V(to) - p if len(to) == 3 else V((to[0], to[1], p.z)) - p, f0, dur + 8)
+
+
+def c_strong_win(k, F):  # Together, I always knew the exact second to be strong.  (throws the can into the sky)
+    S = field("day")
+    n = S.char("Narrator", (PG.x, PG.y), 180, "smirk")
+    eye_glow(n, kf(4), 12)
+    can = kit.cyl(1.0, 2.4, tuple(n.world((0, 1.2, 1.2))), kit.mat("tcan", (0.25, 0.45, 0.3)), verts=16)
+    p0 = V(can.location)
+    up = kf(F * 0.3)
+    kit.key(can, 1, loc=tuple(p0))
+    kit.key(can, up, loc=tuple(p0 + V((0, -0.6, 4.6))))
+    kit.key(can, up + 3, loc=tuple(p0 + V((0, -0.6, 4.4))))
+    kit.key(can, F, loc=tuple(p0 + V((0, 8, 60))), rot=(720, 200, 0))
+    n.arm("L", up, 175, 5)
+    n.arm("R", up, 175, 5)
+    n.arm("L", up + 3, 150, 5)
+    n.arm("R", up + 3, 150, 5)
+    n.arm("L", up + 6, 180, 0)
+    n.arm("R", up + 6, 180, 0)
+    star = kit.sphere(0.6, tuple(p0 + V((0, 8, 60))), kit.mat("twinkle", (1, 1, 0.8), emit=30, emit_color=(1, 1, 0.8)), seg=8)
+    S.show(star, 1, False)
+    S.show(star, max(up + 8, F - 8), True)
+    S.cam(V((PG.x, PG.y, 5.0)), dist=13, yaw=180, height=4.0, lens=28, fstop=None)
+    return S
+
+
+def c_race(k, F):  # I won every game. Every race.  (cartoony takeoff)
+    S = field("day")
+    n = S.char("Narrator", (PG.x - 8, PG.y), 90, "smirk")
+    rivals = []
+    for i, nm in enumerate(("Crowd2", "Prey1")):
+        c = S.char(nm, (PG.x - 8, PG.y + 2.3 + i * 2.2), 90, "determined")
+        c.run(1, F, (PG.x - 1 - i * 1.5, PG.y + 2.3 + i * 2.2))
+        rivals.append(c)
+    f0 = kf(F * 0.3)
+    cartoon_takeoff(S, n, f0, (PG.x + 30, PG.y, 0), dur=5)
+    for c in rivals:   # blown around by the wind
+        c.faces([(1, "determined"), (f0 + 2, "shocked")])
+        c.key_root(f0 + 6, yaw=90 + 160)
+    S.cam(V((PG.x - 2, PG.y + 1, 2.8)), dist=14, yaw=170, height=3.6, lens=28, fstop=None)
+    return S
+
+
+def c_kai_lose(k, F):  # Even Kai couldn't touch me.  (Kai big in the foreground)
+    S = field("day")
+    n = S.char("Narrator", (PG.x, PG.y + 4.0), 180, "smirk")
+    kai = S.char("Kai", (PG.x + 0.3, PG.y), 0, "angry")      # back-3/4 to camera, in front of the scene
+    eye_glow(n, 1, 10)
+    swing = kf(F * 0.3)
+    kai.arm("R", 1, 40, 10)
+    kai.arm("R", swing - 4, 20, -30)    # wind-up
+    kai.arm("R", swing, 110, 20)        # punch... misses
+    kai.lean(swing, 25)
+    n.key_root(swing - 2, (PG.x, PG.y + 4.0))
+    n.key_root(swing + 2, (PG.x - 2.6, PG.y + 4.4))     # sidestep, cartoony fast
+    kai.key_root(1, (PG.x + 0.3, PG.y))
+    kai.key_root(swing, (PG.x + 0.3, PG.y))
+    n.key_root(1, (PG.x, PG.y + 4.0))
+    kai.key_root(swing + 4, (PG.x + 0.3, PG.y + 0.8))
+    kai.key_root(swing + 14, (PG.x + 0.6, PG.y + 2.4), tilt=-85)   # faceplant past him
+    kai.faces([(1, "angry"), (swing + 4, "shocked"), (swing + 16, "crying")])
+    n.faces([(1, "smirk"), (swing + 6, "laugh")])
+    S.cam_at(V((PG.x + 2.4, PG.y - 5.5, 3.6)), V((PG.x - 0.4, PG.y + 3.0, 3.0)), lens=26, fstop=None)
+    return S
+
+
+def c_trip(k, F):  # He tripped on the stairs.  (real staircase)
+    S = field("day")
+    r = S.char(RIO, (STAIRS.x, STAIRS.y - 1.5, 0), 180, "smile")   # facing +Y, walking up the steps
+    f = 1
+    for k2 in range(5):
+        r.key_root(f, (STAIRS.x, STAIRS.y - 1.5 + k2 * 1.25, 0.6 * max(0, k2)))
+        f += 6
+    trip = f
+    r.leg("L", trip - 2, 30)
+    r.leg("R", trip - 2, -20)
+    r.key_root(trip + 6, (STAIRS.x, STAIRS.y + 4.5, 0.6 * 4 + 0.3), tilt=-70)
+    r.arm("L", trip + 2, 140, 20)
+    r.arm("R", trip + 2, 140, 20)
+    r.faces([(1, "smile"), (trip, "shocked")])
+    S.cam_at(V((STAIRS.x + 6.5, STAIRS.y - 1.5, 4.6)), V((STAIRS.x, STAIRS.y + 2.8, 2.6)), lens=28, fstop=None)
     return S
 
 
