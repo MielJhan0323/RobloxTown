@@ -16,10 +16,10 @@ SS = 4                      # supersampling
 W, H = 400, 448             # face square (same aspect as the atlas UV island)
 CX = 0.53                   # face centre (fraction of width), measured from the exported default face
 EYE_Y, MOUTH_Y = 0.32, 0.66
-EYE_DX = 0.135
+EYE_DX = 0.105
 EXPR = ["smile", "neutral", "smirk", "worried", "sad", "shocked", "angry", "crying", "talk",
         "determined", "laugh", "embarrassed", "tired", "scared"]
-K = (12, 12, 14, 255)
+K = (38, 24, 20, 255)          # dark brown ink, like the reference
 WHITE = (255, 255, 255, 255)
 
 
@@ -28,7 +28,7 @@ def P(x, y):
 
 
 # ---- expressive cartoon style: big white eyes with thick outlines + small pupils, open toothy mouths ----
-OUT = int(9 * SS)          # outline width
+OUT = int(4 * SS)          # outline width
 TONGUE = (220, 90, 100, 255)
 MOUTH_IN = (60, 20, 25, 255)
 
@@ -39,7 +39,7 @@ def ell(d, cx, cy, rx, ry, fill, outline=K, width=OUT):
 
 def eye(d, x, y, kind="normal", look=(0.0, 0.0), lid=0.0, side=1):
     """kind: normal|wide|closed|closed_happy|half. look: pupil offset (-1..1). lid: 0..1 upper lid droop."""
-    rx, ry = 0.092 * W * SS, 0.115 * H * SS
+    rx = ry = 0.075 * W * SS          # round eyes
     cx, cy = P(x, y)
     if kind == "closed_happy":   # ^ ^
         d.arc([cx - rx, cy - ry * 0.6, cx + rx, cy + ry * 1.0], 200, 340, fill=K, width=OUT + 2 * SS)
@@ -48,13 +48,11 @@ def eye(d, x, y, kind="normal", look=(0.0, 0.0), lid=0.0, side=1):
         d.arc([cx - rx, cy - ry * 1.2, cx + rx, cy + ry * 0.4], 20, 160, fill=K, width=OUT + 2 * SS)
         return
     if kind == "wide":
-        rx, ry = rx * 1.15, ry * 1.18
+        rx = ry = rx * 1.1
     ell(d, cx, cy, rx, ry, WHITE)
-    pr = rx * (0.24 if kind == "wide" else 0.34)
+    pr = rx * (0.13 if kind == "wide" else 0.17)   # tiny pupil dot
     px, py = cx + look[0] * rx * 0.45, cy + look[1] * ry * 0.45
     d.ellipse([px - pr, py - pr * 1.15, px + pr, py + pr * 1.15], fill=K)
-    h = pr * 0.45
-    d.ellipse([px - pr * 0.4 - h, py - pr * 0.6 - h, px - pr * 0.4 + h, py - pr * 0.6 + h], fill=WHITE)
     if kind == "half":
         lid = max(lid, 0.5)
     if lid > 0:               # skin-coloured upper lid with an outline edge
@@ -71,9 +69,9 @@ def brow(d, x, y, tilt, side, lift=0.0, arch=False):
     inner = 1 if side == "L" else -1
     dy = tilt * 0.035 * H * SS
     if arch:
-        d.arc([cx - w, cy - w * 0.35, cx + w, cy + w * 0.6], 200, 340, fill=K, width=int(8 * SS))
+        d.arc([cx - w, cy - w * 0.3 + inner * w * 0.08, cx + w, cy + w * 0.55], 205, 335, fill=K, width=int(5 * SS))
     else:
-        d.line([cx - w * inner, cy - dy, cx + w * inner, cy + dy], fill=K, width=int(8 * SS))
+        d.line([cx - w * inner, cy - dy, cx + w * inner, cy + dy], fill=K, width=int(5 * SS))
 
 
 def open_mouth(d, cx, cy, w, h, teeth=True, tongue=True, frown=False):
@@ -90,11 +88,21 @@ def open_mouth(d, cx, cy, w, h, teeth=True, tongue=True, frown=False):
 
 
 def mouth(d, kind):
-    cx, cy = P(CX, MOUTH_Y)
-    w = 0.26 * W * SS
-    lw = OUT
+    cx, cy = P(CX + 0.04, MOUTH_Y)   # lopsided, a little to one side
+    w = 0.15 * W * SS
+    lw = OUT + 2 * SS
     if kind == "smile":
-        open_mouth(d, cx, cy, w, w * 0.45)
+        import math as _m
+        rot = _m.radians(-9)
+        c0 = (cx, cy - w * 0.15)
+
+        def R(px, py):
+            dx, dy = px - c0[0], py - c0[1]
+            return (c0[0] + dx * _m.cos(rot) - dy * _m.sin(rot), c0[1] + dx * _m.sin(rot) + dy * _m.cos(rot))
+        lower = [R(c0[0] + w * _m.cos(_m.pi * t / 20), c0[1] + w * 0.62 * _m.sin(_m.pi * t / 20)) for t in range(21)]
+        d.polygon(lower, fill=K)
+        teeth = [R(c0[0] + w * 0.86 * _m.cos(_m.pi * t / 20), c0[1] + w * 0.28 * _m.sin(_m.pi * t / 20)) for t in range(21)]
+        d.polygon(teeth, fill=WHITE)
     elif kind == "laugh":
         open_mouth(d, cx, cy - w * 0.05, w * 1.15, w * 0.62)
     elif kind == "talk":
