@@ -405,7 +405,7 @@ def s24(k, F):  # He saved me the last pickle.
     S = street("dusk")
     pickle((BENCH.x + 0.1, BENCH.y - 1.0, 1.85))
     r = sit_bench(S, RIO, 1.2, "sad", yaw=110)
-    S.cam_at(V((BENCH.x + 2.3, BENCH.y - 2.2, 3.4)), V((BENCH.x + 0.1, BENCH.y - 1.0, 1.9)), lens=40, fstop=2.0)
+    S.cam_at(V((BENCH.x + 2.3, BENCH.y - 2.2, 3.4)), V((BENCH.x + 0.1, BENCH.y - 1.0, 1.9)), lens=40, fstop=2.0, allow_close=True)
     return S
 
 
@@ -502,7 +502,7 @@ def s33(k, F):  # I leave room on the left.
 def s34(k, F):  # I save him the last pickle.
     S = street("sunset")
     pickle((BENCH.x + 0.1, BENCH.y + 1.2, 1.85))
-    S.cam_at(V((BENCH.x + 2.3, BENCH.y + 2.4, 3.4)), V((BENCH.x + 0.1, BENCH.y + 1.2, 1.9)), lens=40, fstop=2.0)
+    S.cam_at(V((BENCH.x + 2.3, BENCH.y + 2.4, 3.4)), V((BENCH.x + 0.1, BENCH.y + 1.2, 1.9)), lens=40, fstop=2.0, allow_close=True)
     return S
 
 

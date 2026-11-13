@@ -30,6 +30,7 @@ V3 = Vector
 R = math.radians
 ROOT = Path(__file__).resolve().parents[2]
 STEP = 15  # spacing of key poses (the render fills the in-betweens when ITT_STEP=2)
+MIN_VIEW = 9.0  # studs of height a camera must always show (no super-tight close-ups)
 WIDEN = 0.55  # every camera lens is multiplied by this: wider, reference-style medium framing
 
 
@@ -632,13 +633,26 @@ class Stage:
 
     # -------------------------------------------------------------- camera
     def cam(self, target, dist=8, yaw=0, height=None, lens=50, fstop=2.4, focus=None, roll=0):
+        # never tighter than a reference-style medium shot (about thighs-up: MIN_VIEW studs tall)
+        view = dist * 24.0 / (lens * WIDEN)
+        if view < MIN_VIEW:
+            k = MIN_VIEW / view
+            dist *= k
+            target = Vector(target) - Vector((0, 0, min(1.2, (MIN_VIEW - view) * 0.35)))
+            if height is not None:
+                height = height - min(1.2, (MIN_VIEW - view) * 0.35) + 0.3
         c = kit.camera(tuple(target), dist=dist, yaw=yaw, height=height, lens=lens * WIDEN, fstop=fstop, focus=focus)
         c.data.clip_start = 0.05
         c.data.clip_end = 2000
         self.camera = c
         return c
 
-    def cam_at(self, loc, target, lens=50, fstop=2.4, focus=None):
+    def cam_at(self, loc, target, lens=50, fstop=2.4, focus=None, allow_close=False):
+        loc, target = Vector(loc), Vector(target)
+        dist = (loc - target).length
+        view = dist * 24.0 / (lens * WIDEN)
+        if view < MIN_VIEW and not allow_close:   # pull straight back along the view line
+            loc = target + (loc - target) * (MIN_VIEW / view)
         tgt = kit.empty(tuple(target), name="cam_target")
         d = bpy.data.cameras.new("cam")
         d.lens = lens * WIDEN

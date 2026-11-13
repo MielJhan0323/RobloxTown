@@ -15,8 +15,8 @@ from PIL import Image, ImageDraw, ImageFilter
 SS = 4                      # supersampling
 W, H = 400, 448             # face square (same aspect as the atlas UV island)
 CX = 0.53                   # face centre (fraction of width), measured from the exported default face
-EYE_Y, MOUTH_Y = 0.30, 0.64
-EYE_DX = 0.11
+EYE_Y, MOUTH_Y = 0.32, 0.66
+EYE_DX = 0.135
 EXPR = ["smile", "neutral", "smirk", "worried", "sad", "shocked", "angry", "crying", "talk",
         "determined", "laugh", "embarrassed", "tired", "scared"]
 K = (12, 12, 14, 255)
@@ -27,105 +27,153 @@ def P(x, y):
     return (x * W * SS, y * H * SS)
 
 
-def eye(d, x, y, kind="normal"):
-    rx, ry = 0.042 * W * SS, 0.072 * H * SS
+# ---- expressive cartoon style: big white eyes with thick outlines + small pupils, open toothy mouths ----
+OUT = int(9 * SS)          # outline width
+TONGUE = (220, 90, 100, 255)
+MOUTH_IN = (60, 20, 25, 255)
+
+
+def ell(d, cx, cy, rx, ry, fill, outline=K, width=OUT):
+    d.ellipse([cx - rx, cy - ry, cx + rx, cy + ry], fill=fill, outline=outline, width=width)
+
+
+def eye(d, x, y, kind="normal", look=(0.0, 0.0), lid=0.0, side=1):
+    """kind: normal|wide|closed|closed_happy|half. look: pupil offset (-1..1). lid: 0..1 upper lid droop."""
+    rx, ry = 0.092 * W * SS, 0.115 * H * SS
     cx, cy = P(x, y)
     if kind == "closed_happy":   # ^ ^
-        d.arc([cx - rx * 1.4, cy - ry * 0.6, cx + rx * 1.4, cy + ry * 1.4], 200, 340, fill=K, width=int(9 * SS))
+        d.arc([cx - rx, cy - ry * 0.6, cx + rx, cy + ry * 1.0], 200, 340, fill=K, width=OUT + 2 * SS)
         return
-    if kind == "closed":
-        d.line([cx - rx * 1.3, cy, cx + rx * 1.3, cy], fill=K, width=int(8 * SS))
+    if kind == "closed":        # blink / crying: curved shut line
+        d.arc([cx - rx, cy - ry * 1.2, cx + rx, cy + ry * 0.4], 20, 160, fill=K, width=OUT + 2 * SS)
         return
     if kind == "wide":
-        rx, ry = rx * 1.45, ry * 1.25
-        d.ellipse([cx - rx, cy - ry, cx + rx, cy + ry], fill=WHITE, outline=K, width=int(5 * SS))
-        r = rx * 0.45
-        d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=K)
-        return
+        rx, ry = rx * 1.15, ry * 1.18
+    ell(d, cx, cy, rx, ry, WHITE)
+    pr = rx * (0.24 if kind == "wide" else 0.34)
+    px, py = cx + look[0] * rx * 0.45, cy + look[1] * ry * 0.45
+    d.ellipse([px - pr, py - pr * 1.15, px + pr, py + pr * 1.15], fill=K)
+    h = pr * 0.45
+    d.ellipse([px - pr * 0.4 - h, py - pr * 0.6 - h, px - pr * 0.4 + h, py - pr * 0.6 + h], fill=WHITE)
     if kind == "half":
-        ry *= 0.6
-        cy += ry * 0.5
-    d.ellipse([cx - rx, cy - ry, cx + rx, cy + ry], fill=K)
-    h = rx * 0.42
-    d.ellipse([cx - rx * 0.35 - h / 2, cy - ry * 0.45 - h / 2, cx - rx * 0.35 + h / 2, cy - ry * 0.45 + h / 2], fill=WHITE)
+        lid = max(lid, 0.5)
+    if lid > 0:               # skin-coloured upper lid with an outline edge
+        top = cy - ry - OUT
+        edge = cy - ry + 2 * ry * lid
+        d.rectangle([cx - rx - OUT, top - 4, cx + rx + OUT, edge], fill=SKIN[0])
+        d.line([cx - rx, edge, cx + rx, edge + side * 0.0], fill=K, width=OUT)
 
 
-def brow(d, x, y, tilt, side, lift=0.0):
-    """tilt>0: inner end down (angry); tilt<0: inner end up (sad/worried)."""
-    cx, cy = P(x, y - 0.11 - lift)
-    w = 0.07 * W * SS
-    inner = 1 if side == "L" else -1   # inner end is toward the face centre
-    dy = tilt * 0.03 * H * SS
-    d.line([cx - w * inner, cy - dy, cx + w * inner, cy + dy], fill=K, width=int(14 * SS))
+def brow(d, x, y, tilt, side, lift=0.0, arch=False):
+    """Thin expressive brow. tilt>0: inner end down (angry); tilt<0: inner end up (worried)."""
+    cx, cy = P(x, y - 0.16 - lift)
+    w = 0.085 * W * SS
+    inner = 1 if side == "L" else -1
+    dy = tilt * 0.035 * H * SS
+    if arch:
+        d.arc([cx - w, cy - w * 0.35, cx + w, cy + w * 0.6], 200, 340, fill=K, width=int(8 * SS))
+    else:
+        d.line([cx - w * inner, cy - dy, cx + w * inner, cy + dy], fill=K, width=int(8 * SS))
+
+
+def open_mouth(d, cx, cy, w, h, teeth=True, tongue=True, frown=False):
+    """D-shaped open mouth with outline, dark inside, top teeth and a tongue."""
+    box = [cx - w, cy - h, cx + w, cy + h]
+    start, end = (180, 360) if frown else (0, 180)
+    d.chord([box[0], box[1] - (h if not frown else 0), box[2], box[3] + (0 if not frown else h)], start, end,
+            fill=MOUTH_IN, outline=K, width=OUT)
+    if teeth and not frown:
+        d.rectangle([cx - w * 0.78, cy - h * 0.05, cx + w * 0.78, cy + h * 0.32], fill=WHITE)
+        d.chord([box[0], box[1] - h, box[2], box[3]], 0, 180, outline=K, width=OUT)
+    if tongue and not frown:
+        d.chord([cx - w * 0.45, cy + h * 0.35, cx + w * 0.45, cy + h * 1.15], 180, 360, fill=TONGUE)
 
 
 def mouth(d, kind):
     cx, cy = P(CX, MOUTH_Y)
-    w = 0.27 * W * SS
-    lw = int(12 * SS)
+    w = 0.26 * W * SS
+    lw = OUT
     if kind == "smile":
-        d.chord([cx - w, cy - w * 0.55, cx + w, cy + w * 0.45], 0, 180, fill=K)
-        d.chord([cx - w * 0.82, cy - w * 0.45, cx + w * 0.82, cy + w * 0.1], 0, 180, fill=WHITE)
-    elif kind == "neutral":
-        d.arc([cx - w * 0.6, cy - w * 0.35, cx + w * 0.6, cy + w * 0.2], 20, 160, fill=K, width=lw)
-    elif kind == "smirk":
-        d.arc([cx - w * 0.6, cy - w * 0.5, cx + w * 0.9, cy + w * 0.15], 10, 110, fill=K, width=lw)
-        d.line([cx - w * 0.6, cy - w * 0.05, cx + w * 0.1, cy + w * 0.12], fill=K, width=lw)
-    elif kind in ("sad", "crying"):
-        d.arc([cx - w * 0.55, cy, cx + w * 0.55, cy + w * 0.7], 200, 340, fill=K, width=lw)
-    elif kind in ("worried", "scared"):
-        pts = [(cx - w * 0.55 + i * w * 0.22, cy + (w * 0.08 if i % 2 else -w * 0.08)) for i in range(6)]
-        d.line(pts, fill=K, width=int(7 * SS), joint="curve")
-    elif kind == "shocked":
-        d.ellipse([cx - w * 0.25, cy - w * 0.3, cx + w * 0.25, cy + w * 0.4], fill=K)
-    elif kind == "angry":
-        d.chord([cx - w * 0.6, cy - w * 0.05, cx + w * 0.6, cy + w * 0.8], 180, 360, fill=K)
-        d.rectangle([cx - w * 0.45, cy + w * 0.05, cx + w * 0.45, cy + w * 0.17], fill=WHITE)
-    elif kind == "talk":
-        d.ellipse([cx - w * 0.38, cy - w * 0.2, cx + w * 0.38, cy + w * 0.42], fill=K)
-        d.chord([cx - w * 0.25, cy + w * 0.12, cx + w * 0.25, cy + w * 0.42], 180, 360, fill=(215, 80, 90, 255))
-    elif kind == "determined":
-        d.line([cx - w * 0.5, cy + w * 0.05, cx + w * 0.5, cy - w * 0.02], fill=K, width=lw)
+        open_mouth(d, cx, cy, w, w * 0.45)
     elif kind == "laugh":
-        d.chord([cx - w, cy - w * 0.6, cx + w, cy + w * 0.9], 0, 180, fill=K)
-        d.chord([cx - w * 0.85, cy - w * 0.5, cx + w * 0.85, cy + w * 0.05], 0, 180, fill=WHITE)
-        d.chord([cx - w * 0.4, cy + w * 0.2, cx + w * 0.4, cy + w * 0.7], 180, 360, fill=(215, 80, 90, 255))
+        open_mouth(d, cx, cy - w * 0.05, w * 1.15, w * 0.62)
+    elif kind == "talk":
+        open_mouth(d, cx, cy, w * 0.7, w * 0.42, teeth=True)
+    elif kind == "neutral":
+        d.arc([cx - w * 0.55, cy - w * 0.35, cx + w * 0.55, cy + w * 0.2], 20, 160, fill=K, width=lw)
+    elif kind == "smirk":
+        d.arc([cx - w * 0.3, cy - w * 0.55, cx + w * 0.9, cy + w * 0.2], 15, 120, fill=K, width=lw)
+    elif kind in ("sad", "crying"):
+        if kind == "crying":
+            d.chord([cx - w * 0.6, cy - w * 0.05, cx + w * 0.6, cy + w * 0.7], 180, 360, fill=MOUTH_IN, outline=K, width=lw)
+        else:
+            d.arc([cx - w * 0.5, cy, cx + w * 0.5, cy + w * 0.6], 200, 340, fill=K, width=lw)
+    elif kind in ("worried", "scared"):
+        d.chord([cx - w * 0.55, cy - w * 0.15, cx + w * 0.55, cy + w * 0.4], 180, 360, fill=MOUTH_IN, outline=K, width=lw)
+        d.rectangle([cx - w * 0.4, cy - w * 0.0, cx + w * 0.4, cy + w * 0.12], fill=WHITE)
+    elif kind == "shocked":
+        ell(d, cx, cy + w * 0.1, w * 0.32, w * 0.45, MOUTH_IN)
+    elif kind == "angry":
+        d.rounded_rectangle([cx - w * 0.6, cy - w * 0.2, cx + w * 0.6, cy + w * 0.25], radius=10 * SS, fill=WHITE,
+                            outline=K, width=lw)
+        d.line([cx - w * 0.6, cy + w * 0.02, cx + w * 0.6, cy + w * 0.02], fill=K, width=int(4 * SS))
+    elif kind == "determined":
+        d.line([cx - w * 0.5, cy + w * 0.08, cx + w * 0.5, cy - w * 0.02], fill=K, width=lw)
     elif kind in ("embarrassed", "tired"):
-        d.arc([cx - w * 0.45, cy - w * 0.3, cx + w * 0.45, cy + w * 0.2], 20, 160, fill=K, width=lw)
+        d.arc([cx - w * 0.4, cy - w * 0.3, cx + w * 0.4, cy + w * 0.2], 20, 160, fill=K, width=lw)
+
+
+SKIN = [(0, 0, 0, 255)]
 
 
 def face(skin, expr, blink=False):
+    SKIN[0] = skin
     im = Image.new("RGBA", (W * SS, H * SS), skin)
     d = ImageDraw.Draw(im)
     xl, xr = CX - EYE_DX, CX + EYE_DX
-    ek = {"shocked": "wide", "scared": "wide", "laugh": "closed_happy", "embarrassed": "closed_happy",
-          "tired": "half", "crying": "closed"}.get(expr, "normal")
     if blink:
         eye(d, xl, EYE_Y, "closed"); eye(d, xr, EYE_Y, "closed")
+    elif expr in ("laugh", "embarrassed"):
+        eye(d, xl, EYE_Y, "closed_happy"); eye(d, xr, EYE_Y, "closed_happy")
+    elif expr == "crying":
+        eye(d, xl, EYE_Y, "closed"); eye(d, xr, EYE_Y, "closed")
+    elif expr in ("shocked", "scared"):
+        eye(d, xl, EYE_Y, "wide"); eye(d, xr, EYE_Y, "wide")
     elif expr == "smirk":
-        eye(d, xl, EYE_Y, "half"); eye(d, xr, EYE_Y, "normal")
+        eye(d, xl, EYE_Y, "normal", look=(0.4, 0), lid=0.45); eye(d, xr, EYE_Y, "normal", look=(0.4, 0), lid=0.2)
+    elif expr in ("tired", "sad"):
+        lid = 0.5 if expr == "tired" else 0.3
+        eye(d, xl, EYE_Y, "normal", look=(0, 0.5), lid=lid); eye(d, xr, EYE_Y, "normal", look=(0, 0.5), lid=lid)
+    elif expr in ("angry", "determined"):
+        eye(d, xl, EYE_Y, "normal", look=(0.15, 0), lid=0.25); eye(d, xr, EYE_Y, "normal", look=(-0.15, 0), lid=0.25)
+    elif expr == "worried":
+        eye(d, xl, EYE_Y, "normal", look=(-0.3, 0.1)); eye(d, xr, EYE_Y, "normal", look=(-0.3, 0.1))
     else:
-        eye(d, xl, EYE_Y, ek); eye(d, xr, EYE_Y, ek)
-    tilt = {"angry": 1.0, "determined": 0.7, "smirk": 0.35, "sad": -0.8, "worried": -1.0, "crying": -1.0,
-            "scared": -0.9, "shocked": 0.0, "tired": -0.3}.get(expr)
-    if tilt is not None:
-        lift = 0.03 if expr in ("shocked", "scared") else 0.0
-        brow(d, xl, EYE_Y, tilt, "L", lift)
-        brow(d, xr, EYE_Y, tilt if expr != "smirk" else -0.2, "R", lift)
+        eye(d, xl, EYE_Y, "normal", look=(0.15, -0.1)); eye(d, xr, EYE_Y, "normal", look=(0.15, -0.1))
+    tilt = {"angry": 1.1, "determined": 0.8, "smirk": 0.3, "sad": -0.9, "worried": -1.0, "crying": -1.0,
+            "scared": -0.9, "tired": -0.3}.get(expr)
+    if expr in ("shocked", "smile", "laugh", "talk", "neutral", "embarrassed"):
+        lift = 0.035 if expr == "shocked" else 0.0
+        brow(d, xl, EYE_Y, 0, "L", lift, arch=True)
+        brow(d, xr, EYE_Y, 0, "R", lift, arch=True)
+    elif tilt is not None:
+        brow(d, xl, EYE_Y, tilt, "L")
+        brow(d, xr, EYE_Y, tilt if expr != "smirk" else -0.4, "R")
     mouth(d, expr)
     if expr == "crying":
         for x in (xl, xr):
-            cx, cy = P(x, EYE_Y + 0.04)
-            d.rounded_rectangle([cx - 0.018 * W * SS, cy, cx + 0.018 * W * SS, cy + 0.2 * H * SS], radius=8 * SS,
-                                fill=(110, 185, 255, 255))
+            cx, cy = P(x, EYE_Y + 0.03)
+            d.rounded_rectangle([cx - 0.022 * W * SS, cy, cx + 0.022 * W * SS, cy + 0.24 * H * SS], radius=10 * SS,
+                                fill=(110, 185, 255, 255), outline=(60, 120, 200, 255), width=3 * SS)
     if expr in ("embarrassed", "laugh"):
-        for x in (xl - 0.04, xr + 0.04):
-            cx, cy = P(x, EYE_Y + 0.13)
-            r = 0.045 * W * SS
-            d.ellipse([cx - r, cy - r * 0.6, cx + r, cy + r * 0.6], fill=(240, 110, 120, 150))
+        for x in (xl - 0.05, xr + 0.05):
+            cx, cy = P(x, EYE_Y + 0.14)
+            r = 0.05 * W * SS
+            d.ellipse([cx - r, cy - r * 0.55, cx + r, cy + r * 0.55], fill=(240, 110, 120, 160))
     if expr == "scared":
-        cx, cy = P(xr + 0.09, EYE_Y - 0.05)
-        d.ellipse([cx - 14 * SS, cy, cx + 14 * SS, cy + 34 * SS], fill=(130, 195, 255, 255))
+        cx, cy = P(xr + 0.11, EYE_Y - 0.06)
+        d.ellipse([cx - 14 * SS, cy, cx + 14 * SS, cy + 34 * SS], fill=(130, 195, 255, 255), outline=(60, 120, 200, 255),
+                  width=3 * SS)
     return im.resize((W, H), Image.LANCZOS)
 
 
