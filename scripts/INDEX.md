@@ -9,4 +9,4 @@ Tell laptop Claude: **"record <slug>"**. Each script is `scripts/<slug>.md`.
 | alpha-mark | The Third Mark | done (Blender from Studio models, output/alpha-mark.mp4) |
 | nothing-happens | Completely Normal | done (Blender, Titan voice, UFO ending) |
 | five-seconds | The Last Pickle | done (Blender, Titan voice, 1:27) |
-| closet-monster | The Monster in My Closet | 47 shots built; waiting for the user's voice file |
+| closet-monster | The Monster in My Closet | done (backup Kokoro voice, 1:24) |

@@ -1,2700 +1,2700 @@
 {
- "slug": "closet-monster",
- "title": "The Monster in My Closet",
- "timing": "voice",
- "voice": "output/cache/closet-monster/voice_fx.wav",
- "duration": 83.582,
- "shots": [
-  {
-   "n": 1,
-   "text": "In this town, every closet has a monster in it.",
-   "start": 0.0,
-   "end": 2.173,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 2.173
-  },
-  {
-   "n": 2,
-   "text": "They're not scary. They're roommates.",
-   "start": 2.173,
-   "end": 4.141,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 1.968
-  },
-  {
-   "n": 3,
-   "text": "Some steal socks.",
-   "start": 4.141,
-   "end": 5.196,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 1.055
-  },
-  {
-   "n": 4,
-   "text": "Some snore so loud the hangers rattle.",
-   "start": 5.196,
-   "end": 6.848,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 1.652
-  },
-  {
-   "n": 5,
-   "text": "My cousin's monster does his homework.",
-   "start": 6.848,
-   "end": 8.528,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 1.68
-  },
-  {
-   "n": 6,
-   "text": "Badly.",
-   "start": 8.528,
-   "end": 9.375,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 0.847
-  },
-  {
-   "n": 7,
-   "text": "You get your monster the day you're born.",
-   "start": 9.375,
-   "end": 10.936,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 1.561
-  },
-  {
-   "n": 8,
-   "text": "It moves in, and it never leaves.",
-   "start": 10.936,
-   "end": 12.627,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 1.691
-  },
-  {
-   "n": 9,
-   "text": "But my closet was empty.",
-   "start": 12.627,
-   "end": 14.135,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 1.508
-  },
-  {
-   "n": 10,
-   "text": "Dad worked late. Every night.",
-   "start": 14.135,
-   "end": 15.929,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 1.794
-  },
-  {
-   "n": 11,
-   "text": "Mom worked even later.",
-   "start": 15.929,
-   "end": 17.192,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 1.263
-  },
-  {
-   "n": 12,
-   "text": "Dinner was a sticky note on the fridge.",
-   "start": 17.192,
-   "end": 18.776,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 1.584
-  },
-  {
-   "n": 13,
-   "text": "\"Love you. Microwave for two minutes.\"",
-   "start": 18.776,
-   "end": 20.532,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 1.756
-  },
-  {
-   "n": 14,
-   "text": "So I really wanted a monster. Just someone to talk to.",
-   "start": 20.532,
-   "end": 23.157,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 2.625
-  },
-  {
-   "n": 15,
-   "text": "I left cookies.",
-   "start": 23.157,
-   "end": 24.152,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 0.995
-  },
-  {
-   "n": 16,
-   "text": "I left the nightlight on.",
-   "start": 24.152,
-   "end": 25.343,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 1.191
-  },
-  {
-   "n": 17,
-   "text": "I even made a sign: \"Monster Wanted.\"",
-   "start": 25.343,
-   "end": 27.341,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 1.998
-  },
-  {
-   "n": 18,
-   "text": "Every night, I opened the closet. Nothing.",
-   "start": 27.341,
-   "end": 29.655,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 2.314
-  },
-  {
-   "n": 19,
-   "text": "The cookies were always gone by morning, though.",
-   "start": 29.655,
-   "end": 31.436,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 1.781
-  },
-  {
-   "n": 20,
-   "text": "And Mom said when I was a baby, I never cried at night.",
-   "start": 31.436,
-   "end": 33.661,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 2.225
-  },
-  {
-   "n": 21,
-   "text": "Something always hummed me back to sleep.",
-   "start": 33.661,
-   "end": 35.48,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 1.819
-  },
-  {
-   "n": 22,
-   "text": "On my twelfth birthday, nobody came home.",
-   "start": 35.48,
-   "end": 37.282,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 1.802
-  },
-  {
-   "n": 23,
-   "text": "But taped inside my closet door, I found a note.",
-   "start": 37.282,
-   "end": 39.418,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 2.136
-  },
-  {
-   "n": 24,
-   "text": "Old. Yellow. In my handwriting.",
-   "start": 39.418,
-   "end": 41.75,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 2.332
-  },
-  {
-   "n": 25,
-   "text": "\"Don't open the closet at midnight. Trust me.\"",
-   "start": 41.75,
-   "end": 43.85,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 2.1
-  },
-  {
-   "n": 26,
-   "text": "I didn't write that. At least... not yet.",
-   "start": 43.85,
-   "end": 46.005,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 2.155
-  },
-  {
-   "n": 27,
-   "text": "At midnight, I opened it anyway.",
-   "start": 46.005,
-   "end": 47.466,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 1.461
-  },
-  {
-   "n": 28,
-   "text": "I just didn't want to be alone.",
-   "start": 47.466,
-   "end": 48.937,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 1.471
-  },
-  {
-   "n": 29,
-   "text": "It wasn't empty anymore. It was a tunnel, glowing at the bottom.",
-   "start": 48.937,
-   "end": 51.809,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 2.872
-  },
-  {
-   "n": 30,
-   "text": "I fell, and fell,",
-   "start": 51.809,
-   "end": 52.529,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 0.72
-  },
-  {
-   "n": 31,
-   "text": "and landed... in a closet.",
-   "start": 52.529,
-   "end": 53.74,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 1.211
-  },
-  {
-   "n": 32,
-   "text": "My closet. Twelve years ago.",
-   "start": 53.74,
-   "end": 55.697,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 1.957
-  },
-  {
-   "n": 33,
-   "text": "Through the crack in the door, there was a crib.",
-   "start": 55.697,
-   "end": 57.339,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 1.642
-  },
-  {
-   "n": 34,
-   "text": "And a baby. Crying. Me.",
-   "start": 57.339,
-   "end": 59.598,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 2.259
-  },
-  {
-   "n": 35,
-   "text": "My closet was never empty. Its monster was just hiding.",
-   "start": 59.598,
-   "end": 62.629,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 3.031
-  },
-  {
-   "n": 36,
-   "text": "I could have knocked.",
-   "start": 62.629,
-   "end": 63.566,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 0.937
-  },
-  {
-   "n": 37,
-   "text": "Every single night, I could have knocked.",
-   "start": 63.566,
-   "end": 65.101,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 1.535
-  },
-  {
-   "n": 38,
-   "text": "But if he'd had a friend, he never would've opened that door at midnight.",
-   "start": 65.101,
-   "end": 67.566,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 2.465
-  },
-  {
-   "n": 39,
-   "text": "And I'd never be here to hum when he cries.",
-   "start": 67.566,
-   "end": 69.442,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 1.876
-  },
-  {
-   "n": 40,
-   "text": "So I stayed in the dark.",
-   "start": 69.442,
-   "end": 70.667,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 1.225
-  },
-  {
-   "n": 41,
-   "text": "I ate the cookies.",
-   "start": 70.667,
-   "end": 71.693,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 1.026
-  },
-  {
-   "n": 42,
-   "text": "I read the sticky notes too.",
-   "start": 71.693,
-   "end": 73.159,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 1.466
-  },
-  {
-   "n": 43,
-   "text": "Tonight, he turns twelve. Nobody's coming home.",
-   "start": 73.159,
-   "end": 75.612,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 2.453
-  },
-  {
-   "n": 44,
-   "text": "I'm taping a note inside the door. In my handwriting.",
-   "start": 75.612,
-   "end": 78.314,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 2.702
-  },
-  {
-   "n": 45,
-   "text": "\"Don't open the closet at midnight. Trust me.\"",
-   "start": 78.314,
-   "end": 80.414,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 2.1
-  },
-  {
-   "n": 46,
-   "text": "He won't listen.",
-   "start": 80.414,
-   "end": 81.357,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 0.943
-  },
-  {
-   "n": 47,
-   "text": "I didn't.",
-   "start": 81.357,
-   "end": 83.582,
-   "src": null,
-   "src_dur": null,
-   "motion": "push_in",
-   "transition": "cut",
-   "grade": "neutral",
-   "placeholder": "house / tunnel | see story code | 1.8",
-   "override": {},
-   "dur": 2.225
-  }
- ],
- "words": [
-  {
-   "w": "In",
-   "s": 0.15,
-   "e": 0.29,
-   "shot": 1
-  },
-  {
-   "w": "this",
-   "s": 0.29,
-   "e": 0.41,
-   "shot": 1
-  },
-  {
-   "w": "town,",
-   "s": 0.41,
-   "e": 0.63,
-   "shot": 1
-  },
-  {
-   "w": "every",
-   "s": 0.79,
-   "e": 0.95,
-   "shot": 1
-  },
-  {
-   "w": "closet",
-   "s": 0.95,
-   "e": 1.23,
-   "shot": 1
-  },
-  {
-   "w": "has",
-   "s": 1.23,
-   "e": 1.43,
-   "shot": 1
-  },
-  {
-   "w": "a",
-   "s": 1.43,
-   "e": 1.51,
-   "shot": 1
-  },
-  {
-   "w": "monster",
-   "s": 1.51,
-   "e": 1.71,
-   "shot": 1
-  },
-  {
-   "w": "in",
-   "s": 1.71,
-   "e": 1.89,
-   "shot": 1
-  },
-  {
-   "w": "it.",
-   "s": 1.89,
-   "e": 1.99,
-   "shot": 1
-  },
-  {
-   "w": "They're",
-   "s": 2.173,
-   "e": 2.433,
-   "shot": 2
-  },
-  {
-   "w": "not",
-   "s": 2.433,
-   "e": 2.553,
-   "shot": 2
-  },
-  {
-   "w": "scary.",
-   "s": 2.553,
-   "e": 2.813,
-   "shot": 2
-  },
-  {
-   "w": "They're",
-   "s": 3.203,
-   "e": 3.503,
-   "shot": 2
-  },
-  {
-   "w": "roommates.",
-   "s": 3.503,
-   "e": 3.903,
-   "shot": 2
-  },
-  {
-   "w": "Some",
-   "s": 4.141,
-   "e": 4.341,
-   "shot": 3
-  },
-  {
-   "w": "steal",
-   "s": 4.341,
-   "e": 4.561,
-   "shot": 3
-  },
-  {
-   "w": "socks.",
-   "s": 4.561,
-   "e": 4.861,
-   "shot": 3
-  },
-  {
-   "w": "Some",
-   "s": 5.196,
-   "e": 5.396,
-   "shot": 4
-  },
-  {
-   "w": "snore",
-   "s": 5.396,
-   "e": 5.676,
-   "shot": 4
-  },
-  {
-   "w": "so",
-   "s": 5.676,
-   "e": 5.816,
-   "shot": 4
-  },
-  {
-   "w": "loud",
-   "s": 5.816,
-   "e": 5.996,
-   "shot": 4
-  },
-  {
-   "w": "the",
-   "s": 5.996,
-   "e": 6.136,
-   "shot": 4
-  },
-  {
-   "w": "hangers",
-   "s": 6.136,
-   "e": 6.356,
-   "shot": 4
-  },
-  {
-   "w": "rattle.",
-   "s": 6.356,
-   "e": 6.616,
-   "shot": 4
-  },
-  {
-   "w": "My",
-   "s": 6.848,
-   "e": 7.028,
-   "shot": 5
-  },
-  {
-   "w": "cousin's",
-   "s": 7.028,
-   "e": 7.388,
-   "shot": 5
-  },
-  {
-   "w": "monster",
-   "s": 7.388,
-   "e": 7.668,
-   "shot": 5
-  },
-  {
-   "w": "does",
-   "s": 7.668,
-   "e": 7.848,
-   "shot": 5
-  },
-  {
-   "w": "his",
-   "s": 7.848,
-   "e": 7.968,
-   "shot": 5
-  },
-  {
-   "w": "homework.",
-   "s": 7.968,
-   "e": 8.228,
-   "shot": 5
-  },
-  {
-   "w": "Badly.",
-   "s": 8.528,
-   "e": 9.008,
-   "shot": 6
-  },
-  {
-   "w": "You",
-   "s": 9.375,
-   "e": 9.515,
-   "shot": 7
-  },
-  {
-   "w": "get",
-   "s": 9.515,
-   "e": 9.615,
-   "shot": 7
-  },
-  {
-   "w": "your",
-   "s": 9.615,
-   "e": 9.715,
-   "shot": 7
-  },
-  {
-   "w": "monster",
-   "s": 9.715,
-   "e": 9.975,
-   "shot": 7
-  },
-  {
-   "w": "the",
-   "s": 9.975,
-   "e": 10.135,
-   "shot": 7
-  },
-  {
-   "w": "day",
-   "s": 10.135,
-   "e": 10.255,
-   "shot": 7
-  },
-  {
-   "w": "you're",
-   "s": 10.255,
-   "e": 10.435,
-   "shot": 7
-  },
-  {
-   "w": "born.",
-   "s": 10.435,
-   "e": 10.615,
-   "shot": 7
-  },
-  {
-   "w": "It",
-   "s": 10.936,
-   "e": 11.096,
-   "shot": 8
-  },
-  {
-   "w": "moves",
-   "s": 11.096,
-   "e": 11.256,
-   "shot": 8
-  },
-  {
-   "w": "in,",
-   "s": 11.256,
-   "e": 11.476,
-   "shot": 8
-  },
-  {
-   "w": "and",
-   "s": 11.576,
-   "e": 11.616,
-   "shot": 8
-  },
-  {
-   "w": "it",
-   "s": 11.616,
-   "e": 11.696,
-   "shot": 8
-  },
-  {
-   "w": "never",
-   "s": 11.696,
-   "e": 11.876,
-   "shot": 8
-  },
-  {
-   "w": "leaves.",
-   "s": 11.876,
-   "e": 12.156,
-   "shot": 8
-  },
-  {
-   "w": "But",
-   "s": 12.627,
-   "e": 12.767,
-   "shot": 9
-  },
-  {
-   "w": "my",
-   "s": 12.767,
-   "e": 12.907,
-   "shot": 9
-  },
-  {
-   "w": "closet",
-   "s": 12.907,
-   "e": 13.187,
-   "shot": 9
-  },
-  {
-   "w": "was",
-   "s": 13.187,
-   "e": 13.387,
-   "shot": 9
-  },
-  {
-   "w": "empty.",
-   "s": 13.387,
-   "e": 13.627,
-   "shot": 9
-  },
-  {
-   "w": "Dad",
-   "s": 14.135,
-   "e": 14.375,
-   "shot": 10
-  },
-  {
-   "w": "worked",
-   "s": 14.375,
-   "e": 14.555,
-   "shot": 10
-  },
-  {
-   "w": "late.",
-   "s": 14.555,
-   "e": 14.815,
-   "shot": 10
-  },
-  {
-   "w": "Every",
-   "s": 15.122,
-   "e": 15.382,
-   "shot": 10
-  },
-  {
-   "w": "night.",
-   "s": 15.382,
-   "e": 15.602,
-   "shot": 10
-  },
-  {
-   "w": "Mom",
-   "s": 15.929,
-   "e": 16.169,
-   "shot": 11
-  },
-  {
-   "w": "worked",
-   "s": 16.169,
-   "e": 16.389,
-   "shot": 11
-  },
-  {
-   "w": "even",
-   "s": 16.389,
-   "e": 16.629,
-   "shot": 11
-  },
-  {
-   "w": "later.",
-   "s": 16.629,
-   "e": 16.869,
-   "shot": 11
-  },
-  {
-   "w": "Dinner",
-   "s": 17.192,
-   "e": 17.392,
-   "shot": 12
-  },
-  {
-   "w": "was",
-   "s": 17.392,
-   "e": 17.552,
-   "shot": 12
-  },
-  {
-   "w": "a",
-   "s": 17.552,
-   "e": 17.672,
-   "shot": 12
-  },
-  {
-   "w": "sticky",
-   "s": 17.672,
-   "e": 17.792,
-   "shot": 12
-  },
-  {
-   "w": "note",
-   "s": 17.792,
-   "e": 18.052,
-   "shot": 12
-  },
-  {
-   "w": "on",
-   "s": 18.052,
-   "e": 18.192,
-   "shot": 12
-  },
-  {
-   "w": "the",
-   "s": 18.192,
-   "e": 18.292,
-   "shot": 12
-  },
-  {
-   "w": "fridge.",
-   "s": 18.292,
-   "e": 18.452,
-   "shot": 12
-  },
-  {
-   "w": "\"Love",
-   "s": 18.776,
-   "e": 18.996,
-   "shot": 13
-  },
-  {
-   "w": "you.",
-   "s": 18.996,
-   "e": 19.176,
-   "shot": 13
-  },
-  {
-   "w": "Microwave",
-   "s": 19.236,
-   "e": 19.596,
-   "shot": 13
-  },
-  {
-   "w": "for",
-   "s": 19.596,
-   "e": 19.756,
-   "shot": 13
-  },
-  {
-   "w": "two",
-   "s": 19.756,
-   "e": 19.896,
-   "shot": 13
-  },
-  {
-   "w": "minutes.\"",
-   "s": 19.896,
-   "e": 20.076,
-   "shot": 13
-  },
-  {
-   "w": "So",
-   "s": 20.532,
-   "e": 20.692,
-   "shot": 14
-  },
-  {
-   "w": "I",
-   "s": 20.692,
-   "e": 20.812,
-   "shot": 14
-  },
-  {
-   "w": "really",
-   "s": 20.812,
-   "e": 20.992,
-   "shot": 14
-  },
-  {
-   "w": "wanted",
-   "s": 20.992,
-   "e": 21.232,
-   "shot": 14
-  },
-  {
-   "w": "a",
-   "s": 21.232,
-   "e": 21.332,
-   "shot": 14
-  },
-  {
-   "w": "monster.",
-   "s": 21.332,
-   "e": 21.552,
-   "shot": 14
-  },
-  {
-   "w": "Just",
-   "s": 21.896,
-   "e": 22.116,
-   "shot": 14
-  },
-  {
-   "w": "someone",
-   "s": 22.116,
-   "e": 22.376,
-   "shot": 14
-  },
-  {
-   "w": "to",
-   "s": 22.376,
-   "e": 22.516,
-   "shot": 14
-  },
-  {
-   "w": "talk",
-   "s": 22.516,
-   "e": 22.676,
-   "shot": 14
-  },
-  {
-   "w": "to.",
-   "s": 22.676,
-   "e": 22.896,
-   "shot": 14
-  },
-  {
-   "w": "I",
-   "s": 23.157,
-   "e": 23.317,
-   "shot": 15
-  },
-  {
-   "w": "left",
-   "s": 23.317,
-   "e": 23.497,
-   "shot": 15
-  },
-  {
-   "w": "cookies.",
-   "s": 23.497,
-   "e": 23.777,
-   "shot": 15
-  },
-  {
-   "w": "I",
-   "s": 24.152,
-   "e": 24.292,
-   "shot": 16
-  },
-  {
-   "w": "left",
-   "s": 24.292,
-   "e": 24.452,
-   "shot": 16
-  },
-  {
-   "w": "the",
-   "s": 24.452,
-   "e": 24.592,
-   "shot": 16
-  },
-  {
-   "w": "nightlight",
-   "s": 24.592,
-   "e": 24.872,
-   "shot": 16
-  },
-  {
-   "w": "on.",
-   "s": 24.872,
-   "e": 25.072,
-   "shot": 16
-  },
-  {
-   "w": "I",
-   "s": 25.343,
-   "e": 25.483,
-   "shot": 17
-  },
-  {
-   "w": "even",
-   "s": 25.483,
-   "e": 25.623,
-   "shot": 17
-  },
-  {
-   "w": "made",
-   "s": 25.623,
-   "e": 25.783,
-   "shot": 17
-  },
-  {
-   "w": "a",
-   "s": 25.783,
-   "e": 25.883,
-   "shot": 17
-  },
-  {
-   "w": "sign:",
-   "s": 25.883,
-   "e": 26.083,
-   "shot": 17
-  },
-  {
-   "w": "\"Monster",
-   "s": 26.276,
-   "e": 26.636,
-   "shot": 17
-  },
-  {
-   "w": "Wanted.\"",
-   "s": 26.636,
-   "e": 26.996,
-   "shot": 17
-  },
-  {
-   "w": "Every",
-   "s": 27.341,
-   "e": 27.581,
-   "shot": 18
-  },
-  {
-   "w": "night,",
-   "s": 27.581,
-   "e": 27.781,
-   "shot": 18
-  },
-  {
-   "w": "I",
-   "s": 27.841,
-   "e": 27.941,
-   "shot": 18
-  },
-  {
-   "w": "opened",
-   "s": 27.941,
-   "e": 28.121,
-   "shot": 18
-  },
-  {
-   "w": "the",
-   "s": 28.121,
-   "e": 28.261,
-   "shot": 18
-  },
-  {
-   "w": "closet.",
-   "s": 28.261,
-   "e": 28.521,
-   "shot": 18
-  },
-  {
-   "w": "Nothing.",
-   "s": 28.822,
-   "e": 29.122,
-   "shot": 18
-  },
-  {
-   "w": "The",
-   "s": 29.655,
-   "e": 29.815,
-   "shot": 19
-  },
-  {
-   "w": "cookies",
-   "s": 29.815,
-   "e": 30.035,
-   "shot": 19
-  },
-  {
-   "w": "were",
-   "s": 30.035,
-   "e": 30.195,
-   "shot": 19
-  },
-  {
-   "w": "always",
-   "s": 30.195,
-   "e": 30.415,
-   "shot": 19
-  },
-  {
-   "w": "gone",
-   "s": 30.415,
-   "e": 30.615,
-   "shot": 19
-  },
-  {
-   "w": "by",
-   "s": 30.615,
-   "e": 30.795,
-   "shot": 19
-  },
-  {
-   "w": "morning,",
-   "s": 30.795,
-   "e": 30.995,
-   "shot": 19
-  },
-  {
-   "w": "though.",
-   "s": 31.095,
-   "e": 31.195,
-   "shot": 19
-  },
-  {
-   "w": "And",
-   "s": 31.436,
-   "e": 31.576,
-   "shot": 20
-  },
-  {
-   "w": "Mom",
-   "s": 31.576,
-   "e": 31.736,
-   "shot": 20
-  },
-  {
-   "w": "said",
-   "s": 31.736,
-   "e": 31.936,
-   "shot": 20
-  },
-  {
-   "w": "when",
-   "s": 31.936,
-   "e": 32.056,
-   "shot": 20
-  },
-  {
-   "w": "I",
-   "s": 32.056,
-   "e": 32.136,
-   "shot": 20
-  },
-  {
-   "w": "was",
-   "s": 32.136,
-   "e": 32.216,
-   "shot": 20
-  },
-  {
-   "w": "a",
-   "s": 32.216,
-   "e": 32.296,
-   "shot": 20
-  },
-  {
-   "w": "baby,",
-   "s": 32.296,
-   "e": 32.516,
-   "shot": 20
-  },
-  {
-   "w": "I",
-   "s": 32.696,
-   "e": 32.755,
-   "shot": 20
-  },
-  {
-   "w": "never",
-   "s": 32.755,
-   "e": 32.896,
-   "shot": 20
-  },
-  {
-   "w": "cried",
-   "s": 32.896,
-   "e": 33.116,
-   "shot": 20
-  },
-  {
-   "w": "at",
-   "s": 33.116,
-   "e": 33.236,
-   "shot": 20
-  },
-  {
-   "w": "night.",
-   "s": 33.236,
-   "e": 33.396,
-   "shot": 20
-  },
-  {
-   "w": "Something",
-   "s": 33.661,
-   "e": 33.901,
-   "shot": 21
-  },
-  {
-   "w": "always",
-   "s": 33.901,
-   "e": 34.221,
-   "shot": 21
-  },
-  {
-   "w": "hummed",
-   "s": 34.221,
-   "e": 34.501,
-   "shot": 21
-  },
-  {
-   "w": "me",
-   "s": 34.501,
-   "e": 34.561,
-   "shot": 21
-  },
-  {
-   "w": "back",
-   "s": 34.561,
-   "e": 34.721,
-   "shot": 21
-  },
-  {
-   "w": "to",
-   "s": 34.721,
-   "e": 34.861,
-   "shot": 21
-  },
-  {
-   "w": "sleep.",
-   "s": 34.861,
-   "e": 35.041,
-   "shot": 21
-  },
-  {
-   "w": "On",
-   "s": 35.48,
-   "e": 35.62,
-   "shot": 22
-  },
-  {
-   "w": "my",
-   "s": 35.62,
-   "e": 35.74,
-   "shot": 22
-  },
-  {
-   "w": "twelfth",
-   "s": 35.74,
-   "e": 35.94,
-   "shot": 22
-  },
-  {
-   "w": "birthday,",
-   "s": 35.94,
-   "e": 36.3,
-   "shot": 22
-  },
-  {
-   "w": "nobody",
-   "s": 36.42,
-   "e": 36.56,
-   "shot": 22
-  },
-  {
-   "w": "came",
-   "s": 36.56,
-   "e": 36.8,
-   "shot": 22
-  },
-  {
-   "w": "home.",
-   "s": 36.8,
-   "e": 37.0,
-   "shot": 22
-  },
-  {
-   "w": "But",
-   "s": 37.282,
-   "e": 37.422,
-   "shot": 23
-  },
-  {
-   "w": "taped",
-   "s": 37.422,
-   "e": 37.602,
-   "shot": 23
-  },
-  {
-   "w": "inside",
-   "s": 37.602,
-   "e": 37.862,
-   "shot": 23
-  },
-  {
-   "w": "my",
-   "s": 37.862,
-   "e": 38.042,
-   "shot": 23
-  },
-  {
-   "w": "closet",
-   "s": 38.042,
-   "e": 38.262,
-   "shot": 23
-  },
-  {
-   "w": "door,",
-   "s": 38.262,
-   "e": 38.502,
-   "shot": 23
-  },
-  {
-   "w": "I",
-   "s": 38.662,
-   "e": 38.742,
-   "shot": 23
-  },
-  {
-   "w": "found",
-   "s": 38.742,
-   "e": 38.882,
-   "shot": 23
-  },
-  {
-   "w": "a",
-   "s": 38.882,
-   "e": 39.002,
-   "shot": 23
-  },
-  {
-   "w": "note.",
-   "s": 39.002,
-   "e": 39.162,
-   "shot": 23
-  },
-  {
-   "w": "Old.",
-   "s": 39.418,
-   "e": 39.718,
-   "shot": 24
-  },
-  {
-   "w": "Yellow.",
-   "s": 40.04,
-   "e": 40.34,
-   "shot": 24
-  },
-  {
-   "w": "In",
-   "s": 40.687,
-   "e": 40.847,
-   "shot": 24
-  },
-  {
-   "w": "my",
-   "s": 40.847,
-   "e": 41.007,
-   "shot": 24
-  },
-  {
-   "w": "handwriting.",
-   "s": 41.007,
-   "e": 41.387,
-   "shot": 24
-  },
-  {
-   "w": "\"Don't",
-   "s": 41.75,
-   "e": 41.99,
-   "shot": 25
-  },
-  {
-   "w": "open",
-   "s": 41.99,
-   "e": 42.13,
-   "shot": 25
-  },
-  {
-   "w": "the",
-   "s": 42.13,
-   "e": 42.25,
-   "shot": 25
-  },
-  {
-   "w": "closet",
-   "s": 42.25,
-   "e": 42.47,
-   "shot": 25
-  },
-  {
-   "w": "at",
-   "s": 42.47,
-   "e": 42.63,
-   "shot": 25
-  },
-  {
-   "w": "midnight.",
-   "s": 42.63,
-   "e": 42.89,
-   "shot": 25
-  },
-  {
-   "w": "Trust",
-   "s": 43.21,
-   "e": 43.25,
-   "shot": 25
-  },
-  {
-   "w": "me.\"",
-   "s": 43.25,
-   "e": 43.57,
-   "shot": 25
-  },
-  {
-   "w": "I",
-   "s": 43.85,
-   "e": 44.01,
-   "shot": 26
-  },
-  {
-   "w": "didn't",
-   "s": 44.01,
-   "e": 44.15,
-   "shot": 26
-  },
-  {
-   "w": "write",
-   "s": 44.15,
-   "e": 44.31,
-   "shot": 26
-  },
-  {
-   "w": "that.",
-   "s": 44.31,
-   "e": 44.57,
-   "shot": 26
-  },
-  {
-   "w": "At",
-   "s": 44.851,
-   "e": 45.011,
-   "shot": 26
-  },
-  {
-   "w": "least...",
-   "s": 45.011,
-   "e": 45.151,
-   "shot": 26
-  },
-  {
-   "w": "not",
-   "s": 45.151,
-   "e": 45.351,
-   "shot": 26
-  },
-  {
-   "w": "yet.",
-   "s": 45.351,
-   "e": 45.551,
-   "shot": 26
-  },
-  {
-   "w": "At",
-   "s": 46.005,
-   "e": 46.165,
-   "shot": 27
-  },
-  {
-   "w": "midnight,",
-   "s": 46.165,
-   "e": 46.425,
-   "shot": 27
-  },
-  {
-   "w": "I",
-   "s": 46.505,
-   "e": 46.625,
-   "shot": 27
-  },
-  {
-   "w": "opened",
-   "s": 46.625,
-   "e": 46.825,
-   "shot": 27
-  },
-  {
-   "w": "it",
-   "s": 46.825,
-   "e": 46.925,
-   "shot": 27
-  },
-  {
-   "w": "anyway.",
-   "s": 46.925,
-   "e": 47.105,
-   "shot": 27
-  },
-  {
-   "w": "I",
-   "s": 47.466,
-   "e": 47.606,
-   "shot": 28
-  },
-  {
-   "w": "just",
-   "s": 47.606,
-   "e": 47.726,
-   "shot": 28
-  },
-  {
-   "w": "didn't",
-   "s": 47.726,
-   "e": 47.946,
-   "shot": 28
-  },
-  {
-   "w": "want",
-   "s": 47.946,
-   "e": 48.046,
-   "shot": 28
-  },
-  {
-   "w": "to",
-   "s": 48.046,
-   "e": 48.146,
-   "shot": 28
-  },
-  {
-   "w": "be",
-   "s": 48.146,
-   "e": 48.226,
-   "shot": 28
-  },
-  {
-   "w": "alone.",
-   "s": 48.226,
-   "e": 48.466,
-   "shot": 28
-  },
-  {
-   "w": "It",
-   "s": 48.937,
-   "e": 49.077,
-   "shot": 29
-  },
-  {
-   "w": "wasn't",
-   "s": 49.077,
-   "e": 49.357,
-   "shot": 29
-  },
-  {
-   "w": "empty",
-   "s": 49.357,
-   "e": 49.597,
-   "shot": 29
-  },
-  {
-   "w": "anymore.",
-   "s": 49.597,
-   "e": 49.837,
-   "shot": 29
-  },
-  {
-   "w": "It",
-   "s": 50.252,
-   "e": 50.372,
-   "shot": 29
-  },
-  {
-   "w": "was",
-   "s": 50.372,
-   "e": 50.472,
-   "shot": 29
-  },
-  {
-   "w": "a",
-   "s": 50.472,
-   "e": 50.572,
-   "shot": 29
-  },
-  {
-   "w": "tunnel,",
-   "s": 50.572,
-   "e": 50.792,
-   "shot": 29
-  },
-  {
-   "w": "glowing",
-   "s": 50.852,
-   "e": 51.052,
-   "shot": 29
-  },
-  {
-   "w": "at",
-   "s": 51.052,
-   "e": 51.232,
-   "shot": 29
-  },
-  {
-   "w": "the",
-   "s": 51.232,
-   "e": 51.292,
-   "shot": 29
-  },
-  {
-   "w": "bottom.",
-   "s": 51.292,
-   "e": 51.512,
-   "shot": 29
-  },
-  {
-   "w": "I",
-   "s": 51.809,
-   "e": 51.969,
-   "shot": 30
-  },
-  {
-   "w": "fell,",
-   "s": 51.969,
-   "e": 52.109,
-   "shot": 30
-  },
-  {
-   "w": "and",
-   "s": 52.249,
-   "e": 52.249,
-   "shot": 30
-  },
-  {
-   "w": "fell,",
-   "s": 52.249,
-   "e": 52.389,
-   "shot": 30
-  },
-  {
-   "w": "and",
-   "s": 52.529,
-   "e": 52.549,
-   "shot": 31
-  },
-  {
-   "w": "landed...",
-   "s": 52.549,
-   "e": 53.109,
-   "shot": 31
-  },
-  {
-   "w": "in",
-   "s": 53.109,
-   "e": 53.129,
-   "shot": 31
-  },
-  {
-   "w": "a",
-   "s": 53.129,
-   "e": 53.189,
-   "shot": 31
-  },
-  {
-   "w": "closet.",
-   "s": 53.189,
-   "e": 53.389,
-   "shot": 31
-  },
-  {
-   "w": "My",
-   "s": 53.74,
-   "e": 53.96,
-   "shot": 32
-  },
-  {
-   "w": "closet.",
-   "s": 53.96,
-   "e": 54.32,
-   "shot": 32
-  },
-  {
-   "w": "Twelve",
-   "s": 54.634,
-   "e": 54.894,
-   "shot": 32
-  },
-  {
-   "w": "years",
-   "s": 54.894,
-   "e": 55.094,
-   "shot": 32
-  },
-  {
-   "w": "ago.",
-   "s": 55.094,
-   "e": 55.374,
-   "shot": 32
-  },
-  {
-   "w": "Through",
-   "s": 55.697,
-   "e": 55.877,
-   "shot": 33
-  },
-  {
-   "w": "the",
-   "s": 55.877,
-   "e": 55.977,
-   "shot": 33
-  },
-  {
-   "w": "crack",
-   "s": 55.977,
-   "e": 56.137,
-   "shot": 33
-  },
-  {
-   "w": "in",
-   "s": 56.137,
-   "e": 56.277,
-   "shot": 33
-  },
-  {
-   "w": "the",
-   "s": 56.277,
-   "e": 56.357,
-   "shot": 33
-  },
-  {
-   "w": "door,",
-   "s": 56.357,
-   "e": 56.537,
-   "shot": 33
-  },
-  {
-   "w": "there",
-   "s": 56.637,
-   "e": 56.697,
-   "shot": 33
-  },
-  {
-   "w": "was",
-   "s": 56.697,
-   "e": 56.777,
-   "shot": 33
-  },
-  {
-   "w": "a",
-   "s": 56.777,
-   "e": 56.897,
-   "shot": 33
-  },
-  {
-   "w": "crib.",
-   "s": 56.897,
-   "e": 57.057,
-   "shot": 33
-  },
-  {
-   "w": "And",
-   "s": 57.339,
-   "e": 57.499,
-   "shot": 34
-  },
-  {
-   "w": "a",
-   "s": 57.499,
-   "e": 57.579,
-   "shot": 34
-  },
-  {
-   "w": "baby.",
-   "s": 57.579,
-   "e": 57.779,
-   "shot": 34
-  },
-  {
-   "w": "Crying.",
-   "s": 58.176,
-   "e": 58.636,
-   "shot": 34
-  },
-  {
-   "w": "Me.",
-   "s": 58.859,
-   "e": 59.119,
-   "shot": 34
-  },
-  {
-   "w": "My",
-   "s": 59.598,
-   "e": 59.778,
-   "shot": 35
-  },
-  {
-   "w": "closet",
-   "s": 59.778,
-   "e": 60.078,
-   "shot": 35
-  },
-  {
-   "w": "was",
-   "s": 60.078,
-   "e": 60.258,
-   "shot": 35
-  },
-  {
-   "w": "never",
-   "s": 60.258,
-   "e": 60.478,
-   "shot": 35
-  },
-  {
-   "w": "empty.",
-   "s": 60.478,
-   "e": 60.778,
-   "shot": 35
-  },
-  {
-   "w": "Its",
-   "s": 61.106,
-   "e": 61.286,
-   "shot": 35
-  },
-  {
-   "w": "monster",
-   "s": 61.286,
-   "e": 61.626,
-   "shot": 35
-  },
-  {
-   "w": "was",
-   "s": 61.626,
-   "e": 61.786,
-   "shot": 35
-  },
-  {
-   "w": "just",
-   "s": 61.786,
-   "e": 61.906,
-   "shot": 35
-  },
-  {
-   "w": "hiding.",
-   "s": 61.906,
-   "e": 62.146,
-   "shot": 35
-  },
-  {
-   "w": "I",
-   "s": 62.629,
-   "e": 62.789,
-   "shot": 36
-  },
-  {
-   "w": "could",
-   "s": 62.789,
-   "e": 62.889,
-   "shot": 36
-  },
-  {
-   "w": "have",
-   "s": 62.889,
-   "e": 62.969,
-   "shot": 36
-  },
-  {
-   "w": "knocked.",
-   "s": 62.969,
-   "e": 63.209,
-   "shot": 36
-  },
-  {
-   "w": "Every",
-   "s": 63.566,
-   "e": 63.806,
-   "shot": 37
-  },
-  {
-   "w": "single",
-   "s": 63.806,
-   "e": 64.006,
-   "shot": 37
-  },
-  {
-   "w": "night,",
-   "s": 64.006,
-   "e": 64.286,
-   "shot": 37
-  },
-  {
-   "w": "I",
-   "s": 64.286,
-   "e": 64.426,
-   "shot": 37
-  },
-  {
-   "w": "could",
-   "s": 64.426,
-   "e": 64.506,
-   "shot": 37
-  },
-  {
-   "w": "have",
-   "s": 64.506,
-   "e": 64.585,
-   "shot": 37
-  },
-  {
-   "w": "knocked.",
-   "s": 64.585,
-   "e": 64.786,
-   "shot": 37
-  },
-  {
-   "w": "But",
-   "s": 65.101,
-   "e": 65.221,
-   "shot": 38
-  },
-  {
-   "w": "if",
-   "s": 65.221,
-   "e": 65.301,
-   "shot": 38
-  },
-  {
-   "w": "he'd",
-   "s": 65.301,
-   "e": 65.421,
-   "shot": 38
-  },
-  {
-   "w": "had",
-   "s": 65.421,
-   "e": 65.481,
-   "shot": 38
-  },
-  {
-   "w": "a",
-   "s": 65.481,
-   "e": 65.541,
-   "shot": 38
-  },
-  {
-   "w": "friend,",
-   "s": 65.541,
-   "e": 65.741,
-   "shot": 38
-  },
-  {
-   "w": "he",
-   "s": 65.941,
-   "e": 66.041,
-   "shot": 38
-  },
-  {
-   "w": "never",
-   "s": 66.041,
-   "e": 66.181,
-   "shot": 38
-  },
-  {
-   "w": "would've",
-   "s": 66.181,
-   "e": 66.381,
-   "shot": 38
-  },
-  {
-   "w": "opened",
-   "s": 66.381,
-   "e": 66.561,
-   "shot": 38
-  },
-  {
-   "w": "that",
-   "s": 66.561,
-   "e": 66.741,
-   "shot": 38
-  },
-  {
-   "w": "door",
-   "s": 66.741,
-   "e": 66.901,
-   "shot": 38
-  },
-  {
-   "w": "at",
-   "s": 66.901,
-   "e": 67.021,
-   "shot": 38
-  },
-  {
-   "w": "midnight.",
-   "s": 67.021,
-   "e": 67.201,
-   "shot": 38
-  },
-  {
-   "w": "And",
-   "s": 67.566,
-   "e": 67.706,
-   "shot": 39
-  },
-  {
-   "w": "I'd",
-   "s": 67.706,
-   "e": 67.826,
-   "shot": 39
-  },
-  {
-   "w": "never",
-   "s": 67.826,
-   "e": 67.966,
-   "shot": 39
-  },
-  {
-   "w": "be",
-   "s": 67.966,
-   "e": 68.086,
-   "shot": 39
-  },
-  {
-   "w": "here",
-   "s": 68.086,
-   "e": 68.246,
-   "shot": 39
-  },
-  {
-   "w": "to",
-   "s": 68.246,
-   "e": 68.366,
-   "shot": 39
-  },
-  {
-   "w": "hum",
-   "s": 68.366,
-   "e": 68.506,
-   "shot": 39
-  },
-  {
-   "w": "when",
-   "s": 68.506,
-   "e": 68.646,
-   "shot": 39
-  },
-  {
-   "w": "he",
-   "s": 68.646,
-   "e": 68.726,
-   "shot": 39
-  },
-  {
-   "w": "cries.",
-   "s": 68.726,
-   "e": 68.966,
-   "shot": 39
-  },
-  {
-   "w": "So",
-   "s": 69.442,
-   "e": 69.602,
-   "shot": 40
-  },
-  {
-   "w": "I",
-   "s": 69.602,
-   "e": 69.742,
-   "shot": 40
-  },
-  {
-   "w": "stayed",
-   "s": 69.742,
-   "e": 69.942,
-   "shot": 40
-  },
-  {
-   "w": "in",
-   "s": 69.942,
-   "e": 70.082,
-   "shot": 40
-  },
-  {
-   "w": "the",
-   "s": 70.082,
-   "e": 70.162,
-   "shot": 40
-  },
-  {
-   "w": "dark.",
-   "s": 70.162,
-   "e": 70.382,
-   "shot": 40
-  },
-  {
-   "w": "I",
-   "s": 70.667,
-   "e": 70.847,
-   "shot": 41
-  },
-  {
-   "w": "ate",
-   "s": 70.847,
-   "e": 70.987,
-   "shot": 41
-  },
-  {
-   "w": "the",
-   "s": 70.987,
-   "e": 71.107,
-   "shot": 41
-  },
-  {
-   "w": "cookies.",
-   "s": 71.107,
-   "e": 71.307,
-   "shot": 41
-  },
-  {
-   "w": "I",
-   "s": 71.693,
-   "e": 71.853,
-   "shot": 42
-  },
-  {
-   "w": "read",
-   "s": 71.853,
-   "e": 71.973,
-   "shot": 42
-  },
-  {
-   "w": "the",
-   "s": 71.973,
-   "e": 72.093,
-   "shot": 42
-  },
-  {
-   "w": "sticky",
-   "s": 72.093,
-   "e": 72.233,
-   "shot": 42
-  },
-  {
-   "w": "notes",
-   "s": 72.233,
-   "e": 72.493,
-   "shot": 42
-  },
-  {
-   "w": "too.",
-   "s": 72.493,
-   "e": 72.713,
-   "shot": 42
-  },
-  {
-   "w": "Tonight,",
-   "s": 73.159,
-   "e": 73.419,
-   "shot": 43
-  },
-  {
-   "w": "he",
-   "s": 73.559,
-   "e": 73.559,
-   "shot": 43
-  },
-  {
-   "w": "turns",
-   "s": 73.559,
-   "e": 73.779,
-   "shot": 43
-  },
-  {
-   "w": "twelve.",
-   "s": 73.779,
-   "e": 74.059,
-   "shot": 43
-  },
-  {
-   "w": "Nobody's",
-   "s": 74.406,
-   "e": 74.886,
-   "shot": 43
-  },
-  {
-   "w": "coming",
-   "s": 74.886,
-   "e": 75.046,
-   "shot": 43
-  },
-  {
-   "w": "home.",
-   "s": 75.046,
-   "e": 75.306,
-   "shot": 43
-  },
-  {
-   "w": "I'm",
-   "s": 75.612,
-   "e": 75.832,
-   "shot": 44
-  },
-  {
-   "w": "taping",
-   "s": 75.832,
-   "e": 76.032,
-   "shot": 44
-  },
-  {
-   "w": "a",
-   "s": 76.032,
-   "e": 76.132,
-   "shot": 44
-  },
-  {
-   "w": "note",
-   "s": 76.132,
-   "e": 76.332,
-   "shot": 44
-  },
-  {
-   "w": "inside",
-   "s": 76.332,
-   "e": 76.652,
-   "shot": 44
-  },
-  {
-   "w": "the",
-   "s": 76.652,
-   "e": 76.792,
-   "shot": 44
-  },
-  {
-   "w": "door.",
-   "s": 76.792,
-   "e": 76.952,
-   "shot": 44
-  },
-  {
-   "w": "In",
-   "s": 77.251,
-   "e": 77.411,
-   "shot": 44
-  },
-  {
-   "w": "my",
-   "s": 77.411,
-   "e": 77.571,
-   "shot": 44
-  },
-  {
-   "w": "handwriting.",
-   "s": 77.571,
-   "e": 77.951,
-   "shot": 44
-  },
-  {
-   "w": "\"Don't",
-   "s": 78.314,
-   "e": 78.554,
-   "shot": 45
-  },
-  {
-   "w": "open",
-   "s": 78.554,
-   "e": 78.694,
-   "shot": 45
-  },
-  {
-   "w": "the",
-   "s": 78.694,
-   "e": 78.814,
-   "shot": 45
-  },
-  {
-   "w": "closet",
-   "s": 78.814,
-   "e": 79.034,
-   "shot": 45
-  },
-  {
-   "w": "at",
-   "s": 79.034,
-   "e": 79.194,
-   "shot": 45
-  },
-  {
-   "w": "midnight.",
-   "s": 79.194,
-   "e": 79.454,
-   "shot": 45
-  },
-  {
-   "w": "Trust",
-   "s": 79.754,
-   "e": 79.814,
-   "shot": 45
-  },
-  {
-   "w": "me.\"",
-   "s": 79.814,
-   "e": 80.134,
-   "shot": 45
-  },
-  {
-   "w": "He",
-   "s": 80.414,
-   "e": 80.574,
-   "shot": 46
-  },
-  {
-   "w": "won't",
-   "s": 80.574,
-   "e": 80.814,
-   "shot": 46
-  },
-  {
-   "w": "listen.",
-   "s": 80.814,
-   "e": 81.034,
-   "shot": 46
-  },
-  {
-   "w": "I",
-   "s": 81.357,
-   "e": 81.557,
-   "shot": 47
-  },
-  {
-   "w": "didn't.",
-   "s": 81.557,
-   "e": 81.877,
-   "shot": 47
-  }
- ],
- "music": {
-  "file": "output/stock/music/soft_piano_stock.wav",
-  "db": -7
- },
- "ambience": [],
- "sfx": [],
- "override": {
+  "slug": "closet-monster",
+  "title": "The Monster in My Closet",
+  "timing": "voice",
+  "voice": "output/cache/closet-monster/voice_fx.wav",
+  "duration": 83.582,
+  "shots": [
+    {
+      "n": 1,
+      "text": "In this town, every closet has a monster in it.",
+      "start": 0.0,
+      "end": 2.173,
+      "src": "output/anim/closet-monster/shot_01.mp4",
+      "src_dur": 2.8,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 2.173
+    },
+    {
+      "n": 2,
+      "text": "They're not scary. They're roommates.",
+      "start": 2.173,
+      "end": 4.141,
+      "src": "output/anim/closet-monster/shot_02.mp4",
+      "src_dur": 2.6,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.968
+    },
+    {
+      "n": 3,
+      "text": "Some steal socks.",
+      "start": 4.141,
+      "end": 5.196,
+      "src": "output/anim/closet-monster/shot_03.mp4",
+      "src_dur": 1.667,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.055
+    },
+    {
+      "n": 4,
+      "text": "Some snore so loud the hangers rattle.",
+      "start": 5.196,
+      "end": 6.848,
+      "src": "output/anim/closet-monster/shot_04.mp4",
+      "src_dur": 2.267,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.652
+    },
+    {
+      "n": 5,
+      "text": "My cousin's monster does his homework.",
+      "start": 6.848,
+      "end": 8.528,
+      "src": "output/anim/closet-monster/shot_05.mp4",
+      "src_dur": 2.333,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.68
+    },
+    {
+      "n": 6,
+      "text": "Badly.",
+      "start": 8.528,
+      "end": 9.375,
+      "src": "output/anim/closet-monster/shot_06.mp4",
+      "src_dur": 1.467,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 0.847
+    },
+    {
+      "n": 7,
+      "text": "You get your monster the day you're born.",
+      "start": 9.375,
+      "end": 10.936,
+      "src": "output/anim/closet-monster/shot_07.mp4",
+      "src_dur": 2.2,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.561
+    },
+    {
+      "n": 8,
+      "text": "It moves in, and it never leaves.",
+      "start": 10.936,
+      "end": 12.627,
+      "src": "output/anim/closet-monster/shot_08.mp4",
+      "src_dur": 2.333,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.691
+    },
+    {
+      "n": 9,
+      "text": "But my closet was empty.",
+      "start": 12.627,
+      "end": 14.135,
+      "src": "output/anim/closet-monster/shot_09.mp4",
+      "src_dur": 2.133,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.508
+    },
+    {
+      "n": 10,
+      "text": "Dad worked late. Every night.",
+      "start": 14.135,
+      "end": 15.929,
+      "src": "output/anim/closet-monster/shot_10.mp4",
+      "src_dur": 2.4,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.794
+    },
+    {
+      "n": 11,
+      "text": "Mom worked even later.",
+      "start": 15.929,
+      "end": 17.192,
+      "src": "output/anim/closet-monster/shot_11.mp4",
+      "src_dur": 1.867,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.263
+    },
+    {
+      "n": 12,
+      "text": "Dinner was a sticky note on the fridge.",
+      "start": 17.192,
+      "end": 18.776,
+      "src": "output/anim/closet-monster/shot_12.mp4",
+      "src_dur": 2.2,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.584
+    },
+    {
+      "n": 13,
+      "text": "\"Love you. Microwave for two minutes.\"",
+      "start": 18.776,
+      "end": 20.532,
+      "src": "output/anim/closet-monster/shot_13.mp4",
+      "src_dur": 2.4,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.756
+    },
+    {
+      "n": 14,
+      "text": "So I really wanted a monster. Just someone to talk to.",
+      "start": 20.532,
+      "end": 23.157,
+      "src": "output/anim/closet-monster/shot_14.mp4",
+      "src_dur": 3.267,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 2.625
+    },
+    {
+      "n": 15,
+      "text": "I left cookies.",
+      "start": 23.157,
+      "end": 24.152,
+      "src": "output/anim/closet-monster/shot_15.mp4",
+      "src_dur": 1.6,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 0.995
+    },
+    {
+      "n": 16,
+      "text": "I left the nightlight on.",
+      "start": 24.152,
+      "end": 25.343,
+      "src": "output/anim/closet-monster/shot_16.mp4",
+      "src_dur": 1.8,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.191
+    },
+    {
+      "n": 17,
+      "text": "I even made a sign: \"Monster Wanted.\"",
+      "start": 25.343,
+      "end": 27.341,
+      "src": "output/anim/closet-monster/shot_17.mp4",
+      "src_dur": 2.6,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.998
+    },
+    {
+      "n": 18,
+      "text": "Every night, I opened the closet. Nothing.",
+      "start": 27.341,
+      "end": 29.655,
+      "src": "output/anim/closet-monster/shot_18.mp4",
+      "src_dur": 2.933,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 2.314
+    },
+    {
+      "n": 19,
+      "text": "The cookies were always gone by morning, though.",
+      "start": 29.655,
+      "end": 31.436,
+      "src": "output/anim/closet-monster/shot_19.mp4",
+      "src_dur": 2.4,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.781
+    },
+    {
+      "n": 20,
+      "text": "And Mom said when I was a baby, I never cried at night.",
+      "start": 31.436,
+      "end": 33.661,
+      "src": "output/anim/closet-monster/shot_20.mp4",
+      "src_dur": 2.867,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 2.225
+    },
+    {
+      "n": 21,
+      "text": "Something always hummed me back to sleep.",
+      "start": 33.661,
+      "end": 35.48,
+      "src": "output/anim/closet-monster/shot_21.mp4",
+      "src_dur": 2.467,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.819
+    },
+    {
+      "n": 22,
+      "text": "On my twelfth birthday, nobody came home.",
+      "start": 35.48,
+      "end": 37.282,
+      "src": "output/anim/closet-monster/shot_22.mp4",
+      "src_dur": 2.467,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.802
+    },
+    {
+      "n": 23,
+      "text": "But taped inside my closet door, I found a note.",
+      "start": 37.282,
+      "end": 39.418,
+      "src": "output/anim/closet-monster/shot_23.mp4",
+      "src_dur": 2.8,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 2.136
+    },
+    {
+      "n": 24,
+      "text": "Old. Yellow. In my handwriting.",
+      "start": 39.418,
+      "end": 41.75,
+      "src": "output/anim/closet-monster/shot_24.mp4",
+      "src_dur": 2.933,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 2.332
+    },
+    {
+      "n": 25,
+      "text": "\"Don't open the closet at midnight. Trust me.\"",
+      "start": 41.75,
+      "end": 43.85,
+      "src": "output/anim/closet-monster/shot_25.mp4",
+      "src_dur": 2.733,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 2.1
+    },
+    {
+      "n": 26,
+      "text": "I didn't write that. At least... not yet.",
+      "start": 43.85,
+      "end": 46.005,
+      "src": "output/anim/closet-monster/shot_26.mp4",
+      "src_dur": 2.8,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 2.155
+    },
+    {
+      "n": 27,
+      "text": "At midnight, I opened it anyway.",
+      "start": 46.005,
+      "end": 47.466,
+      "src": "output/anim/closet-monster/shot_27.mp4",
+      "src_dur": 2.067,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.461
+    },
+    {
+      "n": 28,
+      "text": "I just didn't want to be alone.",
+      "start": 47.466,
+      "end": 48.937,
+      "src": "output/anim/closet-monster/shot_28.mp4",
+      "src_dur": 2.133,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.471
+    },
+    {
+      "n": 29,
+      "text": "It wasn't empty anymore. It was a tunnel, glowing at the bottom.",
+      "start": 48.937,
+      "end": 51.809,
+      "src": "output/anim/closet-monster/shot_29.mp4",
+      "src_dur": 3.533,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 2.872
+    },
+    {
+      "n": 30,
+      "text": "I fell, and fell,",
+      "start": 51.809,
+      "end": 52.529,
+      "src": "output/anim/closet-monster/shot_30.mp4",
+      "src_dur": 1.333,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 0.72
+    },
+    {
+      "n": 31,
+      "text": "and landed... in a closet.",
+      "start": 52.529,
+      "end": 53.74,
+      "src": "output/anim/closet-monster/shot_31.mp4",
+      "src_dur": 1.867,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.211
+    },
+    {
+      "n": 32,
+      "text": "My closet. Twelve years ago.",
+      "start": 53.74,
+      "end": 55.697,
+      "src": "output/anim/closet-monster/shot_32.mp4",
+      "src_dur": 2.6,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.957
+    },
+    {
+      "n": 33,
+      "text": "Through the crack in the door, there was a crib.",
+      "start": 55.697,
+      "end": 57.339,
+      "src": "output/anim/closet-monster/shot_33.mp4",
+      "src_dur": 2.267,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.642
+    },
+    {
+      "n": 34,
+      "text": "And a baby. Crying. Me.",
+      "start": 57.339,
+      "end": 59.598,
+      "src": "output/anim/closet-monster/shot_34.mp4",
+      "src_dur": 2.867,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 2.259
+    },
+    {
+      "n": 35,
+      "text": "My closet was never empty. Its monster was just hiding.",
+      "start": 59.598,
+      "end": 62.629,
+      "src": "output/anim/closet-monster/shot_35.mp4",
+      "src_dur": 3.667,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 3.031
+    },
+    {
+      "n": 36,
+      "text": "I could have knocked.",
+      "start": 62.629,
+      "end": 63.566,
+      "src": "output/anim/closet-monster/shot_36.mp4",
+      "src_dur": 1.6,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 0.937
+    },
+    {
+      "n": 37,
+      "text": "Every single night, I could have knocked.",
+      "start": 63.566,
+      "end": 65.101,
+      "src": "output/anim/closet-monster/shot_37.mp4",
+      "src_dur": 2.2,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.535
+    },
+    {
+      "n": 38,
+      "text": "But if he'd had a friend, he never would've opened that door at midnight.",
+      "start": 65.101,
+      "end": 67.566,
+      "src": "output/anim/closet-monster/shot_38.mp4",
+      "src_dur": 3.067,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 2.465
+    },
+    {
+      "n": 39,
+      "text": "And I'd never be here to hum when he cries.",
+      "start": 67.566,
+      "end": 69.442,
+      "src": "output/anim/closet-monster/shot_39.mp4",
+      "src_dur": 2.533,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.876
+    },
+    {
+      "n": 40,
+      "text": "So I stayed in the dark.",
+      "start": 69.442,
+      "end": 70.667,
+      "src": "output/anim/closet-monster/shot_40.mp4",
+      "src_dur": 1.867,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.225
+    },
+    {
+      "n": 41,
+      "text": "I ate the cookies.",
+      "start": 70.667,
+      "end": 71.693,
+      "src": "output/anim/closet-monster/shot_41.mp4",
+      "src_dur": 1.667,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.026
+    },
+    {
+      "n": 42,
+      "text": "I read the sticky notes too.",
+      "start": 71.693,
+      "end": 73.159,
+      "src": "output/anim/closet-monster/shot_42.mp4",
+      "src_dur": 2.067,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.466
+    },
+    {
+      "n": 43,
+      "text": "Tonight, he turns twelve. Nobody's coming home.",
+      "start": 73.159,
+      "end": 75.612,
+      "src": "output/anim/closet-monster/shot_43.mp4",
+      "src_dur": 3.067,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 2.453
+    },
+    {
+      "n": 44,
+      "text": "I'm taping a note inside the door. In my handwriting.",
+      "start": 75.612,
+      "end": 78.314,
+      "src": "output/anim/closet-monster/shot_44.mp4",
+      "src_dur": 3.333,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 2.702
+    },
+    {
+      "n": 45,
+      "text": "\"Don't open the closet at midnight. Trust me.\"",
+      "start": 78.314,
+      "end": 80.414,
+      "src": "output/anim/closet-monster/shot_45.mp4",
+      "src_dur": 2.733,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 2.1
+    },
+    {
+      "n": 46,
+      "text": "He won't listen.",
+      "start": 80.414,
+      "end": 81.357,
+      "src": "output/anim/closet-monster/shot_46.mp4",
+      "src_dur": 1.6,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 0.943
+    },
+    {
+      "n": 47,
+      "text": "I didn't.",
+      "start": 81.357,
+      "end": 83.582,
+      "src": "output/anim/closet-monster/shot_47.mp4",
+      "src_dur": 2.867,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 2.225
+    }
+  ],
+  "words": [
+    {
+      "w": "In",
+      "s": 0.15,
+      "e": 0.29,
+      "shot": 1
+    },
+    {
+      "w": "this",
+      "s": 0.29,
+      "e": 0.41,
+      "shot": 1
+    },
+    {
+      "w": "town,",
+      "s": 0.41,
+      "e": 0.63,
+      "shot": 1
+    },
+    {
+      "w": "every",
+      "s": 0.79,
+      "e": 0.95,
+      "shot": 1
+    },
+    {
+      "w": "closet",
+      "s": 0.95,
+      "e": 1.23,
+      "shot": 1
+    },
+    {
+      "w": "has",
+      "s": 1.23,
+      "e": 1.43,
+      "shot": 1
+    },
+    {
+      "w": "a",
+      "s": 1.43,
+      "e": 1.51,
+      "shot": 1
+    },
+    {
+      "w": "monster",
+      "s": 1.51,
+      "e": 1.71,
+      "shot": 1
+    },
+    {
+      "w": "in",
+      "s": 1.71,
+      "e": 1.89,
+      "shot": 1
+    },
+    {
+      "w": "it.",
+      "s": 1.89,
+      "e": 1.99,
+      "shot": 1
+    },
+    {
+      "w": "They're",
+      "s": 2.173,
+      "e": 2.433,
+      "shot": 2
+    },
+    {
+      "w": "not",
+      "s": 2.433,
+      "e": 2.553,
+      "shot": 2
+    },
+    {
+      "w": "scary.",
+      "s": 2.553,
+      "e": 2.813,
+      "shot": 2
+    },
+    {
+      "w": "They're",
+      "s": 3.203,
+      "e": 3.503,
+      "shot": 2
+    },
+    {
+      "w": "roommates.",
+      "s": 3.503,
+      "e": 3.903,
+      "shot": 2
+    },
+    {
+      "w": "Some",
+      "s": 4.141,
+      "e": 4.341,
+      "shot": 3
+    },
+    {
+      "w": "steal",
+      "s": 4.341,
+      "e": 4.561,
+      "shot": 3
+    },
+    {
+      "w": "socks.",
+      "s": 4.561,
+      "e": 4.861,
+      "shot": 3
+    },
+    {
+      "w": "Some",
+      "s": 5.196,
+      "e": 5.396,
+      "shot": 4
+    },
+    {
+      "w": "snore",
+      "s": 5.396,
+      "e": 5.676,
+      "shot": 4
+    },
+    {
+      "w": "so",
+      "s": 5.676,
+      "e": 5.816,
+      "shot": 4
+    },
+    {
+      "w": "loud",
+      "s": 5.816,
+      "e": 5.996,
+      "shot": 4
+    },
+    {
+      "w": "the",
+      "s": 5.996,
+      "e": 6.136,
+      "shot": 4
+    },
+    {
+      "w": "hangers",
+      "s": 6.136,
+      "e": 6.356,
+      "shot": 4
+    },
+    {
+      "w": "rattle.",
+      "s": 6.356,
+      "e": 6.616,
+      "shot": 4
+    },
+    {
+      "w": "My",
+      "s": 6.848,
+      "e": 7.028,
+      "shot": 5
+    },
+    {
+      "w": "cousin's",
+      "s": 7.028,
+      "e": 7.388,
+      "shot": 5
+    },
+    {
+      "w": "monster",
+      "s": 7.388,
+      "e": 7.668,
+      "shot": 5
+    },
+    {
+      "w": "does",
+      "s": 7.668,
+      "e": 7.848,
+      "shot": 5
+    },
+    {
+      "w": "his",
+      "s": 7.848,
+      "e": 7.968,
+      "shot": 5
+    },
+    {
+      "w": "homework.",
+      "s": 7.968,
+      "e": 8.228,
+      "shot": 5
+    },
+    {
+      "w": "Badly.",
+      "s": 8.528,
+      "e": 9.008,
+      "shot": 6
+    },
+    {
+      "w": "You",
+      "s": 9.375,
+      "e": 9.515,
+      "shot": 7
+    },
+    {
+      "w": "get",
+      "s": 9.515,
+      "e": 9.615,
+      "shot": 7
+    },
+    {
+      "w": "your",
+      "s": 9.615,
+      "e": 9.715,
+      "shot": 7
+    },
+    {
+      "w": "monster",
+      "s": 9.715,
+      "e": 9.975,
+      "shot": 7
+    },
+    {
+      "w": "the",
+      "s": 9.975,
+      "e": 10.135,
+      "shot": 7
+    },
+    {
+      "w": "day",
+      "s": 10.135,
+      "e": 10.255,
+      "shot": 7
+    },
+    {
+      "w": "you're",
+      "s": 10.255,
+      "e": 10.435,
+      "shot": 7
+    },
+    {
+      "w": "born.",
+      "s": 10.435,
+      "e": 10.615,
+      "shot": 7
+    },
+    {
+      "w": "It",
+      "s": 10.936,
+      "e": 11.096,
+      "shot": 8
+    },
+    {
+      "w": "moves",
+      "s": 11.096,
+      "e": 11.256,
+      "shot": 8
+    },
+    {
+      "w": "in,",
+      "s": 11.256,
+      "e": 11.476,
+      "shot": 8
+    },
+    {
+      "w": "and",
+      "s": 11.576,
+      "e": 11.616,
+      "shot": 8
+    },
+    {
+      "w": "it",
+      "s": 11.616,
+      "e": 11.696,
+      "shot": 8
+    },
+    {
+      "w": "never",
+      "s": 11.696,
+      "e": 11.876,
+      "shot": 8
+    },
+    {
+      "w": "leaves.",
+      "s": 11.876,
+      "e": 12.156,
+      "shot": 8
+    },
+    {
+      "w": "But",
+      "s": 12.627,
+      "e": 12.767,
+      "shot": 9
+    },
+    {
+      "w": "my",
+      "s": 12.767,
+      "e": 12.907,
+      "shot": 9
+    },
+    {
+      "w": "closet",
+      "s": 12.907,
+      "e": 13.187,
+      "shot": 9
+    },
+    {
+      "w": "was",
+      "s": 13.187,
+      "e": 13.387,
+      "shot": 9
+    },
+    {
+      "w": "empty.",
+      "s": 13.387,
+      "e": 13.627,
+      "shot": 9
+    },
+    {
+      "w": "Dad",
+      "s": 14.135,
+      "e": 14.375,
+      "shot": 10
+    },
+    {
+      "w": "worked",
+      "s": 14.375,
+      "e": 14.555,
+      "shot": 10
+    },
+    {
+      "w": "late.",
+      "s": 14.555,
+      "e": 14.815,
+      "shot": 10
+    },
+    {
+      "w": "Every",
+      "s": 15.122,
+      "e": 15.382,
+      "shot": 10
+    },
+    {
+      "w": "night.",
+      "s": 15.382,
+      "e": 15.602,
+      "shot": 10
+    },
+    {
+      "w": "Mom",
+      "s": 15.929,
+      "e": 16.169,
+      "shot": 11
+    },
+    {
+      "w": "worked",
+      "s": 16.169,
+      "e": 16.389,
+      "shot": 11
+    },
+    {
+      "w": "even",
+      "s": 16.389,
+      "e": 16.629,
+      "shot": 11
+    },
+    {
+      "w": "later.",
+      "s": 16.629,
+      "e": 16.869,
+      "shot": 11
+    },
+    {
+      "w": "Dinner",
+      "s": 17.192,
+      "e": 17.392,
+      "shot": 12
+    },
+    {
+      "w": "was",
+      "s": 17.392,
+      "e": 17.552,
+      "shot": 12
+    },
+    {
+      "w": "a",
+      "s": 17.552,
+      "e": 17.672,
+      "shot": 12
+    },
+    {
+      "w": "sticky",
+      "s": 17.672,
+      "e": 17.792,
+      "shot": 12
+    },
+    {
+      "w": "note",
+      "s": 17.792,
+      "e": 18.052,
+      "shot": 12
+    },
+    {
+      "w": "on",
+      "s": 18.052,
+      "e": 18.192,
+      "shot": 12
+    },
+    {
+      "w": "the",
+      "s": 18.192,
+      "e": 18.292,
+      "shot": 12
+    },
+    {
+      "w": "fridge.",
+      "s": 18.292,
+      "e": 18.452,
+      "shot": 12
+    },
+    {
+      "w": "\"Love",
+      "s": 18.776,
+      "e": 18.996,
+      "shot": 13
+    },
+    {
+      "w": "you.",
+      "s": 18.996,
+      "e": 19.176,
+      "shot": 13
+    },
+    {
+      "w": "Microwave",
+      "s": 19.236,
+      "e": 19.596,
+      "shot": 13
+    },
+    {
+      "w": "for",
+      "s": 19.596,
+      "e": 19.756,
+      "shot": 13
+    },
+    {
+      "w": "two",
+      "s": 19.756,
+      "e": 19.896,
+      "shot": 13
+    },
+    {
+      "w": "minutes.\"",
+      "s": 19.896,
+      "e": 20.076,
+      "shot": 13
+    },
+    {
+      "w": "So",
+      "s": 20.532,
+      "e": 20.692,
+      "shot": 14
+    },
+    {
+      "w": "I",
+      "s": 20.692,
+      "e": 20.812,
+      "shot": 14
+    },
+    {
+      "w": "really",
+      "s": 20.812,
+      "e": 20.992,
+      "shot": 14
+    },
+    {
+      "w": "wanted",
+      "s": 20.992,
+      "e": 21.232,
+      "shot": 14
+    },
+    {
+      "w": "a",
+      "s": 21.232,
+      "e": 21.332,
+      "shot": 14
+    },
+    {
+      "w": "monster.",
+      "s": 21.332,
+      "e": 21.552,
+      "shot": 14
+    },
+    {
+      "w": "Just",
+      "s": 21.896,
+      "e": 22.116,
+      "shot": 14
+    },
+    {
+      "w": "someone",
+      "s": 22.116,
+      "e": 22.376,
+      "shot": 14
+    },
+    {
+      "w": "to",
+      "s": 22.376,
+      "e": 22.516,
+      "shot": 14
+    },
+    {
+      "w": "talk",
+      "s": 22.516,
+      "e": 22.676,
+      "shot": 14
+    },
+    {
+      "w": "to.",
+      "s": 22.676,
+      "e": 22.896,
+      "shot": 14
+    },
+    {
+      "w": "I",
+      "s": 23.157,
+      "e": 23.317,
+      "shot": 15
+    },
+    {
+      "w": "left",
+      "s": 23.317,
+      "e": 23.497,
+      "shot": 15
+    },
+    {
+      "w": "cookies.",
+      "s": 23.497,
+      "e": 23.777,
+      "shot": 15
+    },
+    {
+      "w": "I",
+      "s": 24.152,
+      "e": 24.292,
+      "shot": 16
+    },
+    {
+      "w": "left",
+      "s": 24.292,
+      "e": 24.452,
+      "shot": 16
+    },
+    {
+      "w": "the",
+      "s": 24.452,
+      "e": 24.592,
+      "shot": 16
+    },
+    {
+      "w": "nightlight",
+      "s": 24.592,
+      "e": 24.872,
+      "shot": 16
+    },
+    {
+      "w": "on.",
+      "s": 24.872,
+      "e": 25.072,
+      "shot": 16
+    },
+    {
+      "w": "I",
+      "s": 25.343,
+      "e": 25.483,
+      "shot": 17
+    },
+    {
+      "w": "even",
+      "s": 25.483,
+      "e": 25.623,
+      "shot": 17
+    },
+    {
+      "w": "made",
+      "s": 25.623,
+      "e": 25.783,
+      "shot": 17
+    },
+    {
+      "w": "a",
+      "s": 25.783,
+      "e": 25.883,
+      "shot": 17
+    },
+    {
+      "w": "sign:",
+      "s": 25.883,
+      "e": 26.083,
+      "shot": 17
+    },
+    {
+      "w": "\"Monster",
+      "s": 26.276,
+      "e": 26.636,
+      "shot": 17
+    },
+    {
+      "w": "Wanted.\"",
+      "s": 26.636,
+      "e": 26.996,
+      "shot": 17
+    },
+    {
+      "w": "Every",
+      "s": 27.341,
+      "e": 27.581,
+      "shot": 18
+    },
+    {
+      "w": "night,",
+      "s": 27.581,
+      "e": 27.781,
+      "shot": 18
+    },
+    {
+      "w": "I",
+      "s": 27.841,
+      "e": 27.941,
+      "shot": 18
+    },
+    {
+      "w": "opened",
+      "s": 27.941,
+      "e": 28.121,
+      "shot": 18
+    },
+    {
+      "w": "the",
+      "s": 28.121,
+      "e": 28.261,
+      "shot": 18
+    },
+    {
+      "w": "closet.",
+      "s": 28.261,
+      "e": 28.521,
+      "shot": 18
+    },
+    {
+      "w": "Nothing.",
+      "s": 28.822,
+      "e": 29.122,
+      "shot": 18
+    },
+    {
+      "w": "The",
+      "s": 29.655,
+      "e": 29.815,
+      "shot": 19
+    },
+    {
+      "w": "cookies",
+      "s": 29.815,
+      "e": 30.035,
+      "shot": 19
+    },
+    {
+      "w": "were",
+      "s": 30.035,
+      "e": 30.195,
+      "shot": 19
+    },
+    {
+      "w": "always",
+      "s": 30.195,
+      "e": 30.415,
+      "shot": 19
+    },
+    {
+      "w": "gone",
+      "s": 30.415,
+      "e": 30.615,
+      "shot": 19
+    },
+    {
+      "w": "by",
+      "s": 30.615,
+      "e": 30.795,
+      "shot": 19
+    },
+    {
+      "w": "morning,",
+      "s": 30.795,
+      "e": 30.995,
+      "shot": 19
+    },
+    {
+      "w": "though.",
+      "s": 31.095,
+      "e": 31.195,
+      "shot": 19
+    },
+    {
+      "w": "And",
+      "s": 31.436,
+      "e": 31.576,
+      "shot": 20
+    },
+    {
+      "w": "Mom",
+      "s": 31.576,
+      "e": 31.736,
+      "shot": 20
+    },
+    {
+      "w": "said",
+      "s": 31.736,
+      "e": 31.936,
+      "shot": 20
+    },
+    {
+      "w": "when",
+      "s": 31.936,
+      "e": 32.056,
+      "shot": 20
+    },
+    {
+      "w": "I",
+      "s": 32.056,
+      "e": 32.136,
+      "shot": 20
+    },
+    {
+      "w": "was",
+      "s": 32.136,
+      "e": 32.216,
+      "shot": 20
+    },
+    {
+      "w": "a",
+      "s": 32.216,
+      "e": 32.296,
+      "shot": 20
+    },
+    {
+      "w": "baby,",
+      "s": 32.296,
+      "e": 32.516,
+      "shot": 20
+    },
+    {
+      "w": "I",
+      "s": 32.696,
+      "e": 32.755,
+      "shot": 20
+    },
+    {
+      "w": "never",
+      "s": 32.755,
+      "e": 32.896,
+      "shot": 20
+    },
+    {
+      "w": "cried",
+      "s": 32.896,
+      "e": 33.116,
+      "shot": 20
+    },
+    {
+      "w": "at",
+      "s": 33.116,
+      "e": 33.236,
+      "shot": 20
+    },
+    {
+      "w": "night.",
+      "s": 33.236,
+      "e": 33.396,
+      "shot": 20
+    },
+    {
+      "w": "Something",
+      "s": 33.661,
+      "e": 33.901,
+      "shot": 21
+    },
+    {
+      "w": "always",
+      "s": 33.901,
+      "e": 34.221,
+      "shot": 21
+    },
+    {
+      "w": "hummed",
+      "s": 34.221,
+      "e": 34.501,
+      "shot": 21
+    },
+    {
+      "w": "me",
+      "s": 34.501,
+      "e": 34.561,
+      "shot": 21
+    },
+    {
+      "w": "back",
+      "s": 34.561,
+      "e": 34.721,
+      "shot": 21
+    },
+    {
+      "w": "to",
+      "s": 34.721,
+      "e": 34.861,
+      "shot": 21
+    },
+    {
+      "w": "sleep.",
+      "s": 34.861,
+      "e": 35.041,
+      "shot": 21
+    },
+    {
+      "w": "On",
+      "s": 35.48,
+      "e": 35.62,
+      "shot": 22
+    },
+    {
+      "w": "my",
+      "s": 35.62,
+      "e": 35.74,
+      "shot": 22
+    },
+    {
+      "w": "twelfth",
+      "s": 35.74,
+      "e": 35.94,
+      "shot": 22
+    },
+    {
+      "w": "birthday,",
+      "s": 35.94,
+      "e": 36.3,
+      "shot": 22
+    },
+    {
+      "w": "nobody",
+      "s": 36.42,
+      "e": 36.56,
+      "shot": 22
+    },
+    {
+      "w": "came",
+      "s": 36.56,
+      "e": 36.8,
+      "shot": 22
+    },
+    {
+      "w": "home.",
+      "s": 36.8,
+      "e": 37.0,
+      "shot": 22
+    },
+    {
+      "w": "But",
+      "s": 37.282,
+      "e": 37.422,
+      "shot": 23
+    },
+    {
+      "w": "taped",
+      "s": 37.422,
+      "e": 37.602,
+      "shot": 23
+    },
+    {
+      "w": "inside",
+      "s": 37.602,
+      "e": 37.862,
+      "shot": 23
+    },
+    {
+      "w": "my",
+      "s": 37.862,
+      "e": 38.042,
+      "shot": 23
+    },
+    {
+      "w": "closet",
+      "s": 38.042,
+      "e": 38.262,
+      "shot": 23
+    },
+    {
+      "w": "door,",
+      "s": 38.262,
+      "e": 38.502,
+      "shot": 23
+    },
+    {
+      "w": "I",
+      "s": 38.662,
+      "e": 38.742,
+      "shot": 23
+    },
+    {
+      "w": "found",
+      "s": 38.742,
+      "e": 38.882,
+      "shot": 23
+    },
+    {
+      "w": "a",
+      "s": 38.882,
+      "e": 39.002,
+      "shot": 23
+    },
+    {
+      "w": "note.",
+      "s": 39.002,
+      "e": 39.162,
+      "shot": 23
+    },
+    {
+      "w": "Old.",
+      "s": 39.418,
+      "e": 39.718,
+      "shot": 24
+    },
+    {
+      "w": "Yellow.",
+      "s": 40.04,
+      "e": 40.34,
+      "shot": 24
+    },
+    {
+      "w": "In",
+      "s": 40.687,
+      "e": 40.847,
+      "shot": 24
+    },
+    {
+      "w": "my",
+      "s": 40.847,
+      "e": 41.007,
+      "shot": 24
+    },
+    {
+      "w": "handwriting.",
+      "s": 41.007,
+      "e": 41.387,
+      "shot": 24
+    },
+    {
+      "w": "\"Don't",
+      "s": 41.75,
+      "e": 41.99,
+      "shot": 25
+    },
+    {
+      "w": "open",
+      "s": 41.99,
+      "e": 42.13,
+      "shot": 25
+    },
+    {
+      "w": "the",
+      "s": 42.13,
+      "e": 42.25,
+      "shot": 25
+    },
+    {
+      "w": "closet",
+      "s": 42.25,
+      "e": 42.47,
+      "shot": 25
+    },
+    {
+      "w": "at",
+      "s": 42.47,
+      "e": 42.63,
+      "shot": 25
+    },
+    {
+      "w": "midnight.",
+      "s": 42.63,
+      "e": 42.89,
+      "shot": 25
+    },
+    {
+      "w": "Trust",
+      "s": 43.21,
+      "e": 43.25,
+      "shot": 25
+    },
+    {
+      "w": "me.\"",
+      "s": 43.25,
+      "e": 43.57,
+      "shot": 25
+    },
+    {
+      "w": "I",
+      "s": 43.85,
+      "e": 44.01,
+      "shot": 26
+    },
+    {
+      "w": "didn't",
+      "s": 44.01,
+      "e": 44.15,
+      "shot": 26
+    },
+    {
+      "w": "write",
+      "s": 44.15,
+      "e": 44.31,
+      "shot": 26
+    },
+    {
+      "w": "that.",
+      "s": 44.31,
+      "e": 44.57,
+      "shot": 26
+    },
+    {
+      "w": "At",
+      "s": 44.851,
+      "e": 45.011,
+      "shot": 26
+    },
+    {
+      "w": "least...",
+      "s": 45.011,
+      "e": 45.151,
+      "shot": 26
+    },
+    {
+      "w": "not",
+      "s": 45.151,
+      "e": 45.351,
+      "shot": 26
+    },
+    {
+      "w": "yet.",
+      "s": 45.351,
+      "e": 45.551,
+      "shot": 26
+    },
+    {
+      "w": "At",
+      "s": 46.005,
+      "e": 46.165,
+      "shot": 27
+    },
+    {
+      "w": "midnight,",
+      "s": 46.165,
+      "e": 46.425,
+      "shot": 27
+    },
+    {
+      "w": "I",
+      "s": 46.505,
+      "e": 46.625,
+      "shot": 27
+    },
+    {
+      "w": "opened",
+      "s": 46.625,
+      "e": 46.825,
+      "shot": 27
+    },
+    {
+      "w": "it",
+      "s": 46.825,
+      "e": 46.925,
+      "shot": 27
+    },
+    {
+      "w": "anyway.",
+      "s": 46.925,
+      "e": 47.105,
+      "shot": 27
+    },
+    {
+      "w": "I",
+      "s": 47.466,
+      "e": 47.606,
+      "shot": 28
+    },
+    {
+      "w": "just",
+      "s": 47.606,
+      "e": 47.726,
+      "shot": 28
+    },
+    {
+      "w": "didn't",
+      "s": 47.726,
+      "e": 47.946,
+      "shot": 28
+    },
+    {
+      "w": "want",
+      "s": 47.946,
+      "e": 48.046,
+      "shot": 28
+    },
+    {
+      "w": "to",
+      "s": 48.046,
+      "e": 48.146,
+      "shot": 28
+    },
+    {
+      "w": "be",
+      "s": 48.146,
+      "e": 48.226,
+      "shot": 28
+    },
+    {
+      "w": "alone.",
+      "s": 48.226,
+      "e": 48.466,
+      "shot": 28
+    },
+    {
+      "w": "It",
+      "s": 48.937,
+      "e": 49.077,
+      "shot": 29
+    },
+    {
+      "w": "wasn't",
+      "s": 49.077,
+      "e": 49.357,
+      "shot": 29
+    },
+    {
+      "w": "empty",
+      "s": 49.357,
+      "e": 49.597,
+      "shot": 29
+    },
+    {
+      "w": "anymore.",
+      "s": 49.597,
+      "e": 49.837,
+      "shot": 29
+    },
+    {
+      "w": "It",
+      "s": 50.252,
+      "e": 50.372,
+      "shot": 29
+    },
+    {
+      "w": "was",
+      "s": 50.372,
+      "e": 50.472,
+      "shot": 29
+    },
+    {
+      "w": "a",
+      "s": 50.472,
+      "e": 50.572,
+      "shot": 29
+    },
+    {
+      "w": "tunnel,",
+      "s": 50.572,
+      "e": 50.792,
+      "shot": 29
+    },
+    {
+      "w": "glowing",
+      "s": 50.852,
+      "e": 51.052,
+      "shot": 29
+    },
+    {
+      "w": "at",
+      "s": 51.052,
+      "e": 51.232,
+      "shot": 29
+    },
+    {
+      "w": "the",
+      "s": 51.232,
+      "e": 51.292,
+      "shot": 29
+    },
+    {
+      "w": "bottom.",
+      "s": 51.292,
+      "e": 51.512,
+      "shot": 29
+    },
+    {
+      "w": "I",
+      "s": 51.809,
+      "e": 51.969,
+      "shot": 30
+    },
+    {
+      "w": "fell,",
+      "s": 51.969,
+      "e": 52.109,
+      "shot": 30
+    },
+    {
+      "w": "and",
+      "s": 52.249,
+      "e": 52.249,
+      "shot": 30
+    },
+    {
+      "w": "fell,",
+      "s": 52.249,
+      "e": 52.389,
+      "shot": 30
+    },
+    {
+      "w": "and",
+      "s": 52.529,
+      "e": 52.549,
+      "shot": 31
+    },
+    {
+      "w": "landed...",
+      "s": 52.549,
+      "e": 53.109,
+      "shot": 31
+    },
+    {
+      "w": "in",
+      "s": 53.109,
+      "e": 53.129,
+      "shot": 31
+    },
+    {
+      "w": "a",
+      "s": 53.129,
+      "e": 53.189,
+      "shot": 31
+    },
+    {
+      "w": "closet.",
+      "s": 53.189,
+      "e": 53.389,
+      "shot": 31
+    },
+    {
+      "w": "My",
+      "s": 53.74,
+      "e": 53.96,
+      "shot": 32
+    },
+    {
+      "w": "closet.",
+      "s": 53.96,
+      "e": 54.32,
+      "shot": 32
+    },
+    {
+      "w": "Twelve",
+      "s": 54.634,
+      "e": 54.894,
+      "shot": 32
+    },
+    {
+      "w": "years",
+      "s": 54.894,
+      "e": 55.094,
+      "shot": 32
+    },
+    {
+      "w": "ago.",
+      "s": 55.094,
+      "e": 55.374,
+      "shot": 32
+    },
+    {
+      "w": "Through",
+      "s": 55.697,
+      "e": 55.877,
+      "shot": 33
+    },
+    {
+      "w": "the",
+      "s": 55.877,
+      "e": 55.977,
+      "shot": 33
+    },
+    {
+      "w": "crack",
+      "s": 55.977,
+      "e": 56.137,
+      "shot": 33
+    },
+    {
+      "w": "in",
+      "s": 56.137,
+      "e": 56.277,
+      "shot": 33
+    },
+    {
+      "w": "the",
+      "s": 56.277,
+      "e": 56.357,
+      "shot": 33
+    },
+    {
+      "w": "door,",
+      "s": 56.357,
+      "e": 56.537,
+      "shot": 33
+    },
+    {
+      "w": "there",
+      "s": 56.637,
+      "e": 56.697,
+      "shot": 33
+    },
+    {
+      "w": "was",
+      "s": 56.697,
+      "e": 56.777,
+      "shot": 33
+    },
+    {
+      "w": "a",
+      "s": 56.777,
+      "e": 56.897,
+      "shot": 33
+    },
+    {
+      "w": "crib.",
+      "s": 56.897,
+      "e": 57.057,
+      "shot": 33
+    },
+    {
+      "w": "And",
+      "s": 57.339,
+      "e": 57.499,
+      "shot": 34
+    },
+    {
+      "w": "a",
+      "s": 57.499,
+      "e": 57.579,
+      "shot": 34
+    },
+    {
+      "w": "baby.",
+      "s": 57.579,
+      "e": 57.779,
+      "shot": 34
+    },
+    {
+      "w": "Crying.",
+      "s": 58.176,
+      "e": 58.636,
+      "shot": 34
+    },
+    {
+      "w": "Me.",
+      "s": 58.859,
+      "e": 59.119,
+      "shot": 34
+    },
+    {
+      "w": "My",
+      "s": 59.598,
+      "e": 59.778,
+      "shot": 35
+    },
+    {
+      "w": "closet",
+      "s": 59.778,
+      "e": 60.078,
+      "shot": 35
+    },
+    {
+      "w": "was",
+      "s": 60.078,
+      "e": 60.258,
+      "shot": 35
+    },
+    {
+      "w": "never",
+      "s": 60.258,
+      "e": 60.478,
+      "shot": 35
+    },
+    {
+      "w": "empty.",
+      "s": 60.478,
+      "e": 60.778,
+      "shot": 35
+    },
+    {
+      "w": "Its",
+      "s": 61.106,
+      "e": 61.286,
+      "shot": 35
+    },
+    {
+      "w": "monster",
+      "s": 61.286,
+      "e": 61.626,
+      "shot": 35
+    },
+    {
+      "w": "was",
+      "s": 61.626,
+      "e": 61.786,
+      "shot": 35
+    },
+    {
+      "w": "just",
+      "s": 61.786,
+      "e": 61.906,
+      "shot": 35
+    },
+    {
+      "w": "hiding.",
+      "s": 61.906,
+      "e": 62.146,
+      "shot": 35
+    },
+    {
+      "w": "I",
+      "s": 62.629,
+      "e": 62.789,
+      "shot": 36
+    },
+    {
+      "w": "could",
+      "s": 62.789,
+      "e": 62.889,
+      "shot": 36
+    },
+    {
+      "w": "have",
+      "s": 62.889,
+      "e": 62.969,
+      "shot": 36
+    },
+    {
+      "w": "knocked.",
+      "s": 62.969,
+      "e": 63.209,
+      "shot": 36
+    },
+    {
+      "w": "Every",
+      "s": 63.566,
+      "e": 63.806,
+      "shot": 37
+    },
+    {
+      "w": "single",
+      "s": 63.806,
+      "e": 64.006,
+      "shot": 37
+    },
+    {
+      "w": "night,",
+      "s": 64.006,
+      "e": 64.286,
+      "shot": 37
+    },
+    {
+      "w": "I",
+      "s": 64.286,
+      "e": 64.426,
+      "shot": 37
+    },
+    {
+      "w": "could",
+      "s": 64.426,
+      "e": 64.506,
+      "shot": 37
+    },
+    {
+      "w": "have",
+      "s": 64.506,
+      "e": 64.585,
+      "shot": 37
+    },
+    {
+      "w": "knocked.",
+      "s": 64.585,
+      "e": 64.786,
+      "shot": 37
+    },
+    {
+      "w": "But",
+      "s": 65.101,
+      "e": 65.221,
+      "shot": 38
+    },
+    {
+      "w": "if",
+      "s": 65.221,
+      "e": 65.301,
+      "shot": 38
+    },
+    {
+      "w": "he'd",
+      "s": 65.301,
+      "e": 65.421,
+      "shot": 38
+    },
+    {
+      "w": "had",
+      "s": 65.421,
+      "e": 65.481,
+      "shot": 38
+    },
+    {
+      "w": "a",
+      "s": 65.481,
+      "e": 65.541,
+      "shot": 38
+    },
+    {
+      "w": "friend,",
+      "s": 65.541,
+      "e": 65.741,
+      "shot": 38
+    },
+    {
+      "w": "he",
+      "s": 65.941,
+      "e": 66.041,
+      "shot": 38
+    },
+    {
+      "w": "never",
+      "s": 66.041,
+      "e": 66.181,
+      "shot": 38
+    },
+    {
+      "w": "would've",
+      "s": 66.181,
+      "e": 66.381,
+      "shot": 38
+    },
+    {
+      "w": "opened",
+      "s": 66.381,
+      "e": 66.561,
+      "shot": 38
+    },
+    {
+      "w": "that",
+      "s": 66.561,
+      "e": 66.741,
+      "shot": 38
+    },
+    {
+      "w": "door",
+      "s": 66.741,
+      "e": 66.901,
+      "shot": 38
+    },
+    {
+      "w": "at",
+      "s": 66.901,
+      "e": 67.021,
+      "shot": 38
+    },
+    {
+      "w": "midnight.",
+      "s": 67.021,
+      "e": 67.201,
+      "shot": 38
+    },
+    {
+      "w": "And",
+      "s": 67.566,
+      "e": 67.706,
+      "shot": 39
+    },
+    {
+      "w": "I'd",
+      "s": 67.706,
+      "e": 67.826,
+      "shot": 39
+    },
+    {
+      "w": "never",
+      "s": 67.826,
+      "e": 67.966,
+      "shot": 39
+    },
+    {
+      "w": "be",
+      "s": 67.966,
+      "e": 68.086,
+      "shot": 39
+    },
+    {
+      "w": "here",
+      "s": 68.086,
+      "e": 68.246,
+      "shot": 39
+    },
+    {
+      "w": "to",
+      "s": 68.246,
+      "e": 68.366,
+      "shot": 39
+    },
+    {
+      "w": "hum",
+      "s": 68.366,
+      "e": 68.506,
+      "shot": 39
+    },
+    {
+      "w": "when",
+      "s": 68.506,
+      "e": 68.646,
+      "shot": 39
+    },
+    {
+      "w": "he",
+      "s": 68.646,
+      "e": 68.726,
+      "shot": 39
+    },
+    {
+      "w": "cries.",
+      "s": 68.726,
+      "e": 68.966,
+      "shot": 39
+    },
+    {
+      "w": "So",
+      "s": 69.442,
+      "e": 69.602,
+      "shot": 40
+    },
+    {
+      "w": "I",
+      "s": 69.602,
+      "e": 69.742,
+      "shot": 40
+    },
+    {
+      "w": "stayed",
+      "s": 69.742,
+      "e": 69.942,
+      "shot": 40
+    },
+    {
+      "w": "in",
+      "s": 69.942,
+      "e": 70.082,
+      "shot": 40
+    },
+    {
+      "w": "the",
+      "s": 70.082,
+      "e": 70.162,
+      "shot": 40
+    },
+    {
+      "w": "dark.",
+      "s": 70.162,
+      "e": 70.382,
+      "shot": 40
+    },
+    {
+      "w": "I",
+      "s": 70.667,
+      "e": 70.847,
+      "shot": 41
+    },
+    {
+      "w": "ate",
+      "s": 70.847,
+      "e": 70.987,
+      "shot": 41
+    },
+    {
+      "w": "the",
+      "s": 70.987,
+      "e": 71.107,
+      "shot": 41
+    },
+    {
+      "w": "cookies.",
+      "s": 71.107,
+      "e": 71.307,
+      "shot": 41
+    },
+    {
+      "w": "I",
+      "s": 71.693,
+      "e": 71.853,
+      "shot": 42
+    },
+    {
+      "w": "read",
+      "s": 71.853,
+      "e": 71.973,
+      "shot": 42
+    },
+    {
+      "w": "the",
+      "s": 71.973,
+      "e": 72.093,
+      "shot": 42
+    },
+    {
+      "w": "sticky",
+      "s": 72.093,
+      "e": 72.233,
+      "shot": 42
+    },
+    {
+      "w": "notes",
+      "s": 72.233,
+      "e": 72.493,
+      "shot": 42
+    },
+    {
+      "w": "too.",
+      "s": 72.493,
+      "e": 72.713,
+      "shot": 42
+    },
+    {
+      "w": "Tonight,",
+      "s": 73.159,
+      "e": 73.419,
+      "shot": 43
+    },
+    {
+      "w": "he",
+      "s": 73.559,
+      "e": 73.559,
+      "shot": 43
+    },
+    {
+      "w": "turns",
+      "s": 73.559,
+      "e": 73.779,
+      "shot": 43
+    },
+    {
+      "w": "twelve.",
+      "s": 73.779,
+      "e": 74.059,
+      "shot": 43
+    },
+    {
+      "w": "Nobody's",
+      "s": 74.406,
+      "e": 74.886,
+      "shot": 43
+    },
+    {
+      "w": "coming",
+      "s": 74.886,
+      "e": 75.046,
+      "shot": 43
+    },
+    {
+      "w": "home.",
+      "s": 75.046,
+      "e": 75.306,
+      "shot": 43
+    },
+    {
+      "w": "I'm",
+      "s": 75.612,
+      "e": 75.832,
+      "shot": 44
+    },
+    {
+      "w": "taping",
+      "s": 75.832,
+      "e": 76.032,
+      "shot": 44
+    },
+    {
+      "w": "a",
+      "s": 76.032,
+      "e": 76.132,
+      "shot": 44
+    },
+    {
+      "w": "note",
+      "s": 76.132,
+      "e": 76.332,
+      "shot": 44
+    },
+    {
+      "w": "inside",
+      "s": 76.332,
+      "e": 76.652,
+      "shot": 44
+    },
+    {
+      "w": "the",
+      "s": 76.652,
+      "e": 76.792,
+      "shot": 44
+    },
+    {
+      "w": "door.",
+      "s": 76.792,
+      "e": 76.952,
+      "shot": 44
+    },
+    {
+      "w": "In",
+      "s": 77.251,
+      "e": 77.411,
+      "shot": 44
+    },
+    {
+      "w": "my",
+      "s": 77.411,
+      "e": 77.571,
+      "shot": 44
+    },
+    {
+      "w": "handwriting.",
+      "s": 77.571,
+      "e": 77.951,
+      "shot": 44
+    },
+    {
+      "w": "\"Don't",
+      "s": 78.314,
+      "e": 78.554,
+      "shot": 45
+    },
+    {
+      "w": "open",
+      "s": 78.554,
+      "e": 78.694,
+      "shot": 45
+    },
+    {
+      "w": "the",
+      "s": 78.694,
+      "e": 78.814,
+      "shot": 45
+    },
+    {
+      "w": "closet",
+      "s": 78.814,
+      "e": 79.034,
+      "shot": 45
+    },
+    {
+      "w": "at",
+      "s": 79.034,
+      "e": 79.194,
+      "shot": 45
+    },
+    {
+      "w": "midnight.",
+      "s": 79.194,
+      "e": 79.454,
+      "shot": 45
+    },
+    {
+      "w": "Trust",
+      "s": 79.754,
+      "e": 79.814,
+      "shot": 45
+    },
+    {
+      "w": "me.\"",
+      "s": 79.814,
+      "e": 80.134,
+      "shot": 45
+    },
+    {
+      "w": "He",
+      "s": 80.414,
+      "e": 80.574,
+      "shot": 46
+    },
+    {
+      "w": "won't",
+      "s": 80.574,
+      "e": 80.814,
+      "shot": 46
+    },
+    {
+      "w": "listen.",
+      "s": 80.814,
+      "e": 81.034,
+      "shot": 46
+    },
+    {
+      "w": "I",
+      "s": 81.357,
+      "e": 81.557,
+      "shot": 47
+    },
+    {
+      "w": "didn't.",
+      "s": 81.557,
+      "e": 81.877,
+      "shot": 47
+    }
+  ],
   "music": {
-   "file": "output/music/TEMPOREX_-_Numbers_Instrumental_loop.mp3",
-   "db": -8.5
+    "file": "output/stock/music/soft_piano_stock.wav",
+    "db": -7
   },
-  "sfx_auto": false,
-  "sfx_extra": [
-   {
-    "sfx": "pop",
-    "shot": 3,
-    "at": 0.5,
-    "db": -15
-   },
-   {
-    "sfx": "boom",
-    "shot": 6,
-    "at": 0.2,
-    "db": -11
-   },
-   {
-    "sfx": "click",
-    "shot": 9,
-    "at": 0.3,
-    "db": -15
-   },
-   {
-    "sfx": "ticks",
-    "shot": 10,
-    "at": 0.0,
-    "db": -20
-   },
-   {
-    "sfx": "click",
-    "shot": 18,
-    "at": 0.4,
-    "db": -15
-   },
-   {
-    "sfx": "magic_shimmer",
-    "shot": 21,
-    "at": 0.2,
-    "db": -18
-   },
-   {
-    "sfx": "click",
-    "shot": 23,
-    "at": 0.2,
-    "db": -15
-   },
-   {
-    "sfx": "heartbeat",
-    "shot": 26,
-    "at": 0.0,
-    "db": -13
-   },
-   {
-    "sfx": "door_knock",
-    "shot": 27,
-    "at": 0.3,
-    "db": -16
-   },
-   {
-    "sfx": "riser",
-    "shot": 29,
-    "at": 0.0,
-    "db": -14
-   },
-   {
-    "sfx": "whoosh_down",
-    "shot": 30,
-    "at": 0.0,
-    "db": -16
-   },
-   {
-    "sfx": "impact",
-    "shot": 31,
-    "at": 0.4,
-    "db": -11
-   },
-   {
-    "sfx": "whoosh_stock",
-    "shot": 32,
-    "at": -0.25,
-    "db": -21
-   },
-   {
-    "sfx": "impact",
-    "shot": 35,
-    "at": 0.6,
-    "db": -12
-   },
-   {
-    "sfx": "magic_shimmer",
-    "shot": 39,
-    "at": 0.3,
-    "db": -18
-   },
-   {
-    "sfx": "ticks",
-    "shot": 46,
-    "at": 0.0,
-    "db": -18
-   },
-   {
-    "sfx": "impact",
-    "shot": 47,
-    "at": 0.3,
-    "db": -10
-   }
-  ]
- }
+  "ambience": [],
+  "sfx": [],
+  "override": {
+    "music": {
+      "file": "output/music/TEMPOREX_-_Numbers_Instrumental_loop.mp3",
+      "db": -8.5
+    },
+    "sfx_auto": false,
+    "sfx_extra": [
+      {
+        "sfx": "pop",
+        "shot": 3,
+        "at": 0.5,
+        "db": -15
+      },
+      {
+        "sfx": "boom",
+        "shot": 6,
+        "at": 0.2,
+        "db": -11
+      },
+      {
+        "sfx": "click",
+        "shot": 9,
+        "at": 0.3,
+        "db": -15
+      },
+      {
+        "sfx": "ticks",
+        "shot": 10,
+        "at": 0.0,
+        "db": -20
+      },
+      {
+        "sfx": "click",
+        "shot": 18,
+        "at": 0.4,
+        "db": -15
+      },
+      {
+        "sfx": "magic_shimmer",
+        "shot": 21,
+        "at": 0.2,
+        "db": -18
+      },
+      {
+        "sfx": "click",
+        "shot": 23,
+        "at": 0.2,
+        "db": -15
+      },
+      {
+        "sfx": "heartbeat",
+        "shot": 26,
+        "at": 0.0,
+        "db": -13
+      },
+      {
+        "sfx": "door_knock",
+        "shot": 27,
+        "at": 0.3,
+        "db": -16
+      },
+      {
+        "sfx": "riser",
+        "shot": 29,
+        "at": 0.0,
+        "db": -14
+      },
+      {
+        "sfx": "whoosh_down",
+        "shot": 30,
+        "at": 0.0,
+        "db": -16
+      },
+      {
+        "sfx": "impact",
+        "shot": 31,
+        "at": 0.4,
+        "db": -11
+      },
+      {
+        "sfx": "whoosh_stock",
+        "shot": 32,
+        "at": -0.25,
+        "db": -21
+      },
+      {
+        "sfx": "impact",
+        "shot": 35,
+        "at": 0.6,
+        "db": -12
+      },
+      {
+        "sfx": "magic_shimmer",
+        "shot": 39,
+        "at": 0.3,
+        "db": -18
+      },
+      {
+        "sfx": "ticks",
+        "shot": 46,
+        "at": 0.0,
+        "db": -18
+      },
+      {
+        "sfx": "impact",
+        "shot": 47,
+        "at": 0.3,
+        "db": -10
+      }
+    ]
+  }
 }
