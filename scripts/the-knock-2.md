@@ -40,6 +40,42 @@ Then, from upstairs, in Mom's voice: "Bug? Come up here. I want to show you some
 
 Mom was still on the phone.
 
+## Shot list
+
+Animated in Blender (tools/anim/stories/the_knock_2.py): hallway + porch from Part 1, kitchen, restaurant, staircase.
+
+| # | Narration | Sec |
+|---|---|---|
+| 1 | You told me not to open either door. | 1.8 |
+| 2 | So I didn't. | 1.8 |
+| 3 | I crawled to the kitchen and plugged in my phone. | 1.8 |
+| 4 | Three percent. Four. | 1.8 |
+| 5 | The knocking got louder. Both doors at once. | 1.8 |
+| 6 | Five percent. I called Mom. | 1.8 |
+| 7 | It rang. And rang. | 1.8 |
+| 8 | "Bug? Honey, the lights went out at the restaurant. | 1.8 |
+| 9 | Dad and I are stuck here till morning. Are you inside? Is the door locked?" | 1.8 |
+| 10 | I looked at the front door. | 1.8 |
+| 11 | Then the back door. | 1.8 |
+| 12 | If Mom and Dad were at the restaurant... | 1.8 |
+| 13 | then who was outside? | 1.8 |
+| 14 | Both doors went silent. | 1.8 |
+| 15 | Then something knocked on the kitchen window. | 1.8 |
+| 16 | Right next to me. | 1.8 |
+| 17 | "Bug," it said, in Mom's voice. "Who are you talking to?" | 1.8 |
+| 18 | I didn't answer. | 1.8 |
+| 19 | I held the phone against my chest. | 1.8 |
+| 20 | Mom whispered, "Don't answer, bug. I'm right here." | 1.8 |
+| 21 | She stayed on the line all night. | 1.8 |
+| 22 | At six, the streetlights flickered back on. | 1.8 |
+| 23 | The knocking stopped. The house was quiet. Too quiet. | 1.8 |
+| 24 | On the kitchen window, there were handprints. Three of them. | 1.8 |
+| 25 | I touched the glass. They didn't smear. | 1.8 |
+| 26 | They were on the inside. | 1.8 |
+| 27 | Then, from upstairs, in Mom's voice: | 1.8 |
+| 28 | "Bug? Come up here. I want to show you something." | 1.8 |
+| 29 | Mom was still on the phone. | 1.8 |
+
 ## ElevenLabs prompt
 
 ```

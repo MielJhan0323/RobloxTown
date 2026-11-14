@@ -450,4 +450,136 @@ def s31(k, F):  # On the inside.  (push in until the prints fill the frame, cut)
     return S
 
 
-SHOTS = {i: globals()[f"s{i:02d}"] for i in range(1, 32)}
+# ---------------------------------------------------------------- Part 2 v2 (4-part series): cliffhanger ending
+ST = V((-900.0, -3505.0, 0))   # staircase set: steps climb toward +Y into a dark landing
+
+
+def staircase(S, eyes=False):
+    x, y = ST.x, ST.y
+    wall = kit.mat("stwall", (0.5, 0.52, 0.6), rough=0.9)
+    kit.box((12, 40, 0.3), (x, y + 4, -0.15), kit.mat("stfloor", (0.35, 0.24, 0.16)), 0)
+    for wx in (-3.6, 3.6):
+        kit.box((0.5, 40, 22), (x + wx, y + 4, 11), wall, 0)
+    kit.box((8, 0.5, 22), (x, y + 19, 11), wall, 0)
+    kit.box((8, 40, 0.4), (x, y + 4, 21.5), kit.mat("stceil", (0.5, 0.5, 0.55)), 0)
+    step = kit.mat("ststep", (0.55, 0.38, 0.24), rough=0.7)
+    for k2 in range(14):
+        kit.box((6.6, 1.2, 0.8), (x, y + 1 + k2 * 1.0, 0.4 + k2 * 0.8), step, 0.02)
+        kit.box((6.6, 0.95 * (14 - k2), 0.8), (x, y + 1 + k2 * 1.0 + 0.95 * (14 - k2) / 2, 0.4 + k2 * 0.8), step, 0)
+    kit.box((6.6, 4, 0.4), (x, y + 15.5, 11.5), step, 0)                                     # landing
+    rail = kit.mat("strail", (0.92, 0.92, 0.9))
+    L = V((0, 14, 11.2))
+    r = kit.cyl(0.12, L.length, (x - 3.0, y + 1 + 7, 3.0 + 5.6), rail, verts=8)
+    r.rotation_euler = L.to_track_quat("Z", "Y").to_euler()
+    kit.box((1.6, 0.3, 1.0), (x + 2.0, y + 18.6, 15.5), kit.mat("stframe", (0.7, 0.55, 0.3)), 0.03)    # picture up top
+    kit.spot((x, y - 6, 8), (x, y + 6, 4), (0.75, 0.75, 0.85), 2500, 45, 0.6, 0.6)           # gray dawn from below
+    kit.point((x, y + 15, 14), (0.25, 0.28, 0.4), 15, 1.0)                                     # landing stays dark
+    if eyes:
+        for sx in (-0.3, 0.3):
+            kit.sphere(0.13, (x + 0.6 + sx, y + 15.5, 18.2), kit.mat("knockeye", (1, 1, 0.95), emit=25,
+                                                                      emit_color=(1, 1, 0.9)), seg=10)
+
+
+def v2_whisper(k, F):  # Mom whispered, "Don't answer, bug. I'm right here."
+    S = stage("night")
+    restaurant(S)
+    mom, dad = mom_dad_table(S)
+    mom.lean(1, 12)
+    S.cam(mom.head_pt() - V((0, 0, 1.4)), dist=8, yaw=30, height=mom.head_pt().z - 0.4, lens=34)
+    return S
+
+
+def v2_allnight(k, F):  # She stayed on the line all night.
+    S = stage("night")
+    kitchen(S, clock_time="2:13")
+    n = S.char("Narrator", (KIT.x - 1.5, KIT.y + 4.6, -1.4), 180 + 20, "tired")
+    n.sit(1)
+    phone(n)
+    n.arm("R", 1, 150, -30)
+    from stories.closet_monster import notes
+    notes(tuple(n.head_pt() + n.world((0.8, 0.4, 0)) - n.pos), F)
+    S.cam(V((KIT.x - 2, KIT.y + 4, 4)), dist=12, yaw=10, height=6.5, lens=28)
+    return S
+
+
+def v2_quiet(k, F):  # The knocking stopped. The house was quiet. Too quiet.
+    S = stage("dusk")
+    hall(S, clock_time="6:00")
+    S.drone([(1, (HALL.x, HALL.y - 9, 5), (HALL.x, HALL.y + 4, 4)), (F, (HALL.x, HALL.y - 4, 5), (HALL.x, HALL.y + 4, 4))], lens=26)
+    return S
+
+
+def v2_prints(k, F):  # On the kitchen window, there were handprints. Three of them.
+    S = stage("dusk")
+    kitchen(S, clock_time="6:04", morning=True, prints=True)
+    S.cam_at(V((KIT.x - 2.5, KIT.y - 1, 5.2)), V((KIT.x, KIT.y + 8, 6.8)), lens=30)
+    return S
+
+
+def v2_touch(k, F):  # I touched the glass. They didn't smear.
+    S = stage("dusk")
+    kitchen(S, clock_time="6:04", morning=True, prints=True)
+    n = S.char("Narrator", (KIT.x - 0.4, KIT.y + 5.3), 180, "worried")
+    n.arm("R", 1, 40)
+    n.arm("R", kf(F * 0.4), 105, -10)
+    S.cam_at(V((KIT.x + 3.0, KIT.y + 2.0, 6.2)), V((KIT.x, KIT.y + 7.6, 6.6)), lens=30)
+    return S
+
+
+def v2_inside(k, F):  # They were on the inside.
+    S = stage("dusk")
+    kitchen(S, clock_time="6:04", morning=True, prints=True)
+    S.drone([(1, (KIT.x, KIT.y + 3, 6.6), (KIT.x, KIT.y + 8, 6.8)), (F, (KIT.x, KIT.y + 5.6, 6.8), (KIT.x, KIT.y + 8, 6.8))],
+            lens=32, allow_close=True)
+    return S
+
+
+def v2_upstairs(k, F):  # Then, from upstairs, in Mom's voice:
+    S = stage("dusk")
+    staircase(S)
+    n = S.char("Narrator", (ST.x, ST.y - 2.5), 180, "scared")
+    n.look(1, 0, 0)
+    n.look(kf(F * 0.4), 0, 35)
+    S.cam(V((ST.x, ST.y - 2.5, 3.5)), dist=9, yaw=0, height=4.5, lens=30)
+    return S
+
+
+def v2_comeup(k, F):  # "Bug? Come up here. I want to show you something."
+    S = stage("dusk")
+    staircase(S, eyes=True)
+    S.char("Narrator", (ST.x, ST.y - 2.5), 180, "scared")
+    S.drone([(1, (ST.x + 2.6, ST.y - 6, 4.0), (ST.x, ST.y + 14, 15)), (F, (ST.x + 2.2, ST.y - 1.5, 2.4), (ST.x + 0.6, ST.y + 15.5, 17.0))],
+            lens=24, allow_close=True)
+    return S
+
+
+def v2_stillon(k, F):  # Mom was still on the phone.
+    S = stage("dusk")
+    staircase(S)
+    n = S.char("Narrator", (ST.x, ST.y - 2.5), 0, "shocked")
+    n.arm("R", 1, 75, -10)
+    ph = phone(n)
+    t = text("MOM  9:14:52", tuple(ph.matrix_world.translation + V((0, -0.2, 0.25))), size=0.22, color=(0.5, 1, 0.6), emit=6)
+    attach(t, n.arms["R"])
+    S.drone([(1, n.world((0.5, 3.2, 3.5)), n.world((0.9, 1.0, 2.6))), (F, n.world((0.3, 5.5, 4.6)), n.head_pt() - V((0, 0, 1.0)))],
+            lens=34, allow_close=True)
+    return S
+
+
+ORDER = [
+    (s01, "You told me not to open either door."), (s02, "So I didn't."),
+    (s03, "I crawled to the kitchen and plugged in my phone."), (s04, "Three percent. Four."),
+    (s05, "The knocking got louder. Both doors at once."), (s06, "Five percent. I called Mom."), (s07, "It rang. And rang."),
+    (s08, "\"Bug? Honey, the lights went out at the restaurant."), (s09, "Dad and I are stuck here till morning. Are you inside? Is the door locked?\""),
+    (s10, "I looked at the front door."), (s11, "Then the back door."), (s12, "If Mom and Dad were at the restaurant..."),
+    (s13, "then who was outside?"), (s14, "Both doors went silent."), (s15, "Then something knocked on the kitchen window."),
+    (s16, "Right next to me."), (s17, "\"Bug,\" it said, in Mom's voice. \"Who are you talking to?\""),
+    (s18, "I didn't answer."), (s19, "I held the phone against my chest."), (v2_whisper, "Mom whispered, \"Don't answer, bug. I'm right here.\""),
+    (v2_allnight, "She stayed on the line all night."), (s23, "At six, the streetlights flickered back on."),
+    (v2_quiet, "The knocking stopped. The house was quiet. Too quiet."), (v2_prints, "On the kitchen window, there were handprints. Three of them."),
+    (v2_touch, "I touched the glass. They didn't smear."), (v2_inside, "They were on the inside."),
+    (v2_upstairs, "Then, from upstairs, in Mom's voice:"), (v2_comeup, "\"Bug? Come up here. I want to show you something.\""),
+    (v2_stillon, "Mom was still on the phone."),
+]
+SHOTS = {i + 1: f for i, (f, _) in enumerate(ORDER)}
+LINES = [t for _, t in ORDER]

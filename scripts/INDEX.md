@@ -11,4 +11,4 @@ Tell laptop Claude: **"record <slug>"**. Each script is `scripts/<slug>.md`.
 | five-seconds | The Last Pickle | done (Blender, Titan voice, 1:27) |
 | closet-monster | The Monster in My Closet | done (Titan voice, 1:30) |
 | the-knock | The Knock (Part 1) | done (user voice, 0:53) |
-| the-knock-2 | The Knock (Part 2 of 4) | rewrite - waiting for approval |
+| the-knock-2 | The Knock (Part 2 of 4) | approved; rendering (user supplies voice) |
