@@ -1,11 +1,12 @@
-# The Knock (Part 2)
+# The Knock (Part 2 of 4)
 
 Rule: In this town, when the streetlights go out, you never open the door.
 Music: Numbers (low) - spooky
-Voice: user supplies the narration (Titan or the Part 1 voice, eleven_v4, prompt below). Do NOT generate voice unless the user says so.
+Voice: user supplies the narration (eleven_v4, prompt below). Do NOT generate voice unless the user says so.
 
 Follows the viewers' pick from Part 1: option 3 - don't open any door, charge the phone, call Mom.
-Twist: Mom and Dad are stuck at the restaurant, so BOTH doors were Knockers. Ends on a Part 3 hook: handprints on the inside.
+Both doors were Knockers. Ends on a cliffhanger + choice card (Part 3 follows the vote):
+1 TELL MOM AND DAD / 2 SEARCH THE HOUSE ALONE / 3 STAY UP TONIGHT AND WATCH
 
 ## Narration
 
@@ -27,57 +28,17 @@ Then something knocked on the kitchen window. Right next to me.
 
 "Bug," it said, in Mom's voice. "Who are you talking to?"
 
-I didn't answer. I didn't breathe. I held the phone against my chest.
+I didn't answer. I held the phone against my chest. Mom whispered, "Don't answer, bug. I'm right here." She stayed on the line all night.
 
-Mom stayed on the line all night. She told me stories. She hummed. Every time something knocked, she said, "Don't answer, bug. I'm right here."
+At six, the streetlights flickered back on. The knocking stopped. The house was quiet. Too quiet.
 
-At six a.m., the streetlights flickered back on. The knocking stopped.
+On the kitchen window, there were handprints. Three of them. I touched the glass. They didn't smear.
 
-At seven, Mom and Dad pulled into the driveway. Before I opened the door, I made Mom say one thing a Knocker couldn't have heard today.
+They were on the inside.
 
-She smiled. "I love you more than the whole sky." She says it every morning. Never at night.
+Then, from upstairs, in Mom's voice: "Bug? Come up here. I want to show you something."
 
-I opened the door.
-
-But the kitchen window still has handprints. On the inside.
-
-## Shot list
-
-Animated in Blender (tools/anim/stories/the_knock_2.py): hallway + porch from Part 1, new kitchen and restaurant.
-
-| # | Narration | Sec |
-|---|---|---|
-| 1 | You told me not to open either door. | 1.8 |
-| 2 | So I didn't. | 1.8 |
-| 3 | I crawled to the kitchen and plugged in my phone. | 1.8 |
-| 4 | Three percent. Four. | 1.8 |
-| 5 | The knocking got louder. Both doors at once. | 1.8 |
-| 6 | Five percent. I called Mom. | 1.8 |
-| 7 | It rang. And rang. | 1.8 |
-| 8 | "Bug? Honey, the lights went out at the restaurant." | 1.8 |
-| 9 | "Dad and I are stuck here till morning. Are you inside? Is the door locked?" | 1.8 |
-| 10 | I looked at the front door. | 1.8 |
-| 11 | Then the back door. | 1.8 |
-| 12 | If Mom and Dad were at the restaurant... | 1.8 |
-| 13 | then who was outside? | 1.8 |
-| 14 | Both doors went silent. | 1.8 |
-| 15 | Then something knocked on the kitchen window. | 1.8 |
-| 16 | Right next to me. | 1.8 |
-| 17 | "Bug," it said, in Mom's voice. "Who are you talking to?" | 1.8 |
-| 18 | I didn't answer. I didn't breathe. | 1.8 |
-| 19 | I held the phone against my chest. | 1.8 |
-| 20 | Mom stayed on the line all night. | 1.8 |
-| 21 | She told me stories. She hummed. | 1.8 |
-| 22 | Every time something knocked, she said, "Don't answer, bug. I'm right here." | 1.8 |
-| 23 | At six a.m., the streetlights flickered back on. | 1.8 |
-| 24 | The knocking stopped. | 1.8 |
-| 25 | At seven, Mom and Dad pulled into the driveway. | 1.8 |
-| 26 | Before I opened the door, I made Mom say one thing a Knocker couldn't have heard today. | 1.8 |
-| 27 | She smiled. "I love you more than the whole sky." | 1.8 |
-| 28 | She says it every morning. Never at night. | 1.8 |
-| 29 | I opened the door. | 1.8 |
-| 30 | But the kitchen window still has handprints. | 1.8 |
-| 31 | On the inside. | 1.8 |
+Mom was still on the phone.
 
 ## ElevenLabs prompt
 
@@ -100,17 +61,15 @@ Animated in Blender (tools/anim/stories/the_knock_2.py): hallway + porch from Pa
 
 [whispering] "Bug," it said, in Mom's voice. "Who are you talking to?"
 
-[whispering] I didn't answer. I didn't breathe. I held the phone against my chest.
+[whispering] I didn't answer. I held the phone against my chest. Mom whispered, "Don't answer, bug. I'm right here." She stayed on the line all night.
 
-[warmly] Mom stayed on the line all night. She told me stories. She hummed. Every time something knocked, she said, "Don't answer, bug. I'm right here."
+[softly] At six, the streetlights flickered back on. The knocking stopped. The house was quiet. [whispering] Too quiet.
 
-[softly] At six a.m., the streetlights flickered back on. The knocking stopped.
+[softly] On the kitchen window, there were handprints. Three of them. I touched the glass. They didn't smear.
 
-[warmly] At seven, Mom and Dad pulled into the driveway. Before I opened the door, I made Mom say one thing a Knocker couldn't have heard today.
+[dramatically] They were on the inside.
 
-[warmly] She smiled. "I love you more than the whole sky." She says it every morning. Never at night.
+[whispering] Then, from upstairs, in Mom's voice: [warmly] "Bug? Come up here. I want to show you something."
 
-[softly] I opened the door.
-
-[whispering] But the kitchen window still has handprints. [dramatically] On the inside.
+[whispering] Mom was still on the phone.
 ```
