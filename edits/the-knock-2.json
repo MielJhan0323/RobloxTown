@@ -1,15 +1,15 @@
 {
   "slug": "the-knock-2",
   "title": "The Knock (Part 2 of 4)",
-  "timing": "estimated",
-  "voice": null,
-  "duration": 80.152,
+  "timing": "voice",
+  "voice": "output/cache/the-knock-2/voice_fx.wav",
+  "duration": 53.723,
   "shots": [
     {
       "n": 1,
       "text": "You told me not to open either door.",
       "start": 0.0,
-      "end": 3.157,
+      "end": 2.0,
       "src": "output/anim/the-knock-2/shot_01.mp4",
       "src_dur": 4.4,
       "motion": "push_in",
@@ -17,13 +17,13 @@
       "grade": "neutral",
       "placeholder": null,
       "override": {},
-      "dur": 3.157
+      "dur": 2.0
     },
     {
       "n": 2,
       "text": "So I didn't.",
-      "start": 3.157,
-      "end": 4.341,
+      "start": 2.0,
+      "end": 2.98,
       "src": "output/anim/the-knock-2/shot_02.mp4",
       "src_dur": 2.067,
       "motion": "push_in",
@@ -31,13 +31,13 @@
       "grade": "neutral",
       "placeholder": null,
       "override": {},
-      "dur": 1.184
+      "dur": 0.98
     },
     {
       "n": 3,
       "text": "I crawled to the kitchen and plugged in my phone.",
-      "start": 4.341,
-      "end": 7.969,
+      "start": 2.98,
+      "end": 4.96,
       "src": "output/anim/the-knock-2/shot_03.mp4",
       "src_dur": 5.0,
       "motion": "push_in",
@@ -45,15 +45,57 @@
       "grade": "neutral",
       "placeholder": null,
       "override": {},
-      "dur": 3.628
+      "dur": 1.98
     },
     {
       "n": 4,
       "text": "Three percent. Four.",
-      "start": 7.969,
-      "end": 9.609,
+      "start": 4.96,
+      "end": 6.43,
       "src": "output/anim/the-knock-2/shot_04.mp4",
       "src_dur": 2.6,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.47
+    },
+    {
+      "n": 5,
+      "text": "The knocking got louder. Both doors at once.",
+      "start": 6.43,
+      "end": 8.81,
+      "src": "output/anim/the-knock-2/shot_05.mp4",
+      "src_dur": 4.6,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 2.38
+    },
+    {
+      "n": 6,
+      "text": "Five percent. I called Mom.",
+      "start": 8.81,
+      "end": 10.57,
+      "src": "output/anim/the-knock-2/shot_06.mp4",
+      "src_dur": 3.333,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": null,
+      "override": {},
+      "dur": 1.76
+    },
+    {
+      "n": 7,
+      "text": "It rang. And rang.",
+      "start": 10.57,
+      "end": 12.21,
+      "src": "output/anim/the-knock-2/shot_07.mp4",
+      "src_dur": 2.733,
       "motion": "push_in",
       "transition": "cut",
       "grade": "neutral",
@@ -62,80 +104,38 @@
       "dur": 1.64
     },
     {
-      "n": 5,
-      "text": "The knocking got louder. Both doors at once.",
-      "start": 9.609,
-      "end": 12.924,
-      "src": "output/anim/the-knock-2/shot_05.mp4",
-      "src_dur": 4.6,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": null,
-      "override": {},
-      "dur": 3.315
-    },
-    {
-      "n": 6,
-      "text": "Five percent. I called Mom.",
-      "start": 12.924,
-      "end": 15.157,
-      "src": "output/anim/the-knock-2/shot_06.mp4",
-      "src_dur": 3.333,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": null,
-      "override": {},
-      "dur": 2.233
-    },
-    {
-      "n": 7,
-      "text": "It rang. And rang.",
-      "start": 15.157,
-      "end": 16.931,
-      "src": "output/anim/the-knock-2/shot_07.mp4",
-      "src_dur": 2.733,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": null,
-      "override": {},
-      "dur": 1.774
-    },
-    {
       "n": 8,
       "text": "\"Bug? Honey, the lights went out at the restaurant.",
-      "start": 16.931,
-      "end": 20.687,
+      "start": 12.21,
+      "end": 14.57,
       "src": "output/anim/the-knock-2/shot_08.mp4",
-      "src_dur": 4.867,
+      "src_dur": 5.133,
       "motion": "push_in",
       "transition": "cut",
       "grade": "neutral",
       "placeholder": null,
       "override": {},
-      "dur": 3.756
+      "dur": 2.36
     },
     {
       "n": 9,
       "text": "Dad and I are stuck here till morning. Are you inside? Is the door locked?\"",
-      "start": 20.687,
-      "end": 26.209,
-      "src": null,
-      "src_dur": null,
+      "start": 14.57,
+      "end": 17.69,
+      "src": "output/anim/the-knock-2/shot_09.mp4",
+      "src_dur": 7.267,
       "motion": "push_in",
       "transition": "cut",
       "grade": "neutral",
-      "placeholder": "1.8",
+      "placeholder": null,
       "override": {},
-      "dur": 5.522
+      "dur": 3.12
     },
     {
       "n": 10,
       "text": "I looked at the front door.",
-      "start": 26.209,
-      "end": 28.415,
+      "start": 17.69,
+      "end": 18.89,
       "src": "output/anim/the-knock-2/shot_10.mp4",
       "src_dur": 3.267,
       "motion": "push_in",
@@ -143,13 +143,13 @@
       "grade": "neutral",
       "placeholder": null,
       "override": {},
-      "dur": 2.206
+      "dur": 1.2
     },
     {
       "n": 11,
       "text": "Then the back door.",
-      "start": 28.415,
-      "end": 29.998,
+      "start": 18.89,
+      "end": 19.8,
       "src": "output/anim/the-knock-2/shot_11.mp4",
       "src_dur": 2.533,
       "motion": "push_in",
@@ -157,1448 +157,1448 @@
       "grade": "neutral",
       "placeholder": null,
       "override": {},
-      "dur": 1.583
+      "dur": 0.91
     },
     {
       "n": 12,
       "text": "If Mom and Dad were at the restaurant...",
-      "start": 29.998,
-      "end": 32.915,
-      "src": null,
-      "src_dur": null,
+      "start": 19.8,
+      "end": 21.4,
+      "src": "output/anim/the-knock-2/shot_12.mp4",
+      "src_dur": 4.133,
       "motion": "push_in",
       "transition": "cut",
       "grade": "neutral",
-      "placeholder": "1.8",
+      "placeholder": null,
       "override": {},
-      "dur": 2.917
+      "dur": 1.6
     },
     {
       "n": 13,
       "text": "then who was outside?",
-      "start": 32.915,
-      "end": 34.557,
-      "src": null,
-      "src_dur": null,
+      "start": 21.4,
+      "end": 22.7,
+      "src": "output/anim/the-knock-2/shot_13.mp4",
+      "src_dur": 2.6,
       "motion": "push_in",
       "transition": "cut",
       "grade": "neutral",
-      "placeholder": "1.8",
+      "placeholder": null,
       "override": {},
-      "dur": 1.642
+      "dur": 1.3
     },
     {
       "n": 14,
       "text": "Both doors went silent.",
-      "start": 34.557,
-      "end": 36.259,
-      "src": null,
-      "src_dur": null,
+      "start": 22.7,
+      "end": 24.06,
+      "src": "output/anim/the-knock-2/shot_14.mp4",
+      "src_dur": 2.667,
       "motion": "push_in",
       "transition": "cut",
       "grade": "neutral",
-      "placeholder": "1.8",
+      "placeholder": null,
       "override": {},
-      "dur": 1.702
+      "dur": 1.36
     },
     {
       "n": 15,
       "text": "Then something knocked on the kitchen window.",
-      "start": 36.259,
-      "end": 39.191,
-      "src": null,
-      "src_dur": null,
+      "start": 24.06,
+      "end": 25.7,
+      "src": "output/anim/the-knock-2/shot_15.mp4",
+      "src_dur": 4.133,
       "motion": "push_in",
       "transition": "cut",
       "grade": "neutral",
-      "placeholder": "1.8",
+      "placeholder": null,
       "override": {},
-      "dur": 2.932
+      "dur": 1.64
     },
     {
       "n": 16,
       "text": "Right next to me.",
-      "start": 39.191,
-      "end": 40.715,
-      "src": null,
-      "src_dur": null,
+      "start": 25.7,
+      "end": 26.9,
+      "src": "output/anim/the-knock-2/shot_16.mp4",
+      "src_dur": 2.467,
       "motion": "push_in",
       "transition": "cut",
       "grade": "neutral",
-      "placeholder": "1.8",
+      "placeholder": null,
       "override": {},
-      "dur": 1.524
+      "dur": 1.2
     },
     {
       "n": 17,
       "text": "\"Bug,\" it said, in Mom's voice. \"Who are you talking to?\"",
-      "start": 40.715,
-      "end": 44.665,
-      "src": null,
-      "src_dur": null,
+      "start": 26.9,
+      "end": 29.2,
+      "src": "output/anim/the-knock-2/shot_17.mp4",
+      "src_dur": 5.4,
       "motion": "push_in",
       "transition": "cut",
       "grade": "neutral",
-      "placeholder": "1.8",
+      "placeholder": null,
       "override": {},
-      "dur": 3.95
+      "dur": 2.3
     },
     {
       "n": 18,
       "text": "I didn't answer.",
-      "start": 44.665,
-      "end": 45.967,
-      "src": null,
-      "src_dur": null,
+      "start": 29.2,
+      "end": 30.08,
+      "src": "output/anim/the-knock-2/shot_18.mp4",
+      "src_dur": 2.2,
       "motion": "push_in",
       "transition": "cut",
       "grade": "neutral",
-      "placeholder": "1.8",
+      "placeholder": null,
       "override": {},
-      "dur": 1.302
+      "dur": 0.88
     },
     {
       "n": 19,
       "text": "I held the phone against my chest.",
-      "start": 45.967,
-      "end": 48.572,
-      "src": null,
-      "src_dur": null,
+      "start": 30.08,
+      "end": 31.64,
+      "src": "output/anim/the-knock-2/shot_19.mp4",
+      "src_dur": 3.733,
       "motion": "push_in",
       "transition": "cut",
       "grade": "neutral",
-      "placeholder": "1.8",
+      "placeholder": null,
       "override": {},
-      "dur": 2.605
+      "dur": 1.56
     },
     {
       "n": 20,
       "text": "Mom whispered, \"Don't answer, bug. I'm right here.\"",
-      "start": 48.572,
-      "end": 51.926,
-      "src": null,
-      "src_dur": null,
+      "start": 31.64,
+      "end": 34.0,
+      "src": "output/anim/the-knock-2/shot_20.mp4",
+      "src_dur": 4.667,
       "motion": "push_in",
       "transition": "cut",
       "grade": "neutral",
-      "placeholder": "1.8",
+      "placeholder": null,
       "override": {},
-      "dur": 3.354
+      "dur": 2.36
     },
     {
       "n": 21,
       "text": "She stayed on the line all night.",
-      "start": 51.926,
-      "end": 54.502,
-      "src": null,
-      "src_dur": null,
+      "start": 34.0,
+      "end": 35.7,
+      "src": "output/anim/the-knock-2/shot_21.mp4",
+      "src_dur": 3.733,
       "motion": "push_in",
       "transition": "cut",
       "grade": "neutral",
-      "placeholder": "1.8",
+      "placeholder": null,
       "override": {},
-      "dur": 2.576
+      "dur": 1.7
     },
     {
       "n": 22,
       "text": "At six, the streetlights flickered back on.",
-      "start": 54.502,
-      "end": 57.444,
-      "src": null,
-      "src_dur": null,
+      "start": 35.7,
+      "end": 37.8,
+      "src": "output/anim/the-knock-2/shot_22.mp4",
+      "src_dur": 4.133,
       "motion": "push_in",
       "transition": "cut",
       "grade": "neutral",
-      "placeholder": "1.8",
+      "placeholder": null,
       "override": {},
-      "dur": 2.942
+      "dur": 2.1
     },
     {
       "n": 23,
       "text": "The knocking stopped. The house was quiet. Too quiet.",
-      "start": 57.444,
-      "end": 61.439,
-      "src": null,
-      "src_dur": null,
+      "start": 37.8,
+      "end": 41.13,
+      "src": "output/anim/the-knock-2/shot_23.mp4",
+      "src_dur": 5.4,
       "motion": "push_in",
       "transition": "cut",
       "grade": "neutral",
-      "placeholder": "1.8",
+      "placeholder": null,
       "override": {},
-      "dur": 3.995
+      "dur": 3.33
     },
     {
       "n": 24,
       "text": "On the kitchen window, there were handprints. Three of them.",
-      "start": 61.439,
-      "end": 65.683,
-      "src": null,
-      "src_dur": null,
+      "start": 41.13,
+      "end": 43.56,
+      "src": "output/anim/the-knock-2/shot_24.mp4",
+      "src_dur": 5.733,
       "motion": "push_in",
       "transition": "cut",
       "grade": "neutral",
-      "placeholder": "1.8",
+      "placeholder": null,
       "override": {},
-      "dur": 4.244
+      "dur": 2.43
     },
     {
       "n": 25,
       "text": "I touched the glass. They didn't smear.",
-      "start": 65.683,
-      "end": 68.657,
-      "src": null,
-      "src_dur": null,
+      "start": 43.56,
+      "end": 45.56,
+      "src": "output/anim/the-knock-2/shot_25.mp4",
+      "src_dur": 4.2,
       "motion": "push_in",
       "transition": "cut",
       "grade": "neutral",
-      "placeholder": "1.8",
+      "placeholder": null,
       "override": {},
-      "dur": 2.974
+      "dur": 2.0
     },
     {
       "n": 26,
       "text": "They were on the inside.",
-      "start": 68.657,
-      "end": 70.581,
-      "src": null,
-      "src_dur": null,
+      "start": 45.56,
+      "end": 46.98,
+      "src": "output/anim/the-knock-2/shot_26.mp4",
+      "src_dur": 2.933,
       "motion": "push_in",
       "transition": "cut",
       "grade": "neutral",
-      "placeholder": "1.8",
+      "placeholder": null,
       "override": {},
-      "dur": 1.924
+      "dur": 1.42
     },
     {
       "n": 27,
       "text": "Then, from upstairs, in Mom's voice:",
-      "start": 70.581,
-      "end": 73.044,
-      "src": null,
-      "src_dur": null,
+      "start": 46.98,
+      "end": 49.06,
+      "src": "output/anim/the-knock-2/shot_27.mp4",
+      "src_dur": 3.6,
       "motion": "push_in",
       "transition": "cut",
       "grade": "neutral",
-      "placeholder": "1.8",
+      "placeholder": null,
       "override": {},
-      "dur": 2.463
+      "dur": 2.08
     },
     {
       "n": 28,
       "text": "\"Bug? Come up here. I want to show you something.\"",
-      "start": 73.044,
-      "end": 76.833,
-      "src": null,
-      "src_dur": null,
+      "start": 49.06,
+      "end": 51.14,
+      "src": "output/anim/the-knock-2/shot_28.mp4",
+      "src_dur": 5.2,
       "motion": "push_in",
       "transition": "cut",
       "grade": "neutral",
-      "placeholder": "1.8",
+      "placeholder": null,
       "override": {},
-      "dur": 3.789
+      "dur": 2.08
     },
     {
       "n": 29,
       "text": "Mom was still on the phone.",
-      "start": 76.833,
-      "end": 80.152,
-      "src": null,
-      "src_dur": null,
+      "start": 51.14,
+      "end": 53.723,
+      "src": "output/anim/the-knock-2/shot_29.mp4",
+      "src_dur": 4.6,
       "motion": "push_in",
       "transition": "cut",
       "grade": "neutral",
-      "placeholder": "1.8",
+      "placeholder": null,
       "override": {},
-      "dur": 3.319
+      "dur": 2.583
     }
   ],
   "words": [
     {
       "w": "You",
-      "s": 0.3,
-      "e": 0.58,
+      "s": 0.0,
+      "e": 0.22,
       "shot": 1
     },
     {
       "w": "told",
-      "s": 0.611,
-      "e": 0.918,
+      "s": 0.22,
+      "e": 0.4,
       "shot": 1
     },
     {
       "w": "me",
-      "s": 0.952,
-      "e": 1.205,
+      "s": 0.4,
+      "e": 0.56,
       "shot": 1
     },
     {
       "w": "not",
-      "s": 1.233,
-      "e": 1.513,
+      "s": 0.56,
+      "e": 0.72,
       "shot": 1
     },
     {
       "w": "to",
-      "s": 1.544,
-      "e": 1.798,
+      "s": 0.72,
+      "e": 0.84,
       "shot": 1
     },
     {
       "w": "open",
-      "s": 1.826,
-      "e": 2.133,
+      "s": 0.84,
+      "e": 1.04,
       "shot": 1
     },
     {
       "w": "either",
-      "s": 2.167,
-      "e": 2.527,
+      "s": 1.04,
+      "e": 1.3,
       "shot": 1
     },
     {
       "w": "door.",
-      "s": 2.567,
-      "e": 2.873,
+      "s": 1.3,
+      "e": 1.6,
       "shot": 1
     },
     {
       "w": "So",
-      "s": 3.157,
-      "e": 3.411,
+      "s": 2.0,
+      "e": 2.16,
       "shot": 2
     },
     {
       "w": "I",
-      "s": 3.439,
-      "e": 3.666,
+      "s": 2.16,
+      "e": 2.3,
       "shot": 2
     },
     {
       "w": "didn't.",
-      "s": 3.691,
-      "e": 4.051,
+      "s": 2.3,
+      "e": 2.64,
       "shot": 2
     },
     {
       "w": "I",
-      "s": 4.341,
-      "e": 4.567,
+      "s": 2.98,
+      "e": 3.02,
       "shot": 3
     },
     {
       "w": "crawled",
-      "s": 4.593,
-      "e": 4.979,
+      "s": 3.02,
+      "e": 3.16,
       "shot": 3
     },
     {
       "w": "to",
-      "s": 5.022,
-      "e": 5.276,
+      "s": 3.16,
+      "e": 3.34,
       "shot": 3
     },
     {
       "w": "the",
-      "s": 5.304,
-      "e": 5.584,
+      "s": 3.34,
+      "e": 3.44,
       "shot": 3
     },
     {
       "w": "kitchen",
-      "s": 5.615,
-      "e": 6.001,
+      "s": 3.44,
+      "e": 3.62,
       "shot": 3
     },
     {
       "w": "and",
-      "s": 6.044,
-      "e": 6.324,
+      "s": 3.62,
+      "e": 3.82,
       "shot": 3
     },
     {
       "w": "plugged",
-      "s": 6.356,
-      "e": 6.742,
+      "s": 3.82,
+      "e": 3.98,
       "shot": 3
     },
     {
       "w": "in",
-      "s": 6.785,
-      "e": 7.039,
+      "s": 3.98,
+      "e": 4.12,
       "shot": 3
     },
     {
       "w": "my",
-      "s": 7.067,
-      "e": 7.32,
+      "s": 4.12,
+      "e": 4.26,
       "shot": 3
     },
     {
       "w": "phone.",
-      "s": 7.348,
-      "e": 7.681,
+      "s": 4.26,
+      "e": 4.52,
       "shot": 3
     },
     {
       "w": "Three",
-      "s": 7.969,
-      "e": 8.302,
+      "s": 4.96,
+      "e": 5.1,
       "shot": 4
     },
     {
       "w": "percent.",
-      "s": 8.339,
-      "e": 8.726,
+      "s": 5.1,
+      "e": 5.4,
       "shot": 4
     },
     {
       "w": "Four.",
-      "s": 9.019,
-      "e": 9.325,
+      "s": 5.8,
+      "e": 6.04,
       "shot": 4
     },
     {
       "w": "The",
-      "s": 9.609,
-      "e": 9.889,
+      "s": 6.43,
+      "e": 6.53,
       "shot": 5
     },
     {
       "w": "knocking",
-      "s": 9.92,
-      "e": 10.334,
+      "s": 6.53,
+      "e": 6.75,
       "shot": 5
     },
     {
       "w": "got",
-      "s": 10.38,
-      "e": 10.66,
+      "s": 6.75,
+      "e": 6.99,
       "shot": 5
     },
     {
       "w": "louder.",
-      "s": 10.691,
-      "e": 11.051,
+      "s": 6.99,
+      "e": 7.33,
       "shot": 5
     },
     {
       "w": "Both",
-      "s": 11.341,
-      "e": 11.647,
+      "s": 7.65,
+      "e": 7.81,
       "shot": 5
     },
     {
       "w": "doors",
-      "s": 11.681,
-      "e": 12.015,
+      "s": 7.81,
+      "e": 8.01,
       "shot": 5
     },
     {
       "w": "at",
-      "s": 12.052,
-      "e": 12.305,
+      "s": 8.01,
+      "e": 8.15,
       "shot": 5
     },
     {
       "w": "once.",
-      "s": 12.333,
-      "e": 12.64,
+      "s": 8.15,
+      "e": 8.45,
       "shot": 5
     },
     {
       "w": "Five",
-      "s": 12.924,
-      "e": 13.231,
+      "s": 8.81,
+      "e": 8.97,
       "shot": 6
     },
     {
       "w": "percent.",
-      "s": 13.265,
-      "e": 13.651,
+      "s": 8.97,
+      "e": 9.25,
       "shot": 6
     },
     {
       "w": "I",
-      "s": 13.944,
-      "e": 14.171,
+      "s": 9.69,
+      "e": 9.77,
       "shot": 6
     },
     {
       "w": "called",
-      "s": 14.196,
-      "e": 14.556,
+      "s": 9.77,
+      "e": 9.95,
       "shot": 6
     },
     {
       "w": "Mom.",
-      "s": 14.596,
-      "e": 14.876,
+      "s": 9.95,
+      "e": 10.19,
       "shot": 6
     },
     {
       "w": "It",
-      "s": 15.157,
-      "e": 15.411,
+      "s": 10.57,
+      "e": 10.67,
       "shot": 7
     },
     {
       "w": "rang.",
-      "s": 15.439,
-      "e": 15.746,
+      "s": 10.67,
+      "e": 10.93,
       "shot": 7
     },
     {
       "w": "And",
-      "s": 16.03,
-      "e": 16.31,
+      "s": 11.37,
+      "e": 11.47,
       "shot": 7
     },
     {
       "w": "rang.",
-      "s": 16.341,
-      "e": 16.647,
+      "s": 11.47,
+      "e": 11.75,
       "shot": 7
     },
     {
       "w": "\"Bug?",
-      "s": 16.931,
-      "e": 17.211,
+      "s": 12.21,
+      "e": 12.37,
       "shot": 8
     },
     {
       "w": "Honey,",
-      "s": 17.493,
-      "e": 17.826,
+      "s": 12.75,
+      "e": 12.97,
       "shot": 8
     },
     {
       "w": "the",
-      "s": 17.963,
-      "e": 18.243,
+      "s": 13.15,
+      "e": 13.23,
       "shot": 8
     },
     {
       "w": "lights",
-      "s": 18.274,
-      "e": 18.634,
+      "s": 13.23,
+      "e": 13.37,
       "shot": 8
     },
     {
       "w": "went",
-      "s": 18.674,
-      "e": 18.981,
+      "s": 13.37,
+      "e": 13.53,
       "shot": 8
     },
     {
       "w": "out",
-      "s": 19.015,
-      "e": 19.295,
+      "s": 13.53,
+      "e": 13.65,
       "shot": 8
     },
     {
       "w": "at",
-      "s": 19.326,
-      "e": 19.579,
+      "s": 13.65,
+      "e": 13.73,
       "shot": 8
     },
     {
       "w": "the",
-      "s": 19.607,
-      "e": 19.887,
+      "s": 13.73,
+      "e": 13.81,
       "shot": 8
     },
     {
       "w": "restaurant.",
-      "s": 19.919,
-      "e": 20.385,
+      "s": 13.81,
+      "e": 14.15,
       "shot": 8
     },
     {
       "w": "Dad",
-      "s": 20.687,
-      "e": 20.967,
+      "s": 14.57,
+      "e": 14.59,
       "shot": 9
     },
     {
       "w": "and",
-      "s": 20.998,
-      "e": 21.278,
+      "s": 14.59,
+      "e": 14.71,
       "shot": 9
     },
     {
       "w": "I",
-      "s": 21.309,
-      "e": 21.536,
+      "s": 14.71,
+      "e": 14.81,
       "shot": 9
     },
     {
       "w": "are",
-      "s": 21.561,
-      "e": 21.841,
+      "s": 14.81,
+      "e": 14.89,
       "shot": 9
     },
     {
       "w": "stuck",
-      "s": 21.872,
-      "e": 22.206,
+      "s": 14.89,
+      "e": 15.07,
       "shot": 9
     },
     {
       "w": "here",
-      "s": 22.243,
-      "e": 22.549,
+      "s": 15.07,
+      "e": 15.23,
       "shot": 9
     },
     {
       "w": "till",
-      "s": 22.583,
-      "e": 22.89,
+      "s": 15.23,
+      "e": 15.35,
       "shot": 9
     },
     {
       "w": "morning.",
-      "s": 22.924,
-      "e": 23.311,
+      "s": 15.35,
+      "e": 15.55,
       "shot": 9
     },
     {
       "w": "Are",
-      "s": 23.604,
-      "e": 23.884,
+      "s": 15.99,
+      "e": 16.01,
       "shot": 9
     },
     {
       "w": "you",
-      "s": 23.915,
-      "e": 24.195,
+      "s": 16.01,
+      "e": 16.11,
       "shot": 9
     },
     {
       "w": "inside?",
-      "s": 24.226,
-      "e": 24.586,
+      "s": 16.11,
+      "e": 16.37,
       "shot": 9
     },
     {
       "w": "Is",
-      "s": 24.876,
-      "e": 25.129,
+      "s": 16.71,
+      "e": 16.85,
       "shot": 9
     },
     {
       "w": "the",
-      "s": 25.157,
-      "e": 25.437,
+      "s": 16.85,
+      "e": 16.95,
       "shot": 9
     },
     {
       "w": "door",
-      "s": 25.469,
-      "e": 25.775,
+      "s": 16.95,
+      "e": 17.09,
       "shot": 9
     },
     {
       "w": "locked?\"",
-      "s": 25.809,
-      "e": 26.169,
+      "s": 17.09,
+      "e": 17.27,
       "shot": 9
     },
     {
       "w": "I",
-      "s": 26.209,
-      "e": 26.436,
+      "s": 17.69,
+      "e": 17.77,
       "shot": 10
     },
     {
       "w": "looked",
-      "s": 26.461,
-      "e": 26.821,
+      "s": 17.77,
+      "e": 17.89,
       "shot": 10
     },
     {
       "w": "at",
-      "s": 26.861,
-      "e": 27.114,
+      "s": 17.89,
+      "e": 18.01,
       "shot": 10
     },
     {
       "w": "the",
-      "s": 27.143,
-      "e": 27.423,
+      "s": 18.01,
+      "e": 18.11,
       "shot": 10
     },
     {
       "w": "front",
-      "s": 27.454,
-      "e": 27.787,
+      "s": 18.11,
+      "e": 18.25,
       "shot": 10
     },
     {
       "w": "door.",
-      "s": 27.824,
-      "e": 28.131,
+      "s": 18.25,
+      "e": 18.49,
       "shot": 10
     },
     {
       "w": "Then",
-      "s": 28.415,
-      "e": 28.721,
+      "s": 18.89,
+      "e": 18.97,
       "shot": 11
     },
     {
       "w": "the",
-      "s": 28.756,
-      "e": 29.036,
+      "s": 18.97,
+      "e": 19.07,
       "shot": 11
     },
     {
       "w": "back",
-      "s": 29.067,
-      "e": 29.373,
+      "s": 19.07,
+      "e": 19.23,
       "shot": 11
     },
     {
       "w": "door.",
-      "s": 29.407,
-      "e": 29.714,
+      "s": 19.23,
+      "e": 19.41,
       "shot": 11
     },
     {
       "w": "If",
-      "s": 29.998,
-      "e": 30.251,
+      "s": 19.8,
+      "e": 19.9,
       "shot": 12
     },
     {
       "w": "Mom",
-      "s": 30.28,
-      "e": 30.56,
+      "s": 19.9,
+      "e": 20.1,
       "shot": 12
     },
     {
       "w": "and",
-      "s": 30.591,
-      "e": 30.871,
+      "s": 20.1,
+      "e": 20.3,
       "shot": 12
     },
     {
       "w": "Dad",
-      "s": 30.902,
-      "e": 31.182,
+      "s": 20.3,
+      "e": 20.4,
       "shot": 12
     },
     {
       "w": "were",
-      "s": 31.213,
-      "e": 31.52,
+      "s": 20.4,
+      "e": 20.5,
       "shot": 12
     },
     {
       "w": "at",
-      "s": 31.554,
-      "e": 31.807,
+      "s": 20.5,
+      "e": 20.6,
       "shot": 12
     },
     {
       "w": "the",
-      "s": 31.835,
-      "e": 32.115,
+      "s": 20.6,
+      "e": 20.7,
       "shot": 12
     },
     {
       "w": "restaurant...",
-      "s": 32.146,
-      "e": 32.613,
+      "s": 20.7,
+      "e": 21.3,
       "shot": 12
     },
     {
       "w": "then",
-      "s": 32.915,
-      "e": 33.221,
+      "s": 21.4,
+      "e": 21.5,
       "shot": 13
     },
     {
       "w": "who",
-      "s": 33.256,
-      "e": 33.536,
+      "s": 21.5,
+      "e": 21.7,
       "shot": 13
     },
     {
       "w": "was",
-      "s": 33.567,
-      "e": 33.847,
+      "s": 21.7,
+      "e": 21.8,
       "shot": 13
     },
     {
       "w": "outside?",
-      "s": 33.878,
-      "e": 34.264,
+      "s": 21.8,
+      "e": 22.400000000000002,
       "shot": 13
     },
     {
       "w": "Both",
-      "s": 34.557,
-      "e": 34.864,
+      "s": 22.7,
+      "e": 22.8,
       "shot": 14
     },
     {
       "w": "doors",
-      "s": 34.898,
-      "e": 35.231,
+      "s": 22.8,
+      "e": 23.1,
       "shot": 14
     },
     {
       "w": "went",
-      "s": 35.269,
-      "e": 35.575,
+      "s": 23.1,
+      "e": 23.3,
       "shot": 14
     },
     {
       "w": "silent.",
-      "s": 35.609,
-      "e": 35.969,
+      "s": 23.3,
+      "e": 23.900000000000002,
       "shot": 14
     },
     {
       "w": "Then",
-      "s": 36.259,
-      "e": 36.566,
+      "s": 24.06,
+      "e": 24.2,
       "shot": 15
     },
     {
       "w": "something",
-      "s": 36.6,
-      "e": 37.04,
+      "s": 24.2,
+      "e": 24.46,
       "shot": 15
     },
     {
       "w": "knocked",
-      "s": 37.089,
-      "e": 37.476,
+      "s": 24.46,
+      "e": 24.76,
       "shot": 15
     },
     {
       "w": "on",
-      "s": 37.519,
-      "e": 37.772,
+      "s": 24.76,
+      "e": 24.94,
       "shot": 15
     },
     {
       "w": "the",
-      "s": 37.8,
-      "e": 38.08,
+      "s": 24.94,
+      "e": 25.0,
       "shot": 15
     },
     {
       "w": "kitchen",
-      "s": 38.111,
-      "e": 38.498,
+      "s": 25.0,
+      "e": 25.18,
       "shot": 15
     },
     {
       "w": "window.",
-      "s": 38.541,
-      "e": 38.901,
+      "s": 25.18,
+      "e": 25.48,
       "shot": 15
     },
     {
       "w": "Right",
-      "s": 39.191,
-      "e": 39.524,
+      "s": 25.7,
+      "e": 25.92,
       "shot": 16
     },
     {
       "w": "next",
-      "s": 39.561,
-      "e": 39.868,
+      "s": 25.92,
+      "e": 26.14,
       "shot": 16
     },
     {
       "w": "to",
-      "s": 39.902,
-      "e": 40.155,
+      "s": 26.14,
+      "e": 26.3,
       "shot": 16
     },
     {
       "w": "me.",
-      "s": 40.183,
-      "e": 40.437,
+      "s": 26.3,
+      "e": 26.42,
       "shot": 16
     },
     {
       "w": "\"Bug,\"",
-      "s": 40.715,
-      "e": 40.995,
+      "s": 26.9,
+      "e": 27.1,
       "shot": 17
     },
     {
       "w": "it",
-      "s": 41.026,
-      "e": 41.279,
+      "s": 27.1,
+      "e": 27.2,
       "shot": 17
     },
     {
       "w": "said,",
-      "s": 41.307,
-      "e": 41.614,
+      "s": 27.2,
+      "e": 27.4,
       "shot": 17
     },
     {
       "w": "in",
-      "s": 41.748,
-      "e": 42.001,
+      "s": 27.4,
+      "e": 27.7,
       "shot": 17
     },
     {
       "w": "Mom's",
-      "s": 42.03,
-      "e": 42.363,
+      "s": 27.7,
+      "e": 27.9,
       "shot": 17
     },
     {
       "w": "voice.",
-      "s": 42.4,
-      "e": 42.733,
+      "s": 27.9,
+      "e": 28.5,
       "shot": 17
     },
     {
       "w": "\"Who",
-      "s": 43.02,
-      "e": 43.3,
+      "s": 28.5,
+      "e": 28.6,
       "shot": 17
     },
     {
       "w": "are",
-      "s": 43.331,
-      "e": 43.611,
+      "s": 28.6,
+      "e": 28.65,
       "shot": 17
     },
     {
       "w": "you",
-      "s": 43.643,
-      "e": 43.923,
+      "s": 28.65,
+      "e": 28.7,
       "shot": 17
     },
     {
       "w": "talking",
-      "s": 43.954,
-      "e": 44.34,
+      "s": 28.7,
+      "e": 28.9,
       "shot": 17
     },
     {
       "w": "to?\"",
-      "s": 44.383,
-      "e": 44.637,
+      "s": 28.9,
+      "e": 29.2,
       "shot": 17
     },
     {
       "w": "I",
-      "s": 44.665,
-      "e": 44.891,
+      "s": 29.2,
+      "e": 29.6,
       "shot": 18
     },
     {
       "w": "didn't",
-      "s": 44.917,
-      "e": 45.277,
+      "s": 29.6,
+      "e": 30.08,
       "shot": 18
     },
     {
       "w": "answer.",
-      "s": 45.317,
-      "e": 45.677,
+      "s": 30.08,
+      "e": 30.08,
       "shot": 18
     },
     {
       "w": "I",
-      "s": 45.967,
-      "e": 46.193,
+      "s": 30.08,
+      "e": 30.5,
       "shot": 19
     },
     {
       "w": "held",
-      "s": 46.219,
-      "e": 46.525,
+      "s": 30.5,
+      "e": 30.64,
       "shot": 19
     },
     {
       "w": "the",
-      "s": 46.559,
-      "e": 46.839,
+      "s": 30.64,
+      "e": 30.76,
       "shot": 19
     },
     {
       "w": "phone",
-      "s": 46.87,
-      "e": 47.204,
+      "s": 30.76,
+      "e": 30.94,
       "shot": 19
     },
     {
       "w": "against",
-      "s": 47.241,
-      "e": 47.627,
+      "s": 30.94,
+      "e": 31.12,
       "shot": 19
     },
     {
       "w": "my",
-      "s": 47.67,
-      "e": 47.924,
+      "s": 31.12,
+      "e": 31.32,
       "shot": 19
     },
     {
       "w": "chest.",
-      "s": 47.952,
-      "e": 48.285,
+      "s": 31.32,
+      "e": 31.64,
       "shot": 19
     },
     {
       "w": "Mom",
-      "s": 48.572,
-      "e": 48.852,
+      "s": 31.64,
+      "e": 32.08,
       "shot": 20
     },
     {
       "w": "whispered,",
-      "s": 48.883,
-      "e": 49.323,
+      "s": 32.08,
+      "e": 32.36,
       "shot": 20
     },
     {
       "w": "\"Don't",
-      "s": 49.472,
-      "e": 49.806,
+      "s": 32.36,
+      "e": 32.9,
       "shot": 20
     },
     {
       "w": "answer,",
-      "s": 49.843,
-      "e": 50.203,
+      "s": 32.9,
+      "e": 33.12,
       "shot": 20
     },
     {
       "w": "bug.",
-      "s": 50.343,
-      "e": 50.623,
+      "s": 33.12,
+      "e": 33.36,
       "shot": 20
     },
     {
       "w": "I'm",
-      "s": 50.904,
-      "e": 51.184,
+      "s": 33.36,
+      "e": 33.7,
       "shot": 20
     },
     {
       "w": "right",
-      "s": 51.215,
-      "e": 51.548,
+      "s": 33.7,
+      "e": 33.82,
       "shot": 20
     },
     {
       "w": "here.\"",
-      "s": 51.585,
-      "e": 51.892,
+      "s": 33.82,
+      "e": 34.1,
       "shot": 20
     },
     {
       "w": "She",
-      "s": 51.926,
-      "e": 52.206,
+      "s": 34.0,
+      "e": 34.5,
       "shot": 21
     },
     {
       "w": "stayed",
-      "s": 52.237,
-      "e": 52.597,
+      "s": 34.5,
+      "e": 34.7,
       "shot": 21
     },
     {
       "w": "on",
-      "s": 52.637,
-      "e": 52.89,
+      "s": 34.7,
+      "e": 34.9,
       "shot": 21
     },
     {
       "w": "the",
-      "s": 52.919,
-      "e": 53.199,
+      "s": 34.9,
+      "e": 35.0,
       "shot": 21
     },
     {
       "w": "line",
-      "s": 53.23,
-      "e": 53.536,
+      "s": 35.0,
+      "e": 35.2,
       "shot": 21
     },
     {
       "w": "all",
-      "s": 53.57,
-      "e": 53.85,
+      "s": 35.2,
+      "e": 35.4,
       "shot": 21
     },
     {
       "w": "night.",
-      "s": 53.881,
-      "e": 54.215,
+      "s": 35.4,
+      "e": 35.7,
       "shot": 21
     },
     {
       "w": "At",
-      "s": 54.502,
-      "e": 54.755,
+      "s": 35.7,
+      "e": 36.1,
       "shot": 22
     },
     {
       "w": "six,",
-      "s": 54.783,
-      "e": 55.063,
+      "s": 36.1,
+      "e": 36.4,
       "shot": 22
     },
     {
       "w": "the",
-      "s": 55.194,
-      "e": 55.474,
+      "s": 36.4,
+      "e": 36.7,
       "shot": 22
     },
     {
       "w": "streetlights",
-      "s": 55.506,
-      "e": 56.026,
+      "s": 36.7,
+      "e": 37.0,
       "shot": 22
     },
     {
       "w": "flickered",
-      "s": 56.083,
-      "e": 56.523,
+      "s": 37.0,
+      "e": 37.3,
       "shot": 22
     },
     {
       "w": "back",
-      "s": 56.572,
-      "e": 56.879,
+      "s": 37.3,
+      "e": 37.6,
       "shot": 22
     },
     {
       "w": "on.",
-      "s": 56.913,
-      "e": 57.166,
+      "s": 37.6,
+      "e": 37.8,
       "shot": 22
     },
     {
       "w": "The",
-      "s": 57.444,
-      "e": 57.724,
+      "s": 37.8,
+      "e": 38.2,
       "shot": 23
     },
     {
       "w": "knocking",
-      "s": 57.756,
-      "e": 58.169,
+      "s": 38.2,
+      "e": 38.4,
       "shot": 23
     },
     {
       "w": "stopped.",
-      "s": 58.215,
-      "e": 58.601,
+      "s": 38.4,
+      "e": 38.7,
       "shot": 23
     },
     {
       "w": "The",
-      "s": 58.894,
-      "e": 59.174,
+      "s": 38.7,
+      "e": 39.2,
       "shot": 23
     },
     {
       "w": "house",
-      "s": 59.206,
-      "e": 59.539,
+      "s": 39.2,
+      "e": 39.3,
       "shot": 23
     },
     {
       "w": "was",
-      "s": 59.576,
-      "e": 59.856,
+      "s": 39.3,
+      "e": 39.5,
       "shot": 23
     },
     {
       "w": "quiet.",
-      "s": 59.887,
-      "e": 60.22,
+      "s": 39.5,
+      "e": 39.8,
       "shot": 23
     },
     {
       "w": "Too",
-      "s": 60.507,
-      "e": 60.787,
+      "s": 40.27,
+      "e": 40.33,
       "shot": 23
     },
     {
       "w": "quiet.",
-      "s": 60.819,
-      "e": 61.152,
+      "s": 40.33,
+      "e": 40.69,
       "shot": 23
     },
     {
       "w": "On",
-      "s": 61.439,
-      "e": 61.692,
+      "s": 41.13,
+      "e": 41.15,
       "shot": 24
     },
     {
       "w": "the",
-      "s": 61.72,
-      "e": 62.0,
+      "s": 41.15,
+      "e": 41.25,
       "shot": 24
     },
     {
       "w": "kitchen",
-      "s": 62.031,
-      "e": 62.418,
+      "s": 41.25,
+      "e": 41.41,
       "shot": 24
     },
     {
       "w": "window,",
-      "s": 62.461,
-      "e": 62.821,
+      "s": 41.41,
+      "e": 41.71,
       "shot": 24
     },
     {
       "w": "there",
-      "s": 62.961,
-      "e": 63.294,
+      "s": 42.03,
+      "e": 42.03,
       "shot": 24
     },
     {
       "w": "were",
-      "s": 63.331,
-      "e": 63.638,
+      "s": 42.03,
+      "e": 42.13,
       "shot": 24
     },
     {
       "w": "handprints.",
-      "s": 63.672,
-      "e": 64.139,
+      "s": 42.13,
+      "e": 42.59,
       "shot": 24
     },
     {
       "w": "Three",
-      "s": 64.441,
-      "e": 64.774,
+      "s": 42.95,
+      "e": 43.05,
       "shot": 24
     },
     {
       "w": "of",
-      "s": 64.811,
-      "e": 65.064,
+      "s": 43.05,
+      "e": 43.17,
       "shot": 24
     },
     {
       "w": "them.",
-      "s": 65.093,
-      "e": 65.399,
+      "s": 43.17,
+      "e": 43.29,
       "shot": 24
     },
     {
       "w": "I",
-      "s": 65.683,
-      "e": 65.91,
+      "s": 43.56,
+      "e": 43.7,
       "shot": 25
     },
     {
       "w": "touched",
-      "s": 65.935,
-      "e": 66.322,
+      "s": 43.7,
+      "e": 43.86,
       "shot": 25
     },
     {
       "w": "the",
-      "s": 66.365,
-      "e": 66.645,
+      "s": 43.86,
+      "e": 44.02,
       "shot": 25
     },
     {
       "w": "glass.",
-      "s": 66.676,
-      "e": 67.009,
+      "s": 44.02,
+      "e": 44.28,
       "shot": 25
     },
     {
       "w": "They",
-      "s": 67.296,
-      "e": 67.603,
+      "s": 44.68,
+      "e": 44.7,
       "shot": 25
     },
     {
       "w": "didn't",
-      "s": 67.637,
-      "e": 67.997,
+      "s": 44.7,
+      "e": 44.96,
       "shot": 25
     },
     {
       "w": "smear.",
-      "s": 68.037,
-      "e": 68.37,
+      "s": 44.96,
+      "e": 45.16,
       "shot": 25
     },
     {
       "w": "They",
-      "s": 68.657,
-      "e": 68.964,
+      "s": 45.56,
+      "e": 45.62,
       "shot": 26
     },
     {
       "w": "were",
-      "s": 68.998,
-      "e": 69.305,
+      "s": 45.62,
+      "e": 45.74,
       "shot": 26
     },
     {
       "w": "on",
-      "s": 69.339,
-      "e": 69.592,
+      "s": 45.74,
+      "e": 45.88,
       "shot": 26
     },
     {
       "w": "the",
-      "s": 69.62,
-      "e": 69.9,
+      "s": 45.88,
+      "e": 46.02,
       "shot": 26
     },
     {
       "w": "inside.",
-      "s": 69.931,
-      "e": 70.291,
+      "s": 46.02,
+      "e": 46.46,
       "shot": 26
     },
     {
       "w": "Then,",
-      "s": 70.581,
-      "e": 70.888,
+      "s": 46.98,
+      "e": 47.1,
       "shot": 27
     },
     {
       "w": "from",
-      "s": 71.022,
-      "e": 71.329,
+      "s": 47.2,
+      "e": 47.4,
       "shot": 27
     },
     {
       "w": "upstairs,",
-      "s": 71.363,
-      "e": 71.776,
+      "s": 47.4,
+      "e": 47.74,
       "shot": 27
     },
     {
       "w": "in",
-      "s": 71.922,
-      "e": 72.176,
+      "s": 48.06,
+      "e": 48.14,
       "shot": 27
     },
     {
       "w": "Mom's",
-      "s": 72.204,
-      "e": 72.537,
+      "s": 48.14,
+      "e": 48.4,
       "shot": 27
     },
     {
       "w": "voice:",
-      "s": 72.574,
-      "e": 72.907,
+      "s": 48.4,
+      "e": 48.6,
       "shot": 27
     },
     {
       "w": "\"Bug?",
-      "s": 73.044,
-      "e": 73.324,
+      "s": 49.06,
+      "e": 49.12,
       "shot": 28
     },
     {
       "w": "Come",
-      "s": 73.606,
-      "e": 73.912,
+      "s": 49.4,
+      "e": 49.52,
       "shot": 28
     },
     {
       "w": "up",
-      "s": 73.946,
-      "e": 74.2,
+      "s": 49.52,
+      "e": 49.66,
       "shot": 28
     },
     {
       "w": "here.",
-      "s": 74.228,
-      "e": 74.534,
+      "s": 49.66,
+      "e": 49.82,
       "shot": 28
     },
     {
       "w": "I",
-      "s": 74.819,
-      "e": 75.045,
+      "s": 50.06,
+      "e": 50.1,
       "shot": 28
     },
     {
       "w": "want",
-      "s": 75.07,
-      "e": 75.377,
+      "s": 50.1,
+      "e": 50.18,
       "shot": 28
     },
     {
       "w": "to",
-      "s": 75.411,
-      "e": 75.664,
+      "s": 50.18,
+      "e": 50.26,
       "shot": 28
     },
     {
       "w": "show",
-      "s": 75.693,
-      "e": 75.999,
+      "s": 50.26,
+      "e": 50.38,
       "shot": 28
     },
     {
       "w": "you",
-      "s": 76.033,
-      "e": 76.313,
+      "s": 50.38,
+      "e": 50.48,
       "shot": 28
     },
     {
       "w": "something.\"",
-      "s": 76.344,
-      "e": 76.784,
+      "s": 50.48,
+      "e": 50.7,
       "shot": 28
     },
     {
       "w": "Mom",
-      "s": 76.833,
-      "e": 77.113,
+      "s": 51.14,
+      "e": 51.24,
       "shot": 29
     },
     {
       "w": "was",
-      "s": 77.144,
-      "e": 77.424,
+      "s": 51.24,
+      "e": 51.4,
       "shot": 29
     },
     {
       "w": "still",
-      "s": 77.456,
-      "e": 77.789,
+      "s": 51.4,
+      "e": 51.58,
       "shot": 29
     },
     {
       "w": "on",
-      "s": 77.826,
-      "e": 78.079,
+      "s": 51.58,
+      "e": 51.7,
       "shot": 29
     },
     {
       "w": "the",
-      "s": 78.107,
-      "e": 78.387,
+      "s": 51.7,
+      "e": 51.8,
       "shot": 29
     },
     {
       "w": "phone.",
-      "s": 78.419,
-      "e": 78.752,
+      "s": 51.8,
+      "e": 52.02,
       "shot": 29
     }
   ],
@@ -1608,5 +1608,110 @@
   },
   "ambience": [],
   "sfx": [],
-  "override": {}
+  "override": {
+    "music": {
+      "file": "output/music/TEMPOREX_-_Numbers_Instrumental_loop.mp3",
+      "db": -10
+    },
+    "sfx_auto": false,
+    "sfx_extra": [
+      {
+        "sfx": "click",
+        "shot": 3,
+        "at": 0.8,
+        "db": -15
+      },
+      {
+        "sfx": "door_knock",
+        "shot": 5,
+        "at": 0.1,
+        "db": -9
+      },
+      {
+        "sfx": "rumble",
+        "shot": 5,
+        "at": 0.1,
+        "db": -14,
+        "dur": 1.4
+      },
+      {
+        "sfx": "monitor_beep",
+        "shot": 7,
+        "at": 0.0,
+        "db": -16
+      },
+      {
+        "sfx": "heartbeat",
+        "shot": 12,
+        "at": 0.0,
+        "db": -12
+      },
+      {
+        "sfx": "impact",
+        "shot": 13,
+        "at": 0.4,
+        "db": -11
+      },
+      {
+        "sfx": "door_knock",
+        "shot": 15,
+        "at": 0.2,
+        "db": -10
+      },
+      {
+        "sfx": "impact",
+        "shot": 16,
+        "at": 0.1,
+        "db": -14
+      },
+      {
+        "sfx": "heartbeat",
+        "shot": 18,
+        "at": 0.0,
+        "db": -12
+      },
+      {
+        "sfx": "magic_shimmer",
+        "shot": 21,
+        "at": 0.2,
+        "db": -21
+      },
+      {
+        "sfx": "click",
+        "shot": 22,
+        "at": 0.3,
+        "db": -15
+      },
+      {
+        "sfx": "riser",
+        "shot": 25,
+        "at": 0.0,
+        "db": -17
+      },
+      {
+        "sfx": "impact",
+        "shot": 26,
+        "at": 0.2,
+        "db": -9
+      },
+      {
+        "sfx": "heartbeat",
+        "shot": 27,
+        "at": 0.0,
+        "db": -11
+      },
+      {
+        "sfx": "riser",
+        "shot": 28,
+        "at": 0.0,
+        "db": -15
+      },
+      {
+        "sfx": "impact",
+        "shot": 29,
+        "at": 0.6,
+        "db": -8
+      }
+    ]
+  }
 }
