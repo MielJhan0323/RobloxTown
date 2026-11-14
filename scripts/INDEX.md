@@ -10,4 +10,4 @@ Tell laptop Claude: **"record <slug>"**. Each script is `scripts/<slug>.md`.
 | nothing-happens | Completely Normal | done (Blender, Titan voice, UFO ending) |
 | five-seconds | The Last Pickle | done (Blender, Titan voice, 1:27) |
 | closet-monster | The Monster in My Closet | done (Titan voice, 1:30) |
-| the-knock | The Knock (Part 1) | script approved; animating (user supplies voice) |
+| the-knock | The Knock (Part 1) | done (user voice, 0:53) |
