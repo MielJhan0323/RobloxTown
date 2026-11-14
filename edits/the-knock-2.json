@@ -1,0 +1,1772 @@
+{
+  "slug": "the-knock-2",
+  "title": "The Knock (Part 2)",
+  "timing": "estimated",
+  "voice": null,
+  "duration": 87.634,
+  "shots": [
+    {
+      "n": 1,
+      "text": "You told me not to open either door.",
+      "start": 0.0,
+      "end": 3.157,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 3.157
+    },
+    {
+      "n": 2,
+      "text": "So I didn't.",
+      "start": 3.157,
+      "end": 4.341,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 1.184
+    },
+    {
+      "n": 3,
+      "text": "I crawled to the kitchen and plugged in my phone.",
+      "start": 4.341,
+      "end": 7.969,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 3.628
+    },
+    {
+      "n": 4,
+      "text": "Three percent. Four.",
+      "start": 7.969,
+      "end": 9.609,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 1.64
+    },
+    {
+      "n": 5,
+      "text": "The knocking got louder. Both doors at once.",
+      "start": 9.609,
+      "end": 12.924,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 3.315
+    },
+    {
+      "n": 6,
+      "text": "Five percent. I called Mom.",
+      "start": 12.924,
+      "end": 15.157,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 2.233
+    },
+    {
+      "n": 7,
+      "text": "It rang. And rang.",
+      "start": 15.157,
+      "end": 16.931,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 1.774
+    },
+    {
+      "n": 8,
+      "text": "\"Bug? Honey, the lights went out at the restaurant.\"",
+      "start": 16.931,
+      "end": 20.437,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 3.506
+    },
+    {
+      "n": 9,
+      "text": "\"Dad and I are stuck here till morning. Are you inside? Is the door locked?\"",
+      "start": 20.437,
+      "end": 25.959,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 5.522
+    },
+    {
+      "n": 10,
+      "text": "I looked at the front door.",
+      "start": 25.959,
+      "end": 28.165,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 2.206
+    },
+    {
+      "n": 11,
+      "text": "Then the back door.",
+      "start": 28.165,
+      "end": 29.748,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 1.583
+    },
+    {
+      "n": 12,
+      "text": "If Mom and Dad were at the restaurant...",
+      "start": 29.748,
+      "end": 32.665,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 2.917
+    },
+    {
+      "n": 13,
+      "text": "then who was outside?",
+      "start": 32.665,
+      "end": 34.307,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 1.642
+    },
+    {
+      "n": 14,
+      "text": "Both doors went silent.",
+      "start": 34.307,
+      "end": 36.009,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 1.702
+    },
+    {
+      "n": 15,
+      "text": "Then something knocked on the kitchen window.",
+      "start": 36.009,
+      "end": 38.941,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 2.932
+    },
+    {
+      "n": 16,
+      "text": "Right next to me.",
+      "start": 38.941,
+      "end": 40.465,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 1.524
+    },
+    {
+      "n": 17,
+      "text": "\"Bug,\" it said, in Mom's voice. \"Who are you talking to?\"",
+      "start": 40.465,
+      "end": 44.415,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 3.95
+    },
+    {
+      "n": 18,
+      "text": "I didn't answer. I didn't breathe.",
+      "start": 44.415,
+      "end": 47.048,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 2.633
+    },
+    {
+      "n": 19,
+      "text": "I held the phone against my chest.",
+      "start": 47.048,
+      "end": 49.654,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 2.606
+    },
+    {
+      "n": 20,
+      "text": "Mom stayed on the line all night.",
+      "start": 49.654,
+      "end": 52.23,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 2.576
+    },
+    {
+      "n": 21,
+      "text": "She told me stories. She hummed.",
+      "start": 52.23,
+      "end": 54.804,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 2.574
+    },
+    {
+      "n": 22,
+      "text": "Every time something knocked, she said, \"Don't answer, bug. I'm right here.\"",
+      "start": 54.804,
+      "end": 59.739,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 4.935
+    },
+    {
+      "n": 23,
+      "text": "At six a.m., the streetlights flickered back on.",
+      "start": 59.739,
+      "end": 62.963,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 3.224
+    },
+    {
+      "n": 24,
+      "text": "The knocking stopped.",
+      "start": 62.963,
+      "end": 64.413,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 1.45
+    },
+    {
+      "n": 25,
+      "text": "At seven, Mom and Dad pulled into the driveway.",
+      "start": 64.413,
+      "end": 67.859,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 3.446
+    },
+    {
+      "n": 26,
+      "text": "Before I opened the door, I made Mom say one thing a Knocker couldn't have heard today.",
+      "start": 67.859,
+      "end": 74.031,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 6.172
+    },
+    {
+      "n": 27,
+      "text": "She smiled. \"I love you more than the whole sky.\"",
+      "start": 74.031,
+      "end": 77.57,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 3.539
+    },
+    {
+      "n": 28,
+      "text": "She says it every morning. Never at night.",
+      "start": 77.57,
+      "end": 80.826,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 3.256
+    },
+    {
+      "n": 29,
+      "text": "I opened the door.",
+      "start": 80.826,
+      "end": 82.38,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 1.554
+    },
+    {
+      "n": 30,
+      "text": "But the kitchen window still has handprints.",
+      "start": 82.38,
+      "end": 85.281,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 2.901
+    },
+    {
+      "n": 31,
+      "text": "On the inside.",
+      "start": 85.281,
+      "end": 87.634,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "1.8",
+      "override": {},
+      "dur": 2.353
+    }
+  ],
+  "words": [
+    {
+      "w": "You",
+      "s": 0.3,
+      "e": 0.58,
+      "shot": 1
+    },
+    {
+      "w": "told",
+      "s": 0.611,
+      "e": 0.918,
+      "shot": 1
+    },
+    {
+      "w": "me",
+      "s": 0.952,
+      "e": 1.205,
+      "shot": 1
+    },
+    {
+      "w": "not",
+      "s": 1.233,
+      "e": 1.513,
+      "shot": 1
+    },
+    {
+      "w": "to",
+      "s": 1.544,
+      "e": 1.798,
+      "shot": 1
+    },
+    {
+      "w": "open",
+      "s": 1.826,
+      "e": 2.133,
+      "shot": 1
+    },
+    {
+      "w": "either",
+      "s": 2.167,
+      "e": 2.527,
+      "shot": 1
+    },
+    {
+      "w": "door.",
+      "s": 2.567,
+      "e": 2.873,
+      "shot": 1
+    },
+    {
+      "w": "So",
+      "s": 3.157,
+      "e": 3.411,
+      "shot": 2
+    },
+    {
+      "w": "I",
+      "s": 3.439,
+      "e": 3.666,
+      "shot": 2
+    },
+    {
+      "w": "didn't.",
+      "s": 3.691,
+      "e": 4.051,
+      "shot": 2
+    },
+    {
+      "w": "I",
+      "s": 4.341,
+      "e": 4.567,
+      "shot": 3
+    },
+    {
+      "w": "crawled",
+      "s": 4.593,
+      "e": 4.979,
+      "shot": 3
+    },
+    {
+      "w": "to",
+      "s": 5.022,
+      "e": 5.276,
+      "shot": 3
+    },
+    {
+      "w": "the",
+      "s": 5.304,
+      "e": 5.584,
+      "shot": 3
+    },
+    {
+      "w": "kitchen",
+      "s": 5.615,
+      "e": 6.001,
+      "shot": 3
+    },
+    {
+      "w": "and",
+      "s": 6.044,
+      "e": 6.324,
+      "shot": 3
+    },
+    {
+      "w": "plugged",
+      "s": 6.356,
+      "e": 6.742,
+      "shot": 3
+    },
+    {
+      "w": "in",
+      "s": 6.785,
+      "e": 7.039,
+      "shot": 3
+    },
+    {
+      "w": "my",
+      "s": 7.067,
+      "e": 7.32,
+      "shot": 3
+    },
+    {
+      "w": "phone.",
+      "s": 7.348,
+      "e": 7.681,
+      "shot": 3
+    },
+    {
+      "w": "Three",
+      "s": 7.969,
+      "e": 8.302,
+      "shot": 4
+    },
+    {
+      "w": "percent.",
+      "s": 8.339,
+      "e": 8.726,
+      "shot": 4
+    },
+    {
+      "w": "Four.",
+      "s": 9.019,
+      "e": 9.325,
+      "shot": 4
+    },
+    {
+      "w": "The",
+      "s": 9.609,
+      "e": 9.889,
+      "shot": 5
+    },
+    {
+      "w": "knocking",
+      "s": 9.92,
+      "e": 10.334,
+      "shot": 5
+    },
+    {
+      "w": "got",
+      "s": 10.38,
+      "e": 10.66,
+      "shot": 5
+    },
+    {
+      "w": "louder.",
+      "s": 10.691,
+      "e": 11.051,
+      "shot": 5
+    },
+    {
+      "w": "Both",
+      "s": 11.341,
+      "e": 11.647,
+      "shot": 5
+    },
+    {
+      "w": "doors",
+      "s": 11.681,
+      "e": 12.015,
+      "shot": 5
+    },
+    {
+      "w": "at",
+      "s": 12.052,
+      "e": 12.305,
+      "shot": 5
+    },
+    {
+      "w": "once.",
+      "s": 12.333,
+      "e": 12.64,
+      "shot": 5
+    },
+    {
+      "w": "Five",
+      "s": 12.924,
+      "e": 13.231,
+      "shot": 6
+    },
+    {
+      "w": "percent.",
+      "s": 13.265,
+      "e": 13.651,
+      "shot": 6
+    },
+    {
+      "w": "I",
+      "s": 13.944,
+      "e": 14.171,
+      "shot": 6
+    },
+    {
+      "w": "called",
+      "s": 14.196,
+      "e": 14.556,
+      "shot": 6
+    },
+    {
+      "w": "Mom.",
+      "s": 14.596,
+      "e": 14.876,
+      "shot": 6
+    },
+    {
+      "w": "It",
+      "s": 15.157,
+      "e": 15.411,
+      "shot": 7
+    },
+    {
+      "w": "rang.",
+      "s": 15.439,
+      "e": 15.746,
+      "shot": 7
+    },
+    {
+      "w": "And",
+      "s": 16.03,
+      "e": 16.31,
+      "shot": 7
+    },
+    {
+      "w": "rang.",
+      "s": 16.341,
+      "e": 16.647,
+      "shot": 7
+    },
+    {
+      "w": "\"Bug?",
+      "s": 16.931,
+      "e": 17.211,
+      "shot": 8
+    },
+    {
+      "w": "Honey,",
+      "s": 17.493,
+      "e": 17.826,
+      "shot": 8
+    },
+    {
+      "w": "the",
+      "s": 17.963,
+      "e": 18.243,
+      "shot": 8
+    },
+    {
+      "w": "lights",
+      "s": 18.274,
+      "e": 18.634,
+      "shot": 8
+    },
+    {
+      "w": "went",
+      "s": 18.674,
+      "e": 18.981,
+      "shot": 8
+    },
+    {
+      "w": "out",
+      "s": 19.015,
+      "e": 19.295,
+      "shot": 8
+    },
+    {
+      "w": "at",
+      "s": 19.326,
+      "e": 19.579,
+      "shot": 8
+    },
+    {
+      "w": "the",
+      "s": 19.607,
+      "e": 19.887,
+      "shot": 8
+    },
+    {
+      "w": "restaurant.\"",
+      "s": 19.919,
+      "e": 20.385,
+      "shot": 8
+    },
+    {
+      "w": "\"Dad",
+      "s": 20.437,
+      "e": 20.717,
+      "shot": 9
+    },
+    {
+      "w": "and",
+      "s": 20.748,
+      "e": 21.028,
+      "shot": 9
+    },
+    {
+      "w": "I",
+      "s": 21.059,
+      "e": 21.286,
+      "shot": 9
+    },
+    {
+      "w": "are",
+      "s": 21.311,
+      "e": 21.591,
+      "shot": 9
+    },
+    {
+      "w": "stuck",
+      "s": 21.622,
+      "e": 21.956,
+      "shot": 9
+    },
+    {
+      "w": "here",
+      "s": 21.993,
+      "e": 22.299,
+      "shot": 9
+    },
+    {
+      "w": "till",
+      "s": 22.333,
+      "e": 22.64,
+      "shot": 9
+    },
+    {
+      "w": "morning.",
+      "s": 22.674,
+      "e": 23.061,
+      "shot": 9
+    },
+    {
+      "w": "Are",
+      "s": 23.354,
+      "e": 23.634,
+      "shot": 9
+    },
+    {
+      "w": "you",
+      "s": 23.665,
+      "e": 23.945,
+      "shot": 9
+    },
+    {
+      "w": "inside?",
+      "s": 23.976,
+      "e": 24.336,
+      "shot": 9
+    },
+    {
+      "w": "Is",
+      "s": 24.626,
+      "e": 24.879,
+      "shot": 9
+    },
+    {
+      "w": "the",
+      "s": 24.907,
+      "e": 25.187,
+      "shot": 9
+    },
+    {
+      "w": "door",
+      "s": 25.219,
+      "e": 25.525,
+      "shot": 9
+    },
+    {
+      "w": "locked?\"",
+      "s": 25.559,
+      "e": 25.919,
+      "shot": 9
+    },
+    {
+      "w": "I",
+      "s": 25.959,
+      "e": 26.186,
+      "shot": 10
+    },
+    {
+      "w": "looked",
+      "s": 26.211,
+      "e": 26.571,
+      "shot": 10
+    },
+    {
+      "w": "at",
+      "s": 26.611,
+      "e": 26.864,
+      "shot": 10
+    },
+    {
+      "w": "the",
+      "s": 26.893,
+      "e": 27.173,
+      "shot": 10
+    },
+    {
+      "w": "front",
+      "s": 27.204,
+      "e": 27.537,
+      "shot": 10
+    },
+    {
+      "w": "door.",
+      "s": 27.574,
+      "e": 27.881,
+      "shot": 10
+    },
+    {
+      "w": "Then",
+      "s": 28.165,
+      "e": 28.471,
+      "shot": 11
+    },
+    {
+      "w": "the",
+      "s": 28.506,
+      "e": 28.786,
+      "shot": 11
+    },
+    {
+      "w": "back",
+      "s": 28.817,
+      "e": 29.123,
+      "shot": 11
+    },
+    {
+      "w": "door.",
+      "s": 29.157,
+      "e": 29.464,
+      "shot": 11
+    },
+    {
+      "w": "If",
+      "s": 29.748,
+      "e": 30.001,
+      "shot": 12
+    },
+    {
+      "w": "Mom",
+      "s": 30.03,
+      "e": 30.31,
+      "shot": 12
+    },
+    {
+      "w": "and",
+      "s": 30.341,
+      "e": 30.621,
+      "shot": 12
+    },
+    {
+      "w": "Dad",
+      "s": 30.652,
+      "e": 30.932,
+      "shot": 12
+    },
+    {
+      "w": "were",
+      "s": 30.963,
+      "e": 31.27,
+      "shot": 12
+    },
+    {
+      "w": "at",
+      "s": 31.304,
+      "e": 31.557,
+      "shot": 12
+    },
+    {
+      "w": "the",
+      "s": 31.585,
+      "e": 31.865,
+      "shot": 12
+    },
+    {
+      "w": "restaurant...",
+      "s": 31.896,
+      "e": 32.363,
+      "shot": 12
+    },
+    {
+      "w": "then",
+      "s": 32.665,
+      "e": 32.971,
+      "shot": 13
+    },
+    {
+      "w": "who",
+      "s": 33.006,
+      "e": 33.286,
+      "shot": 13
+    },
+    {
+      "w": "was",
+      "s": 33.317,
+      "e": 33.597,
+      "shot": 13
+    },
+    {
+      "w": "outside?",
+      "s": 33.628,
+      "e": 34.014,
+      "shot": 13
+    },
+    {
+      "w": "Both",
+      "s": 34.307,
+      "e": 34.614,
+      "shot": 14
+    },
+    {
+      "w": "doors",
+      "s": 34.648,
+      "e": 34.981,
+      "shot": 14
+    },
+    {
+      "w": "went",
+      "s": 35.019,
+      "e": 35.325,
+      "shot": 14
+    },
+    {
+      "w": "silent.",
+      "s": 35.359,
+      "e": 35.719,
+      "shot": 14
+    },
+    {
+      "w": "Then",
+      "s": 36.009,
+      "e": 36.316,
+      "shot": 15
+    },
+    {
+      "w": "something",
+      "s": 36.35,
+      "e": 36.79,
+      "shot": 15
+    },
+    {
+      "w": "knocked",
+      "s": 36.839,
+      "e": 37.226,
+      "shot": 15
+    },
+    {
+      "w": "on",
+      "s": 37.269,
+      "e": 37.522,
+      "shot": 15
+    },
+    {
+      "w": "the",
+      "s": 37.55,
+      "e": 37.83,
+      "shot": 15
+    },
+    {
+      "w": "kitchen",
+      "s": 37.861,
+      "e": 38.248,
+      "shot": 15
+    },
+    {
+      "w": "window.",
+      "s": 38.291,
+      "e": 38.651,
+      "shot": 15
+    },
+    {
+      "w": "Right",
+      "s": 38.941,
+      "e": 39.274,
+      "shot": 16
+    },
+    {
+      "w": "next",
+      "s": 39.311,
+      "e": 39.618,
+      "shot": 16
+    },
+    {
+      "w": "to",
+      "s": 39.652,
+      "e": 39.905,
+      "shot": 16
+    },
+    {
+      "w": "me.",
+      "s": 39.933,
+      "e": 40.187,
+      "shot": 16
+    },
+    {
+      "w": "\"Bug,\"",
+      "s": 40.465,
+      "e": 40.745,
+      "shot": 17
+    },
+    {
+      "w": "it",
+      "s": 40.776,
+      "e": 41.029,
+      "shot": 17
+    },
+    {
+      "w": "said,",
+      "s": 41.057,
+      "e": 41.364,
+      "shot": 17
+    },
+    {
+      "w": "in",
+      "s": 41.498,
+      "e": 41.751,
+      "shot": 17
+    },
+    {
+      "w": "Mom's",
+      "s": 41.78,
+      "e": 42.113,
+      "shot": 17
+    },
+    {
+      "w": "voice.",
+      "s": 42.15,
+      "e": 42.483,
+      "shot": 17
+    },
+    {
+      "w": "\"Who",
+      "s": 42.77,
+      "e": 43.05,
+      "shot": 17
+    },
+    {
+      "w": "are",
+      "s": 43.081,
+      "e": 43.361,
+      "shot": 17
+    },
+    {
+      "w": "you",
+      "s": 43.393,
+      "e": 43.673,
+      "shot": 17
+    },
+    {
+      "w": "talking",
+      "s": 43.704,
+      "e": 44.09,
+      "shot": 17
+    },
+    {
+      "w": "to?\"",
+      "s": 44.133,
+      "e": 44.387,
+      "shot": 17
+    },
+    {
+      "w": "I",
+      "s": 44.415,
+      "e": 44.641,
+      "shot": 18
+    },
+    {
+      "w": "didn't",
+      "s": 44.667,
+      "e": 45.027,
+      "shot": 18
+    },
+    {
+      "w": "answer.",
+      "s": 45.067,
+      "e": 45.427,
+      "shot": 18
+    },
+    {
+      "w": "I",
+      "s": 45.717,
+      "e": 45.943,
+      "shot": 18
+    },
+    {
+      "w": "didn't",
+      "s": 45.969,
+      "e": 46.329,
+      "shot": 18
+    },
+    {
+      "w": "breathe.",
+      "s": 46.369,
+      "e": 46.755,
+      "shot": 18
+    },
+    {
+      "w": "I",
+      "s": 47.048,
+      "e": 47.275,
+      "shot": 19
+    },
+    {
+      "w": "held",
+      "s": 47.3,
+      "e": 47.607,
+      "shot": 19
+    },
+    {
+      "w": "the",
+      "s": 47.641,
+      "e": 47.921,
+      "shot": 19
+    },
+    {
+      "w": "phone",
+      "s": 47.952,
+      "e": 48.285,
+      "shot": 19
+    },
+    {
+      "w": "against",
+      "s": 48.322,
+      "e": 48.709,
+      "shot": 19
+    },
+    {
+      "w": "my",
+      "s": 48.752,
+      "e": 49.005,
+      "shot": 19
+    },
+    {
+      "w": "chest.",
+      "s": 49.033,
+      "e": 49.367,
+      "shot": 19
+    },
+    {
+      "w": "Mom",
+      "s": 49.654,
+      "e": 49.934,
+      "shot": 20
+    },
+    {
+      "w": "stayed",
+      "s": 49.965,
+      "e": 50.325,
+      "shot": 20
+    },
+    {
+      "w": "on",
+      "s": 50.365,
+      "e": 50.618,
+      "shot": 20
+    },
+    {
+      "w": "the",
+      "s": 50.646,
+      "e": 50.926,
+      "shot": 20
+    },
+    {
+      "w": "line",
+      "s": 50.957,
+      "e": 51.264,
+      "shot": 20
+    },
+    {
+      "w": "all",
+      "s": 51.298,
+      "e": 51.578,
+      "shot": 20
+    },
+    {
+      "w": "night.",
+      "s": 51.609,
+      "e": 51.943,
+      "shot": 20
+    },
+    {
+      "w": "She",
+      "s": 52.23,
+      "e": 52.51,
+      "shot": 21
+    },
+    {
+      "w": "told",
+      "s": 52.541,
+      "e": 52.847,
+      "shot": 21
+    },
+    {
+      "w": "me",
+      "s": 52.881,
+      "e": 53.135,
+      "shot": 21
+    },
+    {
+      "w": "stories.",
+      "s": 53.163,
+      "e": 53.55,
+      "shot": 21
+    },
+    {
+      "w": "She",
+      "s": 53.843,
+      "e": 54.123,
+      "shot": 21
+    },
+    {
+      "w": "hummed.",
+      "s": 54.154,
+      "e": 54.514,
+      "shot": 21
+    },
+    {
+      "w": "Every",
+      "s": 54.804,
+      "e": 55.137,
+      "shot": 22
+    },
+    {
+      "w": "time",
+      "s": 55.174,
+      "e": 55.481,
+      "shot": 22
+    },
+    {
+      "w": "something",
+      "s": 55.515,
+      "e": 55.955,
+      "shot": 22
+    },
+    {
+      "w": "knocked,",
+      "s": 56.004,
+      "e": 56.39,
+      "shot": 22
+    },
+    {
+      "w": "she",
+      "s": 56.533,
+      "e": 56.813,
+      "shot": 22
+    },
+    {
+      "w": "said,",
+      "s": 56.844,
+      "e": 57.151,
+      "shot": 22
+    },
+    {
+      "w": "\"Don't",
+      "s": 57.285,
+      "e": 57.619,
+      "shot": 22
+    },
+    {
+      "w": "answer,",
+      "s": 57.656,
+      "e": 58.016,
+      "shot": 22
+    },
+    {
+      "w": "bug.",
+      "s": 58.156,
+      "e": 58.436,
+      "shot": 22
+    },
+    {
+      "w": "I'm",
+      "s": 58.717,
+      "e": 58.997,
+      "shot": 22
+    },
+    {
+      "w": "right",
+      "s": 59.028,
+      "e": 59.361,
+      "shot": 22
+    },
+    {
+      "w": "here.\"",
+      "s": 59.398,
+      "e": 59.705,
+      "shot": 22
+    },
+    {
+      "w": "At",
+      "s": 59.739,
+      "e": 59.992,
+      "shot": 23
+    },
+    {
+      "w": "six",
+      "s": 60.02,
+      "e": 60.3,
+      "shot": 23
+    },
+    {
+      "w": "a.m.,",
+      "s": 60.331,
+      "e": 60.585,
+      "shot": 23
+    },
+    {
+      "w": "the",
+      "s": 60.713,
+      "e": 60.993,
+      "shot": 23
+    },
+    {
+      "w": "streetlights",
+      "s": 61.024,
+      "e": 61.544,
+      "shot": 23
+    },
+    {
+      "w": "flickered",
+      "s": 61.602,
+      "e": 62.042,
+      "shot": 23
+    },
+    {
+      "w": "back",
+      "s": 62.091,
+      "e": 62.397,
+      "shot": 23
+    },
+    {
+      "w": "on.",
+      "s": 62.431,
+      "e": 62.685,
+      "shot": 23
+    },
+    {
+      "w": "The",
+      "s": 62.963,
+      "e": 63.243,
+      "shot": 24
+    },
+    {
+      "w": "knocking",
+      "s": 63.274,
+      "e": 63.687,
+      "shot": 24
+    },
+    {
+      "w": "stopped.",
+      "s": 63.733,
+      "e": 64.12,
+      "shot": 24
+    },
+    {
+      "w": "At",
+      "s": 64.413,
+      "e": 64.666,
+      "shot": 25
+    },
+    {
+      "w": "seven,",
+      "s": 64.694,
+      "e": 65.028,
+      "shot": 25
+    },
+    {
+      "w": "Mom",
+      "s": 65.165,
+      "e": 65.445,
+      "shot": 25
+    },
+    {
+      "w": "and",
+      "s": 65.476,
+      "e": 65.756,
+      "shot": 25
+    },
+    {
+      "w": "Dad",
+      "s": 65.787,
+      "e": 66.067,
+      "shot": 25
+    },
+    {
+      "w": "pulled",
+      "s": 66.098,
+      "e": 66.458,
+      "shot": 25
+    },
+    {
+      "w": "into",
+      "s": 66.498,
+      "e": 66.805,
+      "shot": 25
+    },
+    {
+      "w": "the",
+      "s": 66.839,
+      "e": 67.119,
+      "shot": 25
+    },
+    {
+      "w": "driveway.",
+      "s": 67.15,
+      "e": 67.563,
+      "shot": 25
+    },
+    {
+      "w": "Before",
+      "s": 67.859,
+      "e": 68.219,
+      "shot": 26
+    },
+    {
+      "w": "I",
+      "s": 68.259,
+      "e": 68.486,
+      "shot": 26
+    },
+    {
+      "w": "opened",
+      "s": 68.511,
+      "e": 68.871,
+      "shot": 26
+    },
+    {
+      "w": "the",
+      "s": 68.911,
+      "e": 69.191,
+      "shot": 26
+    },
+    {
+      "w": "door,",
+      "s": 69.222,
+      "e": 69.529,
+      "shot": 26
+    },
+    {
+      "w": "I",
+      "s": 69.663,
+      "e": 69.89,
+      "shot": 26
+    },
+    {
+      "w": "made",
+      "s": 69.915,
+      "e": 70.221,
+      "shot": 26
+    },
+    {
+      "w": "Mom",
+      "s": 70.256,
+      "e": 70.536,
+      "shot": 26
+    },
+    {
+      "w": "say",
+      "s": 70.567,
+      "e": 70.847,
+      "shot": 26
+    },
+    {
+      "w": "one",
+      "s": 70.878,
+      "e": 71.158,
+      "shot": 26
+    },
+    {
+      "w": "thing",
+      "s": 71.189,
+      "e": 71.522,
+      "shot": 26
+    },
+    {
+      "w": "a",
+      "s": 71.559,
+      "e": 71.786,
+      "shot": 26
+    },
+    {
+      "w": "Knocker",
+      "s": 71.811,
+      "e": 72.198,
+      "shot": 26
+    },
+    {
+      "w": "couldn't",
+      "s": 72.241,
+      "e": 72.654,
+      "shot": 26
+    },
+    {
+      "w": "have",
+      "s": 72.7,
+      "e": 73.007,
+      "shot": 26
+    },
+    {
+      "w": "heard",
+      "s": 73.041,
+      "e": 73.374,
+      "shot": 26
+    },
+    {
+      "w": "today.",
+      "s": 73.411,
+      "e": 73.744,
+      "shot": 26
+    },
+    {
+      "w": "She",
+      "s": 74.031,
+      "e": 74.311,
+      "shot": 27
+    },
+    {
+      "w": "smiled.",
+      "s": 74.343,
+      "e": 74.703,
+      "shot": 27
+    },
+    {
+      "w": "\"I",
+      "s": 74.993,
+      "e": 75.219,
+      "shot": 27
+    },
+    {
+      "w": "love",
+      "s": 75.244,
+      "e": 75.551,
+      "shot": 27
+    },
+    {
+      "w": "you",
+      "s": 75.585,
+      "e": 75.865,
+      "shot": 27
+    },
+    {
+      "w": "more",
+      "s": 75.896,
+      "e": 76.203,
+      "shot": 27
+    },
+    {
+      "w": "than",
+      "s": 76.237,
+      "e": 76.544,
+      "shot": 27
+    },
+    {
+      "w": "the",
+      "s": 76.578,
+      "e": 76.858,
+      "shot": 27
+    },
+    {
+      "w": "whole",
+      "s": 76.889,
+      "e": 77.222,
+      "shot": 27
+    },
+    {
+      "w": "sky.\"",
+      "s": 77.259,
+      "e": 77.539,
+      "shot": 27
+    },
+    {
+      "w": "She",
+      "s": 77.57,
+      "e": 77.85,
+      "shot": 28
+    },
+    {
+      "w": "says",
+      "s": 77.881,
+      "e": 78.188,
+      "shot": 28
+    },
+    {
+      "w": "it",
+      "s": 78.222,
+      "e": 78.476,
+      "shot": 28
+    },
+    {
+      "w": "every",
+      "s": 78.504,
+      "e": 78.837,
+      "shot": 28
+    },
+    {
+      "w": "morning.",
+      "s": 78.874,
+      "e": 79.261,
+      "shot": 28
+    },
+    {
+      "w": "Never",
+      "s": 79.554,
+      "e": 79.887,
+      "shot": 28
+    },
+    {
+      "w": "at",
+      "s": 79.924,
+      "e": 80.177,
+      "shot": 28
+    },
+    {
+      "w": "night.",
+      "s": 80.206,
+      "e": 80.539,
+      "shot": 28
+    },
+    {
+      "w": "I",
+      "s": 80.826,
+      "e": 81.053,
+      "shot": 29
+    },
+    {
+      "w": "opened",
+      "s": 81.078,
+      "e": 81.438,
+      "shot": 29
+    },
+    {
+      "w": "the",
+      "s": 81.478,
+      "e": 81.758,
+      "shot": 29
+    },
+    {
+      "w": "door.",
+      "s": 81.789,
+      "e": 82.096,
+      "shot": 29
+    },
+    {
+      "w": "But",
+      "s": 82.38,
+      "e": 82.66,
+      "shot": 30
+    },
+    {
+      "w": "the",
+      "s": 82.691,
+      "e": 82.971,
+      "shot": 30
+    },
+    {
+      "w": "kitchen",
+      "s": 83.002,
+      "e": 83.389,
+      "shot": 30
+    },
+    {
+      "w": "window",
+      "s": 83.431,
+      "e": 83.791,
+      "shot": 30
+    },
+    {
+      "w": "still",
+      "s": 83.831,
+      "e": 84.165,
+      "shot": 30
+    },
+    {
+      "w": "has",
+      "s": 84.202,
+      "e": 84.482,
+      "shot": 30
+    },
+    {
+      "w": "handprints.",
+      "s": 84.513,
+      "e": 84.98,
+      "shot": 30
+    },
+    {
+      "w": "On",
+      "s": 85.281,
+      "e": 85.535,
+      "shot": 31
+    },
+    {
+      "w": "the",
+      "s": 85.563,
+      "e": 85.843,
+      "shot": 31
+    },
+    {
+      "w": "inside.",
+      "s": 85.874,
+      "e": 86.234,
+      "shot": 31
+    }
+  ],
+  "music": {
+    "file": "output/stock/music/soft_piano_stock.wav",
+    "db": -7
+  },
+  "ambience": [],
+  "sfx": [],
+  "override": {}
+}
