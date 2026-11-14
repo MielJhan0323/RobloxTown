@@ -95,18 +95,84 @@ def phone_text(c, label, color=(1, 0.2, 0.2)):
 
 
 def restaurant(S):
+    """Small diner during a power cut: booths, other diners, candles on every table, sign, counter, dark window."""
     x, y = REST.x, REST.y
-    kit.box((30, 30, 0.3), (x, y, -0.15), kit.mat("rfloor", (0.25, 0.15, 0.1)), 0)
-    kit.box((30, 0.6, 12), (x, y + 8, 6), kit.mat("rwall", (0.35, 0.18, 0.15), rough=0.9), 0)
-    kit.box((6, 4, 0.3), (x, y + 1.5, 2.8), kit.mat("rtable", (0.95, 0.95, 0.92)), 0.03)
-    for dx in (-2.5, 2.5):
-        kit.box((0.3, 0.3, 2.8), (x + dx, y + 1.5, 1.4), kit.mat("rleg", (0.2, 0.2, 0.22)), 0)
-    kit.cyl(0.25, 0.9, (x, y + 1.5, 3.4), kit.mat("candle", (1, 0.97, 0.9)), verts=10)
-    kit.sphere(0.15, (x, y + 1.5, 4.0), kit.mat("flame", (1, 0.7, 0.2), emit=25, emit_color=(1, 0.7, 0.2)), seg=8)
-    kit.point((x, y + 1.5, 4.3), (1, 0.65, 0.3), 250, 0.2)
-    for k2 in range(3):
-        kit.box((1.6, 0.1, 2.4), (x - 9 + k2 * 9, y + 7.6, 7), kit.mat("rframe", (0.7, 0.55, 0.3)), 0.03)
+    kit.box((40, 34, 0.3), (x, y + 2, -0.15), None, 0).data.materials.append(_checker())
+    wall = kit.mat("rwall", (0.55, 0.22, 0.18), rough=0.9)
+    kit.box((40, 0.6, 14), (x, y + 10, 7), wall, 0)
+    kit.box((0.6, 34, 14), (x - 18, y + 2, 7), wall, 0)
+    kit.box((0.6, 34, 14), (x + 18, y + 2, 7), wall, 0)
+    kit.box((40, 34, 0.4), (x, y + 2, 14.2), kit.mat("rceil", (0.4, 0.3, 0.28)), 0)
+    kit.box((40, 0.62, 1.2), (x, y + 9.95, 4.2), kit.mat("rstripe", (0.95, 0.85, 0.6)), 0)
+    # sign + menu board (power is out: sign is dark)
+    kit.box((10, 0.3, 2.4), (x, y + 9.6, 11), kit.mat("rsignb", (0.15, 0.12, 0.12)), 0.05)
+    text("DINER", (x, y + 9.4, 10.4), size=1.6, color=(0.55, 0.2, 0.2), emit=0.3)
+    kit.box((5, 0.2, 3), (x + 11, y + 9.6, 8), kit.mat("rmenu", (0.1, 0.12, 0.1)), 0.03)
+    for k2, ln in enumerate(("BURGERS", "FRIES", "SHAKES")):
+        text(ln, (x + 11, y + 9.45, 8.8 - k2 * 0.8), size=0.5, color=(0.9, 0.9, 0.8), emit=0.4)
+    # counter with stools
+    kit.box((14, 2.4, 3.6), (x + 9, y + 7.3, 1.8), kit.mat("rcounter", (0.85, 0.85, 0.85), metal=0.3), 0.05)
+    for k2 in range(4):
+        kit.cyl(0.8, 0.3, (x + 4 + k2 * 3.2, y + 5.3, 2.6), kit.mat("stool", (0.8, 0.15, 0.15)), verts=14)
+        kit.cyl(0.15, 2.4, (x + 4 + k2 * 3.2, y + 5.3, 1.2), kit.mat("steel", (0.7, 0.7, 0.72), metal=0.6), verts=8)
+    # big front window (night street outside)
+    kit.box((0.2, 14, 7), (x - 17.6, y + 1, 6), kit.mat("rwin", (0.08, 0.1, 0.22), emit=0.6, emit_color=(0.15, 0.2, 0.45)), 0)
+    # booths with candles; other diners sit in the background
+    red = kit.mat("booth", (0.75, 0.12, 0.12), rough=0.6)
+    tablem = kit.mat("rtable", (0.95, 0.95, 0.92))
+    spots = [(x, y + 1.5), (x - 9, y + 1.5), (x - 9, y + 7.0), (x + 9, y - 3.5), (x - 9, y - 4.0)]
+    for k2, (tx, ty) in enumerate(spots):
+        kit.box((6, 3.4, 0.3), (tx, ty, 2.8), tablem, 0.03)
+        kit.box((0.5, 0.5, 2.8), (tx, ty, 1.4), kit.mat("rleg", (0.2, 0.2, 0.22)), 0)
+        if k2:
+            for by in (-2.6, 2.6):
+                kit.box((6, 1.4, 1.6), (tx, ty + by, 0.8), red, 0.08)
+                kit.box((6, 0.5, 3.2), (tx, ty + by * 1.25, 2.4), red, 0.08)
+        kit.cyl(0.22, 0.8, (tx, ty, 3.35), kit.mat("candle", (1, 0.97, 0.9)), verts=10)
+        kit.sphere(0.13, (tx, ty, 3.9), kit.mat("flame", (1, 0.7, 0.2), emit=25, emit_color=(1, 0.7, 0.2)), seg=8)
+        kit.point((tx, ty, 4.2), (1, 0.65, 0.3), 160 if k2 else 250, 0.2)
+    for nm, (tx, ty), dy in (("Prey2", spots[1], -2.6), ("Crowd4", spots[1], 2.6), ("Prey3", spots[3], -2.6), ("Crowd2", spots[2], 2.6)):
+        c = S.char(nm, (tx, ty + dy, -0.3), 0 if dy < 0 else 180, "neutral")
+        c.sit(1)
+        c.arm("L", 1, 70)
+        c.arm("R", 1, 70)
     bpy.context.scene.world.node_tree.nodes["Background"].inputs[1].default_value = 0.3
+
+
+def _checker():
+    m = bpy.data.materials.new("rchecker")
+    m.use_nodes = True
+    nt = m.node_tree
+    ch = nt.nodes.new("ShaderNodeTexChecker")
+    ch.inputs["Scale"].default_value = 18
+    ch.inputs["Color1"].default_value = (0.9, 0.9, 0.88, 1)
+    ch.inputs["Color2"].default_value = (0.12, 0.12, 0.14, 1)
+    nt.links.new(ch.outputs["Color"], nt.nodes["Principled BSDF"].inputs["Base Color"])
+    return m
+
+
+def phone_insert(S, labels, loc, sub=None):
+    """Big readable phone close-up. labels = [(frame, text, rgb), ...]; sub = small text under it."""
+    x, y, z = loc
+    body = kit.box((3.4, 0.3, 6.4), (x, y, z), kit.mat("phonebig", (0.06, 0.06, 0.08)), 0.3)
+    kit.box((3.0, 0.05, 5.6), (x, y - 0.18, z), kit.mat("screenbig", (0.05, 0.08, 0.14), emit=1.0, emit_color=(0.1, 0.15, 0.3)), 0)
+    kit.box((1.6, 0.04, 0.7), (x, y - 0.22, z + 1.6), kit.mat("batt", (0.3, 0.3, 0.35)), 0.05)       # battery icon
+    kit.box((0.18, 0.04, 0.3), (x + 0.89, y - 0.22, z + 1.6), kit.mat("batt", (0.3, 0.3, 0.35)), 0)
+    kit.box((0.12, 0.05, 0.5), (x - 0.7, y - 0.24, z + 1.6), kit.mat("battred", (1, 0.2, 0.2), emit=4, emit_color=(1, 0.2, 0.2)), 0)
+    shown = []
+    for k2, (f, t, col) in enumerate(labels):
+        o = text(t, (x, y - 0.25, z - 0.2), size=1.1 if len(t) < 6 else 0.5, color=col, emit=6)
+        shown.append((f, o))
+    for k2, (f, o) in enumerate(shown):
+        end = shown[k2 + 1][0] if k2 + 1 < len(shown) else None
+        S.show(o, 1, f <= 1)
+        S.show(o, max(1, f), True)
+        if end:
+            S.show(o, end, False)
+    if sub:
+        text(sub, (x, y - 0.25, z - 1.4), size=0.4, color=(0.8, 0.85, 1.0), emit=3)
+    kit.point((x, y - 3, z), (0.6, 0.7, 1.0), 60, 1.0)
+    return body
 
 
 def mom_dad_table(S, talking=True):
@@ -161,16 +227,9 @@ def s04(k, F):  # Three percent. Four.
     S = stage("night")
     kitchen(S)
     n = kid_at_outlet(S)
-    n.arm("R", 1, 75, -10)
-    cable(n)
-    ph, t3 = phone_text(n, "3%")
-    t4 = text("4%", tuple(t3.location), size=0.3, color=(1, 0.5, 0.2), emit=6)
-    t4.rotation_euler = t3.rotation_euler
-    t4.parent, t4.matrix_parent_inverse = t3.parent, t3.matrix_parent_inverse.copy()
-    S.show(t3, kf(F * 0.5), False)
-    S.show(t4, 1, False)
-    S.show(t4, kf(F * 0.5), True)
-    S.cam_at(n.world((0.5, 3.2, 3.0)), n.world((0.9, 1.0, 2.0)), lens=34, allow_close=True)
+    loc = (KIT.x - 3.0, KIT.y + 2.0, 3.6)
+    phone_insert(S, [(1, "3%", (1, 0.25, 0.2)), (kf(F * 0.5), "4%", (1, 0.5, 0.2))], loc, sub="CHARGING")
+    S.cam_at(V((loc[0], loc[1] - 7.5, loc[2])), V(loc), lens=34, fstop=2.0, allow_close=True)
     return S
 
 
@@ -188,10 +247,9 @@ def s06(k, F):  # Five percent. I called Mom.
     S = stage("night")
     kitchen(S)
     n = kid_at_outlet(S, "determined")
-    n.arm("R", 1, 75, -10)
-    cable(n)
-    ph, t = phone_text(n, "5%  CALLING MOM", color=(0.5, 1, 0.6))
-    S.cam_at(n.world((0.5, 3.2, 3.0)), n.world((0.9, 1.0, 2.0)), lens=34, allow_close=True)
+    loc = (KIT.x - 3.0, KIT.y + 2.0, 3.6)
+    phone_insert(S, [(1, "5%", (1, 0.6, 0.2)), (kf(F * 0.45), "CALLING MOM...", (0.5, 1, 0.6))], loc)
+    S.cam_at(V((loc[0], loc[1] - 7.5, loc[2])), V(loc), lens=34, fstop=2.0, allow_close=True)
     return S
 
 
@@ -456,7 +514,7 @@ ST = V((-900.0, -3505.0, 0))   # staircase set: steps climb toward +Y into a dar
 
 def staircase(S, eyes=False):
     x, y = ST.x, ST.y
-    wall = kit.mat("stwall", (0.5, 0.52, 0.6), rough=0.9)
+    wall = kit.mat("stwall", (0.3, 0.32, 0.4), rough=0.9)
     kit.box((12, 40, 0.3), (x, y + 4, -0.15), kit.mat("stfloor", (0.35, 0.24, 0.16)), 0)
     for wx in (-3.6, 3.6):
         kit.box((0.5, 40, 22), (x + wx, y + 4, 11), wall, 0)
@@ -472,8 +530,9 @@ def staircase(S, eyes=False):
     r = kit.cyl(0.12, L.length, (x - 3.0, y + 1 + 7, 3.0 + 5.6), rail, verts=8)
     r.rotation_euler = L.to_track_quat("Z", "Y").to_euler()
     kit.box((1.6, 0.3, 1.0), (x + 2.0, y + 18.6, 15.5), kit.mat("stframe", (0.7, 0.55, 0.3)), 0.03)    # picture up top
-    kit.spot((x, y - 6, 8), (x, y + 6, 4), (0.75, 0.75, 0.85), 2500, 45, 0.6, 0.6)           # gray dawn from below
-    kit.point((x, y + 15, 14), (0.25, 0.28, 0.4), 15, 1.0)                                     # landing stays dark
+    kit.spot((x, y - 7, 5), (x, y + 3, 2), (0.55, 0.6, 0.8), 1600, 40, 0.7, 0.6)            # light at the bottom of the stairs
+    kit.point((x, y - 4, 5), (0.55, 0.6, 0.9), 90, 2.0)                                     # him, readable
+    bpy.context.scene.world.node_tree.nodes["Background"].inputs[1].default_value = 0.2      # upstairs: dark
     if eyes:
         for sx in (-0.3, 0.3):
             kit.sphere(0.13, (x + 0.6 + sx, y + 15.5, 18.2), kit.mat("knockeye", (1, 1, 0.95), emit=25,
@@ -535,7 +594,7 @@ def v2_inside(k, F):  # They were on the inside.
 
 
 def v2_upstairs(k, F):  # Then, from upstairs, in Mom's voice:
-    S = stage("dusk")
+    S = stage("night")
     staircase(S)
     n = S.char("Narrator", (ST.x, ST.y - 2.5), 180, "scared")
     n.look(1, 0, 0)
@@ -545,7 +604,7 @@ def v2_upstairs(k, F):  # Then, from upstairs, in Mom's voice:
 
 
 def v2_comeup(k, F):  # "Bug? Come up here. I want to show you something."
-    S = stage("dusk")
+    S = stage("night")
     staircase(S, eyes=True)
     S.char("Narrator", (ST.x, ST.y - 2.5), 180, "scared")
     S.drone([(1, (ST.x + 2.6, ST.y - 6, 4.0), (ST.x, ST.y + 14, 15)), (F, (ST.x + 2.2, ST.y - 1.5, 2.4), (ST.x + 0.6, ST.y + 15.5, 17.0))],
@@ -554,14 +613,12 @@ def v2_comeup(k, F):  # "Bug? Come up here. I want to show you something."
 
 
 def v2_stillon(k, F):  # Mom was still on the phone.
-    S = stage("dusk")
+    S = stage("night")
     staircase(S)
-    n = S.char("Narrator", (ST.x, ST.y - 2.5), 0, "shocked")
-    n.arm("R", 1, 75, -10)
-    ph = phone(n)
-    t = text("MOM  9:14:52", tuple(ph.matrix_world.translation + V((0, -0.2, 0.25))), size=0.22, color=(0.5, 1, 0.6), emit=6)
-    attach(t, n.arms["R"])
-    S.drone([(1, n.world((0.5, 3.2, 3.5)), n.world((0.9, 1.0, 2.6))), (F, n.world((0.3, 5.5, 4.6)), n.head_pt() - V((0, 0, 1.0)))],
+    S.char("Narrator", (ST.x, ST.y - 4.5), 0, "shocked")
+    loc = (ST.x + 0.2, ST.y - 9.0, 4.6)
+    phone_insert(S, [(1, "MOM", (0.5, 1, 0.6))], loc, sub="CALL  9:14:52")
+    S.drone([(1, (loc[0], loc[1] - 6.5, loc[2]), V(loc)), (F, (loc[0] + 0.8, loc[1] - 8.5, loc[2] + 0.4), V(loc))],
             lens=34, allow_close=True)
     return S
 
