@@ -38,7 +38,39 @@ My phone has two percent battery. I can reach one door before it dies.
 
 Front door, or back door?
 
-Choose wrong, and there won't be a Part 2.
+## Shot list
+
+Animated in Blender (tools/anim/stories/the_knock.py): street at night, front porch, dark hallway with the
+front door (left) and back door (right). Knocker = tall shadow with glowing eyes, never shown up close.
+
+| # | Narration | Sec |
+|---|---|---|
+| 1 | In this town, when the streetlights go out, | 1.8 |
+| 2 | you never open the door. | 1.8 |
+| 3 | That's when the Knockers come. | 1.8 |
+| 4 | They sound like people you love. | 1.8 |
+| 5 | Last year, one knocked on the Parkers' door using their grandma's voice. | 1.8 |
+| 6 | Their grandma lives in Florida. | 1.8 |
+| 7 | The rules are simple. Lock everything. | 1.8 |
+| 8 | Don't answer. | 1.8 |
+| 9 | Knockers can copy any voice, but only words they heard today. | 1.8 |
+| 10 | Tonight, Mom and Dad went out for dinner. | 1.8 |
+| 11 | "Back before the lights go out," Mom said. | 1.8 |
+| 12 | She kissed my head and called me "bug," like she does every night. | 1.8 |
+| 13 | We were on the front porch. | 1.8 |
+| 14 | At nine, the streetlights went out. | 1.8 |
+| 15 | They weren't home. | 1.8 |
+| 16 | At nine-oh-one, someone knocked on the front door. | 1.8 |
+| 17 | "Bug? It's Mom. I lost my keys. Open up, it's freezing." | 1.8 |
+| 18 | Then, a knock on the back door. Softer. | 1.8 |
+| 19 | "Hey, kiddo. It's Dad. Mom's with me. Don't open the front. Something followed us." | 1.8 |
+| 20 | Dad never calls me kiddo. | 1.8 |
+| 21 | But Mom said "bug" on the porch, where anything could have heard it. | 1.8 |
+| 22 | The front door rattled. | 1.8 |
+| 23 | The back door went quiet. Too quiet. | 1.8 |
+| 24 | My phone has two percent battery. | 1.8 |
+| 25 | I can reach one door before it dies. | 1.8 |
+| 26 | Front door, or back door? | 1.8 |
 
 ## Delivery
 
@@ -58,7 +90,6 @@ Choose wrong, and there won't be a Part 2.
 | The front door rattled. The back door went quiet. Too quiet. | dramatic |
 | My phone has two percent battery. ... | soft |
 | Front door, or back door? | whisper |
-| Choose wrong, and there won't be a Part 2. | whisper |
 
 ## ElevenLabs prompt
 
@@ -90,6 +121,4 @@ Choose wrong, and there won't be a Part 2.
 [softly] My phone has two percent battery. I can reach one door before it dies.
 
 [whispering] Front door, or back door?
-
-[whispering] Choose wrong, and there won't be a Part 2.
 ```
