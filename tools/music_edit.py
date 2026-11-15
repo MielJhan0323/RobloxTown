@@ -196,8 +196,9 @@ def main():
         src = ROOT / f"raw/{a.slug}/shot_{s['n']:02d}.mp4"
         if not src.exists():
             src = ROOT / (s.get("src") or f"output/anim/{a.slug}/shot_{s['n']:02d}.mp4")
+        si = len(ins) // 2                 # input index of this shot (mattes are interleaved)
         ins += ["-i", str(src)]
-        base = (f"[{i}:v]trim=0:{s['dur']},setpts=PTS-STARTPTS,fps={FPS},"
+        base = (f"[{si}:v]trim=0:{s['dur']},setpts=PTS-STARTPTS,fps={FPS},"
                 f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},setsar=1")
         sass = cache / f"lyr_{s['n']:02d}.ass"
         matte = OUTPUT / "anim" / a.slug / f"matte_{s['n']:02d}.mp4"

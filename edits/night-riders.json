@@ -428,7 +428,25 @@
    "text": "",
    "note": "clock 11:59->12:00",
    "src": "output/anim/night-riders/shot_08.mp4",
-   "lyric_mode": "back"
+   "lyric_mode": "back",
+   "lyric_quad": [
+    [
+     60,
+     900
+    ],
+    [
+     1020,
+     960
+    ],
+    [
+     60,
+     2080
+    ],
+    [
+     1020,
+     2020
+    ]
+   ]
   },
   {
    "n": 9,
@@ -458,7 +476,25 @@
    "text": "",
    "note": "jump",
    "src": "output/anim/night-riders/shot_11.mp4",
-   "lyric_mode": "back"
+   "lyric_mode": "back",
+   "lyric_quad": [
+    [
+     0,
+     -250
+    ],
+    [
+     960,
+     -170
+    ],
+    [
+     0,
+     950
+    ],
+    [
+     960,
+     870
+    ]
+   ]
   },
   {
    "n": 12,
