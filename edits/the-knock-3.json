@@ -1,1558 +1,1639 @@
 {
-  "slug": "the-knock-3",
-  "title": "The Knock (Part 3 - Final)",
-  "timing": "estimated",
-  "voice": null,
-  "duration": 74.796,
-  "shots": [
-    {
-      "n": 1,
-      "text": "You picked the option I didn't even think of.",
-      "start": 0.0,
-      "end": 3.617,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": "1.8",
-      "override": {},
-      "dur": 3.617
-    },
-    {
-      "n": 2,
-      "text": "The streetlights were back on.",
-      "start": 3.617,
-      "end": 5.719,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": "1.8",
-      "override": {},
-      "dur": 2.102
-    },
-    {
-      "n": 3,
-      "text": "Knockers only come in the dark.",
-      "start": 5.719,
-      "end": 8.043,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": "1.8",
-      "override": {},
-      "dur": 2.324
-    },
-    {
-      "n": 4,
-      "text": "So I ran.",
-      "start": 8.043,
-      "end": 9.137,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": "1.8",
-      "override": {},
-      "dur": 1.094
-    },
-    {
-      "n": 5,
-      "text": "Down the hall.",
-      "start": 9.137,
-      "end": 10.38,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": "1.8",
-      "override": {},
-      "dur": 1.243
-    },
-    {
-      "n": 6,
-      "text": "Past the stairs. I didn't look up.",
-      "start": 10.38,
-      "end": 13.206,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": "1.8",
-      "override": {},
-      "dur": 2.826
-    },
-    {
-      "n": 7,
-      "text": "I threw open the front door,",
-      "start": 13.206,
-      "end": 15.291,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": "1.8",
-      "override": {},
-      "dur": 2.085
-    },
-    {
-      "n": 8,
-      "text": "and the morning hit my face.",
-      "start": 15.291,
-      "end": 17.526,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": "1.8",
-      "override": {},
-      "dur": 2.235
-    },
-    {
-      "n": 9,
-      "text": "Mrs. Parker was getting her newspaper.",
-      "start": 17.526,
-      "end": 20.278,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": "1.8",
-      "override": {},
-      "dur": 2.752
-    },
-    {
-      "n": 10,
-      "text": "She saw my face and didn't ask a single question.",
-      "start": 20.278,
-      "end": 23.906,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": "1.8",
-      "override": {},
-      "dur": 3.628
-    },
-    {
-      "n": 11,
-      "text": "She just pulled me inside.",
-      "start": 23.906,
-      "end": 25.889,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": "1.8",
-      "override": {},
-      "dur": 1.983
-    },
-    {
-      "n": 12,
-      "text": "Mom was still on the phone.",
-      "start": 25.889,
-      "end": 28.094,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": "1.8",
-      "override": {},
-      "dur": 2.205
-    },
-    {
-      "n": 13,
-      "text": "\"Stay there, bug. We're five minutes away.\"",
-      "start": 28.094,
-      "end": 30.948,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": "1.8",
-      "override": {},
-      "dur": 2.854
-    },
-    {
-      "n": 14,
-      "text": "From the Parkers' window, I could see my house.",
-      "start": 30.948,
-      "end": 34.365,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": "1.8",
-      "override": {},
-      "dur": 3.417
-    },
-    {
-      "n": 15,
-      "text": "My bedroom curtain moved.",
-      "start": 34.365,
-      "end": 36.126,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": "1.8",
-      "override": {},
-      "dur": 1.761
-    },
-    {
-      "n": 16,
-      "text": "Something was standing in my window.",
-      "start": 36.126,
-      "end": 38.598,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": "1.8",
-      "override": {},
-      "dur": 2.472
-    },
-    {
-      "n": 17,
-      "text": "Wearing my hoodie.",
-      "start": 38.598,
-      "end": 39.959,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": "1.8",
-      "override": {},
-      "dur": 1.361
-    },
-    {
-      "n": 18,
-      "text": "It lifted its hand and waved. Slowly.",
-      "start": 39.959,
-      "end": 42.874,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": "1.8",
-      "override": {},
-      "dur": 2.915
-    },
-    {
-      "n": 19,
-      "text": "The same way I wave.",
-      "start": 42.874,
-      "end": 44.68,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": "1.8",
-      "override": {},
-      "dur": 1.806
-    },
-    {
-      "n": 20,
-      "text": "Then Mom and Dad's car pulled into the driveway.",
-      "start": 44.68,
-      "end": 48.085,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": "1.8",
-      "override": {},
-      "dur": 3.405
-    },
-    {
-      "n": 21,
-      "text": "I ran across the street faster than I've ever run.",
-      "start": 48.085,
-      "end": 51.743,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": "1.8",
-      "override": {},
-      "dur": 3.658
-    },
-    {
-      "n": 22,
-      "text": "Mom hugged me so hard my feet left the ground.",
-      "start": 51.743,
-      "end": 55.281,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": "1.8",
-      "override": {},
-      "dur": 3.538
-    },
-    {
-      "n": 23,
-      "text": "\"Bug, you're okay. You're okay.\"",
-      "start": 55.281,
-      "end": 57.424,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": "1.8",
-      "override": {},
-      "dur": 2.143
-    },
-    {
-      "n": 24,
-      "text": "Dad knelt down and messed up my hair. He smiled at me.",
-      "start": 57.424,
-      "end": 61.806,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": "1.8",
-      "override": {},
-      "dur": 4.382
-    },
-    {
-      "n": 25,
-      "text": "\"Hey, kiddo.\"",
-      "start": 61.806,
-      "end": 62.587,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": "1.8",
-      "override": {},
-      "dur": 0.781
-    },
-    {
-      "n": 26,
-      "text": "I looked at Mom. She didn't notice.",
-      "start": 62.587,
-      "end": 65.443,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": "1.8",
-      "override": {},
-      "dur": 2.856
-    },
-    {
-      "n": 27,
-      "text": "Last night, something knocked on our back door and said, \"Something followed us.\"",
-      "start": 65.443,
-      "end": 70.428,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": "1.8",
-      "override": {},
-      "dur": 4.985
-    },
-    {
-      "n": 28,
-      "text": "It wasn't lying.",
-      "start": 70.428,
-      "end": 71.73,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": "1.8",
-      "override": {},
-      "dur": 1.302
-    },
-    {
-      "n": 29,
-      "text": "Dad never calls me kiddo.",
-      "start": 71.73,
-      "end": 74.796,
-      "src": null,
-      "src_dur": null,
-      "motion": "push_in",
-      "transition": "cut",
-      "grade": "neutral",
-      "placeholder": "1.8",
-      "override": {},
-      "dur": 3.066
-    }
-  ],
-  "words": [
-    {
-      "w": "You",
-      "s": 0.3,
-      "e": 0.58,
-      "shot": 1
-    },
-    {
-      "w": "picked",
-      "s": 0.611,
-      "e": 0.971,
-      "shot": 1
-    },
-    {
-      "w": "the",
-      "s": 1.011,
-      "e": 1.291,
-      "shot": 1
-    },
-    {
-      "w": "option",
-      "s": 1.322,
-      "e": 1.682,
-      "shot": 1
-    },
-    {
-      "w": "I",
-      "s": 1.722,
-      "e": 1.949,
-      "shot": 1
-    },
-    {
-      "w": "didn't",
-      "s": 1.974,
-      "e": 2.334,
-      "shot": 1
-    },
-    {
-      "w": "even",
-      "s": 2.374,
-      "e": 2.681,
-      "shot": 1
-    },
-    {
-      "w": "think",
-      "s": 2.715,
-      "e": 3.048,
-      "shot": 1
-    },
-    {
-      "w": "of.",
-      "s": 3.085,
-      "e": 3.339,
-      "shot": 1
-    },
-    {
-      "w": "The",
-      "s": 3.617,
-      "e": 3.897,
-      "shot": 2
-    },
-    {
-      "w": "streetlights",
-      "s": 3.928,
-      "e": 4.448,
-      "shot": 2
-    },
-    {
-      "w": "were",
-      "s": 4.506,
-      "e": 4.812,
-      "shot": 2
-    },
-    {
-      "w": "back",
-      "s": 4.846,
-      "e": 5.153,
-      "shot": 2
-    },
-    {
-      "w": "on.",
-      "s": 5.187,
-      "e": 5.44,
-      "shot": 2
-    },
-    {
-      "w": "Knockers",
-      "s": 5.719,
-      "e": 6.132,
-      "shot": 3
-    },
-    {
-      "w": "only",
-      "s": 6.178,
-      "e": 6.484,
-      "shot": 3
-    },
-    {
-      "w": "come",
-      "s": 6.519,
-      "e": 6.825,
-      "shot": 3
-    },
-    {
-      "w": "in",
-      "s": 6.859,
-      "e": 7.113,
-      "shot": 3
-    },
-    {
-      "w": "the",
-      "s": 7.141,
-      "e": 7.421,
-      "shot": 3
-    },
-    {
-      "w": "dark.",
-      "s": 7.452,
-      "e": 7.759,
-      "shot": 3
-    },
-    {
-      "w": "So",
-      "s": 8.043,
-      "e": 8.296,
-      "shot": 4
-    },
-    {
-      "w": "I",
-      "s": 8.324,
-      "e": 8.551,
-      "shot": 4
-    },
-    {
-      "w": "ran.",
-      "s": 8.576,
-      "e": 8.856,
-      "shot": 4
-    },
-    {
-      "w": "Down",
-      "s": 9.137,
-      "e": 9.444,
-      "shot": 5
-    },
-    {
-      "w": "the",
-      "s": 9.478,
-      "e": 9.758,
-      "shot": 5
-    },
-    {
-      "w": "hall.",
-      "s": 9.789,
-      "e": 10.096,
-      "shot": 5
-    },
-    {
-      "w": "Past",
-      "s": 10.38,
-      "e": 10.686,
-      "shot": 6
-    },
-    {
-      "w": "the",
-      "s": 10.72,
-      "e": 11.0,
-      "shot": 6
-    },
-    {
-      "w": "stairs.",
-      "s": 11.031,
-      "e": 11.391,
-      "shot": 6
-    },
-    {
-      "w": "I",
-      "s": 11.681,
-      "e": 11.908,
-      "shot": 6
-    },
-    {
-      "w": "didn't",
-      "s": 11.933,
-      "e": 12.293,
-      "shot": 6
-    },
-    {
-      "w": "look",
-      "s": 12.333,
-      "e": 12.64,
-      "shot": 6
-    },
-    {
-      "w": "up.",
-      "s": 12.674,
-      "e": 12.927,
-      "shot": 6
-    },
-    {
-      "w": "I",
-      "s": 13.206,
-      "e": 13.432,
-      "shot": 7
-    },
-    {
-      "w": "threw",
-      "s": 13.457,
-      "e": 13.791,
-      "shot": 7
-    },
-    {
-      "w": "open",
-      "s": 13.828,
-      "e": 14.134,
-      "shot": 7
-    },
-    {
-      "w": "the",
-      "s": 14.169,
-      "e": 14.449,
-      "shot": 7
-    },
-    {
-      "w": "front",
-      "s": 14.48,
-      "e": 14.813,
-      "shot": 7
-    },
-    {
-      "w": "door,",
-      "s": 14.85,
-      "e": 15.157,
-      "shot": 7
-    },
-    {
-      "w": "and",
-      "s": 15.291,
-      "e": 15.571,
-      "shot": 8
-    },
-    {
-      "w": "the",
-      "s": 15.602,
-      "e": 15.882,
-      "shot": 8
-    },
-    {
-      "w": "morning",
-      "s": 15.913,
-      "e": 16.3,
-      "shot": 8
-    },
-    {
-      "w": "hit",
-      "s": 16.343,
-      "e": 16.623,
-      "shot": 8
-    },
-    {
-      "w": "my",
-      "s": 16.654,
-      "e": 16.907,
-      "shot": 8
-    },
-    {
-      "w": "face.",
-      "s": 16.935,
-      "e": 17.242,
-      "shot": 8
-    },
-    {
-      "w": "Mrs.",
-      "s": 17.526,
-      "e": 17.806,
-      "shot": 9
-    },
-    {
-      "w": "Parker",
-      "s": 18.087,
-      "e": 18.447,
-      "shot": 9
-    },
-    {
-      "w": "was",
-      "s": 18.487,
-      "e": 18.767,
-      "shot": 9
-    },
-    {
-      "w": "getting",
-      "s": 18.798,
-      "e": 19.185,
-      "shot": 9
-    },
-    {
-      "w": "her",
-      "s": 19.228,
-      "e": 19.508,
-      "shot": 9
-    },
-    {
-      "w": "newspaper.",
-      "s": 19.539,
-      "e": 19.979,
-      "shot": 9
-    },
-    {
-      "w": "She",
-      "s": 20.278,
-      "e": 20.558,
-      "shot": 10
-    },
-    {
-      "w": "saw",
-      "s": 20.589,
-      "e": 20.869,
-      "shot": 10
-    },
-    {
-      "w": "my",
-      "s": 20.9,
-      "e": 21.153,
-      "shot": 10
-    },
-    {
-      "w": "face",
-      "s": 21.181,
-      "e": 21.488,
-      "shot": 10
-    },
-    {
-      "w": "and",
-      "s": 21.522,
-      "e": 21.802,
-      "shot": 10
-    },
-    {
-      "w": "didn't",
-      "s": 21.833,
-      "e": 22.193,
-      "shot": 10
-    },
-    {
-      "w": "ask",
-      "s": 22.233,
-      "e": 22.513,
-      "shot": 10
-    },
-    {
-      "w": "a",
-      "s": 22.544,
-      "e": 22.771,
-      "shot": 10
-    },
-    {
-      "w": "single",
-      "s": 22.796,
-      "e": 23.156,
-      "shot": 10
-    },
-    {
-      "w": "question.",
-      "s": 23.196,
-      "e": 23.61,
-      "shot": 10
-    },
-    {
-      "w": "She",
-      "s": 23.906,
-      "e": 24.186,
-      "shot": 11
-    },
-    {
-      "w": "just",
-      "s": 24.217,
-      "e": 24.523,
-      "shot": 11
-    },
-    {
-      "w": "pulled",
-      "s": 24.557,
-      "e": 24.917,
-      "shot": 11
-    },
-    {
-      "w": "me",
-      "s": 24.957,
-      "e": 25.211,
-      "shot": 11
-    },
-    {
-      "w": "inside.",
-      "s": 25.239,
-      "e": 25.599,
-      "shot": 11
-    },
-    {
-      "w": "Mom",
-      "s": 25.889,
-      "e": 26.169,
-      "shot": 12
-    },
-    {
-      "w": "was",
-      "s": 26.2,
-      "e": 26.48,
-      "shot": 12
-    },
-    {
-      "w": "still",
-      "s": 26.511,
-      "e": 26.844,
-      "shot": 12
-    },
-    {
-      "w": "on",
-      "s": 26.881,
-      "e": 27.135,
-      "shot": 12
-    },
-    {
-      "w": "the",
-      "s": 27.163,
-      "e": 27.443,
-      "shot": 12
-    },
-    {
-      "w": "phone.",
-      "s": 27.474,
-      "e": 27.807,
-      "shot": 12
-    },
-    {
-      "w": "\"Stay",
-      "s": 28.094,
-      "e": 28.401,
-      "shot": 13
-    },
-    {
-      "w": "there,",
-      "s": 28.435,
-      "e": 28.769,
-      "shot": 13
-    },
-    {
-      "w": "bug.",
-      "s": 28.906,
-      "e": 29.186,
-      "shot": 13
-    },
-    {
-      "w": "We're",
-      "s": 29.467,
-      "e": 29.8,
-      "shot": 13
-    },
-    {
-      "w": "five",
-      "s": 29.837,
-      "e": 30.144,
-      "shot": 13
-    },
-    {
-      "w": "minutes",
-      "s": 30.178,
-      "e": 30.564,
-      "shot": 13
-    },
-    {
-      "w": "away.\"",
-      "s": 30.607,
-      "e": 30.914,
-      "shot": 13
-    },
-    {
-      "w": "From",
-      "s": 30.948,
-      "e": 31.255,
-      "shot": 14
-    },
-    {
-      "w": "the",
-      "s": 31.289,
-      "e": 31.569,
-      "shot": 14
-    },
-    {
-      "w": "Parkers'",
-      "s": 31.6,
-      "e": 31.987,
-      "shot": 14
-    },
-    {
-      "w": "window,",
-      "s": 32.03,
-      "e": 32.39,
-      "shot": 14
-    },
-    {
-      "w": "I",
-      "s": 32.53,
-      "e": 32.756,
-      "shot": 14
-    },
-    {
-      "w": "could",
-      "s": 32.781,
-      "e": 33.115,
-      "shot": 14
-    },
-    {
-      "w": "see",
-      "s": 33.152,
-      "e": 33.432,
-      "shot": 14
-    },
-    {
-      "w": "my",
-      "s": 33.463,
-      "e": 33.716,
-      "shot": 14
-    },
-    {
-      "w": "house.",
-      "s": 33.744,
-      "e": 34.078,
-      "shot": 14
-    },
-    {
-      "w": "My",
-      "s": 34.365,
-      "e": 34.618,
-      "shot": 15
-    },
-    {
-      "w": "bedroom",
-      "s": 34.646,
-      "e": 35.033,
-      "shot": 15
-    },
-    {
-      "w": "curtain",
-      "s": 35.076,
-      "e": 35.463,
-      "shot": 15
-    },
-    {
-      "w": "moved.",
-      "s": 35.506,
-      "e": 35.839,
-      "shot": 15
-    },
-    {
-      "w": "Something",
-      "s": 36.126,
-      "e": 36.566,
-      "shot": 16
-    },
-    {
-      "w": "was",
-      "s": 36.615,
-      "e": 36.895,
-      "shot": 16
-    },
-    {
-      "w": "standing",
-      "s": 36.926,
-      "e": 37.339,
-      "shot": 16
-    },
-    {
-      "w": "in",
-      "s": 37.385,
-      "e": 37.639,
-      "shot": 16
-    },
-    {
-      "w": "my",
-      "s": 37.667,
-      "e": 37.92,
-      "shot": 16
-    },
-    {
-      "w": "window.",
-      "s": 37.948,
-      "e": 38.308,
-      "shot": 16
-    },
-    {
-      "w": "Wearing",
-      "s": 38.598,
-      "e": 38.985,
-      "shot": 17
-    },
-    {
-      "w": "my",
-      "s": 39.028,
-      "e": 39.281,
-      "shot": 17
-    },
-    {
-      "w": "hoodie.",
-      "s": 39.309,
-      "e": 39.669,
-      "shot": 17
-    },
-    {
-      "w": "It",
-      "s": 39.959,
-      "e": 40.213,
-      "shot": 18
-    },
-    {
-      "w": "lifted",
-      "s": 40.241,
-      "e": 40.601,
-      "shot": 18
-    },
-    {
-      "w": "its",
-      "s": 40.641,
-      "e": 40.921,
-      "shot": 18
-    },
-    {
-      "w": "hand",
-      "s": 40.952,
-      "e": 41.259,
-      "shot": 18
-    },
-    {
-      "w": "and",
-      "s": 41.293,
-      "e": 41.573,
-      "shot": 18
-    },
-    {
-      "w": "waved.",
-      "s": 41.604,
-      "e": 41.937,
-      "shot": 18
-    },
-    {
-      "w": "Slowly.",
-      "s": 42.224,
-      "e": 42.584,
-      "shot": 18
-    },
-    {
-      "w": "The",
-      "s": 42.874,
-      "e": 43.154,
-      "shot": 19
-    },
-    {
-      "w": "same",
-      "s": 43.185,
-      "e": 43.492,
-      "shot": 19
-    },
-    {
-      "w": "way",
-      "s": 43.526,
-      "e": 43.806,
-      "shot": 19
-    },
-    {
-      "w": "I",
-      "s": 43.837,
-      "e": 44.064,
-      "shot": 19
-    },
-    {
-      "w": "wave.",
-      "s": 44.089,
-      "e": 44.396,
-      "shot": 19
-    },
-    {
-      "w": "Then",
-      "s": 44.68,
-      "e": 44.986,
-      "shot": 20
-    },
-    {
-      "w": "Mom",
-      "s": 45.02,
-      "e": 45.3,
-      "shot": 20
-    },
-    {
-      "w": "and",
-      "s": 45.331,
-      "e": 45.611,
-      "shot": 20
-    },
-    {
-      "w": "Dad's",
-      "s": 45.643,
-      "e": 45.976,
-      "shot": 20
-    },
-    {
-      "w": "car",
-      "s": 46.013,
-      "e": 46.293,
-      "shot": 20
-    },
-    {
-      "w": "pulled",
-      "s": 46.324,
-      "e": 46.684,
-      "shot": 20
-    },
-    {
-      "w": "into",
-      "s": 46.724,
-      "e": 47.031,
-      "shot": 20
-    },
-    {
-      "w": "the",
-      "s": 47.065,
-      "e": 47.345,
-      "shot": 20
-    },
-    {
-      "w": "driveway.",
-      "s": 47.376,
-      "e": 47.789,
-      "shot": 20
-    },
-    {
-      "w": "I",
-      "s": 48.085,
-      "e": 48.312,
-      "shot": 21
-    },
-    {
-      "w": "ran",
-      "s": 48.337,
-      "e": 48.617,
-      "shot": 21
-    },
-    {
-      "w": "across",
-      "s": 48.648,
-      "e": 49.008,
-      "shot": 21
-    },
-    {
-      "w": "the",
-      "s": 49.048,
-      "e": 49.328,
-      "shot": 21
-    },
-    {
-      "w": "street",
-      "s": 49.359,
-      "e": 49.719,
-      "shot": 21
-    },
-    {
-      "w": "faster",
-      "s": 49.759,
-      "e": 50.119,
-      "shot": 21
-    },
-    {
-      "w": "than",
-      "s": 50.159,
-      "e": 50.466,
-      "shot": 21
-    },
-    {
-      "w": "I've",
-      "s": 50.5,
-      "e": 50.807,
-      "shot": 21
-    },
-    {
-      "w": "ever",
-      "s": 50.841,
-      "e": 51.147,
-      "shot": 21
-    },
-    {
-      "w": "run.",
-      "s": 51.181,
-      "e": 51.461,
-      "shot": 21
-    },
-    {
-      "w": "Mom",
-      "s": 51.743,
-      "e": 52.023,
-      "shot": 22
-    },
-    {
-      "w": "hugged",
-      "s": 52.054,
-      "e": 52.414,
-      "shot": 22
-    },
-    {
-      "w": "me",
-      "s": 52.454,
-      "e": 52.707,
-      "shot": 22
-    },
-    {
-      "w": "so",
-      "s": 52.735,
-      "e": 52.989,
-      "shot": 22
-    },
-    {
-      "w": "hard",
-      "s": 53.017,
-      "e": 53.323,
-      "shot": 22
-    },
-    {
-      "w": "my",
-      "s": 53.357,
-      "e": 53.611,
-      "shot": 22
-    },
-    {
-      "w": "feet",
-      "s": 53.639,
-      "e": 53.946,
-      "shot": 22
-    },
-    {
-      "w": "left",
-      "s": 53.98,
-      "e": 54.286,
-      "shot": 22
-    },
-    {
-      "w": "the",
-      "s": 54.32,
-      "e": 54.6,
-      "shot": 22
-    },
-    {
-      "w": "ground.",
-      "s": 54.631,
-      "e": 54.991,
-      "shot": 22
-    },
-    {
-      "w": "\"Bug,",
-      "s": 55.281,
-      "e": 55.561,
-      "shot": 23
-    },
-    {
-      "w": "you're",
-      "s": 55.693,
-      "e": 56.053,
-      "shot": 23
-    },
-    {
-      "w": "okay.",
-      "s": 56.093,
-      "e": 56.399,
-      "shot": 23
-    },
-    {
-      "w": "You're",
-      "s": 56.683,
-      "e": 57.043,
-      "shot": 23
-    },
-    {
-      "w": "okay.\"",
-      "s": 57.083,
-      "e": 57.39,
-      "shot": 23
-    },
-    {
-      "w": "Dad",
-      "s": 57.424,
-      "e": 57.704,
-      "shot": 24
-    },
-    {
-      "w": "knelt",
-      "s": 57.735,
-      "e": 58.069,
-      "shot": 24
-    },
-    {
-      "w": "down",
-      "s": 58.106,
-      "e": 58.412,
-      "shot": 24
-    },
-    {
-      "w": "and",
-      "s": 58.446,
-      "e": 58.726,
-      "shot": 24
-    },
-    {
-      "w": "messed",
-      "s": 58.757,
-      "e": 59.117,
-      "shot": 24
-    },
-    {
-      "w": "up",
-      "s": 59.157,
-      "e": 59.411,
-      "shot": 24
-    },
-    {
-      "w": "my",
-      "s": 59.439,
-      "e": 59.692,
-      "shot": 24
-    },
-    {
-      "w": "hair.",
-      "s": 59.72,
-      "e": 60.027,
-      "shot": 24
-    },
-    {
-      "w": "He",
-      "s": 60.311,
-      "e": 60.564,
-      "shot": 24
-    },
-    {
-      "w": "smiled",
-      "s": 60.593,
-      "e": 60.953,
-      "shot": 24
-    },
-    {
-      "w": "at",
-      "s": 60.993,
-      "e": 61.246,
-      "shot": 24
-    },
-    {
-      "w": "me.",
-      "s": 61.274,
-      "e": 61.527,
-      "shot": 24
-    },
-    {
-      "w": "\"Hey,",
-      "s": 61.806,
-      "e": 62.086,
-      "shot": 25
-    },
-    {
-      "w": "kiddo.\"",
-      "s": 62.217,
-      "e": 62.55,
-      "shot": 25
-    },
-    {
-      "w": "I",
-      "s": 62.587,
-      "e": 62.814,
-      "shot": 26
-    },
-    {
-      "w": "looked",
-      "s": 62.839,
-      "e": 63.199,
-      "shot": 26
-    },
-    {
-      "w": "at",
-      "s": 63.239,
-      "e": 63.492,
-      "shot": 26
-    },
-    {
-      "w": "Mom.",
-      "s": 63.52,
-      "e": 63.8,
-      "shot": 26
-    },
-    {
-      "w": "She",
-      "s": 64.081,
-      "e": 64.361,
-      "shot": 26
-    },
-    {
-      "w": "didn't",
-      "s": 64.393,
-      "e": 64.753,
-      "shot": 26
-    },
-    {
-      "w": "notice.",
-      "s": 64.793,
-      "e": 65.153,
-      "shot": 26
-    },
-    {
-      "w": "Last",
-      "s": 65.443,
-      "e": 65.749,
-      "shot": 27
-    },
-    {
-      "w": "night,",
-      "s": 65.783,
-      "e": 66.117,
-      "shot": 27
-    },
-    {
-      "w": "something",
-      "s": 66.254,
-      "e": 66.694,
-      "shot": 27
-    },
-    {
-      "w": "knocked",
-      "s": 66.743,
-      "e": 67.129,
-      "shot": 27
-    },
-    {
-      "w": "on",
-      "s": 67.172,
-      "e": 67.426,
-      "shot": 27
-    },
-    {
-      "w": "our",
-      "s": 67.454,
-      "e": 67.734,
-      "shot": 27
-    },
-    {
-      "w": "back",
-      "s": 67.765,
-      "e": 68.071,
-      "shot": 27
-    },
-    {
-      "w": "door",
-      "s": 68.106,
-      "e": 68.412,
-      "shot": 27
-    },
-    {
-      "w": "and",
-      "s": 68.446,
-      "e": 68.726,
-      "shot": 27
-    },
-    {
-      "w": "said,",
-      "s": 68.757,
-      "e": 69.064,
-      "shot": 27
-    },
-    {
-      "w": "\"Something",
-      "s": 69.198,
-      "e": 69.638,
-      "shot": 27
-    },
-    {
-      "w": "followed",
-      "s": 69.687,
-      "e": 70.1,
-      "shot": 27
-    },
-    {
-      "w": "us.\"",
-      "s": 70.146,
-      "e": 70.4,
-      "shot": 27
-    },
-    {
-      "w": "It",
-      "s": 70.428,
-      "e": 70.681,
-      "shot": 28
-    },
-    {
-      "w": "wasn't",
-      "s": 70.709,
-      "e": 71.069,
-      "shot": 28
-    },
-    {
-      "w": "lying.",
-      "s": 71.109,
-      "e": 71.443,
-      "shot": 28
-    },
-    {
-      "w": "Dad",
-      "s": 71.73,
-      "e": 72.01,
-      "shot": 29
-    },
-    {
-      "w": "never",
-      "s": 72.041,
-      "e": 72.374,
-      "shot": 29
-    },
-    {
-      "w": "calls",
-      "s": 72.411,
-      "e": 72.744,
-      "shot": 29
-    },
-    {
-      "w": "me",
-      "s": 72.781,
-      "e": 73.035,
-      "shot": 29
-    },
-    {
-      "w": "kiddo.",
-      "s": 73.063,
-      "e": 73.396,
-      "shot": 29
-    }
-  ],
-  "music": {
-    "file": "output/stock/music/soft_piano_stock.wav",
-    "db": -7
+ "slug": "the-knock-3",
+ "title": "The Knock (Part 3 - Final)",
+ "timing": "voice",
+ "voice": "output/cache/the-knock-3/voice_fx.wav",
+ "duration": 49.521,
+ "shots": [
+  {
+   "n": 1,
+   "text": "You picked the option I didn't even think of.",
+   "start": 0.0,
+   "end": 2.38,
+   "src": null,
+   "src_dur": null,
+   "motion": "push_in",
+   "transition": "cut",
+   "grade": "neutral",
+   "placeholder": "1.8",
+   "override": {},
+   "dur": 2.38
   },
-  "ambience": [],
-  "sfx": [],
-  "override": {}
+  {
+   "n": 2,
+   "text": "The streetlights were back on.",
+   "start": 2.38,
+   "end": 3.88,
+   "src": "output/anim/the-knock-3/shot_02.mp4",
+   "src_dur": 3.133,
+   "motion": "push_in",
+   "transition": "cut",
+   "grade": "neutral",
+   "placeholder": null,
+   "override": {},
+   "dur": 1.5
+  },
+  {
+   "n": 3,
+   "text": "Knockers only come in the dark.",
+   "start": 3.88,
+   "end": 5.34,
+   "src": "output/anim/the-knock-3/shot_03.mp4",
+   "src_dur": 3.4,
+   "motion": "push_in",
+   "transition": "cut",
+   "grade": "neutral",
+   "placeholder": null,
+   "override": {},
+   "dur": 1.46
+  },
+  {
+   "n": 4,
+   "text": "So I ran.",
+   "start": 5.34,
+   "end": 6.3,
+   "src": "output/anim/the-knock-3/shot_04.mp4",
+   "src_dur": 1.933,
+   "motion": "push_in",
+   "transition": "cut",
+   "grade": "neutral",
+   "placeholder": null,
+   "override": {},
+   "dur": 0.96
+  },
+  {
+   "n": 5,
+   "text": "Down the hall.",
+   "start": 6.3,
+   "end": 7.0,
+   "src": null,
+   "src_dur": null,
+   "motion": "push_in",
+   "transition": "cut",
+   "grade": "neutral",
+   "placeholder": "1.8",
+   "override": {},
+   "dur": 0.7
+  },
+  {
+   "n": 6,
+   "text": "Past the stairs. I didn't look up.",
+   "start": 7.0,
+   "end": 8.48,
+   "src": null,
+   "src_dur": null,
+   "motion": "push_in",
+   "transition": "cut",
+   "grade": "neutral",
+   "placeholder": "1.8",
+   "override": {},
+   "dur": 1.48
+  },
+  {
+   "n": 7,
+   "text": "I threw open the front door,",
+   "start": 8.48,
+   "end": 9.58,
+   "src": null,
+   "src_dur": null,
+   "motion": "push_in",
+   "transition": "cut",
+   "grade": "neutral",
+   "placeholder": "1.8",
+   "override": {},
+   "dur": 1.1
+  },
+  {
+   "n": 8,
+   "text": "and the morning hit my face.",
+   "start": 9.58,
+   "end": 11.12,
+   "src": null,
+   "src_dur": null,
+   "motion": "push_in",
+   "transition": "cut",
+   "grade": "neutral",
+   "placeholder": "1.8",
+   "override": {},
+   "dur": 1.54
+  },
+  {
+   "n": 9,
+   "text": "Mrs. Parker was getting her newspaper.",
+   "start": 11.12,
+   "end": 12.54,
+   "src": null,
+   "src_dur": null,
+   "motion": "push_in",
+   "transition": "cut",
+   "grade": "neutral",
+   "placeholder": "1.8",
+   "override": {},
+   "dur": 1.42
+  },
+  {
+   "n": 10,
+   "text": "She saw my face and didn't ask a single question.",
+   "start": 12.54,
+   "end": 14.44,
+   "src": null,
+   "src_dur": null,
+   "motion": "push_in",
+   "transition": "cut",
+   "grade": "neutral",
+   "placeholder": "1.8",
+   "override": {},
+   "dur": 1.9
+  },
+  {
+   "n": 11,
+   "text": "She just pulled me inside.",
+   "start": 14.44,
+   "end": 16.08,
+   "src": null,
+   "src_dur": null,
+   "motion": "push_in",
+   "transition": "cut",
+   "grade": "neutral",
+   "placeholder": "1.8",
+   "override": {},
+   "dur": 1.64
+  },
+  {
+   "n": 12,
+   "text": "Mom was still on the phone.",
+   "start": 16.08,
+   "end": 17.24,
+   "src": null,
+   "src_dur": null,
+   "motion": "push_in",
+   "transition": "cut",
+   "grade": "neutral",
+   "placeholder": "1.8",
+   "override": {},
+   "dur": 1.16
+  },
+  {
+   "n": 13,
+   "text": "\"Stay there, bug. We're five minutes away.\"",
+   "start": 17.24,
+   "end": 18.96,
+   "src": null,
+   "src_dur": null,
+   "motion": "push_in",
+   "transition": "cut",
+   "grade": "neutral",
+   "placeholder": "1.8",
+   "override": {},
+   "dur": 1.72
+  },
+  {
+   "n": 14,
+   "text": "From the Parkers' window, I could see my house.",
+   "start": 18.96,
+   "end": 21.28,
+   "src": null,
+   "src_dur": null,
+   "motion": "push_in",
+   "transition": "cut",
+   "grade": "neutral",
+   "placeholder": "1.8",
+   "override": {},
+   "dur": 2.32
+  },
+  {
+   "n": 15,
+   "text": "My bedroom curtain moved.",
+   "start": 21.28,
+   "end": 22.86,
+   "src": null,
+   "src_dur": null,
+   "motion": "push_in",
+   "transition": "cut",
+   "grade": "neutral",
+   "placeholder": "1.8",
+   "override": {},
+   "dur": 1.58
+  },
+  {
+   "n": 16,
+   "text": "Something was standing in my window.",
+   "start": 22.86,
+   "end": 24.24,
+   "src": null,
+   "src_dur": null,
+   "motion": "push_in",
+   "transition": "cut",
+   "grade": "neutral",
+   "placeholder": "1.8",
+   "override": {},
+   "dur": 1.38
+  },
+  {
+   "n": 17,
+   "text": "Wearing my hoodie.",
+   "start": 24.24,
+   "end": 25.16,
+   "src": null,
+   "src_dur": null,
+   "motion": "push_in",
+   "transition": "cut",
+   "grade": "neutral",
+   "placeholder": "1.8",
+   "override": {},
+   "dur": 0.92
+  },
+  {
+   "n": 18,
+   "text": "It lifted its hand and waved. Slowly.",
+   "start": 25.16,
+   "end": 27.5,
+   "src": null,
+   "src_dur": null,
+   "motion": "push_in",
+   "transition": "cut",
+   "grade": "neutral",
+   "placeholder": "1.8",
+   "override": {},
+   "dur": 2.34
+  },
+  {
+   "n": 19,
+   "text": "The same way I wave.",
+   "start": 27.5,
+   "end": 28.74,
+   "src": null,
+   "src_dur": null,
+   "motion": "push_in",
+   "transition": "cut",
+   "grade": "neutral",
+   "placeholder": "1.8",
+   "override": {},
+   "dur": 1.24
+  },
+  {
+   "n": 20,
+   "text": "Then Mom and Dad's car pulled into the driveway.",
+   "start": 28.74,
+   "end": 30.52,
+   "src": null,
+   "src_dur": null,
+   "motion": "push_in",
+   "transition": "cut",
+   "grade": "neutral",
+   "placeholder": "1.8",
+   "override": {},
+   "dur": 1.78
+  },
+  {
+   "n": 21,
+   "text": "I ran across the street faster than I've ever run.",
+   "start": 30.52,
+   "end": 32.96,
+   "src": null,
+   "src_dur": null,
+   "motion": "push_in",
+   "transition": "cut",
+   "grade": "neutral",
+   "placeholder": "1.8",
+   "override": {},
+   "dur": 2.44
+  },
+  {
+   "n": 22,
+   "text": "Mom hugged me so hard my feet left the ground.",
+   "start": 32.96,
+   "end": 35.12,
+   "src": null,
+   "src_dur": null,
+   "motion": "push_in",
+   "transition": "cut",
+   "grade": "neutral",
+   "placeholder": "1.8",
+   "override": {},
+   "dur": 2.16
+  },
+  {
+   "n": 23,
+   "text": "\"Bug, you're okay. You're okay.\"",
+   "start": 35.12,
+   "end": 36.9,
+   "src": null,
+   "src_dur": null,
+   "motion": "push_in",
+   "transition": "cut",
+   "grade": "neutral",
+   "placeholder": "1.8",
+   "override": {},
+   "dur": 1.78
+  },
+  {
+   "n": 24,
+   "text": "Dad knelt down and messed up my hair. He smiled at me.",
+   "start": 36.9,
+   "end": 39.49,
+   "src": null,
+   "src_dur": null,
+   "motion": "push_in",
+   "transition": "cut",
+   "grade": "neutral",
+   "placeholder": "1.8",
+   "override": {},
+   "dur": 2.59
+  },
+  {
+   "n": 25,
+   "text": "\"Hey, kiddo.\"",
+   "start": 39.49,
+   "end": 40.29,
+   "src": null,
+   "src_dur": null,
+   "motion": "push_in",
+   "transition": "cut",
+   "grade": "neutral",
+   "placeholder": "1.8",
+   "override": {},
+   "dur": 0.8
+  },
+  {
+   "n": 26,
+   "text": "I looked at Mom. She didn't notice.",
+   "start": 40.29,
+   "end": 42.29,
+   "src": null,
+   "src_dur": null,
+   "motion": "push_in",
+   "transition": "cut",
+   "grade": "neutral",
+   "placeholder": "1.8",
+   "override": {},
+   "dur": 2.0
+  },
+  {
+   "n": 27,
+   "text": "Last night, something knocked on our back door and said, \"Something followed us.\"",
+   "start": 42.29,
+   "end": 45.57,
+   "src": null,
+   "src_dur": null,
+   "motion": "push_in",
+   "transition": "cut",
+   "grade": "neutral",
+   "placeholder": "1.8",
+   "override": {},
+   "dur": 3.28
+  },
+  {
+   "n": 28,
+   "text": "It wasn't lying.",
+   "start": 45.57,
+   "end": 46.82,
+   "src": null,
+   "src_dur": null,
+   "motion": "push_in",
+   "transition": "cut",
+   "grade": "neutral",
+   "placeholder": "1.8",
+   "override": {},
+   "dur": 1.25
+  },
+  {
+   "n": 29,
+   "text": "Dad never calls me kiddo.",
+   "start": 46.82,
+   "end": 49.521,
+   "src": null,
+   "src_dur": null,
+   "motion": "push_in",
+   "transition": "cut",
+   "grade": "neutral",
+   "placeholder": "1.8",
+   "override": {},
+   "dur": 2.701
+  }
+ ],
+ "words": [
+  {
+   "w": "You",
+   "s": 0.0,
+   "e": 0.26,
+   "shot": 1
+  },
+  {
+   "w": "picked",
+   "s": 0.26,
+   "e": 0.44,
+   "shot": 1
+  },
+  {
+   "w": "the",
+   "s": 0.44,
+   "e": 0.6,
+   "shot": 1
+  },
+  {
+   "w": "option",
+   "s": 0.6,
+   "e": 0.8,
+   "shot": 1
+  },
+  {
+   "w": "I",
+   "s": 0.8,
+   "e": 0.98,
+   "shot": 1
+  },
+  {
+   "w": "didn't",
+   "s": 0.98,
+   "e": 1.16,
+   "shot": 1
+  },
+  {
+   "w": "even",
+   "s": 1.16,
+   "e": 1.3,
+   "shot": 1
+  },
+  {
+   "w": "think",
+   "s": 1.3,
+   "e": 1.56,
+   "shot": 1
+  },
+  {
+   "w": "of.",
+   "s": 1.56,
+   "e": 1.9,
+   "shot": 1
+  },
+  {
+   "w": "The",
+   "s": 2.38,
+   "e": 2.46,
+   "shot": 2
+  },
+  {
+   "w": "streetlights",
+   "s": 2.46,
+   "e": 2.84,
+   "shot": 2
+  },
+  {
+   "w": "were",
+   "s": 2.84,
+   "e": 2.98,
+   "shot": 2
+  },
+  {
+   "w": "back",
+   "s": 2.98,
+   "e": 3.14,
+   "shot": 2
+  },
+  {
+   "w": "on.",
+   "s": 3.14,
+   "e": 3.38,
+   "shot": 2
+  },
+  {
+   "w": "Knockers",
+   "s": 3.88,
+   "e": 4.12,
+   "shot": 3
+  },
+  {
+   "w": "only",
+   "s": 4.12,
+   "e": 4.34,
+   "shot": 3
+  },
+  {
+   "w": "come",
+   "s": 4.34,
+   "e": 4.56,
+   "shot": 3
+  },
+  {
+   "w": "in",
+   "s": 4.56,
+   "e": 4.66,
+   "shot": 3
+  },
+  {
+   "w": "the",
+   "s": 4.66,
+   "e": 4.74,
+   "shot": 3
+  },
+  {
+   "w": "dark.",
+   "s": 4.74,
+   "e": 4.92,
+   "shot": 3
+  },
+  {
+   "w": "So",
+   "s": 5.34,
+   "e": 5.5,
+   "shot": 4
+  },
+  {
+   "w": "I",
+   "s": 5.5,
+   "e": 5.66,
+   "shot": 4
+  },
+  {
+   "w": "ran.",
+   "s": 5.66,
+   "e": 5.92,
+   "shot": 4
+  },
+  {
+   "w": "Down",
+   "s": 6.3,
+   "e": 6.4,
+   "shot": 5
+  },
+  {
+   "w": "the",
+   "s": 6.4,
+   "e": 6.52,
+   "shot": 5
+  },
+  {
+   "w": "hall.",
+   "s": 6.52,
+   "e": 6.7,
+   "shot": 5
+  },
+  {
+   "w": "Past",
+   "s": 7.0,
+   "e": 7.06,
+   "shot": 6
+  },
+  {
+   "w": "the",
+   "s": 7.06,
+   "e": 7.24,
+   "shot": 6
+  },
+  {
+   "w": "stairs.",
+   "s": 7.24,
+   "e": 7.48,
+   "shot": 6
+  },
+  {
+   "w": "I",
+   "s": 7.78,
+   "e": 7.84,
+   "shot": 6
+  },
+  {
+   "w": "didn't",
+   "s": 7.84,
+   "e": 8.04,
+   "shot": 6
+  },
+  {
+   "w": "look",
+   "s": 8.04,
+   "e": 8.1,
+   "shot": 6
+  },
+  {
+   "w": "up.",
+   "s": 8.1,
+   "e": 8.26,
+   "shot": 6
+  },
+  {
+   "w": "I",
+   "s": 8.48,
+   "e": 8.6,
+   "shot": 7
+  },
+  {
+   "w": "threw",
+   "s": 8.6,
+   "e": 8.82,
+   "shot": 7
+  },
+  {
+   "w": "open",
+   "s": 8.82,
+   "e": 8.98,
+   "shot": 7
+  },
+  {
+   "w": "the",
+   "s": 8.98,
+   "e": 9.14,
+   "shot": 7
+  },
+  {
+   "w": "front",
+   "s": 9.14,
+   "e": 9.28,
+   "shot": 7
+  },
+  {
+   "w": "door,",
+   "s": 9.28,
+   "e": 9.46,
+   "shot": 7
+  },
+  {
+   "w": "and",
+   "s": 9.58,
+   "e": 9.62,
+   "shot": 8
+  },
+  {
+   "w": "the",
+   "s": 9.62,
+   "e": 9.72,
+   "shot": 8
+  },
+  {
+   "w": "morning",
+   "s": 9.72,
+   "e": 9.92,
+   "shot": 8
+  },
+  {
+   "w": "hit",
+   "s": 9.92,
+   "e": 10.12,
+   "shot": 8
+  },
+  {
+   "w": "my",
+   "s": 10.12,
+   "e": 10.28,
+   "shot": 8
+  },
+  {
+   "w": "face.",
+   "s": 10.28,
+   "e": 10.58,
+   "shot": 8
+  },
+  {
+   "w": "Mrs.",
+   "s": 11.12,
+   "e": 11.12,
+   "shot": 9
+  },
+  {
+   "w": "Parker",
+   "s": 11.3,
+   "e": 11.36,
+   "shot": 9
+  },
+  {
+   "w": "was",
+   "s": 11.36,
+   "e": 11.54,
+   "shot": 9
+  },
+  {
+   "w": "getting",
+   "s": 11.54,
+   "e": 11.68,
+   "shot": 9
+  },
+  {
+   "w": "her",
+   "s": 11.68,
+   "e": 11.84,
+   "shot": 9
+  },
+  {
+   "w": "newspaper.",
+   "s": 11.84,
+   "e": 12.12,
+   "shot": 9
+  },
+  {
+   "w": "She",
+   "s": 12.54,
+   "e": 12.62,
+   "shot": 10
+  },
+  {
+   "w": "saw",
+   "s": 12.62,
+   "e": 12.76,
+   "shot": 10
+  },
+  {
+   "w": "my",
+   "s": 12.76,
+   "e": 12.92,
+   "shot": 10
+  },
+  {
+   "w": "face",
+   "s": 12.92,
+   "e": 13.12,
+   "shot": 10
+  },
+  {
+   "w": "and",
+   "s": 13.12,
+   "e": 13.32,
+   "shot": 10
+  },
+  {
+   "w": "didn't",
+   "s": 13.32,
+   "e": 13.56,
+   "shot": 10
+  },
+  {
+   "w": "ask",
+   "s": 13.56,
+   "e": 13.7,
+   "shot": 10
+  },
+  {
+   "w": "a",
+   "s": 13.7,
+   "e": 13.88,
+   "shot": 10
+  },
+  {
+   "w": "single",
+   "s": 13.88,
+   "e": 14.06,
+   "shot": 10
+  },
+  {
+   "w": "question.",
+   "s": 14.06,
+   "e": 14.36,
+   "shot": 10
+  },
+  {
+   "w": "She",
+   "s": 14.44,
+   "e": 14.8,
+   "shot": 11
+  },
+  {
+   "w": "just",
+   "s": 14.8,
+   "e": 14.9,
+   "shot": 11
+  },
+  {
+   "w": "pulled",
+   "s": 14.92,
+   "e": 15.14,
+   "shot": 11
+  },
+  {
+   "w": "me",
+   "s": 15.14,
+   "e": 15.28,
+   "shot": 11
+  },
+  {
+   "w": "inside.",
+   "s": 15.28,
+   "e": 15.58,
+   "shot": 11
+  },
+  {
+   "w": "Mom",
+   "s": 16.08,
+   "e": 16.14,
+   "shot": 12
+  },
+  {
+   "w": "was",
+   "s": 16.14,
+   "e": 16.28,
+   "shot": 12
+  },
+  {
+   "w": "still",
+   "s": 16.28,
+   "e": 16.42,
+   "shot": 12
+  },
+  {
+   "w": "on",
+   "s": 16.42,
+   "e": 16.54,
+   "shot": 12
+  },
+  {
+   "w": "the",
+   "s": 16.54,
+   "e": 16.64,
+   "shot": 12
+  },
+  {
+   "w": "phone.",
+   "s": 16.64,
+   "e": 16.82,
+   "shot": 12
+  },
+  {
+   "w": "\"Stay",
+   "s": 17.24,
+   "e": 17.32,
+   "shot": 13
+  },
+  {
+   "w": "there,",
+   "s": 17.32,
+   "e": 17.5,
+   "shot": 13
+  },
+  {
+   "w": "bug.",
+   "s": 17.62,
+   "e": 17.66,
+   "shot": 13
+  },
+  {
+   "w": "We're",
+   "s": 17.9,
+   "e": 18.0,
+   "shot": 13
+  },
+  {
+   "w": "five",
+   "s": 18.0,
+   "e": 18.14,
+   "shot": 13
+  },
+  {
+   "w": "minutes",
+   "s": 18.14,
+   "e": 18.32,
+   "shot": 13
+  },
+  {
+   "w": "away.\"",
+   "s": 18.32,
+   "e": 18.58,
+   "shot": 13
+  },
+  {
+   "w": "From",
+   "s": 18.96,
+   "e": 19.1,
+   "shot": 14
+  },
+  {
+   "w": "the",
+   "s": 19.1,
+   "e": 19.22,
+   "shot": 14
+  },
+  {
+   "w": "Parkers'",
+   "s": 19.22,
+   "e": 19.52,
+   "shot": 14
+  },
+  {
+   "w": "window,",
+   "s": 19.64,
+   "e": 19.76,
+   "shot": 14
+  },
+  {
+   "w": "I",
+   "s": 20.06,
+   "e": 20.08,
+   "shot": 14
+  },
+  {
+   "w": "could",
+   "s": 20.08,
+   "e": 20.18,
+   "shot": 14
+  },
+  {
+   "w": "see",
+   "s": 20.18,
+   "e": 20.36,
+   "shot": 14
+  },
+  {
+   "w": "my",
+   "s": 20.36,
+   "e": 20.54,
+   "shot": 14
+  },
+  {
+   "w": "house.",
+   "s": 20.54,
+   "e": 20.78,
+   "shot": 14
+  },
+  {
+   "w": "My",
+   "s": 21.28,
+   "e": 21.38,
+   "shot": 15
+  },
+  {
+   "w": "bedroom",
+   "s": 21.38,
+   "e": 21.58,
+   "shot": 15
+  },
+  {
+   "w": "curtain",
+   "s": 21.58,
+   "e": 21.92,
+   "shot": 15
+  },
+  {
+   "w": "moved.",
+   "s": 21.92,
+   "e": 22.24,
+   "shot": 15
+  },
+  {
+   "w": "Something",
+   "s": 22.86,
+   "e": 22.86,
+   "shot": 16
+  },
+  {
+   "w": "was",
+   "s": 22.86,
+   "e": 23.06,
+   "shot": 16
+  },
+  {
+   "w": "standing",
+   "s": 23.06,
+   "e": 23.34,
+   "shot": 16
+  },
+  {
+   "w": "in",
+   "s": 23.34,
+   "e": 23.52,
+   "shot": 16
+  },
+  {
+   "w": "my",
+   "s": 23.52,
+   "e": 23.64,
+   "shot": 16
+  },
+  {
+   "w": "window.",
+   "s": 23.64,
+   "e": 23.92,
+   "shot": 16
+  },
+  {
+   "w": "Wearing",
+   "s": 24.24,
+   "e": 24.36,
+   "shot": 17
+  },
+  {
+   "w": "my",
+   "s": 24.36,
+   "e": 24.54,
+   "shot": 17
+  },
+  {
+   "w": "hoodie.",
+   "s": 24.54,
+   "e": 24.88,
+   "shot": 17
+  },
+  {
+   "w": "It",
+   "s": 25.16,
+   "e": 25.22,
+   "shot": 18
+  },
+  {
+   "w": "lifted",
+   "s": 25.22,
+   "e": 25.42,
+   "shot": 18
+  },
+  {
+   "w": "its",
+   "s": 25.42,
+   "e": 25.64,
+   "shot": 18
+  },
+  {
+   "w": "hand",
+   "s": 25.64,
+   "e": 25.86,
+   "shot": 18
+  },
+  {
+   "w": "and",
+   "s": 25.86,
+   "e": 26.08,
+   "shot": 18
+  },
+  {
+   "w": "waved.",
+   "s": 26.08,
+   "e": 26.38,
+   "shot": 18
+  },
+  {
+   "w": "Slowly.",
+   "s": 26.9,
+   "e": 27.02,
+   "shot": 18
+  },
+  {
+   "w": "The",
+   "s": 27.5,
+   "e": 27.52,
+   "shot": 19
+  },
+  {
+   "w": "same",
+   "s": 27.52,
+   "e": 27.68,
+   "shot": 19
+  },
+  {
+   "w": "way",
+   "s": 27.68,
+   "e": 27.84,
+   "shot": 19
+  },
+  {
+   "w": "I",
+   "s": 27.84,
+   "e": 28.04,
+   "shot": 19
+  },
+  {
+   "w": "wave.",
+   "s": 28.04,
+   "e": 28.3,
+   "shot": 19
+  },
+  {
+   "w": "Then",
+   "s": 28.74,
+   "e": 28.86,
+   "shot": 20
+  },
+  {
+   "w": "Mom",
+   "s": 28.86,
+   "e": 29.0,
+   "shot": 20
+  },
+  {
+   "w": "and",
+   "s": 29.0,
+   "e": 29.12,
+   "shot": 20
+  },
+  {
+   "w": "Dad's",
+   "s": 29.12,
+   "e": 29.34,
+   "shot": 20
+  },
+  {
+   "w": "car",
+   "s": 29.34,
+   "e": 29.48,
+   "shot": 20
+  },
+  {
+   "w": "pulled",
+   "s": 29.48,
+   "e": 29.7,
+   "shot": 20
+  },
+  {
+   "w": "into",
+   "s": 29.7,
+   "e": 29.86,
+   "shot": 20
+  },
+  {
+   "w": "the",
+   "s": 29.86,
+   "e": 29.96,
+   "shot": 20
+  },
+  {
+   "w": "driveway.",
+   "s": 29.96,
+   "e": 30.2,
+   "shot": 20
+  },
+  {
+   "w": "I",
+   "s": 30.52,
+   "e": 30.62,
+   "shot": 21
+  },
+  {
+   "w": "ran",
+   "s": 30.62,
+   "e": 30.86,
+   "shot": 21
+  },
+  {
+   "w": "across",
+   "s": 30.86,
+   "e": 31.08,
+   "shot": 21
+  },
+  {
+   "w": "the",
+   "s": 31.08,
+   "e": 31.22,
+   "shot": 21
+  },
+  {
+   "w": "street",
+   "s": 31.22,
+   "e": 31.4,
+   "shot": 21
+  },
+  {
+   "w": "faster",
+   "s": 31.4,
+   "e": 31.68,
+   "shot": 21
+  },
+  {
+   "w": "than",
+   "s": 31.68,
+   "e": 31.94,
+   "shot": 21
+  },
+  {
+   "w": "I've",
+   "s": 31.94,
+   "e": 32.08,
+   "shot": 21
+  },
+  {
+   "w": "ever",
+   "s": 32.08,
+   "e": 32.28,
+   "shot": 21
+  },
+  {
+   "w": "run.",
+   "s": 32.28,
+   "e": 32.54,
+   "shot": 21
+  },
+  {
+   "w": "Mom",
+   "s": 32.96,
+   "e": 33.0,
+   "shot": 22
+  },
+  {
+   "w": "hugged",
+   "s": 33.0,
+   "e": 33.22,
+   "shot": 22
+  },
+  {
+   "w": "me",
+   "s": 33.22,
+   "e": 33.36,
+   "shot": 22
+  },
+  {
+   "w": "so",
+   "s": 33.36,
+   "e": 33.58,
+   "shot": 22
+  },
+  {
+   "w": "hard",
+   "s": 33.58,
+   "e": 33.84,
+   "shot": 22
+  },
+  {
+   "w": "my",
+   "s": 33.84,
+   "e": 33.98,
+   "shot": 22
+  },
+  {
+   "w": "feet",
+   "s": 33.98,
+   "e": 34.22,
+   "shot": 22
+  },
+  {
+   "w": "left",
+   "s": 34.22,
+   "e": 34.38,
+   "shot": 22
+  },
+  {
+   "w": "the",
+   "s": 34.38,
+   "e": 34.52,
+   "shot": 22
+  },
+  {
+   "w": "ground.",
+   "s": 34.52,
+   "e": 34.72,
+   "shot": 22
+  },
+  {
+   "w": "\"Bug,",
+   "s": 35.12,
+   "e": 35.18,
+   "shot": 23
+  },
+  {
+   "w": "you're",
+   "s": 35.38,
+   "e": 35.5,
+   "shot": 23
+  },
+  {
+   "w": "okay.",
+   "s": 35.5,
+   "e": 35.82,
+   "shot": 23
+  },
+  {
+   "w": "You're",
+   "s": 36.12,
+   "e": 36.24,
+   "shot": 23
+  },
+  {
+   "w": "okay.\"",
+   "s": 36.24,
+   "e": 36.54,
+   "shot": 23
+  },
+  {
+   "w": "Dad",
+   "s": 36.9,
+   "e": 37.12,
+   "shot": 24
+  },
+  {
+   "w": "knelt",
+   "s": 37.12,
+   "e": 37.38,
+   "shot": 24
+  },
+  {
+   "w": "down",
+   "s": 37.38,
+   "e": 37.56,
+   "shot": 24
+  },
+  {
+   "w": "and",
+   "s": 37.56,
+   "e": 37.7,
+   "shot": 24
+  },
+  {
+   "w": "messed",
+   "s": 37.7,
+   "e": 37.86,
+   "shot": 24
+  },
+  {
+   "w": "up",
+   "s": 37.86,
+   "e": 38.02,
+   "shot": 24
+  },
+  {
+   "w": "my",
+   "s": 38.02,
+   "e": 38.18,
+   "shot": 24
+  },
+  {
+   "w": "hair.",
+   "s": 38.18,
+   "e": 38.38,
+   "shot": 24
+  },
+  {
+   "w": "He",
+   "s": 38.59,
+   "e": 38.69,
+   "shot": 24
+  },
+  {
+   "w": "smiled",
+   "s": 38.69,
+   "e": 38.91,
+   "shot": 24
+  },
+  {
+   "w": "at",
+   "s": 38.91,
+   "e": 39.11,
+   "shot": 24
+  },
+  {
+   "w": "me.",
+   "s": 39.11,
+   "e": 39.29,
+   "shot": 24
+  },
+  {
+   "w": "\"Hey,",
+   "s": 39.49,
+   "e": 39.65,
+   "shot": 25
+  },
+  {
+   "w": "kiddo.\"",
+   "s": 39.69,
+   "e": 39.97,
+   "shot": 25
+  },
+  {
+   "w": "I",
+   "s": 40.29,
+   "e": 40.39,
+   "shot": 26
+  },
+  {
+   "w": "looked",
+   "s": 40.39,
+   "e": 40.53,
+   "shot": 26
+  },
+  {
+   "w": "at",
+   "s": 40.53,
+   "e": 40.65,
+   "shot": 26
+  },
+  {
+   "w": "Mom.",
+   "s": 40.65,
+   "e": 40.85,
+   "shot": 26
+  },
+  {
+   "w": "She",
+   "s": 41.19,
+   "e": 41.31,
+   "shot": 26
+  },
+  {
+   "w": "didn't",
+   "s": 41.31,
+   "e": 41.53,
+   "shot": 26
+  },
+  {
+   "w": "notice.",
+   "s": 41.53,
+   "e": 41.79,
+   "shot": 26
+  },
+  {
+   "w": "Last",
+   "s": 42.29,
+   "e": 42.39,
+   "shot": 27
+  },
+  {
+   "w": "night,",
+   "s": 42.39,
+   "e": 42.67,
+   "shot": 27
+  },
+  {
+   "w": "something",
+   "s": 42.79,
+   "e": 43.01,
+   "shot": 27
+  },
+  {
+   "w": "knocked",
+   "s": 43.01,
+   "e": 43.27,
+   "shot": 27
+  },
+  {
+   "w": "on",
+   "s": 43.27,
+   "e": 43.43,
+   "shot": 27
+  },
+  {
+   "w": "our",
+   "s": 43.43,
+   "e": 43.53,
+   "shot": 27
+  },
+  {
+   "w": "back",
+   "s": 43.53,
+   "e": 43.71,
+   "shot": 27
+  },
+  {
+   "w": "door",
+   "s": 43.71,
+   "e": 43.87,
+   "shot": 27
+  },
+  {
+   "w": "and",
+   "s": 43.87,
+   "e": 44.03,
+   "shot": 27
+  },
+  {
+   "w": "said,",
+   "s": 44.03,
+   "e": 44.21,
+   "shot": 27
+  },
+  {
+   "w": "\"Something",
+   "s": 44.37,
+   "e": 44.67,
+   "shot": 27
+  },
+  {
+   "w": "followed",
+   "s": 44.67,
+   "e": 44.97,
+   "shot": 27
+  },
+  {
+   "w": "us.\"",
+   "s": 44.97,
+   "e": 45.25,
+   "shot": 27
+  },
+  {
+   "w": "It",
+   "s": 45.57,
+   "e": 45.67,
+   "shot": 28
+  },
+  {
+   "w": "wasn't",
+   "s": 45.67,
+   "e": 46.03,
+   "shot": 28
+  },
+  {
+   "w": "lying.",
+   "s": 46.03,
+   "e": 46.27,
+   "shot": 28
+  },
+  {
+   "w": "Dad",
+   "s": 46.82,
+   "e": 46.86,
+   "shot": 29
+  },
+  {
+   "w": "never",
+   "s": 46.86,
+   "e": 47.14,
+   "shot": 29
+  },
+  {
+   "w": "calls",
+   "s": 47.14,
+   "e": 47.38,
+   "shot": 29
+  },
+  {
+   "w": "me",
+   "s": 47.38,
+   "e": 47.52,
+   "shot": 29
+  },
+  {
+   "w": "kiddo.",
+   "s": 47.52,
+   "e": 47.86,
+   "shot": 29
+  }
+ ],
+ "music": {
+  "file": "output/stock/music/soft_piano_stock.wav",
+  "db": -7
+ },
+ "ambience": [],
+ "sfx": [],
+ "override": {
+  "music": {
+   "file": "output/music/TEMPOREX_-_Numbers_Instrumental_loop.mp3",
+   "db": -10
+  },
+  "sfx_auto": false,
+  "sfx_extra": [
+   {
+    "sfx": "click",
+    "shot": 2,
+    "at": 0.2,
+    "db": -16
+   },
+   {
+    "sfx": "whoosh",
+    "shot": 4,
+    "at": 0.0,
+    "db": -20
+   },
+   {
+    "sfx": "impact",
+    "shot": 7,
+    "at": 0.3,
+    "db": -12
+   },
+   {
+    "sfx": "heartbeat",
+    "shot": 14,
+    "at": 0.6,
+    "db": -13
+   },
+   {
+    "sfx": "impact",
+    "shot": 16,
+    "at": 0.1,
+    "db": -10
+   },
+   {
+    "sfx": "heartbeat",
+    "shot": 18,
+    "at": 0.0,
+    "db": -12
+   },
+   {
+    "sfx": "riser",
+    "shot": 19,
+    "at": 0.0,
+    "db": -18,
+    "dur": 1.2
+   },
+   {
+    "sfx": "magic_shimmer",
+    "shot": 24,
+    "at": 0.3,
+    "db": -22
+   },
+   {
+    "sfx": "riser",
+    "shot": 25,
+    "at": 0.0,
+    "db": -17
+   },
+   {
+    "sfx": "door_knock",
+    "shot": 27,
+    "at": 0.5,
+    "db": -10
+   },
+   {
+    "sfx": "heartbeat",
+    "shot": 28,
+    "at": 0.0,
+    "db": -11
+   },
+   {
+    "sfx": "impact",
+    "shot": 29,
+    "at": 0.9,
+    "db": -8
+   }
+  ]
+ }
 }

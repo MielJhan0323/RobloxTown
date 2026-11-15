@@ -1,0 +1,951 @@
+{
+ "voice": "voice_fx.wav",
+ "duration": 48.121,
+ "words": [
+  {
+   "word": "You",
+   "start": 0.0,
+   "end": 0.26
+  },
+  {
+   "word": "picked",
+   "start": 0.26,
+   "end": 0.44
+  },
+  {
+   "word": "the",
+   "start": 0.44,
+   "end": 0.6
+  },
+  {
+   "word": "option",
+   "start": 0.6,
+   "end": 0.8
+  },
+  {
+   "word": "I",
+   "start": 0.8,
+   "end": 0.98
+  },
+  {
+   "word": "didn't",
+   "start": 0.98,
+   "end": 1.16
+  },
+  {
+   "word": "even",
+   "start": 1.16,
+   "end": 1.3
+  },
+  {
+   "word": "think",
+   "start": 1.3,
+   "end": 1.56
+  },
+  {
+   "word": "of.",
+   "start": 1.56,
+   "end": 1.9
+  },
+  {
+   "word": "The",
+   "start": 2.38,
+   "end": 2.46
+  },
+  {
+   "word": "streetlights",
+   "start": 2.46,
+   "end": 2.84
+  },
+  {
+   "word": "were",
+   "start": 2.84,
+   "end": 2.98
+  },
+  {
+   "word": "back",
+   "start": 2.98,
+   "end": 3.14
+  },
+  {
+   "word": "on.",
+   "start": 3.14,
+   "end": 3.38
+  },
+  {
+   "word": "Knockers",
+   "start": 3.88,
+   "end": 4.12
+  },
+  {
+   "word": "only",
+   "start": 4.12,
+   "end": 4.34
+  },
+  {
+   "word": "come",
+   "start": 4.34,
+   "end": 4.56
+  },
+  {
+   "word": "in",
+   "start": 4.56,
+   "end": 4.66
+  },
+  {
+   "word": "the",
+   "start": 4.66,
+   "end": 4.74
+  },
+  {
+   "word": "dark.",
+   "start": 4.74,
+   "end": 4.92
+  },
+  {
+   "word": "So",
+   "start": 5.34,
+   "end": 5.5
+  },
+  {
+   "word": "I",
+   "start": 5.5,
+   "end": 5.66
+  },
+  {
+   "word": "ran.",
+   "start": 5.66,
+   "end": 5.92
+  },
+  {
+   "word": "Down",
+   "start": 6.3,
+   "end": 6.4
+  },
+  {
+   "word": "the",
+   "start": 6.4,
+   "end": 6.52
+  },
+  {
+   "word": "hall.",
+   "start": 6.52,
+   "end": 6.7
+  },
+  {
+   "word": "Past",
+   "start": 7.0,
+   "end": 7.06
+  },
+  {
+   "word": "the",
+   "start": 7.06,
+   "end": 7.24
+  },
+  {
+   "word": "stairs.",
+   "start": 7.24,
+   "end": 7.48
+  },
+  {
+   "word": "I",
+   "start": 7.78,
+   "end": 7.84
+  },
+  {
+   "word": "didn't",
+   "start": 7.84,
+   "end": 8.04
+  },
+  {
+   "word": "look",
+   "start": 8.04,
+   "end": 8.1
+  },
+  {
+   "word": "up.",
+   "start": 8.1,
+   "end": 8.26
+  },
+  {
+   "word": "I",
+   "start": 8.48,
+   "end": 8.6
+  },
+  {
+   "word": "threw",
+   "start": 8.6,
+   "end": 8.82
+  },
+  {
+   "word": "open",
+   "start": 8.82,
+   "end": 8.98
+  },
+  {
+   "word": "the",
+   "start": 8.98,
+   "end": 9.14
+  },
+  {
+   "word": "front",
+   "start": 9.14,
+   "end": 9.28
+  },
+  {
+   "word": "door,",
+   "start": 9.28,
+   "end": 9.46
+  },
+  {
+   "word": "and",
+   "start": 9.58,
+   "end": 9.62
+  },
+  {
+   "word": "the",
+   "start": 9.62,
+   "end": 9.72
+  },
+  {
+   "word": "morning",
+   "start": 9.72,
+   "end": 9.92
+  },
+  {
+   "word": "hit",
+   "start": 9.92,
+   "end": 10.12
+  },
+  {
+   "word": "my",
+   "start": 10.12,
+   "end": 10.28
+  },
+  {
+   "word": "face.",
+   "start": 10.28,
+   "end": 10.58
+  },
+  {
+   "word": "Mrs.",
+   "start": 11.12,
+   "end": 11.12
+  },
+  {
+   "word": "Parker",
+   "start": 11.3,
+   "end": 11.36
+  },
+  {
+   "word": "was",
+   "start": 11.36,
+   "end": 11.54
+  },
+  {
+   "word": "getting",
+   "start": 11.54,
+   "end": 11.68
+  },
+  {
+   "word": "her",
+   "start": 11.68,
+   "end": 11.84
+  },
+  {
+   "word": "newspaper.",
+   "start": 11.84,
+   "end": 12.12
+  },
+  {
+   "word": "She",
+   "start": 12.54,
+   "end": 12.62
+  },
+  {
+   "word": "saw",
+   "start": 12.62,
+   "end": 12.76
+  },
+  {
+   "word": "my",
+   "start": 12.76,
+   "end": 12.92
+  },
+  {
+   "word": "face",
+   "start": 12.92,
+   "end": 13.12
+  },
+  {
+   "word": "and",
+   "start": 13.12,
+   "end": 13.32
+  },
+  {
+   "word": "didn't",
+   "start": 13.32,
+   "end": 13.56
+  },
+  {
+   "word": "ask",
+   "start": 13.56,
+   "end": 13.7
+  },
+  {
+   "word": "a",
+   "start": 13.7,
+   "end": 13.88
+  },
+  {
+   "word": "single",
+   "start": 13.88,
+   "end": 14.06
+  },
+  {
+   "word": "question.",
+   "start": 14.06,
+   "end": 14.36
+  },
+  {
+   "word": "She",
+   "start": 14.44,
+   "end": 14.8
+  },
+  {
+   "word": "just",
+   "start": 14.8,
+   "end": 14.9
+  },
+  {
+   "word": "pulled",
+   "start": 14.92,
+   "end": 15.14
+  },
+  {
+   "word": "me",
+   "start": 15.14,
+   "end": 15.28
+  },
+  {
+   "word": "inside.",
+   "start": 15.28,
+   "end": 15.58
+  },
+  {
+   "word": "Mom",
+   "start": 16.08,
+   "end": 16.14
+  },
+  {
+   "word": "was",
+   "start": 16.14,
+   "end": 16.28
+  },
+  {
+   "word": "still",
+   "start": 16.28,
+   "end": 16.42
+  },
+  {
+   "word": "on",
+   "start": 16.42,
+   "end": 16.54
+  },
+  {
+   "word": "the",
+   "start": 16.54,
+   "end": 16.64
+  },
+  {
+   "word": "phone.",
+   "start": 16.64,
+   "end": 16.82
+  },
+  {
+   "word": "Stay",
+   "start": 17.24,
+   "end": 17.32
+  },
+  {
+   "word": "there,",
+   "start": 17.32,
+   "end": 17.5
+  },
+  {
+   "word": "bug.",
+   "start": 17.62,
+   "end": 17.66
+  },
+  {
+   "word": "We're",
+   "start": 17.9,
+   "end": 18.0
+  },
+  {
+   "word": "five",
+   "start": 18.0,
+   "end": 18.14
+  },
+  {
+   "word": "minutes",
+   "start": 18.14,
+   "end": 18.32
+  },
+  {
+   "word": "away.",
+   "start": 18.32,
+   "end": 18.58
+  },
+  {
+   "word": "From",
+   "start": 18.96,
+   "end": 19.1
+  },
+  {
+   "word": "the",
+   "start": 19.1,
+   "end": 19.22
+  },
+  {
+   "word": "Parkers'",
+   "start": 19.22,
+   "end": 19.52
+  },
+  {
+   "word": "window,",
+   "start": 19.64,
+   "end": 19.76
+  },
+  {
+   "word": "I",
+   "start": 20.06,
+   "end": 20.08
+  },
+  {
+   "word": "could",
+   "start": 20.08,
+   "end": 20.18
+  },
+  {
+   "word": "see",
+   "start": 20.18,
+   "end": 20.36
+  },
+  {
+   "word": "my",
+   "start": 20.36,
+   "end": 20.54
+  },
+  {
+   "word": "house.",
+   "start": 20.54,
+   "end": 20.78
+  },
+  {
+   "word": "My",
+   "start": 21.28,
+   "end": 21.38
+  },
+  {
+   "word": "bedroom",
+   "start": 21.38,
+   "end": 21.58
+  },
+  {
+   "word": "curtain",
+   "start": 21.58,
+   "end": 21.92
+  },
+  {
+   "word": "moved.",
+   "start": 21.92,
+   "end": 22.24
+  },
+  {
+   "word": "Something",
+   "start": 22.86,
+   "end": 22.86
+  },
+  {
+   "word": "was",
+   "start": 22.86,
+   "end": 23.06
+  },
+  {
+   "word": "standing",
+   "start": 23.06,
+   "end": 23.34
+  },
+  {
+   "word": "in",
+   "start": 23.34,
+   "end": 23.52
+  },
+  {
+   "word": "my",
+   "start": 23.52,
+   "end": 23.64
+  },
+  {
+   "word": "window.",
+   "start": 23.64,
+   "end": 23.92
+  },
+  {
+   "word": "Wearing",
+   "start": 24.24,
+   "end": 24.36
+  },
+  {
+   "word": "my",
+   "start": 24.36,
+   "end": 24.54
+  },
+  {
+   "word": "hoodie.",
+   "start": 24.54,
+   "end": 24.88
+  },
+  {
+   "word": "It",
+   "start": 25.16,
+   "end": 25.22
+  },
+  {
+   "word": "lifted",
+   "start": 25.22,
+   "end": 25.42
+  },
+  {
+   "word": "its",
+   "start": 25.42,
+   "end": 25.64
+  },
+  {
+   "word": "hand",
+   "start": 25.64,
+   "end": 25.86
+  },
+  {
+   "word": "and",
+   "start": 25.86,
+   "end": 26.08
+  },
+  {
+   "word": "waved.",
+   "start": 26.08,
+   "end": 26.38
+  },
+  {
+   "word": "Slowly.",
+   "start": 26.9,
+   "end": 27.02
+  },
+  {
+   "word": "The",
+   "start": 27.5,
+   "end": 27.52
+  },
+  {
+   "word": "same",
+   "start": 27.52,
+   "end": 27.68
+  },
+  {
+   "word": "way",
+   "start": 27.68,
+   "end": 27.84
+  },
+  {
+   "word": "I",
+   "start": 27.84,
+   "end": 28.04
+  },
+  {
+   "word": "wave.",
+   "start": 28.04,
+   "end": 28.3
+  },
+  {
+   "word": "Then",
+   "start": 28.74,
+   "end": 28.86
+  },
+  {
+   "word": "Mom",
+   "start": 28.86,
+   "end": 29.0
+  },
+  {
+   "word": "and",
+   "start": 29.0,
+   "end": 29.12
+  },
+  {
+   "word": "Dad's",
+   "start": 29.12,
+   "end": 29.34
+  },
+  {
+   "word": "car",
+   "start": 29.34,
+   "end": 29.48
+  },
+  {
+   "word": "pulled",
+   "start": 29.48,
+   "end": 29.7
+  },
+  {
+   "word": "into",
+   "start": 29.7,
+   "end": 29.86
+  },
+  {
+   "word": "the",
+   "start": 29.86,
+   "end": 29.96
+  },
+  {
+   "word": "driveway.",
+   "start": 29.96,
+   "end": 30.2
+  },
+  {
+   "word": "I",
+   "start": 30.52,
+   "end": 30.62
+  },
+  {
+   "word": "ran",
+   "start": 30.62,
+   "end": 30.86
+  },
+  {
+   "word": "across",
+   "start": 30.86,
+   "end": 31.08
+  },
+  {
+   "word": "the",
+   "start": 31.08,
+   "end": 31.22
+  },
+  {
+   "word": "street",
+   "start": 31.22,
+   "end": 31.4
+  },
+  {
+   "word": "faster",
+   "start": 31.4,
+   "end": 31.68
+  },
+  {
+   "word": "than",
+   "start": 31.68,
+   "end": 31.94
+  },
+  {
+   "word": "I've",
+   "start": 31.94,
+   "end": 32.08
+  },
+  {
+   "word": "ever",
+   "start": 32.08,
+   "end": 32.28
+  },
+  {
+   "word": "run.",
+   "start": 32.28,
+   "end": 32.54
+  },
+  {
+   "word": "Mom",
+   "start": 32.96,
+   "end": 33.0
+  },
+  {
+   "word": "hugged",
+   "start": 33.0,
+   "end": 33.22
+  },
+  {
+   "word": "me",
+   "start": 33.22,
+   "end": 33.36
+  },
+  {
+   "word": "so",
+   "start": 33.36,
+   "end": 33.58
+  },
+  {
+   "word": "hard",
+   "start": 33.58,
+   "end": 33.84
+  },
+  {
+   "word": "my",
+   "start": 33.84,
+   "end": 33.98
+  },
+  {
+   "word": "feet",
+   "start": 33.98,
+   "end": 34.22
+  },
+  {
+   "word": "left",
+   "start": 34.22,
+   "end": 34.38
+  },
+  {
+   "word": "the",
+   "start": 34.38,
+   "end": 34.52
+  },
+  {
+   "word": "ground.",
+   "start": 34.52,
+   "end": 34.72
+  },
+  {
+   "word": "Bug,",
+   "start": 35.12,
+   "end": 35.18
+  },
+  {
+   "word": "you're",
+   "start": 35.38,
+   "end": 35.5
+  },
+  {
+   "word": "okay.",
+   "start": 35.5,
+   "end": 35.82
+  },
+  {
+   "word": "You're",
+   "start": 36.12,
+   "end": 36.24
+  },
+  {
+   "word": "okay.",
+   "start": 36.24,
+   "end": 36.54
+  },
+  {
+   "word": "Dad",
+   "start": 36.9,
+   "end": 37.12
+  },
+  {
+   "word": "knelt",
+   "start": 37.12,
+   "end": 37.38
+  },
+  {
+   "word": "down",
+   "start": 37.38,
+   "end": 37.56
+  },
+  {
+   "word": "and",
+   "start": 37.56,
+   "end": 37.7
+  },
+  {
+   "word": "messed",
+   "start": 37.7,
+   "end": 37.86
+  },
+  {
+   "word": "up",
+   "start": 37.86,
+   "end": 38.02
+  },
+  {
+   "word": "my",
+   "start": 38.02,
+   "end": 38.18
+  },
+  {
+   "word": "hair.",
+   "start": 38.18,
+   "end": 38.38
+  },
+  {
+   "word": "He",
+   "start": 38.59,
+   "end": 38.69
+  },
+  {
+   "word": "smiled",
+   "start": 38.69,
+   "end": 38.91
+  },
+  {
+   "word": "at",
+   "start": 38.91,
+   "end": 39.11
+  },
+  {
+   "word": "me.",
+   "start": 39.11,
+   "end": 39.29
+  },
+  {
+   "word": "Hey,",
+   "start": 39.49,
+   "end": 39.65
+  },
+  {
+   "word": "kiddo.",
+   "start": 39.69,
+   "end": 39.97
+  },
+  {
+   "word": "I",
+   "start": 40.29,
+   "end": 40.39
+  },
+  {
+   "word": "looked",
+   "start": 40.39,
+   "end": 40.53
+  },
+  {
+   "word": "at",
+   "start": 40.53,
+   "end": 40.65
+  },
+  {
+   "word": "Mom.",
+   "start": 40.65,
+   "end": 40.85
+  },
+  {
+   "word": "She",
+   "start": 41.19,
+   "end": 41.31
+  },
+  {
+   "word": "didn't",
+   "start": 41.31,
+   "end": 41.53
+  },
+  {
+   "word": "notice.",
+   "start": 41.53,
+   "end": 41.79
+  },
+  {
+   "word": "Last",
+   "start": 42.29,
+   "end": 42.39
+  },
+  {
+   "word": "night,",
+   "start": 42.39,
+   "end": 42.67
+  },
+  {
+   "word": "something",
+   "start": 42.79,
+   "end": 43.01
+  },
+  {
+   "word": "knocked",
+   "start": 43.01,
+   "end": 43.27
+  },
+  {
+   "word": "on",
+   "start": 43.27,
+   "end": 43.43
+  },
+  {
+   "word": "our",
+   "start": 43.43,
+   "end": 43.53
+  },
+  {
+   "word": "back",
+   "start": 43.53,
+   "end": 43.71
+  },
+  {
+   "word": "door",
+   "start": 43.71,
+   "end": 43.87
+  },
+  {
+   "word": "and",
+   "start": 43.87,
+   "end": 44.03
+  },
+  {
+   "word": "said,",
+   "start": 44.03,
+   "end": 44.21
+  },
+  {
+   "word": "something",
+   "start": 44.37,
+   "end": 44.67
+  },
+  {
+   "word": "followed",
+   "start": 44.67,
+   "end": 44.97
+  },
+  {
+   "word": "us.",
+   "start": 44.97,
+   "end": 45.25
+  },
+  {
+   "word": "It",
+   "start": 45.57,
+   "end": 45.67
+  },
+  {
+   "word": "wasn't",
+   "start": 45.67,
+   "end": 46.03
+  },
+  {
+   "word": "lying.",
+   "start": 46.03,
+   "end": 46.27
+  },
+  {
+   "word": "Dad",
+   "start": 46.82,
+   "end": 46.86
+  },
+  {
+   "word": "never",
+   "start": 46.86,
+   "end": 47.14
+  },
+  {
+   "word": "calls",
+   "start": 47.14,
+   "end": 47.38
+  },
+  {
+   "word": "me",
+   "start": 47.38,
+   "end": 47.52
+  },
+  {
+   "word": "kiddo.",
+   "start": 47.52,
+   "end": 47.86
+  }
+ ]
+}
