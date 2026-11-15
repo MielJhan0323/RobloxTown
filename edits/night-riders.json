@@ -1,0 +1,471 @@
+{
+ "slug": "night-riders",
+ "mode": "music_edit",
+ "song_start": 10.3,
+ "credit": "Song: Aneesa - Raat Ka Nasha",
+ "top_hook": {
+  "text": "His last night in town.",
+  "t1": 2.6
+ },
+ "lyrics": [
+  {
+   "t0": 10.58,
+   "t1": 15.6,
+   "words": [
+    [
+     "City",
+     10.58
+    ],
+    [
+     "lights",
+     11.3
+    ],
+    [
+     "on",
+     11.94
+    ],
+    [
+     "your",
+     12.4
+    ],
+    [
+     "skin,",
+     12.76
+    ],
+    [
+     "windows",
+     13.38
+    ],
+    [
+     "down,",
+     13.92
+    ],
+    [
+     "let",
+     14.38
+    ],
+    [
+     "it",
+     14.78
+    ],
+    [
+     "in",
+     15.22
+    ]
+   ]
+  },
+  {
+   "t0": 15.6,
+   "t1": 20.88,
+   "words": [
+    [
+     "No",
+     15.6
+    ],
+    [
+     "tomorrow",
+     16.08
+    ],
+    [
+     "in",
+     16.78
+    ],
+    [
+     "our",
+     17.26
+    ],
+    [
+     "hands,",
+     17.56
+    ],
+    [
+     "just",
+     18.08
+    ],
+    [
+     "this",
+     18.36
+    ],
+    [
+     "feeling",
+     18.72
+    ],
+    [
+     "pulling",
+     19.16
+    ],
+    [
+     "us",
+     19.94
+    ],
+    [
+     "in",
+     20.44
+    ]
+   ]
+  },
+  {
+   "t0": 20.88,
+   "t1": 25.18,
+   "words": [
+    [
+     "You",
+     20.88
+    ],
+    [
+     "don't",
+     21.54
+    ],
+    [
+     "ask",
+     21.72
+    ],
+    [
+     "where",
+     21.9
+    ],
+    [
+     "this",
+     22.02
+    ],
+    [
+     "is",
+     22.2
+    ],
+    [
+     "going,",
+     22.32
+    ],
+    [
+     "you",
+     23.1
+    ],
+    [
+     "don't",
+     23.36
+    ],
+    [
+     "need",
+     23.52
+    ],
+    [
+     "to",
+     23.7
+    ],
+    [
+     "know",
+     23.96
+    ],
+    [
+     "my",
+     24.3
+    ],
+    [
+     "past",
+     24.58
+    ]
+   ]
+  },
+  {
+   "t0": 25.18,
+   "t1": 29.74,
+   "words": [
+    [
+     "Every",
+     25.18
+    ],
+    [
+     "second",
+     26.34
+    ],
+    [
+     "getting",
+     26.6
+    ],
+    [
+     "closer,",
+     26.88
+    ],
+    [
+     "like",
+     27.78
+    ],
+    [
+     "we're",
+     28.08
+    ],
+    [
+     "running",
+     28.22
+    ],
+    [
+     "out",
+     28.56
+    ],
+    [
+     "of",
+     29.08
+    ],
+    [
+     "time",
+     29.34
+    ]
+   ]
+  },
+  {
+   "t0": 29.74,
+   "t1": 34.48,
+   "words": [
+    [
+     "You",
+     29.74
+    ],
+    [
+     "look",
+     30.2
+    ],
+    [
+     "calm,",
+     30.54
+    ],
+    [
+     "but",
+     31.0
+    ],
+    [
+     "I",
+     31.4
+    ],
+    [
+     "feel",
+     31.72
+    ],
+    [
+     "it",
+     32.04
+    ],
+    [
+     "every",
+     32.36
+    ],
+    [
+     "breath",
+     32.82
+    ],
+    [
+     "you",
+     33.12
+    ],
+    [
+     "try",
+     33.44
+    ],
+    [
+     "to",
+     33.78
+    ],
+    [
+     "hide",
+     34.04
+    ]
+   ]
+  },
+  {
+   "t0": 34.48,
+   "t1": 37.72,
+   "words": [
+    [
+     "I",
+     34.48
+    ],
+    [
+     "don't",
+     34.88
+    ],
+    [
+     "chase,",
+     35.12
+    ],
+    [
+     "I",
+     35.82
+    ],
+    [
+     "don't",
+     36.08
+    ],
+    [
+     "wait,",
+     36.4
+    ],
+    [
+     "I",
+     36.78
+    ],
+    [
+     "decide",
+     37.3
+    ]
+   ]
+  },
+  {
+   "t0": 38.46,
+   "t1": 40.3,
+   "words": [
+    [
+     "RAAT",
+     38.46
+    ],
+    [
+     "KA",
+     38.96
+    ],
+    [
+     "NASHA",
+     39.3
+    ]
+   ],
+   "sub": "(the night's rush)",
+   "hook": true
+  },
+  {
+   "t0": 40.32,
+   "t1": 45.3,
+   "words": [
+    [
+     "RAAT",
+     40.32
+    ],
+    [
+     "KA",
+     40.9
+    ],
+    [
+     "NASHA",
+     41.2
+    ]
+   ],
+   "sub": "(the night's rush)",
+   "hook": true
+  }
+ ],
+ "shots": [
+  {
+   "n": 1,
+   "start": 0,
+   "dur": 2.4,
+   "end": 2.4,
+   "text": "",
+   "note": "dark street, first lamp",
+   "src": "output/anim/night-riders/shot_01.mp4"
+  },
+  {
+   "n": 2,
+   "start": 2.4,
+   "dur": 2.9,
+   "end": 5.3,
+   "text": "",
+   "note": "push off, lamps chain-light",
+   "src": "output/anim/night-riders/shot_02.mp4"
+  },
+  {
+   "n": 3,
+   "start": 5.3,
+   "dur": 2.7,
+   "end": 8.0,
+   "text": "",
+   "note": "side tracking",
+   "src": "output/anim/night-riders/shot_03.mp4"
+  },
+  {
+   "n": 4,
+   "start": 8.0,
+   "dur": 2.6,
+   "end": 10.6,
+   "text": "",
+   "note": "Rio laughing",
+   "src": "output/anim/night-riders/shot_04.mp4"
+  },
+  {
+   "n": 5,
+   "start": 10.6,
+   "dur": 2.3,
+   "end": 12.9,
+   "text": "",
+   "note": "high drone",
+   "src": "output/anim/night-riders/shot_05.mp4"
+  },
+  {
+   "n": 6,
+   "start": 12.9,
+   "dur": 2.0,
+   "end": 14.9,
+   "text": "",
+   "note": "house: SOLD + truck",
+   "src": "output/anim/night-riders/shot_06.mp4"
+  },
+  {
+   "n": 7,
+   "start": 14.9,
+   "dur": 2.3,
+   "end": 17.2,
+   "text": "",
+   "note": "racing",
+   "src": "output/anim/night-riders/shot_07.mp4"
+  },
+  {
+   "n": 8,
+   "start": 17.2,
+   "dur": 2.2,
+   "end": 19.4,
+   "text": "",
+   "note": "clock 11:59->12:00",
+   "src": "output/anim/night-riders/shot_08.mp4"
+  },
+  {
+   "n": 9,
+   "start": 19.4,
+   "dur": 2.4,
+   "end": 21.8,
+   "text": "",
+   "note": "narrator calm -> sad",
+   "src": "output/anim/night-riders/shot_09.mp4"
+  },
+  {
+   "n": 10,
+   "start": 21.8,
+   "dur": 2.4,
+   "end": 24.2,
+   "text": "",
+   "note": "the ramp ahead",
+   "src": "output/anim/night-riders/shot_10.mp4"
+  },
+  {
+   "n": 11,
+   "start": 24.2,
+   "dur": 3.2,
+   "end": 27.4,
+   "text": "",
+   "note": "jump",
+   "src": "output/anim/night-riders/shot_11.mp4"
+  },
+  {
+   "n": 12,
+   "start": 27.4,
+   "dur": 3.8,
+   "end": 31.2,
+   "text": "",
+   "note": "DROP: town lights + fireworks",
+   "src": "output/anim/night-riders/shot_12.mp4"
+  },
+  {
+   "n": 13,
+   "start": 31.2,
+   "dur": 3.8,
+   "end": 35.0,
+   "text": "",
+   "note": "hill, watching",
+   "src": "output/anim/night-riders/shot_13.mp4"
+  }
+ ]
+}

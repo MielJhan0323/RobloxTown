@@ -43,8 +43,40 @@ def write_ass(plan: dict, path: Path, total: float):
         "Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding",
         f"Style: Story,{font},74,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,0,0,1,6,3,8,90,90,330,1",
         f"Style: Credit,{font},56,&H00FFFFFF,&H00FFFFFF,&H00000000,&H78000000,0,0,0,0,100,100,0,0,3,14,0,2,80,80,170,1",
+        # lyrics: lower-middle of the frame (chest height, under the faces), words revealed on their beat
+        f"Style: Lyric,{font},78,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,0,0,1,6,3,2,80,80,560,1",
+        f"Style: Hook,{font},150,&H0040D8FF,&H00FFFFFF,&H00301040,&H80000000,0,0,0,0,100,100,6,0,1,9,4,5,40,40,0,1",
+        f"Style: HookSub,{font},52,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,0,0,1,5,2,5,40,40,0,1",
+        f"Style: Top,{font},66,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,0,0,1,6,3,8,80,80,210,1",
         "", "[Events]", "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text",
     ]
+    off = float(plan.get("song_start", 0.0))      # lyric times are song times
+    hook = plan.get("top_hook")
+    if hook:
+        lines.append(f"Dialogue: 2,{ts(0)},{ts(hook.get('t1', 2.5))},Top,,0,0,0,,"
+                     r"{\fad(0,200)\fscx90\fscy90\t(0,160,\fscx100\fscy100)}" + hook["text"])
+    lyr = plan.get("lyrics", [])
+    for i, ln in enumerate(lyr):
+        t0 = float(ln["t0"]) - off
+        nxt = float(lyr[i + 1]["t0"]) - off if i + 1 < len(lyr) else total
+        t1 = min(max(float(ln.get("t1", nxt)) - off + 0.35, t0 + 0.8), nxt, total)
+        if t1 <= 0 or t0 >= total:
+            continue
+        if ln.get("hook"):    # big glowing title-style hook, words slam in
+            parts = []
+            for w, wt in ln["words"]:
+                ms = int(max(0.0, (float(wt) - off - t0)) * 1000)
+                parts.append(r"{\alpha&HFF&\fscx140\fscy140\t(%d,%d,\alpha&H00&\fscx100\fscy100)}%s" % (ms, ms + 110, w))
+            lines.append(f"Dialogue: 3,{ts(max(0, t0))},{ts(t1)},Hook,,0,0,0,," + r"{\pos(540,820)\blur1.5}" + " ".join(parts))
+            if ln.get("sub"):
+                lines.append(f"Dialogue: 3,{ts(max(0, t0) + 0.4)},{ts(t1)},HookSub,,0,0,0,,"
+                             r"{\pos(540,960)\fad(200,150)}" + ln["sub"])
+            continue
+        parts = []
+        for w, wt in ln["words"]:     # each word fades + pops in on its sung time
+            ms = int(max(0.0, (float(wt) - off - t0)) * 1000)
+            parts.append(r"{\alpha&HFF&\t(%d,%d,\alpha&H00&)}%s" % (ms, ms + 90, w))
+        lines.append(f"Dialogue: 1,{ts(max(0, t0))},{ts(t1)},Lyric,,0,0,0,," + r"{\fad(0,120)}" + " ".join(parts))
     t = 0.0
     for s in plan["shots"]:
         d = float(s["dur"])
@@ -61,7 +93,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("slug")
     ap.add_argument("--song", help="local copy of the song, for a timing preview only")
-    ap.add_argument("--song-start", type=float, default=0.0, help="where in the song the video starts (s)")
+    ap.add_argument("--song-start", type=float, default=None, help="where in the song the video starts (s)")
     a = ap.parse_args()
     plan = load_json(EDITS / f"{a.slug}.json")
     if not plan:
@@ -97,7 +129,7 @@ def main():
     log(f"music edit -> {out}  ({total:.1f}s, silent track - add the official sound in-app)")
     if a.song:
         prev = OUTPUT / f"{a.slug}_with_song.mp4"
-        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(out), "-ss", str(a.song_start), "-i", a.song,
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(out), "-ss", str(a.song_start if a.song_start is not None else plan.get("song_start", 0.0)), "-i", a.song,
                         "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
                         "-af", f"afade=t=out:st={max(0, total - 1.5):.2f}:d=1.5", "-t", f"{total:.3f}", str(prev)],
                        check=True)
