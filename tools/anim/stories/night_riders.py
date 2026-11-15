@@ -7,11 +7,12 @@ they pass. They race the clock, launch off a ramp ("I don't chase, I don't wait,
 Shots are cut to the song's beats (~102 BPM). Narrator = the one leaving, Rio = Crowd3.
 Sets (reused): the main street with its lamps (the_knock), our house/porch (the_knock) for the moving truck.
 """
+import json
 import math
 import random
 
 import bpy
-from mathutils import Vector
+from mathutils import Matrix, Vector
 
 import kit
 import rblx
@@ -32,6 +33,10 @@ HILL = V((1.5, Y_RAMP + 16, 0))    # little grass hill past the ramp, looking ba
 # ---------------------------------------------------------------- lights
 def night():
     S = stage("night")
+    sc = bpy.context.scene
+    sc.eevee.bloom_intensity = 0.2          # glowing lamps / neon / lyric text
+    sc.eevee.bloom_radius = 6.5
+    sc.eevee.bloom_threshold = 0.75
     bpy.context.scene.world.node_tree.nodes["Background"].inputs[1].default_value = 1.1
     for o in bpy.data.objects:
         if o.type == "LIGHT" and o.data.type == "SUN":
@@ -190,6 +195,121 @@ def hill():
     kit.sphere(14, (HILL.x, HILL.y + 8, -10.5), g, scale=(1.6, 1.2, 1.0), seg=24)
 
 
+# ---------------------------------------------------------------- lyrics in the world (perspective text)
+_PLAN = None
+def _font_path():
+    """The user's font if one is dropped in assets/fonts/ (e.g. Resolve), else Montserrat ExtraBold."""
+    d = rblx.ROOT / "assets" / "fonts"
+    for pat in ("*esolve*.otf", "*esolve*.ttf", "*.otf", "*.ttf"):
+        hits = sorted(d.glob(pat)) if d.exists() else []
+        if hits:
+            return hits[0]
+    return rblx.ROOT / "tools" / "fonts" / "Montserrat-ExtraBold.otf"
+
+
+FONT_PATH = _font_path()
+
+
+def plan():
+    global _PLAN
+    if _PLAN is None:
+        _PLAN = json.loads((rblx.ROOT / "edits" / "night-riders.json").read_text())
+    return _PLAN
+
+
+def shot_lines(n, hook=False):
+    """Lyric lines sung during shot n -> [[(word, frame), ...], ...]. Words already sung show from frame 1;
+    words after the cut are left out (they appear on the next shot's surface)."""
+    p = plan()
+    sh = p["shots"][n - 1]
+    off, a, b = float(p.get("song_start", 0)), float(sh["start"]), float(sh["end"])
+    out = []
+    for ln in p.get("lyrics", []):
+        if bool(ln.get("hook")) != hook:
+            continue
+        l0, l1 = float(ln["t0"]) - off, float(ln.get("t1", ln["t0"])) - off
+        if l0 >= b - 0.05 or l1 < a - 0.4:
+            continue
+        ws = [(w, max(1, int(round((float(t) - off - a) * 30)) + 1)) for w, t in ln["words"] if float(t) - off < b - 0.05]
+        if ws:
+            out.append(ws)
+    return out
+
+
+def _font():
+    f = bpy.data.fonts.get("MontserratXB")
+    if f is None:
+        f = bpy.data.fonts.load(str(FONT_PATH))
+        f.name = "MontserratXB"
+    return f
+
+
+def world_text(lines, origin, direction=None, normal=None, size=1.4, up=(0, 0, 1), color=(1, 1, 1), emit=2.2,
+               max_chars=15, push=0.08, pop=True, whole=False):
+    """Lay timed lyric words onto a real surface: ray-cast from origin along direction to find the wall/road,
+    then place the words flat on it (text faces back along the ray), rows centred, each word popping in on its frame.
+    With normal= instead of direction, the text floats at origin facing that normal (sky titles)."""
+    origin = V(origin)
+    if direction is not None:
+        bpy.context.view_layer.update()
+        dg = bpy.context.evaluated_depsgraph_get()
+        hit, loc, nrm, *_ = bpy.context.scene.ray_cast(dg, origin, V(direction).normalized(), distance=300)
+        if hit:
+            origin, normal = V(loc), V(nrm)
+        else:
+            normal = -V(direction)
+    z = V(normal).normalized()
+    y = V(up) - z * V(up).dot(z)
+    y = y.normalized() if y.length > 1e-4 else V((0, 1, 0))
+    x = y.cross(z)
+    mat = kit.mat("lyric%s%.1f" % (str(color), emit), color, emit=emit, emit_color=color)
+    if whole:      # one centred object per line (titles): pops in on its first word
+        lines = [[(" ".join(w for w, _ in ln), ln[0][1])] for ln in lines if ln]
+    rows, cur, n = [], [], 0
+    for ln in lines:
+        for w, f in ln:
+            if cur and n + len(w) > max_chars:
+                rows.append(cur); cur, n = [], 0
+            cur.append((w, f)); n += len(w) + 1
+    if cur:
+        rows.append(cur)
+    objs = []
+    for r, row in enumerate(rows):
+        made = []
+        for w, f in row:
+            cu = bpy.data.curves.new("ly_" + w, "FONT")
+            cu.body = w.upper()
+            cu.font = _font()
+            cu.size = size
+            cu.extrude = 0.0          # flat 2D lettering, like paint on the wall
+            cu.align_x, cu.align_y = "CENTER", "CENTER"
+            o = bpy.data.objects.new("ly_" + w, cu)
+            bpy.context.scene.collection.objects.link(o)
+            o.data.materials.append(mat)
+            made.append((o, f))
+        bpy.context.view_layer.update()
+        widths = [o.dimensions.x for o, _ in made]
+        gap = size * 0.32
+        u = -(sum(widths) + gap * (len(made) - 1)) / 2
+        v = (len(rows) - 1) / 2 * size * 1.2 - r * size * 1.2
+        for (o, f), wd in zip(made, widths):
+            c = u + wd / 2
+            u += wd + gap
+            pos = origin + z * push + x * c + y * v
+            o.matrix_world = Matrix(((x.x, y.x, z.x, pos.x), (x.y, y.y, z.y, pos.y), (x.z, y.z, z.z, pos.z), (0, 0, 0, 1)))
+            if pop and f > 1:
+                for ff, sc in ((1, 0.001), (f - 1, 0.001), (f, 1.25), (f + 3, 1.0)):
+                    o.scale = (sc, sc, sc)
+                    o.keyframe_insert("scale", frame=ff)
+            objs.append(o)
+    glow = kit.point(tuple(origin + z * 1.5), color, 25 * size, 3.0)   # the text lights its wall a little
+    return objs
+
+
+def wall_lyrics(n, origin, direction, **kw):
+    return world_text(shot_lines(n), origin, direction, **kw)
+
+
 # ---------------------------------------------------------------- shots
 def s01(k, F):  # "City lights on your skin" - dark street, two kids on bikes; the first lamp flicks on
     S = night()
@@ -201,6 +321,7 @@ def s01(k, F):  # "City lights on your skin" - dark street, two kids on bikes; t
     _bulb_switch(near, kf(F * 0.3), 99)
     S.drone([(1, V((9, Y0 + 12, 3.0)), V((1.5, Y0 + 1, 2.6))),
              (F, V((7, Y0 + 9, 3.6)), V((1.5, Y0 + 1, 2.8)))], lens=30)
+    world_text(shot_lines(1), (-1.5, Y0 - 3, 6.5), normal=(0.55, 0.8, -0.1), size=1.3, max_chars=12)   # street edge: sign in the dark
     return S
 
 
@@ -213,6 +334,7 @@ def s02(k, F):  # "windows down, let it in" - they push off, lamps light up as t
     lamps_follow(lambda f: ya + (yb - ya) * (f - 1) / max(1, F - 1), F)
     S.drone([(1, V((8.5, Y0 + 16, 3.4)), V((1.5, Y0 + 3, 2.4))),
              (F, V((8.0, Y0 + 38, 4.0)), V((1.5, Y0 + 24, 2.4)))], lens=30)
+    wall_lyrics(2, (6.0, Y0 + 15, 6), (0, 0, -1), size=1.5, up=(-0.3, -1, 0), max_chars=12)
     return S
 
 
@@ -227,6 +349,7 @@ def s03(k, F):  # "No tomorrow in our hands" - side tracking drone
     rio.arm("L", kf(F * 0.3), 150, 20)
     S.drone([(1, V((11.0, ya - 1, 3.4)), V((1.5, ya, 2.4))),
              (F, V((11.0, yb - 1, 3.8)), V((1.5, yb, 2.4)))], lens=22, allow_close=True)
+    wall_lyrics(3, (-3.6, ya + 13, 4.6), (-1, 0, 0), size=1.5)
     return S
 
 
@@ -240,6 +363,7 @@ def s04(k, F):  # "just this feeling pulling us in" - Rio laughing, close front
     rio.look(1, -25, 5)
     S.drone([(1, rio.head_pt() + V((2.5, 5.0, -0.6)), rio.head_pt() - V((0, 0, 1.2))),
              (F, rio.head_pt() + V((2.2, yb - ya + 5.0, -0.6)), rio.head_pt() + V((0, yb - ya, -1.2)))], lens=30)
+    wall_lyrics(4, (-3.6, ya + 3, 5.0), (-1, 0, 0), size=1.4, color=(1, 0.85, 0.95))
     return S
 
 
@@ -252,6 +376,7 @@ def s05(k, F):  # "You don't ask where this is going" - high drone, lamps lighti
     lamps_follow(lambda f: ya + (yb - ya) * (f - 1) / max(1, F - 1), F, lead=8)
     S.drone([(1, V((1.5, ya - 14, 24)), V((1.5, ya + 6, 0))),
              (F, V((1.5, yb - 12, 22)), V((1.5, yb + 8, 0)))], lens=26)
+    wall_lyrics(5, (1.5, ya + 18, 6), (0, 0, -1), size=2.4, up=(0, 1, 0), max_chars=13)
     return S
 
 
@@ -268,6 +393,7 @@ def s06(k, F):  # "you don't need to know my past" - his house: moving truck, bo
     text("SOLD", (P.x + 9, P.y - 8.25, 2.95), rot=(90, 0, 0), size=0.9, color=(1, 1, 1), emit=1.5)
     S.drone([(1, V((P.x + 4, P.y - 26, 5)), V((P.x, P.y - 2, 4))),
              (F, V((P.x + 1, P.y - 21, 4.5)), V((P.x + 2, P.y - 2, 4)))], lens=28)
+    wall_lyrics(6, (P.x, P.y - 4, 11.6), (0, 1, 0), size=1.2, max_chars=20)
     return S
 
 
@@ -283,6 +409,7 @@ def s07(k, F):  # "Every second getting closer" - racing, low camera behind, fas
     lamps_all(1)
     S.drone([(1, V((7.5, ya - 7, 1.8)), V((1.5, ya + 4, 2.2))),
              (F, V((7.0, yb - 5, 2.0)), V((1.5, yb + 6, 2.4)))], lens=24, allow_close=True)
+    wall_lyrics(7, (1.5, ya + 15, 6), (0, 0, -1), size=2.2, up=(0, 1, 0), max_chars=12, color=(1, 0.9, 0.4))
     return S
 
 
@@ -308,6 +435,7 @@ def s08(k, F):  # "like we're running out of time" - town clock 11:59 -> 12:00 o
     kit.key(piv, tick, rot=(0, 0, 0))
     S.drone([(1, V((cx + 2, cy - 22, cz - 4)), V((cx, cy, cz))),
              (F, V((cx + 1, cy - 14, cz - 1.5)), V((cx, cy, cz)))], lens=34, allow_close=True)
+    wall_lyrics(8, (cx, cy - 6, cz - 9.0), (0, 1, 0), size=1.3, max_chars=12, emit=1.6)
     return S
 
 
@@ -322,6 +450,7 @@ def s09(k, F):  # "You look calm, but I feel it..." - Narrator calm, then a sad 
     me.face(kf(F * 0.45), "sad")
     S.drone([(1, me.head_pt() + V((4.0, 6.5, -0.6)), me.head_pt() - V((0, 0, 1.2))),
              (F, me.head_pt() + V((3.5, yb - ya + 6, -0.5)), me.head_pt() + V((0, yb - ya, -1.2)))], lens=30)
+    wall_lyrics(9, (-3.6, ya - 5, 4.6), (-1, 0, 0), size=1.5)
     return S
 
 
@@ -339,6 +468,7 @@ def s10(k, F):  # "...every breath you try to hide" - the ramp ahead, they look 
     rio.face(kf(F * 0.55), "determined")
     S.drone([(1, V((7.0, Y_RAMP + 3, 3.0)), V((1.5, ya, 2.4))),
              (F, V((6.5, Y_RAMP - 2, 3.4)), V((1.5, yb, 2.4)))], lens=30)
+    wall_lyrics(10, (1.5, Y_RAMP - 8, 6), (0, 0, -1), size=1.6, up=(0, -1, 0), max_chars=12, color=(0.7, 0.9, 1))
     return S
 
 
@@ -361,6 +491,7 @@ def s11(k, F):  # "I don't chase, I don't wait, I decide" - off the ramp, slow a
     me.face(kf(F * 0.5), "laugh")
     S.drone([(1, V((8.5, Y_RAMP - 12, 2.5)), V((1.5, Y_RAMP - 4, 2.5))),
              (F, V((8.5, Y_RAMP + 6, 4.5)), V((1.5, Y_RAMP + 11, 7.5)))], lens=24, allow_close=True)
+    wall_lyrics(11, (-3.6, Y_RAMP + 4, 5.5), (-1, 0, 0), size=1.7, max_chars=12, color=(1, 0.9, 0.4), emit=2.6)
     return S
 
 
@@ -389,6 +520,8 @@ def s12(k, F):  # DROP "Raat ka nasha" - the whole town lights up at once + fire
         c.arm("L", drop, 170, 20)
     S.drone([(1, V((1.5, HILL.y + 10, 5.5)), V((1.5, HILL.y - 20, 6))),
              (F, V((1.5, HILL.y + 20, 14)), V((1.5, HILL.y - 50, 14)))], lens=24, allow_close=True)
+    world_text(shot_lines(12, hook=True), (1.5, HILL.y - 12, 15), normal=(0, 1, 0), size=2.7, color=(1, 0.75, 0.25), emit=3, max_chars=30, whole=True)
+    world_text([[("(the night's rush)", drop + 12)]], (1.5, HILL.y - 12, 11.6), normal=(0, 1, 0), size=1.3, emit=2)
     return S
 
 
@@ -404,6 +537,9 @@ def s13(k, F):  # "Raat ka nasha" - on the hill, watching the fireworks over the
     rio.look(kf(F * 0.6), -25, 0)
     S.drone([(1, V((1.5, HILL.y + 11, 6.0)), V((1.5, HILL.y - 30, 12))),
              (F, V((1.5, HILL.y + 14, 7.0)), V((1.5, HILL.y - 30, 14)))], lens=28, allow_close=True)
+    world_text(shot_lines(13, hook=True) or [[("RAAT", 1), ("KA", 1), ("NASHA", 1)]], (1.5, HILL.y - 12, 16), normal=(0, 1, 0), size=2.7,
+               color=(1, 0.75, 0.25), emit=3, max_chars=30, whole=True)
+    world_text([[("(the night's rush)", 1)]], (1.5, HILL.y - 12, 12.6), normal=(0, 1, 0), size=1.3, emit=2, pop=False)
     return S
 
 

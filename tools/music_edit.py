@@ -55,7 +55,7 @@ def write_ass(plan: dict, path: Path, total: float):
     if hook:
         lines.append(f"Dialogue: 2,{ts(0)},{ts(hook.get('t1', 2.5))},Top,,0,0,0,,"
                      r"{\fad(0,200)\fscx90\fscy90\t(0,160,\fscx100\fscy100)}" + hook["text"])
-    lyr = plan.get("lyrics", [])
+    lyr = [] if plan.get("lyrics_3d") else plan.get("lyrics", [])   # 3D lyrics live in the shots themselves
     for i, ln in enumerate(lyr):
         t0 = float(ln["t0"]) - off
         nxt = float(lyr[i + 1]["t0"]) - off if i + 1 < len(lyr) else total
