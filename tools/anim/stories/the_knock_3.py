@@ -244,7 +244,8 @@ def s13(k, F):  # "Stay there, bug. We're five minutes away."  (car speeding dow
     cr = car((-4, -3540, 0), color=(0.85, 0.85, 0.88), yaw=0)
     kit.key(cr, 1, loc=(-4, -3560, 0))
     kit.key(cr, F, loc=(-4, -3520, 0))
-    S.cam_at(V((10, -3530, 4)), V((-4, -3535, 2.5)), lens=26, fstop=None)
+    S.drone([(1, V((1, -3576, 4.5)), V((-4, -3556, 1.4))),
+             (F, V((0, -3542, 5.5)), V((-4, -3518, 1.4)))], lens=30, fstop=None)   # chase drone behind the car
     return S
 
 
