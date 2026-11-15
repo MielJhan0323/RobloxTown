@@ -1,0 +1,79 @@
+{
+ "slug": "the-seat",
+ "mode": "music_edit",
+ "credit": "Song: dash emzed - five years on",
+ "shots": [
+  {
+   "n": 1,
+   "start": 0,
+   "dur": 3.4,
+   "end": 3.4,
+   "text": "In this town, benches remember who sat on them.",
+   "src": "output/anim/the-seat/shot_01.mp4"
+  },
+  {
+   "n": 2,
+   "start": 3.4,
+   "dur": 3.3,
+   "end": 6.7,
+   "text": "Every day after school: me and Rio.",
+   "src": "output/anim/the-seat/shot_02.mp4"
+  },
+  {
+   "n": 3,
+   "start": 6.7,
+   "dur": 3.0,
+   "end": 9.7,
+   "text": "Left side: me.\\NRight side: him.",
+   "src": "output/anim/the-seat/shot_03.mp4"
+  },
+  {
+   "n": 4,
+   "start": 9.7,
+   "dur": 3.4,
+   "end": 13.1,
+   "text": "Then his family moved away.",
+   "src": "output/anim/the-seat/shot_04.mp4"
+  },
+  {
+   "n": 5,
+   "start": 13.1,
+   "dur": 3.2,
+   "end": 16.3,
+   "text": "The bench kept his side warm.",
+   "src": "output/anim/the-seat/shot_05.mp4"
+  },
+  {
+   "n": 6,
+   "start": 16.3,
+   "dur": 3.0,
+   "end": 19.3,
+   "text": "Five years on\u2026",
+   "src": "output/anim/the-seat/shot_06.mp4"
+  },
+  {
+   "n": 7,
+   "start": 19.3,
+   "dur": 3.4,
+   "end": 22.7,
+   "text": "I still sit on the left.",
+   "src": "output/anim/the-seat/shot_07.mp4"
+  },
+  {
+   "n": 8,
+   "start": 22.7,
+   "dur": 3.2,
+   "end": 25.9,
+   "text": "Today, the right side glowed.",
+   "src": "output/anim/the-seat/shot_08.mp4"
+  },
+  {
+   "n": 9,
+   "start": 25.9,
+   "dur": 4.5,
+   "end": 30.4,
+   "text": "\u201cHey. Sorry I'm late.\u201d",
+   "src": "output/anim/the-seat/shot_09.mp4"
+  }
+ ]
+}
