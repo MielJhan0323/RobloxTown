@@ -18,7 +18,7 @@ CX = 0.53                   # face centre (fraction of width), measured from the
 EYE_Y, MOUTH_Y = 0.32, 0.66
 EYE_DX = 0.105
 EXPR = ["smile", "neutral", "smirk", "worried", "sad", "shocked", "angry", "crying", "talk",
-        "determined", "laugh", "embarrassed", "tired", "scared"]
+        "determined", "laugh", "embarrassed", "tired", "scared", "hollow"]
 K = (38, 24, 20, 255)          # dark brown ink, like the reference
 WHITE = (255, 255, 255, 255)
 
@@ -139,7 +139,9 @@ def face(skin, expr, blink=False):
     im = Image.new("RGBA", (W * SS, H * SS), skin)
     d = ImageDraw.Draw(im)
     xl, xr = CX - EYE_DX, CX + EYE_DX
-    if blink:
+    if expr == "hollow":         # no eyes at all (the story adds glowing dots in 3D) - creepy reveal face
+        pass
+    elif blink:
         eye(d, xl, EYE_Y, "closed"); eye(d, xr, EYE_Y, "closed")
     elif expr in ("laugh", "embarrassed"):
         eye(d, xl, EYE_Y, "closed_happy"); eye(d, xr, EYE_Y, "closed_happy")
@@ -167,7 +169,7 @@ def face(skin, expr, blink=False):
     elif tilt is not None:
         brow(d, xl, EYE_Y, tilt, "L")
         brow(d, xr, EYE_Y, tilt if expr != "smirk" else -0.4, "R")
-    mouth(d, expr)
+    mouth(d, "smile" if expr == "hollow" else expr)
     if expr == "crying":
         for x in (xl, xr):
             cx, cy = P(x, EYE_Y + 0.03)
@@ -284,7 +286,7 @@ def main():
         d.mkdir(parents=True, exist_ok=True)
         for e in EXPR:
             face(skin, e).save(d / f"{e}.png")
-            if e not in ("laugh", "embarrassed", "crying"):
+            if e not in ("laugh", "embarrassed", "crying", "hollow"):
                 face(skin, e, blink=True).save(d / f"{e}_blink.png")
     decals(meta_p.parent / "decals")
     print("faces ->", out)

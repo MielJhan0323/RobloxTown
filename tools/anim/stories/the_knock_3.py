@@ -74,37 +74,83 @@ def our_house(S, figure=False, curtain_open=0.0, wave=None):
         kit.box((3, 0.4, 0.05), (P.x - 35 + k2 * 10, P.y - 22, 0.1), kit.mat("roadline", (0.95, 0.85, 0.3)), 0)
 
 
-def parkers(S, inside=False):
-    """Parkers' house across the street: facade faces +Y at y = PK.y + 4, door + front window, living room behind."""
+def prism(size_x, half_d, h, loc, material, name="gable"):
+    """Triangular prism (gable fill): ridge along x, base half-depth half_d, height h, base centre at loc."""
+    x, y, z = loc
+    hx = size_x / 2
+    vs = [(x - hx, y - half_d, z), (x - hx, y + half_d, z), (x - hx, y, z + h),
+          (x + hx, y - half_d, z), (x + hx, y + half_d, z), (x + hx, y, z + h)]
+    fs = [(0, 2, 1), (3, 4, 5), (0, 1, 4, 3), (1, 2, 5, 4), (2, 0, 3, 5)]
+    me = bpy.data.meshes.new(name)
+    me.from_pydata(vs, [], fs)
+    me.update()
+    o = bpy.data.objects.new(name, me)
+    bpy.context.scene.collection.objects.link(o)
+    o.data.materials.append(material)
+    return o
+
+
+def parkers(S, inside=False, door_open=None):
+    """Mrs. Parker's yellow house across the street. Front wall faces +Y at y = PK.y + 4 with a real door
+    (hinged, x - 6..x - 2) and a front window hole (x + 4..x + 10). Hollow shell, so a camera can stand inside."""
     x, y = PK.x, PK.y + 4.0
-    wall = kit.mat("pkwall", (0.95, 0.78, 0.45), rough=0.9)
+    wall = kit.mat("pkwall", (0.95, 0.8, 0.45), rough=0.9)
     trim = kit.mat("pktrim", (0.98, 0.98, 0.98))
-    # facade with a window hole (x+4..x+10, z 3..8) and a door at x-4
-    for bx, bw in ((x - 8.5, 13), (x + 12.5, 5)):
-        kit.box((bw, 0.8, 14), (bx, y, 7), wall, 0)
-    kit.box((6, 0.8, 3), (x + 7, y, 1.5), wall, 0)
-    kit.box((6, 0.8, 6), (x + 7, y, 11), wall, 0)
-    kit.box((6.4, 0.9, 0.3), (x + 7, y, 3.0), trim, 0)
-    kit.box((4.2, 0.9, 7.6), (x - 4, y, 3.8), kit.mat("pkdoor", (0.25, 0.45, 0.35)), 0.04)
-    kit.box((14, 6, 0.4), (x - 2, y + 3, 0.2), kit.mat("pkwalk", (0.7, 0.68, 0.65)), 0.02)
-    kit.box((40, 14, 0.4), (x, y + 10, -0.2), kit.mat("pklawn", (0.25, 0.55, 0.22), rough=0.9), 0)
-    # the rest of the house: sides, back and a roof
-    for sx in (-15.2, 15.2):
-        kit.box((0.8, 14, 14), (x + sx, y - 7, 7), wall, 0)
-    kit.box((31, 0.8, 14), (x, y - 14, 7), wall, 0)
-    roof = kit.mat("pkroof", (0.35, 0.25, 0.22), rough=0.8)
+    T, Hh, D = 0.8, 13.0, 16.0                       # wall thickness, wall height, house depth
+    yc = y - D / 2
+    kit.box((60, 30, 0.4), (x, y + 8, -0.2), kit.mat("pklawn", (0.25, 0.55, 0.22), rough=0.9), 0)
+    # front wall in pieces around the door + window holes
+    def fw(x0, x1, z0, z1):
+        kit.box((x1 - x0, T, z1 - z0), (x + (x0 + x1) / 2, y, (z0 + z1) / 2), wall, 0)
+    fw(-15, -6, 0, Hh); fw(-6, -2, 7.6, Hh); fw(-2, 4, 0, Hh)
+    fw(4, 10, 0, 3); fw(4, 10, 8, Hh); fw(10, 15, 0, Hh)
+    # sides + back
+    for sx in (-15 + T / 2, 15 - T / 2):
+        kit.box((T, D, Hh), (x + sx, yc, Hh / 2), wall, 0)
+    kit.box((30, T, Hh), (x, y - D + T / 2, Hh / 2), wall, 0)
+    kit.box((30, D, 0.4), (x, yc, Hh - 0.2), trim, 0)                     # ceiling
+    kit.box((29, D - 1, 0.3), (x, yc, 0.05), kit.mat("pkfloor", (0.5, 0.35, 0.22)), 0)
+    # gable roof sitting on the walls (ridge along x)
+    gable = prism(30, D / 2, 6.0, (x, yc, Hh), wall)
+    roof = kit.mat("pkroof", (0.55, 0.22, 0.18), rough=0.8)
+    ang = math.degrees(math.atan2(6.0, D / 2))
+    slope = math.hypot(6.0, D / 2) + 1.2
     for sy in (-1, 1):
-        r = kit.box((32, 9.5, 0.6), (x, y - 7 + sy * 3.6, 16.6), roof, 0.03)
-        r.rotation_euler = (R(sy * 30), 0, 0)
-    for wx in (-12, 12.5):
-        kit.box((3.5, 0.9, 3), (x + wx, y + 0.05, 9), kit.mat("pkwin2", (0.5, 0.65, 0.85)), 0.02)
-    if inside:   # living room behind the window (the camera stands in here)
-        kit.box((20, 12, 0.3), (x + 3, y - 6, -0.15), kit.mat("pkfloor", (0.5, 0.35, 0.22)), 0)
-        kit.box((20, 0.5, 14), (x + 3, y - 12, 7), wall, 0)
-        kit.box((0.5, 12, 14), (x + 13, y - 6, 7), wall, 0)
-        kit.box((0.5, 12, 14), (x - 7, y - 6, 7), wall, 0)
-        kit.box((20, 12, 0.4), (x + 3, y - 6, 14), trim, 0)
-        kit.point((x + 3, y - 6, 10), (1, 0.92, 0.8), 150, 3.0)
+        r = kit.box((31.5, slope, 0.5), (x, yc + sy * (D / 4 + 0.45), Hh + 3.0 + 0.3), roof, 0.03)
+        r.rotation_euler = (R(-sy * ang), 0, 0)
+    # door: white frame + green hinged door
+    kit.box((4.8, T + 0.2, 0.4), (x - 4, y, 7.8), trim, 0.03)
+    for dx in (-6.2, -1.8):
+        kit.box((0.4, T + 0.2, 7.8), (x + dx, y, 3.9), trim, 0.03)
+    hinge = kit.empty((x - 6, y + 0.1, 0), name="pkdoor_hinge")
+    d = kit.box((4.0, 0.25, 7.5), (x - 4, y + 0.1, 3.75), kit.mat("pkdoor", (0.2, 0.45, 0.32)), 0.04)
+    knob = kit.sphere(0.16, (x - 2.6, y + 0.35, 3.7), kit.mat("knob", (0.85, 0.7, 0.3), metal=0.8), seg=10)
+    for o in (d, knob):
+        attach(o, hinge)
+    if door_open is not None:
+        f0 = door_open
+        kit.key(hinge, 1, rot=(0, 0, 0))
+        if f0 > 1:
+            kit.key(hinge, f0, rot=(0, 0, 0))
+        kit.key(hinge, f0 + 6, rot=(0, 0, -95))
+    # front window: white frame + cross bars
+    kit.box((6.6, T + 0.2, 0.35), (x + 7, y, 3.0), trim, 0.02)
+    kit.box((6.6, T + 0.2, 0.35), (x + 7, y, 8.0), trim, 0.02)
+    for dx in (3.8, 10.2):
+        kit.box((0.35, T + 0.2, 5.3), (x + dx, y, 5.5), trim, 0.02)
+    kit.box((0.2, 0.3, 5), (x + 7, y + 0.1, 5.5), trim, 0)
+    # small upstairs-style windows on the sides of the front
+    for wx in (-11, 12.5):
+        kit.box((3.6, 0.2, 3), (x + wx, y + T / 2 + 0.05, 8.5), kit.mat("pkwin2", (0.45, 0.6, 0.8)), 0.02)
+        kit.box((4.1, 0.15, 3.5), (x + wx, y + T / 2 + 0.01, 8.5), trim, 0.02)
+    kit.box((8, 6, 0.4), (x - 4, y + 3.4, 0.2), kit.mat("pkwalk", (0.72, 0.7, 0.66)), 0.02)     # path
+    bush = kit.mat("bush", (0.12, 0.35, 0.15), rough=0.9)
+    for bx in (-12, -9.5, 12.5):
+        kit.sphere(1.4, (x + bx, y + 1.8, 1.0), bush, scale=(1, 1, 0.8), seg=12)
+    # warm room light inside (seen through the window / open door, and lights the camera-inside shots)
+    kit.point((x + 2, yc, 9), (1, 0.9, 0.75), 250 if inside else 120, 4.0)
+    for k2, (fx, col) in enumerate(((-9, (0.6, 0.3, 0.3)), (8, (0.35, 0.4, 0.6)))):
+        kit.box((5, 2, 2.2), (x + fx, y - D + 2.2, 1.1), kit.mat(f"pksofa{k2}", col, rough=0.9), 0.1)   # furniture
 
 
 # ---------------------------------------------------------------- shots
@@ -170,7 +216,12 @@ def s07(k, F):  # I threw open the front door, and the morning hit my face.
     op = kf(F * 0.35)
     kit.key(fd, 1, rot=(0, 0, 0))
     kit.key(fd, op, rot=(0, 0, 0))
-    kit.key(fd, op + 6, rot=(0, 0, 100))
+    kit.key(fd, op + 6, rot=(0, 0, -100))
+    # the doorway: a bright morning outside instead of the wall behind the door
+    kit.box((0.05, 3.9, 7.8), (HALL.x - 6.01, HALL.y + 4.0, 3.95),
+            kit.mat("morningdoor", (1, 0.95, 0.8), emit=6, emit_color=(1, 0.93, 0.75)), 0)
+    for dz, col in ((0.6, (0.35, 0.65, 0.3)), ):      # a strip of lawn at the bottom of the doorway
+        kit.box((0.05, 3.9, 1.2), (HALL.x - 6.0, HALL.y + 4.0, dz), kit.mat("morninglawn", col, emit=2.5, emit_color=col), 0)
     L = kit.point((HALL.x - 8.5, HALL.y + 4, 5), (1, 0.85, 0.55), 0, 3.0)
     L.data.keyframe_insert("energy", frame=op)
     L.data.energy = 9000
@@ -218,7 +269,7 @@ def s10(k, F):  # She saw my face and didn't ask a single question.
 
 def s11(k, F):  # She just pulled me inside.
     S = morning()
-    parkers(S)
+    parkers(S, door_open=1)
     mp = mrs_parker(S, (PK.x - 4, PK.y + 6.5), 180, "worried")
     n = S.char("Narrator", (PK.x - 1.5, PK.y + 9), 160, "scared")
     mp.arm("R", 1, 80, -20)
@@ -358,8 +409,8 @@ def s24(k, F):  # Dad knelt down and messed up my hair. He smiled at me.
     mom, dad, n = family(S)
     p = dad.pos
     dad.key_root(1, (p.x, p.y, p.z))
-    dad.key_root(kf(F * 0.3), (p.x - 0.6, p.y - 1.0, p.z - 1.6))
-    dad.lean(kf(F * 0.3), 20)
+    dad.leg("L", 1, 0); dad.leg("R", 1, 0)
+    kneel(dad, kf(F * 0.3), p)
     dad.arm("R", kf(F * 0.45), 150, 30)
     for j, f in enumerate(range(kf(F * 0.45), F + 2, 5)):
         dad.arm("R", f, 150, 30 + (10 if j % 2 else -10))
@@ -367,12 +418,18 @@ def s24(k, F):  # Dad knelt down and messed up my hair. He smiled at me.
     return S
 
 
+def kneel(dad, f, p):
+    """One-knee kneel without sinking into the ground: hips drop 1.0, front leg forward, back leg folded back."""
+    dad.key_root(f, (p.x - 0.6, p.y - 1.0, p.z - 1.0))
+    dad.leg("L", f, 75)
+    dad.leg("R", f, -80)
+    dad.lean(f, 15)
+
+
 def kneeling_dad(S, expr="smile"):
     our_house(S)
     mom, dad, n = family(S, "smile", expr)
-    p = dad.pos
-    dad.key_root(1, (p.x - 0.6, p.y - 1.0, p.z - 1.6))
-    dad.lean(1, 20)
+    kneel(dad, 1, dad.pos.copy())
     return mom, dad, n
 
 
@@ -405,21 +462,21 @@ def s27(k, F):  # Last night, something knocked on our back door and said, "Some
 
 
 def dad_eyes(S, dad, f_on):
-    """Tiny glowing glints on Dad's pupils - the Knocker is inside him. Placed on the head's front face."""
-    h = dad.head
-    bb = [V(c) for c in h.bound_box]
-    lo = V((min(v.x for v in bb), min(v.y for v in bb), min(v.z for v in bb)))
-    hi = V((max(v.x for v in bb), max(v.y for v in bb), max(v.z for v in bb)))
-    w, ht = hi.x - lo.x, hi.y - lo.y          # OBJ import: local x = width, y = height, z = depth (face at z min)
+    """The reveal: Dad's eyes vanish (hollow face) and two glowing dots sit where they were."""
+    dad.face(f_on, "hollow")
     out = []
-    for sx in (-0.105, 0.105):
-        local = V(((lo.x + hi.x) / 2 + sx * w, hi.y - 0.32 * ht, lo.z - 0.03))
-        e = kit.sphere(0.05, (0, 0, 0), kit.mat("dadglint", (1, 0.95, 0.8), emit=14, emit_color=(1, 0.9, 0.7)), seg=8)
-        e.parent = h
-        e.location = local
-        S.show(e, 1, False)
-        S.show(e, f_on, True)
-        out.append(e)
+    for h in dad.heads.values():          # every face variant shares the head's placement
+        bb = [V(c) for c in h.bound_box]
+        lo = V((min(v.x for v in bb), min(v.y for v in bb), min(v.z for v in bb)))
+        hi = V((max(v.x for v in bb), max(v.y for v in bb), max(v.z for v in bb)))
+        w, ht = hi.x - lo.x, hi.y - lo.y   # OBJ import: local x = width, y = height, z = depth (face at z min)
+        for sx in (-0.105, 0.105):
+            e = kit.sphere(0.06, (0, 0, 0), kit.mat("dadglow", (1, 1, 0.95), emit=5, emit_color=(1, 0.97, 0.85)), seg=10)
+            e.parent = h
+            e.location = V(((lo.x + hi.x) / 2 + sx * w, hi.y - 0.32 * ht, lo.z - 0.02))
+            e.scale = (1, 1, 0.4)
+            S.show(e, 1, False); S.show(e, f_on, True); out.append(e)
+        break
     return out
 
 
