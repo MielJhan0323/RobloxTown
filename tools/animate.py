@@ -34,6 +34,7 @@ def main():
     ap.add_argument("--res", default="540x960")
     ap.add_argument("--samples", type=int, default=8)
     ap.add_argument("--stills", action="store_true")
+    ap.add_argument("--matte", action="store_true", help="character matte passes (matte_XX.mp4) for text-behind-characters")
     a = ap.parse_args()
     plan = load_json(EDITS / f"{a.slug}.json")
     if not plan:
@@ -48,7 +49,7 @@ def main():
         # ITT_DUR_SCALE > 1 renders longer clips (e.g. before the real voice exists; the edit trims them)
         scale = float(__import__("os").environ.get("ITT_DUR_SCALE", "1"))
         frames = int(math.ceil((s["dur"] * scale + PAD) * 30))
-        out = outdir / (f"still_{s['n']:02d}.png" if a.stills else f"shot_{s['n']:02d}.mp4")
+        out = outdir / (f"still_{s['n']:02d}.png" if a.stills else (f"matte_{s['n']:02d}.mp4" if a.matte else f"shot_{s['n']:02d}.mp4"))
         if out.exists() and not a.force:
             continue
         todo.append((s["n"], frames, out))
@@ -60,7 +61,8 @@ def main():
                "-P", str(TOOLS / "anim" / "render_shot.py"), "--", a.slug, str(n), str(frames), str(tmp), w, h,
                str(a.samples)] + ([str(max(1, frames // 2))] if a.stills else [])
         t0 = time.time()
-        r = subprocess.run(cmd, capture_output=True, text=True)
+        env = dict(__import__("os").environ, **({"ITT_MATTE": "1"} if a.matte else {}))
+        r = subprocess.run(cmd, capture_output=True, text=True, env=env)
         if r.returncode != 0 or not tmp.exists():
             err = [l for l in (r.stdout + r.stderr).splitlines() if "Error" in l or "Traceback" in l or "line" in l][-12:]
             log(f"shot {n} FAILED:\n" + "\n".join(err))

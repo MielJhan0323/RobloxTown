@@ -357,7 +357,8 @@
    "end": 2.4,
    "text": "",
    "note": "dark street, first lamp",
-   "src": "output/anim/night-riders/shot_01.mp4"
+   "src": "output/anim/night-riders/shot_01.mp4",
+   "lyric_mode": "back"
   },
   {
    "n": 2,
@@ -366,7 +367,8 @@
    "end": 5.3,
    "text": "",
    "note": "push off, lamps chain-light",
-   "src": "output/anim/night-riders/shot_02.mp4"
+   "src": "output/anim/night-riders/shot_02.mp4",
+   "lyric_mode": "floor"
   },
   {
    "n": 3,
@@ -375,7 +377,8 @@
    "end": 8.0,
    "text": "",
    "note": "side tracking",
-   "src": "output/anim/night-riders/shot_03.mp4"
+   "src": "output/anim/night-riders/shot_03.mp4",
+   "lyric_mode": "floor"
   },
   {
    "n": 4,
@@ -384,7 +387,8 @@
    "end": 10.6,
    "text": "",
    "note": "Rio laughing",
-   "src": "output/anim/night-riders/shot_04.mp4"
+   "src": "output/anim/night-riders/shot_04.mp4",
+   "lyric_mode": "floor"
   },
   {
    "n": 5,
@@ -393,7 +397,8 @@
    "end": 12.9,
    "text": "",
    "note": "high drone",
-   "src": "output/anim/night-riders/shot_05.mp4"
+   "src": "output/anim/night-riders/shot_05.mp4",
+   "lyric_mode": "top"
   },
   {
    "n": 6,
@@ -402,7 +407,8 @@
    "end": 14.9,
    "text": "",
    "note": "house: SOLD + truck",
-   "src": "output/anim/night-riders/shot_06.mp4"
+   "src": "output/anim/night-riders/shot_06.mp4",
+   "lyric_mode": "floor"
   },
   {
    "n": 7,
@@ -411,7 +417,8 @@
    "end": 17.2,
    "text": "",
    "note": "racing",
-   "src": "output/anim/night-riders/shot_07.mp4"
+   "src": "output/anim/night-riders/shot_07.mp4",
+   "lyric_mode": "floor"
   },
   {
    "n": 8,
@@ -420,7 +427,8 @@
    "end": 19.4,
    "text": "",
    "note": "clock 11:59->12:00",
-   "src": "output/anim/night-riders/shot_08.mp4"
+   "src": "output/anim/night-riders/shot_08.mp4",
+   "lyric_mode": "back"
   },
   {
    "n": 9,
@@ -429,7 +437,8 @@
    "end": 21.8,
    "text": "",
    "note": "narrator calm -> sad",
-   "src": "output/anim/night-riders/shot_09.mp4"
+   "src": "output/anim/night-riders/shot_09.mp4",
+   "lyric_mode": "floor"
   },
   {
    "n": 10,
@@ -438,7 +447,8 @@
    "end": 24.2,
    "text": "",
    "note": "the ramp ahead",
-   "src": "output/anim/night-riders/shot_10.mp4"
+   "src": "output/anim/night-riders/shot_10.mp4",
+   "lyric_mode": "floor"
   },
   {
    "n": 11,
@@ -447,7 +457,8 @@
    "end": 27.4,
    "text": "",
    "note": "jump",
-   "src": "output/anim/night-riders/shot_11.mp4"
+   "src": "output/anim/night-riders/shot_11.mp4",
+   "lyric_mode": "back"
   },
   {
    "n": 12,
@@ -456,7 +467,8 @@
    "end": 31.2,
    "text": "",
    "note": "DROP: town lights + fireworks",
-   "src": "output/anim/night-riders/shot_12.mp4"
+   "src": "output/anim/night-riders/shot_12.mp4",
+   "lyric_mode": "hook"
   },
   {
    "n": 13,
@@ -465,8 +477,10 @@
    "end": 35.0,
    "text": "",
    "note": "hill, watching",
-   "src": "output/anim/night-riders/shot_13.mp4"
+   "src": "output/anim/night-riders/shot_13.mp4",
+   "lyric_mode": "hook"
   }
  ],
- "lyrics_3d": true
+ "lyrics_3d": true,
+ "lyrics_layer": "perspective"
 }

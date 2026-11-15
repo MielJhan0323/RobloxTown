@@ -144,6 +144,7 @@ def bike(c, color):
         parts.append(b)
     for p in parts:
         attach(p, c.root)
+        p.name = "MATTE_bike"          # counted as "character" in the matte pass
     return parts
 
 
@@ -228,7 +229,7 @@ def shot_lines(n, hook=False):
         if bool(ln.get("hook")) != hook:
             continue
         l0, l1 = float(ln["t0"]) - off, float(ln.get("t1", ln["t0"])) - off
-        if l0 >= b - 0.05 or l1 < a - 0.4:
+        if l0 >= b - 0.05 or l1 < a + 0.1:      # a line that ends as the cut lands stays on the last shot
             continue
         ws = [(w, max(1, int(round((float(t) - off - a) * 30)) + 1)) for w, t in ln["words"] if float(t) - off < b - 0.05]
         if ws:
@@ -249,6 +250,8 @@ def world_text(lines, origin, direction=None, normal=None, size=1.4, up=(0, 0, 1
     """Lay timed lyric words onto a real surface: ray-cast from origin along direction to find the wall/road,
     then place the words flat on it (text faces back along the ray), rows centred, each word popping in on its frame.
     With normal= instead of direction, the text floats at origin facing that normal (sky titles)."""
+    if __import__("os").environ.get("ITT_TEXT3D") != "1":
+        return []      # lyrics are 2D text composited in the edit (tools/music_edit.py), not part of the scene
     origin = V(origin)
     if direction is not None:
         bpy.context.view_layer.update()

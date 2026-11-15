@@ -89,6 +89,90 @@ def write_ass(plan: dict, path: Path, total: float):
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
+# ---------------------------------------------------------------- perspective lyrics (CapCut-style "perspective text")
+# Flat 2D text drawn on a black canvas, warped onto a quad, screen-blended over the shot, characters put back on top
+# with their matte (output/anim/<slug>/matte_XX.mp4) so the words sit BEHIND them. Quads: TL, TR, BL, BR in 1080x1920.
+QUADS = {
+    "floor": [(250, 930), (830, 930), (-560, 1780), (1640, 1780)],      # lying on the road, receding
+    "top":   [(80, 640), (1000, 640), (-150, 1660), (1230, 1660)],      # top-down shot: gentle tilt
+    "back":  [(40, 150), (1040, 240), (40, 1350), (1040, 1260)],        # upright behind the characters, slight angle
+    "hook":  [(70, 170), (1010, 170), (-30, 1330), (1110, 1330)],       # title leaning back over the skyline
+}
+
+
+def font_family() -> str:
+    fd = font_dir()
+    files = sorted(list(fd.glob("*.otf")) + list(fd.glob("*.ttf")))
+    if files and fd.name == "fonts" and fd.parent.name == "assets":
+        r = subprocess.run(["fc-scan", "--format", "%{family[0]}", str(files[0])], capture_output=True, text=True)
+        if r.stdout.strip():
+            return r.stdout.strip()
+    return "Montserrat ExtraBold"
+
+
+def wrap_words(words, max_chars):
+    rows, cur, n = [], [], 0
+    for w in words:
+        if cur and n + len(w[0]) > max_chars:
+            rows.append(cur); cur, n = [], 0
+        cur.append(w); n += len(w[0]) + 1
+    if cur:
+        rows.append(cur)
+    return rows
+
+
+def shot_lyric_ass(plan, shot, path: Path):
+    """ASS for one shot: its lyric lines, words revealed on their sung time, centred on a 1080x1920 canvas."""
+    off = float(plan.get("song_start", 0.0))
+    a, b = float(shot["start"]), float(shot["end"])
+    mode = shot.get("lyric_mode", "floor")
+    hook_mode = mode == "hook"
+    font = font_family()
+    size = {"floor": 130, "top": 120, "back": 104, "hook": 112}[mode]
+    glow = "&H00FFB070&" if not hook_mode else "&H0030A0FF&"        # BGR: soft blue / warm gold
+    main = "&H00FFFFFF&" if not hook_mode else "&H0060E0FF&"
+    head = ["[Script Info]", "ScriptType: v4.00+", f"PlayResX: {W}", f"PlayResY: {H}", "WrapStyle: 2", "",
+            "[V4+ Styles]",
+            "Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, "
+            "Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding",
+            f"Style: L,{font},{size},&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,2,0,1,0,0,5,0,0,0,1",
+            f"Style: S,{font},{int(size * 0.36)},&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,2,0,1,0,0,5,0,0,0,1",
+            "", "[Events]", "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text"]
+    lyr = [ln for ln in plan.get("lyrics", []) if bool(ln.get("hook")) == hook_mode]
+    ev = []
+    for i, ln in enumerate(lyr):
+        l0, l1 = float(ln["t0"]) - off, float(ln.get("t1", ln["t0"])) - off
+        if l0 >= b - 0.05 or l1 < a + 0.1:
+            continue
+        nxt = float(lyr[i + 1]["t0"]) - off if i + 1 < len(lyr) else 1e9
+        t0, t1 = max(0.0, l0 - a), min(b - a, nxt - a, l1 - a + 0.6)
+        words = [(w.upper(), max(0.0, float(t) - off - a)) for w, t in ln["words"] if float(t) - off < b - 0.05]
+        if not words or t1 <= t0:
+            continue
+        rows = wrap_words(words, 22 if hook_mode else 12)
+        def body(blur):
+            out = []
+            for r in rows:
+                parts = []
+                for w, wt in r:
+                    ms = int(max(0.0, wt - t0) * 1000)
+                    parts.append(r"{\alpha&HFF&\t(%d,%d,\alpha&H00&)}%s" % (ms, ms + 90, w))
+                out.append(" ".join(parts))
+            col = glow if blur else main
+            return r"{\pos(540,960)\blur%d\1c%s}" % (blur, col) + r"\N".join(out)
+        ev.append(f"Dialogue: 0,{ts(t0)},{ts(t1)},L,,0,0,0,,{body(14)}")     # glow
+        ev.append(f"Dialogue: 1,{ts(t0)},{ts(t1)},L,,0,0,0,,{body(0)}")      # crisp letters
+        if ln.get("sub"):
+            y = 960 + int(size * 0.75 * len(rows)) + 20
+            ev.append(f"Dialogue: 1,{ts(t0 + 0.4)},{ts(t1)},S,,0,0,0,," + r"{\pos(540,%d)\fad(200,0)}" % y + ln["sub"].upper())
+    path.write_text("\n".join(head + ev) + "\n", encoding="utf-8")
+    return bool(ev)
+
+
+def esc(p) -> str:
+    return str(p).replace("\\", "/").replace(":", r"\:").replace("'", r"\'")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("slug")
@@ -105,14 +189,38 @@ def main():
     ass = cache / "music_text.ass"
     write_ass(plan, ass, total)
 
+    persp = plan.get("lyrics_layer") == "perspective"
     ins, chains = [], []
+    fdir_ = esc(font_dir())
     for i, s in enumerate(shots):
         src = ROOT / f"raw/{a.slug}/shot_{s['n']:02d}.mp4"
         if not src.exists():
             src = ROOT / (s.get("src") or f"output/anim/{a.slug}/shot_{s['n']:02d}.mp4")
         ins += ["-i", str(src)]
-        chains.append(f"[{i}:v]trim=0:{s['dur']},setpts=PTS-STARTPTS,fps={FPS},"
-                      f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},setsar=1[v{i}]")
+        base = (f"[{i}:v]trim=0:{s['dur']},setpts=PTS-STARTPTS,fps={FPS},"
+                f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},setsar=1")
+        sass = cache / f"lyr_{s['n']:02d}.ass"
+        matte = OUTPUT / "anim" / a.slug / f"matte_{s['n']:02d}.mp4"
+        if not (persp and shot_lyric_ass(plan, s, sass)):
+            chains.append(base + f"[v{i}]")
+            continue
+        q = s.get("lyric_quad") or QUADS[s.get("lyric_mode", "floor")]
+        qs = ":".join(f"{x}:{y}" for x, y in q)
+        d = float(s["dur"])
+        chains.append(base + f",format=gbrp,split[sa{i}][sb{i}]")
+        chains.append(f"color=c=black:s={W}x{H}:r={FPS}:d={d:.3f},format=rgb24,"
+                      f"subtitles='{esc(sass)}':fontsdir='{fdir_}',"
+                      f"perspective={qs}:sense=destination,format=gbrp[tx{i}]")
+        chains.append(f"[sa{i}][tx{i}]blend=all_mode=screen[bl{i}]")
+        if matte.exists():
+            mi = len(ins) // 2
+            ins += ["-i", str(matte)]
+            chains.append(f"[{mi}:v]trim=0:{d},setpts=PTS-STARTPTS,fps={FPS},scale={W}:{H},format=gray,"
+                          f"lut=y='if(gt(val,110),255,0)',boxblur=1:1[mt{i}]")
+            chains.append(f"[sb{i}]format=rgba[sc{i}];[sc{i}][mt{i}]alphamerge[ch{i}]")
+            chains.append(f"[bl{i}]format=rgba[bb{i}];[bb{i}][ch{i}]overlay=0:0,format=yuv420p[v{i}]")
+        else:
+            chains.append(f"[sb{i}]nullsink;[bl{i}]format=yuv420p[v{i}]")
     cat = "".join(f"[v{i}]" for i in range(len(shots))) + f"concat=n={len(shots)}:v=1:a=0[cat]"
     sub = str(ass).replace(":", r"\:")
     fdir = str(font_dir()).replace(":", r"\:")
@@ -122,7 +230,7 @@ def main():
     out = OUTPUT / f"{a.slug}.mp4"
     cmd = ["ffmpeg", "-v", "error", "-y", *ins, "-f", "lavfi", "-t", f"{total:.3f}", "-i",
            "anullsrc=channel_layout=stereo:sample_rate=48000",
-           "-filter_complex", fc, "-map", "[out]", "-map", f"{len(shots)}:a",
+           "-filter_complex", fc, "-map", "[out]", "-map", f"{len(ins) // 2}:a",
            "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p", "-r", str(FPS),
            "-c:a", "aac", "-b:a", "128k", "-t", f"{total:.3f}", "-movflags", "+faststart", str(out)]
     subprocess.run(cmd, check=True)
