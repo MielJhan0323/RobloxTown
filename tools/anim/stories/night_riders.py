@@ -321,7 +321,7 @@ def s01(k, F):  # "City lights on your skin" - dark street, two kids on bikes; t
     _bulb_switch(near, kf(F * 0.3), 99)
     S.drone([(1, V((9, Y0 + 12, 3.0)), V((1.5, Y0 + 1, 2.6))),
              (F, V((7, Y0 + 9, 3.6)), V((1.5, Y0 + 1, 2.8)))], lens=30)
-    world_text(shot_lines(1), (-1.5, Y0 - 3, 6.5), normal=(0.55, 0.8, -0.1), size=1.3, max_chars=12)   # street edge: sign in the dark
+    world_text(shot_lines(1), (0.5, Y0 - 2.5, 4.6), normal=(0.55, 0.8, 0), size=1.2, max_chars=12)   # sky shot: just behind them
     return S
 
 
@@ -349,7 +349,7 @@ def s03(k, F):  # "No tomorrow in our hands" - side tracking drone
     rio.arm("L", kf(F * 0.3), 150, 20)
     S.drone([(1, V((11.0, ya - 1, 3.4)), V((1.5, ya, 2.4))),
              (F, V((11.0, yb - 1, 3.8)), V((1.5, yb, 2.4)))], lens=22, allow_close=True)
-    wall_lyrics(3, (-3.6, ya + 13, 4.6), (-1, 0, 0), size=1.5)
+    wall_lyrics(3, (7.0, ya + 13, 6), (0, 0, -1), size=1.2, up=(-1, 0, 0), max_chars=12)
     return S
 
 
@@ -363,7 +363,7 @@ def s04(k, F):  # "just this feeling pulling us in" - Rio laughing, close front
     rio.look(1, -25, 5)
     S.drone([(1, rio.head_pt() + V((2.5, 5.0, -0.6)), rio.head_pt() - V((0, 0, 1.2))),
              (F, rio.head_pt() + V((2.2, yb - ya + 5.0, -0.6)), rio.head_pt() + V((0, yb - ya, -1.2)))], lens=30)
-    wall_lyrics(4, (-3.6, ya + 3, 5.0), (-1, 0, 0), size=1.4, color=(1, 0.85, 0.95))
+    wall_lyrics(4, (1.5, ya + 9, 6), (0, 0, -1), size=1.5, up=(0, -1, 0), max_chars=12, color=(1, 0.85, 0.95))
     return S
 
 
@@ -393,7 +393,7 @@ def s06(k, F):  # "you don't need to know my past" - his house: moving truck, bo
     text("SOLD", (P.x + 9, P.y - 8.25, 2.95), rot=(90, 0, 0), size=0.9, color=(1, 1, 1), emit=1.5)
     S.drone([(1, V((P.x + 4, P.y - 26, 5)), V((P.x, P.y - 2, 4))),
              (F, V((P.x + 1, P.y - 21, 4.5)), V((P.x + 2, P.y - 2, 4)))], lens=28)
-    wall_lyrics(6, (P.x, P.y - 4, 11.6), (0, 1, 0), size=1.2, max_chars=20)
+    wall_lyrics(6, (P.x + 1, P.y - 13, 6), (0, 0, -1), size=1.3, up=(0, 1, 0), max_chars=14)
     return S
 
 
@@ -450,7 +450,7 @@ def s09(k, F):  # "You look calm, but I feel it..." - Narrator calm, then a sad 
     me.face(kf(F * 0.45), "sad")
     S.drone([(1, me.head_pt() + V((4.0, 6.5, -0.6)), me.head_pt() - V((0, 0, 1.2))),
              (F, me.head_pt() + V((3.5, yb - ya + 6, -0.5)), me.head_pt() + V((0, yb - ya, -1.2)))], lens=30)
-    wall_lyrics(9, (-3.6, ya - 5, 4.6), (-1, 0, 0), size=1.5)
+    wall_lyrics(9, (1.5, ya + 7, 6), (0, 0, -1), size=1.5, up=(0, -1, 0), max_chars=12)
     return S
 
 
@@ -491,7 +491,7 @@ def s11(k, F):  # "I don't chase, I don't wait, I decide" - off the ramp, slow a
     me.face(kf(F * 0.5), "laugh")
     S.drone([(1, V((8.5, Y_RAMP - 12, 2.5)), V((1.5, Y_RAMP - 4, 2.5))),
              (F, V((8.5, Y_RAMP + 6, 4.5)), V((1.5, Y_RAMP + 11, 7.5)))], lens=24, allow_close=True)
-    wall_lyrics(11, (-3.6, Y_RAMP + 4, 5.5), (-1, 0, 0), size=1.7, max_chars=12, color=(1, 0.9, 0.4), emit=2.6)
+    world_text(shot_lines(11), (-4.5, Y_RAMP + 4, 5.5), normal=(1, 0, 0), size=1.4, max_chars=12, color=(1, 0.9, 0.4), emit=2.6)
     return S
 
 
@@ -520,8 +520,8 @@ def s12(k, F):  # DROP "Raat ka nasha" - the whole town lights up at once + fire
         c.arm("L", drop, 170, 20)
     S.drone([(1, V((1.5, HILL.y + 10, 5.5)), V((1.5, HILL.y - 20, 6))),
              (F, V((1.5, HILL.y + 20, 14)), V((1.5, HILL.y - 50, 14)))], lens=24, allow_close=True)
-    world_text(shot_lines(12, hook=True), (1.5, HILL.y - 12, 15), normal=(0, 1, 0), size=2.7, color=(1, 0.75, 0.25), emit=3, max_chars=30, whole=True)
-    world_text([[("(the night's rush)", drop + 12)]], (1.5, HILL.y - 12, 11.6), normal=(0, 1, 0), size=1.3, emit=2)
+    world_text(shot_lines(12, hook=True), (1.5, HILL.y - 5, 8.6), normal=(0, 1, 0), size=1.6, color=(1, 0.75, 0.25), emit=3, max_chars=30, whole=True)
+    world_text([[("(the night's rush)", drop + 12)]], (1.5, HILL.y - 5, 7.3), normal=(0, 1, 0), size=0.6, emit=2)
     return S
 
 
@@ -537,9 +537,9 @@ def s13(k, F):  # "Raat ka nasha" - on the hill, watching the fireworks over the
     rio.look(kf(F * 0.6), -25, 0)
     S.drone([(1, V((1.5, HILL.y + 11, 6.0)), V((1.5, HILL.y - 30, 12))),
              (F, V((1.5, HILL.y + 14, 7.0)), V((1.5, HILL.y - 30, 14)))], lens=28, allow_close=True)
-    world_text(shot_lines(13, hook=True) or [[("RAAT", 1), ("KA", 1), ("NASHA", 1)]], (1.5, HILL.y - 12, 16), normal=(0, 1, 0), size=2.7,
+    world_text(shot_lines(13, hook=True) or [[("RAAT", 1), ("KA", 1), ("NASHA", 1)]], (1.5, HILL.y - 5, 8.6), normal=(0, 1, 0), size=1.6,
                color=(1, 0.75, 0.25), emit=3, max_chars=30, whole=True)
-    world_text([[("(the night's rush)", 1)]], (1.5, HILL.y - 12, 12.6), normal=(0, 1, 0), size=1.3, emit=2, pop=False)
+    world_text([[("(the night's rush)", 1)]], (1.5, HILL.y - 5, 7.3), normal=(0, 1, 0), size=0.6, emit=2, pop=False)
     return S
 
 
