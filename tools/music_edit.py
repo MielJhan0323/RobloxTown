@@ -45,9 +45,9 @@ def write_ass(plan: dict, path: Path, total: float):
         f"Style: Credit,{font},56,&H00FFFFFF,&H00FFFFFF,&H00000000,&H78000000,0,0,0,0,100,100,0,0,3,14,0,2,80,80,170,1",
         # lyrics: lower-middle of the frame (chest height, under the faces), words revealed on their beat
         f"Style: Lyric,{font},78,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,0,0,1,6,3,2,80,80,560,1",
-        f"Style: Hook,{font},150,&H0040D8FF,&H00FFFFFF,&H00301040,&H80000000,0,0,0,0,100,100,6,0,1,9,4,5,40,40,0,1",
+        f"Style: Hook,{font},108,&H0040D8FF,&H00FFFFFF,&H00301040,&H80000000,0,0,0,0,100,100,6,0,1,9,4,5,40,40,0,1",
         f"Style: HookSub,{font},52,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,0,0,1,5,2,5,40,40,0,1",
-        f"Style: Top,{font},66,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,0,0,1,6,3,8,80,80,210,1",
+        f"Style: Top,{font},80,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,0,0,1,6,3,8,80,80,210,1",
         "", "[Events]", "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text",
     ]
     off = float(plan.get("song_start", 0.0))      # lyric times are song times
@@ -67,10 +67,10 @@ def write_ass(plan: dict, path: Path, total: float):
             for w, wt in ln["words"]:
                 ms = int(max(0.0, (float(wt) - off - t0)) * 1000)
                 parts.append(r"{\alpha&HFF&\fscx140\fscy140\t(%d,%d,\alpha&H00&\fscx100\fscy100)}%s" % (ms, ms + 110, w))
-            lines.append(f"Dialogue: 3,{ts(max(0, t0))},{ts(t1)},Hook,,0,0,0,," + r"{\pos(540,820)\blur1.5}" + " ".join(parts))
+            lines.append(f"Dialogue: 3,{ts(max(0, t0))},{ts(t1)},Hook,,0,0,0,," + r"{\q2\pos(540,800)\blur1.5}" + " ".join(parts))
             if ln.get("sub"):
                 lines.append(f"Dialogue: 3,{ts(max(0, t0) + 0.4)},{ts(t1)},HookSub,,0,0,0,,"
-                             r"{\pos(540,960)\fad(200,150)}" + ln["sub"])
+                             r"{\q2\pos(540,915)\fad(200,150)}" + ln["sub"])
             continue
         parts = []
         for w, wt in ln["words"]:     # each word fades + pops in on its sung time
