@@ -3,121 +3,126 @@
 Rule: In this town, your shadow moves ten seconds before you do.
 Music: Numbers (low) - mysterious
 Voice: user supplies the narration (ElevenLabs, eleven_v4, prompt below). Do NOT generate voice unless the user says so.
-Cast (scripts/CAST.md): Milo (narrator), Rio, Juno, Pip, Mom, Wren (hidden easter egg + the wave at the tracks).
-Sets (3, reused): Milo's house (kitchen from the-knock-2 + bedroom wall), Main Street / park, the train tracks (new, built once).
+Cast (scripts/CAST.md): Milo (narrator), Rio, Pip, Mom, Wren (hidden in shot 2, then the wave at the tracks).
+Sets (3, reused): Main Street + park, Milo's house (kitchen from the-knock-2 + bedroom wall), the train tracks (new, built once).
 End card: viewer choice - 1 STAY AWAY FROM THE TRACKS / 2 GO TO THE TRACKS AT 4:15 / 3 FIND THE GIRL WHO WAVED
 
 ## Series plan (twists planned from the start)
-- **Part 1 - One Day Ahead:** Milo's shadow stops matching - it's a whole day ahead. It runs to the train tracks, waves
-  goodbye and vanishes. Pip: "It did that yesterday too." Across the tracks, a girl in a white hoodie (Wren) waves.
-- **Part 2 - The Save:** 4:15. Milo follows the shadow's moves exactly and pulls Dev off the tracks just in time. Everyone
-  cheers... but now his shadow is a YEAR ahead - and it's standing next to someone Milo has never met.
-- **Part 3 - The Shadow's Shadow:** The shadow keeps leading him to people to save. Juno's notebook: shadows can't cast
-  shadows. Then Milo notices his shadow has one. And Wren has NO shadow at all.
-- **Part 4 - Finale (the paradox):** Milo is the shadow. The "real" boy is the one moving ten seconds behind him - copying
-  everything Milo does. Wren is the only one who knew, because she was the last shadow who got ahead. Every person Milo
-  saved was the real boy saving Milo. Final line: "So which one of us is ahead?"
+- **Part 1 - One Day Ahead:** Milo's shadow stops copying him; it's living a day ahead. It runs to the train tracks,
+  waves goodbye and fades. A girl in a white hoodie (Wren) waves from the other side. Milo looks down: he has no shadow.
+- **Part 2 - The Save:** 4:15. With no shadow to warn him, Milo has to guess. He pulls Dev off the tracks just in time -
+  and his shadow comes back... standing a YEAR ahead, next to someone he's never met.
+- **Part 3 - The Shadow's Shadow:** It keeps leading him to people to save. Juno: "Shadows can't cast shadows." Then Milo
+  notices his shadow has one. And Wren has none at all.
+- **Part 4 - Finale (the paradox):** Milo is the shadow. The "real" boy is the one ten seconds behind, copying him. Wren
+  knew because she was the last shadow that got ahead. Every person Milo saved was the real boy saving him.
+  Last line: "So... which one of us is ahead?"
 
 ## Narration
 
 In this town, your shadow moves ten seconds before you do.
 
-Nobody here ever trips. Your shadow trips first, so you just... don't.
+So nobody ever trips. Your shadow trips first, and you just step over it.
 
-Hide and seek is impossible. Your shadow always peeks out first.
+Hide and seek? Impossible. Your shadow always peeks out first.
 
-And my mom catches me sneaking cookies before I even reach the jar.
+And my mom catches me at the cookie jar before I even get there.
 
-Juno says shadows "remember forward." Juno says a lot of things.
+My shadow was normal. Ten seconds ahead. Always ten.
 
-My little sister Pip says hers is "kinda bossy."
+Until Tuesday.
 
-Mine was normal. Ten seconds. Always ten.
+I waved. My shadow didn't.
 
-Then, on Tuesday, my shadow didn't move when I did.
+I jumped. It just stood there... like it was waiting for something.
 
-I waved. Nothing. I jumped. Nothing.
-
-Rio waved his hand right through it. "Bro. Where'd it go?"
+My best friend Rio poked it with his shoe. "Bro. Is it broken?"
 
 That night, I saw it on my bedroom wall. Brushing its teeth.
 
-But I'd already brushed mine. It was doing tomorrow.
+But I'd already brushed mine.
 
-The next morning, I did everything it did. Same cereal. Same shoelaces. Same sneeze.
+It wasn't ten seconds ahead anymore. It was doing tomorrow.
 
-It wasn't ten seconds ahead anymore. It was a whole day.
+The next morning, I copied everything it did. Same cereal. Same shoelaces. Same sneeze.
+
+It was right. Every single time.
 
 Then, after school, my shadow started running.
 
-Rio and I chased it across town. Past the bakery. Past the park. All the way to the train tracks.
+Rio and I chased it across town, all the way to the train tracks.
 
-And there, it stopped. It turned around. And it waved goodbye.
+There, it stopped. It turned around.
 
-Then it walked onto the tracks... and disappeared.
+And it waved goodbye.
+
+Then it stepped onto the tracks... and faded away.
 
 Across the tracks, a girl in a white hoodie was waving too.
 
-Pip tugged my sleeve. "Milo? Your shadow did that yesterday too."
+My little sister Pip grabbed my hand. "Milo... where's your shadow?"
 
-Juno checked the train schedule. Tomorrow. Four fifteen.
+I looked down.
 
-So... what do I do?
+I didn't have one.
+
+The next train comes tomorrow. Four fifteen.
+
+What do I do?
 
 ## Delivery (emotion tags for the ElevenLabs prompt)
 
 | Lines | Tag |
 |---|---|
-| Rule + examples (trips, hide and seek, cookies) | [playfully] |
-| Juno / Pip / "Mine was normal" | [warmly] |
-| Tuesday... waved, jumped, nothing | [curious] |
+| Rule + examples (trips, hide and seek, cookie jar) | [playfully] |
+| "My shadow was normal... Until Tuesday." | [warmly] -> [dramatically] |
+| Waved / jumped / waiting | [curious] |
 | Rio's line | [laughs softly] |
-| Bedroom wall / "It was doing tomorrow" | [whispering] |
-| Next morning / a whole day | [curious] |
+| Bedroom wall -> "doing tomorrow" | [whispering] |
+| Next morning, copying, "every single time" | [curious] |
 | Shadow running, the chase | [excited] |
-| Tracks, waved goodbye, disappeared | [dramatically] |
+| Tracks, waved goodbye, faded | [dramatically] |
 | Girl in white hoodie | [whispering] |
-| Pip's line, train schedule | [softly] |
-| "So... what do I do?" | [whispering] |
+| Pip's line, "I looked down. I didn't have one." | [softly] |
+| Train tomorrow, "What do I do?" | [whispering] |
 
 ## ElevenLabs prompt (paste as ONE block)
 
 ```
-[playfully] In this town, your shadow moves ten seconds before you do. Nobody here ever trips. Your shadow trips first, so you just... don't. Hide and seek is impossible. Your shadow always peeks out first. And my mom catches me sneaking cookies before I even reach the jar. [warmly] Juno says shadows "remember forward." Juno says a lot of things. My little sister Pip says hers is "kinda bossy." Mine was normal. Ten seconds. Always ten. [curious] Then, on Tuesday, my shadow didn't move when I did. I waved. Nothing. I jumped. Nothing. [laughs softly] Rio waved his hand right through it. "Bro. Where'd it go?" [whispering] That night, I saw it on my bedroom wall. Brushing its teeth. But I'd already brushed mine. It was doing tomorrow. [curious] The next morning, I did everything it did. Same cereal. Same shoelaces. Same sneeze. It wasn't ten seconds ahead anymore. It was a whole day. [excited] Then, after school, my shadow started running. Rio and I chased it across town. Past the bakery. Past the park. All the way to the train tracks. [dramatically] And there, it stopped. It turned around. And it waved goodbye. Then it walked onto the tracks... and disappeared. [whispering] Across the tracks, a girl in a white hoodie was waving too. [softly] Pip tugged my sleeve. "Milo? Your shadow did that yesterday too." Juno checked the train schedule. Tomorrow. Four fifteen. [whispering] So... what do I do?
+[playfully] In this town, your shadow moves ten seconds before you do. So nobody ever trips. Your shadow trips first, and you just step over it. Hide and seek? Impossible. Your shadow always peeks out first. And my mom catches me at the cookie jar before I even get there. [warmly] My shadow was normal. Ten seconds ahead. Always ten. [dramatically] Until Tuesday. [curious] I waved. My shadow didn't. I jumped. It just stood there... like it was waiting for something. [laughs softly] My best friend Rio poked it with his shoe. "Bro. Is it broken?" [whispering] That night, I saw it on my bedroom wall. Brushing its teeth. But I'd already brushed mine. It wasn't ten seconds ahead anymore. It was doing tomorrow. [curious] The next morning, I copied everything it did. Same cereal. Same shoelaces. Same sneeze. It was right. Every single time. [excited] Then, after school, my shadow started running. Rio and I chased it across town, all the way to the train tracks. [dramatically] There, it stopped. It turned around. And it waved goodbye. Then it stepped onto the tracks... and faded away. [whispering] Across the tracks, a girl in a white hoodie was waving too. [softly] My little sister Pip grabbed my hand. "Milo... where's your shadow?" I looked down. I didn't have one. [whispering] The next train comes tomorrow. Four fifteen. What do I do?
 ```
 
 ## Shot list
 
-Shadows: each character's shadow is a flat dark silhouette on the ground/wall (rig copy, black, no face) animated
-10 s (= the next pose) ahead; Milo's goes "wrong" from shot 8. Hide Wren in the background of shots 3 and 16.
+Shadows: each character's shadow is a flat dark silhouette on the ground/wall (a black, faceless copy of the rig)
+playing the character's NEXT move. Milo's goes wrong from shot 7. Hide Wren in the background of shot 2.
 
 | # | Narration | Location | Characters | Pose / expression | Camera | Props | Mood | FX | SFX | Sec |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | In this town, your shadow moves ten seconds before you do. | Main Street, sunny | Milo | standing still; his shadow on the pavement already walking away | wide, drone down to the shadow | long afternoon shadows | warm | - | amb:town | 3.0 |
-| 2 | Nobody here ever trips. Your shadow trips first, | sidewalk | Dev | his shadow trips over a crack; Dev stares at it | medium, low angle | crack | warm | - | boom | 2.2 |
-| 3 | so you just... don't. | sidewalk | Dev | steps over the crack, smug | medium | - | warm | - | - | 1.4 |
-| 4 | Hide and seek is impossible. Your shadow always peeks out first. | park | Rio, Juno | Rio behind a tree, his shadow peeking out; Juno points | wide | tree | warm | - | - | 2.8 |
-| 5 | And my mom catches me sneaking cookies before I even reach the jar. | kitchen | Milo, Mom | Mom grabs the shadow's wrist on the wall; Milo freezes mid-reach | medium | cookie jar | warm | - | boom | 3.0 |
-| 6 | Juno says shadows "remember forward." Juno says a lot of things. | park bench | Juno, Milo | Juno with notebook, diagram of a shadow + arrow; Milo bored | medium | notebook | - | - | - | 2.8 |
-| 7 | My little sister Pip says hers is "kinda bossy." | kitchen | Pip | Pip arguing with her shadow, hands on hips | close | - | warm | - | - | 2.2 |
-| 8 | Mine was normal. Ten seconds. Always ten. | street | Milo | walking, shadow just ahead in step | medium tracking | - | - | - | tick | 2.4 |
-| 9 | Then, on Tuesday, my shadow didn't move when I did. | street | Milo | Milo walks on - his shadow stays behind, standing still | wide, push-in | - | - | - | heartbeat | 2.6 |
-| 10 | I waved. Nothing. I jumped. Nothing. | street | Milo | waves, jumps; shadow motionless | medium | - | - | - | - | 2.2 |
-| 11 | Rio waved his hand right through it. "Bro. Where'd it go?" | street | Rio, Milo | Rio crouched, hand through the shadow, laughing | close | - | - | - | - | 2.6 |
-| 12 | That night, I saw it on my bedroom wall. Brushing its teeth. | bedroom | Milo | Milo in bed; shadow on wall brushing teeth | wide, slow push-in | lamp | night | fog | - | 2.8 |
-| 13 | But I'd already brushed mine. | bedroom | Milo | Milo sits up, shocked | close | - | night | - | impact | 1.6 |
-| 14 | It was doing tomorrow. | bedroom | - | shadow on wall turns its head toward camera | close, punch-in | - | night | - | - | 1.6 |
-| 15 | The next morning, I did everything it did. Same cereal. | kitchen | Milo | shadow eats a spoonful on the wall; Milo copies it a beat later | medium | cereal bowl | warm | fog | - | 2.6 |
-| 16 | Same shoelaces. Same sneeze. | doorway / kitchen | Milo, Pip | shoelace tie copied; both sneeze; Pip stares | medium | - | warm | - | boom | 2.2 |
-| 17 | It wasn't ten seconds ahead anymore. It was a whole day. | street | Milo | Milo looking down at shadow, scared | close | - | - | - | - | 2.6 |
-| 18 | Then, after school, my shadow started running. | school gate / street | Milo | shadow sprints off down the street | wide | - | - | - | whoosh | 2.2 |
-| 19 | Rio and I chased it across town. | street | Milo, Rio | both running hard | tracking drone | - | - | - | - | 1.8 |
-| 20 | Past the bakery. Past the park. | street, park | Milo, Rio | quick cuts of the chase | wide | - | - | - | - | 1.8 |
-| 21 | All the way to the train tracks. | train tracks | Milo, Rio | skid to a stop at the crossing | wide | rails, crossing sign | dusk | - | - | 1.8 |
-| 22 | And there, it stopped. | tracks | - | shadow stands on the gravel | medium | - | dusk | - | - | 1.4 |
-| 23 | It turned around. And it waved goodbye. | tracks | Milo | shadow waves slowly; Milo frozen | close on shadow | - | dusk | - | heartbeat | 2.4 |
-| 24 | Then it walked onto the tracks... and disappeared. | tracks | - | shadow steps onto the rails and fades | wide | - | dusk | - | - | 2.6 |
-| 25 | Across the tracks, a girl in a white hoodie was waving too. | far side of the tracks | Wren | Wren standing alone, waving slowly | wide, slow push-in | - | dusk | - | - | 2.8 |
-| 26 | Pip tugged my sleeve. "Milo? Your shadow did that yesterday too." | tracks | Pip, Milo | Pip (appeared behind them) tugging; Milo turns | medium | - | dusk | - | impact | 3.0 |
-| 27 | Juno checked the train schedule. Tomorrow. Four fifteen. | crossing | Juno | Juno at the schedule board, finger on 4:15 | close insert | schedule board "4:15" | dusk | - | tick | 2.6 |
-| 28 | So... what do I do? | tracks | Milo | Milo looking at the empty rails, shadowless | close, slow pull-out | - | dusk | - | - | 2.0 |
+| 1 | In this town, your shadow moves ten seconds before you do. | Main Street, sunny | Milo | Milo still; his shadow on the pavement already walking off | wide, drone down to the shadow | long afternoon shadows | warm | - | amb:town | 3.0 |
+| 2 | So nobody ever trips. Your shadow trips first, | sidewalk | Dev (Wren far in background) | Dev's shadow trips on a crack; Dev stares | medium, low angle | crack | warm | - | boom | 2.2 |
+| 3 | and you just step over it. | sidewalk | Dev | steps over the crack, smug | medium | - | warm | - | - | 1.4 |
+| 4 | Hide and seek? Impossible. Your shadow always peeks out first. | park | Rio, Juno | Rio behind a tree, his shadow peeking out; Juno points, laughing | wide | tree | warm | - | - | 2.8 |
+| 5 | And my mom catches me at the cookie jar before I even get there. | kitchen | Milo, Mom | Mom grabs the shadow's hand on the wall; Milo freezes mid-reach | medium | cookie jar | warm | - | boom | 3.0 |
+| 6 | My shadow was normal. Ten seconds ahead. Always ten. | street | Milo | walking, shadow one step ahead | medium tracking | - | - | - | tick | 2.6 |
+| 7 | Until Tuesday. | street | Milo | Milo stops; his shadow stops too - then stays put when he moves on | close on feet + shadow | - | - | - | impact | 1.2 |
+| 8 | I waved. My shadow didn't. | street | Milo | waves; shadow motionless | medium | - | - | - | - | 1.6 |
+| 9 | I jumped. It just stood there... like it was waiting for something. | street | Milo | jumps; shadow perfectly still | wide, slow push-in | - | - | - | heartbeat | 2.8 |
+| 10 | My best friend Rio poked it with his shoe. "Bro. Is it broken?" | street | Rio, Milo | Rio crouched, poking the shadow with his sneaker, laughing | close | - | - | - | - | 2.8 |
+| 11 | That night, I saw it on my bedroom wall. Brushing its teeth. | bedroom | Milo | Milo in bed; shadow on the wall brushing its teeth | wide, slow push-in | lamp | night | fog | - | 2.8 |
+| 12 | But I'd already brushed mine. | bedroom | Milo | Milo sits up slowly, shocked | close | - | night | - | impact | 1.6 |
+| 13 | It wasn't ten seconds ahead anymore. It was doing tomorrow. | bedroom | - | the shadow on the wall turns its head toward camera | close, punch-in | - | night | - | - | 2.6 |
+| 14 | The next morning, I copied everything it did. Same cereal. | kitchen | Milo | shadow spoons cereal on the wall; Milo copies a beat later | medium | cereal bowl | warm | fog | - | 2.6 |
+| 15 | Same shoelaces. Same sneeze. | kitchen | Milo, Pip | Milo ties laces like the shadow; both sneeze; Pip stares | medium | - | warm | - | boom | 2.0 |
+| 16 | It was right. Every single time. | kitchen | Milo | Milo looking at his shadow, half impressed, half scared | close | - | - | - | - | 2.0 |
+| 17 | Then, after school, my shadow started running. | school gate / street | Milo | the shadow sprints off down the street | wide | - | - | - | whoosh | 2.2 |
+| 18 | Rio and I chased it across town, all the way to the train tracks. | street -> park -> tracks | Milo, Rio | running hard, quick drone cuts | tracking drone | - | - | - | - | 3.0 |
+| 19 | There, it stopped. It turned around. | tracks | - | the shadow stops on the gravel, turns | medium | rails, crossing sign | dusk | - | - | 2.0 |
+| 20 | And it waved goodbye. | tracks | Milo | the shadow waves slowly; Milo frozen | close on shadow | - | dusk | - | heartbeat | 1.8 |
+| 21 | Then it stepped onto the tracks... and faded away. | tracks | - | shadow steps onto the rails and fades out | wide | - | dusk | - | - | 2.6 |
+| 22 | Across the tracks, a girl in a white hoodie was waving too. | far side of the tracks | Wren | Wren alone, waving slowly | wide, slow push-in | - | dusk | - | - | 2.8 |
+| 23 | My little sister Pip grabbed my hand. "Milo... where's your shadow?" | tracks | Pip, Milo | Pip (behind them) grabs Milo's hand, looking at the ground | medium | - | dusk | - | - | 3.0 |
+| 24 | I looked down. | tracks | Milo | Milo looks down | close | - | dusk | - | - | 1.2 |
+| 25 | I didn't have one. | tracks | Milo, Rio, Pip | overhead: Rio and Pip have shadows; Milo has none | top-down, punch-in | - | dusk | - | impact | 1.8 |
+| 26 | The next train comes tomorrow. Four fifteen. | crossing | - | schedule board, finger-light on "4:15" | close insert | schedule board | dusk | - | tick | 2.4 |
+| 27 | What do I do? | tracks | Milo | Milo alone at the crossing, shadowless | close, slow pull-out | - | dusk | - | - | 1.8 |
