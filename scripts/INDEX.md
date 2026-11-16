@@ -12,4 +12,7 @@ Tell laptop Claude: **"record <slug>"**. Each script is `scripts/<slug>.md`.
 | closet-monster | The Monster in My Closet | done (Titan voice, 1:30) |
 | the-knock | The Knock (Part 1) | done (user voice, 0:53) |
 | the-knock-2 | The Knock (Part 2 of 4) | done (user voice + choice card, 0:58) |
-| the-knock-3 | The Knock (Part 3 - Final) | script draft - waiting for approval |
+| the-knock-3 | The Knock (Part 3 - Final) | done (user voice, 0:50) |
+| the-seat | The Seat (music edit demo) | demo (silent cut + text) |
+| night-riders | Night Riders (Aneesa - Raat Ka Nasha lyric video) | done (2D perspective lyrics) |
+| shadow-ahead | The Shadow Ahead (Part 1 of 4) | script draft - waiting for approval |
