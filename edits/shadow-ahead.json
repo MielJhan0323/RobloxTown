@@ -1,0 +1,1766 @@
+{
+  "slug": "shadow-ahead",
+  "title": "The Shadow Ahead (Part 1)",
+  "timing": "estimated",
+  "voice": null,
+  "duration": 89.085,
+  "shots": [
+    {
+      "n": 1,
+      "text": "In this town, your shadow moves ten seconds before you do.",
+      "start": 0.0,
+      "end": 4.457,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": "Main Street, sunny | Milo | Milo still; his shadow on the pavement already walking off | wide, drone down to the shadow | long afternoon shadows",
+      "override": {},
+      "dur": 4.457
+    },
+    {
+      "n": 2,
+      "text": "So nobody ever trips. Your shadow trips first,",
+      "start": 4.457,
+      "end": 7.681,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": "sidewalk | Dev (Wren far in background) | Dev's shadow trips on a crack; Dev stares | medium, low angle | crack",
+      "override": {},
+      "dur": 3.224
+    },
+    {
+      "n": 3,
+      "text": "and you just step over it.",
+      "start": 7.681,
+      "end": 9.857,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": "sidewalk | Dev | steps over the crack, smug | medium",
+      "override": {},
+      "dur": 2.176
+    },
+    {
+      "n": 4,
+      "text": "Hide and seek? Impossible. Your shadow always peeks out first.",
+      "start": 9.857,
+      "end": 14.311,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": "park | Rio, Juno | Rio behind a tree, his shadow peeking out; Juno points, laughing | wide | tree",
+      "override": {},
+      "dur": 4.454
+    },
+    {
+      "n": 5,
+      "text": "And my mom catches me at the cookie jar before I even get there.",
+      "start": 14.311,
+      "end": 19.154,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": "kitchen | Milo, Mom | Mom grabs the shadow's hand on the wall; Milo freezes mid-reach | medium | cookie jar",
+      "override": {},
+      "dur": 4.843
+    },
+    {
+      "n": 6,
+      "text": "My shadow was normal. Ten seconds ahead. Always ten.",
+      "start": 19.154,
+      "end": 23.119,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "street | Milo | walking, shadow one step ahead | medium tracking",
+      "override": {},
+      "dur": 3.965
+    },
+    {
+      "n": 7,
+      "text": "Until Tuesday.",
+      "start": 23.119,
+      "end": 24.169,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "street | Milo | Milo stops; his shadow stops too - then stays put when he moves on | close on feet + shadow",
+      "override": {},
+      "dur": 1.05
+    },
+    {
+      "n": 8,
+      "text": "I waved. My shadow didn't.",
+      "start": 24.169,
+      "end": 26.372,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "street | Milo | waves; shadow motionless | medium",
+      "override": {},
+      "dur": 2.203
+    },
+    {
+      "n": 9,
+      "text": "I jumped. It just stood there... like it was waiting for something.",
+      "start": 26.372,
+      "end": 31.3,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "street | Milo | jumps; shadow perfectly still | wide, slow push-in",
+      "override": {},
+      "dur": 4.928
+    },
+    {
+      "n": 10,
+      "text": "My best friend Rio poked it with his shoe. \"Bro. Is it broken?\"",
+      "start": 31.3,
+      "end": 36.052,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "street | Rio, Milo | Rio crouched, poking the shadow with his sneaker, laughing | close",
+      "override": {},
+      "dur": 4.752
+    },
+    {
+      "n": 11,
+      "text": "That night, I saw it on my bedroom wall. Brushing its teeth.",
+      "start": 36.052,
+      "end": 40.681,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "fog",
+      "grade": "cool",
+      "placeholder": "bedroom | Milo | Milo in bed; shadow on the wall brushing its teeth | wide, slow push-in | lamp",
+      "override": {},
+      "dur": 4.629
+    },
+    {
+      "n": 12,
+      "text": "But I'd already brushed mine.",
+      "start": 40.681,
+      "end": 42.754,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": "bedroom | Milo | Milo sits up slowly, shocked | close",
+      "override": {},
+      "dur": 2.073
+    },
+    {
+      "n": 13,
+      "text": "It wasn't ten seconds ahead anymore. It was doing tomorrow.",
+      "start": 42.754,
+      "end": 46.898,
+      "src": null,
+      "src_dur": null,
+      "motion": "punch",
+      "transition": "cut",
+      "grade": "cool",
+      "placeholder": "bedroom | the shadow on the wall turns its head toward camera | close, punch-in",
+      "override": {},
+      "dur": 4.144
+    },
+    {
+      "n": 14,
+      "text": "The next morning, I copied everything it did. Same cereal.",
+      "start": 46.898,
+      "end": 51.083,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "fog",
+      "grade": "warm",
+      "placeholder": "kitchen | Milo | shadow spoons cereal on the wall; Milo copies a beat later | medium | cereal bowl",
+      "override": {},
+      "dur": 4.185
+    },
+    {
+      "n": 15,
+      "text": "Same shoelaces. Same sneeze.",
+      "start": 51.083,
+      "end": 53.154,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "warm",
+      "placeholder": "kitchen | Milo, Pip | Milo ties laces like the shadow; both sneeze; Pip stares | medium",
+      "override": {},
+      "dur": 2.071
+    },
+    {
+      "n": 16,
+      "text": "It was right. Every single time.",
+      "start": 53.154,
+      "end": 55.728,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "kitchen | Milo | Milo looking at his shadow, half impressed, half scared | close",
+      "override": {},
+      "dur": 2.574
+    },
+    {
+      "n": 17,
+      "text": "Then, after school, my shadow started running.",
+      "start": 55.728,
+      "end": 58.83,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "school gate / street | Milo | the shadow sprints off down the street | wide",
+      "override": {},
+      "dur": 3.102
+    },
+    {
+      "n": 18,
+      "text": "Rio and I chased it across town, all the way to the train tracks.",
+      "start": 58.83,
+      "end": 63.772,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "street -> park -> tracks | Milo, Rio | running hard, quick drone cuts | tracking drone",
+      "override": {},
+      "dur": 4.942
+    },
+    {
+      "n": 19,
+      "text": "There, it stopped. It turned around.",
+      "start": 63.772,
+      "end": 66.535,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "tracks | the shadow stops on the gravel, turns | medium | rails, crossing sign",
+      "override": {},
+      "dur": 2.763
+    },
+    {
+      "n": 20,
+      "text": "And it waved goodbye.",
+      "start": 66.535,
+      "end": 68.178,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "tracks | Milo | the shadow waves slowly; Milo frozen | close on shadow",
+      "override": {},
+      "dur": 1.643
+    },
+    {
+      "n": 21,
+      "text": "Then it stepped onto the tracks... and faded away.",
+      "start": 68.178,
+      "end": 71.804,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "tracks | shadow steps onto the rails and fades out | wide",
+      "override": {},
+      "dur": 3.626
+    },
+    {
+      "n": 22,
+      "text": "Across the tracks, a girl in a white hoodie was waving too.",
+      "start": 71.804,
+      "end": 76.183,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "far side of the tracks | Wren | Wren alone, waving slowly | wide, slow push-in",
+      "override": {},
+      "dur": 4.379
+    },
+    {
+      "n": 23,
+      "text": "My little sister Pip grabbed my hand. \"Milo... where's your shadow?\"",
+      "start": 76.183,
+      "end": 80.639,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "tracks | Pip, Milo | Pip (behind them) grabs Milo's hand, looking at the ground | medium",
+      "override": {},
+      "dur": 4.456
+    },
+    {
+      "n": 24,
+      "text": "I looked down.",
+      "start": 80.639,
+      "end": 81.881,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "tracks | Milo | Milo looks down | close",
+      "override": {},
+      "dur": 1.242
+    },
+    {
+      "n": 25,
+      "text": "I didn't have one.",
+      "start": 81.881,
+      "end": 83.435,
+      "src": null,
+      "src_dur": null,
+      "motion": "punch",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "tracks | Milo, Rio, Pip | overhead: Rio and Pip have shadows; Milo has none | top-down, punch-in",
+      "override": {},
+      "dur": 1.554
+    },
+    {
+      "n": 26,
+      "text": "The next train comes tomorrow. Four fifteen.",
+      "start": 83.435,
+      "end": 86.557,
+      "src": null,
+      "src_dur": null,
+      "motion": "push_in",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "crossing | schedule board, finger-light on \"4:15\" | close insert | schedule board",
+      "override": {},
+      "dur": 3.122
+    },
+    {
+      "n": 27,
+      "text": "What do I do?",
+      "start": 86.557,
+      "end": 89.085,
+      "src": null,
+      "src_dur": null,
+      "motion": "pull_out",
+      "transition": "cut",
+      "grade": "neutral",
+      "placeholder": "tracks | Milo | Milo alone at the crossing, shadowless | close, slow pull-out",
+      "override": {},
+      "dur": 2.528
+    }
+  ],
+  "words": [
+    {
+      "w": "In",
+      "s": 0.3,
+      "e": 0.553,
+      "shot": 1
+    },
+    {
+      "w": "this",
+      "s": 0.581,
+      "e": 0.888,
+      "shot": 1
+    },
+    {
+      "w": "town,",
+      "s": 0.922,
+      "e": 1.229,
+      "shot": 1
+    },
+    {
+      "w": "your",
+      "s": 1.363,
+      "e": 1.67,
+      "shot": 1
+    },
+    {
+      "w": "shadow",
+      "s": 1.704,
+      "e": 2.064,
+      "shot": 1
+    },
+    {
+      "w": "moves",
+      "s": 2.104,
+      "e": 2.437,
+      "shot": 1
+    },
+    {
+      "w": "ten",
+      "s": 2.474,
+      "e": 2.754,
+      "shot": 1
+    },
+    {
+      "w": "seconds",
+      "s": 2.785,
+      "e": 3.172,
+      "shot": 1
+    },
+    {
+      "w": "before",
+      "s": 3.215,
+      "e": 3.575,
+      "shot": 1
+    },
+    {
+      "w": "you",
+      "s": 3.615,
+      "e": 3.895,
+      "shot": 1
+    },
+    {
+      "w": "do.",
+      "s": 3.926,
+      "e": 4.179,
+      "shot": 1
+    },
+    {
+      "w": "So",
+      "s": 4.457,
+      "e": 4.711,
+      "shot": 2
+    },
+    {
+      "w": "nobody",
+      "s": 4.739,
+      "e": 5.099,
+      "shot": 2
+    },
+    {
+      "w": "ever",
+      "s": 5.139,
+      "e": 5.446,
+      "shot": 2
+    },
+    {
+      "w": "trips.",
+      "s": 5.48,
+      "e": 5.813,
+      "shot": 2
+    },
+    {
+      "w": "Your",
+      "s": 6.1,
+      "e": 6.407,
+      "shot": 2
+    },
+    {
+      "w": "shadow",
+      "s": 6.441,
+      "e": 6.801,
+      "shot": 2
+    },
+    {
+      "w": "trips",
+      "s": 6.841,
+      "e": 7.174,
+      "shot": 2
+    },
+    {
+      "w": "first,",
+      "s": 7.211,
+      "e": 7.544,
+      "shot": 2
+    },
+    {
+      "w": "and",
+      "s": 7.681,
+      "e": 7.961,
+      "shot": 3
+    },
+    {
+      "w": "you",
+      "s": 7.993,
+      "e": 8.273,
+      "shot": 3
+    },
+    {
+      "w": "just",
+      "s": 8.304,
+      "e": 8.61,
+      "shot": 3
+    },
+    {
+      "w": "step",
+      "s": 8.644,
+      "e": 8.951,
+      "shot": 3
+    },
+    {
+      "w": "over",
+      "s": 8.985,
+      "e": 9.292,
+      "shot": 3
+    },
+    {
+      "w": "it.",
+      "s": 9.326,
+      "e": 9.579,
+      "shot": 3
+    },
+    {
+      "w": "Hide",
+      "s": 9.857,
+      "e": 10.164,
+      "shot": 4
+    },
+    {
+      "w": "and",
+      "s": 10.198,
+      "e": 10.478,
+      "shot": 4
+    },
+    {
+      "w": "seek?",
+      "s": 10.509,
+      "e": 10.816,
+      "shot": 4
+    },
+    {
+      "w": "Impossible.",
+      "s": 11.1,
+      "e": 11.567,
+      "shot": 4
+    },
+    {
+      "w": "Your",
+      "s": 11.869,
+      "e": 12.175,
+      "shot": 4
+    },
+    {
+      "w": "shadow",
+      "s": 12.209,
+      "e": 12.569,
+      "shot": 4
+    },
+    {
+      "w": "always",
+      "s": 12.609,
+      "e": 12.969,
+      "shot": 4
+    },
+    {
+      "w": "peeks",
+      "s": 13.009,
+      "e": 13.343,
+      "shot": 4
+    },
+    {
+      "w": "out",
+      "s": 13.38,
+      "e": 13.66,
+      "shot": 4
+    },
+    {
+      "w": "first.",
+      "s": 13.691,
+      "e": 14.024,
+      "shot": 4
+    },
+    {
+      "w": "And",
+      "s": 14.311,
+      "e": 14.591,
+      "shot": 5
+    },
+    {
+      "w": "my",
+      "s": 14.622,
+      "e": 14.876,
+      "shot": 5
+    },
+    {
+      "w": "mom",
+      "s": 14.904,
+      "e": 15.184,
+      "shot": 5
+    },
+    {
+      "w": "catches",
+      "s": 15.215,
+      "e": 15.601,
+      "shot": 5
+    },
+    {
+      "w": "me",
+      "s": 15.644,
+      "e": 15.898,
+      "shot": 5
+    },
+    {
+      "w": "at",
+      "s": 15.926,
+      "e": 16.179,
+      "shot": 5
+    },
+    {
+      "w": "the",
+      "s": 16.207,
+      "e": 16.487,
+      "shot": 5
+    },
+    {
+      "w": "cookie",
+      "s": 16.519,
+      "e": 16.879,
+      "shot": 5
+    },
+    {
+      "w": "jar",
+      "s": 16.919,
+      "e": 17.199,
+      "shot": 5
+    },
+    {
+      "w": "before",
+      "s": 17.23,
+      "e": 17.59,
+      "shot": 5
+    },
+    {
+      "w": "I",
+      "s": 17.63,
+      "e": 17.856,
+      "shot": 5
+    },
+    {
+      "w": "even",
+      "s": 17.881,
+      "e": 18.188,
+      "shot": 5
+    },
+    {
+      "w": "get",
+      "s": 18.222,
+      "e": 18.502,
+      "shot": 5
+    },
+    {
+      "w": "there.",
+      "s": 18.533,
+      "e": 18.867,
+      "shot": 5
+    },
+    {
+      "w": "My",
+      "s": 19.154,
+      "e": 19.407,
+      "shot": 6
+    },
+    {
+      "w": "shadow",
+      "s": 19.435,
+      "e": 19.795,
+      "shot": 6
+    },
+    {
+      "w": "was",
+      "s": 19.835,
+      "e": 20.115,
+      "shot": 6
+    },
+    {
+      "w": "normal.",
+      "s": 20.146,
+      "e": 20.506,
+      "shot": 6
+    },
+    {
+      "w": "Ten",
+      "s": 20.796,
+      "e": 21.076,
+      "shot": 6
+    },
+    {
+      "w": "seconds",
+      "s": 21.107,
+      "e": 21.494,
+      "shot": 6
+    },
+    {
+      "w": "ahead.",
+      "s": 21.537,
+      "e": 21.87,
+      "shot": 6
+    },
+    {
+      "w": "Always",
+      "s": 22.157,
+      "e": 22.517,
+      "shot": 6
+    },
+    {
+      "w": "ten.",
+      "s": 22.557,
+      "e": 22.837,
+      "shot": 6
+    },
+    {
+      "w": "Until",
+      "s": 23.119,
+      "e": 23.452,
+      "shot": 7
+    },
+    {
+      "w": "Tuesday.",
+      "s": 23.489,
+      "e": 23.876,
+      "shot": 7
+    },
+    {
+      "w": "I",
+      "s": 24.169,
+      "e": 24.395,
+      "shot": 8
+    },
+    {
+      "w": "waved.",
+      "s": 24.42,
+      "e": 24.754,
+      "shot": 8
+    },
+    {
+      "w": "My",
+      "s": 25.041,
+      "e": 25.294,
+      "shot": 8
+    },
+    {
+      "w": "shadow",
+      "s": 25.322,
+      "e": 25.682,
+      "shot": 8
+    },
+    {
+      "w": "didn't.",
+      "s": 25.722,
+      "e": 26.082,
+      "shot": 8
+    },
+    {
+      "w": "I",
+      "s": 26.372,
+      "e": 26.599,
+      "shot": 9
+    },
+    {
+      "w": "jumped.",
+      "s": 26.624,
+      "e": 26.984,
+      "shot": 9
+    },
+    {
+      "w": "It",
+      "s": 27.274,
+      "e": 27.527,
+      "shot": 9
+    },
+    {
+      "w": "just",
+      "s": 27.556,
+      "e": 27.862,
+      "shot": 9
+    },
+    {
+      "w": "stood",
+      "s": 27.896,
+      "e": 28.23,
+      "shot": 9
+    },
+    {
+      "w": "there...",
+      "s": 28.267,
+      "e": 28.6,
+      "shot": 9
+    },
+    {
+      "w": "like",
+      "s": 28.887,
+      "e": 29.194,
+      "shot": 9
+    },
+    {
+      "w": "it",
+      "s": 29.228,
+      "e": 29.481,
+      "shot": 9
+    },
+    {
+      "w": "was",
+      "s": 29.509,
+      "e": 29.789,
+      "shot": 9
+    },
+    {
+      "w": "waiting",
+      "s": 29.82,
+      "e": 30.207,
+      "shot": 9
+    },
+    {
+      "w": "for",
+      "s": 30.25,
+      "e": 30.53,
+      "shot": 9
+    },
+    {
+      "w": "something.",
+      "s": 30.561,
+      "e": 31.001,
+      "shot": 9
+    },
+    {
+      "w": "My",
+      "s": 31.3,
+      "e": 31.553,
+      "shot": 10
+    },
+    {
+      "w": "best",
+      "s": 31.581,
+      "e": 31.888,
+      "shot": 10
+    },
+    {
+      "w": "friend",
+      "s": 31.922,
+      "e": 32.282,
+      "shot": 10
+    },
+    {
+      "w": "Rio",
+      "s": 32.322,
+      "e": 32.602,
+      "shot": 10
+    },
+    {
+      "w": "poked",
+      "s": 32.633,
+      "e": 32.967,
+      "shot": 10
+    },
+    {
+      "w": "it",
+      "s": 33.004,
+      "e": 33.257,
+      "shot": 10
+    },
+    {
+      "w": "with",
+      "s": 33.285,
+      "e": 33.592,
+      "shot": 10
+    },
+    {
+      "w": "his",
+      "s": 33.626,
+      "e": 33.906,
+      "shot": 10
+    },
+    {
+      "w": "shoe.",
+      "s": 33.937,
+      "e": 34.244,
+      "shot": 10
+    },
+    {
+      "w": "\"Bro.",
+      "s": 34.528,
+      "e": 34.808,
+      "shot": 10
+    },
+    {
+      "w": "Is",
+      "s": 35.089,
+      "e": 35.342,
+      "shot": 10
+    },
+    {
+      "w": "it",
+      "s": 35.37,
+      "e": 35.624,
+      "shot": 10
+    },
+    {
+      "w": "broken?\"",
+      "s": 35.652,
+      "e": 36.012,
+      "shot": 10
+    },
+    {
+      "w": "That",
+      "s": 36.052,
+      "e": 36.359,
+      "shot": 11
+    },
+    {
+      "w": "night,",
+      "s": 36.393,
+      "e": 36.726,
+      "shot": 11
+    },
+    {
+      "w": "I",
+      "s": 36.863,
+      "e": 37.09,
+      "shot": 11
+    },
+    {
+      "w": "saw",
+      "s": 37.115,
+      "e": 37.395,
+      "shot": 11
+    },
+    {
+      "w": "it",
+      "s": 37.426,
+      "e": 37.679,
+      "shot": 11
+    },
+    {
+      "w": "on",
+      "s": 37.707,
+      "e": 37.961,
+      "shot": 11
+    },
+    {
+      "w": "my",
+      "s": 37.989,
+      "e": 38.242,
+      "shot": 11
+    },
+    {
+      "w": "bedroom",
+      "s": 38.27,
+      "e": 38.657,
+      "shot": 11
+    },
+    {
+      "w": "wall.",
+      "s": 38.7,
+      "e": 39.007,
+      "shot": 11
+    },
+    {
+      "w": "Brushing",
+      "s": 39.291,
+      "e": 39.704,
+      "shot": 11
+    },
+    {
+      "w": "its",
+      "s": 39.75,
+      "e": 40.03,
+      "shot": 11
+    },
+    {
+      "w": "teeth.",
+      "s": 40.061,
+      "e": 40.394,
+      "shot": 11
+    },
+    {
+      "w": "But",
+      "s": 40.681,
+      "e": 40.961,
+      "shot": 12
+    },
+    {
+      "w": "I'd",
+      "s": 40.993,
+      "e": 41.273,
+      "shot": 12
+    },
+    {
+      "w": "already",
+      "s": 41.304,
+      "e": 41.69,
+      "shot": 12
+    },
+    {
+      "w": "brushed",
+      "s": 41.733,
+      "e": 42.12,
+      "shot": 12
+    },
+    {
+      "w": "mine.",
+      "s": 42.163,
+      "e": 42.47,
+      "shot": 12
+    },
+    {
+      "w": "It",
+      "s": 42.754,
+      "e": 43.007,
+      "shot": 13
+    },
+    {
+      "w": "wasn't",
+      "s": 43.035,
+      "e": 43.395,
+      "shot": 13
+    },
+    {
+      "w": "ten",
+      "s": 43.435,
+      "e": 43.715,
+      "shot": 13
+    },
+    {
+      "w": "seconds",
+      "s": 43.746,
+      "e": 44.133,
+      "shot": 13
+    },
+    {
+      "w": "ahead",
+      "s": 44.176,
+      "e": 44.509,
+      "shot": 13
+    },
+    {
+      "w": "anymore.",
+      "s": 44.546,
+      "e": 44.933,
+      "shot": 13
+    },
+    {
+      "w": "It",
+      "s": 45.226,
+      "e": 45.479,
+      "shot": 13
+    },
+    {
+      "w": "was",
+      "s": 45.507,
+      "e": 45.787,
+      "shot": 13
+    },
+    {
+      "w": "doing",
+      "s": 45.819,
+      "e": 46.152,
+      "shot": 13
+    },
+    {
+      "w": "tomorrow.",
+      "s": 46.189,
+      "e": 46.602,
+      "shot": 13
+    },
+    {
+      "w": "The",
+      "s": 46.898,
+      "e": 47.178,
+      "shot": 14
+    },
+    {
+      "w": "next",
+      "s": 47.209,
+      "e": 47.516,
+      "shot": 14
+    },
+    {
+      "w": "morning,",
+      "s": 47.55,
+      "e": 47.937,
+      "shot": 14
+    },
+    {
+      "w": "I",
+      "s": 48.08,
+      "e": 48.306,
+      "shot": 14
+    },
+    {
+      "w": "copied",
+      "s": 48.331,
+      "e": 48.691,
+      "shot": 14
+    },
+    {
+      "w": "everything",
+      "s": 48.731,
+      "e": 49.198,
+      "shot": 14
+    },
+    {
+      "w": "it",
+      "s": 49.25,
+      "e": 49.503,
+      "shot": 14
+    },
+    {
+      "w": "did.",
+      "s": 49.531,
+      "e": 49.811,
+      "shot": 14
+    },
+    {
+      "w": "Same",
+      "s": 50.093,
+      "e": 50.399,
+      "shot": 14
+    },
+    {
+      "w": "cereal.",
+      "s": 50.433,
+      "e": 50.793,
+      "shot": 14
+    },
+    {
+      "w": "Same",
+      "s": 51.083,
+      "e": 51.39,
+      "shot": 15
+    },
+    {
+      "w": "shoelaces.",
+      "s": 51.424,
+      "e": 51.864,
+      "shot": 15
+    },
+    {
+      "w": "Same",
+      "s": 52.163,
+      "e": 52.47,
+      "shot": 15
+    },
+    {
+      "w": "sneeze.",
+      "s": 52.504,
+      "e": 52.864,
+      "shot": 15
+    },
+    {
+      "w": "It",
+      "s": 53.154,
+      "e": 53.407,
+      "shot": 16
+    },
+    {
+      "w": "was",
+      "s": 53.435,
+      "e": 53.715,
+      "shot": 16
+    },
+    {
+      "w": "right.",
+      "s": 53.746,
+      "e": 54.08,
+      "shot": 16
+    },
+    {
+      "w": "Every",
+      "s": 54.367,
+      "e": 54.7,
+      "shot": 16
+    },
+    {
+      "w": "single",
+      "s": 54.737,
+      "e": 55.097,
+      "shot": 16
+    },
+    {
+      "w": "time.",
+      "s": 55.137,
+      "e": 55.444,
+      "shot": 16
+    },
+    {
+      "w": "Then,",
+      "s": 55.728,
+      "e": 56.034,
+      "shot": 17
+    },
+    {
+      "w": "after",
+      "s": 56.169,
+      "e": 56.502,
+      "shot": 17
+    },
+    {
+      "w": "school,",
+      "s": 56.539,
+      "e": 56.899,
+      "shot": 17
+    },
+    {
+      "w": "my",
+      "s": 57.039,
+      "e": 57.292,
+      "shot": 17
+    },
+    {
+      "w": "shadow",
+      "s": 57.32,
+      "e": 57.68,
+      "shot": 17
+    },
+    {
+      "w": "started",
+      "s": 57.72,
+      "e": 58.107,
+      "shot": 17
+    },
+    {
+      "w": "running.",
+      "s": 58.15,
+      "e": 58.537,
+      "shot": 17
+    },
+    {
+      "w": "Rio",
+      "s": 58.83,
+      "e": 59.11,
+      "shot": 18
+    },
+    {
+      "w": "and",
+      "s": 59.141,
+      "e": 59.421,
+      "shot": 18
+    },
+    {
+      "w": "I",
+      "s": 59.452,
+      "e": 59.679,
+      "shot": 18
+    },
+    {
+      "w": "chased",
+      "s": 59.704,
+      "e": 60.064,
+      "shot": 18
+    },
+    {
+      "w": "it",
+      "s": 60.104,
+      "e": 60.357,
+      "shot": 18
+    },
+    {
+      "w": "across",
+      "s": 60.385,
+      "e": 60.745,
+      "shot": 18
+    },
+    {
+      "w": "town,",
+      "s": 60.785,
+      "e": 61.092,
+      "shot": 18
+    },
+    {
+      "w": "all",
+      "s": 61.226,
+      "e": 61.506,
+      "shot": 18
+    },
+    {
+      "w": "the",
+      "s": 61.537,
+      "e": 61.817,
+      "shot": 18
+    },
+    {
+      "w": "way",
+      "s": 61.848,
+      "e": 62.128,
+      "shot": 18
+    },
+    {
+      "w": "to",
+      "s": 62.159,
+      "e": 62.413,
+      "shot": 18
+    },
+    {
+      "w": "the",
+      "s": 62.441,
+      "e": 62.721,
+      "shot": 18
+    },
+    {
+      "w": "train",
+      "s": 62.752,
+      "e": 63.085,
+      "shot": 18
+    },
+    {
+      "w": "tracks.",
+      "s": 63.122,
+      "e": 63.482,
+      "shot": 18
+    },
+    {
+      "w": "There,",
+      "s": 63.772,
+      "e": 64.106,
+      "shot": 19
+    },
+    {
+      "w": "it",
+      "s": 64.243,
+      "e": 64.496,
+      "shot": 19
+    },
+    {
+      "w": "stopped.",
+      "s": 64.524,
+      "e": 64.911,
+      "shot": 19
+    },
+    {
+      "w": "It",
+      "s": 65.204,
+      "e": 65.457,
+      "shot": 19
+    },
+    {
+      "w": "turned",
+      "s": 65.485,
+      "e": 65.845,
+      "shot": 19
+    },
+    {
+      "w": "around.",
+      "s": 65.885,
+      "e": 66.245,
+      "shot": 19
+    },
+    {
+      "w": "And",
+      "s": 66.535,
+      "e": 66.815,
+      "shot": 20
+    },
+    {
+      "w": "it",
+      "s": 66.846,
+      "e": 67.1,
+      "shot": 20
+    },
+    {
+      "w": "waved",
+      "s": 67.128,
+      "e": 67.461,
+      "shot": 20
+    },
+    {
+      "w": "goodbye.",
+      "s": 67.498,
+      "e": 67.885,
+      "shot": 20
+    },
+    {
+      "w": "Then",
+      "s": 68.178,
+      "e": 68.484,
+      "shot": 21
+    },
+    {
+      "w": "it",
+      "s": 68.519,
+      "e": 68.772,
+      "shot": 21
+    },
+    {
+      "w": "stepped",
+      "s": 68.8,
+      "e": 69.187,
+      "shot": 21
+    },
+    {
+      "w": "onto",
+      "s": 69.23,
+      "e": 69.536,
+      "shot": 21
+    },
+    {
+      "w": "the",
+      "s": 69.57,
+      "e": 69.85,
+      "shot": 21
+    },
+    {
+      "w": "tracks...",
+      "s": 69.881,
+      "e": 70.241,
+      "shot": 21
+    },
+    {
+      "w": "and",
+      "s": 70.531,
+      "e": 70.811,
+      "shot": 21
+    },
+    {
+      "w": "faded",
+      "s": 70.843,
+      "e": 71.176,
+      "shot": 21
+    },
+    {
+      "w": "away.",
+      "s": 71.213,
+      "e": 71.52,
+      "shot": 21
+    },
+    {
+      "w": "Across",
+      "s": 71.804,
+      "e": 72.164,
+      "shot": 22
+    },
+    {
+      "w": "the",
+      "s": 72.204,
+      "e": 72.484,
+      "shot": 22
+    },
+    {
+      "w": "tracks,",
+      "s": 72.515,
+      "e": 72.875,
+      "shot": 22
+    },
+    {
+      "w": "a",
+      "s": 73.015,
+      "e": 73.241,
+      "shot": 22
+    },
+    {
+      "w": "girl",
+      "s": 73.267,
+      "e": 73.573,
+      "shot": 22
+    },
+    {
+      "w": "in",
+      "s": 73.607,
+      "e": 73.861,
+      "shot": 22
+    },
+    {
+      "w": "a",
+      "s": 73.889,
+      "e": 74.116,
+      "shot": 22
+    },
+    {
+      "w": "white",
+      "s": 74.141,
+      "e": 74.474,
+      "shot": 22
+    },
+    {
+      "w": "hoodie",
+      "s": 74.511,
+      "e": 74.871,
+      "shot": 22
+    },
+    {
+      "w": "was",
+      "s": 74.911,
+      "e": 75.191,
+      "shot": 22
+    },
+    {
+      "w": "waving",
+      "s": 75.222,
+      "e": 75.582,
+      "shot": 22
+    },
+    {
+      "w": "too.",
+      "s": 75.622,
+      "e": 75.902,
+      "shot": 22
+    },
+    {
+      "w": "My",
+      "s": 76.183,
+      "e": 76.437,
+      "shot": 23
+    },
+    {
+      "w": "little",
+      "s": 76.465,
+      "e": 76.825,
+      "shot": 23
+    },
+    {
+      "w": "sister",
+      "s": 76.865,
+      "e": 77.225,
+      "shot": 23
+    },
+    {
+      "w": "Pip",
+      "s": 77.265,
+      "e": 77.545,
+      "shot": 23
+    },
+    {
+      "w": "grabbed",
+      "s": 77.576,
+      "e": 77.963,
+      "shot": 23
+    },
+    {
+      "w": "my",
+      "s": 78.006,
+      "e": 78.259,
+      "shot": 23
+    },
+    {
+      "w": "hand.",
+      "s": 78.287,
+      "e": 78.594,
+      "shot": 23
+    },
+    {
+      "w": "\"Milo...",
+      "s": 78.878,
+      "e": 79.184,
+      "shot": 23
+    },
+    {
+      "w": "where's",
+      "s": 79.469,
+      "e": 79.855,
+      "shot": 23
+    },
+    {
+      "w": "your",
+      "s": 79.898,
+      "e": 80.205,
+      "shot": 23
+    },
+    {
+      "w": "shadow?\"",
+      "s": 80.239,
+      "e": 80.599,
+      "shot": 23
+    },
+    {
+      "w": "I",
+      "s": 80.639,
+      "e": 80.866,
+      "shot": 24
+    },
+    {
+      "w": "looked",
+      "s": 80.891,
+      "e": 81.251,
+      "shot": 24
+    },
+    {
+      "w": "down.",
+      "s": 81.291,
+      "e": 81.597,
+      "shot": 24
+    },
+    {
+      "w": "I",
+      "s": 81.881,
+      "e": 82.108,
+      "shot": 25
+    },
+    {
+      "w": "didn't",
+      "s": 82.133,
+      "e": 82.493,
+      "shot": 25
+    },
+    {
+      "w": "have",
+      "s": 82.533,
+      "e": 82.84,
+      "shot": 25
+    },
+    {
+      "w": "one.",
+      "s": 82.874,
+      "e": 83.154,
+      "shot": 25
+    },
+    {
+      "w": "The",
+      "s": 83.435,
+      "e": 83.715,
+      "shot": 26
+    },
+    {
+      "w": "next",
+      "s": 83.746,
+      "e": 84.053,
+      "shot": 26
+    },
+    {
+      "w": "train",
+      "s": 84.087,
+      "e": 84.42,
+      "shot": 26
+    },
+    {
+      "w": "comes",
+      "s": 84.457,
+      "e": 84.791,
+      "shot": 26
+    },
+    {
+      "w": "tomorrow.",
+      "s": 84.828,
+      "e": 85.241,
+      "shot": 26
+    },
+    {
+      "w": "Four",
+      "s": 85.537,
+      "e": 85.844,
+      "shot": 26
+    },
+    {
+      "w": "fifteen.",
+      "s": 85.878,
+      "e": 86.264,
+      "shot": 26
+    },
+    {
+      "w": "What",
+      "s": 86.557,
+      "e": 86.864,
+      "shot": 27
+    },
+    {
+      "w": "do",
+      "s": 86.898,
+      "e": 87.151,
+      "shot": 27
+    },
+    {
+      "w": "I",
+      "s": 87.18,
+      "e": 87.406,
+      "shot": 27
+    },
+    {
+      "w": "do?",
+      "s": 87.431,
+      "e": 87.685,
+      "shot": 27
+    }
+  ],
+  "music": {
+    "file": "output/stock/music/soft_piano_stock.wav",
+    "db": -7
+  },
+  "ambience": [
+    {
+      "file": "output/stock/sfx/amb_town_stock.wav",
+      "start": 0.0,
+      "end": 89.08500000000001
+    }
+  ],
+  "sfx": [
+    {
+      "file": "output/stock/sfx/boom_stock.wav",
+      "t": 4.457,
+      "shot": 2
+    },
+    {
+      "file": "output/stock/sfx/boom_stock.wav",
+      "t": 14.311,
+      "shot": 5
+    },
+    {
+      "file": "output/stock/sfx/ticks_stock.wav",
+      "t": 19.154,
+      "shot": 6
+    },
+    {
+      "file": "output/stock/sfx/impact_stock.wav",
+      "t": 23.119,
+      "shot": 7
+    },
+    {
+      "file": "output/stock/sfx/heartbeat_stock.wav",
+      "t": 26.372,
+      "shot": 9
+    },
+    {
+      "file": "output/stock/sfx/impact_stock.wav",
+      "t": 40.681,
+      "shot": 12
+    },
+    {
+      "file": "output/stock/sfx/boom_stock.wav",
+      "t": 51.083,
+      "shot": 15
+    },
+    {
+      "file": "output/stock/sfx/whoosh_down_stock.wav",
+      "t": 55.728,
+      "shot": 17
+    },
+    {
+      "file": "output/stock/sfx/heartbeat_stock.wav",
+      "t": 66.535,
+      "shot": 20
+    },
+    {
+      "file": "output/stock/sfx/impact_stock.wav",
+      "t": 81.881,
+      "shot": 25
+    },
+    {
+      "file": "output/stock/sfx/ticks_stock.wav",
+      "t": 83.435,
+      "shot": 26
+    }
+  ],
+  "override": {}
+}
