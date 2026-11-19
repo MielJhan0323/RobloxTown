@@ -384,8 +384,8 @@ def s06(k, F):  # My shadow was normal. Ten seconds ahead. Always ten.
     S = street("day")
     milo = walker(S, "Milo", (STREET_X, -3520), (STREET_X, -3534), 1, F)
     follow(S, milo, ST, lead=8)
-    S.drone([(1, V((STREET_X + 2.3, -3532, 4.2)), V((STREET_X, -3521, 2))),
-             (F, V((STREET_X + 2.3, -3546, 4.2)), V((STREET_X, -3535, 2)))], lens=28, allow_close=True)
+    S.drone([(1, V((STREET_X + 1.5, -3531, 8.5)), V((STREET_X, -3521, 1.2))),
+             (F, V((STREET_X + 1.5, -3545, 8.5)), V((STREET_X, -3535, 1.2)))], lens=26, allow_close=True)
     return S
 
 
