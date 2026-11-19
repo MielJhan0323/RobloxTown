@@ -442,10 +442,12 @@ def s04(k, F):  # Hide and seek? Impossible. Your shadow always peeks out first.
     sh = make_shadow(S, (tx, ty + 1.9, 0.6), 0, V((-0.15, -1.7, -1.0)), ("ground", 0.6))
     sh.lean(kf(F * 0.25), 25, -20)
     wave(sh, kf(F * 0.3), F, side="L", every=6)
-    juno = place(S, "Juno", (tx - 1.5, ty - 11), 180, "laugh")
+    juno = place(S, "Juno", (tx - 2.6, ty - 9.5), 0, "laugh")
+    face(juno, (tx, ty))
     follow(S, juno, ST, lead=6)
     juno.arm("R", kf(F * 0.45), 90)
-    S.cam_at(V((tx - 12, ty - 3, 5.0)), V((tx - 1.0, ty - 6, 1.6)), lens=24)
+    S.hide("Lamp")                  # no lamp posts in front of the hide-and-seek
+    S.cam_at(V((tx - 1.2, ty - 19, 6.5)), V((tx, ty - 2, 2.0)), lens=24)
     falling_leaves((STREET_X - 3, -3540, 9), F)
     return S
 
@@ -503,8 +505,8 @@ def s06(k, F):  # My shadow was normal. Ten seconds ahead. Always ten.
     S = street()
     milo = walker(S, "Milo", (STREET_X, -3520), (STREET_X, -3534), 1, F)
     follow(S, milo, ST, lead=8)
-    S.drone([(1, V((STREET_X + 1.5, -3531, 8.5)), V((STREET_X, -3521, 1.2))),
-             (F, V((STREET_X + 1.5, -3545, 8.5)), V((STREET_X, -3535, 1.2)))], lens=26, allow_close=True)
+    S.drone([(1, V((STREET_X - 0.3, -3532, 7.5)), V((STREET_X, -3521, 1.5))),
+             (F, V((STREET_X - 0.3, -3546, 7.5)), V((STREET_X, -3535, 1.5)))], lens=26, allow_close=True)
     falling_leaves((STREET_X - 1, -3530, 9), F)
     return S
 
