@@ -77,6 +77,19 @@ def _no_real_shadows(S):
                     sl.material.shadow_method = "NONE"
 
 
+def yaw_to(a, b):
+    """Rig yaw that makes a character at a face toward b (forward is -Y at yaw 0)."""
+    return math.degrees(math.atan2(b[0] - a[0], -(b[1] - a[1])))
+
+
+def face(c, target, f=None):
+    """Turn a character toward a point (the camera, another character...)."""
+    y = yaw_to(c.pos, target)
+    c.root.rotation_euler.z = math.pi + R(y)
+    if f is not None:
+        c.key_root(f, yaw=y)
+
+
 def allow(S, *names):
     for a in names:
         for b in names:
@@ -164,12 +177,13 @@ def follow(S, owner, light, plane=None, lead=6, model=None, after=None):
             if not dad.action:
                 dad.action = bpy.data.actions.new(dst.name + "_shadow")
             for fc in sad.action.fcurves:
+                off = 0 if (src is owner.root and fc.data_path == "location") else lead   # feet stay attached
                 d = dad.action.fcurves.find(fc.data_path, index=fc.array_index)
                 if d is None:
                     d = dad.action.fcurves.new(fc.data_path, index=fc.array_index)
                 d.keyframe_points.clear()
                 for kp in fc.keyframe_points:
-                    k = d.keyframe_points.insert(kp.co.x - lead, kp.co.y)
+                    k = d.keyframe_points.insert(kp.co.x - off, kp.co.y)
                     k.interpolation = kp.interpolation
         if after:
             after(sh)
@@ -207,10 +221,7 @@ def slide(c, f0, f1, to, z=None):
 
 # ---------------------------------------------------------------- sets
 def street(light="day"):
-    S = stage(light)
-    for k2, ty in enumerate((-3548, -3522, -3496)):
-        kit.tree((STREET_X + 2.3, ty), 1.3)
-    return S
+    return stage(light)
 
 
 def crack(y):
@@ -281,29 +292,35 @@ KL = V((-1.0, 0.12, 0.0))
 BL = V((0.06, 1.0, 0.0))
 
 
+def walker(S, who, a, b, f0, f1, expr="smile", run=False):
+    """Character that walks/runs from a to b FACING its direction of travel."""
+    c = place(S, who, a, yaw_to(a, b), expr)
+    (c.run if run else c.walk)(f0, f1, b)
+    return c
+
+
 def s01(k, F):  # In this town, your shadow moves ten seconds before you do.
     S = street("day")
-    milo = place(S, "Milo", (STREET_X, -3540), 200, "smile")
-    sh = make_shadow(S, (STREET_X, -3540, 0.6), 200, ST, ("ground", 0.6))
-    go = kf(F * 0.3)
-    sh.walk(go, F, (STREET_X - 0.6, -3549, 0.6))
-    milo.look(kf(F * 0.45), -10, -30)
+    cam = V((STREET_X - 6, -3528, 9))
+    milo = place(S, "Milo", (STREET_X, -3538), 0, "smile")
+    face(milo, cam)
+    sh = make_shadow(S, (STREET_X, -3538, 0.6), 0, ST, ("ground", 0.6))
+    sh.walk(kf(F * 0.3), F, (STREET_X - 0.4, -3547, 0.6))
+    milo.look(kf(F * 0.45), 15, -30)
     milo.face(kf(F * 0.55), "shocked")
-    S.drone([(1, V((STREET_X - 7, -3527, 12)), V((STREET_X, -3543, 1))),
-             (F, V((STREET_X - 5, -3533, 6)), V((STREET_X, -3546, 1.0)))], lens=26)
+    S.drone([(1, cam, V((STREET_X, -3541, 1))), (F, V((STREET_X - 5, -3531, 6)), V((STREET_X, -3544, 1.0)))], lens=26)
     return S
 
 
 def s02(k, F):  # So nobody ever trips. Your shadow trips first,
     S = street("day")
     crack(-3536)
-    dev = place(S, "Dev", (STREET_X, -3528), 180, "smile")
     stop = kf(F * 0.55)
-    dev.walk(1, stop, (STREET_X, -3533.5))
+    dev = walker(S, "Dev", (STREET_X, -3527), (STREET_X, -3533.5), 1, stop)
     dev.face(stop, "shocked")
     dev.look(stop, 0, -30)
 
-    def trip(sh):                         # the shadow walks into the crack and falls first
+    def trip(sh):
         t = kf(F * 0.3)
         sh.lean(t, 0)
         sh.lean(t + 6, 55)
@@ -311,19 +328,18 @@ def s02(k, F):  # So nobody ever trips. Your shadow trips first,
             sh.arm(sd, t + 4, 150, 30)
         sh.leg("R", t + 4, -40)
     follow(S, dev, ST, lead=10, after=trip)
-    place(S, "Wren", (-11.5, -3500), 170, "neutral")      # easter egg, other sidewalk far away
-    S.cam_at(V((STREET_X - 6, -3545, 3.4)), V((STREET_X, -3532, 1.6)), lens=28)
+    place(S, "Wren", (-11.5, -3505), 0, "neutral")
+    S.cam_at(V((STREET_X - 4.5, -3547, 3.6)), V((STREET_X, -3532, 2.0)), lens=30)
     return S
 
 
 def s03(k, F):  # and you just step over it.
     S = street("day")
     crack(-3536)
-    dev = place(S, "Dev", (STREET_X, -3533.5), 180, "smirk")
-    dev.walk(1, F, (STREET_X, -3540))
+    dev = walker(S, "Dev", (STREET_X, -3533.5), (STREET_X, -3540), 1, F, "smirk")
     dev.leg("L", kf(F * 0.35), 70)
     follow(S, dev, ST, lead=8)
-    S.cam_at(V((STREET_X - 7, -3538, 3.0)), V((STREET_X, -3537, 1.6)), lens=30)
+    S.cam_at(V((STREET_X - 5, -3548, 3.2)), V((STREET_X, -3537, 1.8)), lens=30)
     return S
 
 
@@ -331,14 +347,14 @@ def s04(k, F):  # Hide and seek? Impossible. Your shadow always peeks out first.
     S = stage("day")
     tx, ty = STREET_X, -3535
     kit.tree((tx, ty), 1.5)
-    rio = place(S, "Rio", (tx, ty + 1.9), 0, "smirk")
+    place(S, "Rio", (tx, ty + 1.9), 0, "smirk")
     sh = make_shadow(S, (tx, ty + 1.9, 0.6), 0, V((-0.15, -1.7, -1.0)), ("ground", 0.6))
     sh.lean(kf(F * 0.25), 25, -20)
     wave(sh, kf(F * 0.3), F, side="L", every=6)
-    juno = place(S, "Juno", (tx - 1.0, ty - 12), 0, "laugh")
+    juno = place(S, "Juno", (tx - 1.5, ty - 11), 180, "laugh")
     follow(S, juno, ST, lead=6)
     juno.arm("R", kf(F * 0.45), 90)
-    S.cam_at(V((tx - 7.5, ty - 15, 6.0)), V((tx, ty - 3.5, 0.8)), lens=26)
+    S.cam_at(V((tx - 12, ty - 3, 5.0)), V((tx - 1.0, ty - 6, 1.6)), lens=24)
     return S
 
 
@@ -351,78 +367,83 @@ def kitchen_set():
 def s05(k, F):  # And my mom catches me at the cookie jar before I even get there.
     S = kitchen_set()
     kit.cyl(0.6, 1.2, (KIT.x - 6.6, KIT.y + 6.4, 4.25), kit.mat("jar", (0.85, 0.75, 0.6)), verts=16)
-    milo = place(S, "Milo", (KIT.x - 4.5, KIT.y + 0.5), 0, "smirk")
     reach = kf(F * 0.45)
-    milo.walk(1, reach, (KIT.x - 4.5, KIT.y + 3.4))
+    milo = walker(S, "Milo", (KIT.x - 3.0, KIT.y - 1.0, 0), (KIT.x - 4.8, KIT.y + 3.6, 0), 1, reach, "smirk")
     milo.arm("R", reach, 80)
     milo.face(reach, "shocked")
     follow(S, milo, KL, KW, lead=14)
-    mom = place(S, "Mom", (KIT.x - 5.8, KIT.y - 3.0), 0, "angry")
+    mom = place(S, "Mom", (KIT.x - 5.8, KIT.y - 3.0, 0), 0, "angry")
+    face(mom, (KIT.x - 4.8, KIT.y + 3.6))
     mom.arm("L", kf(F * 0.3), 100, -25)
     follow(S, mom, KL, KW, lead=6)
-    S.cam_at(V((KIT.x + 4, KIT.y - 7, 5.5)), V((KIT.x - 6.0, KIT.y + 1.5, 3.5)), lens=26)
+    S.cam_at(V((KIT.x + 5, KIT.y + 3, 6.0)), V((KIT.x - 5.5, KIT.y + 0.5, 3.0)), lens=24)
     return S
 
 
 def s06(k, F):  # My shadow was normal. Ten seconds ahead. Always ten.
     S = street("day")
-    milo = place(S, "Milo", (STREET_X, -3520), 180, "smile")
-    milo.walk(1, F, (STREET_X, -3534))
+    milo = walker(S, "Milo", (STREET_X, -3520), (STREET_X, -3534), 1, F)
     follow(S, milo, ST, lead=8)
-    S.drone([(1, V((STREET_X - 7, -3530, 4.2)), V((STREET_X, -3522, 1.6))),
-             (F, V((STREET_X - 7, -3542, 4.2)), V((STREET_X, -3535, 1.6)))], lens=30)
+    S.drone([(1, V((STREET_X + 2.3, -3532, 4.2)), V((STREET_X, -3521, 2))),
+             (F, V((STREET_X + 2.3, -3546, 4.2)), V((STREET_X, -3535, 2)))], lens=28, allow_close=True)
     return S
 
 
-def stuck_shadow(S, x, y, yaw=180):
-    """Milo's shadow, frozen where he stood (it no longer copies him)."""
-    return make_shadow(S, (x, y, 0.6), yaw, ST, ("ground", 0.6))
+def stuck_shadow(S, x, y):
+    return make_shadow(S, (x, y, 0.6), 0, ST, ("ground", 0.6))
 
 
 def s07(k, F):  # Until Tuesday.
     S = street("day")
-    milo = place(S, "Milo", (STREET_X, -3530), 180, "neutral")
-    milo.walk(kf(F * 0.4), F, (STREET_X, -3533))
+    milo = place(S, "Milo", (STREET_X, -3530), 0, "neutral")
+    milo.walk(kf(F * 0.4), F, (STREET_X, -3534))
     stuck_shadow(S, STREET_X, -3530)
-    S.cam_at(V((STREET_X - 4, -3540, 3.4)), V((STREET_X, -3532, 0.6)), lens=30, allow_close=True)
+    S.cam_at(V((STREET_X - 3, -3543, 3.6)), V((STREET_X, -3533, 1.0)), lens=30, allow_close=True)
     return S
 
 
 def s08(k, F):  # I waved. My shadow didn't.
     S = street("day")
-    milo = place(S, "Milo", (STREET_X, -3534), 200, "smile")
+    cam = V((STREET_X - 6, -3547, 4.6))
+    milo = place(S, "Milo", (STREET_X, -3535), 0, "smile")
+    face(milo, cam)
     wave(milo, kf(F * 0.2), F, side="R")
     milo.face(kf(F * 0.6), "worried")
-    stuck_shadow(S, STREET_X - 0.3, -3530.5)
-    S.cam_at(V((STREET_X - 8, -3546, 5)), V((STREET_X, -3533, 1.2)), lens=30)
+    stuck_shadow(S, STREET_X, -3531)
+    S.cam_at(cam, V((STREET_X, -3533, 1.6)), lens=30)
     return S
 
 
 def s09(k, F):  # I jumped. It just stood there... like it was waiting for something.
     S = street("day")
-    milo = place(S, "Milo", (STREET_X, -3534), 200, "worried")
+    cam = V((STREET_X - 8, -3549, 6))
+    milo = place(S, "Milo", (STREET_X, -3535), 0, "worried")
+    face(milo, cam)
     p = milo.pos
     for f, z in ((kf(F * 0.15), 0), (kf(F * 0.25), 2.2), (kf(F * 0.35), 0)):
         milo.key_root(f, (p.x, p.y, p.z + z))
-    stuck_shadow(S, STREET_X - 0.3, -3530.5)
-    milo.look(kf(F * 0.5), -30, -30)
-    S.drone([(1, V((STREET_X - 10, -3546, 6)), V((STREET_X, -3533, 1))),
-             (F, V((STREET_X - 7, -3541, 4.2)), V((STREET_X, -3532, 0.8)))], lens=30)
+    stuck_shadow(S, STREET_X, -3531)
+    milo.look(kf(F * 0.5), 20, -30)
+    S.drone([(1, cam, V((STREET_X, -3533, 1.2))), (F, V((STREET_X - 6, -3544, 4.2)), V((STREET_X, -3532, 1.0)))], lens=30)
     return S
 
 
 def s10(k, F):  # My best friend Rio poked it with his shoe. "Bro. Is it broken?"
     S = street("day")
-    milo = place(S, "Milo", (STREET_X + 1.2, -3534), 200, "worried")
-    stuck_shadow(S, STREET_X - 0.3, -3530.5)
-    rio = place(S, "Rio", (STREET_X - 2.6, -3530), 90, "laugh")
+    cam = V((STREET_X + 1.5, -3543, 4.2))
+    milo = place(S, "Milo", (STREET_X + 1.6, -3535), 0, "worried")
+    face(milo, cam)
+    stuck_shadow(S, STREET_X, -3531)
+    rio = place(S, "Rio", (STREET_X - 3.0, -3531), 0, "laugh")
+    face(rio, (STREET_X, -3531))
     follow(S, rio, ST, lead=6)
     for f, a in ((kf(F * 0.25), 50), (kf(F * 0.4), 10), (kf(F * 0.55), 50), (kf(F * 0.7), 10)):
         rio.leg("R", f, a)
-    rio.look(1, 0, -30)
+    rio.look(1, -20, -30)
+    rio.look(kf(F * 0.55), -45, 0)
     rio.talk(kf(F * 0.55), kf(F * 0.9), base="laugh")
     allow(S, "Narrator", "Crowd3")
-    S.cam_at(V((STREET_X - 9, -3538, 4.0)), V((STREET_X - 1, -3531, 1.2)), lens=30)
+    S.cam_at(cam, V((STREET_X - 1.0, -3532, 1.4)), lens=28)
     return S
 
 
@@ -433,10 +454,12 @@ def bed_set(lamp=True):
 
 
 def bed_milo(S, sit=False, expr="tired"):
-    milo = place(S, "Milo", (BED.x + 5.4, BED.y + 2.5, 2.2), 0, expr)
-    if sit:
+    if sit:     # on the edge of the bed, turned toward the shadow on the wall
+        milo = place(S, "Milo", (BED.x + 2.9, BED.y + 1.0, 2.3 - 1.5), 0, expr)   # hips on the mattress (top 2.3)
+        face(milo, (BED.x - 1.5, BED.y + 5.9))
         milo.sit(1)
-    else:
+    else:       # under the blanket, head on the pillow
+        milo = place(S, "Milo", (BED.x + 5.4, BED.y + 3.8, 2.3), 180, expr)
         milo.lie(1, face_down=False)
     return milo
 
@@ -469,7 +492,7 @@ def s12(k, F):  # But I'd already brushed mine.
     milo.look(kf(F * 0.3), 40, 0)
     sh = wall_milo_shadow(S)
     brushing(sh, 1, F)
-    S.cam_at(V((BED.x + 3.0, BED.y - 4.5, 6.8)), milo.head_pt() - V((0, 0, 0.8)), lens=30)
+    S.cam_at(V((BED.x - 3.5, BED.y - 5.5, 5.4)), V((BED.x + 1.6, BED.y + 2.6, 3.2)), lens=24)
     return S
 
 
@@ -502,7 +525,7 @@ def s14(k, F):  # The next morning, I copied everything it did. Same cereal.
     for j, f in enumerate(range(1, F, 12)):
         milo.arm("R", f, 110 if j % 2 else 45)
     follow(S, milo, KL, KW, lead=8)
-    S.cam_at(V((KIT.x + 6, KIT.y - 8, 5.5)), V((KIT.x - 5, KIT.y, 3.5)), lens=26)
+    S.cam_at(V((KIT.x - 5, KIT.y - 7.5, 5.5)), V((KIT.x - 5, KIT.y + 0.5, 3.2)), lens=24)
     return S
 
 
@@ -525,7 +548,7 @@ def s15(k, F):  # Same shoelaces. Same sneeze.
     pip = place(S, "Pip", (KIT.x + 2.5, KIT.y - 2.5, 0), 300, "neutral")
     pip.face(sneeze + 10, "shocked")
     follow(S, pip, KL, KW, lead=6)
-    S.cam_at(V((KIT.x + 7, KIT.y - 7, 5.0)), V((KIT.x - 4.5, KIT.y + 1.0, 3.0)), lens=26)
+    S.cam_at(V((KIT.x - 5, KIT.y - 7.0, 5.5)), V((KIT.x - 5, KIT.y + 1.5, 3.2)), lens=24)
     return S
 
 
@@ -535,14 +558,14 @@ def s16(k, F):  # It was right. Every single time.
     milo.look(kf(F * 0.4), -35, 5)
     sh = make_shadow(S, (KIT.x - 3.5, KIT.y + 1.5, 0), 270, KL, KW)
     sh.look(kf(F * 0.25), -60, 0)                      # it looks at him first
-    S.cam_at(V((KIT.x + 4.5, KIT.y - 3.5, 5.0)), milo.head_pt() - V((0, 0, 1.0)), lens=30)
+    S.cam_at(V((KIT.x - 5.5, KIT.y - 5.0, 5.2)), V((KIT.x - 5.0, KIT.y + 2.0, 3.6)), lens=26)
     return S
 
 
 def s17(k, F):  # Then, after school, my shadow started running.
     S = street("day")
     milo = place(S, "Milo", (STREET_X, -3508), 180, "shocked")
-    sh = make_shadow(S, (STREET_X, -3508, 0.6), 180, ST, ("ground", 0.6))
+    sh = make_shadow(S, (STREET_X, -3508, 0.6), 0, ST, ("ground", 0.6))
     go = kf(F * 0.15)
     sh.run(go, F, (STREET_X, -3536, 0.6))
     milo.arm("R", kf(F * 0.4), 90)
@@ -553,14 +576,12 @@ def s17(k, F):  # Then, after school, my shadow started running.
 
 def s18(k, F):  # Rio and I chased it across town, all the way to the train tracks.
     S = street("day")
-    milo = place(S, "Milo", (STREET_X, -3500), 180, "determined")
-    rio = place(S, "Rio", (STREET_X - 3.8, -3497), 180, "laugh")
-    milo.run(1, F, (STREET_X, -3556))
-    rio.run(1, F, (STREET_X - 3.8, -3552))
+    milo = walker(S, "Milo", (STREET_X, -3500), (STREET_X, -3556), 1, F, "determined", run=True)
+    rio = walker(S, "Rio", (STREET_X - 3.8, -3497), (STREET_X - 3.8, -3552), 1, F, "laugh", run=True)
     follow(S, rio, ST, ("ground", 0.2), lead=6)          # Rio still has his; Milo's is gone
     allow(S, "Narrator", "Crowd3")
-    S.drone([(1, V((STREET_X - 12, -3512, 4)), V((STREET_X - 1, -3500, 2.5))),
-             (F, V((STREET_X - 12, -3566, 5)), V((STREET_X - 1, -3554, 2.5)))], lens=26)
+    S.drone([(1, V((STREET_X - 9, -3514, 4)), V((STREET_X - 2, -3500, 2.5))),
+             (F, V((STREET_X - 9, -3568, 5)), V((STREET_X - 2, -3554, 2.5)))], lens=26)
     return S
 
 
@@ -576,10 +597,11 @@ def track_shadow(S, x, y, yaw=270):
 
 def s19(k, F):  # There, it stopped. It turned around.
     S = track_set()
-    sh = track_shadow(S, TR.x - 2, TR.y - 5.5, yaw=90)
+    west = yaw_to((0, 0), (-1, 0))
+    sh = track_shadow(S, TR.x - 2, TR.y - 5.5, yaw=west)
     sh.walk(1, kf(F * 0.3), (TR.x - 5, TR.y - 5.5, 0.0))
     turn = kf(F * 0.55)
-    sh.key_root(turn, yaw=90)
+    sh.key_root(turn, yaw=west)
     sh.key_root(turn + 8, yaw=0)
     S.cam_at(V((TR.x - 6, TR.y - 22, 8.5)), V((TR.x - 5, TR.y - 9, 0.3)), lens=30)
     return S
@@ -604,7 +626,7 @@ def s21(k, F):  # Then it stepped onto the tracks... and faded away.
 
 def s22(k, F):  # Across the tracks, a girl in a white hoodie was waving too.
     S = track_set()
-    wren = place(S, "Wren", (TR.x - 2, TR.y + 8), 180, "neutral")    # no shadow (series clue)
+    wren = place(S, "Wren", (TR.x - 2, TR.y + 8), 0, "neutral")    # no shadow (series clue)
     wave(wren, kf(F * 0.2), F, side="R", every=12, base=150, amp=20)
     S.drone([(1, V((TR.x - 2, TR.y - 18, 4.2)), V((TR.x - 2, TR.y + 8, 3.6))),
              (F, V((TR.x - 2, TR.y - 9, 4.0)), V((TR.x - 2, TR.y + 8, 3.8)))], lens=34)
