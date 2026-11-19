@@ -220,8 +220,65 @@ def slide(c, f0, f1, to, z=None):
 
 
 # ---------------------------------------------------------------- sets
-def street(light="day"):
-    return stage(light)
+AUTUMN = [(0.95, 0.45, 0.12), (0.9, 0.25, 0.12), (0.98, 0.7, 0.18), (0.75, 0.35, 0.1)]
+
+
+def autumn_tree(loc, s=1.0, k=0):
+    kit.cyl(0.35 * s, 3.2 * s, (loc[0], loc[1], loc[2] + 1.6 * s), kit.mat("trunk2", (0.38, 0.24, 0.14), 0.9), verts=10)
+    kit.sphere(2.0 * s, (loc[0], loc[1], loc[2] + 4.3 * s), kit.mat("aleaf%d" % (k % 4), AUTUMN[k % 4], 0.9),
+               scale=(1, 1, 0.9), seg=10)
+
+
+def bunting(y, z=10.5, x0=-13.5, x1=13.5):
+    rope = kit.mat("rope", (0.9, 0.9, 0.85))
+    kit.box((x1 - x0, 0.06, 0.06), ((x0 + x1) / 2, y, z), rope, 0)
+    cols = [(0.95, 0.25, 0.25), (0.98, 0.8, 0.2), (0.25, 0.6, 0.95), (0.3, 0.8, 0.4), (0.95, 0.5, 0.9)]
+    n = int((x1 - x0) / 1.5)
+    for i in range(n):
+        x = x0 + 0.75 + i * 1.5
+        sag = 0.9 * (1 - ((x - (x0 + x1) / 2) / ((x1 - x0) / 2)) ** 2)
+        f = kit.box((0.8, 0.04, 1.0), (x, y, z - sag - 0.45), kit.mat("flag%d" % (i % 5), cols[i % 5]), 0)
+        f.rotation_euler = (0, R(45), 0)
+        f.scale = (0.7, 1, 0.7)
+
+
+def shop_sign(word, y, color, side=1):
+    """Sign on the shop fronts: side=1 east shops (face -X at x 13.9), -1 west shops (face +X)."""
+    x = 13.8 if side == 1 else -14.7
+    kit.box((0.15, len(word) * 0.95 + 1.0, 1.6), (x, y, 8.6), kit.mat("signb" + word, (0.12, 0.1, 0.14)), 0.05)
+    text(word, (x - 0.12 * side, y, 8.15), rot=(90, 0, -90 if side == 1 else 90), size=1.05, color=color, emit=2.2)
+
+
+def street_props():
+    kit.box((0.9, 0.9, 1.6), (8.4, -3513, 1.4), kit.mat("mailbox", (0.15, 0.3, 0.75)), 0.12)
+    kit.box((1.1, 1.1, 0.25), (8.4, -3513, 2.3), kit.mat("mailbox", (0.15, 0.3, 0.75)), 0.12)
+    kit.cyl(0.35, 1.2, (8.4, -3556, 1.2), kit.mat("hydrant", (0.85, 0.12, 0.1)), verts=12)
+    kit.sphere(0.36, (8.4, -3556, 1.85), kit.mat("hydrant", (0.85, 0.12, 0.1)), seg=10)
+    for k2, (x, y) in enumerate(((-12.5, -3500), (-12.5, -3518), (-12.5, -3538), (-12.5, -3560), (-12.5, -3480))):
+        autumn_tree((x, y, 0.6), 1.25, k2)
+    for k2, y in enumerate((-3512, -3528, -3544, -3560)):      # leaf piles against the shop fronts
+        kit.sphere(0.9, (13.0, y, 0.6), kit.mat("aleaf%d" % (k2 % 4), AUTUMN[k2 % 4], 0.9), scale=(1, 1.6, 0.35), seg=8)
+    for y in (-3506, -3526, -3546):
+        bunting(y)
+    shop_sign("BAKERY", -3520, (1, 0.85, 0.5))
+    shop_sign("ARCADE", -3566, (0.5, 0.9, 1.0))
+    shop_sign("COMICS", -3500, (1, 0.5, 0.75))
+    shop_sign("PIZZA", -3530, (1, 0.6, 0.3), side=-1)
+
+
+def falling_leaves(center, F, n=45, radius=10):
+    kit.sparkle_particles(tuple(center), n=n, radius=radius, frames=F + 10, color=(0.95, 0.5, 0.15))
+
+
+def street(light="sunset"):
+    S = stage(light)
+    sc = bpy.context.scene
+    sc.world.node_tree.nodes["Background"].inputs[1].default_value *= 1.25       # golden hour, not dusk
+    for o in bpy.data.objects:
+        if o.type == "LIGHT" and o.data.type == "SUN":
+            o.data.energy *= 1.15
+    street_props()
+    return S
 
 
 def crack(y):
@@ -248,6 +305,21 @@ def bedroom(S, lamp=True):
     if lamp:
         kit.point((x + 2.2, y + 3.8, 3.2), (1, 0.82, 0.55), 260, 2.0)
     kit.point((x, y - 6, 8), (0.55, 0.6, 1.0), 120, 4.0)
+    # string lights along the top of the back wall + glow stars on the ceiling
+    for k2 in range(14):
+        xx = x - 7 + k2 * 1.08
+        kit.sphere(0.13, (xx, y + 5.85, 10.2 - 0.35 * math.sin(k2 * 0.9) ** 2), kit.mat("bulbs%d" % (k2 % 3), [(1, 0.8, 0.3), (1, 0.45, 0.6), (0.5, 0.8, 1)][k2 % 3],
+                   emit=6, emit_color=[(1, 0.8, 0.3), (1, 0.45, 0.6), (0.5, 0.8, 1)][k2 % 3]), seg=6)
+    kit.point((x - 1, y + 5, 9.5), (1, 0.7, 0.5), 90, 3.0)
+    for k2, (sx, sy) in enumerate(((-5, -4), (-2, 2), (1, -1), (4, 3), (-4, 4), (2, -5), (5, -2))):
+        kit.sphere(0.15, (x + sx, y + sy, 10.98), kit.mat("gstar", (0.7, 1, 0.7), emit=4, emit_color=(0.6, 1, 0.6)), seg=5)
+    kit.cyl(3.2, 0.06, (x - 2, y - 1, 0.04), kit.mat("rug", (0.85, 0.45, 0.3), rough=1.0), verts=24)
+    shelf = kit.mat("shelf", (0.6, 0.45, 0.3))
+    kit.box((0.6, 4, 0.25), (x - 7.7, y - 3.5, 5.5), shelf, 0.02)
+    for k2, (dy, col) in enumerate(((-4.8, (0.9, 0.2, 0.2)), (-3.9, (0.2, 0.6, 0.95)), (-3.0, (1, 0.8, 0.2)), (-2.2, (0.3, 0.8, 0.4)))):
+        kit.box((0.5, 0.6, 0.7 + 0.2 * (k2 % 2)), (x - 7.6, y + dy, 6.0), kit.mat("toy%d" % k2, col), 0.08)
+    kit.sphere(0.5, (x - 8.0, y + 0.5, 7.4), kit.mat("moon", (1, 0.97, 0.85), emit=4, emit_color=(1, 0.95, 0.8)), seg=12)
+    kit.box((0.1, 2.0, 2.6), (x - 4.6 + 8.6, y + 5.95, 6.8), kit.mat("poster2", (0.3, 0.5, 0.95)), 0.02)
     # a poster + desk so the room reads as a kid's room
     kit.box((2.6, 0.1, 3.4), (x - 4.5, y + 5.95, 6.5), kit.mat("poster", (0.9, 0.4, 0.2)), 0.02)
     kit.box((4.2, 2.2, 0.3), (x - 5.4, y - 3.0, 3.0), kit.mat("desk", (0.6, 0.45, 0.3)), 0.03)
@@ -277,10 +349,28 @@ def tracks(S):
     kit.box((4.6, 0.25, 3.0), (x + 11, y - 7.1, 5.6), kit.mat("board", (0.12, 0.2, 0.32)), 0.04)
     text("NEXT TRAIN", (x + 11, y - 7.25, 6.3), size=0.6, color=(1, 1, 1), emit=1.0)
     text("4:15", (x + 11, y - 7.25, 4.75), size=1.2, color=(1, 0.8, 0.2), emit=2.5)
-    # fence far side + a few trees
+    # fence far side + autumn trees
     kit.fence(x - 40, x + 40, y + 12, 1.2)
-    for tx in (-24, -9, 14, 30):
-        kit.tree((x + tx, y + 18), 1.6)
+    for k2, tx in enumerate((-24, -9, 14, 30)):
+        autumn_tree((x + tx, y + 18, 0), 1.7, k2)
+    # telephone poles + wires along the far side
+    pole = kit.mat("tpole", (0.35, 0.25, 0.17), 0.9)
+    wire = kit.mat("twire", (0.08, 0.08, 0.08))
+    for k2 in range(-4, 5):
+        px = x + k2 * 14
+        kit.cyl(0.25, 11, (px, y + 9, 5.5), pole, verts=8)
+        kit.box((3.0, 0.2, 0.2), (px, y + 9, 10.4), pole, 0)
+    for dz in (10.6, 10.0):
+        kit.box((130, 0.04, 0.04), (x, y + 9, dz), wire, 0)
+    # tall grass clumps (kept off the action), red signal light, a far-off town on the horizon
+    for k2, (gx, gy) in enumerate(((-18, -9), (-22, -14), (16, -10), (20, -16), (-14, 6), (12, 7), (26, -6))):
+        kit.cyl(0.9, 1.6, (x + gx, y + gy, 0.8), kit.mat("tallgrass", (0.55, 0.6, 0.25), 1.0), verts=6, r2=0.05)
+    kit.box((0.3, 0.3, 5), (x - 14, y - 4.2, 2.5), kit.mat("sigpost", (0.15, 0.15, 0.15)), 0)
+    kit.box((0.9, 0.5, 1.6), (x - 14, y - 4.2, 5.4), kit.mat("sighead", (0.1, 0.1, 0.1)), 0.05)
+    kit.sphere(0.3, (x - 14, y - 4.5, 5.7), kit.mat("siglight", (1, 0.15, 0.1), emit=10, emit_color=(1, 0.15, 0.1)), seg=10)
+    for k2 in range(9):
+        h = 6 + (k2 * 7) % 9
+        kit.box((6, 4, h), (x - 60 + k2 * 15, y + 70, h / 2), kit.mat("farcity", (0.42, 0.33, 0.45), 1.0), 0)
 
 
 # ---------------------------------------------------------------- shots
@@ -300,7 +390,7 @@ def walker(S, who, a, b, f0, f1, expr="smile", run=False):
 
 
 def s01(k, F):  # In this town, your shadow moves ten seconds before you do.
-    S = street("day")
+    S = street()
     cam = V((STREET_X - 6, -3528, 9))
     milo = place(S, "Milo", (STREET_X, -3538), 0, "smile")
     face(milo, cam)
@@ -309,11 +399,12 @@ def s01(k, F):  # In this town, your shadow moves ten seconds before you do.
     milo.look(kf(F * 0.45), 15, -30)
     milo.face(kf(F * 0.55), "shocked")
     S.drone([(1, cam, V((STREET_X, -3541, 1))), (F, V((STREET_X - 5, -3531, 6)), V((STREET_X, -3544, 1.0)))], lens=26)
+    falling_leaves((STREET_X - 2, -3540, 9), F)
     return S
 
 
 def s02(k, F):  # So nobody ever trips. Your shadow trips first,
-    S = street("day")
+    S = street()
     crack(-3536)
     stop = kf(F * 0.55)
     dev = walker(S, "Dev", (STREET_X, -3527), (STREET_X, -3533.5), 1, stop)
@@ -334,7 +425,7 @@ def s02(k, F):  # So nobody ever trips. Your shadow trips first,
 
 
 def s03(k, F):  # and you just step over it.
-    S = street("day")
+    S = street()
     crack(-3536)
     dev = walker(S, "Dev", (STREET_X, -3533.5), (STREET_X, -3540), 1, F, "smirk")
     dev.leg("L", kf(F * 0.35), 70)
@@ -344,9 +435,9 @@ def s03(k, F):  # and you just step over it.
 
 
 def s04(k, F):  # Hide and seek? Impossible. Your shadow always peeks out first.
-    S = stage("day")
+    S = street()
     tx, ty = STREET_X, -3535
-    kit.tree((tx, ty), 1.5)
+    autumn_tree((tx, ty, 0.6), 1.4, 2)
     place(S, "Rio", (tx, ty + 1.9), 0, "smirk")
     sh = make_shadow(S, (tx, ty + 1.9, 0.6), 0, V((-0.15, -1.7, -1.0)), ("ground", 0.6))
     sh.lean(kf(F * 0.25), 25, -20)
@@ -355,12 +446,40 @@ def s04(k, F):  # Hide and seek? Impossible. Your shadow always peeks out first.
     follow(S, juno, ST, lead=6)
     juno.arm("R", kf(F * 0.45), 90)
     S.cam_at(V((tx - 12, ty - 3, 5.0)), V((tx - 1.0, ty - 6, 1.6)), lens=24)
+    falling_leaves((STREET_X - 3, -3540, 9), F)
     return S
+
+
+def kitchen_dress():
+    x, y = KIT.x, KIT.y
+    for m, col in (("kcab", (0.55, 0.85, 0.75)), ("kwall", (0.98, 0.93, 0.8))):   # mint cabinets, cream walls
+        for mm in bpy.data.materials:
+            if mm.name.startswith(m) and mm.node_tree:
+                mm.node_tree.nodes["Principled BSDF"].inputs["Base Color"].default_value = (*col, 1)
+    a_, b_ = kit.mat("tileA", (0.95, 0.95, 0.92), 0.5), kit.mat("tileB", (0.25, 0.3, 0.38), 0.5)
+    for i in range(8):                                   # checkered floor
+        for j in range(9):
+            kit.box((2, 2, 0.02), (x - 7 + i * 2, y - 8 + j * 2, 0.02), a_ if (i + j) % 2 else b_, 0)
+    # hanging lamp over the table
+    kit.box((0.06, 0.06, 4.5), (x + 1, y - 1, 9.9), kit.mat("cord", (0.1, 0.1, 0.1)), 0)
+    kit.cyl(1.1, 0.9, (x + 1, y - 1, 7.4), kit.mat("lshade", (0.95, 0.55, 0.2), emit=1.2, emit_color=(1, 0.7, 0.35)), verts=20, r2=0.4)
+    kit.point((x + 1, y - 1, 6.6), (1, 0.8, 0.5), 220, 1.5)
+    # fridge drawings + magnets
+    for k2, (dz, dy, col) in enumerate(((5.4, -0.6, (1, 0.9, 0.3)), (4.2, 0.5, (0.5, 0.8, 1)), (6.4, 0.6, (1, 0.6, 0.7)))):
+        kit.box((0.05, 1.0, 1.2), (x + 4.35, y + 6.6 + dy, dz), kit.mat("draw%d" % k2, col), 0)
+    # fruit bowl, plants on the sill, cereal box
+    kit.cyl(0.8, 0.4, (x + 3, y + 6.8, 3.9), kit.mat("fbowl", (0.9, 0.9, 0.9)), verts=16)
+    for k2, (dx, col) in enumerate(((-0.3, (0.9, 0.2, 0.15)), (0.3, (1, 0.75, 0.1)), (0.0, (0.4, 0.8, 0.2)))):
+        kit.sphere(0.32, (x + 3 + dx, y + 6.8 + (0.25 if k2 == 2 else 0), 4.35), kit.mat("fruit%d" % k2, col), seg=10)
+    for dx in (-1.6, 1.6):
+        kit.cyl(0.35, 0.6, (x + dx, y + 7.9, 5.25), kit.mat("pot", (0.75, 0.4, 0.25)), verts=10)
+        kit.sphere(0.5, (x + dx, y + 7.9, 5.85), kit.mat("plant", (0.25, 0.6, 0.25)), seg=8)
 
 
 def kitchen_set():
     S = stage("morning")
     kitchen(S, clock_time="7:42", morning=True)
+    kitchen_dress()
     return S
 
 
@@ -381,11 +500,12 @@ def s05(k, F):  # And my mom catches me at the cookie jar before I even get ther
 
 
 def s06(k, F):  # My shadow was normal. Ten seconds ahead. Always ten.
-    S = street("day")
+    S = street()
     milo = walker(S, "Milo", (STREET_X, -3520), (STREET_X, -3534), 1, F)
     follow(S, milo, ST, lead=8)
     S.drone([(1, V((STREET_X + 1.5, -3531, 8.5)), V((STREET_X, -3521, 1.2))),
              (F, V((STREET_X + 1.5, -3545, 8.5)), V((STREET_X, -3535, 1.2)))], lens=26, allow_close=True)
+    falling_leaves((STREET_X - 1, -3530, 9), F)
     return S
 
 
@@ -394,7 +514,7 @@ def stuck_shadow(S, x, y):
 
 
 def s07(k, F):  # Until Tuesday.
-    S = street("day")
+    S = street()
     milo = place(S, "Milo", (STREET_X, -3530), 0, "neutral")
     milo.walk(kf(F * 0.4), F, (STREET_X, -3534))
     stuck_shadow(S, STREET_X, -3530)
@@ -403,7 +523,7 @@ def s07(k, F):  # Until Tuesday.
 
 
 def s08(k, F):  # I waved. My shadow didn't.
-    S = street("day")
+    S = street()
     cam = V((STREET_X - 6, -3547, 4.6))
     milo = place(S, "Milo", (STREET_X, -3535), 0, "smile")
     face(milo, cam)
@@ -415,7 +535,7 @@ def s08(k, F):  # I waved. My shadow didn't.
 
 
 def s09(k, F):  # I jumped. It just stood there... like it was waiting for something.
-    S = street("day")
+    S = street()
     cam = V((STREET_X - 8, -3549, 6))
     milo = place(S, "Milo", (STREET_X, -3535), 0, "worried")
     face(milo, cam)
@@ -429,7 +549,7 @@ def s09(k, F):  # I jumped. It just stood there... like it was waiting for somet
 
 
 def s10(k, F):  # My best friend Rio poked it with his shoe. "Bro. Is it broken?"
-    S = street("day")
+    S = street()
     cam = V((STREET_X + 1.5, -3543, 4.2))
     milo = place(S, "Milo", (STREET_X + 1.6, -3535), 0, "worried")
     face(milo, cam)
@@ -516,6 +636,8 @@ def table(S):
         for dy in (-1.4, 1.4):
             kit.box((0.25, 0.25, 2.5), (KIT.x + 1 + dx, KIT.y - 1 + dy, 1.25), m, 0)
     kit.cyl(0.7, 0.5, (KIT.x - 0.2, KIT.y - 1, 3.0), kit.mat("bowl", (0.95, 0.95, 0.95)), verts=16)
+    kit.box((1.2, 0.5, 1.8), (KIT.x + 2.2, KIT.y - 1.6, 3.65), kit.mat("cereal", (0.95, 0.3, 0.2)), 0.03)
+    text("CRUNCH", (KIT.x + 2.2, KIT.y - 1.86, 3.85), size=0.28, color=(1, 0.95, 0.4), emit=0.6)
 
 
 def s14(k, F):  # The next morning, I copied everything it did. Same cereal.
@@ -563,7 +685,7 @@ def s16(k, F):  # It was right. Every single time.
 
 
 def s17(k, F):  # Then, after school, my shadow started running.
-    S = street("day")
+    S = street()
     milo = place(S, "Milo", (STREET_X, -3508), 180, "shocked")
     sh = make_shadow(S, (STREET_X, -3508, 0.6), 0, ST, ("ground", 0.6))
     go = kf(F * 0.15)
@@ -571,17 +693,19 @@ def s17(k, F):  # Then, after school, my shadow started running.
     milo.arm("R", kf(F * 0.4), 90)
     S.drone([(1, V((STREET_X - 6, -3499, 6)), V((STREET_X, -3512, 1))),
              (F, V((STREET_X - 6, -3503, 9)), V((STREET_X, -3530, 0.5)))], lens=26)
+    falling_leaves((STREET_X - 2, -3515, 9), F)
     return S
 
 
 def s18(k, F):  # Rio and I chased it across town, all the way to the train tracks.
-    S = street("day")
+    S = street()
     milo = walker(S, "Milo", (STREET_X, -3500), (STREET_X, -3556), 1, F, "determined", run=True)
     rio = walker(S, "Rio", (STREET_X - 3.8, -3497), (STREET_X - 3.8, -3552), 1, F, "laugh", run=True)
     follow(S, rio, ST, ("ground", 0.2), lead=6)          # Rio still has his; Milo's is gone
     allow(S, "Narrator", "Crowd3")
     S.drone([(1, V((STREET_X - 9, -3514, 4)), V((STREET_X - 2, -3500, 2.5))),
              (F, V((STREET_X - 9, -3568, 5)), V((STREET_X - 2, -3554, 2.5)))], lens=26)
+    falling_leaves((STREET_X - 3, -3525, 9), F)
     return S
 
 
